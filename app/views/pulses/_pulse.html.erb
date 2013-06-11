@@ -1,7 +1,16 @@
 <li>
   <span class="content"><%= pulse.content %></span>
-  <span class="pulser"><%= pulse.pulser %></span>
+  <d>
+  <span>Pulsed by
+    <%if pulse.pulser == current_node.id %>
+        Me
+        <%else %><%= Node.find(pulse.pulser).username %><%end %>
+    </span>
+  </d>
+  <br>
+  <span> Depth: <%= pulse.depth %></span>
+  </br>
   <span class="timestamp">
-    Posted <%= time_ago_in_words(pulse.created_at) %> ago.
+    Pulsed <%= time_ago_in_words(pulse.created_at) %> ago.
   </span>
 </li>

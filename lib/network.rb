@@ -2,7 +2,6 @@ module Network
 
   @@tau_self = 0.05
   @@tau_reinforce = 0.1
-  @@default_strength = 0.4
 
 
     def process_fire_from(args)
@@ -23,43 +22,37 @@ module Network
     collection.find_each do |p|
       common = impulse.content.scan(/\B#\w\w+/) & p.content.scan(/\B#\w\w+/)
       if common.length > 0
-        if self.connectors.find_by_output_node(p.pulser)
+        if !self.connectors.find_by_output_node(p.pulser).nil?
           @synapse = self.connectors.find_by_output_node(p.pulser)
-          coeff1 = (1.000000-@@tau_self) + (@@tau_self*(1.000000+common.length))
-          coeff2 = @synapse.strength
-          new_strength = coeff2 + (coeff1*coeff2)
-          @synapse.strength = new_strength
-          @synapse.save
+          if @synapse.updated_at < 1.minute.ago.utc
+            new_strength = (@synapse.strength * (1 - @@tau_self)) + (@@tau_self * common.length)
+            if new_strength > 1
+              new_strength = 1
+            end
+            @synapse.strength = new_strength
+            @synapse.save
+          end
         else
-        @synapse = self.connectors.build
-        @synapse.update_attributes(:output_node => p.pulser, :strength => @@default_strength)
+          @synapse = self.connectors.build
+          @synapse.update_attributes!(:output_node => p.pulser, :strength => 0.4 )
         end
       end
     end
   end
+
+    def modify_reinforcement(args)
+      pulse = args[:pulse]
+      rating = args[:rating]
+      if self.connectors.where(:output_node => pulse.pulser).exists?
+        synapse = self.connectors.where(:output_node => pulse.pulser)
+        synapse.strength *= ((1-@@tau_reinforce) + (@@tau_reinforce*rating))
+        if synapse.strength < 0
+          synapse.strength = 0
+        if synapse.strength > 1
+          synapse.strength = 1
+        end
+        end
+        synapse.strength.save
+      end
+    end
 end
-
-
-
-
-
-
-
-
-
-
-    #def modify_reinforcement(args)
-    #  pulse = args[:pulse]
-    #  rating = args[:rating]
-    #  if self.connectors.where(:output_node => pulse.pulser).exists?
-    #    synapse = self.connectors.where(:output_node => pulse.pulser)
-    #    synapse.strength *= ((1-@@tau_reinforce) + (@@tau_reinforce*rating))
-    #    if synapse.strength < 0
-    #      synapse.strength = 0
-    #    if synapse.strength > 1
-    #      synapse.strength = 1
-    #    end
-    #    end
-    #    synapse.strength.save
-    #  end
-    #end

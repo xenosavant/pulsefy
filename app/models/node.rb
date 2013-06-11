@@ -23,10 +23,9 @@ class Node < ActiveRecord::Base
 
   def fire_pulse(args)
     @impulse = args[:pulse]
-    #process_fire_from(:pulse => @impulse)
+    process_fire_from(:pulse => @impulse)
     modify_self(:pulse => @impulse)
   end
-
 
   def get_pulse(args)
     impulse = args[:pulse]

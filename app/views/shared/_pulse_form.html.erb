@@ -1,7 +1,7 @@
 <%= form_for(@pulse) do |f| %>
   <%= render 'shared/error_messages', :object => f.object %>
     <div class="field">
-      <%= f.text_area :content, :placeholder => "Compose new pulse..." %>
+      <%= f.text_area :content, :placeholder => "Fire a pulse..." %>
     </div>
-  <%= f.submit "Pulse", :class => "btn btn-large btn-primary" %>
+  <%= f.submit "Fire!", :class => "btn btn-large btn-primary" %>
 <% end %>

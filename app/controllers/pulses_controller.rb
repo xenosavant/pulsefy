@@ -9,7 +9,6 @@ before_filter :signed_in_node
     if @pulse.save
       current_node.pulses << @pulse
       current_node.fire_pulse(:pulse => @pulse)
-
       redirect_to root_url(params[:node => current_node])
     else
       @feed_items = []
@@ -21,4 +20,10 @@ before_filter :signed_in_node
   def destroy
   end
 
-end
+  def rate_up
+  end
+
+  def rate_down
+  end
+
+  end

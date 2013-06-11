@@ -15,6 +15,13 @@
     </div>
     <div class="span8">
     </div>
+    <% if @node.pulses.any? %>
+        <h3>Pulses (<%= @node.pulses.count %>)</h3>
+        <ol class="pulses">
+          <%= render @pulses %>
+        </ol>
+        <%= will_paginate @pulses %>
+    <% end %>
 <% else %>
 <div class="center hero-unit">
   <h1>Welcome to Pulsefy!</h1>
