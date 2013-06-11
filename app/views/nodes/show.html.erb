@@ -1,0 +1,17 @@
+<div class='row'>
+  <%= @node.username%>
+</div>
+<div class='row'>
+  <%= @node.email%>
+</div>
+<div class='row'>
+  <%= @node.info%>
+</div>
+
+<% if @node.pulses.any? %>
+      <h3>Pulses (<%= @node.pulses.count %>)</h3>
+      <ol class="pulses">
+        <%= render @pulses %>
+      </ol>
+      <%= will_paginate @pulses %>
+<% end %>

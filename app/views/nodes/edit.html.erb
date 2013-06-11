@@ -1,0 +1,21 @@
+<% provide(:title, "Edit user") %>
+<h1>Update Your Pulsefile</h1>
+
+<div class='row'>
+  <div class='span6 offset3'>
+    <%= form_for(@node) do |f| %>
+        <%= render 'shared/error_messages', :object => f.object %>
+
+        <%= f.label :username %>
+        <%= f.text_field :username %>
+
+        <%= f.label :info %>
+        <%= f.text_area :info, :size => '20x8' %>
+
+        <%= f.label :password %>
+        <%= f.password_field :password %>
+
+        <%= f.submit 'Save changes', :class => 'btn btn-large btn-primary' %>
+        <% end %>
+  </div>
+</div>

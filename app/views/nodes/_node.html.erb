@@ -1,0 +1,6 @@
+<li>
+  <%= link_to node.username, node %>
+  <% if current_node.admin == true && !current_node?(node) %>
+  <%= link_to 'delete', node, :method => :delete, :data => {:confirm => 'You sure?'} %>
+  <% end %>
+</li>
