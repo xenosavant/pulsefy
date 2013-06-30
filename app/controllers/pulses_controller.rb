@@ -31,8 +31,6 @@ before_filter :signed_in_node
    end
   end
 
-
-
   def show
     @pulse = Pulse.find(params[:id])
     store_location(params[:id])
