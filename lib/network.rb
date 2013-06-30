@@ -1,58 +1,84 @@
 module Network
 
-  @@tau_self = 0.05
-  @@tau_reinforce = 0.1
+  @@tau_self = 0.09
+  @@tau_reinforce = 0.15
+  @@synapse_window = 1.day.ago.utc
 
+  def fire_pulse(args)
+    @impulse = args[:pulse]
+    process_fire_from(:pulse => @impulse)
+    modify_self(:pulse => @impulse)
+  end
 
-    def process_fire_from(args)
-      pulse = args[:pulse]
-      if !self.connectors.empty?
+  def process_fire_from(args)
+      @impulse = args[:pulse]
+    if self.outputs
       self.connectors.find_each do |t|
-          if t.strength >= Node.find(t.output_node).threshold
-            Node.find(t.output_node).get_pulse(:pulse => pulse)
-          end
-      end
-      end
-    end
-
-  def modify_self(args)
-    impulse = args[:pulse]
-    collection = Pulse.where("created_at >= ? AND pulser_type == ? AND pulser != ?",
-                          1.day.ago.utc, 'Node', self.id)
-    collection.find_each do |p|
-      common = impulse.content.scan(/\B#\w\w+/) & p.content.scan(/\B#\w\w+/)
-      if common.length > 0
-        if !self.connectors.find_by_output_node(p.pulser).nil?
-          @synapse = self.connectors.find_by_output_node(p.pulser)
-          if @synapse.updated_at < 1.minute.ago.utc
-            new_strength = (@synapse.strength * (1 - @@tau_self)) + (@@tau_self * common.length)
-            if new_strength > 1
-              new_strength = 1
-            end
-            @synapse.strength = new_strength
-            @synapse.save
-          end
-        else
-          @synapse = self.connectors.build
-          @synapse.update_attributes!(:output_node => p.pulser, :strength => 0.4 )
+        if t.strength >= Node.find(t.output_id).threshold
+          Node.find(t.output_id).get_pulse(:pulse => @impulse)
         end
       end
     end
   end
 
-    def modify_reinforcement(args)
-      pulse = args[:pulse]
-      rating = args[:rating]
-      if self.connectors.where(:output_node => pulse.pulser).exists?
-        synapse = self.connectors.where(:output_node => pulse.pulser)
-        synapse.strength *= ((1-@@tau_reinforce) + (@@tau_reinforce*rating))
-        if synapse.strength < 0
-          synapse.strength = 0
-        if synapse.strength > 1
-          synapse.strength = 1
+
+  def modify_self(args)
+    @impulse = args[:pulse]
+        pulses = Pulse.where("created_at >= ? AND pulser_type == ? AND pulser != ?",
+                             @@synapse_window, 'Node', self.id)
+        pulses.find_each do |p|
+          common = @impulse.tags.split(',') & p.tags.split(',')
+          if common.length > 0
+          if !self.connectors.find_by_output_id(p.pulser).nil?
+              @synapse = self.connectors.find_by_output_id(p.pulser)
+                 if @synapse.updated_at < 1.minute.ago.utc
+                   new_strength = @synapse.strength * ((1 - @@tau_self) + (@@tau_self*(1.0 + common.length)))
+                    if new_strength > 1
+                      new_strength = 1
+                    end
+                   @synapse.update_attributes(:strength => new_strength)
+                 end
+          else
+              @synapse = self.connectors.build
+              @synapse.update_attributes(:strength => 0.4, :output_id => p.pulser)
+          end
         end
         end
-        synapse.strength.save
+  end
+
+
+  def modify_reinforcement(args)
+      @impulse = args[:pulse]
+      @rating = args[:rating]
+      if Node.find(@impulse.pulser).connectors.find_by_output_id(self.id)
+        @synapse = Node.find(@impulse.pulser).connectors.find_by_output_id(self.id)
+        modify_synapse(:synapse => @synapse, :rating => @rating)
+      else
+        if self.inputs
+          self.inputs.find_each do |t|
+            if t.pulses.include?(@impulse)
+              if t.outputs.include?(self)
+               @synapse = t.connectors.find_by_output_id(self.id)
+               modify_synapse(:synapse => @synapse, :rating => @rating)
+              end
+            end
+          end
+        end
       end
-    end
+  end
+
+
+  def modify_synapse(args)
+    @synapse = args[:synapse]
+    @rating = args[:rating]
+    new_strength = @synapse.strength * ((1-@@tau_reinforce) + (@@tau_reinforce*2*@rating))
+      if @synapse.strength < 0
+        new_strength = 0
+      end
+      if @synapse.strength > 1
+        new_strength = 1
+      end
+    @synapse.update_attributes(:strength => new_strength)
+  end
+
 end

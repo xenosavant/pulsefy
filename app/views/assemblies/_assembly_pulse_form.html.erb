@@ -1,0 +1,15 @@
+<%= form_for(@pulse) do |f| %>
+    <%= render 'shared/error_messages', :object => f.object %>
+    <div class="field">
+      <%= f.text_field :link, :placeholder => "Add a link" %>
+    </div>
+    <div>
+      <%= f.text_area :content, :placeholder => "Compose a pulse...", :rows => '5'%>
+    </div>
+    <div class="field">
+      <%= f.text_field :tags, :placeholder => "Add comma separated tags" %>
+    </div>
+    <%= f.hidden_field :pulser, :value => @assembly.id %>
+    <%= f.hidden_field :pulser_type, :value => "Assembly" %>
+    <%= f.submit "Fire!", :class => "btn btn-large btn-primary" %>
+<% end %>

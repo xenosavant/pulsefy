@@ -1,5 +1,4 @@
 module PulsesHelper
 
 
-
 end

@@ -10,7 +10,6 @@ module SessionsHelper
   end
 
   def signed_in_node
-    store_location
     redirect_to pulsein_url, :notice => 'Please pulse in.' unless signed_in?
   end
 
@@ -31,8 +30,8 @@ module SessionsHelper
     session.delete(:return_to)
   end
 
-  def store_location
-    session[:return_to] = request.url
+  def store_location(location)
+    session[:return_to] = location
   end
 
   def sign_out

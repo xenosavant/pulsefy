@@ -1,6 +1,7 @@
 <li>
+  <%= image_tag node.avatar_url(:thumb) if node.avatar? %>
   <%= link_to node.username, node %>
-  <% if current_node.admin == true && !current_node?(node) %>
+  <% if signed_in? and current_node.admin == true and !current_node?(node) %>
   <%= link_to 'delete', node, :method => :delete, :data => {:confirm => 'You sure?'} %>
   <% end %>
 </li>

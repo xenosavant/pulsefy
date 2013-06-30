@@ -1,11 +1,14 @@
 class CreateConnectors < ActiveRecord::Migration
   def change
     create_table :connectors do |t|
+      t.integer :input_id
+      t.integer :output_id
       t.float :strength
-      t.integer :output_node
-      t.references :node
       t.timestamps
     end
-  end
+    add_index :connectors, :input_id
+    add_index :connectors, :output_id
+    add_index :connectors, [:input_id, :output_id], :unique => true
+    end
 end
 

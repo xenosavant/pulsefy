@@ -1,17 +1,24 @@
-<div class='row'>
-  <%= @node.username%>
+<body>
+<div class='username'>
+  <h3> <%= @node.username%></h3>
 </div>
-<div class='row'>
-  <%= @node.email%>
+
+<%= image_tag @node.avatar_url(:profile) if @node.avatar? %>
+<div>
+ <%= link_to 'Assemblies', view_path(:id => @node.id) %> (<%= @node.assemblies.count%>)
+  <%= link_to 'Inputs', inputs_path(:id => @node.id) %> (<%= @node.inputs.count%>)
+  <%= link_to 'Outputs', outputs_path(:id => @node.id) %> (<%= @node.outputs.count%>)
 </div>
-<div class='row'>
+<div class='info'>
   <%= @node.info%>
 </div>
 
 <% if @node.pulses.any? %>
-      <h3>Pulses (<%= @node.pulses.count %>)</h3>
+      <h4>Pulsefeed</h4>
       <ol class="pulses">
         <%= render @pulses %>
       </ol>
       <%= will_paginate @pulses %>
 <% end %>
+
+</body>

@@ -8,5 +8,4 @@ def home
   @pulses = @node.pulses.paginate(:page => params[:page])
   end
 end
-
 end

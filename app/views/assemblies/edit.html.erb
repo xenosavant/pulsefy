@@ -1,0 +1,21 @@
+<% provide(:title, "Edit assembly") %>
+<h1>Update <td><%= @assembly.title %></td> </h1>
+
+<div class='row'>
+  <div class='span6 offset3'>
+    <%= form_for @assembly, :html => {:multipart => true} do |f| %>
+        <%= render 'shared/error_messages', :object => f.object %>
+
+        <%= f.label :info %>
+        <%= f.text_area :info, :size => '20x8' %>
+
+        <%= f.label 'upload assembly picture' %>
+        <%= image_tag @assembly.avatar_url(:thumb) if @assembly.avatar? %>
+        <%= f.file_field :avatar %>
+
+        <div class='center'>
+        <%= f.submit 'Save changes', :class => 'btn btn-large btn-primary' %>
+        </div>
+    <% end %>
+  </div>
+</div>

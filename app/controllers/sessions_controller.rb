@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     node = Node.find_by_email(params[:session][:email].downcase)
     if node && node.authenticate(params[:session][:password])
       sign_in node
-      redirect_back_or(node)
+      redirect_to root_path
     else
       flash.now[:error] = 'Invalid email/password combination'
       render 'new'

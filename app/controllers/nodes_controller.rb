@@ -2,6 +2,7 @@ class NodesController < ApplicationController
 
   def show
     @node = Node.find(params[:id])
+    store_location(@node.id)
     @pulses = @node.pulses.paginate(:page => params[:page])
   end
 
@@ -11,26 +12,22 @@ class NodesController < ApplicationController
     if @node.save
       sign_in @node
       flash[:success] = "Pulsefication Complete!"
-      redirect_to @node
+      redirect_to root_url
     else
       render 'new'
     end
   end
 
   def edit
-    id = params[:id]
-    @node = Node.find(id)
     if !@node.nil?
-    correct_node
-    else
-    signed_in_node
+      correct_node
+    else signed_in_node
     end
+    @node = current_node
   end
 
-
   def update
-    id = params[:id]
-    @node = Node.find(id)
+    @node = Node.find(params[:id])
       if @node.update_attributes(params[:node])
         flash[:success] = "Pulsefile updated!"
         sign_in @node
@@ -46,8 +43,19 @@ class NodesController < ApplicationController
     redirect_to index_path
   end
 
-  def index
-    @nodes = Node.paginate(:page => params[:page])
+  def show_outputs
+    @node = Node.find(params[:id])
+    @nodes = @node.outputs.paginate(:page => params[:page])
+  end
+
+  def show_inputs
+    @node = Node.find(params[:id])
+    @nodes = @node.inputs.paginate(:page => params[:page])
+  end
+
+  def show_assemblies
+    @node = Node.find(params[:id])
+    @assemblies = @node.assemblies.paginate(:page => params[:page])
   end
 
   def new

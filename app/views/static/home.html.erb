@@ -1,10 +1,12 @@
 <% if signed_in? %>
-    <div class='row'>
-      <%= current_node.username%>
+    <body>
+    <div class='username'>
+      <h3>
+      <%= @node.username%>
+        </h3>
     </div>
     <div class='row'>
-      <%= current_node.email%>
-      <%= current_node.info%>
+      <%= @node.info%>
     </div>
     <div class="row">
       <aside class="span4">
@@ -16,12 +18,13 @@
     <div class="span8">
     </div>
     <% if @node.pulses.any? %>
-        <h3>Pulses (<%= @node.pulses.count %>)</h3>
+        <h4>Pulsefeed</h4>
         <ol class="pulses">
           <%= render @pulses %>
         </ol>
         <%= will_paginate @pulses %>
     <% end %>
+    </body>
 <% else %>
 <div class="center hero-unit">
   <h1>Welcome to Pulsefy!</h1>

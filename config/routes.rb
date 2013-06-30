@@ -1,14 +1,24 @@
 Pulsefy::Application.routes.draw do
-  # The priority is based upon order of creation:
-  # first created -> highest priority.
 
-
+  resources :assemblies
   resources :nodes
   resources :sessions, :only => [:new, :create, :destroy]
-  resources :pulses, :only => [:create, :destroy]
+  resources :pulses, :only => [:reinforce, :degrade, :create, :destroy, :show]
+  resources :pulse_comments
 
   root :to => 'static#home'
 
+  match '/uncomment' => 'pulse_comments#destroy'
+  match '/delete'  => 'pulses#destroy'
+  match '/reassemble' => 'assemblies#edit'
+  match '/view'  =>  'assemblies#index'
+  match '/inputs' => 'nodes#show_inputs'
+  match '/outputs' => 'nodes#show_outputs'
+  match '/quit' => 'assemblies#quit'
+  match '/join' =>  'assemblies#join'
+  match '/assemble' => 'assemblies#new'
+  match '/comment' => 'pulses#show'
+  match '/cast' => 'pulses#cast'
   match '/edit' => 'nodes#edit'
   match '/index' => 'nodes#index', :as => 'index'
   match '/pulseup' => 'nodes#new', :as => 'pulseup'
