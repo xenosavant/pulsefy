@@ -2,7 +2,6 @@ class Pulse < ActiveRecord::Base
 
   has_and_belongs_to_many :nodes
   has_and_belongs_to_many :assemblies
-
   has_many :pulse_comments, :dependent => :destroy
   attr_accessible :depth, :content, :reinforcements, :degradations, :pulser_type, :pulser,
                   :tags, :link, :embed_code, :thumbnail, :link_type, :url
