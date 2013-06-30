@@ -2,7 +2,6 @@ module Network
 
   @@tau_self = 0.09
   @@tau_reinforce = 0.15
-  @@synapse_window = 1.day.ago.utc
 
   def fire_pulse(args)
     @impulse = args[:pulse]
@@ -25,7 +24,8 @@ module Network
   def modify_self(args)
     @impulse = args[:pulse]
         pulses = Pulse.where("created_at >= ? AND pulser_type == ? AND pulser != ?",
-                             @@synapse_window, 'Node', self.id)
+                             1.day.ago.utc, 'Node', self.id)
+        if !pulses.empty?
         pulses.find_each do |p|
           common = @impulse.tags.split(',') & p.tags.split(',')
           if common.length > 0
@@ -42,6 +42,7 @@ module Network
               @synapse = self.connectors.build
               @synapse.update_attributes(:strength => 0.4, :output_id => p.pulser)
           end
+        end
         end
         end
   end
