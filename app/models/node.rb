@@ -1,4 +1,5 @@
 class Node < ActiveRecord::Base
+  require 'lib/network'
 
   mount_uploader :avatar, AvatarUploader
   attr_accessible :username, :email, :info, :threshold, :password, :password_confirmation, :avatar

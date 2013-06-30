@@ -1,7 +1,5 @@
-require 'lib/network'
-
 class Assembly < ActiveRecord::Base
-
+   require 'lib/network'
    mount_uploader :avatar, AvatarUploader
    attr_accessible :title, :info, :founder, :avatar
    has_and_belongs_to_many :nodes
