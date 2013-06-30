@@ -1,5 +1,3 @@
-require 'lib/network'
-
 class Assembly < ActiveRecord::Base
 
    mount_uploader :avatar, AvatarUploader
@@ -8,7 +6,6 @@ class Assembly < ActiveRecord::Base
    has_and_belongs_to_many :pulses
 
    include Network
-
 
 end
 

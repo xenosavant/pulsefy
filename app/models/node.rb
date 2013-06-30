@@ -1,5 +1,3 @@
-require 'lib/network'
-
 class Node < ActiveRecord::Base
 
   mount_uploader :avatar, AvatarUploader

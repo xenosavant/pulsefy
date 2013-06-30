@@ -16,7 +16,7 @@ gem 'embedly'
 
 
 group :development do
-  gem 'sqlite3'
+  gem 'sqlite3-ruby'
 end
 
 group :assets do
