@@ -16,8 +16,8 @@ before_filter :signed_in_node
               current_node.fire_pulse(:pulse => @pulse)
               redirect_to root_url(params[:node])
           else if @pulse.pulser_type == 'Assembly'
-                   session[:return_to].pulses << @pulse
-                   redirect_to session[:return_to]
+                   Assembly.find(session[:return_to]).pulses << @pulse
+                   redirect_to Assembly.find(session[:return_to])
                end
           end
 

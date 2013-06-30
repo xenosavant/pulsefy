@@ -2,18 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/pulse.rb" afterPath="$PROJECT_DIR$/app/models/pulse.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pulses_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pulses_controller.rb" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372458579968" ignored="false" />
-    <file path="/pulse.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372176440038" ignored="false" />
+    <file path="/pulse.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372623646203" ignored="false" />
     <file path="/connector.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371712006077" ignored="false" />
     <file path="/network.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372367906219" ignored="false" />
     <file path="/home.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371621416378" ignored="false" />
     <file path="/_pulse_form.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372182111833" ignored="false" />
     <file path="/_pulse.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372362162004" ignored="false" />
-    <file path="/pulses_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372367681312" ignored="false" />
+    <file path="/pulses_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372623767847" ignored="false" />
     <file path="/routes.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372358857316" ignored="false" />
     <file path="/20130611183156_create_raters.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1370975608923" ignored="false" />
     <file path="/20130611184143_create_votes.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371689468885" ignored="false" />
@@ -101,16 +102,16 @@
       <file leaf-file-name="pulse.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/pulse.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="5" column="22" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pulse_comment.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/pulse_comment.rb">
+      <file leaf-file-name="pulses_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/pulses_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="19" column="65" selection-start="767" selection-end="767" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -125,8 +126,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="message.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/message.rb">
+      <file leaf-file-name="avatar_uploader.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/uploaders/avatar_uploader.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -134,8 +135,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inbox.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/inbox.rb">
+      <file leaf-file-name="config.ru" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.ru">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -143,8 +144,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="connector.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/connector.rb">
+      <file leaf-file-name="20130617220608_create_assemblies.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130617220608_create_assemblies.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="assemblies_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/assemblies_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.25609756">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="assemblies_helper.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers/assemblies_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -155,25 +174,9 @@
       <file leaf-file-name="assembly.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/assembly.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="2" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
+            <state line="6" column="3" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0">
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="17" selection-start="229" selection-end="229" vertical-scroll-proportion="0.5487805">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="development.log" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log/development.log">
-          <provider selected="true" editor-type-id="LargeFileEditor">
-            <state />
           </provider>
         </entry>
       </file>
@@ -198,7 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/assemblies/show.html.erb" />
         <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pulse_comments.css.scss" />
         <option value="$PROJECT_DIR$/app/models/pulse_comment.rb" />
@@ -209,11 +211,12 @@
         <option value="$PROJECT_DIR$/app/controllers/assemblies_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pulses.css.scss" />
         <option value="$PROJECT_DIR$/app/views/pulses/_pulse.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/pulses_controller.rb" />
         <option value="$PROJECT_DIR$/lib/network.rb" />
         <option value="$PROJECT_DIR$/app/models/node.rb" />
         <option value="$PROJECT_DIR$/app/models/assembly.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/models/pulse.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/pulses_controller.rb" />
       </list>
     </option>
   </component>
@@ -1014,61 +1017,35 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/pulses/_pulse.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="96" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/nodes/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/nodes_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/static_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/pulses_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="34" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/network.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="14" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.ru">
+    <entry file="file://$PROJECT_DIR$/app/models/connector.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/development.log">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/node.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/inbox.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/pulse.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/message.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -1089,37 +1066,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/message.rb">
+    <entry file="file://$PROJECT_DIR$/app/uploaders/avatar_uploader.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/inbox.rb">
+    <entry file="file://$PROJECT_DIR$/config.ru">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/connector.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130617220608_create_assemblies.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/assemblies_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/node.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/pulse.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="22" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/assembly.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="2" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
+        <state line="6" column="3" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/controllers/pulses_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="17" selection-start="229" selection-end="229" vertical-scroll-proportion="0.5487805">
+        <state line="19" column="65" selection-start="767" selection-end="767" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/assemblies_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.25609756">
           <folding />
         </state>
       </provider>
