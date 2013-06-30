@@ -16,7 +16,10 @@ gem 'embedly'
 gem 'pg'
 
 group :production do
-gem 'sqlite3'
+  gem 'pg'
+end
+group :development, :test do
+  gem 'sqlite3'
 end
 
 group :assets do

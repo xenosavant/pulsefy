@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/assembly.rb" afterPath="$PROJECT_DIR$/app/models/assembly.rb" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,10 +107,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
+            <state line="16" column="34" selection-start="238" selection-end="238" vertical-scroll-proportion="0.4390244">
               <folding />
             </state>
           </provider>
@@ -171,10 +170,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="assembly.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="assembly.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/assembly.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="3" selection-start="243" selection-end="243" vertical-scroll-proportion="0.36585367">
+            <state line="10" column="3" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -215,8 +214,8 @@
         <option value="$PROJECT_DIR$/app/models/node.rb" />
         <option value="$PROJECT_DIR$/app/models/pulse.rb" />
         <option value="$PROJECT_DIR$/app/controllers/pulses_controller.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/models/assembly.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -1117,16 +1116,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/models/assembly.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
+        <state line="10" column="3" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/assembly.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="3" selection-start="243" selection-end="243" vertical-scroll-proportion="0.36585367">
+        <state line="16" column="34" selection-start="238" selection-end="238" vertical-scroll-proportion="0.4390244">
           <folding />
         </state>
       </provider>
