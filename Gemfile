@@ -13,6 +13,7 @@ gem 'rmagick'
 gem 'ruby-oembed'
 gem 'carrierwave'
 gem 'embedly'
+gem 'pg'
 
 group :development do
 gem 'sqlite3'
