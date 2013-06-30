@@ -1,3 +1,5 @@
+require 'lib/network'
+
 class Assembly < ActiveRecord::Base
 
    mount_uploader :avatar, AvatarUploader
