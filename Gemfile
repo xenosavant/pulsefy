@@ -13,7 +13,10 @@ gem 'rmagick'
 gem 'ruby-oembed'
 gem 'carrierwave'
 gem 'embedly'
+
+group :development do
 gem 'sqlite3'
+end
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
