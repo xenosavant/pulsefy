@@ -24,7 +24,7 @@ module Network
   def modify_self(args)
     @impulse = args[:pulse]
         pulses = Pulse.where("created_at >= ? AND pulser_type = ? AND pulser != ?",
-                             1.day.ago.utc, 'Node', self.id)
+                             1.day.ago.utc, "Node", self.id)
         if !pulses.empty?
         pulses.find_each do |p|
           common = @impulse.tags.split(',') & p.tags.split(',')
