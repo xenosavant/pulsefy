@@ -26,7 +26,7 @@ before_filter :signed_in_node
       if @pulse.pulser_type == 'Node'
         redirect_to root_url(params[:node])
       else
-        redirect_to return_assembly
+        redirect_to Assembly.find(session[:return_to])
       end
    end
   end

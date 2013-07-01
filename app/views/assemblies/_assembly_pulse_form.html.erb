@@ -9,7 +9,7 @@
     <div class="field">
       <%= f.text_field :tags, :placeholder => "Add comma separated tags" %>
     </div>
-    <%= f.hidden_field :pulser, :value => @assembly.id %>
+    <%= f.hidden_field :pulser, :value => current_node.id %>
     <%= f.hidden_field :pulser_type, :value => "Assembly" %>
     <%= f.submit "Fire!", :class => "btn btn-large btn-primary" %>
 <% end %>

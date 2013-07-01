@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pulses/_pulse.html.erb" afterPath="$PROJECT_DIR$/app/views/pulses/_pulse.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/assemblies/_assembly_pulse_form.html.erb" afterPath="$PROJECT_DIR$/app/views/assemblies/_assembly_pulse_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pulses_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pulses_controller.rb" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -12,7 +13,7 @@
     <file path="/network.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372632829050" ignored="false" />
     <file path="/home.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371621416378" ignored="false" />
     <file path="/_pulse_form.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372182111833" ignored="false" />
-    <file path="/_pulse.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372362162004" ignored="false" />
+    <file path="/_pulse.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372648468754" ignored="false" />
     <file path="/pulses_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372623767847" ignored="false" />
     <file path="/routes.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372358857316" ignored="false" />
     <file path="/20130611183156_create_raters.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1370975608923" ignored="false" />
@@ -67,7 +68,7 @@
     <file path="/_pulse_comment.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372359089434" ignored="false" />
     <file path="/pulses.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372361853631" ignored="false" />
     <file path="/pulse_comments_helper.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372174997891" ignored="false" />
-    <file path="/_assembly_pulse_form.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372182324653" ignored="false" />
+    <file path="/_assembly_pulse_form.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372648540083" ignored="false" />
     <file path="/show_assemblies.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372221195570" ignored="false" />
     <file path="/pulse_comments.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372353882404" ignored="false" />
     <file path="/production.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372628009160" ignored="false" />
@@ -112,16 +113,25 @@
       <file leaf-file-name="pulses_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/pulses_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="35" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.0">
+            <state line="23" column="10" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_pulse.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_pulse.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pulses/_pulse.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="70" selection-start="1168" selection-end="1184" vertical-scroll-proportion="0.6836461">
+            <state line="10" column="8" selection-start="387" selection-end="387" vertical-scroll-proportion="-6.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_assembly_pulse_form.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/assemblies/_assembly_pulse_form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="61" selection-start="468" selection-end="468" vertical-scroll-proportion="0.45454547">
               <folding />
             </state>
           </provider>
@@ -147,7 +157,19 @@
         <entry file="file://$PROJECT_DIR$/app/views/static/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="6.4166665">
-              <folding />
+              <folding>
+                <marker date="1372099294000" expanded="true" signature="29:562" placeholder="..." />
+                <marker date="1372099294000" expanded="true" signature="56:119" placeholder="..." />
+                <marker date="1372099294000" expanded="true" signature="67:108" placeholder="..." />
+                <marker date="1372099294000" expanded="true" signature="141:175" placeholder="..." />
+                <marker date="1372099294000" expanded="true" signature="197:332" placeholder="..." />
+                <marker date="1372099294000" expanded="true" signature="225:321" placeholder="..." />
+                <marker date="1372099294000" expanded="true" signature="243:306" placeholder="..." />
+                <marker date="1372099294000" expanded="true" signature="356:367" placeholder="..." />
+                <marker date="1372099294000" expanded="true" signature="453:499" placeholder="..." />
+                <marker date="1372099294000" expanded="true" signature="604:789" placeholder="..." />
+                <marker date="1372099294000" expanded="true" signature="643:696" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,15 +178,6 @@
         <entry file="file://$PROJECT_DIR$/app/controllers/static_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="7" column="29" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_header.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="11" selection-start="175" selection-end="175" vertical-scroll-proportion="-2.5">
               <folding />
             </state>
           </provider>
@@ -200,7 +213,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/pulse_comments_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/assemblies_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pulses.css.scss" />
         <option value="$PROJECT_DIR$/lib/network.rb" />
@@ -213,9 +225,10 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/network.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/pulses_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/static_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/pulses_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/pulses/_pulse.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/assemblies/_assembly_pulse_form.html.erb" />
       </list>
     </option>
   </component>
@@ -453,6 +466,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pulsefy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pulsefy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assemblies" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -968,13 +1003,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_error_messages.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1050,17 +1078,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/pulses_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="35" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="6.4166665">
-          <folding />
+          <folding>
+            <marker date="1372099294000" expanded="true" signature="29:562" placeholder="..." />
+            <marker date="1372099294000" expanded="true" signature="56:119" placeholder="..." />
+            <marker date="1372099294000" expanded="true" signature="67:108" placeholder="..." />
+            <marker date="1372099294000" expanded="true" signature="141:175" placeholder="..." />
+            <marker date="1372099294000" expanded="true" signature="197:332" placeholder="..." />
+            <marker date="1372099294000" expanded="true" signature="225:321" placeholder="..." />
+            <marker date="1372099294000" expanded="true" signature="243:306" placeholder="..." />
+            <marker date="1372099294000" expanded="true" signature="356:367" placeholder="..." />
+            <marker date="1372099294000" expanded="true" signature="453:499" placeholder="..." />
+            <marker date="1372099294000" expanded="true" signature="604:789" placeholder="..." />
+            <marker date="1372099294000" expanded="true" signature="643:696" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1071,9 +1104,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/pulses_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="10" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pulses/_pulse.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="70" selection-start="1168" selection-end="1184" vertical-scroll-proportion="0.6836461">
+        <state line="10" column="8" selection-start="387" selection-end="387" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/assemblies/_assembly_pulse_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="61" selection-start="468" selection-end="468" vertical-scroll-proportion="0.45454547">
           <folding />
         </state>
       </provider>
