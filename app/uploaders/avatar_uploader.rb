@@ -15,7 +15,7 @@ class AvatarUploader < CarrierWave::Uploader::Base
 
   # Override the directory where uploaded files will be stored.
   def store_dir
-    "uploads/#{model.class.to_s.underscore}/#{model.id}/"
+    "public/#{model.class.to_s.underscore}/#{model.id}/"
   end
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
