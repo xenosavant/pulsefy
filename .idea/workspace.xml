@@ -123,7 +123,7 @@
       <file leaf-file-name="pulse.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/pulse.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="54" selection-start="505" selection-end="505" vertical-scroll-proportion="0.3375">
+            <state line="20" column="23" selection-start="767" selection-end="767" vertical-scroll-proportion="0.75">
               <folding />
             </state>
           </provider>
@@ -1155,7 +1155,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/pulse.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="54" selection-start="505" selection-end="505" vertical-scroll-proportion="0.3375">
+        <state line="20" column="23" selection-start="767" selection-end="767" vertical-scroll-proportion="0.75">
           <folding />
         </state>
       </provider>
