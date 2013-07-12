@@ -7,6 +7,7 @@ class Pulse < ActiveRecord::Base
                   :tags, :link, :embed_code, :thumbnail, :link_type, :url, :headline
   validates :content, :presence => true, :length => { :maximum => 250 }
   validates :tags, :length => { :maximum => 50 }
+  validates :headline, :length => { :maximum => 50 }
   validates :link, :allow_blank => true, :format => { :with => URI::regexp(%w(http https)), :message => "Valid URL required"}
   default_scope order 'pulses.created_at DESC'
 
