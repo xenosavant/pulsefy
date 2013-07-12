@@ -1,26 +1,24 @@
 <!DOCTYPE html>
+<html>
 <head>
   <title>Pulsefy</title>
   <%= stylesheet_link_tag    'application', :media => 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
-  <% if signed_in? %>
-      <%= link_to 'Home', root_path %> |
-      <%= link_to 'Form an Assembly', assemble_path %> |
-      <%= link_to 'My Assemblies', view_path(:id => current_node.id) %> (<%= current_node.assemblies.count%>) |
-      <%= link_to 'My Inputs', inputs_path(:id => current_node.id) %> (<%= current_node.inputs.count%>) |
-      <%= link_to 'My Outputs', outputs_path(:id => current_node.id) %> (<%= current_node.outputs.count%>)
-    <br> </br>
-  <%end%>
-    <body>
-    <%= render 'layouts/header' %>
+<body>
+<%= render 'layouts/header' %>
+<% if signed_in? %>
+<div class = 'sidebar'>
+<%= render 'layouts/sidebar' %>
+</div>
+<%end%>
+    <main>
         <% flash.each do |key, value| %>
          <div class='alert'<%= key %>"><%= value %></div>
         <% end %>
         <%= yield %>
-        <%= render 'layouts/footer' %>
         </div>
-    </body>
-</div>
+    </main>
+   </body>
 </html>

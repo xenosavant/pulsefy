@@ -1,8 +1,7 @@
-<body>
+<main>
 <div class='username'>
   <h3> <%= @node.username%></h3>
 </div>
-
 <%= image_tag @node.avatar_url(:profile) if @node.avatar? %>
 <div>
  <%= link_to 'Assemblies', view_path(:id => @node.id) %> (<%= @node.assemblies.count%>)
@@ -14,11 +13,11 @@
 </div>
 
 <% if @node.pulses.any? %>
-      <h4>Pulsefeed</h4>
+      <h3>Pulsefeed</h3>
       <ol class="pulses">
         <%= render @pulses %>
       </ol>
       <%= will_paginate @pulses %>
 <% end %>
 
-</body>
+</main>

@@ -8,10 +8,12 @@ Pulsefy::Application.routes.draw do
 
   root :to => 'static#home'
 
+  match '/inpulse' => 'assemblies#assembly_pulse_form'
+  match '/members' => 'nodes#members'
   match '/uncomment' => 'pulse_comments#destroy'
   match '/delete'  => 'pulses#destroy'
   match '/reassemble' => 'assemblies#edit'
-  match '/view'  =>  'assemblies#index'
+  match '/view'  =>  'assemblies#show_assemblies'
   match '/inputs' => 'nodes#show_inputs'
   match '/outputs' => 'nodes#show_outputs'
   match '/quit' => 'assemblies#quit'

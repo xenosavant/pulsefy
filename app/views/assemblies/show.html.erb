@@ -6,6 +6,7 @@
   <div class='info'>
     <%= @assembly.info%>
   </div>
+<%= link_to 'members', members_path(:id => @assembly.id)%>
 
   <% if signed_in? %>
     <% if current_node.assemblies.include?(@assembly)%>
@@ -14,7 +15,16 @@
         <% else %>
         <%= link_to 'quit', quit_path(:id => @assembly.id)%>
         <% end %>
-            <%= render 'assemblies/assembly_pulse_form' %>
+        <% if params[:errors] %>
+            <div id="error_explanation">
+              <ul>
+                <%params[:errors].each do |msg| %>
+                    <li>* <%= msg %></li>
+                <% end %>
+              </ul>
+            </div>
+        <%end%>
+            <%= render 'assemblies/assembly_pulse_form'%>
       <% else %>
         <%= link_to 'join', join_path(:id => @assembly.id)%>
     <% end %>

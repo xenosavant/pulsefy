@@ -53,9 +53,9 @@ class NodesController < ApplicationController
     @nodes = @node.inputs.paginate(:page => params[:page])
   end
 
-  def show_assemblies
-    @node = Node.find(params[:id])
-    @assemblies = @node.assemblies.paginate(:page => params[:page])
+  def members
+    @assembly = Assembly.find(params[:id])
+    @nodes = @assembly.nodes.paginate(:page => params[:page])
   end
 
   def new

@@ -1,38 +1,26 @@
 <% if signed_in? %>
-    <body>
-    <div class='username'>
-      <h3>
-      <%= @node.username%>
-        </h3>
-    </div>
-    <div class='row'>
-      <%= @node.info%>
-    </div>
-    <div class="row">
-      <aside class="span4">
-        <section>
-          <%= render 'shared/pulse_form' %>
-        </section>
-      </aside>
-    </div>
-    <div class="span8">
-    </div>
+ <main>
+   <div class="row">
+     <aside class="span4">
+         <%= render 'shared/pulse_form' %>
+     </aside>
+   </div>
     <% if @node.pulses.any? %>
-        <h4>Pulsefeed</h4>
-        <ol class="pulses">
+       <h3>Pulsefeed</h3>
+         <ol class="pulses">
           <%= render @pulses %>
-        </ol>
+         </ol>
         <%= will_paginate @pulses %>
-    <% end %>
-    </body>
+      <% end %>
+</main>
 <% else %>
+    <body>
 <div class="center hero-unit">
   <h1>Welcome to Pulsefy!</h1>
-
   <h2>
     The World's First Social Neural Network!
   </h2>
-
   <%= link_to "Pulsefy!", '/pulseup', :class => "btn btn-large btn-primary" %>
       </div>
+    </body>
 <% end %>

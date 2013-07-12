@@ -59,9 +59,11 @@ class AssembliesController < ApplicationController
     @assembly = Assembly.new(params[:node])
   end
 
-  def index
+  def show_assemblies
     @node = Node.find(params[:id])
-    @assemblies = @node.assemblies.paginate(:page => params[:page])
+    @temp = @node.assemblies
+    @assemblies = @temp.paginate(:page => params[:page])
   end
+
 
 end

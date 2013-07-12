@@ -7,7 +7,7 @@ before_filter :signed_in_node
     @pulse.update_attributes(:reinforcements => 0, :degradations => 0,
                                :depth => 0)
     if @pulse.link
-      @pulse.update_embed
+      update_embed
     end
     if @pulse.save
       flash[:success] = 'Pulse Fired!'
@@ -20,14 +20,15 @@ before_filter :signed_in_node
                    redirect_to Assembly.find(session[:return_to])
                end
           end
-
-   else
-      flash[:alert] = 'Content Cannot Be Blank!'
+    else
       if @pulse.pulser_type == 'Node'
-        redirect_to root_url(params[:node])
+      redirect_to root_url(:errors => @pulse.errors.full_messages)
       else
-        redirect_to Assembly.find(session[:return_to])
+      @assembly = Assembly.find(session[:return_to])
+      redirect_to :controller => 'assemblies', :action => 'show',
+                  :id => session[:return_to], :errors => @pulse.errors.full_messages
       end
+
    end
   end
 
@@ -40,10 +41,15 @@ before_filter :signed_in_node
 
   def destroy
     @pulse = Pulse.find(params[:id])
-    @node = Node.find(@pulse.pulser)
+    if @pulse.pulser_type == 'Node'
     @pulse.destroy
     flash[:success] = "Pulse deleted."
     redirect_to Node.find(session[:return_to])
+    else
+    @pulse.destroy
+    flash[:success] = "Pulse deleted."
+    redirect_to Assembly.find(session[:return_to])
+    end
   end
 
   def cast
@@ -51,5 +57,17 @@ before_filter :signed_in_node
   current_node.rate_pulse(:pulse => @pulse, :rating => params[:vote_cast])
   redirect_to Node.find(session[:return_to])
   end
+
+def update_embed
+  api = Embedly::API.new
+  @embed = api.oembed :url =>@pulse.link
+  if @embed[0].error
+    redirect_to current_node
+    else
+    @pulse.update_attributes(:embed_code => @embed[0].html, :thumbnail => @embed[0].thumbnail_url,
+                           :link_type => @embed[0].type, :url => @embed[0].url)
+  end
+end
+
 
 end

@@ -14,8 +14,8 @@ ActiveRecord::Schema.define(:version => 20130620011441) do
 
   create_table "assemblies", :force => true do |t|
     t.string   "title"
-    t.string   "info"
     t.string   "avatar"
+    t.text     "info"
     t.integer  "founder"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(:version => 20130620011441) do
 
   create_table "messages", :force => true do |t|
     t.integer  "inbox_id_id"
+    t.text     "content"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
@@ -58,10 +59,11 @@ ActiveRecord::Schema.define(:version => 20130620011441) do
   create_table "nodes", :force => true do |t|
     t.string   "username"
     t.string   "email"
-    t.string   "info"
     t.string   "remember_token"
     t.string   "avatar"
+    t.text     "info"
     t.boolean  "admin"
+    t.boolean  "hub"
     t.string   "password_digest"
     t.float    "threshold"
     t.datetime "created_at",      :null => false
@@ -76,7 +78,7 @@ ActiveRecord::Schema.define(:version => 20130620011441) do
   end
 
   create_table "pulse_comments", :force => true do |t|
-    t.string   "content"
+    t.text     "content"
     t.integer  "commenter"
     t.integer  "pulse_id"
     t.datetime "created_at", :null => false
@@ -89,14 +91,15 @@ ActiveRecord::Schema.define(:version => 20130620011441) do
     t.integer  "degradations"
     t.integer  "pulser"
     t.integer  "pulse_comments_count", :default => 0
-    t.string   "content"
     t.string   "pulser_type"
-    t.string   "link"
     t.string   "tags"
-    t.string   "embed_code"
-    t.string   "thumbnail"
-    t.string   "link_type"
-    t.string   "url"
+    t.string   "headline"
+    t.text     "link_type"
+    t.text     "embed_code"
+    t.text     "link"
+    t.text     "content"
+    t.text     "url"
+    t.text     "thumbnail"
     t.datetime "created_at",                          :null => false
     t.datetime "updated_at",                          :null => false
   end

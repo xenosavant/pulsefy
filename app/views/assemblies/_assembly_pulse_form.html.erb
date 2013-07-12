@@ -1,5 +1,7 @@
 <%= form_for(@pulse) do |f| %>
-    <%= render 'shared/error_messages', :object => f.object %>
+    <div class="field">
+      <%= f.text_field :headline, :placeholder => "Add a headline" %>
+    </div>
     <div class="field">
       <%= f.text_field :link, :placeholder => "Add a link" %>
     </div>

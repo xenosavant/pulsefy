@@ -1,15 +1,14 @@
+<div class="headline"><%= @pulse.headline %></div>
 <%if @pulse.link_type == 'video' %>
     <div class ="video-container"><%= raw @pulse.embed_code %></div>
-<%else if @pulse.link_type == 'photo' %>
+<%else %>
+    <%if @pulse.link_type == 'photo' %>
         <div class ="photo-container"> <img src = <%= raw @pulse.url %> > </div>
     <%else%>
         <div><a href = <%= @pulse.link %>><%= @pulse.link%></a></div>
+    <% end %>
 
 <% end %>
-<% end %>
-
-<br><span class="content"><%= @pulse.content %></span></br>
-<d>
   <span>Pulsed by
     <%if @pulse.pulser == current_node.id %>
         Me
@@ -17,8 +16,6 @@
         <%= Node.find(@pulse.pulser).username %>
     <%end%>
    </span>
- </d>
-
   <% if @pulse.pulse_comments.any? %>
       <h4>Comments (<%= @pulse.pulse_comments.count %>)</h4>
       <ol class="pulse_comments">

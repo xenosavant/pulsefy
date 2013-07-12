@@ -1,4 +1,4 @@
-
+<li>
   <%= image_tag assembly.avatar_url(:thumb) if assembly.avatar? %>
   <%= link_to assembly.title, assembly_path(:id => assembly.id) %><br>
   <% if signed_in? and assembly.founder == current_node.id %>
@@ -8,5 +8,5 @@
       <span class="founder">founded by <%= Node.find(assembly.founder).username %></span>
    <% end %>
   </br>
-
+</li>
 

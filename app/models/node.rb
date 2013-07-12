@@ -12,6 +12,7 @@ class Node < ActiveRecord::Base
             :uniqueness => { :case_sensitive => false }, :on => :create
   validates :password, :presence => true, :length => { :minimum => 6 }, :on => :create
   validates :password_confirmation, :presence => true, :on => :create
+  validates :info, :length => { :maximum => 250 }
   has_and_belongs_to_many :pulses
   has_and_belongs_to_many :assemblies
   has_many :connectors, :foreign_key => 'input_id', :dependent => :destroy
@@ -23,7 +24,6 @@ class Node < ActiveRecord::Base
   has_one  :inbox
 
   include Network
-
 
 
   def get_pulse(args)
@@ -58,6 +58,7 @@ class Node < ActiveRecord::Base
   def defaults
     @threshold = 0.5
     @admin = false
+    @hub = false
   end
 
   private
