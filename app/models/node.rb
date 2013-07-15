@@ -52,6 +52,7 @@ class Node < ActiveRecord::Base
       @impulse.increment!(:reinforcements)
       modify_reinforcement(:pulse => @impulse, :rating => 0)
       @vote.update_attributes(:rating =>  0, :pulse_id => @impulse.id)
+      self.pulses.delete(@impulse)
     end
   end
 

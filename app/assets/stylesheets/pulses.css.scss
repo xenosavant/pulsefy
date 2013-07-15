@@ -45,8 +45,8 @@ info-container {
   display: block;
   max-width: 100%;
   background-color: #e8e8e8;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  border-color: #000000;
+  border-width: 3px;
 }
 
 .depth {
@@ -70,7 +70,7 @@ info-container {
 
 .video-container {
   position: relative;
-  padding-bottom: 300px;
+  padding-bottom: 291px;
   padding-top: 30px;
   height: 0;
   overflow: hidden;

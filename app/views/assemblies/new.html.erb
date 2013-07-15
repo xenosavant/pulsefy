@@ -1,19 +1,18 @@
-<div class="row">
-  <div class="span6 offset3">
-    <%= form_for(@assembly) do |f| %>
-        <%= render 'shared/error_messages', :object => f.object %>
+<body>
+    <main>
+                <%= form_for(@assembly) do |f| %>
+                <%= render 'shared/error_messages', :object => f.object %>
 
-        <%= f.label :title %>
-        <%= f.text_field :title %>
+                <%= f.label :title %>
+                <%= f.text_field :title %>
 
-        <%= f.label :info %>
-        <%= f.text_area :info, :size => '20x8' %>
+                <%= f.label :info %>
+                <%= f.text_area :info, :size => '10x8' %>
 
-        <div class='center'>
-        <%= f.submit 'Assemble!', :class => "btn btn-large btn-primary" %>
+                <div class='center'>
+                <%= f.submit 'Assemble!', :class => "btn btn-large btn-primary" %>
 
-    </div>
-    <% end %>
-  </div>
-</div>
-</html>
+                <% end %>
+        </div>
+    </main>
+</body>

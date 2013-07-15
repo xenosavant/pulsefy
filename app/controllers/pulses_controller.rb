@@ -6,7 +6,7 @@ before_filter :signed_in_node
     @pulse = current_node.pulses.build(params[:pulse])
     @pulse.update_attributes(:reinforcements => 0, :degradations => 0,
                                :depth => 0)
-    if @pulse.link
+    if !@pulse.link.nil?
       update_embed
     end
     if @pulse.save
@@ -62,7 +62,11 @@ def update_embed
   api = Embedly::API.new
   @embed = api.oembed :url =>@pulse.link
   if @embed[0].error
+    if @pulse.pulser_type == 'Node'
     redirect_to current_node
+    else
+    redirect_to Assembly.find(session[:return_to])
+    end
     else
     @pulse.update_attributes(:embed_code => @embed[0].html, :thumbnail => @embed[0].thumbnail_url,
                            :link_type => @embed[0].type, :url => @embed[0].url)

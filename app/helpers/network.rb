@@ -42,7 +42,7 @@ module Network
                  end
           else
               @synapse = self.connectors.build
-              @synapse.update_attributes(:strength => 0.4, :output_id => p.pulser)
+              @synapse.update_attributes(:strength => 0.46, :output_id => p.pulser)
           end
         end
       end
@@ -53,7 +53,7 @@ module Network
   def modify_reinforcement(args)
       @impulse = args[:pulse]
       @rating = args[:rating]
-      if Node.find(@impulse.pulser).connectors.find_by_output_id(self.id)
+      if Node.find(@impulse.pulser).outputs.include?(self)
         @synapse = Node.find(@impulse.pulser).connectors.find_by_output_id(self.id)
         modify_synapse(:synapse => @synapse, :rating => @rating)
       else

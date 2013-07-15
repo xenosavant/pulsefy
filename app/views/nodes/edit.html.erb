@@ -1,8 +1,6 @@
+<main>
 <% provide(:title, "Edit node") %>
 <h1>Update Your Pulsefile</h1>
-
-<div class='row'>
-  <div class='span6 offset3'>
     <%= form_for @node, :html => {:multipart => true} do |f| %>
         <%= render 'shared/error_messages', :object => f.object %>
 
@@ -14,10 +12,11 @@
 
         <%= f.label 'upload pulsefile picture' %>
         <%= image_tag @node.avatar_url(:thumb) if @node.avatar? %>
-        <%= f.file_field :avatar %>
-
-
+        <%= f.file_field :avatar, :size => '10x10' %>
+        <br>
+      <div class = 'center'>
         <%= f.submit 'Save changes', :class => 'btn btn-large btn-primary' %>
+      </div>
+        </br>
         <% end %>
-  </div>
-</div>
+</main>
