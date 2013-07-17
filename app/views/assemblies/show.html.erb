@@ -11,7 +11,7 @@
   <% if signed_in? %>
     <% if current_node.assemblies.include?(@assembly)%>
       <% if @assembly.founder == current_node.id %>
-          <%= link_to 'edit', reassemble_path(:id => @assembly.id)%>
+         <br> <%= link_to 'edit', reassemble_path(:id => @assembly.id)%></br>
         <% else %>
         <%= link_to 'quit', quit_path(:id => @assembly.id)%>
         <% end %>
