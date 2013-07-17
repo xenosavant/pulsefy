@@ -1,9 +1,12 @@
 <%= form_for(@pulse) do |f| %>
     <% if params[:errors] %>
-    <div id="error_explanation">
-      <ul>
+        <div id="error_explanation">
+          <div class="alert alert-error">
+            The form contains <%= pluralize(object.errors.count, "error") %>.
+          </div>
+          <ul>
         <%params[:errors].each do |msg| %>
-            <li>* <%= msg %></li>
+            <li> <%= msg %></li>
         <% end %>
       </ul>
     </div>

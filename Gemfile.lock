@@ -57,18 +57,18 @@ GEM
     ethon (0.5.12)
       ffi (>= 1.3.0)
       mime-types (~> 1.18)
-    excon (0.7.12)
+    excon (0.23.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffi (1.9.0)
-    fog (1.0.0)
+    fog (1.12.1)
       builder
-      excon (~> 0.7.3)
+      excon (~> 0.23.0)
       formatador (~> 0.2.0)
       mime-types
-      multi_json (~> 1.0.3)
-      net-scp (~> 1.0.4)
-      net-ssh (~> 2.1.4)
+      multi_json (~> 1.0)
+      net-scp (~> 1.1)
+      net-ssh (>= 2.1.3)
       nokogiri (~> 1.5.0)
       ruby-hmac
     formatador (0.2.4)
@@ -85,9 +85,9 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.23)
     multi_json (1.0.4)
-    net-scp (1.0.4)
-      net-ssh (>= 1.99.1)
-    net-ssh (2.1.4)
+    net-scp (1.1.2)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.6.8)
     nokogiri (1.5.10)
     oauth (0.4.7)
     pg (0.15.1)
@@ -155,7 +155,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   compass
   embedly
-  fog (= 1.0.0)
+  fog (= 1.12.1)
   jquery-rails
   json
   pg
