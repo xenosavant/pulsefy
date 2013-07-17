@@ -8,7 +8,7 @@
   <%else%>
   <a href = <%= pulse.link %>><%= pulse.link%></a>
    <%end%>
-  <div id = 'content'><%= pulse.content %></div>
+  <div class = 'content'><%= pulse.content %></div>
     <div class = 'info-container'>
       <%= image_tag Node.find(pulse.pulser).avatar_url(:thumb) if Node.find(pulse.pulser).avatar? %>
        <span class = 'details'>
