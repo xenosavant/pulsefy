@@ -29,7 +29,7 @@ class NodesController < ApplicationController
   def update
     @node = Node.find(params[:id])
       if @node.update_attributes(params[:node])
-        flash[:success] = "Pulsefile updated!"
+        flash[:success] = "Pulsefeed updated!"
         sign_in @node
         redirect_to @node
       else

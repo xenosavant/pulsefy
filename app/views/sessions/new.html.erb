@@ -1,10 +1,7 @@
-<body>
-<main>
+<div class = 'center'>
 <% provide(:title, 'Pulse In') %>
 <h1>Pulse In</h1>
 
-<div class="row">
-  <div class="span6 offset3">
     <%= form_for(:session, :url => sessions_path) do |f| %>
 
     <%= f.label :email %>
@@ -13,20 +10,15 @@
     <%= f.label :password %>
     <%= f.password_field :password %>
 
-    <div class='center'>
-    <%= f.submit "Pulse In", :class => "btn btn-large btn-primary" %>
+    <br>
+      <%= f.submit "Pulse In", :class => "btn btn-large btn-primary" %>
+    </br>
     <% end %>
-    <br>
-    <br>
-    <br>
-    <div class="center">
-    <p>New to Pulsefy? <%= link_to "Pulsefy yourself now!", pulseup_path %></p>
-        </div>
-    </br>
-    </br>
-    </br>
-      </div>
-  </div>
+        <br>
+        <br>
+        <br>
+        New to Pulsefy? <%= link_to "Pulsefy yourself now!", pulseup_path %>
+        </br>
+        </br>
+        </br>
 </div>
-</main>
-</body>

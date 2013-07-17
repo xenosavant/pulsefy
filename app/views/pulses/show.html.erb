@@ -1,21 +1,26 @@
+<main>
 <div class="headline"><%= @pulse.headline %></div>
-<%if @pulse.link_type == 'video' %>
-    <div class ="video-container"><%= raw @pulse.embed_code %></div>
-<%else %>
-    <%if @pulse.link_type == 'photo' %>
-        <div class ="photo-container"> <img src = <%= raw @pulse.url %> > </div>
-    <%else%>
-        <div><a href = <%= @pulse.link %>><%= @pulse.link%></a></div>
-    <% end %>
-
-<% end %>
-  <span>Pulsed by
-    <%if @pulse.pulser == current_node.id %>
+<% case @pulse.link_type %>
+<%when 'video' %>
+    <%= raw @pulse.embed_code %>
+<%when 'photo' %>
+    <img src = <%= raw @pulse.url %> >
+<%else%>
+    <a href = <%= @pulse.link %>><%= @pulse.link%></a>
+<%end%>
+<div id = 'content'><%= @pulse.content %></div>
+<div class = 'info-container'>
+  <%= image_tag Node.find(@pulse.pulser).avatar_url(:thumb) if Node.find(@pulse.pulser).avatar? %>
+  <span class = 'details'>
+        Pulsed by
+    <%if signed_in? and @pulse.pulser == current_node.id %>
         Me
+        <%= link_to 'delete', delete_path(:id => @pulse.id) %>
         <%else %>
         <%= Node.find(@pulse.pulser).username %>
+        </span>
+        </div>
     <%end%>
-   </span>
   <% if @pulse.pulse_comments.any? %>
       <h4>Comments (<%= @pulse.pulse_comments.count %>)</h4>
       <ol class="pulse_comments">
@@ -26,8 +31,7 @@
 
   <div class="row">
     <aside class="span4">
-      <section>
         <%= render 'shared/pulse_comment_form' %>
-      </section>
     </aside>
   </div>
+</main>
