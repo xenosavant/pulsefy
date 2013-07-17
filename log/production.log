@@ -40360,3 +40360,108 @@ ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   -e:1
 
 
+Started GET "/favicon.ico" for 127.0.0.1 at Wed Jul 17 16:44:06 -0400 2013
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.5) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+  -e:1:in `load'
+  -e:1
+
+
+Compiled jquery.js  (7ms)  (pid 14928)
+Compiled jquery_ujs.js  (0ms)  (pid 14928)
+Compiled bootstrap-transition.js  (0ms)  (pid 14928)
+Compiled bootstrap-affix.js  (0ms)  (pid 14928)
+Compiled bootstrap-alert.js  (0ms)  (pid 14928)
+Compiled bootstrap-button.js  (0ms)  (pid 14928)
+Compiled bootstrap-carousel.js  (0ms)  (pid 14928)
+Compiled bootstrap-collapse.js  (0ms)  (pid 14928)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 14928)
+Compiled bootstrap-modal.js  (0ms)  (pid 14928)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 14928)
+Compiled bootstrap-tab.js  (0ms)  (pid 14928)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 14928)
+Compiled bootstrap-popover.js  (0ms)  (pid 14928)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 14928)
+Compiled bootstrap.js  (150ms)  (pid 14928)
+Compiled assemblies.js  (77ms)  (pid 14928)
+Compiled inbox.js  (153ms)  (pid 14928)
+Compiled nodes.js  (66ms)  (pid 14928)
+Compiled pulse_comments.js  (64ms)  (pid 14928)
+Compiled pulses.js  (144ms)  (pid 14928)
+Compiled application.js  (829ms)  (pid 14928)
+Compiled assemblies.css  (3140ms)  (pid 14928)
+Compiled custom.css  (1670ms)  (pid 14928)
+Compiled inbox.css  (1ms)  (pid 14928)
+Compiled nodes.css  (1041ms)  (pid 14928)
+Compiled pulse_comments.css  (905ms)  (pid 14928)
+Compiled pulses.css  (1028ms)  (pid 14928)
+Compiled application.css  (7831ms)  (pid 14928)
+Compiled jquery.js  (65ms)  (pid 14928)
+Compiled jquery_ujs.js  (0ms)  (pid 14928)
+Compiled bootstrap-transition.js  (0ms)  (pid 14928)
+Compiled bootstrap-affix.js  (0ms)  (pid 14928)
+Compiled bootstrap-alert.js  (0ms)  (pid 14928)
+Compiled bootstrap-button.js  (0ms)  (pid 14928)
+Compiled bootstrap-carousel.js  (0ms)  (pid 14928)
+Compiled bootstrap-collapse.js  (0ms)  (pid 14928)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 14928)
+Compiled bootstrap-modal.js  (0ms)  (pid 14928)
+Compiled bootstrap-scrollspy.js  (55ms)  (pid 14928)
+Compiled bootstrap-tab.js  (0ms)  (pid 14928)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 14928)
+Compiled bootstrap-popover.js  (0ms)  (pid 14928)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 14928)
+Compiled bootstrap.js  (157ms)  (pid 14928)
+Compiled assemblies.js  (98ms)  (pid 14928)
+Compiled inbox.js  (75ms)  (pid 14928)
+Compiled nodes.js  (137ms)  (pid 14928)
+Compiled pulse_comments.js  (76ms)  (pid 14928)
+Compiled pulses.js  (65ms)  (pid 14928)
+Compiled application.js  (735ms)  (pid 14928)
+Compiled assemblies.css  (2886ms)  (pid 14928)
+Compiled custom.css  (1759ms)  (pid 14928)
+Compiled inbox.css  (1ms)  (pid 14928)
+Compiled nodes.css  (969ms)  (pid 14928)
+Compiled pulse_comments.css  (838ms)  (pid 14928)
+Compiled pulses.css  (1155ms)  (pid 14928)
+Compiled application.css  (7769ms)  (pid 14928)
