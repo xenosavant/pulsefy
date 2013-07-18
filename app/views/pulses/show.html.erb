@@ -1,14 +1,15 @@
 <main>
+<div class = "show-container">
 <div class="headline"><%= @pulse.headline %></div>
 <% case @pulse.link_type %>
 <%when 'video' %>
-    <%= raw @pulse.embed_code %>
+<%= raw @pulse.embed_code %>
 <%when 'photo' %>
     <img src = <%= raw @pulse.url %> >
 <%else%>
     <a href = <%= @pulse.link %>><%= @pulse.link%></a>
 <%end%>
-<div id = 'content'><%= @pulse.content %></div>
+<div class = 'content'><%= @pulse.content %></div>
 <div class = 'info-container'>
   <%= image_tag Node.find(@pulse.pulser).avatar_url(:thumb) if Node.find(@pulse.pulser).avatar? %>
   <span class = 'details'>
@@ -34,4 +35,5 @@
         <%= render 'shared/pulse_comment_form' %>
     </aside>
   </div>
+ </div>
 </main>

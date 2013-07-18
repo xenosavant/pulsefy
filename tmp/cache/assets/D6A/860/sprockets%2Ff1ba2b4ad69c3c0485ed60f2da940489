@@ -1,4 +1,5 @@
-o: ActiveSupport::Cache::Entry	:@expires_in0:@compressedF:@value"$?{"required_paths["[/Library/Ruby/Gems/1.8/gems/jquery-rails-3.0.4/vendor/assets/javascripts/jquery_ujs.js"content_type"application/javascript"source"u<(function($, undefined) {
+o: ActiveSupport::Cache::Entry	:@expires_in0:@compressedF:@value"$?{"dependency_paths[{"	path"[/Library/Ruby/Gems/1.8/gems/jquery-rails-3.0.4/vendor/assets/javascripts/jquery_ujs.js"digest"%eae9c2cc0bdf2535ad8ab46fc1469012"
+mtime"2013-07-13T17:45:29-04:00"dependency_digest"%7a9119cfc4fefafd6cbe97147515dc41"required_paths["[/Library/Ruby/Gems/1.8/gems/jquery-rails-3.0.4/vendor/assets/javascripts/jquery_ujs.js"digest"%eae9c2cc0bdf2535ad8ab46fc1469012"lengthiu<"logical_path"jquery_ujs.js"_version"%1b13569e9620782f423d4cd3ce931750"pathname"[/Library/Ruby/Gems/1.8/gems/jquery-rails-3.0.4/vendor/assets/javascripts/jquery_ujs.js"source"u<(function($, undefined) {
 
 /**
  * Unobtrusive scripting adapter for jQuery
@@ -392,7 +393,6 @@
   }
 
 })( jQuery );
-"digest"%eae9c2cc0bdf2535ad8ab46fc1469012"
-mtime"2013-07-13T17:45:29-04:00"_version"%1b13569e9620782f423d4cd3ce931750"logical_path"jquery_ujs.js"pathname"[/Library/Ruby/Gems/1.8/gems/jquery-rails-3.0.4/vendor/assets/javascripts/jquery_ujs.js"
-class"ProcessedAsset"lengthiu<"dependency_paths[{"	path"[/Library/Ruby/Gems/1.8/gems/jquery-rails-3.0.4/vendor/assets/javascripts/jquery_ujs.js"digest"%eae9c2cc0bdf2535ad8ab46fc1469012"
-mtime"2013-07-13T17:45:29-04:00"dependency_digest"%7a9119cfc4fefafd6cbe97147515dc41:@created_atf1374096533.0455699 êž
+"
+mtime"2013-07-13T17:45:29-04:00"content_type"application/javascript"
+class"ProcessedAsset:@created_atf1374112753.185873 åX
