@@ -4,14 +4,14 @@
 </div>
   <%= image_tag @assembly.avatar_url(:profile) if @assembly.avatar? %>
   <div class='info'>
-    <%= @assembly.info%>
+    <br><%= @assembly.info%></br>
   </div>
 <%= link_to 'members', members_path(:id => @assembly.id)%>
 
   <% if signed_in? %>
     <% if current_node.assemblies.include?(@assembly)%>
       <% if @assembly.founder == current_node.id %>
-         <br> <%= link_to 'edit', reassemble_path(:id => @assembly.id)%></br>
+         <br><%= link_to 'edit', reassemble_path(:id => @assembly.id)%></br>
         <% else %>
         <%= link_to 'quit', quit_path(:id => @assembly.id)%>
         <% end %>
@@ -19,7 +19,7 @@
             <div id="error_explanation">
               <ul>
                 <%params[:errors].each do |msg| %>
-                    <li>* <%= msg %></li>
+                    <li> <%= msg %></li>
                 <% end %>
               </ul>
             </div>
