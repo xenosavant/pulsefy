@@ -34,7 +34,6 @@ before_filter :signed_in_node
 
   def show
     @pulse = Pulse.find(params[:id])
-    store_location(params[:id])
     @pulse_comment = @pulse.pulse_comments.new
     @pulse_comments = @pulse.pulse_comments.paginate(:page => params[:page])
   end
