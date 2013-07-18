@@ -60,7 +60,7 @@ before_filter :signed_in_node
 
 def update_embed
   api = Embedly::API.new
-  @embed = api.oembed :url =>@pulse.link
+  @embed = api.oembed :url => @pulse.link
   if @embed[0].error
     if @pulse.pulser_type == 'Node'
     redirect_to current_node
