@@ -2,7 +2,7 @@
     <% if params[:errors] %>
         <div id="error_explanation">
           <div class="alert alert-error">
-            The form contains <%= pluralize(object.errors.count, "error") %>.
+            The form contains <%= pluralize(params[:errors].count, "error") %>.
           </div>
           <ul>
         <%params[:errors].each do |msg| %>

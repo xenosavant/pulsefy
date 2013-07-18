@@ -6,14 +6,11 @@ before_filter :signed_in_node
     @pulse = current_node.pulses.build(params[:pulse])
     @pulse.update_attributes(:reinforcements => 0, :degradations => 0,
                                :depth => 0)
-    if !@pulse.link.nil?
-      update_embed
-    end
     if @pulse.save
       flash[:success] = 'Pulse Fired!'
           if @pulse.pulser_type == 'Node'
             @node.pulses << @pulse
-              current_node.fire_pulse(:pulse => @pulse)
+              Node.find(@pulse.pulser).fire_pulse(:pulse => @pulse)
               redirect_to root_url(params[:node])
           else if @pulse.pulser_type == 'Assembly'
                    Assembly.find(session[:return_to]).pulses << @pulse
@@ -29,7 +26,10 @@ before_filter :signed_in_node
                   :id => session[:return_to], :errors => @pulse.errors.full_messages
       end
 
-   end
+    end
+    if !@pulse.link.nil?
+      update_embed
+    end
   end
 
   def show

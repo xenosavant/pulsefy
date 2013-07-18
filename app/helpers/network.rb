@@ -3,12 +3,6 @@ module Network
   @@tau_self = 0.09
   @@tau_reinforce = 0.15
 
-  def fire_pulse(args)
-    @impulse = args[:pulse]
-    process_fire_from(:pulse => @impulse)
-    modify_self(:pulse => @impulse)
-  end
-
   def process_fire_from(args)
       @impulse = args[:pulse]
     if self.outputs
@@ -26,15 +20,15 @@ module Network
         pulses = Pulse.where("created_at >= ? AND
                               pulser_type = ? AND
                               pulser != ?",
-                             1.day.ago.utc, "Node", self.id)
-        if !pulses.empty?
+                             1.day.ago.utc, 'Node', self.id)
+        if pulses
         pulses.find_each do |p|
           common = @impulse.tags.split(',') & p.tags.split(',')
           if common.length > 0
-          if !self.connectors.find_by_output_id(p.pulser).nil?
+          if self.outputs.include?(Node.find(p.pulser))
               @synapse = self.connectors.find_by_output_id(p.pulser)
                  if @synapse.updated_at < 1.minute.ago.utc
-                   new_strength = @synapse.strength * ((1 - @@tau_self) + (@@tau_self*(1.0 + common.length)))
+                   new_strength = @synapse.strength * ((1 - @@tau_self) + (@@tau_self*(1 + common.length)))
                     if new_strength > 1
                       new_strength = 1
                     end

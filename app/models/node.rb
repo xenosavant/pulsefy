@@ -25,6 +25,11 @@ class Node < ActiveRecord::Base
 
   include Network
 
+  def fire_pulse(args)
+    @impulse = args[:pulse]
+    process_fire_from(:pulse => @impulse)
+    modify_self(:pulse => @impulse)
+  end
 
   def get_pulse(args)
     @impulse = args[:pulse]
