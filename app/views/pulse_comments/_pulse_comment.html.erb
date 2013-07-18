@@ -1,6 +1,11 @@
 <li xmlns="http://www.w3.org/1999/html">
-<%= image_tag avatar_node(pulse_comment.commenter).avatar_url(:thumb)%>
-<span><%= pulse_comment.content %></span>
+<div class = 'content'><%= pulse_comment.content %></div>
+  <% case Node.find(pulse_comment.commenter).avatar_url(:thumb).nil? %>
+  <% when false %>
+      <%= image_tag Node.find(pulse_comment.commenter).avatar_url(:thumb) %>
+  <% else %>
+      <%= image_tag 'default.gif' %>
+  <% end %>
  <% if current_node.id == pulse_comment.commenter %>
    <%= link_to 'delete', uncomment_path(:id => pulse_comment.id) %>
   <%end%>
