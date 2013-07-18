@@ -2,7 +2,12 @@
 <div class='username'>
   <h3> <%= @node.username%></h3>
 </div>
+<% case @node.avatar %>
+<% when true %>
 <%= image_tag @node.avatar_url(:profile) if @node.avatar? %>
+<% else %>
+<%= image_tag 'default.gif' %>
+<% end %>
  <br></br>
 <div>
  <%= link_to 'Assemblies', view_path(:id => @node.id) %> (<%= @node.assemblies.count%>)

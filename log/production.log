@@ -44267,3 +44267,1555 @@ ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   -e:1
 
 
+Compiled jquery.js  (5ms)  (pid 15777)
+Compiled jquery_ujs.js  (0ms)  (pid 15777)
+Compiled bootstrap-transition.js  (0ms)  (pid 15777)
+Compiled bootstrap-affix.js  (0ms)  (pid 15777)
+Compiled bootstrap-alert.js  (0ms)  (pid 15777)
+Compiled bootstrap-button.js  (0ms)  (pid 15777)
+Compiled bootstrap-carousel.js  (1ms)  (pid 15777)
+Compiled bootstrap-collapse.js  (0ms)  (pid 15777)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 15777)
+Compiled bootstrap-modal.js  (0ms)  (pid 15777)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 15777)
+Compiled bootstrap-tab.js  (0ms)  (pid 15777)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 15777)
+Compiled bootstrap-popover.js  (0ms)  (pid 15777)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 15777)
+Compiled bootstrap.js  (200ms)  (pid 15777)
+Compiled assemblies.js  (97ms)  (pid 15777)
+Compiled inbox.js  (59ms)  (pid 15777)
+Compiled nodes.js  (66ms)  (pid 15777)
+Compiled pulse_comments.js  (62ms)  (pid 15777)
+Compiled pulses.js  (137ms)  (pid 15777)
+Compiled application.js  (773ms)  (pid 15777)
+Compiled assemblies.css  (2943ms)  (pid 15777)
+Compiled custom.css  (1697ms)  (pid 15777)
+Compiled inbox.css  (1ms)  (pid 15777)
+Compiled nodes.css  (941ms)  (pid 15777)
+Compiled pulse_comments.css  (918ms)  (pid 15777)
+Compiled pulses.css  (973ms)  (pid 15777)
+Compiled application.css  (8940ms)  (pid 15777)
+Compiled jquery.js  (6ms)  (pid 15777)
+Compiled jquery_ujs.js  (0ms)  (pid 15777)
+Compiled bootstrap-transition.js  (0ms)  (pid 15777)
+Compiled bootstrap-affix.js  (0ms)  (pid 15777)
+Compiled bootstrap-alert.js  (0ms)  (pid 15777)
+Compiled bootstrap-button.js  (0ms)  (pid 15777)
+Compiled bootstrap-carousel.js  (0ms)  (pid 15777)
+Compiled bootstrap-collapse.js  (0ms)  (pid 15777)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 15777)
+Compiled bootstrap-modal.js  (0ms)  (pid 15777)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 15777)
+Compiled bootstrap-tab.js  (0ms)  (pid 15777)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 15777)
+Compiled bootstrap-popover.js  (0ms)  (pid 15777)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 15777)
+Compiled bootstrap.js  (147ms)  (pid 15777)
+Compiled assemblies.js  (84ms)  (pid 15777)
+Compiled inbox.js  (162ms)  (pid 15777)
+Compiled nodes.js  (74ms)  (pid 15777)
+Compiled pulse_comments.js  (63ms)  (pid 15777)
+Compiled pulses.js  (65ms)  (pid 15777)
+Compiled application.js  (732ms)  (pid 15777)
+Compiled assemblies.css  (2876ms)  (pid 15777)
+Compiled custom.css  (1576ms)  (pid 15777)
+Compiled inbox.css  (1ms)  (pid 15777)
+Compiled nodes.css  (1006ms)  (pid 15777)
+Compiled pulse_comments.css  (1006ms)  (pid 15777)
+Compiled pulses.css  (981ms)  (pid 15777)
+Compiled application.css  (7544ms)  (pid 15777)
+Connecting to database specified by database.yml
+Started GET "/comment?id=5" for 127.0.0.1 at Wed Jul 17 22:10:28 -0400 2013
+Processing by PulsesController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendered pulse_comments/_pulse_comment.html.erb (60.8ms)
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered shared/_pulse_comment_form.erb (3.5ms)
+  Rendered pulses/show.html.erb within layouts/application (80.3ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_sidebar.html.erb (22.0ms)
+Completed 200 OK in 159ms (Views: 109.1ms | ActiveRecord: 7.1ms)
+Started GET "/favicon.ico" for 127.0.0.1 at Wed Jul 17 22:10:28 -0400 2013
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.5) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+  -e:1:in `load'
+  -e:1
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 17 22:10:32 -0400 2013
+Processing by StaticController#home as HTML
+  Rendered shared/_pulse_form.html.erb (2.9ms)
+  Rendered pulses/_pulse.html.erb (7.9ms)
+  Rendered static/home.html.erb within layouts/application (16.2ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_sidebar.html.erb (6.5ms)
+Completed 200 OK in 30ms (Views: 25.5ms | ActiveRecord: 1.4ms)
+Started GET "/favicon.ico" for 127.0.0.1 at Wed Jul 17 22:10:32 -0400 2013
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.5) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+  -e:1:in `load'
+  -e:1
+
+
+Started GET "/inputs?id=1" for 127.0.0.1 at Wed Jul 17 22:10:34 -0400 2013
+Processing by NodesController#show_inputs as HTML
+  Parameters: {"id"=>"1"}
+  Rendered nodes/_node.html.erb (3.0ms)
+  Rendered nodes/show_inputs.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_sidebar.html.erb (6.8ms)
+Completed 200 OK in 92ms (Views: 88.7ms | ActiveRecord: 0.9ms)
+Started GET "/favicon.ico" for 127.0.0.1 at Wed Jul 17 22:10:34 -0400 2013
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.5) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+  -e:1:in `load'
+  -e:1
+
+
+Started GET "/nodes/2" for 127.0.0.1 at Wed Jul 17 22:10:37 -0400 2013
+Processing by NodesController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendered nodes/show.html.erb within layouts/application (28.6ms)
+Completed 500 Internal Server Error in 32ms
+
+ActionView::Template::Error (assets/images/defult.gif isn't precompiled):
+    6: <% when true %>
+    7: <%= image_tag @node.avatar_url(:profile) if @node.avatar? %>
+    8: <% else %>
+    9: <%= image_tag 'assets/images/defult.gif' %>
+    10: <% end %>
+    11:  <br></br>
+    12: <div>
+  app/views/nodes/show.html.erb:9:in `_app_views_nodes_show_html_erb___822470903_2301228420'
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at Wed Jul 17 22:10:37 -0400 2013
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.5) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+  -e:1:in `load'
+  -e:1
+
+
+Compiled jquery.js  (6ms)  (pid 15824)
+Compiled jquery_ujs.js  (0ms)  (pid 15824)
+Compiled bootstrap-transition.js  (0ms)  (pid 15824)
+Compiled bootstrap-affix.js  (0ms)  (pid 15824)
+Compiled bootstrap-alert.js  (0ms)  (pid 15824)
+Compiled bootstrap-button.js  (0ms)  (pid 15824)
+Compiled bootstrap-carousel.js  (0ms)  (pid 15824)
+Compiled bootstrap-collapse.js  (0ms)  (pid 15824)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 15824)
+Compiled bootstrap-modal.js  (0ms)  (pid 15824)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 15824)
+Compiled bootstrap-tab.js  (0ms)  (pid 15824)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 15824)
+Compiled bootstrap-popover.js  (0ms)  (pid 15824)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 15824)
+Compiled bootstrap.js  (162ms)  (pid 15824)
+Compiled assemblies.js  (72ms)  (pid 15824)
+Compiled inbox.js  (61ms)  (pid 15824)
+Compiled nodes.js  (63ms)  (pid 15824)
+Compiled pulse_comments.js  (65ms)  (pid 15824)
+Compiled pulses.js  (140ms)  (pid 15824)
+Compiled application.js  (756ms)  (pid 15824)
+Compiled assemblies.css  (2939ms)  (pid 15824)
+Compiled custom.css  (1705ms)  (pid 15824)
+Compiled inbox.css  (1ms)  (pid 15824)
+Compiled nodes.css  (953ms)  (pid 15824)
+Compiled pulse_comments.css  (826ms)  (pid 15824)
+Compiled pulses.css  (958ms)  (pid 15824)
+Compiled application.css  (7564ms)  (pid 15824)
+Compiled jquery.js  (6ms)  (pid 15824)
+Compiled jquery_ujs.js  (0ms)  (pid 15824)
+Compiled bootstrap-transition.js  (0ms)  (pid 15824)
+Compiled bootstrap-affix.js  (0ms)  (pid 15824)
+Compiled bootstrap-alert.js  (0ms)  (pid 15824)
+Compiled bootstrap-button.js  (0ms)  (pid 15824)
+Compiled bootstrap-carousel.js  (0ms)  (pid 15824)
+Compiled bootstrap-collapse.js  (0ms)  (pid 15824)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 15824)
+Compiled bootstrap-modal.js  (0ms)  (pid 15824)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 15824)
+Compiled bootstrap-tab.js  (0ms)  (pid 15824)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 15824)
+Compiled bootstrap-popover.js  (0ms)  (pid 15824)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 15824)
+Compiled bootstrap.js  (156ms)  (pid 15824)
+Compiled assemblies.js  (71ms)  (pid 15824)
+Compiled inbox.js  (147ms)  (pid 15824)
+Compiled nodes.js  (65ms)  (pid 15824)
+Compiled pulse_comments.js  (133ms)  (pid 15824)
+Compiled pulses.js  (63ms)  (pid 15824)
+Compiled application.js  (785ms)  (pid 15824)
+Compiled assemblies.css  (2871ms)  (pid 15824)
+Compiled custom.css  (1676ms)  (pid 15824)
+Compiled inbox.css  (1ms)  (pid 15824)
+Compiled nodes.css  (1006ms)  (pid 15824)
+Compiled pulse_comments.css  (851ms)  (pid 15824)
+Compiled pulses.css  (961ms)  (pid 15824)
+Compiled application.css  (7408ms)  (pid 15824)
+Connecting to database specified by database.yml
+Started GET "/nodes/2" for 127.0.0.1 at Wed Jul 17 22:14:39 -0400 2013
+Processing by NodesController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendered nodes/show.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 89ms
+
+ActionView::Template::Error (public/assets/defult.gif isn't precompiled):
+    6: <% when true %>
+    7: <%= image_tag @node.avatar_url(:profile) if @node.avatar? %>
+    8: <% else %>
+    9: <%= image_tag 'public/assets/defult.gif' %>
+    10: <% end %>
+    11:  <br></br>
+    12: <div>
+  app/views/nodes/show.html.erb:9:in `_app_views_nodes_show_html_erb__417774761_2265121040'
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at Wed Jul 17 22:14:39 -0400 2013
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.5) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+  -e:1:in `load'
+  -e:1
+
+
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at Wed Jul 17 22:23:10 -0400 2013
+Processing by StaticController#home as HTML
+  Rendered shared/_pulse_form.html.erb (3.0ms)
+  Rendered pulses/_pulse.html.erb (13.5ms)
+  Rendered static/home.html.erb within layouts/application (30.8ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_sidebar.html.erb (72.8ms)
+Completed 200 OK in 209ms (Views: 109.9ms | ActiveRecord: 6.9ms)
+Started GET "/favicon.ico" for 127.0.0.1 at Wed Jul 17 22:23:11 -0400 2013
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.5) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+  -e:1:in `load'
+  -e:1
+
+
+Started GET "/inputs?id=1" for 127.0.0.1 at Wed Jul 17 22:23:13 -0400 2013
+Processing by NodesController#show_inputs as HTML
+  Parameters: {"id"=>"1"}
+  Rendered nodes/_node.html.erb (3.2ms)
+  Rendered nodes/show_inputs.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_sidebar.html.erb (7.2ms)
+Completed 200 OK in 21ms (Views: 17.7ms | ActiveRecord: 0.9ms)
+Started GET "/favicon.ico" for 127.0.0.1 at Wed Jul 17 22:23:14 -0400 2013
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.5) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+  -e:1:in `load'
+  -e:1
+
+
+Started GET "/nodes/2" for 127.0.0.1 at Wed Jul 17 22:23:15 -0400 2013
+Processing by NodesController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendered pulses/_pulse.html.erb (8.9ms)
+  Rendered nodes/show.html.erb within layouts/application (19.1ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_sidebar.html.erb (7.1ms)
+Completed 200 OK in 33ms (Views: 28.4ms | ActiveRecord: 2.1ms)
+Started GET "/favicon.ico" for 127.0.0.1 at Wed Jul 17 22:23:16 -0400 2013
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.5) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+  -e:1:in `load'
+  -e:1
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 17 22:23:36 -0400 2013
+Processing by StaticController#home as HTML
+  Rendered shared/_pulse_form.html.erb (1.7ms)
+  Rendered pulses/_pulse.html.erb (6.6ms)
+  Rendered static/home.html.erb within layouts/application (72.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_sidebar.html.erb (7.3ms)
+Completed 200 OK in 85ms (Views: 81.2ms | ActiveRecord: 1.3ms)
+Started GET "/favicon.ico" for 127.0.0.1 at Wed Jul 17 22:23:37 -0400 2013
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.5) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+  -e:1:in `load'
+  -e:1
+
+
+Started GET "/view?id=1" for 127.0.0.1 at Wed Jul 17 22:25:25 -0400 2013
+Processing by AssembliesController#show_assemblies as HTML
+  Parameters: {"id"=>"1"}
+  Rendered assemblies/_assembly.html.erb (3.0ms)
+  Rendered assemblies/show_assemblies.erb within layouts/application (14.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_sidebar.html.erb (8.0ms)
+Completed 200 OK in 28ms (Views: 25.4ms | ActiveRecord: 0.8ms)
+Started GET "/favicon.ico" for 127.0.0.1 at Wed Jul 17 22:25:26 -0400 2013
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.5) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+  -e:1:in `load'
+  -e:1
+
+
+Compiled jquery.js  (4ms)  (pid 16296)
+Compiled jquery_ujs.js  (1ms)  (pid 16296)
+Compiled bootstrap-transition.js  (0ms)  (pid 16296)
+Compiled bootstrap-affix.js  (0ms)  (pid 16296)
+Compiled bootstrap-alert.js  (1ms)  (pid 16296)
+Compiled bootstrap-button.js  (0ms)  (pid 16296)
+Compiled bootstrap-carousel.js  (0ms)  (pid 16296)
+Compiled bootstrap-collapse.js  (0ms)  (pid 16296)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 16296)
+Compiled bootstrap-modal.js  (0ms)  (pid 16296)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 16296)
+Compiled bootstrap-tab.js  (0ms)  (pid 16296)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 16296)
+Compiled bootstrap-popover.js  (0ms)  (pid 16296)
+Compiled bootstrap-typeahead.js  (1ms)  (pid 16296)
+Compiled bootstrap.js  (195ms)  (pid 16296)
+Compiled assemblies.js  (141ms)  (pid 16296)
+Compiled inbox.js  (60ms)  (pid 16296)
+Compiled nodes.js  (67ms)  (pid 16296)
+Compiled pulse_comments.js  (64ms)  (pid 16296)
+Compiled pulses.js  (149ms)  (pid 16296)
+Compiled application.js  (957ms)  (pid 16296)
+Compiled assemblies.css  (3190ms)  (pid 16296)
+Compiled custom.css  (1714ms)  (pid 16296)
+Compiled inbox.css  (1ms)  (pid 16296)
+Compiled nodes.css  (931ms)  (pid 16296)
+Compiled pulse_comments.css  (836ms)  (pid 16296)
+Compiled pulses.css  (945ms)  (pid 16296)
+Compiled application.css  (7820ms)  (pid 16296)
+Compiled jquery.js  (5ms)  (pid 16296)
+Compiled jquery_ujs.js  (0ms)  (pid 16296)
+Compiled bootstrap-transition.js  (0ms)  (pid 16296)
+Compiled bootstrap-affix.js  (0ms)  (pid 16296)
+Compiled bootstrap-alert.js  (0ms)  (pid 16296)
+Compiled bootstrap-button.js  (0ms)  (pid 16296)
+Compiled bootstrap-carousel.js  (1ms)  (pid 16296)
+Compiled bootstrap-collapse.js  (0ms)  (pid 16296)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 16296)
+Compiled bootstrap-modal.js  (0ms)  (pid 16296)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 16296)
+Compiled bootstrap-tab.js  (0ms)  (pid 16296)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 16296)
+Compiled bootstrap-popover.js  (0ms)  (pid 16296)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 16296)
+Compiled bootstrap.js  (152ms)  (pid 16296)
+Compiled assemblies.js  (78ms)  (pid 16296)
+Compiled inbox.js  (151ms)  (pid 16296)
+Compiled nodes.js  (64ms)  (pid 16296)
+Compiled pulse_comments.js  (63ms)  (pid 16296)
+Compiled pulses.js  (80ms)  (pid 16296)
+Compiled application.js  (720ms)  (pid 16296)
+Compiled assemblies.css  (2873ms)  (pid 16296)
+Compiled custom.css  (1689ms)  (pid 16296)
+Compiled inbox.css  (1ms)  (pid 16296)
+Compiled nodes.css  (987ms)  (pid 16296)
+Compiled pulse_comments.css  (869ms)  (pid 16296)
+Compiled pulses.css  (956ms)  (pid 16296)
+Compiled application.css  (7415ms)  (pid 16296)
+Connecting to database specified by database.yml
+Started GET "/view?id=1" for 127.0.0.1 at Wed Jul 17 22:35:25 -0400 2013
+Processing by AssembliesController#show_assemblies as HTML
+  Parameters: {"id"=>"1"}
+  Rendered assemblies/_assembly.html.erb (3.0ms)
+  Rendered assemblies/show_assemblies.erb within layouts/application (23.3ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_sidebar.html.erb (14.2ms)
+Completed 200 OK in 129ms (Views: 47.8ms | ActiveRecord: 2.9ms)
+Started GET "/favicon.ico" for 127.0.0.1 at Wed Jul 17 22:35:26 -0400 2013
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.5) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+  -e:1:in `load'
+  -e:1
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 17 22:35:29 -0400 2013
+Processing by StaticController#home as HTML
+  Rendered shared/_pulse_form.html.erb (2.8ms)
+  Rendered pulses/_pulse.html.erb (8.3ms)
+  Rendered static/home.html.erb within layouts/application (17.3ms)
+Completed 500 Internal Server Error in 93ms
+
+ActionView::Template::Error (thumbnail.gif isn't precompiled):
+    14:       <% when true %>
+    15:       <%= image_tag Node.find(pulse.pulser).avatar_url(:thumb) %>
+    16:       <% else %>
+    17:       <%= image_tag 'thumbnail.gif' %>
+    18:       <% end %>
+    19:       <span class = 'details'>
+    20:         Pulsed by
+  app/views/pulses/_pulse.html.erb:17:in `_app_views_pulses__pulse_html_erb__1941578008_2276645780'
+  app/views/static/home.html.erb:11:in `_app_views_static_home_html_erb___546238201_2277184140'
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at Wed Jul 17 22:35:29 -0400 2013
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.5) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+  -e:1:in `load'
+  -e:1
+
+
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at Wed Jul 17 22:44:19 -0400 2013
+Processing by StaticController#home as HTML
+  Rendered shared/_pulse_form.html.erb (2.9ms)
+  Rendered pulses/_pulse.html.erb (12.0ms)
+  Rendered static/home.html.erb within layouts/application (28.9ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_sidebar.html.erb (72.4ms)
+Completed 200 OK in 207ms (Views: 107.7ms | ActiveRecord: 6.5ms)
+Started GET "/favicon.ico" for 127.0.0.1 at Wed Jul 17 22:44:20 -0400 2013
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.5) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+  -e:1:in `load'
+  -e:1
+
+
+Compiled jquery.js  (7ms)  (pid 16411)
+Compiled jquery_ujs.js  (0ms)  (pid 16411)
+Compiled bootstrap-transition.js  (0ms)  (pid 16411)
+Compiled bootstrap-affix.js  (0ms)  (pid 16411)
+Compiled bootstrap-alert.js  (0ms)  (pid 16411)
+Compiled bootstrap-button.js  (0ms)  (pid 16411)
+Compiled bootstrap-carousel.js  (0ms)  (pid 16411)
+Compiled bootstrap-collapse.js  (0ms)  (pid 16411)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 16411)
+Compiled bootstrap-modal.js  (0ms)  (pid 16411)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 16411)
+Compiled bootstrap-tab.js  (0ms)  (pid 16411)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 16411)
+Compiled bootstrap-popover.js  (0ms)  (pid 16411)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 16411)
+Compiled bootstrap.js  (160ms)  (pid 16411)
+Compiled assemblies.js  (72ms)  (pid 16411)
+Compiled inbox.js  (59ms)  (pid 16411)
+Compiled nodes.js  (62ms)  (pid 16411)
+Compiled pulse_comments.js  (59ms)  (pid 16411)
+Compiled pulses.js  (136ms)  (pid 16411)
+Compiled application.js  (715ms)  (pid 16411)
+Compiled assemblies.css  (2959ms)  (pid 16411)
+Compiled custom.css  (1689ms)  (pid 16411)
+Compiled inbox.css  (1ms)  (pid 16411)
+Compiled nodes.css  (942ms)  (pid 16411)
+Compiled pulse_comments.css  (829ms)  (pid 16411)
+Compiled pulses.css  (944ms)  (pid 16411)
+Compiled application.css  (7504ms)  (pid 16411)
+Compiled jquery.js  (5ms)  (pid 16411)
+Compiled jquery_ujs.js  (0ms)  (pid 16411)
+Compiled bootstrap-transition.js  (0ms)  (pid 16411)
+Compiled bootstrap-affix.js  (0ms)  (pid 16411)
+Compiled bootstrap-alert.js  (1ms)  (pid 16411)
+Compiled bootstrap-button.js  (0ms)  (pid 16411)
+Compiled bootstrap-carousel.js  (0ms)  (pid 16411)
+Compiled bootstrap-collapse.js  (0ms)  (pid 16411)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 16411)
+Compiled bootstrap-modal.js  (0ms)  (pid 16411)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 16411)
+Compiled bootstrap-tab.js  (0ms)  (pid 16411)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 16411)
+Compiled bootstrap-popover.js  (0ms)  (pid 16411)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 16411)
+Compiled bootstrap.js  (154ms)  (pid 16411)
+Compiled assemblies.js  (71ms)  (pid 16411)
+Compiled inbox.js  (145ms)  (pid 16411)
+Compiled nodes.js  (80ms)  (pid 16411)
+Compiled pulse_comments.js  (62ms)  (pid 16411)
+Compiled pulses.js  (69ms)  (pid 16411)
+Compiled application.js  (726ms)  (pid 16411)
+Compiled assemblies.css  (2905ms)  (pid 16411)
+Compiled custom.css  (1663ms)  (pid 16411)
+Compiled inbox.css  (1ms)  (pid 16411)
+Compiled nodes.css  (1012ms)  (pid 16411)
+Compiled pulse_comments.css  (864ms)  (pid 16411)
+Compiled pulses.css  (967ms)  (pid 16411)
+Compiled application.css  (7453ms)  (pid 16411)
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at Wed Jul 17 22:46:17 -0400 2013
+Processing by StaticController#home as HTML
+  Rendered shared/_pulse_form.html.erb (3.1ms)
+  Rendered pulses/_pulse.html.erb (11.9ms)
+  Rendered static/home.html.erb within layouts/application (29.7ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_sidebar.html.erb (72.5ms)
+Completed 200 OK in 223ms (Views: 109.7ms | ActiveRecord: 7.1ms)
+Started GET "/favicon.ico" for 127.0.0.1 at Wed Jul 17 22:46:18 -0400 2013
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.5) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+  -e:1:in `load'
+  -e:1
+
+
+Compiled jquery.js  (4ms)  (pid 16447)
+Compiled jquery_ujs.js  (0ms)  (pid 16447)
+Compiled bootstrap-transition.js  (0ms)  (pid 16447)
+Compiled bootstrap-affix.js  (0ms)  (pid 16447)
+Compiled bootstrap-alert.js  (0ms)  (pid 16447)
+Compiled bootstrap-button.js  (0ms)  (pid 16447)
+Compiled bootstrap-carousel.js  (0ms)  (pid 16447)
+Compiled bootstrap-collapse.js  (0ms)  (pid 16447)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 16447)
+Compiled bootstrap-modal.js  (0ms)  (pid 16447)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 16447)
+Compiled bootstrap-tab.js  (0ms)  (pid 16447)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 16447)
+Compiled bootstrap-popover.js  (0ms)  (pid 16447)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 16447)
+Compiled bootstrap.js  (153ms)  (pid 16447)
+Compiled assemblies.js  (94ms)  (pid 16447)
+Compiled inbox.js  (62ms)  (pid 16447)
+Compiled nodes.js  (62ms)  (pid 16447)
+Compiled pulse_comments.js  (68ms)  (pid 16447)
+Compiled pulses.js  (164ms)  (pid 16447)
+Compiled application.js  (774ms)  (pid 16447)
+Compiled assemblies.css  (3066ms)  (pid 16447)
+Compiled custom.css  (1801ms)  (pid 16447)
+Compiled inbox.css  (1ms)  (pid 16447)
+Compiled nodes.css  (909ms)  (pid 16447)
+Compiled pulse_comments.css  (821ms)  (pid 16447)
+Compiled pulses.css  (940ms)  (pid 16447)
+Compiled application.css  (7680ms)  (pid 16447)
+Compiled jquery.js  (6ms)  (pid 16447)
+Compiled jquery_ujs.js  (0ms)  (pid 16447)
+Compiled bootstrap-transition.js  (0ms)  (pid 16447)
+Compiled bootstrap-affix.js  (0ms)  (pid 16447)
+Compiled bootstrap-alert.js  (0ms)  (pid 16447)
+Compiled bootstrap-button.js  (0ms)  (pid 16447)
+Compiled bootstrap-carousel.js  (0ms)  (pid 16447)
+Compiled bootstrap-collapse.js  (0ms)  (pid 16447)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 16447)
+Compiled bootstrap-modal.js  (0ms)  (pid 16447)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 16447)
+Compiled bootstrap-tab.js  (0ms)  (pid 16447)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 16447)
+Compiled bootstrap-popover.js  (0ms)  (pid 16447)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 16447)
+Compiled bootstrap.js  (152ms)  (pid 16447)
+Compiled assemblies.js  (87ms)  (pid 16447)
+Compiled inbox.js  (145ms)  (pid 16447)
+Compiled nodes.js  (65ms)  (pid 16447)
+Compiled pulse_comments.js  (89ms)  (pid 16447)
+Compiled pulses.js  (127ms)  (pid 16447)
+Compiled application.js  (804ms)  (pid 16447)
+Compiled assemblies.css  (2883ms)  (pid 16447)
+Compiled custom.css  (1708ms)  (pid 16447)
+Compiled inbox.css  (1ms)  (pid 16447)
+Compiled nodes.css  (1018ms)  (pid 16447)
+Compiled pulse_comments.css  (860ms)  (pid 16447)
+Compiled pulses.css  (968ms)  (pid 16447)
+Compiled application.css  (7481ms)  (pid 16447)
+Compiled jquery.js  (4ms)  (pid 16475)
+Compiled jquery_ujs.js  (0ms)  (pid 16475)
+Compiled bootstrap-transition.js  (0ms)  (pid 16475)
+Compiled bootstrap-affix.js  (0ms)  (pid 16475)
+Compiled bootstrap-alert.js  (0ms)  (pid 16475)
+Compiled bootstrap-button.js  (0ms)  (pid 16475)
+Compiled bootstrap-carousel.js  (0ms)  (pid 16475)
+Compiled bootstrap-collapse.js  (0ms)  (pid 16475)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 16475)
+Compiled bootstrap-modal.js  (0ms)  (pid 16475)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 16475)
+Compiled bootstrap-tab.js  (0ms)  (pid 16475)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 16475)
+Compiled bootstrap-popover.js  (0ms)  (pid 16475)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 16475)
+Compiled bootstrap.js  (172ms)  (pid 16475)
+Compiled assemblies.js  (211ms)  (pid 16475)
+Compiled inbox.js  (61ms)  (pid 16475)
+Compiled nodes.js  (64ms)  (pid 16475)
+Compiled pulse_comments.js  (66ms)  (pid 16475)
+Compiled pulses.js  (140ms)  (pid 16475)
+Compiled application.js  (864ms)  (pid 16475)
+Compiled assemblies.css  (2905ms)  (pid 16475)
+Compiled custom.css  (1688ms)  (pid 16475)
+Compiled inbox.css  (1ms)  (pid 16475)
+Compiled nodes.css  (1019ms)  (pid 16475)
+Compiled pulse_comments.css  (857ms)  (pid 16475)
+Compiled pulses.css  (1144ms)  (pid 16475)
+Compiled application.css  (7756ms)  (pid 16475)
+Compiled jquery.js  (5ms)  (pid 16475)
+Compiled jquery_ujs.js  (0ms)  (pid 16475)
+Compiled bootstrap-transition.js  (0ms)  (pid 16475)
+Compiled bootstrap-affix.js  (0ms)  (pid 16475)
+Compiled bootstrap-alert.js  (0ms)  (pid 16475)
+Compiled bootstrap-button.js  (0ms)  (pid 16475)
+Compiled bootstrap-carousel.js  (0ms)  (pid 16475)
+Compiled bootstrap-collapse.js  (0ms)  (pid 16475)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 16475)
+Compiled bootstrap-modal.js  (0ms)  (pid 16475)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 16475)
+Compiled bootstrap-tab.js  (0ms)  (pid 16475)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 16475)
+Compiled bootstrap-popover.js  (0ms)  (pid 16475)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 16475)
+Compiled bootstrap.js  (150ms)  (pid 16475)
+Compiled assemblies.js  (97ms)  (pid 16475)
+Compiled inbox.js  (152ms)  (pid 16475)
+Compiled nodes.js  (63ms)  (pid 16475)
+Compiled pulse_comments.js  (91ms)  (pid 16475)
+Compiled pulses.js  (80ms)  (pid 16475)
+Compiled application.js  (760ms)  (pid 16475)
+Compiled assemblies.css  (3056ms)  (pid 16475)
+Compiled custom.css  (2152ms)  (pid 16475)
+Compiled inbox.css  (1ms)  (pid 16475)
+Compiled nodes.css  (990ms)  (pid 16475)
+Compiled pulse_comments.css  (877ms)  (pid 16475)
+Compiled pulses.css  (969ms)  (pid 16475)
+Compiled application.css  (8088ms)  (pid 16475)
+Compiled jquery.js  (6ms)  (pid 16512)
+Compiled jquery_ujs.js  (0ms)  (pid 16512)
+Compiled bootstrap-transition.js  (0ms)  (pid 16512)
+Compiled bootstrap-affix.js  (0ms)  (pid 16512)
+Compiled bootstrap-alert.js  (0ms)  (pid 16512)
+Compiled bootstrap-button.js  (0ms)  (pid 16512)
+Compiled bootstrap-carousel.js  (0ms)  (pid 16512)
+Compiled bootstrap-collapse.js  (0ms)  (pid 16512)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 16512)
+Compiled bootstrap-modal.js  (0ms)  (pid 16512)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 16512)
+Compiled bootstrap-tab.js  (0ms)  (pid 16512)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 16512)
+Compiled bootstrap-popover.js  (0ms)  (pid 16512)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 16512)
+Compiled bootstrap.js  (163ms)  (pid 16512)
+Compiled assemblies.js  (73ms)  (pid 16512)
+Compiled inbox.js  (74ms)  (pid 16512)
+Compiled nodes.js  (87ms)  (pid 16512)
+Compiled pulse_comments.js  (64ms)  (pid 16512)
+Compiled pulses.js  (133ms)  (pid 16512)
+Compiled application.js  (757ms)  (pid 16512)
+Compiled assemblies.css  (3112ms)  (pid 16512)
+Compiled custom.css  (1715ms)  (pid 16512)
+Compiled inbox.css  (1ms)  (pid 16512)
+Compiled nodes.css  (944ms)  (pid 16512)
+Compiled pulse_comments.css  (824ms)  (pid 16512)
+Compiled pulses.css  (940ms)  (pid 16512)
+Compiled application.css  (7715ms)  (pid 16512)
+Compiled jquery.js  (4ms)  (pid 16512)
+Compiled jquery_ujs.js  (0ms)  (pid 16512)
+Compiled bootstrap-transition.js  (0ms)  (pid 16512)
+Compiled bootstrap-affix.js  (0ms)  (pid 16512)
+Compiled bootstrap-alert.js  (1ms)  (pid 16512)
+Compiled bootstrap-button.js  (1ms)  (pid 16512)
+Compiled bootstrap-carousel.js  (0ms)  (pid 16512)
+Compiled bootstrap-collapse.js  (0ms)  (pid 16512)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 16512)
+Compiled bootstrap-modal.js  (0ms)  (pid 16512)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 16512)
+Compiled bootstrap-tab.js  (0ms)  (pid 16512)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 16512)
+Compiled bootstrap-popover.js  (0ms)  (pid 16512)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 16512)
+Compiled bootstrap.js  (146ms)  (pid 16512)
+Compiled assemblies.js  (73ms)  (pid 16512)
+Compiled inbox.js  (146ms)  (pid 16512)
+Compiled nodes.js  (64ms)  (pid 16512)
+Compiled pulse_comments.js  (64ms)  (pid 16512)
+Compiled pulses.js  (62ms)  (pid 16512)
+Compiled application.js  (686ms)  (pid 16512)
+Compiled assemblies.css  (3879ms)  (pid 16512)
+Compiled custom.css  (1638ms)  (pid 16512)
+Compiled inbox.css  (2ms)  (pid 16512)
+Compiled nodes.css  (1004ms)  (pid 16512)
+Compiled pulse_comments.css  (874ms)  (pid 16512)
+Compiled pulses.css  (964ms)  (pid 16512)
+Compiled application.css  (8406ms)  (pid 16512)
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at Wed Jul 17 22:51:33 -0400 2013
+Processing by StaticController#home as HTML
+  Rendered shared/_pulse_form.html.erb (3.1ms)
+  Rendered pulses/_pulse.html.erb (11.8ms)
+  Rendered static/home.html.erb within layouts/application (29.5ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_sidebar.html.erb (72.2ms)
+Completed 200 OK in 206ms (Views: 107.9ms | ActiveRecord: 6.9ms)
+Started GET "/favicon.ico" for 127.0.0.1 at Wed Jul 17 22:51:34 -0400 2013
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.5) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+  -e:1:in `load'
+  -e:1
+
+
+Compiled jquery.js  (4ms)  (pid 16567)
+Compiled jquery_ujs.js  (0ms)  (pid 16567)
+Compiled bootstrap-transition.js  (0ms)  (pid 16567)
+Compiled bootstrap-affix.js  (0ms)  (pid 16567)
+Compiled bootstrap-alert.js  (0ms)  (pid 16567)
+Compiled bootstrap-button.js  (0ms)  (pid 16567)
+Compiled bootstrap-carousel.js  (0ms)  (pid 16567)
+Compiled bootstrap-collapse.js  (0ms)  (pid 16567)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 16567)
+Compiled bootstrap-modal.js  (0ms)  (pid 16567)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 16567)
+Compiled bootstrap-tab.js  (0ms)  (pid 16567)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 16567)
+Compiled bootstrap-popover.js  (0ms)  (pid 16567)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 16567)
+Compiled bootstrap.js  (152ms)  (pid 16567)
+Compiled assemblies.js  (114ms)  (pid 16567)
+Compiled inbox.js  (154ms)  (pid 16567)
+Compiled nodes.js  (67ms)  (pid 16567)
+Compiled pulse_comments.js  (65ms)  (pid 16567)
+Compiled pulses.js  (158ms)  (pid 16567)
+Compiled application.js  (840ms)  (pid 16567)
+Compiled assemblies.css  (2927ms)  (pid 16567)
+Compiled custom.css  (1707ms)  (pid 16567)
+Compiled inbox.css  (1ms)  (pid 16567)
+Compiled nodes.css  (968ms)  (pid 16567)
+Compiled pulse_comments.css  (855ms)  (pid 16567)
+Compiled pulses.css  (937ms)  (pid 16567)
+Compiled application.css  (7438ms)  (pid 16567)
+Compiled jquery.js  (64ms)  (pid 16567)
+Compiled jquery_ujs.js  (0ms)  (pid 16567)
+Compiled bootstrap-transition.js  (0ms)  (pid 16567)
+Compiled bootstrap-affix.js  (0ms)  (pid 16567)
+Compiled bootstrap-alert.js  (0ms)  (pid 16567)
+Compiled bootstrap-button.js  (0ms)  (pid 16567)
+Compiled bootstrap-carousel.js  (0ms)  (pid 16567)
+Compiled bootstrap-collapse.js  (0ms)  (pid 16567)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 16567)
+Compiled bootstrap-modal.js  (0ms)  (pid 16567)
+Compiled bootstrap-scrollspy.js  (50ms)  (pid 16567)
+Compiled bootstrap-tab.js  (0ms)  (pid 16567)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 16567)
+Compiled bootstrap-popover.js  (0ms)  (pid 16567)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 16567)
+Compiled bootstrap.js  (185ms)  (pid 16567)
+Compiled assemblies.js  (69ms)  (pid 16567)
+Compiled inbox.js  (66ms)  (pid 16567)
+Compiled nodes.js  (138ms)  (pid 16567)
+Compiled pulse_comments.js  (81ms)  (pid 16567)
+Compiled pulses.js  (83ms)  (pid 16567)
+Compiled application.js  (747ms)  (pid 16567)
+Compiled assemblies.css  (3028ms)  (pid 16567)
+Compiled custom.css  (1784ms)  (pid 16567)
+Compiled inbox.css  (1ms)  (pid 16567)
+Compiled nodes.css  (911ms)  (pid 16567)
+Compiled pulse_comments.css  (836ms)  (pid 16567)
+Compiled pulses.css  (942ms)  (pid 16567)
+Compiled application.css  (7641ms)  (pid 16567)
+Started GET "/" for 127.0.0.1 at Wed Jul 17 22:56:14 -0400 2013
+Processing by StaticController#home as HTML
+  Rendered shared/_pulse_form.html.erb (1.8ms)
+  Rendered pulses/_pulse.html.erb (7.0ms)
+  Rendered static/home.html.erb within layouts/application (14.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_sidebar.html.erb (7.6ms)
+Completed 200 OK in 28ms (Views: 23.8ms | ActiveRecord: 1.6ms)
+Started GET "/favicon.ico" for 127.0.0.1 at Wed Jul 17 22:56:15 -0400 2013
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.5) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+  -e:1:in `load'
+  -e:1
+
+
+Compiled jquery.js  (6ms)  (pid 16602)
+Compiled jquery_ujs.js  (0ms)  (pid 16602)
+Compiled bootstrap-transition.js  (0ms)  (pid 16602)
+Compiled bootstrap-affix.js  (0ms)  (pid 16602)
+Compiled bootstrap-alert.js  (0ms)  (pid 16602)
+Compiled bootstrap-button.js  (0ms)  (pid 16602)
+Compiled bootstrap-carousel.js  (0ms)  (pid 16602)
+Compiled bootstrap-collapse.js  (0ms)  (pid 16602)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 16602)
+Compiled bootstrap-modal.js  (0ms)  (pid 16602)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 16602)
+Compiled bootstrap-tab.js  (0ms)  (pid 16602)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 16602)
+Compiled bootstrap-popover.js  (0ms)  (pid 16602)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 16602)
+Compiled bootstrap.js  (167ms)  (pid 16602)
+Compiled assemblies.js  (71ms)  (pid 16602)
+Compiled inbox.js  (63ms)  (pid 16602)
+Compiled nodes.js  (64ms)  (pid 16602)
+Compiled pulse_comments.js  (79ms)  (pid 16602)
+Compiled pulses.js  (163ms)  (pid 16602)
+Compiled application.js  (777ms)  (pid 16602)
+Compiled assemblies.css  (3013ms)  (pid 16602)
+Compiled custom.css  (1698ms)  (pid 16602)
+Compiled inbox.css  (1ms)  (pid 16602)
+Compiled nodes.css  (940ms)  (pid 16602)
+Compiled pulse_comments.css  (827ms)  (pid 16602)
+Compiled pulses.css  (980ms)  (pid 16602)
+Compiled application.css  (7599ms)  (pid 16602)
+Compiled jquery.js  (5ms)  (pid 16602)
+Compiled jquery_ujs.js  (0ms)  (pid 16602)
+Compiled bootstrap-transition.js  (0ms)  (pid 16602)
+Compiled bootstrap-affix.js  (0ms)  (pid 16602)
+Compiled bootstrap-alert.js  (0ms)  (pid 16602)
+Compiled bootstrap-button.js  (0ms)  (pid 16602)
+Compiled bootstrap-carousel.js  (0ms)  (pid 16602)
+Compiled bootstrap-collapse.js  (0ms)  (pid 16602)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 16602)
+Compiled bootstrap-modal.js  (0ms)  (pid 16602)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 16602)
+Compiled bootstrap-tab.js  (0ms)  (pid 16602)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 16602)
+Compiled bootstrap-popover.js  (0ms)  (pid 16602)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 16602)
+Compiled bootstrap.js  (155ms)  (pid 16602)
+Compiled assemblies.js  (69ms)  (pid 16602)
+Compiled inbox.js  (150ms)  (pid 16602)
+Compiled nodes.js  (62ms)  (pid 16602)
+Compiled pulse_comments.js  (159ms)  (pid 16602)
+Compiled pulses.js  (77ms)  (pid 16602)
+Compiled application.js  (817ms)  (pid 16602)
+Compiled assemblies.css  (2932ms)  (pid 16602)
+Compiled custom.css  (1703ms)  (pid 16602)
+Compiled inbox.css  (1ms)  (pid 16602)
+Compiled nodes.css  (1007ms)  (pid 16602)
+Compiled pulse_comments.css  (863ms)  (pid 16602)
+Compiled pulses.css  (961ms)  (pid 16602)
+Compiled application.css  (7508ms)  (pid 16602)
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at Wed Jul 17 22:59:35 -0400 2013
+Processing by StaticController#home as HTML
+  Rendered shared/_pulse_form.html.erb (2.9ms)
+  Rendered pulses/_pulse.html.erb (11.9ms)
+  Rendered static/home.html.erb within layouts/application (29.2ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_sidebar.html.erb (72.6ms)
+Completed 200 OK in 204ms (Views: 108.2ms | ActiveRecord: 6.8ms)
+Started GET "/favicon.ico" for 127.0.0.1 at Wed Jul 17 22:59:35 -0400 2013
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.5) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+  -e:1:in `load'
+  -e:1
+
+
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at Wed Jul 17 23:02:00 -0400 2013
+Processing by StaticController#home as HTML
+  Rendered shared/_pulse_form.html.erb (3.0ms)
+  Rendered pulses/_pulse.html.erb (66.7ms)
+  Rendered static/home.html.erb within layouts/application (83.7ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_sidebar.html.erb (16.4ms)
+Completed 200 OK in 148ms (Views: 106.7ms | ActiveRecord: 6.8ms)
+Started GET "/favicon.ico" for 127.0.0.1 at Wed Jul 17 23:02:01 -0400 2013
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.5) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+  -e:1:in `load'
+  -e:1
+
+

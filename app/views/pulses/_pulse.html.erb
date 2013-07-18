@@ -9,9 +9,15 @@
   <a href = <%= pulse.link %>><%= pulse.link%></a>
    <%end%>
   <div class = 'content'><%= pulse.content %></div>
+      <br></br>
     <div class = 'info-container'>
-      <%= image_tag Node.find(pulse.pulser).avatar_url(:thumb) if Node.find(pulse.pulser).avatar? %>
-       <span class = 'details'>
+      <% case Node.find(pulse.pulser).avatar_url(:thumb) %>
+      <% when true %>
+      <%= image_tag Node.find(pulse.pulser).avatar_url(:thumb) %>
+      <% else %>
+      <%= image_tag 'default.gif' %>
+      <% end %>
+      <span class = 'details'>
         Pulsed by
         <%if signed_in? and pulse.pulser == current_node.id %>
         Me
