@@ -152,7 +152,7 @@
       <file leaf-file-name="_pulse_comment.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/pulse_comments/_pulse_comment.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="33" selection-start="589" selection-end="589" vertical-scroll-proportion="0.6373938">
+            <state line="13" column="1" selection-start="565" selection-end="565" vertical-scroll-proportion="0.5327869">
               <folding />
             </state>
           </provider>
@@ -1203,7 +1203,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pulse_comments/_pulse_comment.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="33" selection-start="589" selection-end="589" vertical-scroll-proportion="0.6373938">
+        <state line="13" column="1" selection-start="565" selection-end="565" vertical-scroll-proportion="0.5327869">
           <folding />
         </state>
       </provider>

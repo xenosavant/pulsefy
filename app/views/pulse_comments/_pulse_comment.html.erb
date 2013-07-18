@@ -6,11 +6,11 @@
   <% else %>
       <%= image_tag 'default.gif' %>
   <% end %>
- <% if current_node.id == pulse_comment.commenter %>
-   <%= link_to 'delete', uncomment_path(:id => pulse_comment.id) %>
-  <%end%>
   <br>
 <span class="timestamp">Commented <%= time_ago_in_words(pulse_comment.created_at) %> ago.
 </span>
+ <% if current_node.id == pulse_comment.commenter %>
+ <%= link_to 'delete', uncomment_path(:id => pulse_comment.id) %>
+ <%end%>
   </br>
 </li>
