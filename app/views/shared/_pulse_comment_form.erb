@@ -1,7 +1,7 @@
 <%= form_for(@pulse_comment) do |f| %>
     <%= render 'shared/error_messages', :object => f.object %>
     <div class="textarea">
-      <%= f.text_area :content %>
+      <%= f.text_area :content, :rows => 2 %>
     </div>
     <%= f.submit "Comment", :class => "btn btn-large btn-primary" %>
 <% end %>

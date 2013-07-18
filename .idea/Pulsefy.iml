@@ -36,10 +36,10 @@
     <orderEntry type="library" scope="PROVIDED" name="embedly (v1.8.0, ruby-1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubis (v2.7.0, ruby-1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ethon (v0.5.12, ruby-1.8.7-p358) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="excon (v0.7.12, ruby-1.8.7-p358) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="excon (v0.23.0, ruby-1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v1.4.0, ruby-1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.9.0, ruby-1.8.7-p358) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog (v1.0.0, ruby-1.8.7-p358) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="fog (v1.12.1, ruby-1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="formatador (v0.2.4, ruby-1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="fssm (v0.2.10, ruby-1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hike (v1.2.3, ruby-1.8.7-p358) [gem]" level="application" />
@@ -50,8 +50,8 @@
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.5.4, ruby-1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.23, ruby-1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.0.4, ruby-1.8.7-p358) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="net-scp (v1.0.4, ruby-1.8.7-p358) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="net-ssh (v2.1.4, ruby-1.8.7-p358) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="net-scp (v1.1.2, ruby-1.8.7-p358) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="net-ssh (v2.6.8, ruby-1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.5.10, ruby-1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="oauth (v0.4.7, ruby-1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v0.15.1, ruby-1.8.7-p358) [gem]" level="application" />
