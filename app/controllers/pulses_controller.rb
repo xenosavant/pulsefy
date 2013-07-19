@@ -7,7 +7,6 @@ before_filter :signed_in_node
     @pulse.update_attributes(:reinforcements => 0, :degradations => 0,
                                :depth => 0)
     if @pulse.save
-      flash[:success] = 'Pulse Fired!'
           if @pulse.pulser_type == 'Node'
             @node.pulses << @pulse
               Node.find(@pulse.pulser).fire_pulse(:pulse => @pulse)
@@ -43,11 +42,9 @@ before_filter :signed_in_node
     @pulse = Pulse.find(params[:id])
     if @pulse.pulser_type == 'Node'
     @pulse.destroy
-    flash[:success] = "Pulse deleted."
     redirect_to Node.find(session[:return_to])
     else
     @pulse.destroy
-    flash[:success] = "Pulse deleted."
     redirect_to Assembly.find(session[:return_to])
     end
   end

@@ -6,7 +6,6 @@ class AssembliesController < ApplicationController
   @assembly.founder = @node.id
   if @assembly.save
      @node.assemblies << @assembly
-    flash[:success] = "Assembly Created!"
     redirect_to @assembly
   else
     render 'assemblies/new'
@@ -33,7 +32,6 @@ class AssembliesController < ApplicationController
   def update
     @assembly = Assembly.find(params[:id])
     if @assembly.update_attributes(params[:assembly])
-      flash[:success] = "Assembly updated!"
       redirect_to @assembly
     else
       render 'edit'
@@ -44,14 +42,12 @@ class AssembliesController < ApplicationController
   def join
     @assembly = Assembly.find(params[:id])
     current_node.assemblies << @assembly
-    flash[:success] = "Joined Assembly!"
     redirect_to @assembly
   end
 
   def quit
     @assembly = Assembly.find(params[:id])
     current_node.assemblies.delete(@assembly)
-    flash[:alert] = "Quit Assembly!"
     redirect_to @assembly
   end
 
