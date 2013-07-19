@@ -6,12 +6,11 @@
 <% when false %>
 <%= image_tag @node.avatar_url(:profile) if @node.avatar? %>
 <% end %>
-<div>
+<br><div>
  <%= link_to 'Assemblies', view_path(:id => @node.id) %> (<%= @node.assemblies.count%>)
   <%= link_to 'Inputs', inputs_path(:id => @node.id) %> (<%= @node.inputs.count%>)
   <%= link_to 'Outputs', outputs_path(:id => @node.id) %> (<%= @node.outputs.count%>)
-</div>
-
+</div></br>
 <div class='info'>
   <%= @node.info%>
 </div>
