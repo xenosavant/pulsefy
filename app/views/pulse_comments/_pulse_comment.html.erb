@@ -2,7 +2,7 @@
   <br><div class = 'content'><%= pulse_comment.content %></div></br>
   <% case Node.find(pulse_comment.commenter).avatar_url(:thumb).nil? %>
   <% when false %>
-      <%= image_tag Node.find(pulse_comment.commenter).avatar_url(:thumb) %>
+      <%= image_tag Node.find(pulse_comment.commenter).avatar_url(:micro) %>
   <% else %>
       <%= image_tag 'default.gif' %>
   <% end %>
