@@ -176,7 +176,4 @@ textarea {
   border-width:15px 15px 0; /* vary these values to change the angle of the vertex */
   border-style:solid;
   border-color:#f3961c transparent;
-  /* reduce the damage in FF3.0 */
-  display:block;
-  width:0;
 }
