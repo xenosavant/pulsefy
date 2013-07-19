@@ -13,12 +13,10 @@
 <%= render 'layouts/sidebar' %>
 </div>
 <%end%>
-    <main>
         <% flash.each do |key, value| %>
          <div class='alert'<%= key %>"><%= value %></div>
         <% end %>
         <%= yield %>
         </div>
-    </main>
    </body>
 </html>
