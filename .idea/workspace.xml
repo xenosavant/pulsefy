@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static/home.html.erb" afterPath="$PROJECT_DIR$/app/views/static/home.html.erb" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,7 +43,7 @@
     <file path="/assemblies_helper.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372176925514" ignored="false" />
     <file path="/_sidebar.htm.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371524346171" ignored="false" />
     <file path="/nodes.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1373654110113" ignored="false" />
-    <file path="/custom.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1374261152250" ignored="false" />
+    <file path="/custom.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1374264958351" ignored="false" />
     <file path="/_sidebar.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1373600255826" ignored="false" />
     <file path="/application.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1374168814409" ignored="false" />
     <file path="/new.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1374259833690" ignored="false" />
@@ -98,10 +97,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="custom.css.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="custom.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="173" column="32" selection-start="2470" selection-end="2470" vertical-scroll-proportion="0.0">
+            <state line="29" column="19" selection-start="378" selection-end="378" vertical-scroll-proportion="0.6923077">
               <folding />
             </state>
           </provider>
@@ -152,10 +151,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/static/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="58" selection-start="412" selection-end="412" vertical-scroll-proportion="0.44192636">
+            <state line="17" column="58" selection-start="412" selection-end="412" vertical-scroll-proportion="-10.625">
               <folding />
             </state>
           </provider>
@@ -223,8 +222,8 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pulses.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pulse_comments.css.scss" />
         <option value="$PROJECT_DIR$/app/views/nodes/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
         <option value="$PROJECT_DIR$/app/views/static/home.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
       </list>
     </option>
   </component>
@@ -1237,16 +1236,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/static/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="173" column="32" selection-start="2470" selection-end="2470" vertical-scroll-proportion="0.0">
+        <state line="17" column="58" selection-start="412" selection-end="412" vertical-scroll-proportion="-10.625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static/home.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="58" selection-start="412" selection-end="412" vertical-scroll-proportion="0.44192636">
+        <state line="29" column="19" selection-start="378" selection-end="378" vertical-scroll-proportion="0.6923077">
           <folding />
         </state>
       </provider>
