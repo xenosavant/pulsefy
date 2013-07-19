@@ -1,6 +1,6 @@
-o: ActiveSupport::Cache::Entry	:@expires_in0:@compressedF:@value"è {"required_paths["f/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-tooltip.js"dependency_digest"%9bf4dde5445a598c46a19d9c211a0cfa"
-class"ProcessedAsset"dependency_paths[{"	path"f/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-tooltip.js"digest"%87bac8ac6fc6c0998772cc79119253c1"
-mtime"2013-05-14T02:08:22-04:00"logical_path"bootstrap-tooltip.js"pathname"f/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-tooltip.js"lengthi"content_type"application/javascript"source"/* ===========================================================
+o: ActiveSupport::Cache::Entry	:@expires_in0:@compressedF:@value"è {"
+mtime"2013-05-14T02:08:22-04:00"_version"%1b13569e9620782f423d4cd3ce931750"
+class"ProcessedAsset"lengthi"content_type"application/javascript"source"/* ===========================================================
  * bootstrap-tooltip.js v2.1.0
  * http://twitter.github.com/bootstrap/javascript.html#tooltips
  * Inspired by the original jQuery.tipsy by Jason Frame
@@ -276,5 +276,5 @@ mtime"2013-05-14T02:08:22-04:00"logical_path"bootstrap-tooltip.js"pathname"f
   }
 
 }(window.jQuery);
-"_version"%1b13569e9620782f423d4cd3ce931750"digest"%e6a5e86b4919692b3844b854a25ac89d"
-mtime"2013-05-14T02:08:22-04:00:@created_atf1374261198.7337289 õj
+"dependency_paths[{"
+mtime"2013-05-14T02:08:22-04:00"	path"f/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-tooltip.js"digest"%87bac8ac6fc6c0998772cc79119253c1"dependency_digest"%9bf4dde5445a598c46a19d9c211a0cfa"logical_path"bootstrap-tooltip.js"digest"%e6a5e86b4919692b3844b854a25ac89d"required_paths["f/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-tooltip.js"pathname"f/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-tooltip.js:@created_atf1374261905.8740749 ðØ
