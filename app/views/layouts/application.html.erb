@@ -9,9 +9,7 @@
 <body>
 <%= render 'layouts/header' %>
 <% if signed_in? %>
-<div class = 'sidebar'>
 <%= render 'layouts/sidebar' %>
-</div>
 <%end%>
         <% flash.each do |key, value| %>
          <div class='alert'<%= key %>"><%= value %></div>

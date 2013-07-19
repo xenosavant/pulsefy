@@ -1,4 +1,5 @@
 <% if signed_in? %>
+<body>
  <main>
    <div class="row">
      <aside class="span4">
@@ -13,6 +14,7 @@
         <%= will_paginate @pulses %>
       <% end %>
 </main>
+</body>
 <% else %>
     <div class = 'center'>
        <div class="center hero-unit">
