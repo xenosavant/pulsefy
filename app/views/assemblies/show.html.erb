@@ -7,11 +7,11 @@
     <br><%= @assembly.info%></br>
   </div>
 <%= link_to 'members', members_path(:id => @assembly.id)%>
-
+  <br>
   <% if signed_in? %>
     <% if current_node.assemblies.include?(@assembly)%>
       <% if @assembly.founder == current_node.id %>
-         <br><%= link_to 'edit', reassemble_path(:id => @assembly.id)%></br>
+         <%= link_to 'edit', reassemble_path(:id => @assembly.id)%>
         <% else %>
         <%= link_to 'quit', quit_path(:id => @assembly.id)%>
         <% end %>
@@ -29,7 +29,7 @@
         <%= link_to 'join', join_path(:id => @assembly.id)%>
     <% end %>
   <% end %>
-
+  </br>
   <% if @assembly.pulses.any? %>
       <h3>Pulsefeed</h3>
       <ol class="pulses">
