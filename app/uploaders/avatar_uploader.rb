@@ -22,6 +22,9 @@ class AvatarUploader < CarrierWave::Uploader::Base
   "#{Rails.root}/app/assets/images/default.gif"
   end
 
+  def cache_dir
+    "#{Rails.root}/tmp/uploads"
+  end
   # Process files as they are uploaded:
   # process :scale => [200, 300]
   #
