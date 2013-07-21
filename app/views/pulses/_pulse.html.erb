@@ -13,8 +13,8 @@
     <div class = 'info-container'>
       <% case Node.find(pulse.pulser).avatar_url(:thumb).nil? %>
       <% when false %>
-      <%if FileTest.exist?("s3-us-west-2.amazonaws.com/avatars/node/node_thumb#{current_node.id}.jpg")%>
-      <%= image_tag Node.find(pulse.pulser).avatar_url(:thumb) %>
+      <%if FileTest.exist?("s3-us-west-2.amazonaws.com/avatars/node/thumb#{current_node.id}.jpg")%>
+      <img src= "<%= current_node.avatar_url(:thumb) %>">
       <%end%>
       <% else %>
       <%= image_tag 'default.gif' %>
