@@ -155,7 +155,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   compass
   embedly
-  fog (= 1.12.1)
+  fog
   jquery-rails
   json
   pg
@@ -163,7 +163,6 @@ DEPENDENCIES
   rmagick
   ruby-oembed
   sass-rails (~> 3.2.3)
-  sprockets
   sqlite3
   uglifier (>= 1.0.3)
   will_paginate

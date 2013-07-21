@@ -11,7 +11,7 @@
         <%= f.label 'upload assembly picture' %>
         <img src= <%="s3-us-west-2.amazonaws.com/pulsefy/avatars/assembly/thumb_#{@assembly.id}.jpg"%>>
 
-      <%= f.file_field :avatar %>
+        <%= f.file_field :avatar %>
         <br> <div class='center'>
         <%= f.submit 'Save changes', :class => 'btn btn-large btn-primary' %>
         </div></br>
