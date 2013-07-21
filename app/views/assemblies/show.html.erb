@@ -2,9 +2,9 @@
 <div>
   <h3><%= @assembly.title%></h3>
 </div>
-  <%= image_tag @assembly.avatar_url(:profile) if @assembly.avatar? %>
+  <br><%= image_tag @assembly.avatar_url(:profile) if @assembly.avatar? %></br>
   <div class='info'>
-    <br><%= @assembly.info%></br>
+    <%= @assembly.info%>
   </div>
 <%= link_to 'members', members_path(:id => @assembly.id)%>
   <br>
