@@ -2,7 +2,7 @@
 <div>
   <h3><%= @assembly.title%></h3>
 </div>
-  <br><%= image_tag @assembly.avatar_url(:profile) if @assembly.avatar? %></br>
+  <br><img src= "<%= current_node.avatar_url %>"></br>
   <div class='info'>
     <%= @assembly.info%>
   </div>

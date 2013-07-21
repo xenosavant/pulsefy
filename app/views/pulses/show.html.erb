@@ -13,7 +13,7 @@
 <div class = 'info-container'>
   <% case Node.find(@pulse.pulser).avatar_url(:thumb).nil? %>
   <% when false %>
-      <%= image_tag Node.find(@pulse.pulser).avatar_url(:thumb) %>
+      <img src= "<%= current_node.avatar_url(:thumb) %>">
   <% else %>
       <%= image_tag 'default.gif' %>
   <% end %>
