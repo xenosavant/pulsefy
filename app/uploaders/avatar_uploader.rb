@@ -3,15 +3,13 @@
 class AvatarUploader < CarrierWave::Uploader::Base
 
   include CarrierWave::RMagick
-  include Sprockets::Helpers::RailsHelper
-  include Sprockets::Helpers::IsolatedHelper
 
   # Choose what kind of storage to use for this uploader:
   storage :fog
 
   # Override the directory where uploaded files will be stored.
   def store_dir
-    "avatars/#{model.class.to_s.underscore}/"
+    "/avatars/#{model.class.to_s.underscore}/"
   end
 
   # Provide a default URL as a default if there hasn't been a file uploaded:

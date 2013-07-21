@@ -12,9 +12,7 @@
 
       <%= f.label 'upload pulsefeed picture' %>
       <div class = 'input'>
-        <%if FileTest.exist?("s3-us-west-2.amazonaws.com/avatars/node/node_thumb#{current_node.id}.jpg")%>
-        <%= image_tag @node.avatar_url(:thumb) %>
-        <%end%>
+        <img src= <%="s3-us-west-2.amazonaws.com/pulsefy/avatars/node/thumb_#{@node.id}.jpg"%>>
         <%= f.file_field :avatar %>
       </div>
         <br>

@@ -3,7 +3,7 @@
       <h3>
         <%= current_node.username%>
       </h3>
-      <img src= "<%= current_node.avatar_url(:thumb) %>">
+      <img src= <%="s3-us-west-2.amazonaws.com/pulsefy/avatars/node/thumb_#{current_node.id}.jpg"%>>
       <ul>
       <br><li><%= link_to 'Home', root_path %></li></br>
       <br><li><%= link_to 'Form an Assembly', assemble_path %> </li></br>

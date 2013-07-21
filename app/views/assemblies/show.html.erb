@@ -2,7 +2,7 @@
 <div>
   <h3><%= @assembly.title%></h3>
 </div>
-  <br><img src= "<%= current_node.avatar_url %>"></br>
+  <br><img src= <%="s3-us-west-2.amazonaws.com/pulsefy/avatars/assembly/thumb_#{@assembly.id}.jpg"%>></br>
   <div class='info'>
     <%= @assembly.info%>
   </div>
