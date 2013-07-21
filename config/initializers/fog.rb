@@ -11,9 +11,9 @@ CarrierWave.configure do |config|
       :provider               => 'AWS',
       :aws_access_key_id      => 'AKIAJIHY77FC7AQOFPRA',
       :aws_secret_access_key  => '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',
-      :region => 'us-west-2',
+      :region => 'us-west-2'
   }
-  config.fog_host = 's3-us-west-2.amazonaws.com'
+  config.asset_host = 's3-us-west-2.amazonaws.com'
   config.fog_directory  = ENV['pulsefy']
   config.cache_dir = "#{Rails.root}/tmp/uploads"
 end
