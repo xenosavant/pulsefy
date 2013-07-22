@@ -2,8 +2,8 @@
 <div class='username'>
   <h3> <%= @node.username%></h3>
 </div>
-  <%if current_node.avatar.file.exists? %>
-      <%= image_tag current_node.avatar_url(:profile) %>
+  <%if @node.avatar.file.exists? %>
+      <%= image_tag @node.avatar_url(:profile) %>
   <% else%>
       <%= image_tag 'default.gif' %>
   <%end%>
