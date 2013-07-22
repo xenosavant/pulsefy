@@ -75,9 +75,22 @@ info-container {
 }
 
 .show-container {
-  max-width: 600px;
-  height: relative;
-  padding-left: 25px;
+  position: relative;
+  max-width: 550px;
+  padding-bottom: 384px;
+  height: 0;
+  overflow: hidden;
+  display: block;
+}
+
+.show-container iframe,
+.show-container object,
+.show-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 512px;
+  max-height: 384px;
 }
 
 .video-container iframe,

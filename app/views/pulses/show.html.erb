@@ -1,14 +1,16 @@
 <main>
-<div class = "show-container">
-<div class="headline"><%= @pulse.headline %></div>
+ <div class="headline"><%= @pulse.headline %></div>
+ <div class = "show-container">
 <% case @pulse.link_type %>
 <%when 'video' %>
+
 <%= raw @pulse.embed_code %>
 <%when 'photo' %>
     <img src = <%= raw @pulse.url %> >
 <%else%>
     <a href = <%= @pulse.link %>><%= @pulse.link%></a>
 <%end%>
+  </div>
 <br><div class = 'content'><%= @pulse.content %></div></br>
 <div class = 'info-container'>
   <%if Node.find(@pulse.pulser).avatar.file.exists? %>
@@ -34,5 +36,6 @@
       <%= will_paginate @pulse_comments %>
   <% end %>
         <%= render 'shared/pulse_comment_form' %>
+  </div>
   </div>
 </main>
