@@ -11,7 +11,7 @@
     <a href = <%= @pulse.link %>><%= @pulse.link%></a>
 <%end%>
   </div>
-<br><div class = 'content'><%= @pulse.content %></div></br>
+<br><div class = 'text-container'><div class = 'content'><%= @pulse.content %></div></div></br>
 <div class = 'info-container'>
   <%if Node.find(@pulse.pulser).avatar.file.exists? %>
       <%= image_tag Node.find(@pulse.pulser).avatar_url(:thumb) %>
