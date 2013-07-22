@@ -2,7 +2,11 @@
 <div class='username'>
   <h3> <%= @node.username%></h3>
 </div>
-      <img src= "<%="s3-us-west-2.amazonaws.com/pulsefy/avatars/node/profile_#{@node.id}.jpg"%>">
+  <%if current_node.avatar.file.exists? %>
+      <%= image_tag current_node.avatar_url(:profile) %>
+  <% else%>
+      <%= image_tag 'default.gif' %>
+  <%end%>
 <br><div>
  <%= link_to 'Assemblies', view_path(:id => @node.id) %> (<%= @node.assemblies.count%>)
   <%= link_to 'Inputs', inputs_path(:id => @node.id) %> (<%= @node.inputs.count%>)

@@ -60825,3 +60825,11 @@ ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   -e:1
 
 
+Started GET "/" for 127.0.0.1 at Mon Jul 22 16:09:02 -0400 2013
+Processing by StaticController#home as HTML
+  Rendered shared/_pulse_form.html.erb (1.9ms)
+  Rendered pulses/_pulse.html.erb (17645.7ms)
+  Rendered static/home.html.erb within layouts/application (17652.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_sidebar.html.erb (2396.7ms)
+Completed 200 OK in 20055ms (Views: 20050.3ms | ActiveRecord: 1.5ms)
