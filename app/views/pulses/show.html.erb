@@ -1,16 +1,15 @@
 <main>
  <div class="headline"><%= @pulse.headline %></div>
- <div class = "show-container">
 <% case @pulse.link_type %>
 <%when 'video' %>
-
+<div class = "show-container">
 <%= raw @pulse.embed_code %>
+</div>
 <%when 'photo' %>
     <img src = <%= raw @pulse.url %> >
 <%else%>
     <a href = <%= @pulse.link %>><%= @pulse.link%></a>
 <%end%>
-  </div>
 <br><div class = 'text-container'><div class = 'content'><%= @pulse.content %></div></div></br>
 <div class = 'info-container'>
   <%if Node.find(@pulse.pulser).avatar.file.exists? %>
