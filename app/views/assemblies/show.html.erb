@@ -2,7 +2,12 @@
 <div>
   <h3><%= @assembly.title%></h3>
 </div>
-  <br><img src= <%="s3-us-west-2.amazonaws.com/pulsefy/avatars/assembly/thumb_#{@assembly.id}.jpg"%>></br>
+  <br><%if @assembly.avatar.file.exists? %>
+      <%= image_tag @assembly.avatar_url(:profile) %>
+  <% else%>
+      <%= image_tag 'default.gif' %>
+  <%end%>
+  </br>
   <div class='info'>
     <%= @assembly.info%>
   </div>

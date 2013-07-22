@@ -11,10 +11,9 @@
   <div class = 'content'><%= pulse.content %></div>
       <br></br>
     <div class = 'info-container'>
-      <% case Node.find(pulse.pulser).avatar_url(:thumb).nil? %>
-      <% when false %>
-      <img src= <%="s3-us-west-2.amazonaws.com/pulsefy/avatars/node/thumb_#{pulse.pulser}.jpg"%>>
-      <% else %>
+      <%if Node.find(pulse.pulser).avatar.file.exists? %>
+          <%= image_tag Node.find(pulse.pulser).avatar_url(:thumb) %>
+      <% else%>
       <%= image_tag 'default.gif' %>
       <% end %>
       <span class = 'details'>

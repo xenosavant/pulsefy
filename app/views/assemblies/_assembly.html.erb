@@ -1,6 +1,8 @@
 <li>
-  <%if current_node.avatar? %>
-      <img src= "<%= current_node.avatar_url(:thumb) %>">
+  <%if assembly.avatar.file.exists? %>
+      <%= image_tag assembly.avatar_url(:thumb) %>
+  <% else%>
+      <%= image_tag 'default.gif' %>
   <%end%>
   <%= link_to assembly.title, assembly_path(:id => assembly.id) %>
   <% if signed_in? and assembly.founder == current_node.id %>
