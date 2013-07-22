@@ -2,7 +2,7 @@
 <div>
   <h3><%= @assembly.title%></h3>
 </div>
-  <br><%if @assembly.avatar.file.exists? %>
+  <br><%if !@assembly.avatar.file.nil? %>
       <%= image_tag @assembly.avatar_url(:profile) %>
   <% else%>
       <%= image_tag 'default.gif' %>

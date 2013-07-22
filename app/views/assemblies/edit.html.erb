@@ -10,7 +10,7 @@
 
         <%= f.label 'upload assembly picture' %>
 
-        <%if @assembly.avatar.file.exists? %>
+        <%if !@assembly.avatar.file.nil? %>
         <%= image_tag @assembly.avatar_url(:thumb) %>
         <% end %>
         <%= f.file_field :avatar %>
