@@ -3,7 +3,7 @@
       <h3>
         <%= current_node.username%>
       </h3>
-      <%if current_node.avatar.file.exists? %>
+      <%if !current_node.avatar.file.nil? %>
           <%= image_tag current_node.avatar_url(:thumb) %>
       <% else%>
           <%= image_tag 'default.gif' %>

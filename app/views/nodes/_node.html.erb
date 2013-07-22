@@ -1,5 +1,5 @@
 <li>
-      <%if node.avatar.file.exists? %>
+      <%if !node.avatar.file.nil? %>
           <%= image_tag node.avatar_url(:thumb) %>
       <% else%>
           <%= image_tag 'default.gif' %>

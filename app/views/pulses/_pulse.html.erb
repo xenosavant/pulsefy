@@ -11,7 +11,7 @@
   <div class = 'content'><%= pulse.content %></div>
       <br></br>
     <div class = 'info-container'>
-      <%if Node.find(pulse.pulser).avatar.file.exists? %>
+      <%if !Node.find(pulse.pulser).avatar.file.nil? %>
           <%= image_tag Node.find(pulse.pulser).avatar_url(:thumb) %>
       <% else%>
       <%= image_tag 'default.gif' %>

@@ -2,7 +2,7 @@
 <div class='username'>
   <h3> <%= @node.username%></h3>
 </div>
-  <%if @node.avatar.file.exists? %>
+  <%if !@node.avatar.file.nil? %>
       <%= image_tag @node.avatar_url(:profile) %>
   <%end%>
 <br><div>
