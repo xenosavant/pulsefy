@@ -4,8 +4,6 @@
 </div>
   <%if @node.avatar.file.exists? %>
       <%= image_tag @node.avatar_url(:profile) %>
-  <% else%>
-      <%= image_tag 'default.gif' %>
   <%end%>
 <br><div>
  <%= link_to 'Assemblies', view_path(:id => @node.id) %> (<%= @node.assemblies.count%>)

@@ -4,8 +4,6 @@
 </div>
   <br><%if !@assembly.avatar.file.nil? %>
       <%= image_tag @assembly.avatar_url(:profile) %>
-  <% else%>
-      <%= image_tag 'default.gif' %>
   <%end%>
   </br>
   <div class='info'>
