@@ -1,5 +1,4 @@
-o: ActiveSupport::Cache::Entry	:@expires_in0:@compressedF:@value"Ë {"digest"%e6a5e86b4919692b3844b854a25ac89d"lengthi"pathname"f/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-tooltip.js"
-class"ProcessedAsset"logical_path"bootstrap-tooltip.js"dependency_digest"%9bf4dde5445a598c46a19d9c211a0cfa"source"/* ===========================================================
+o: ActiveSupport::Cache::Entry	:@expires_in0:@compressedF:@value"Ë {"digest"%e6a5e86b4919692b3844b854a25ac89d"required_paths["f/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-tooltip.js"logical_path"bootstrap-tooltip.js"lengthi"source"/* ===========================================================
  * bootstrap-tooltip.js v2.1.0
  * http://twitter.github.com/bootstrap/javascript.html#tooltips
  * Inspired by the original jQuery.tipsy by Jason Frame
@@ -275,6 +274,7 @@ class"ProcessedAsset"logical_path"bootstrap-tooltip.js"dependency_digest"%9b
   }
 
 }(window.jQuery);
-"dependency_paths[{"digest"%87bac8ac6fc6c0998772cc79119253c1"	path"f/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-tooltip.js"
-mtime"2013-05-14T02:08:22-04:00"_version"%1b13569e9620782f423d4cd3ce931750"content_type"application/javascript"required_paths["f/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-tooltip.js"
-mtime"2013-05-14T02:08:22-04:00:@created_atf1374602918.827323 Ú‹
+"
+class"ProcessedAsset"_version"%1b13569e9620782f423d4cd3ce931750"content_type"application/javascript"pathname"f/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-tooltip.js"dependency_paths[{"digest"%87bac8ac6fc6c0998772cc79119253c1"
+mtime"2013-05-14T02:08:22-04:00"	path"f/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-tooltip.js"dependency_digest"%9bf4dde5445a598c46a19d9c211a0cfa"
+mtime"2013-05-14T02:08:22-04:00:@created_atf1374606343.720958 $-

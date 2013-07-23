@@ -3,6 +3,7 @@
 /* mixins, variables, etc. */
 
 $grayMediumLight: #eaeaea;
+$backroundBlue: #000040;
 
 /* universal */
 
@@ -17,16 +18,16 @@ sidebar {
   float: left;
   width: 300px;
   height: 700px;
-  background-color: #000066;
-  color: #000066;
+  background-color: $backroundBlue;
+  color: $backroundBlue;
   a {
-    color: #000066;
+    color:  $backroundBlue;
     &:hover {
-      color: #CCFFFF;
+      color:  #FFFFF0;
     }
   }
   li {
-    border-bottom: 1px solid #000066;
+    border-bottom: 1px solid $backroundBlue;
     font-size: 1.3em;
     list-style: none;
   }
@@ -42,11 +43,11 @@ sidebar {
 rightbar {
   position: absolute;
   left: 924px;
-  padding-left: 5%;
+  padding-right: 5%;
   padding-top: 5%;
   width: 300px;
   height: 700px;
-  background-color: #000066;
+  background-color: $backroundBlue;
   li {
     font-size: 1.3em;
     list-style: none;
@@ -55,15 +56,16 @@ rightbar {
 
 .right-top {
   position: absolute;
-  background-color: #6495ED	;
-  width: 230px;
+  left:940px;
+  background-color: #FFFFF0;
+  width: 280px;
   height: 650px;
 }
 
 .left-top {
   position: absolute;
-  background-color: #6495ED	;
-  width: 230px;
+  background-color: #FFFFF0;
+  width: 280px;
   height: 650px;
 }
 
