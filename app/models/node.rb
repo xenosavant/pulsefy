@@ -49,15 +49,15 @@ class Node < ActiveRecord::Base
     @impulse = args[:pulse]
     @rating = args[:rating]
     @vote = self.votes.build
-    if @rating == true
+    if @rating == 0
       @impulse.increment!(:degradations)
-      modify_reinforcement(:pulse => @impulse, :rating => 1)
-      @vote.update_attributes(:rating => 1, :pulse_id => @impulse.id)
+      modify_reinforcement(:pulse => @impulse, :rating => 0)
+      @vote.update_attributes(:rating => 0, :pulse_id => @impulse.id)
+      self.pulses.delete(@impulse)
     else
       @impulse.increment!(:reinforcements)
-      modify_reinforcement(:pulse => @impulse, :rating => 0)
-      @vote.update_attributes(:rating =>  0, :pulse_id => @impulse.id)
-      self.pulses.delete(@impulse)
+      modify_reinforcement(:pulse => @impulse, :rating => 1)
+      @vote.update_attributes(:rating =>  1, :pulse_id => @impulse.id)
     end
   end
 
