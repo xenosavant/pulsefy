@@ -20,7 +20,7 @@ class AssembliesController < ApplicationController
 
   def show
     @assembly = Assembly.find(params[:id])
-    store_location(@assembly.id)
+    store_location(@assembly.id, 'Assembly')
     @pulse = @assembly.pulses.new
     @pulses = @assembly.pulses.paginate(:page => params[:page])
   end

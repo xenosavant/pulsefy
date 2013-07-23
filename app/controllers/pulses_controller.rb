@@ -1,5 +1,6 @@
 class PulsesController < ApplicationController
 before_filter :signed_in_node
+include SessionsHelper
 
   def create
     @node = current_node
@@ -33,37 +34,30 @@ before_filter :signed_in_node
 
   def show
     @pulse = Pulse.find(params[:id])
-    store_location(params[:id])
+    store_location(params[:id], 'Pulse')
     @pulse_comment = @pulse.pulse_comments.new
     @pulse_comments = @pulse.pulse_comments.paginate(:page => params[:page])
   end
 
   def destroy
+    if !Pulse.find(params[:id]).nil?
     @pulse = Pulse.find(params[:id])
-    if @pulse.pulser_type == 'Node'
     @pulse.destroy
-    redirect_to Node.find(session[:return_to])
-    else
-    @pulse.destroy
-    redirect_to Assembly.find(session[:return_to])
     end
+    return_back_to
   end
 
   def cast
   @pulse = Pulse.find(params[:id])
   current_node.rate_pulse(:pulse => @pulse, :rating => params[:vote_cast])
-  redirect_to Node.find(session[:return_to])
+  return_back_to
   end
 
 def update_embed
   api = Embedly::API.new
   @embed = api.oembed :url => @pulse.link
   if @embed[0].error
-    if @pulse.pulser_type == 'Node'
-    redirect_to current_node
-    else
-    redirect_to Assembly.find(session[:return_to])
-    end
+    return_back_to
     else
     @pulse.update_attributes(:embed_code => @embed[0].html, :thumbnail => @embed[0].thumbnail_url,
                            :link_type => @embed[0].type, :url => @embed[0].url)

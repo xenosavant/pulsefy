@@ -30,13 +30,37 @@ module SessionsHelper
     session.delete(:return_to)
   end
 
-  def store_location(location)
+  def store_location(location, type)
+    session[:return_to_type] = type
     session[:return_to] = location
   end
 
   def sign_out
     self.current_node = nil
     cookies.delete(:remember_token)
+  end
+
+  def return_back_to
+    case session[:return_to_type]
+      when 'Node'
+      case Node.find(session[:return_to]).nil?
+        when false
+        redirect_to Node.find(session[:return_to])
+      end
+      when 'Assembly'
+        case Assembly.find(session[:return_to]).nil?
+          when false
+            redirect_to Assembly.find(session[:return_to])
+        end
+      when 'Pulse'
+        case Pulse.find(session[:return_to]).nil?
+          when false
+            redirect_to Pulse.find(session[:return_to])
+        end
+      else
+        flash[:alert] = 'Sorry! Something went terribly wrong!'
+        redirect_to root_path
+    end
   end
 
 end

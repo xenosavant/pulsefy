@@ -5,7 +5,7 @@ def home
   if signed_in?
   @node = current_node
   @pulse = current_node.pulses.new
-  store_location(@node.id)
+  store_location(@node.id, 'Node')
   @pulses = @node.pulses.paginate(:page => params[:page])
   end
 end
