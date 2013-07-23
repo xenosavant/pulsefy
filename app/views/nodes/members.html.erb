@@ -1,4 +1,5 @@
-<% provide(:title, 'Members') %>
+<main>
+  <% provide(:title, 'Members') %>
 <h1>Members</h1>
 <% if !@nodes.nil? %>
     <%= will_paginate %>
@@ -7,4 +8,6 @@
     </ul>
     <%= will_paginate %>
 <% end %>
+</main>
+
 
