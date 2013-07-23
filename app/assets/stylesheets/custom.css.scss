@@ -23,7 +23,9 @@ sidebar {
   a {
     color:  $backroundBlue;
     &:hover {
-      color:  #000;
+      color: #FFFFF0;
+      text-decoration: none;
+      background-color: $backroundBlue;
     }
   }
   li {
