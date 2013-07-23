@@ -1,5 +1,4 @@
-o: ActiveSupport::Cache::Entry	:@expires_in0:@compressedF:@value" {"_version"%1b13569e9620782f423d4cd3ce931750"
-mtime"2013-05-14T02:08:22-04:00"pathname"h/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-typeahead.js"logical_path"bootstrap-typeahead.js"source")/* =============================================================
+o: ActiveSupport::Cache::Entry	:@expires_in0:@compressedF:@value" {"_version"%1b13569e9620782f423d4cd3ce931750"source")/* =============================================================
  * bootstrap-typeahead.js v2.1.0
  * http://twitter.github.com/bootstrap/javascript.html#typeahead
  * =============================================================
@@ -300,6 +299,7 @@ mtime"2013-05-14T02:08:22-04:00"pathname"h/Library/Ruby/Gems/1.8/gems/bootstra
   })
 
 }(window.jQuery);
-"digest"%64d927aa5c96cc38b93e42ada223a0fd"
-class"ProcessedAsset"lengthi)"required_paths["h/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-typeahead.js"content_type"application/javascript"dependency_paths[{"	path"h/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-typeahead.js"
-mtime"2013-05-14T02:08:22-04:00"digest"%cd9487aea04b4f21e963f1aa8b9db7e8"dependency_digest"%52d160a32a97c933d14f035c5acd6fae:@created_atf1374610427.3156061 2ä
+"lengthi)"
+mtime"2013-05-14T02:08:22-04:00"pathname"h/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-typeahead.js"
+class"ProcessedAsset"dependency_digest"%52d160a32a97c933d14f035c5acd6fae"content_type"application/javascript"required_paths["h/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-typeahead.js"logical_path"bootstrap-typeahead.js"digest"%64d927aa5c96cc38b93e42ada223a0fd"dependency_paths[{"
+mtime"2013-05-14T02:08:22-04:00"	path"h/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-typeahead.js"digest"%cd9487aea04b4f21e963f1aa8b9db7e8:@created_atf1374611248.323462 ³š
