@@ -16,7 +16,7 @@ sidebar {
   padding-left: 5%;
   padding-top: 5%;
   float: left;
-  width: 300px;
+  width: 301px;
   height: 700px;
   background-color: $backroundBlue;
   color: $backroundBlue;
@@ -87,6 +87,8 @@ main {
   width: 450px;
   background-color: #FFFFF0;
   min-height: 100%;
+  border-left: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
 }
 
 contain {
