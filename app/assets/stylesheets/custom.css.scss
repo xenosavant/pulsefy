@@ -18,16 +18,15 @@ sidebar {
   width: 300px;
   height: 700px;
   background-color: #000066;
-  color: #33CCFF;
+  color: #000066;
   a {
-    color: #33CCFF;
+    color: #000066;
     &:hover {
       color: #CCFFFF;
     }
   }
   li {
-    border-bottom: 1px solid #CCFFFF;
-    color: #33CCFF;
+    border-bottom: 1px solid #000066;
     font-size: 1.3em;
     list-style: none;
   }
@@ -47,18 +46,33 @@ rightbar {
   }
 }
 
+.right-top {
+  position: absolute;
+  background-color: #6495ED	;
+  width: 230px;
+  height: 650px;
+}
+
+.left-top {
+  position: absolute;
+  background-color: #6495ED	;
+  width: 230px;
+  height: 650px;
+}
+
 main {
   padding-left: 5%;
   padding-right: 5%;
   position: absolute;
   left: 358px;
-  background-color: #FFFFCC;
+  background-color: #FFFFF0;
   min-height: 100%;
 }
 
 contain {
-  padding-top: 60px;
+  padding-top: 45px;
   position: absolute;
+  background-color: #FFFFF0;
   left:0;
   margin: 0;
   border: 0;
@@ -71,10 +85,6 @@ body {
   overflow: auto;
   height: 100%;
   width: 1150px;
-}
-logged-out {
-  alignment: center;
-  padding-top: 60px;
 }
 
 .center {

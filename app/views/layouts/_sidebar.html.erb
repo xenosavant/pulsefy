@@ -1,4 +1,5 @@
 <sidebar class = 'sidebar'>
+  <div class = 'right-top'>
   <% if signed_in? %>
       <h3>
         <%= current_node.username%>
@@ -16,4 +17,5 @@
       <br><li><%= link_to 'My Outputs', outputs_path(:id => current_node.id) %> (<%= current_node.outputs.count%>)</li></br>
       </ul>
   <%end%>
+ </div>
 </sidebar>
