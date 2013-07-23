@@ -4,7 +4,7 @@
       <h3>
         <%= current_node.username%>
       </h3>
-       <div class = 'side-photo'
+       <div class = 'side-photo'>
       <%if !current_node.avatar.file.nil? %>
           <%= image_tag current_node.avatar_url(:thumb) %>
       <% else%>
