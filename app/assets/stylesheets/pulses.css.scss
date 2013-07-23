@@ -16,12 +16,16 @@
   padding-bottom: 5px;
 }
 
-info-container {
+.bottom-bar {
+  height: 100px;
+  width: 450px;
+}
+.info-container {
   padding-top: 10px;
   height: 100px;
   position: relative;
   width: 450px;
-  display: block
+  display: block;
 }
 
 .thumbnail {

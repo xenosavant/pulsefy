@@ -6,8 +6,9 @@
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
-<body>
 <%= render 'layouts/header' %>
+<body>
+<contain>
 <% if signed_in? %>
 <%= render 'layouts/sidebar' %>
 <%end%>
@@ -15,6 +16,8 @@
          <div class='alert'<%= key %>"><%= value %></div>
         <% end %>
         <%= yield %>
-        </div>
-   </body>
+     <%= render 'layouts/rightbar' %>
+</contain>
+<%= render 'layouts/footer' %>
+ </body>
 </html>
