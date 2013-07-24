@@ -13,6 +13,7 @@ html {
 }
 
 sidebar {
+  z-index:0;
   position: fixed;
   padding-left: 5%;
   padding-top: 5%;
@@ -53,10 +54,10 @@ sidebar {
   }
 
 rightbar {
+  z-index:0;
   position: fixed;
   top: 50px;
-  left: 80%;
-  padding-right: 5%;
+  left: 78%;
   padding-top: 5%;
   width: 30%;
   height: 700px;
@@ -85,13 +86,14 @@ rightbar {
 }
 
 main {
+  z-index:-1;
   overflow: scroll;
   color: $backroundBlue;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
   position: absolute;
-  left: 35%;
-  width: 35%;
+  left: 33%;
+  width: 40%;
   background-color: #FFFFF0;
   min-height: 100%;
   border-left: 2px solid #e8e8e8;
@@ -233,7 +235,8 @@ textarea {
   display: block;
   position:relative;
   width:relative;
-  padding:15px;
+  width: 80%;
+  padding:3%;
   margin-left:0px;
   color:#000;
   background:#f3961c; /* default background for browsers without gradient support */
