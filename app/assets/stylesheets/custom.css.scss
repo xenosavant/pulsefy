@@ -89,11 +89,11 @@ main {
   z-index:0;
   overflow: scroll;
   color: $backroundBlue;
-  padding-left: 9%;
-  padding-right: 3%;
+  padding-left: 8%;
+  padding-right: 8%;
   position: absolute;
   left: 30%;
-  width: 42%;
+  width: 39%;
   background-color: #FFFFF0;
   min-height: 100%;
   border-left: 2px solid #e8e8e8;
@@ -102,6 +102,7 @@ main {
 
 
 body {
+  background-color:#FFFFF0;
   position: absolute;
   padding-top: 55px;
   overflow: auto;

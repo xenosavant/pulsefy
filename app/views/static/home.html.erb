@@ -1,6 +1,4 @@
 <% if signed_in? %>
-<body>
- <main>
    <br> </br>
    <div class="row">
      <aside class="span4">
@@ -14,8 +12,6 @@
          </ol>
         <%= will_paginate @pulses %>
       <% end %>
-</main>
-</body>
 <% else %>
     <div class = 'center'>
        <div class="center hero-unit">

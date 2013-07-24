@@ -1,5 +1,16 @@
 <%= form_for(@pulse_comment) do |f| %>
-    <%= render 'shared/error_messages', :object => f.object %>
+    <% if params[:errors] %>
+        <div id="error_explanation">
+          <div class="alert alert-error">
+            The form contains <%= pluralize(params[:errors].count, "error") %>.
+          </div>
+          <ul>
+            <%params[:errors].each do |msg| %>
+                <li> <%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+      <%end%>
     <div class="textarea">
       <%= f.text_area :content, :rows => 2 %>
     </div>

@@ -1,4 +1,4 @@
-<main>
+
 <div>
   <h3><%= @assembly.title%></h3>
 </div>
@@ -19,6 +19,9 @@
         <%= link_to 'quit', quit_path(:id => @assembly.id)%>
         <% end %>
         <% if params[:errors] %>
+            <div class="alert alert-error">
+              The form contains <%= pluralize(params[:errors].count, "error") %>.
+            </div>
             <div id="error_explanation">
               <ul>
                 <%params[:errors].each do |msg| %>
@@ -40,4 +43,3 @@
       </ol>
       <%= will_paginate @pulses %>
   <% end %>
-</main>

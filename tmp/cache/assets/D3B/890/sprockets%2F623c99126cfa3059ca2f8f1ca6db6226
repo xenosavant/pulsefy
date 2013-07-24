@@ -1,5 +1,4 @@
-o: ActiveSupport::Cache::Entry	:@expires_in0:@compressedF:@value" {"required_paths["h/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-typeahead.js"lengthi)"dependency_paths[{"digest"%cd9487aea04b4f21e963f1aa8b9db7e8"
-mtime"2013-05-14T02:08:22-04:00"	path"h/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-typeahead.js"content_type"application/javascript"source")/* =============================================================
+o: ActiveSupport::Cache::Entry	:@expires_in0:@compressedF:@value" {"source")/* =============================================================
  * bootstrap-typeahead.js v2.1.0
  * http://twitter.github.com/bootstrap/javascript.html#typeahead
  * =============================================================
@@ -300,6 +299,7 @@ mtime"2013-05-14T02:08:22-04:00"	path"h/Library/Ruby/Gems/1.8/gems/bootstrap-sa
   })
 
 }(window.jQuery);
-"dependency_digest"%52d160a32a97c933d14f035c5acd6fae"pathname"h/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-typeahead.js"logical_path"bootstrap-typeahead.js"_version"%1b13569e9620782f423d4cd3ce931750"digest"%64d927aa5c96cc38b93e42ada223a0fd"
-mtime"2013-05-14T02:08:22-04:00"
-class"ProcessedAsset:@created_atf1374684355.3285241 ä
+"pathname"h/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-typeahead.js"dependency_digest"%52d160a32a97c933d14f035c5acd6fae"required_paths["h/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-typeahead.js"_version"%1b13569e9620782f423d4cd3ce931750"dependency_paths[{"	path"h/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-typeahead.js"digest"%cd9487aea04b4f21e963f1aa8b9db7e8"
+mtime"2013-05-14T02:08:22-04:00"logical_path"bootstrap-typeahead.js"digest"%64d927aa5c96cc38b93e42ada223a0fd"lengthi)"
+mtime"2013-05-14T02:08:22-04:00"content_type"application/javascript"
+class"ProcessedAsset:@created_atf1374690489.4172089 ≥ç

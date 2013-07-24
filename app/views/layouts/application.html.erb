@@ -11,10 +11,12 @@
 <% if signed_in? %>
 <%= render 'layouts/sidebar' %>
 <%end%>
+<main>
         <% flash.each do |key, value| %>
          <div class='alert'<%= key %>"><%= value %></div>
         <% end %>
         <%= yield %>
+</main>
   <% if signed_in? %>
      <%= render 'layouts/rightbar' %>
   <%end%>
