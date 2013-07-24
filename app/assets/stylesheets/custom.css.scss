@@ -197,13 +197,12 @@ footer {
 
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
-  width: 100%;
   padding: 10px;
   margin-bottom: 15px;
 }
 
 textarea {
-  width: 100%;
+  width: 400px !important;
   height: 100px;
 }
 
