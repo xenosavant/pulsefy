@@ -1,19 +1,19 @@
-<div class= 'center'>
-<% provide(:title, 'Pulse In') %>
-<h1>Pulse In</h1>
+    <div class= 'center'>
+        <% provide(:title, 'Pulse In') %>
+        <h1>Pulse In</h1>
 
-    <%= form_for(:session, :url => sessions_path) do |f| %>
+        <%= form_for(:session, :url => sessions_path) do |f| %>
 
-    <%= f.label :email %>
-    <%= f.text_field :email %>
+        <%= f.label :email %>
+        <%= f.text_field :email %>
 
-    <%= f.label :password %>
-    <%= f.password_field :password %>
+        <%= f.label :password %>
+        <%= f.password_field :password %>
 
-    <br>
-      <%= f.submit "Pulse In", :class => "btn btn-large btn-primary" %>
-    </br>
-    <% end %>
+        <br>
+        <%= f.submit "Pulse In", :class => "btn btn-large btn-primary" %>
+        </br>
+        <% end %>
         <br>
         <br>
         <br>
@@ -21,4 +21,4 @@
         </br>
         </br>
         </br>
-</div>
+    </div>
