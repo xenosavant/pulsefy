@@ -1,4 +1,4 @@
-
+<div class = 'pulsefeed'>
   <% provide(:title, 'My Assemblies') %>
   <% if signed_in? and @node == current_node %>
       <h1>My Assemblies</h1>
@@ -12,3 +12,4 @@
       </ul>
       <%= will_paginate %>
   <%end%>
+</div>

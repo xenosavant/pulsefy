@@ -1,4 +1,5 @@
-<% provide(:title, "Edit assembly") %>
+<div class = 'pulsefeed'>
+  <% provide(:title, "Edit assembly") %>
 <h1>Update <td><%= @assembly.title %></td> </h1>
 
     <%= form_for @assembly, :html => {:multipart => true} do |f| %>
@@ -17,3 +18,4 @@
         <%= f.submit 'Save changes', :class => 'btn btn-large btn-primary' %>
         </div></br>
     <% end %>
+</div>

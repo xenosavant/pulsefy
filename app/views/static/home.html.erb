@@ -1,4 +1,5 @@
 <% if signed_in? %>
+<div class = 'pulsefeed'>
    <br> </br>
    <div class="row">
      <aside class="span4">
@@ -12,6 +13,7 @@
          </ol>
         <%= will_paginate @pulses %>
       <% end %>
+  </div>
 <% else %>
     <div class = 'center'>
        <div class="center hero-unit">
