@@ -1,6 +1,13 @@
     <div class= 'center'>
         <% provide(:title, 'Pulse In') %>
-        <h1>Pulse In</h1>
+      <h1>Pulse In</h1>
+      <% if params[:errors] %>
+          <div id="error_explanation">
+            <div class="alert alert-error">
+                  <%= params[:errors] %>
+            </div>
+          </div>
+      <%end%>
 
         <%= form_for(:session, :url => sessions_path) do |f| %>
 
@@ -21,4 +28,4 @@
         </br>
         </br>
         </br>
-    </div>
+  </div>

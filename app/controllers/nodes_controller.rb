@@ -14,7 +14,7 @@ class NodesController < ApplicationController
       flash[:success] = "Pulsefication Complete!"
       redirect_to root_url
     else
-      render 'new'
+      redirect_to :controller => 'nodes', :action => 'new', :errors => @node.errors.full_messages
     end
   end
 
