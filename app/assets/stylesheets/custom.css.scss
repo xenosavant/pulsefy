@@ -44,7 +44,7 @@ sidebar {
   display: block;
   width: 110px;
   height: 110px;
-  padding-left: 10px;
+  padding-left: 20px;
   padding-bottom: 10px;
   position: absolute;
 }
@@ -83,27 +83,29 @@ rightbar {
   background-color: #FFFFF0;
   width: 25%;
   height: 650px;
+  padding-left: 10px;
 }
 
 main {
   z-index:0;
-  overflow: scroll;
   color: $backroundBlue;
-  padding-left: 8%;
-  padding-right: 8%;
   position: absolute;
-  left: 30%;
-  width: 38%;
+  width: 100%;
   background-color: #FFFFF0;
   min-height: 100%;
-  border-left: 2px solid #e8e8e8;
-  border-right: 2px solid #e8e8e8;
+}
+
+.pulsefeed  {
+  position:absolute;
+  left:40%;
+  z-index:0;
+  width: 30%;
 }
 
 
 body {
   position: absolute;
-  padding-top: 55px;
+  padding-top: 45px;
   overflow: auto;
   height: 100%;
   width: 100%;
@@ -203,7 +205,7 @@ input, textarea, select, .uneditable-input {
 }
 
 textarea {
-  width: 440px;
+  width: 430px !important;
   height: 100px;
 }
 
@@ -232,12 +234,12 @@ textarea {
   padding:3%;
   margin-left:0px;
   color:#000;
-  background:#1e5799; /* default background for browsers without gradient support */
+  background:#207cca; /* default background for browsers without gradient support */
   /* css3 */
-  background:-webkit-gradient(linear, 0 0, 0 100%, from(#207cca), to(#7db9e8));
-  background:-moz-linear-gradient(#207cca, #7db9e8);
-  background:-o-linear-gradient(#207cca, #7db9e8);
-  background:linear-gradient(#207cca, #7db9e8);
+  background:-webkit-gradient(linear, 0 0, 0 100%, from(#7db9e8), to(#207cca));
+  background:-moz-linear-gradient(#7db9e8, #207cca);
+  background:-o-linear-gradient(#7db9e8, #207cca);
+  background:linear-gradient(#7db9e8, #207cca);
   -webkit-border-radius:10px;
   -moz-border-radius:10px;
   border-radius:10px;
@@ -252,7 +254,7 @@ textarea {
   left:10px; /* controls horizontal position */
   border-width:15px 15px 0; /* vary these values to change the angle of the vertex */
   border-style:solid;
-  border-color:#7db9e8 transparent;
+  border-color:#207cca transparent;
 }
 
 .logged-out {
