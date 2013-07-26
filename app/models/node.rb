@@ -27,11 +27,6 @@ class Node < ActiveRecord::Base
 
   include Network
 
-  def initialize
-    @vote = self.build_inbox
-    self.inbox.save
-  end
-
   def fire_pulse(args)
     @impulse = args[:pulse]
     process_fire_from(:pulse => @impulse)
