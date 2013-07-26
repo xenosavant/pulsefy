@@ -17,8 +17,14 @@
   <div class = 'content'><%= pulse.content %></div>
     <div class = 'info-container'>
         <div class = 'avatar-container'>
+         <% case Node.find(pulse.pulser).avatar.nil? %>
+          <% when true %>
          <%= link_to image_tag('default.gif'), :controller => 'nodes',
          :action => 'show', :id => pulse.pulser %>
+          <% when false %>
+          <%= link_to image_tag(Node.find(pulse.pulser).avatar.url), :controller => 'nodes',
+                          :action => 'show', :id => pulse.pulser %>
+          <%end%>
         </div>
         <div class = 'details'>
             Depth: <%= pulse.depth %><br>
@@ -34,6 +40,11 @@
                   <%= pulse.reinforcements %>
                   <%= link_to image_tag('Down.png'), cast_path(:id => pulse.id, :vote_cast => false) %>
                   <%= pulse.degradations %>
+                  <% else %>
+                      <%= image_tag 'Up.png' %>
+                      <%= pulse.reinforcements %>
+                      <%= image_tag 'Down.png' %>
+                      <%= pulse.degradations %>
                   <%end%>
               <% when true %>
                   <%= image_tag 'Up.png' %>
