@@ -4,8 +4,8 @@ class CreateNodes < ActiveRecord::Migration
     create_table :nodes do |t|
       t.string :username, :email, :remember_token, :avatar
       t.text :info
-      t.boolean :admin, :hub
-      t.string :password_digest
+      t.boolean :admin, :hub, :verified
+      t.string :password_digest, :self_tag
       t.float :threshold
       t.timestamps
     end

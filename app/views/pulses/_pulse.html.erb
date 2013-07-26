@@ -1,4 +1,10 @@
 <li>
+  <% if signed_in? and pulse.pulser == current_node.id %>
+      <div class = 'close-container'>
+      <%= link_to image_tag('close.png', :border => 0),
+                  delete_path(:id => pulse.id) %>
+      </div>
+  <% end%>
   <div class="headline"><%= pulse.headline %></div>
   <% case pulse.link_type %>
   <%when 'video' %>
@@ -6,39 +12,36 @@
   <%when 'photo' %>
       <div class ="photo-container"> <img src = <%= raw pulse.url %> ></div>
   <%else%>
-  <a href = <%= pulse.link %>><%= pulse.link%></a>
-   <%end%>
+      <div class ="link-container"><a href = <%= pulse.link %>><%= pulse.link%></a></div>
+  <%end%>
   <div class = 'content'><%= pulse.content %></div>
-      <br></br>
     <div class = 'info-container'>
-      <%if !Node.find(pulse.pulser).avatar.file.nil? %>
-          <%= image_tag Node.find(pulse.pulser).avatar_url(:thumb) %>
-      <% else%>
-      <%= image_tag 'default.gif' %>
-      <% end %>
-      <span class = 'details'>
-        Pulsed by
-        <%if signed_in? and pulse.pulser == current_node.id %>
-        Me
-        <%else %>
-        <%= Node.find(pulse.pulser).username %>
-       <%end%>
-  <%= link_to 'comment', comment_path(:id => pulse.id) %></d>
-  <br>
-  Depth: <%= pulse.depth %>
-  </br>
-  <span class="timestamp">
-    Fired <%= time_ago_in_words(pulse.created_at) %> ago.
-  </span>
-    <br><span class="tags"><%= pulse.tags %></span></br>
-   <%if signed_in? and pulse.pulser != current_node.id and current_node.votes.find_by_pulse_id(pulse.id).nil? and pulse.pulser_type == 'Node'%>
-
-  <d><%= link_to 'reinforce', cast_path(:id => pulse.id, :vote_cast => true) %></d>
-    <d><%= link_to 'degrade', cast_path(:id => pulse.id, :vote_cast => false) %></d>
-     <% end%>
-     <% if signed_in? and pulse.pulser == current_node.id %>
-     <%= link_to 'delete', delete_path(:id => pulse.id) %>
-     <% end%>
-  </span>
+        <div class = 'avatar-container'>
+         <%= link_to image_tag('default.gif'), :controller => 'nodes',
+         :action => 'show', :id => pulse.pulser %>
+        </div>
+        <div class = 'details'>
+            Depth: <%= pulse.depth %><br>
+           <div class="timestamp">
+             Fired <%= time_ago_in_words(pulse.created_at) %> ago.
+            </div>
+        <div class="tags"><%= pulse.tags %></div>
+        <%if signed_in? and pulse.pulser != current_node.id and pulse.pulser_type == 'Node'%>
+              <% if current_node.votes.find_by_pulse_id(pulse.id).nil? %>
+                  <%= link_to image_tag('Up.png'), cast_path(:id => pulse.id, :vote_cast => true) %>
+                  <%= pulse.reinforcements %>
+                  <%= link_to image_tag('Down.png'), cast_path(:id => pulse.id, :vote_cast => false) %>
+                  <%= pulse.degradations %>
+              <% else %>
+                  <%= image_tag 'Up.png' %>
+                  <%= pulse.reinforcements %>
+                  <%= image_tag 'Down.png' %>
+                  <%= pulse.degradations %>
+              <%end%>
+        <%end%>
  </div>
+</div>
+  <div class = 'comment-box'>
+    <%= link_to 'comment', comment_path(:id => pulse.id) %>
+  </div>
 </li>

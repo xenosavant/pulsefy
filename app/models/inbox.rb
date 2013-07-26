@@ -1,6 +1,6 @@
 class Inbox < ActiveRecord::Base
 
   belongs_to :node
-  has_many :messages
+  has_and_belongs_to_many :dialogues
 
 end

@@ -9,12 +9,10 @@
 <%= render 'layouts/header' %>
 <body>
 <%= render 'layouts/sidebar' %>
-<main>
         <% flash.each do |key, value| %>
          <div class='alert'<%= key %>"><%= value %></div>
         <% end %>
         <%= yield %>
-</main>
-     <%= render 'layouts/rightbar' %>
+   <%= render 'layouts/rightbar' %>
  </body>
 </html>

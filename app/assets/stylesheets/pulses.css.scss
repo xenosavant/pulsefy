@@ -4,30 +4,28 @@
   list-style: none;
   margin: 10px 0 0 0;
   width: 450px;
+  position:absolute;
   li {
-    padding: 10px 0;
-    border-top: 1px solid #e8e8e8;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-top: 1px solid #000040;
   }
 }
 
 .headline {
   font-size: 1.7em;
   display: block;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   padding-top: 5px;
   font-style: bold;
 }
 
-.bottom-bar {
-  height: 100px;
-  width: 450px;
-}
 .info-container {
   padding-top: 10px;
-  height: 100px;
   position: relative;
-  width: 450px;
-  display: block;
+  width: 100%;
+  display:block;
+  padding-bottom: 10px;
 }
 
 .thumbnail {
@@ -41,8 +39,9 @@
 
 .details {
   position: absolute;
-  padding-left: 25px;
-  display: inline;
+  left: 110px;
+  display:inline;
+  top:25px;
 }
 
 //#content {
@@ -74,11 +73,10 @@
 .video-container {
   position: relative;
   max-width: 450px;
-  padding-bottom: 291px;
+  padding-bottom: 280px;
   padding-top: 30px;
   height: 0;
   overflow: hidden;
-  display: block;
 }
 
 .show-container {
@@ -91,7 +89,7 @@
 }
 
 .text-container {
-  max-width: 450px;
+  max-width: 80%;
 }
 
 .show-container iframe,
@@ -120,4 +118,30 @@
   width:200px;
   height: auto;
   padding-bottom: 1%;
+}
+
+.link-container {
+  width: 80%;
+  padding-bottom: 5px;
+  display: block;
+}
+
+.avatar-container {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left:0px;
+  top:10px;
+}
+
+.close-container {
+  position:absolute;
+  display:inline;
+  right: 0;
+}
+
+.comment-box {
+  position:relative;
+  right: -325px;
+  bottom: 10px;
 }

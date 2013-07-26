@@ -2,7 +2,8 @@ class Node < ActiveRecord::Base
 
 
   mount_uploader :avatar, AvatarUploader
-  attr_accessible :username, :email, :info, :threshold, :password, :password_confirmation, :avatar
+  attr_accessible :username, :email, :info, :threshold,
+                  :password, :password_confirmation, :avatar, :self_tag
   has_secure_password
   before_save { |node| node.email = email.downcase }
   before_save :create_remember_token
@@ -15,6 +16,7 @@ class Node < ActiveRecord::Base
   validates :info, :length => { :maximum => 250 }
   has_and_belongs_to_many :pulses
   has_and_belongs_to_many :assemblies
+  has_and_belongs_to_many :conversations
   has_many :connectors, :foreign_key => 'input_id', :dependent => :destroy
   has_many :outputs, :through => :connectors
   has_many :reverse_relationships, :foreign_key => 'output_id',
@@ -24,6 +26,11 @@ class Node < ActiveRecord::Base
   has_one  :inbox
 
   include Network
+
+  def initialize
+    @vote = self.build_inbox
+    self.inbox.save
+  end
 
   def fire_pulse(args)
     @impulse = args[:pulse]
@@ -65,6 +72,7 @@ class Node < ActiveRecord::Base
     @threshold = 0.5
     @admin = false
     @hub = false
+    @verified = false
   end
 
   private

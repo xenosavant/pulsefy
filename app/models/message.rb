@@ -1,6 +1,6 @@
 class Message < ActiveRecord::Base
 
-  belongs_to :inbox
-  attr_accessible :content
+  belongs_to :conversation
+  attr_accessible :subject, :body, :sender, :recipient, :read
 
 end

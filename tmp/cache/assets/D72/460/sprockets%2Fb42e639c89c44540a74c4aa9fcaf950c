@@ -1,7 +1,4 @@
-o: ActiveSupport::Cache::Entry	:@expires_in0:@compressedF:@value"Ñ-{"required_paths["W/Library/Ruby/Gems/1.8/gems/jquery-rails-3.0.4/vendor/assets/javascripts/jquery.js"dependency_paths[{"	path"W/Library/Ruby/Gems/1.8/gems/jquery-rails-3.0.4/vendor/assets/javascripts/jquery.js"digest"%582c6f9d65996b754f9fa0aa1591c794"
-mtime"2013-07-13T17:45:29-04:00"logical_path"jquery.js"dependency_digest"%785eadff5fd6ceffe3172bb4b114c50d"digest"%3c56011128634ce6a688466d5bef9b83"
-mtime"2013-07-13T17:45:29-04:00"content_type"application/javascript"
-class"ProcessedAsset"_version"%1b13569e9620782f423d4cd3ce931750"source"0+/*!
+o: ActiveSupport::Cache::Entry	:@expires_in0:@compressedF:@value"Ñ-{"source"0+/*!
  * jQuery JavaScript Library v1.10.2
  * http://jquery.com/
  *
@@ -9791,4 +9788,7 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
 }
 
 })( window );
-"pathname"W/Library/Ruby/Gems/1.8/gems/jquery-rails-3.0.4/vendor/assets/javascripts/jquery.js"lengthi0+:@created_atf1374726878.4101739 @J
+"
+mtime"2013-07-13T17:45:29-04:00"required_paths["W/Library/Ruby/Gems/1.8/gems/jquery-rails-3.0.4/vendor/assets/javascripts/jquery.js"digest"%3c56011128634ce6a688466d5bef9b83"logical_path"jquery.js"_version"%1b13569e9620782f423d4cd3ce931750"content_type"application/javascript"
+class"ProcessedAsset"dependency_digest"%785eadff5fd6ceffe3172bb4b114c50d"pathname"W/Library/Ruby/Gems/1.8/gems/jquery-rails-3.0.4/vendor/assets/javascripts/jquery.js"dependency_paths[{"
+mtime"2013-07-13T17:45:29-04:00"digest"%582c6f9d65996b754f9fa0aa1591c794"	path"W/Library/Ruby/Gems/1.8/gems/jquery-rails-3.0.4/vendor/assets/javascripts/jquery.js"lengthi0+:@created_atf1374800931.9564891 7
