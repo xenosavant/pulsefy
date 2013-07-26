@@ -27,14 +27,15 @@
             </div>
         <div class="tags"><%= pulse.tags %></div>
         <%if signed_in? and pulse.pulser_type == 'Node'%>
-              <% if current_node.votes.find_by_pulse_id(pulse.id).nil? %>
-                  <% if pulse.pulser != current_node.id %>
+              <% case pulse.pulser == current_node.id %>
+              <% when false %>
+                  <% if current_node.votes.find_by_pulse_id(pulse.id).nil?%>
                   <%= link_to image_tag('Up.png'), cast_path(:id => pulse.id, :vote_cast => true) %>
                   <%= pulse.reinforcements %>
                   <%= link_to image_tag('Down.png'), cast_path(:id => pulse.id, :vote_cast => false) %>
                   <%= pulse.degradations %>
                   <%end%>
-              <% else %>
+              <% when true %>
                   <%= image_tag 'Up.png' %>
                   <%= pulse.reinforcements %>
                   <%= image_tag 'Down.png' %>
