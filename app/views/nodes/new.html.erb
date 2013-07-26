@@ -1,19 +1,19 @@
-<div class= 'center'>
-<% provide(:title, 'Pulse Up') %>
-<h1>Pulse Up</h1>
-  <% if params[:errors] %>
-      <div id="error_explanation">
-        <div class="alert alert-error">
-          The form contains <%= pluralize(params[:errors].count, "error") %>.
-        </div>
-        <ul>
-          <%params[:errors].each do |msg| %>
-              <li> <%= msg %></li>
-          <% end %>
-        </ul>
-      </div>
-  <%end%>
-    <%= form_for(@node) do |f| %>
+<div class = 'logged-background'>
+            <% provide(:title, 'Pulse Up') %>
+             <h1>Pulse Up</h1>
+             <% if params[:errors] %>
+                 <div id="error_explanation">
+                    <div class="alert alert-error">
+                         The form contains <%= pluralize(params[:errors].count, "error") %>.
+                    </div>
+                 <ul>
+                 <%params[:errors].each do |msg| %>
+                 <li> <%= msg %></li>
+                 <% end %>
+                </ul>
+                </div>
+             <%end%>
+        <%= form_for(@node) do |f| %>
 
         <%= render 'shared/error_messages', :object => f.object %>
         <%= f.label :username %>
@@ -29,7 +29,7 @@
         <%= f.password_field :password_confirmation %>
 
         <div class='center'>
-        <%= f.submit 'Pulsefy!', :class => "btn btn-large btn-primary" %>
-        <% end %>
-        </div>
+             <%= f.submit 'Pulsefy!', :class => "btn btn-large btn-primary" %>
+             <% end %>
+   </div>
 </div>

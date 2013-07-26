@@ -1,7 +1,5 @@
-o: ActiveSupport::Cache::Entry	:@expires_in0:@compressedF:@value" {"logical_path"bootstrap-typeahead.js"
-class"ProcessedAsset"_version"%1b13569e9620782f423d4cd3ce931750"
-mtime"2013-05-14T02:08:22-04:00"dependency_paths[{"
-mtime"2013-05-14T02:08:22-04:00"	path"h/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-typeahead.js"digest"%cd9487aea04b4f21e963f1aa8b9db7e8"source")/* =============================================================
+o: ActiveSupport::Cache::Entry	:@expires_in0:@compressedF:@value" {"
+class"ProcessedAsset"source")/* =============================================================
  * bootstrap-typeahead.js v2.1.0
  * http://twitter.github.com/bootstrap/javascript.html#typeahead
  * =============================================================
@@ -302,4 +300,6 @@ mtime"2013-05-14T02:08:22-04:00"	path"h/Library/Ruby/Gems/1.8/gems/bootstrap-sa
   })
 
 }(window.jQuery);
-"digest"%64d927aa5c96cc38b93e42ada223a0fd"content_type"application/javascript"dependency_digest"%52d160a32a97c933d14f035c5acd6fae"lengthi)"pathname"h/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-typeahead.js"required_paths["h/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-typeahead.js:@created_atf1374801427.151686 µ9
+"digest"%64d927aa5c96cc38b93e42ada223a0fd"content_type"application/javascript"required_paths["h/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-typeahead.js"logical_path"bootstrap-typeahead.js"dependency_paths[{"digest"%cd9487aea04b4f21e963f1aa8b9db7e8"	path"h/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-typeahead.js"
+mtime"2013-05-14T02:08:22-04:00"dependency_digest"%52d160a32a97c933d14f035c5acd6fae"
+mtime"2013-05-14T02:08:22-04:00"_version"%1b13569e9620782f423d4cd3ce931750"pathname"h/Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-typeahead.js"lengthi):@created_atf1374856411.717366 ÈS
