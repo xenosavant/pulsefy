@@ -28,9 +28,7 @@ sidebar {
 
 .side-photo {
   display: inline;
-  height: 56px;
-  padding-bottom: 2px;
-  padding-top: 2px;
+  padding-top: 5px;
 }
 
 .side-name {
@@ -41,8 +39,10 @@ rightbar {
   z-index:1;
   position: fixed;
   top: 50px;
-  left: 80%;
+  left: 74%;
   padding-top: 5%;
+  padding-left: 3%;
+  padding-right:3%;
   width: 20%;
   height: 700px;
   background-color:#000;
@@ -100,9 +100,9 @@ topbar {
   padding-bottom: 5px;
   padding-top: 5px;
   a {
-    color:  $lightSlate;
+    color:$graydarker;
     &:hover {
-      color: #000;
+      color:  $lightSlate;
       text-decoration: none;
     }
   }
@@ -116,8 +116,8 @@ topbar {
 
 list-box {
   display:inline;
-  position:absolute;
-
+  position:fixed;
+  top:65px;
 }
 
 body {
