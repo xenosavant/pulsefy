@@ -1,0 +1,19 @@
+<topbar class = 'topbar'>
+  <% if signed_in? %>
+        <%if !current_node.avatar.file.nil? %>
+           <span class = 'side-photo'>
+            <%= image_tag current_node.avatar_url(:micro) %>
+            </span>
+        <%end%>
+      <span class = 'side-name'>
+        <%= current_node.username%>
+       </span>
+  <%end%>
+        <ul>
+          <li><%= link_to 'Home', root_path %></li> |
+          <li><%= link_to 'Form an Assembly', assemble_path %> </li> |
+          <li><%= link_to 'My Assemblies', view_path(:id => current_node.id) %> (<%= current_node.assemblies.count%>)</li> |
+          <li><%= link_to 'My Inputs', inputs_path(:id => current_node.id) %> (<%= current_node.inputs.count%>)</li> |
+          <li><%= link_to 'My Outputs', outputs_path(:id => current_node.id) %> (<%= current_node.outputs.count%>)</li> |
+        </ul>
+</topbar>
