@@ -88,24 +88,27 @@ rightbar {
   color: $backroundBlue;
 }
 
-topbar {
+.top-wrapper {
+  width: 100%;
+  position: fixed;
+  position-top: 35px;
+  z-index:2;
+  height: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+  background-color: $graydarker;
+}
+
+.topbar {
+  position: absolute;
   font-size: 2em;
   background-color: $topGray;
-  position-top: 35px;
-  position-left: 75px;
   height: 25px;
-  width: 90%;
+  width: 75%;
   z-index:2;
-  position: fixed;
-  padding-bottom: 5px;
-  padding-top: 5px;
-  color:#000;
-  border-color: $graydarker;
-  border-style:solid;
-  border-width: 15px;
-  border-top-width: 0px;
-  border-left-width: 60px;
-  border-right-width: 60px;
   a {
     color:#000;
     &:hover {
@@ -119,7 +122,6 @@ topbar {
     list-style: none;
     display: inline;
     margin: 1em;
-
   }
 }
 
