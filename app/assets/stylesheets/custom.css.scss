@@ -16,12 +16,13 @@ html {
 sidebar {
   z-index:1;
   position: fixed;
-  padding-left: 5%;
-  padding-top: 5%;
+  padding-left: 3%;
+  padding-right:3%;
+  padding-top: 10%;
   float: left;
   top: 50px;
   width: 20%;
-  height: 700px;
+  height: 100%;
   background-color:#000;
 }
 
@@ -29,7 +30,7 @@ sidebar {
   display: inline;
   height: 56px;
   padding-bottom: 2px;
-  padding-bottom: 2px;
+  padding-top: 2px;
 }
 
 .side-name {
@@ -98,6 +99,25 @@ topbar {
   padding-right: 5%;
   padding-bottom: 5px;
   padding-top: 5px;
+  a {
+    color:  $lightSlate;
+    &:hover {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+  li {
+    font-size: 0.7em;
+    list-style: none;
+    display: inline;
+    margin: 1em;
+  }
+}
+
+list-box {
+  display:inline;
+  position:absolute;
+
 }
 
 body {
@@ -196,15 +216,11 @@ footer {
 
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
-  width: 100%;
+  width: 100px;
   padding: 10px;
   margin-bottom: 15px;
 }
 
-textarea {
-  width: 400px !important;
-  height: 100px;
-}
 
 #error_explanation {
   alignment: center;

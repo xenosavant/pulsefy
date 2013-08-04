@@ -9,6 +9,7 @@
         <%= current_node.username%>
        </span>
   <%end%>
+  <span class = 'list-box'>
         <ul>
           <li><%= link_to 'Home', root_path %></li> |
           <li><%= link_to 'Form an Assembly', assemble_path %> </li> |
@@ -16,4 +17,5 @@
           <li><%= link_to 'My Inputs', inputs_path(:id => current_node.id) %> (<%= current_node.inputs.count%>)</li> |
           <li><%= link_to 'My Outputs', outputs_path(:id => current_node.id) %> (<%= current_node.outputs.count%>)</li> |
         </ul>
+      </span>
 </topbar>

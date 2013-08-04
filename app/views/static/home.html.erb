@@ -1,11 +1,5 @@
 <% if signed_in? %>
 <div class = 'pulsefeed'>
-   <br> </br>
-   <div class="row">
-     <aside class="span4">
-         <%= render 'shared/pulse_form' %>
-     </aside>
-   </div>
     <% if @node.pulses.any? %>
        <h3>Pulsefeed</h3>
          <ol class="pulses">

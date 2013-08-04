@@ -1,3 +1,24 @@
 <sidebar class = 'sidebar'>
+  <%case params[:controller]%>
+  <%when 'static'%>
+     <%case params[:action]%>
+       <%when 'home'%>
+<div class="row">
+    <aside class="span4">
+      <%= render 'shared/pulse_form' %>
+    </aside>
+  </div>
+     <%end%>
+  <%when 'assemblies'%>
+      <%case params[:action]%>
+  <%when 'show'%>
+          <div class="row">
+            <aside class="span4">
+              <%= render 'shared/pulse_form' %>
+            </aside>
+          </div>
+          <%end%>
+      <%else%>
 
+      <%end%>
 </sidebar>
