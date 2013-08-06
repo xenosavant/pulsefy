@@ -8,9 +8,18 @@ $lightSlate: #d0dfef;
 $topGray: #708090;
 $graydarker: #1c2025;
 
+
 html {
   min-height: 100%;
   position:relative;
+}
+
+body {
+  position: absolute;
+  padding-top: 35px;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
 }
 
 sidebar {
@@ -18,7 +27,7 @@ sidebar {
   position: fixed;
   padding-left: 3%;
   padding-right:3%;
-  padding-top: 4%;
+  padding-top: 10%;
   float: left;
   top: 50px;
   width: 20%;
@@ -26,11 +35,39 @@ sidebar {
   background-color:$graydarker;
 }
 
-.side-photo {
-  position:absolute;
+.topbar {
   display: block;
-  padding-bottom:20px;
-  height:50px;
+  position: fixed;
+  font-size: 2.2em;
+  background-color: $topGray;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 75px;
+  height: 25px;
+  width: 100%;
+  z-index:3;
+  a {
+   color:#000;
+      &:hover {
+          color:  $lightSlate;
+       background-color: #000;
+       text-decoration: none;
+      }
+    }
+    li {
+      font-size: 0.7em;
+      list-style: none;
+      display: inline;
+      margin: 1em;
+    }
+}
+
+
+.topbar-topper {
+  position:fixed;
+  left: 25px;
+  top: 42px;
+  z-index:4;
 }
 
 .side-name {
@@ -65,7 +102,7 @@ rightbar {
   color: $backroundBlue;
   background-color: $lightSlate;
   height:100%;
-  overflow:auto;
+  overflow:scroll;
   border-color: $grayMediumLight;
   border-width: 5px;
 }
@@ -86,64 +123,6 @@ rightbar {
   margin:50%;
   border-color: $grayMediumLight;
   color: $backroundBlue;
-}
-
-.top-wrapper {
-  width: 100%;
-  position: fixed;
-  position-top: 35px;
-  z-index:2;
-  height: 30px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 100px;
-  padding-right: 100px;
-  text-align: center;
-  background-color: $graydarker;
-}
-
-.topbar {
-  position: absolute;
-  font-size: 2em;
-  background-color: $topGray;
-  height: 25px;
-  width: 75%;
-  z-index:2;
-  a {
-    color:#000;
-    &:hover {
-      color:  $lightSlate;
-      background-color: #000;
-      text-decoration: none;
-    }
-  }
-  li {
-    font-size: 0.7em;
-    list-style: none;
-    display: inline;
-    margin: 1em;
-  }
-}
-
-list-box {
-  position:fixed;
-  position-top:75px;
-  position-left: 125px;
-}
-
-body {
-  position: absolute;
-  padding-top: 35px;
-  overflow: auto;
-  height: 100%;
-  width: 100%;
-}
-
-.center {
-  text-align: center;
-  h1 {
-    margin-bottom: 10px;
-  }
 }
 
 /* typography */
@@ -170,10 +149,6 @@ h2 {
   color: $grayLight;
 }
 
-h7 {
-  font-size: 0.7em;
-  color: $graydarker;
-}
 
 p {
   font-size: 1.1em;
@@ -200,6 +175,7 @@ p {
     text-decoration: none;
   }
 }
+
 
 /* footer */
 
@@ -267,12 +243,8 @@ textfield {
   padding:3%;
   margin-left:0px;
   color:#000;
-  background:#207cca; /* default background for browsers without gradient support */
-  /* css3 */
-  background:-webkit-gradient(linear, 0 0, 0 100%, from(#7db9e8), to(#207cca));
-  background:-moz-linear-gradient(#7db9e8, #207cca);
-  background:-o-linear-gradient(#7db9e8, #207cca);
-  background:linear-gradient(#7db9e8, #207cca);
+  background-color:$grayMediumLight;
+  border: $topGray solid 5px;
   -webkit-border-radius:10px;
   -moz-border-radius:10px;
   border-radius:10px;
@@ -282,10 +254,33 @@ textfield {
 .content:after {
   content:"";
   position:absolute;
-  bottom:-15px; /* value = - border-top-width - border-bottom-width */
-  left:10px; /* controls horizontal position */
-  border-width:15px 15px 0; /* vary these values to change the angle of the vertex */
-  border-style:solid;
-  border-color:#207cca transparent;
+  top: -72px;
+  left: 23px;
+  border-style: solid;
+  border-width: 0 8px 72px;
+  border-color: $grayMediumLight transparent;
+  border-style: solid;
+  display: block;
+  width: 0;
+  z-index: 1;
+}
+
+.content:before
+{
+  content: "";
+  position: absolute;
+  top: -81px;
+  left: 19px;
+  border-style: solid;
+  border-width: 0 12px 76px;
+  border-color: $topGray transparent;
+  display: block;
+  width: 0;
+  z-index: 0;
+}
+
+.text-box {
+  position:absolute;
+  display:block
 }
 
