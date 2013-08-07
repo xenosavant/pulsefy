@@ -66,15 +66,17 @@ sidebar {
 
 .side-name {
   background-color: #eaeaea;
+  text-align: center;
   display: block;
   position:fixed;
   left: 0px;
   top:40px;
   height:110px;
   width:110px;
-  padding-left: 10px;
-  padding-top: 10px;
+  padding: 10px;
   z-index: 4;
+  border-width: 5px;
+  border-color: $grayMediumLight
 }
 
 rightbar {
@@ -286,7 +288,7 @@ textfield {
   font-size: 1.3em;
   display: block;
   position:relative;
-  width: 100%;
+  width: 450px;
   padding:5px;
   margin-left:0px;
   color:#000;
