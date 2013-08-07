@@ -305,7 +305,7 @@ textfield {
   bottom: -72px;
   left: 23px;
   border-style: solid;
-  border-width: 0 8px 72px;
+  border-width: 72px 15px 0;
   border-color: $grayMediumLight transparent;
   border-style: solid;
   display: block;
@@ -320,7 +320,7 @@ textfield {
   bottom: -81px;
   left: 19px;
   border-style: solid;
-  border-width: 0 12px 76px;
+  border-width: 76px 19px 0;
   border-color: $topGray transparent;
   display: block;
   width: 0;
