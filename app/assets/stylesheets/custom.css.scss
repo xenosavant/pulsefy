@@ -64,26 +64,17 @@ sidebar {
 }
 
 
-.topbar-topper {
-  position:fixed;
-  left: 35px;
-  top: 40px;
-  z-index:4;
-}
-
 .side-name {
   background-color: #eaeaea;
   display: block;
   position:fixed;
   left: 0px;
   top:40px;
+  height:110px;
+  width:110px;
   padding-left: 10px;
-  padding-left: 10px;
-
-}
-
-.side-name.before {
-
+  padding-top: 10px;
+  z-index: 4;
 }
 
 rightbar {
