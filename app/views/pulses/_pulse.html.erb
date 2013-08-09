@@ -3,15 +3,16 @@
     <%if !current_node.avatar.file.nil? %>
         <%= image_tag current_node.avatar_url(:thumb) %>
     <%end%>
+    <div class = 'close-container'>
+      <%= link_to image_tag('close.png', :border => 0),
+                  delete_path(:id => pulse.id) %>
+    </div>
+    <div class = 'soma-to-axon'></div>
   </div>
 <div class = 'axon-wrap'>
   <div class = 'axon'>
-      <div class = 'close-container'>
-         <%= link_to image_tag('close.png', :border => 0),
-                  delete_path(:id => pulse.id) %>
-      </div>
     <div class="headline">
-        <%= pulse.headline %>
+      <%= pulse.headline %>
     </div>
   <% case pulse.link_type %>
   <%when 'video' %>
@@ -21,15 +22,15 @@
   <%else%>
       <div class ="link-container"><a href = <%= pulse.link %>><%= pulse.link%></a></div>
   <%end%>
+    <div class = 'text-wrapper'>
   <%= pulse.content %>
+   </div>
     <div class = 'info-container'>
-        <div class = 'details'>
             Depth: <%= pulse.depth %><br>
            <div class="timestamp">
              Fired <%= time_ago_in_words(pulse.created_at) %> ago.
+             <span class="tags"><%= pulse.tags %></span>
             </div>
-        <div class="tags"><%= pulse.tags %></div>
-        </div>
     </div>
       <div class = 'rating-wrapper'>
         <%if signed_in? and pulse.pulser_type == 'Node'%>

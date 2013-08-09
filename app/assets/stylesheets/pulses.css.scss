@@ -1,16 +1,16 @@
 @import "bootstrap";
 $grayMediumLight: #eaeaea;
-$topGray: #708090;
-$graydarker: #1c2025;
+$topGray2: #677685;
+$medium-gray: #666;
 
 .pulses {
   list-style: none;
-  position:absolute;
   width: 400px;
   padding-left:50px;
   padding-right:50px;
   padding-top:10px;
   padding-bottom:10px;
+  position:absolute;
   li {
     padding-top:10px;
     padding-bottom: 10px;
@@ -20,8 +20,11 @@ $graydarker: #1c2025;
 
 
 .headline {
+  width:350px !important;
+  height:auto;
+  overflow:hidden;
   font-size: 1.7em;
-  display:inline-block;
+  display:inline;
   padding-bottom: 5px;
   padding-top: 5px;
   height:1.7em;
@@ -31,8 +34,10 @@ $graydarker: #1c2025;
 
 .info-container {
   display:inline;
-  width:200px;
+  width:180px;
   position:absolute;
+  padding-top:10px;
+  height:150px;
 }
 //
 //
@@ -46,18 +51,19 @@ $graydarker: #1c2025;
 //  display:block
 //}
 //
-//.tags {
-//  display: block;
-//  font-size: 1em;
-//  font-weight: bold;
-//  color: #ff0000
-//  }
+.tags {
+  display: inline;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ff0000;
+  height: 30px;
+  }
 
 
 .video-container {
   position: relative;
-  max-width: 450px;
-  padding-bottom: 280px;
+  max-width: 400px;
+  padding-bottom: 265px;
   padding-top: 30px;
   height: 0;
   overflow: hidden;
@@ -99,22 +105,23 @@ $graydarker: #1c2025;
   overflow: hidden;
   width:360px;
   height: auto;
-  padding-bottom: 1%;
+  padding-bottom: 0px;
 }
 
 .link-container {
-  position:absolute;
+  display:block;
   width: 80%;
   padding-bottom: 5px;
+  padding-top:5px;
   display: block;
 }
 
-
 .close-container {
-  position:relative;
+  z-index:1;
+  position:absolute;
   display:inline;
-  right: -352px;
-  top: -4px;
+  bottom: -53px;
+  right:-305px;
 }
 
 .comment-box {
@@ -127,7 +134,7 @@ $graydarker: #1c2025;
 
 .axon-wrap {
   padding-top:150px;
-  overflow:auto;
+  height:auto;
 }
 
 .soma {
@@ -137,83 +144,69 @@ $graydarker: #1c2025;
   display:block;
   height:100px;
   width:auto;
-  border: $graydarker solid 5px;
+  border: $medium-gray solid 5px;
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
   background-color: #eaeaea;
   text-align: center;
 }
 
-.soma:after {
-  z-index:1;
-  content:"";
-  position:absolute;
-  bottom: -26px;
-  left: 35px;
-  border-style: solid;
-  border-width: 26px 15px 0;
-  border-color: $grayMediumLight transparent;
-  border-style: solid;
-  display: block;
-  width: 0;
-  z-index: 1;
-}
-
-
-.soma:before
-{
-  z-index: 1;
-  content: "";
+.soma-to-axon {
+  z-index: 2;
   position: absolute;
-  top: 125px;
-  left: 30px;
-  border-style: solid;
-  border-width: 31px 20px 0;
-  border-color:  $graydarker transparent;
+  bottom:-30px;
+  left: 20px;
+  height: 30px;
+  background-color :$grayMediumLight;
   display: block;
-  width: 0;
-  z-index: 0;
+  width: 10px;
+  border-color: $medium-gray;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-style: solid;
 }
 
 .axon {
-  z-index: 2 !important;
+  width:auto;
+  height:auto;
+  z-index: 0;
   display:block;
-  overflow:auto;
-  padding-bottom:3%;
+  padding-top:3%;
+  padding-bottom: 6%;
   padding-left:3%;
   padding-right:3%;
   color:#000;
   background-color:$grayMediumLight;
-  border: $graydarker solid 5px;
+  border: $medium-gray solid 5px;
   -webkit-border-radius:10px;
   -moz-border-radius:10px;
 }
 
 
-rating-wrapper {
-  padding-bottom: 5px;
+.rating-wrapper {
+  padding-left: 225px;
+  padding-top: 5px;
   display: inline;
-  position:absolute;
-  width:200px;
-}
-
-text-wrapper {
   width:100%;
-  font-size: 1em;
-  disply:block;
+  height:auto;
 }
 
-//
-//.pulse-box:before
-//{
-//  content: "";
-//  position: absolute;
-//  bottom: -81px;
-//  left: 19px;
-//  border-style: solid;
-//  border-width: 76px 19px 0;
-//  border-color: $topGray transparent;
-//  display: block;
-//  width: 0;
-//
-//}
+.text-wrapper {
+  width:350px;
+  padding-left:4px;
+  padding-right:4px;
+  padding-bottom:1px;
+  padding-top:0px;
+  height:auto;
+  font-size: 1.3em;
+  disply:block;
+  font-weight: bold;
+  border-left-width: 1px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-color:$medium-gray;
+  border-style:solid;
+}
