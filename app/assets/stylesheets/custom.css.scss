@@ -125,6 +125,7 @@ rightbar {
   padding-left: 30%;
   padding-right:25%;
   padding-bottom:50px;
+  padding-top:50px;
   width: 45%;
   height:100%;
   z-index:0;
@@ -246,12 +247,14 @@ textfield {
 
 
 #error_explanation {
-  alignment: center;
   color: #f00;
   font-weight: bold;
-  font-size:1em;
+  font-size:0.8em !important;
+  padding:1%;
+  width:100%;
   ul {
-    list-style: circle;
+    font-size:0.8em !important;
+    list-style: disc;
   }
 }
 
