@@ -70,7 +70,7 @@ sidebar {
 }
 
 .side-name {
-  border: $topGray solid 5px;
+  border: $medium-gray solid 5px;
   background-color: #eaeaea;
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
@@ -254,7 +254,7 @@ textfield {
   margin-left:0px;
   color:#000;
   background-color:$grayMediumLight;
-  border: $topGray solid 5px;
+  border: $medium-gray solid 5px;
   -webkit-border-radius:10px;
   -moz-border-radius:10px;
   border-radius:10px;
@@ -283,7 +283,7 @@ textfield {
   left: 19px;
   border-style: solid;
   border-width: 0 12px 76px;
-  border-color: $topGray transparent;
+  border-color: $medium-gray transparent;
   display: block;
   width: 0;
   z-index: 0;
