@@ -26,35 +26,37 @@
   <%= pulse.content %>
    </div>
     <div class = 'info-container'>
+      <span class = 'left-info'>
             Depth: <%= pulse.depth %><br>
            <div class="timestamp">
              Fired <%= time_ago_in_words(pulse.created_at) %> ago.
-             <span class="tags"><%= pulse.tags %></span>
             </div>
-    </div>
-      <div class = 'rating-wrapper'>
+      </span>
+      <span class = 'rating-wrapper'>
         <%if signed_in? and pulse.pulser_type == 'Node'%>
-              <% case pulse.pulser == current_node.id %>
-              <% when false %>
-                  <% if current_node.votes.find_by_pulse_id(pulse.id).nil?%>
-                  <%= link_to image_tag('Up.png'), cast_path(:id => pulse.id, :vote_cast => true) %>
-                  <%= pulse.reinforcements %>
-                  <%= link_to image_tag('Down.png'), cast_path(:id => pulse.id, :vote_cast => false) %>
-                  <%= pulse.degradations %>
-                  <% else %>
-                      <%= image_tag 'Up.png' %>
-                      <%= pulse.reinforcements %>
-                      <%= image_tag 'Down.png' %>
-                      <%= pulse.degradations %>
-                  <%end%>
-              <% when true %>
-                  <%= image_tag 'Up.png' %>
-                  <%= pulse.reinforcements %>
-                  <%= image_tag 'Down.png' %>
-                  <%= pulse.degradations %>
-              <%end%>
+            <% case pulse.pulser == current_node.id %>
+        <% when false %>
+                <% if current_node.votes.find_by_pulse_id(pulse.id).nil?%>
+                    <%= link_to image_tag('Up.png'), cast_path(:id => pulse.id, :vote_cast => true) %>
+                    <%= pulse.reinforcements %>
+                    <%= link_to image_tag('Down.png'), cast_path(:id => pulse.id, :vote_cast => false) %>
+                    <%= pulse.degradations %>
+                <% else %>
+                    <%= image_tag 'Up.png' %>
+                    <%= pulse.reinforcements %>
+                    <%= image_tag 'Down.png' %>
+                    <%= pulse.degradations %>
+                <%end%>
+            <% when true %>
+                <%= image_tag 'Up.png' %>
+                <%= pulse.reinforcements %>
+                <%= image_tag 'Down.png' %>
+                <%= pulse.degradations %>
+            <%end%>
         <%end%>
-    </div>
+      </span>
+      <div class="tags"><%= pulse.tags %></div>
+   </div>
   <div class = 'comment-box'>
     <%= link_to 'comment', comment_path(:id => pulse.id) %>
   </div>

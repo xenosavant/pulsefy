@@ -37,27 +37,26 @@ $medium-gray: #666;
   width:180px;
   position:absolute;
   padding-top:10px;
-  height:150px;
 }
-//
-//
-//.depth {
-//  color: $grayLight;
-//  display:block
-//}
-//
-//.timestamp {
-//  color: $grayLight;
-//  display:block
-//}
-//
+
+
+.depth {
+  display:block
+}
+
+.timestamp {
+  color: $grayLight;
+  display:block
+}
+
 
 .tags {
-  display: inline;
+  position:absolute;
+  display: block;
+  padding-top: 5px;
   font-size: 1.1em;
   font-weight: bold;
   color: #ff0000;
-  height: 30px;
   }
 
 
@@ -107,6 +106,7 @@ $medium-gray: #666;
   width:360px;
   height: auto;
   padding-bottom: 5px;
+  padding-top: 10px;
 }
 
 .link-container {
@@ -121,7 +121,7 @@ $medium-gray: #666;
   z-index:1;
   position:absolute;
   display:inline;
-  bottom: -53px;
+  bottom: -52px;
   left: 368px;
 }
 
@@ -172,10 +172,11 @@ $medium-gray: #666;
 .axon {
   width:auto;
   height:auto;
+  oveflow:auto;
   z-index: 0;
   display:block;
   padding-top:3%;
-  padding-bottom: 6%;
+  padding-bottom: 70px;
   padding-left:3%;
   padding-right:3%;
   color:#000;
@@ -187,11 +188,9 @@ $medium-gray: #666;
 
 
 .rating-wrapper {
-  padding-left: 225px;
-  padding-top: 5px;
   display: inline;
-  width:100%;
-  height:auto;
+  height:40px;
+  padding-left:200px;
 }
 
 .text-wrapper {
@@ -210,4 +209,10 @@ $medium-gray: #666;
   border-bottom-width: 1px;
   border-color:$medium-gray;
   border-style:solid;
+}
+
+.left-info {
+  display:inline;
+  position:absolute;
+  padding-bottom: 5px;
 }

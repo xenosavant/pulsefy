@@ -28,7 +28,7 @@ sidebar {
   position: fixed;
   padding-left: 1%;
   padding-right:1%;
-  padding-top: 120px;
+  padding-top: 105px;
   float: left;
   top: 90px;
   width: 25%;
@@ -83,6 +83,24 @@ sidebar {
   width:auto;
   padding: 10px;
   z-index: 3;
+}
+
+side-connect {
+  content:"";
+  z-index: 4;
+  position: fixed;
+  left: 35px;
+  top:165px;
+  height: 35px;
+  background-color :$grayMediumLight;
+  display: block;
+  width: 10px;
+  border-color: $medium-gray;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-style: solid;
 }
 
 rightbar {
@@ -259,34 +277,6 @@ textfield {
   -moz-border-radius:10px;
   border-radius:10px;
 
-}
-
-.content:after {
-  content:"";
-  position:absolute;
-  top: -72px;
-  left: 23px;
-  border-style: solid;
-  border-width: 0 8px 72px;
-  border-color: $grayMediumLight transparent;
-  border-style: solid;
-  display: block;
-  width: 0;
-  z-index: 3;
-}
-
-.content:before
-{
-  content: "";
-  position: absolute;
-  top: -81px;
-  left: 19px;
-  border-style: solid;
-  border-width: 0 12px 76px;
-  border-color: $medium-gray transparent;
-  display: block;
-  width: 0;
-  z-index: 0;
 }
 
 .text-box {
