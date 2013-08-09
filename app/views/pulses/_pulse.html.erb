@@ -1,12 +1,18 @@
 <li>
-  <% if signed_in? and pulse.pulser == current_node.id %>
-      <div class = 'content2'>
+  <div class = 'soma'>
+    <%if !current_node.avatar.file.nil? %>
+        <%= image_tag current_node.avatar_url(:thumb) %>
+    <%end%>
+  </div>
+<div class = 'axon-wrap'>
+  <div class = 'axon'>
       <div class = 'close-container'>
-      <%= link_to image_tag('close.png', :border => 0),
+         <%= link_to image_tag('close.png', :border => 0),
                   delete_path(:id => pulse.id) %>
       </div>
-  <% end%>
-  <div class="headline"><%= pulse.headline %></div>
+    <div class="headline">
+        <%= pulse.headline %>
+    </div>
   <% case pulse.link_type %>
   <%when 'video' %>
       <div class ="video-container"><%= raw pulse.embed_code %></div>
@@ -17,16 +23,6 @@
   <%end%>
   <%= pulse.content %>
     <div class = 'info-container'>
-        <div class = 'avatar-container'>
-         <% case Node.find(pulse.pulser).avatar.nil? %>
-          <% when true %>
-         <%= link_to image_tag('default.gif'), :controller => 'nodes',
-         :action => 'show', :id => pulse.pulser %>
-          <% when false %>
-          <%= link_to image_tag(Node.find(pulse.pulser).avatar.url(:thumb)), :controller => 'nodes',
-                          :action => 'show', :id => pulse.pulser %>
-          <%end%>
-        </div>
         <div class = 'details'>
             Depth: <%= pulse.depth %><br>
            <div class="timestamp">
@@ -34,7 +30,8 @@
             </div>
         <div class="tags"><%= pulse.tags %></div>
         </div>
-      </div>
+    </div>
+      <div class = 'rating-wrapper'>
         <%if signed_in? and pulse.pulser_type == 'Node'%>
               <% case pulse.pulser == current_node.id %>
               <% when false %>
@@ -56,9 +53,10 @@
                   <%= pulse.degradations %>
               <%end%>
         <%end%>
- </div>
-</div>
+    </div>
   <div class = 'comment-box'>
     <%= link_to 'comment', comment_path(:id => pulse.id) %>
   </div>
+ </div>
+</div>
 </li>
