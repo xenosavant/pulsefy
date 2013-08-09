@@ -3,6 +3,7 @@
 /* mixins, variables, etc. */
 
 $grayMediumLight: #eaeaea;
+$medium-gray: #666;
 $backroundBlue: #000040;
 $lightSlate: #d0dfef;
 $topGray: #708090;
@@ -45,7 +46,7 @@ sidebar {
   padding-left: 150px;
   height: 25px;
   width: 100%;
-  z-index:3;
+  z-index:2;
   a {
    text-align: center;
    color:#000;
@@ -71,6 +72,8 @@ sidebar {
 .side-name {
   border: $topGray solid 5px;
   background-color: #eaeaea;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
   text-align: center;
   display: block;
   position:fixed;
@@ -79,7 +82,7 @@ sidebar {
   height:110px;
   width:110px;
   padding: 10px;
-  z-index: 4;
+  z-index: 3;
 }
 
 rightbar {
@@ -267,7 +270,7 @@ textfield {
   border-style: solid;
   display: block;
   width: 0;
-  z-index: 1;
+  z-index: 3;
 }
 
 .content:before

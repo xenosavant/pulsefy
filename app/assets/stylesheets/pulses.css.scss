@@ -1,6 +1,7 @@
 @import "bootstrap";
 $grayMediumLight: #eaeaea;
 $topGray: #708090;
+$graydarker: #1c2025;
 
 .pulses {
   list-style: none;
@@ -11,7 +12,8 @@ $topGray: #708090;
   padding-top:10px;
   padding-bottom:10px;
   li {
-    padding:1%;
+    padding-top:10px;
+    padding-bottom: 10px;
     border-top: 1px solid #000040;
   }
  }
@@ -19,9 +21,10 @@ $topGray: #708090;
 
 .headline {
   font-size: 1.7em;
-  display: inline;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  display:inline-block;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  height:1.7em;
   font-style: bold;
 }
 
@@ -110,7 +113,7 @@ $topGray: #708090;
 .close-container {
   position:relative;
   display:inline;
-  right: -345px;
+  right: -352px;
   top: -4px;
 }
 
@@ -127,37 +130,28 @@ $topGray: #708090;
   overflow:auto;
 }
 
-.axon {
-  display:block;
-  overflow:auto;
-  padding-bottom:3%;
-  padding-left:3%;
-  padding-right:3%;
-  color:#000;
-  background-color:$grayMediumLight;
-  border: $topGray solid 5px;
-  -webkit-border-radius:10px;
-  -moz-border-radius:10px;
-}
-
-
 .soma {
+  z-index:1;
+  padding:10px;
   position:absolute;
   display:block;
-  height:110px;
-  width:110px;
-  border: $topGray solid 5px;
+  height:100px;
+  width:auto;
+  border: $graydarker solid 5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
   background-color: #eaeaea;
   text-align: center;
 }
 
 .soma:after {
+  z-index:1;
   content:"";
   position:absolute;
-  bottom: -56px;
+  bottom: -26px;
   left: 35px;
   border-style: solid;
-  border-width: 56px 15px 0;
+  border-width: 26px 15px 0;
   border-color: $grayMediumLight transparent;
   border-style: solid;
   display: block;
@@ -165,20 +159,36 @@ $topGray: #708090;
   z-index: 1;
 }
 
-//
-//.soma:before
-//{
-//  content: "";
-//  position: absolute;
-//  top: 130px;
-//  left: 26px;
-//  border-style: solid;
-//  border-width: 65px 24px 0;
-//  border-color: $topGray transparent;
-//  display: block;
-//  width: 0;
-//  z-index: 0;
-//}
+
+.soma:before
+{
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 125px;
+  left: 30px;
+  border-style: solid;
+  border-width: 31px 20px 0;
+  border-color:  $graydarker transparent;
+  display: block;
+  width: 0;
+  z-index: 0;
+}
+
+.axon {
+  z-index: 2 !important;
+  display:block;
+  overflow:auto;
+  padding-bottom:3%;
+  padding-left:3%;
+  padding-right:3%;
+  color:#000;
+  background-color:$grayMediumLight;
+  border: $graydarker solid 5px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+}
+
 
 rating-wrapper {
   padding-bottom: 5px;
