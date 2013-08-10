@@ -88,6 +88,7 @@
     <file path="/20130725175746_create_dialogues_inboxes_join_table.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1374775189352" ignored="false" />
     <file path="/_topbar.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1376160241382" ignored="false" />
     <file path="/_side-connect.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1376158152499" ignored="false" />
+    <file path="$PROJECT_DIR$/public/assets/application.css" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1376174449707" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +156,7 @@
       <file leaf-file-name="pulses.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pulses.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="232" column="23" selection-start="3653" selection-end="3653" vertical-scroll-proportion="0.50507617">
+            <state line="228" column="8" selection-start="3563" selection-end="3563" vertical-scroll-proportion="0.35279188">
               <folding />
             </state>
           </provider>
@@ -1245,7 +1246,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pulses.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="232" column="23" selection-start="3653" selection-end="3653" vertical-scroll-proportion="0.50507617">
+        <state line="228" column="8" selection-start="3563" selection-end="3563" vertical-scroll-proportion="0.35279188">
           <folding />
         </state>
       </provider>
