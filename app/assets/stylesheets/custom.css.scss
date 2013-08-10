@@ -286,3 +286,17 @@ textfield {
   position:absolute;
   display:block
 }
+
+.soma {
+  z-index:1;
+  padding:10px;
+  position:absolute;
+  display:block;
+  height:100px;
+  width:auto;
+  border: $medium-gray solid 5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  background-color: #eaeaea;
+  text-align: center;
+}

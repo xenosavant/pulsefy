@@ -21,14 +21,13 @@ $medium-gray: #666;
 
 .headline {
   width:350px !important;
-  height:auto;
+  height:16px;
   overflow:hidden;
   font-size: 1.6em;
   display:inline;
-  padding-bottom: 5px;
   padding-top: 5px;
   height:1.7em;
-  font-style: bold;
+  font-weight: bold;
 }
 
 
@@ -137,20 +136,6 @@ $medium-gray: #666;
 .axon-wrap {
   padding-top:150px;
   height:auto;
-}
-
-.soma {
-  z-index:1;
-  padding:10px;
-  position:absolute;
-  display:block;
-  height:100px;
-  width:auto;
-  border: $medium-gray solid 5px;
-  -webkit-border-radius:5px;
-  -moz-border-radius:5px;
-  background-color: #eaeaea;
-  text-align: center;
 }
 
 .soma-to-axon {

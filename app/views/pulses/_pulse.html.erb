@@ -1,7 +1,9 @@
 <li>
   <div class = 'soma'>
-    <%if !current_node.avatar.file.nil? %>
-        <%= image_tag current_node.avatar_url(:thumb) %>
+    <%if !Node.find(pulse.pulser).avatar.file.nil? %>
+        <%= image_tag Node.find(pulse.pulser).avatar_url(:thumb) %>
+        <%else%>
+    <%= image_tag 'default.gif' %>
     <%end%>
     <div class = 'close-container'>
       <%= link_to image_tag('close.png', :border => 0),
@@ -11,9 +13,11 @@
   </div>
 <div class = 'axon-wrap'>
   <div class = 'axon'>
+    <% if !pulse.headline.nil? %>
     <div class="headline">
       <%= pulse.headline %>
     </div>
+    <% end %>
   <% case pulse.link_type %>
   <%when 'video' %>
       <div class ="video-container"><%= raw pulse.embed_code %></div>
@@ -33,7 +37,7 @@
             </div>
       </span>
       <span class = 'rating-wrapper'>
-        <%if signed_in? and pulse.pulser_type == 'Node'%>
+        <%if signed_in? %>
             <% case pulse.pulser == current_node.id %>
         <% when false %>
                 <% if current_node.votes.find_by_pulse_id(pulse.id).nil?%>
