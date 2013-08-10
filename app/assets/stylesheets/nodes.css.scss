@@ -1,10 +1,13 @@
 @import "bootstrap";
+$grayMediumLight: #eaeaea;
+$medium-gray: #666;
 
 .nodes {
   list-style: none;
   margin: 0;
   width: 450px;
   li {
+    height:130px;
     overflow: auto;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -14,6 +17,43 @@
   }
 }
 
+.dendrite {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  top:50px;
+  left: -50px;
+  height: 10px;
+  background-color :$grayMediumLight;
+  display: block;
+  width: 50px;
+  border-color: $medium-gray;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-style: solid;
+}
+
+.synapse {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  top:45px;
+  left: -50px;
+  height: 20px;
+  background-color :$grayMediumLight;
+  display: block;
+  width: 10px;
+  border-color: $medium-gray;
+  border-left-width: 5px;
+  border-right-width: 0px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-style: solid;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+}
 .username {
   display: block;
 }

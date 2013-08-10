@@ -5,16 +5,18 @@ $medium-gray: #666;
 
 .pulses {
   list-style: none;
-  width: 400px;
-  padding-left:50px;
-  padding-right:50px;
+  width: 450px;
   padding-top:10px;
   padding-bottom:10px;
   position:absolute;
+  border-top: 1px solid #000040;
   li {
+    width:400px;
     padding-top:10px;
     padding-bottom: 10px;
-    border-top: 1px solid #000040;
+    padding-left:25px;
+    padding-right:25px;
+    border-bottom: 1px solid #000040;
   }
  }
 

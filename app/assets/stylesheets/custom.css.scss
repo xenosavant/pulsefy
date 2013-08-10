@@ -103,6 +103,44 @@ side-connect {
   border-style: solid;
 }
 
+side-dendrite {
+  content: "";
+  z-index: 2;
+  position: fixed;
+  top:135px;
+  left: 0px;
+  height: 10px;
+  background-color :$grayMediumLight;
+  display: block;
+  width: 27%;
+  border-color: $medium-gray;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-style: solid;
+}
+
+side-synapse {
+  content: "";
+  z-index: 2;
+  position: fixed;
+  top:130px;
+  left: 27%;
+  height: 20px;
+  background-color :$grayMediumLight;
+  display: block;
+  width: 10px;
+  border-color: $medium-gray;
+  border-left-width: 0px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-style: solid;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+}
+
 rightbar {
   z-index:1;
   position: fixed;
