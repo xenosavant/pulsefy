@@ -6,7 +6,6 @@ $medium-gray: #666;
 .pulses {
   list-style: none;
   width: 450px;
-  padding-top:10px;
   padding-bottom:10px;
   position:absolute;
   border-top: 1px solid #000040;
@@ -203,4 +202,42 @@ $medium-gray: #666;
   display:inline;
   position:absolute;
   padding-bottom: 5px;
+}
+
+.pulse-dendrite {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  top:25px;
+  left: -50px;
+  height: 10px;
+  background-color :$grayMediumLight;
+  display: block;
+  width: 50px;
+  border-color: $medium-gray;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-style: solid;
+}
+
+.pulse-synapse {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  top:46px;
+  left: -50px;
+  height: 18px;
+  background-color :$grayMediumLight;
+  display: block;
+  width: 10px;
+  border-color: $medium-gray;
+  border-left-width: 5px;
+  border-right-width: 0px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-style: solid;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
 }

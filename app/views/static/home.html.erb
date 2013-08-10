@@ -1,7 +1,6 @@
 <% if signed_in? %>
 <div class = 'pulsefeed'>
     <% if @node.pulses.any? %>
-       <h3>Pulsefeed</h3>
          <ol class="pulses">
           <%= render @pulses %>
          </ol>
