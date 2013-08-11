@@ -8,9 +8,10 @@
     <% if node.inputs.include?(current_node) || node.outputs.include?(current_node) %>
         <div class = 'dendrite'></div>
         <div class = 'synapse'></div>
+        <div class = 'right-dendrite'>  <%= node.username %> </div>
+        <div class = 'right-synapse'></div>
     <% end %>
   </div>
-  <%= node.username %><br>
   <% if signed_in? and current_node.admin == true and !current_node?(node) %>
       <%= link_to 'delete', node, :method => :delete, :data => {:confirm => 'You sure?'} %>
   <% end %>

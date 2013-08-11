@@ -8,3 +8,7 @@
     <%= will_paginate %>
 <% end %>
 </div>
+
+<div class = 'title-box'>
+  <%= pluralize(@node.inputs.count, 'Input') %>
+</div>
