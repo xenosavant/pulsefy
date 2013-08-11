@@ -4,16 +4,18 @@ $medium-gray: #666;
 
 .nodes {
   list-style: none;
-  margin: 0;
   width: 450px;
+  padding-bottom:10px;
+  position:absolute;
+  border-top: 1px solid #000040;
   li {
+    width:400px;
     height:130px;
-    overflow: auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 50px;
-    padding-right: 50px;
-    border-top: 1px solid #000040;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left:25px;
+    padding-right:25px;
+    border-bottom: 1px solid #000040;
   }
 }
 
@@ -21,12 +23,12 @@ $medium-gray: #666;
   content: "";
   z-index: 2;
   position: absolute;
-  top:25px;
-  left: -50px;
+  top:20px;
+  left: -65px;
   height: 10px;
   background-color :$grayMediumLight;
   display: block;
-  width: 50px;
+  width: 65px;
   border-color: $medium-gray;
   border-left-width: 0px;
   border-right-width: 0px;
@@ -39,8 +41,8 @@ $medium-gray: #666;
   content: "";
   z-index: 2;
   position: absolute;
-  top:21px;
-  left: -50px;
+  top:16px;
+  left: -65px;
   height: 18px;
   background-color :$grayMediumLight;
   display: block;
@@ -48,6 +50,44 @@ $medium-gray: #666;
   border-color: $medium-gray;
   border-left-width: 5px;
   border-right-width: 0px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-style: solid;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+}
+
+.right-dendrite {
+  text-align: center;
+  z-index: 2;
+  position: absolute;
+  top:20px;
+  right: -250px;
+  height: 10px;
+  background-color :$grayMediumLight;
+  display: block;
+  width: 250px;
+  border-color: $medium-gray;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-style: solid;
+}
+
+.right-synapse {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  top:16px;
+  right: -255px;
+  height: 18px;
+  background-color :$grayMediumLight;
+  display: block;
+  width: 10px;
+  border-color: $medium-gray;
+  border-left-width: 0px;
+  border-right-width: 5px;
   border-top-width: 5px;
   border-bottom-width: 5px;
   border-style: solid;
