@@ -2,6 +2,9 @@
 $grayMediumLight: #eaeaea;
 $topGray2: #677685;
 $medium-gray: #666;
+$lightSlate: #d0dfef;
+$backroundBlue: #000040;
+$graydarker: #1c2025;
 
 .pulses {
   list-style: none;
@@ -10,7 +13,7 @@ $medium-gray: #666;
   position:absolute;
   border-top: 1px solid #000040;
   li {
-    width:400px;
+    width:395px;
     padding-top:10px;
     padding-bottom: 10px;
     padding-left:25px;
@@ -39,7 +42,6 @@ $medium-gray: #666;
   padding-top:10px;
 }
 
-
 .depth {
   display:block
 }
@@ -48,7 +50,6 @@ $medium-gray: #666;
   color: $grayLight;
   display:block
 }
-
 
 .tags {
   position:absolute;
@@ -59,7 +60,6 @@ $medium-gray: #666;
   color: #ff0000;
   width:100%
   }
-
 
 .video-container {
   position: relative;
@@ -122,16 +122,23 @@ $medium-gray: #666;
   z-index:1;
   position:absolute;
   display:inline;
-  bottom: -52px;
-  left: 368px;
+  bottom: -49px;
+  left: 369px;
 }
 
 .comment-box {
-  position:fixed;
-  height:25px;
-  display:inline;
-  bottom:10px;
-  right:-25px;
+  position:absolute;
+  right:85px;
+  bottom:-30px;
+  a {
+    text-align: center;
+    font-weight: bold;
+    color: $medium-gray;
+    &:hover {
+      color:$backroundBlue;
+      text-decoration: none;
+    }
+  }
 }
 
 .axon-wrap {
@@ -148,7 +155,7 @@ $medium-gray: #666;
   background-color :$grayMediumLight;
   display: block;
   width: 10px;
-  border-color: $medium-gray;
+  border-color: $graydarker;
   border-left-width: 5px;
   border-right-width: 5px;
   border-top-width: 0px;
@@ -168,7 +175,7 @@ $medium-gray: #666;
   padding-right:3%;
   color:#000;
   background-color:$grayMediumLight;
-  border: $medium-gray solid 5px;
+  border: $graydarker solid 5px;
   -webkit-border-radius:10px;
   -moz-border-radius:10px;
 }
@@ -202,42 +209,4 @@ $medium-gray: #666;
   display:inline;
   position:absolute;
   padding-bottom: 5px;
-}
-
-.pulse-dendrite {
-  content: "";
-  z-index: 2;
-  position: absolute;
-  top:20px;
-  left: -50px;
-  height: 10px;
-  background-color :$grayMediumLight;
-  display: block;
-  width: 50px;
-  border-color: $medium-gray;
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 5px;
-  border-bottom-width: 5px;
-  border-style: solid;
-}
-
-.pulse-synapse {
-  content: "";
-  z-index: 2;
-  position: absolute;
-  top:16px;
-  left: -64px;
-  height: 18px;
-  background-color :$grayMediumLight;
-  display: block;
-  width: 10px;
-  border-color: $medium-gray;
-  border-left-width: 5px;
-  border-right-width: 0px;
-  border-top-width: 5px;
-  border-bottom-width: 5px;
-  border-style: solid;
-  -webkit-border-radius:10px;
-  -moz-border-radius:10px;
 }

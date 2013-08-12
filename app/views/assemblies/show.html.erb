@@ -5,11 +5,12 @@
   <br><%if !@assembly.avatar.file.nil? %>
       <%= image_tag @assembly.avatar_url(:profile) %>
   <%end%>
-  </br>
+  <br>
+  <%= link_to pluralize(@assembly.nodes.count, 'member'), members_path(:id => @assembly.id)%>
+  <br>
   <div class='info'>
     <%= @assembly.info%>
   </div>
-<%= link_to 'members', members_path(:id => @assembly.id)%>
   <br>
   <% if signed_in? %>
     <% if current_node.assemblies.include?(@assembly)%>
@@ -36,7 +37,7 @@
   <% end %>
   </br>
   <% if @assembly.pulses.any? %>
-      <h3>Pulsefeed</h3>
+      <h4>Pulsefeed</h4>
       <ol class="pulses">
         <%= render @pulses %>
       </ol>

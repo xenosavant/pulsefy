@@ -6,8 +6,8 @@
     <%= image_tag 'default.gif' %>
     <%end%>
     <% if Node.find(pulse.pulser).outputs.include?(current_node) %>
-        <div class = 'pulse-dendrite'></div>
-        <div class = 'pulse-synapse'></div>
+        <div class = 'dendrite'></div>
+        <div class = 'synapse'></div>
     <% end %>
     <div class = 'close-container'>
       <%= link_to image_tag('close.png', :border => 0),
@@ -64,9 +64,9 @@
         <%end%>
       </span>
       <div class="tags"><%= pulse.tags %></div>
+      <div class = 'comment-box'>
+        <%= link_to 'comment', comment_path(:id => pulse.id) %>
    </div>
-  <div class = 'comment-box'>
-    <%= link_to 'comment', comment_path(:id => pulse.id) %>
   </div>
  </div>
 </div>

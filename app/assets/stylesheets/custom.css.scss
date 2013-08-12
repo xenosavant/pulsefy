@@ -28,7 +28,7 @@ sidebar {
   position: fixed;
   padding-left: 1%;
   padding-right:1%;
-  padding-top: 105px;
+  padding-top: 104px;
   float: left;
   top: 90px;
   width: 25%;
@@ -109,7 +109,7 @@ side-connect {
   z-index: 4;
   position: fixed;
   left: 35px;
-  top:165px;
+  top:164px;
   height: 35px;
   background-color :$grayMediumLight;
   display: block;
@@ -164,12 +164,12 @@ rightbar {
   z-index:1;
   position: fixed;
   top: 90px;
-  left: 75%;
+  left: 73%;
   padding-top: 5%;
   padding-left: 1%;
   padding-right:1%;
   width: 25%;
-  height: 700px;
+  height:100%;
   background-color:$graydarker;
   li {
     font-size: 1.3em;
@@ -179,16 +179,23 @@ rightbar {
 
 .pulsefeed  {
   position:absolute;
-  padding-left: 30%;
-  padding-right:30%;
+  padding-left: 32%;
+  padding-right:32%;
   padding-bottom:50px;
   padding-top:55px;
-  width: 40%;
+  width: 36%;
   height:100%;
   z-index:0;
   color: #000;
   background-color: $lightSlate;
   overflow:scroll;
+  a {
+    font-weight: bold;
+    &:hover {
+      color:$backroundBlue;
+      text-decoration: none;
+    }
+  }
 }
 
 .logged-background {
@@ -352,19 +359,57 @@ textfield {
   display:block;
   height:100px;
   width:auto;
-  border: $medium-gray solid 5px;
+  border: $graydarker solid 5px;
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
   background-color: #eaeaea;
   text-align: center;
 }
 
-.title-box {
-  z-index: 1;
+.dendrite {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  top:20px;
+  left: -100px;
+  height: 10px;
+  background-color :$grayMediumLight;
+  display: block;
+  width: 100px;
+  border-color: $graydarker;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-style: solid;
+}
+
+.synapse {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  top:16px;
+  left: -100px;
+  height: 18px;
+  background-color :$grayMediumLight;
+  display: block;
+  width: 10px;
+  border-color: $graydarker;
+  border-left-width: 5px;
+  border-right-width: 0px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-style: solid;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+}
+
+title-box {
+  z-index: 3;
   position:fixed;
   left: 145px;
-  top:100px;
-  font-color: $topGray !important;
+  top:97px;
+  color:$lightSlate !important;
   font-size: 1.6em;
   font-weight:bold;
 }

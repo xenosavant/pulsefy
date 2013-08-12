@@ -6,15 +6,15 @@
       <%= image_tag @node.avatar_url(:profile) %>
   <%end%>
 <br><div>
- <%= link_to 'Assemblies', view_path(:id => @node.id) %> (<%= @node.assemblies.count%>)
-  <%= link_to 'Inputs', inputs_path(:id => @node.id) %> (<%= @node.inputs.count%>)
-  <%= link_to 'Outputs', outputs_path(:id => @node.id) %> (<%= @node.outputs.count%>)
+ <%= link_to pluralize(@node.assemblies.count, 'assembly'), view_path(:id => @node.id) %> |
+  <%= link_to pluralize(@node.inputs.count, 'input'), inputs_path(:id => @node.id) %> |
+  <%= link_to pluralize(@node.outputs.count, 'output'), outputs_path(:id => @node.id) %>
 </div></br>
 <div class='info'>
   <%= @node.info%>
 </div>
 <% if @node.pulses.any? %>
-      <h3>Pulsefeed</h3>
+      <h4>Pulsefeed</h4>
       <ol class="pulses">
         <%= render @pulses %>
       </ol>

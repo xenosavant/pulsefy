@@ -1,10 +1,8 @@
+<% provide(:title, 'My Assemblies') %>
+<title-box>
+  <%= pluralize(@node.assemblies.count, 'Assembly') %>
+</title-box>
 <div class = 'pulsefeed'>
-  <% provide(:title, 'My Assemblies') %>
-  <% if signed_in? and @node == current_node %>
-      <h1>My Assemblies</h1>
-  <% else %>
-      <h1><%= @node.username %>'s Assemblies</h1>
-  <% end %>
   <% if !@assemblies.nil? %>
       <%= will_paginate %>
       <ul class='assemblies'>

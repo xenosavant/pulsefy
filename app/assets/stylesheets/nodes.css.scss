@@ -1,6 +1,8 @@
 @import "bootstrap";
 $grayMediumLight: #eaeaea;
 $medium-gray: #666;
+$topGray2: #677685;
+$graydarker: #1c2025;
 
 .nodes {
   list-style: none;
@@ -19,55 +21,17 @@ $medium-gray: #666;
   }
 }
 
-.dendrite {
-  content: "";
-  z-index: 2;
-  position: absolute;
-  top:20px;
-  left: -65px;
-  height: 10px;
-  background-color :$grayMediumLight;
-  display: block;
-  width: 65px;
-  border-color: $medium-gray;
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 5px;
-  border-bottom-width: 5px;
-  border-style: solid;
-}
-
-.synapse {
-  content: "";
-  z-index: 2;
-  position: absolute;
-  top:16px;
-  left: -65px;
-  height: 18px;
-  background-color :$grayMediumLight;
-  display: block;
-  width: 10px;
-  border-color: $medium-gray;
-  border-left-width: 5px;
-  border-right-width: 0px;
-  border-top-width: 5px;
-  border-bottom-width: 5px;
-  border-style: solid;
-  -webkit-border-radius:10px;
-  -moz-border-radius:10px;
-}
-
 .right-dendrite {
   text-align: center;
   z-index: 2;
   position: absolute;
-  top:20px;
+  top:15px;
   right: -250px;
-  height: 10px;
-  background-color :$grayMediumLight;
+  height: 20px;
+  background-color:$grayMediumLight;
   display: block;
   width: 250px;
-  border-color: $medium-gray;
+  border-color: $graydarker;
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 5px;
@@ -79,13 +43,13 @@ $medium-gray: #666;
   content: "";
   z-index: 2;
   position: absolute;
-  top:16px;
+  top:11px;
   right: -255px;
-  height: 18px;
+  height: 28px;
   background-color :$grayMediumLight;
   display: block;
   width: 10px;
-  border-color: $medium-gray;
+  border-color: $graydarker;
   border-left-width: 0px;
   border-right-width: 5px;
   border-top-width: 5px;
@@ -94,8 +58,18 @@ $medium-gray: #666;
   -webkit-border-radius:10px;
   -moz-border-radius:10px;
 }
-.username {
+
+.right-username {
   display: block;
+  float:top;
+  a {
+    color: $topGray2;
+    font-weight: bold;
+    &:hover {
+      color:#000;
+      text-decoration: none;
+    }
+  }
 }
 
 .info {
