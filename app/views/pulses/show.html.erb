@@ -1,40 +1,50 @@
 <div class = 'pulsefeed'>
- <div class="headline"><%= @pulse.headline %></div>
+ <div class = 'pulse-show-box'>
+ <h3><%= @pulse.headline %></h3>
 <% case @pulse.link_type %>
 <%when 'video' %>
-<div class = "show-container">
-<%= raw @pulse.embed_code %>
-</div>
+<div class = "show-container"><%= raw @pulse.embed_code %></div>
 <%when 'photo' %>
-    <img src = <%= raw @pulse.url %> >
+    <img src = <%= raw @pulse.url %>>
 <%else%>
     <a href = <%= @pulse.link %>><%= @pulse.link%></a>
 <%end%>
-<br><div class = 'text-container'><div class = 'content'><%= @pulse.content %></div></div></br>
-<div class = 'info-container'>
-  <%if !Node.find(@pulse.pulser).avatar.file.nil? %>
-      <%= image_tag Node.find(@pulse.pulser).avatar_url(:thumb) %>
-  <% else%>
-      <%= image_tag 'default.gif' %>
-  <% end %>
-  <span class = 'details'>
-        Pulsed by
-    <%if signed_in? and @pulse.pulser == current_node.id %>
-        Me
-        <%else %>
-        <%= Node.find(@pulse.pulser).username %>
-    <%end%>
-  <br><span class="tags"><%= @pulse.tags %></span></br>
-         </span>
-</div>
-  <% if @pulse.pulse_comments.any? %>
-      <h4>Comments (<%= @pulse.pulse_comments.count %>)</h4>
-      <ol class="pulse_comments">
-        <%= render @pulse_comments %>
-      </ol>
-      <%= will_paginate @pulse_comments %>
-  <% end %>
-        <%= render 'shared/pulse_comment_form' %>
+<br><div class = 'text-container'><div class = 'content'><%= @pulse.content %></div></div><br>
+    <div class = 'info-container'>
+     <%if !Node.find(@pulse.pulser).avatar.file.nil? %>
+         <%= image_tag Node.find(@pulse.pulser).avatar_url(:thumb) %>
+     <% else%>
+         <%= image_tag 'default.gif' %>
+     <% end %>
+      <span class = 'left-info'>
+            Depth: <%= @pulse.depth %><br>
+        <div class="timestamp">
+          Fired <%= time_ago_in_words(@pulse.created_at) %> ago.
+        </div>
+      </span>
+      <span class = 'rating-wrapper'>
+        <%if signed_in? %>
+            <% case @pulse.pulser == current_node.id %>
+        <% when false %>
+                <% if current_node.votes.find_by_pulse_id(pulse.id).nil?%>
+                    <%= link_to image_tag('Up.png'), cast_path(:id => pulse.id, :vote_cast => true) %>
+                    <%= @pulse.reinforcements %>
+                    <%= link_to image_tag('Down.png'), cast_path(:id => pulse.id, :vote_cast => false) %>
+                    <%= @pulse.degradations %>
+                <% else %>
+                    <%= image_tag 'Up.png' %>
+                    <%= @pulse.reinforcements %>
+                    <%= image_tag 'Down.png' %>
+                    <%= @pulse.degradations %>
+                <%end%>
+            <% when true %>
+                <%= image_tag 'Up.png' %>
+                <%= @pulse.reinforcements %>
+                <%= image_tag 'Down.png' %>
+                <%= @pulse.degradations %>
+            <%end%>
+         <%end%>
+     </span>
   </div>
-</div>
+ </div>
 </div>

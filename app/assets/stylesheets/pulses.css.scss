@@ -180,7 +180,14 @@ $graydarker: #1c2025;
   -moz-border-radius:10px;
 }
 
-
+.pulse-show-box {
+  position:absolute;
+  width: 36%;
+  min-width: 500px;
+  border-color: $graydarker;
+  border:1px;
+  display:block;
+}
 .rating-wrapper {
   display: inline;
   height:40px;

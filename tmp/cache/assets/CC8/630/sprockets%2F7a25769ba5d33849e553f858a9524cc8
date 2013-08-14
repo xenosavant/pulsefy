@@ -1,6 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@expires_in0:@compressedF:@value"Ñ-{"content_type"application/javascript"dependency_paths[{"
-mtime"2013-07-13T17:45:29-04:00"digest"%582c6f9d65996b754f9fa0aa1591c794"	path"W/Library/Ruby/Gems/1.8/gems/jquery-rails-3.0.4/vendor/assets/javascripts/jquery.js"lengthi0+"
-mtime"2013-07-13T17:45:29-04:00"_version"%1b13569e9620782f423d4cd3ce931750"digest"%3c56011128634ce6a688466d5bef9b83"source"0+/*!
+o: ActiveSupport::Cache::Entry	:@expires_in0:@compressedF:@value"Ñ-{"dependency_digest"%785eadff5fd6ceffe3172bb4b114c50d"
+mtime"2013-07-13T17:45:29-04:00"content_type"application/javascript"logical_path"jquery.js"lengthi0+"required_paths["W/Library/Ruby/Gems/1.8/gems/jquery-rails-3.0.4/vendor/assets/javascripts/jquery.js"_version"%1b13569e9620782f423d4cd3ce931750"dependency_paths[{"
+mtime"2013-07-13T17:45:29-04:00"	path"W/Library/Ruby/Gems/1.8/gems/jquery-rails-3.0.4/vendor/assets/javascripts/jquery.js"digest"%582c6f9d65996b754f9fa0aa1591c794"
+class"ProcessedAsset"source"0+/*!
  * jQuery JavaScript Library v1.10.2
  * http://jquery.com/
  *
@@ -9790,5 +9791,4 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
 }
 
 })( window );
-"pathname"W/Library/Ruby/Gems/1.8/gems/jquery-rails-3.0.4/vendor/assets/javascripts/jquery.js"required_paths["W/Library/Ruby/Gems/1.8/gems/jquery-rails-3.0.4/vendor/assets/javascripts/jquery.js"dependency_digest"%785eadff5fd6ceffe3172bb4b114c50d"
-class"ProcessedAsset"logical_path"jquery.js:@created_atf1376245415.8795221 J
+"digest"%3c56011128634ce6a688466d5bef9b83"pathname"W/Library/Ruby/Gems/1.8/gems/jquery-rails-3.0.4/vendor/assets/javascripts/jquery.js:@created_atf1376448443.941654 D
