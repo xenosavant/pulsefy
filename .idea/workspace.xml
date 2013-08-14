@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/manifest.yml" afterPath="$PROJECT_DIR$/public/assets/manifest.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/nodes/members.html.erb" afterPath="$PROJECT_DIR$/app/views/nodes/members.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.css.gz" afterPath="$PROJECT_DIR$/public/assets/application.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_pulse_comment_form.erb" afterPath="$PROJECT_DIR$/app/views/shared/_pulse_comment_form.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/production.log" afterPath="$PROJECT_DIR$/log/production.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/assemblies/show.html.erb" afterPath="$PROJECT_DIR$/app/views/assemblies/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pulses/show.html.erb" afterPath="$PROJECT_DIR$/app/views/pulses/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +30,7 @@
     <file path="/Gemfile" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1374434869529" ignored="false" />
     <file path="/sessions_helper.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1374539472844" ignored="false" />
     <file path="/show.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1376449608573" ignored="false" />
-    <file path="/_pulse_comment_form.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1376447464393" ignored="false" />
+    <file path="/_pulse_comment_form.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1376515770063" ignored="false" />
     <file path="/pulse_comments_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1374539540134" ignored="false" />
     <file path="/pulse_comment.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372354613313" ignored="false" />
     <file path="/pic.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371499811715" ignored="false" />
@@ -93,6 +93,7 @@
     <file path="/_topbar.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1376160241382" ignored="false" />
     <file path="/_side-connect.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1376158152499" ignored="false" />
     <file path="/_title-box.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1376204382025" ignored="false" />
+    <file path="/nodes.js.coffee" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1376507036676" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,24 +113,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="custom.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="21" selection-start="712" selection-end="712" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_pulse_comment_form.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_pulse_comment_form.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="53" selection-start="408" selection-end="408" vertical-scroll-proportion="-8.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/assemblies/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -148,10 +131,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pulses/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="7" selection-start="465" selection-end="465" vertical-scroll-proportion="0.5645161">
+            <state line="15" column="64" selection-start="564" selection-end="564" vertical-scroll-proportion="5.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_pulse_comment_form.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/shared/_pulse_comment_form.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="54" selection-start="433" selection-end="433" vertical-scroll-proportion="0.5645161">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nodes.js.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/nodes.js.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -161,15 +173,6 @@
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pulses.css.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state line="196" column="1" selection-start="3047" selection-end="3059" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_assembly.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/assemblies/_assembly.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -223,7 +226,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/_title-box.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static/home.html.erb" />
         <option value="$PROJECT_DIR$/app/views/assemblies/show_assemblies.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/nodes.css.scss" />
@@ -232,13 +234,14 @@
         <option value="$PROJECT_DIR$/app/controllers/assemblies_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_pulse_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_pulse_comment_form.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pulses.css.scss" />
         <option value="$PROJECT_DIR$/app/views/pulses/_pulse.html.erb" />
         <option value="$PROJECT_DIR$/app/views/nodes/members.html.erb" />
         <option value="$PROJECT_DIR$/app/views/assemblies/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/nodes.js.coffee" />
         <option value="$PROJECT_DIR$/app/views/pulses/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_pulse_comment_form.erb" />
       </list>
     </option>
   </component>
@@ -712,6 +715,10 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1143,20 +1150,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/static/home.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="28" selection-start="71" selection-end="71" vertical-scroll-proportion="-1.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="66" selection-start="339" selection-end="339" vertical-scroll-proportion="-5.625">
@@ -1181,13 +1174,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/shared/_pulse_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="82" selection-start="560" selection-end="560" vertical-scroll-proportion="-10.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_pulse_comment_form.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="53" selection-start="408" selection-end="408" vertical-scroll-proportion="-8.125">
           <folding />
         </state>
       </provider>
@@ -1248,9 +1234,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/nodes.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pulses/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="7" selection-start="465" selection-end="465" vertical-scroll-proportion="0.5645161">
+        <state line="15" column="64" selection-start="564" selection-end="564" vertical-scroll-proportion="5.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_pulse_comment_form.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="54" selection-start="433" selection-end="433" vertical-scroll-proportion="0.5645161">
           <folding />
         </state>
       </provider>

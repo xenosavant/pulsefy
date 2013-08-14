@@ -11,12 +11,10 @@
 <%end%>
 <br><div class = 'text-wrapper'><%= @pulse.content %></div>
     <div class = 'info-container'>
-      <span class = 'left-info'>
             Depth: <%= @pulse.depth %><br>
         <div class="timestamp">
           Fired <%= time_ago_in_words(@pulse.created_at) %> ago.
         </div>
-      </span>
       <span class = 'rating-wrapper'>
         <%if signed_in? %>
             <% case @pulse.pulser == current_node.id %>
