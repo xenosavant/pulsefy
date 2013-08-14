@@ -6,19 +6,17 @@
       <%= image_tag @assembly.avatar_url(:profile) %>
   <%end%>
   <br>
-  <%= link_to pluralize(@assembly.nodes.count, 'member'), members_path(:id => @assembly.id)%>
-  <br>
-  <div class='info'>
-    <%= @assembly.info%>
-  </div>
-  <br>
+  <%= link_to pluralize(@assembly.nodes.count, 'member'), members_path(:id => @assembly.id)%> |
   <% if signed_in? %>
     <% if current_node.assemblies.include?(@assembly)%>
       <% if @assembly.founder == current_node.id %>
          <%= link_to 'edit', reassemble_path(:id => @assembly.id)%>
         <% else %>
         <%= link_to 'quit', quit_path(:id => @assembly.id)%>
-        <% end %>
+        <% end %> <br>
+          <div class='info'>
+            <%= @assembly.info%>
+          </div>
         <% if params[:errors] %>
             <div class="alert alert-error">
               The form contains <%= pluralize(params[:errors].count, "error") %>.

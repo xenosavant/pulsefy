@@ -1,6 +1,6 @@
 <% provide(:title, 'Members') %>
 <title-box>
-  <%= pluralize(@assembly.members.count, 'Members') %>
+  <%= pluralize(@assembly.nodes.count, 'Members') %>
 </title-box>
 <div class = 'pulsefeed'>
 <% if !@nodes.nil? %>
