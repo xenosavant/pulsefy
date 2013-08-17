@@ -1,0 +1,32 @@
+<div class = 'info-show-container'>
+  <div class = 'left-info'>
+    Depth: <%= @pulse.depth %><br>
+    <div class="timestamp">
+      Fired <%= time_ago_in_words(@pulse.created_at) %> ago.
+    </div>
+  </div>
+      <span class = 'rating-wrapper'>
+        <%if signed_in? %>
+            <% case @pulse.pulser == current_node.id %>
+        <% when false %>
+                <% if current_node.votes.find_by_pulse_id(@pulse.id).nil?%>
+                    <%= link_to image_tag('Up.png'), cast_path(:id => pulse.id, :vote_cast => true) %>
+                    <%= @pulse.reinforcements %>
+                    <%= link_to image_tag('Down.png'), cast_path(:id => pulse.id, :vote_cast => false) %>
+                    <%= @pulse.degradations %>
+                <% else %>
+                    <%= image_tag 'Up.png' %>
+                    <%= @pulse.reinforcements %>
+                    <%= image_tag 'Down.png' %>
+                    <%= @pulse.degradations %>
+                <%end%>
+            <% when true %>
+                <%= image_tag 'Up.png' %>
+                <%= @pulse.reinforcements %>
+                <%= image_tag 'Down.png' %>
+                <%= @pulse.degradations %>
+            <%end%>
+         <%end%>
+     </span>
+</div>
+</div>

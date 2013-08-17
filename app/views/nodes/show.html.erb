@@ -1,4 +1,5 @@
 <div class = 'pulsefeed'>
+  <div class = 'inner-pulse'>
 <div class='username'>
   <h3> <%= @node.username%></h3>
 </div>
@@ -13,6 +14,7 @@
 <div class='info'>
   <%= @node.info%>
 </div>
+  <div class = 'inner-pulse'>
 <% if @node.pulses.any? %>
       <h4>Pulsefeed</h4>
       <ol class="pulses">
@@ -20,4 +22,6 @@
       </ol>
       <%= will_paginate @pulses %>
 <% end %>
+  </div>
+ </div>
 </div>

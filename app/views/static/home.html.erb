@@ -3,6 +3,7 @@
       My Pulsefeed
     </title-box>
 <div class = 'pulsefeed'>
+  <div class = 'inner-pulse'>
     <% if @node.pulses.any? %>
          <ol class="pulses">
           <%= render @pulses %>
@@ -19,4 +20,5 @@
             </h2>
             <%= link_to "Pulsefy!", '/pulseup', :class => "btn btn-medium btn-primary" %>
   </div>
+ </div>
 <% end %>

@@ -12,7 +12,6 @@ $graydarker: #1c2025;
 
 html {
   min-height: 100%;
-  position:relative;
 }
 
 body {
@@ -21,6 +20,7 @@ body {
   overflow: auto;
   height: 100%;
   width: 100%;
+  background-color: $lightSlate;
 }
 
 sidebar {
@@ -28,13 +28,10 @@ sidebar {
   position: fixed;
   padding-left: 1%;
   float: left;
-  top: 90px;
+  top: 80px;
   width: 25%;
   height: 100%;
   background-color:$graydarker;
-  border-color: $topGray;
-  border-width: 1px;
-  border-style: solid;
 }
 
 .topbar {
@@ -164,16 +161,13 @@ side-synapse {
 rightbar {
   z-index:1;
   position: fixed;
-  top: 90px;
+  top: 80px;
   left: 74%;
   padding-top: 5%;
   padding-right: 1%;
   width: 25%;
   height:100%;
   background-color:$graydarker;
-  border-color: $topGray;
-  border-width: 1px;
-  border-style: solid;
   li {
     font-size: 1.3em;
     list-style: none;
@@ -181,19 +175,19 @@ rightbar {
 }
 
 .pulsefeed  {
-  padding-left: 34%;
-  padding-right:34%;
-  margin:0 auto;
-  width: 32%;
-  position:absolute;
+  width:48%;
+  margin-left:26%;
+  margin-right:74%;
+  text-align: center;
+  position:static;
   padding-bottom:150px;
-  min-height: 750px;
   padding-top:55px;
-  height:100%;
+  min-height:100%;
   z-index:0;
   color: #000;
   background-color: $lightSlate;
   overflow:scroll;
+  display:block;
   a {
     font-weight: bold;
     &:hover {
@@ -201,6 +195,16 @@ rightbar {
       text-decoration: none;
     }
   }
+}
+
+.inner-pulse {
+  width: 500px;
+  margin: 0 auto;
+  display:block;
+  overflow:auto;
+  position:static;
+  text-align:left;
+  height:100%;
 }
 
 .logged-background {
@@ -342,7 +346,7 @@ textfield {
   font-size: 1.3em;
   display: block;
   position:fixed;
-  top:195px;
+  top:194px;
   left:10px;
   padding:5px;
   margin-left:0px;
@@ -373,17 +377,6 @@ textfield {
   -moz-border-radius:5px;
   background-color: #eaeaea;
   text-align: center;
-}
-
-.picture-holder {
-  width:100%;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  position:absolute;
-  margin:auto;
-  height:100px;
 }
 
 .dendrite {

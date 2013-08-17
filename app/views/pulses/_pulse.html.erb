@@ -66,9 +66,9 @@
         <%end%>
       </span>
       <div class="tags"><%= pulse.tags %></div>
-      <div class = 'comment-box'>
+      <span class = 'comment-box'>
         <%= link_to pluralize(pulse.pulse_comments.count, 'comment'), comment_path(:id => pulse.id) %>
-   </div>
+   </span>
   </div>
  </div>
 </div>

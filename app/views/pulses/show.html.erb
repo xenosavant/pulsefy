@@ -1,5 +1,5 @@
 <div class = 'pulsefeed'>
-  <div class = 'show-wrapper'>
+ <div class = 'inner-pulse'>
   <%if !@pulse.headline.nil?%>
  <h3><%= @pulse.headline %></h3>
   <%end%>
@@ -11,37 +11,16 @@
 <%else%>
     <a href = <%= @pulse.link %>><%= @pulse.link%></a>
 <%end%>
-   <br><div class = 'text-wrapper'><%= @pulse.content %></div>
-    <div class = 'info-show-container'>
-      <div class = 'left-info'>
-            Depth: <%= @pulse.depth %><br>
-        <div class="timestamp">
-          Fired <%= time_ago_in_words(@pulse.created_at) %> ago.
+   <div class = 'show-text-wrapper'><%= @pulse.content %></div>
+   <div class = 'info-show-container'> <%= render 'pulses/info'%> </div>
+        <div class = 'pulse-comment-wrapper'>
+             <% if @pulse.pulse_comments.any? %>
+              <h4>Comments</h4>
+             <ol class="pulses">
+                  <%= render @pulse_comments %>
+             </ol>
+              <%= will_paginate @pulse_comments %>
+    <% end %>
         </div>
-      </div>
-      <span class = 'rating-wrapper'>
-        <%if signed_in? %>
-            <% case @pulse.pulser == current_node.id %>
-        <% when false %>
-                <% if current_node.votes.find_by_pulse_id(@pulse.id).nil?%>
-                    <%= link_to image_tag('Up.png'), cast_path(:id => pulse.id, :vote_cast => true) %>
-                    <%= @pulse.reinforcements %>
-                    <%= link_to image_tag('Down.png'), cast_path(:id => pulse.id, :vote_cast => false) %>
-                    <%= @pulse.degradations %>
-                <% else %>
-                    <%= image_tag 'Up.png' %>
-                    <%= @pulse.reinforcements %>
-                    <%= image_tag 'Down.png' %>
-                    <%= @pulse.degradations %>
-                <%end%>
-            <% when true %>
-                <%= image_tag 'Up.png' %>
-                <%= @pulse.reinforcements %>
-                <%= image_tag 'Down.png' %>
-                <%= @pulse.degradations %>
-            <%end%>
-         <%end%>
-     </span>
     </div>
-  </div>
 </div>

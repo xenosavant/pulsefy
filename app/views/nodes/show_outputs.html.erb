@@ -3,11 +3,13 @@
   <%= pluralize(@node.outputs.count, 'Output') %>
 </title-box>
 <div class = 'pulsefeed'>
-<% if !@nodes.nil? %>
+  <div class = 'inner-pulse'>
+  <% if !@nodes.nil? %>
     <%= will_paginate %>
     <ul class='nodes'>
       <%= render @nodes %>
     </ul>
     <%= will_paginate %>
 <% end %>
+  </div>
 </div>

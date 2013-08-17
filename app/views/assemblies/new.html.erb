@@ -1,4 +1,5 @@
 <div class = 'pulsefeed'>
+  <div class = 'inner-pulse'>
       <%= form_for(@assembly) do |f| %>
       <%= render 'shared/error_messages', :object => f.object %>
 
@@ -14,4 +15,5 @@
       <%= f.submit 'Assemble!', :class => "btn btn-large btn-primary" %>
       </div>
   <% end %>
+  </div>
 </div>
