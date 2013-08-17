@@ -375,8 +375,11 @@ textfield {
 }
 
 .picture-holder {
+  width:auto;
   top:0;
   bottom:0;
+  left:0;
+  right:0;
   position:absolute;
   margin-top:auto;
   margin-bottom:auto;

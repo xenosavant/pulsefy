@@ -7,6 +7,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/manifest.yml" afterPath="$PROJECT_DIR$/public/assets/manifest.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/production.log" afterPath="$PROJECT_DIR$/log/production.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/pulses.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/pulses.css.scss" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,7 +48,7 @@
     <file path="/assemblies_helper.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372176925514" ignored="false" />
     <file path="/_sidebar.htm.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371524346171" ignored="false" />
     <file path="/nodes.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1376238982461" ignored="false" />
-    <file path="/custom.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1376748273862" ignored="false" />
+    <file path="/custom.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1376748829207" ignored="false" />
     <file path="/_sidebar.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1376446979276" ignored="false" />
     <file path="/application.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1376065144482" ignored="false" />
     <file path="/new.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1374810599001" ignored="false" />
@@ -69,7 +70,7 @@
     <file path="/inbox_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371756988823" ignored="false" />
     <file path="/_pulse_comments.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371757115730" ignored="false" />
     <file path="/_pulse_comment.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1374631097460" ignored="false" />
-    <file path="/pulses.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1376747489613" ignored="false" />
+    <file path="/pulses.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1376748685631" ignored="false" />
     <file path="/pulse_comments_helper.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372174997891" ignored="false" />
     <file path="/_assembly_pulse_form.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1374704506862" ignored="false" />
     <file path="/show_assemblies.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1373650317795" ignored="false" />
@@ -113,10 +114,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="custom.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="custom.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="378" column="11" selection-start="6034" selection-end="6034" vertical-scroll-proportion="0.5904437">
+            <state line="379" column="27" selection-start="6048" selection-end="6048" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -170,7 +171,7 @@
       <file leaf-file-name="pulses.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pulses.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="190" column="35" selection-start="2952" selection-end="2952" vertical-scroll-proportion="0.0">
+            <state line="65" column="33" selection-start="977" selection-end="977" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -185,10 +186,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_pulse.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_pulse.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/pulses/_pulse.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="18" selection-start="220" selection-end="220" vertical-scroll-proportion="9.375">
+            <state line="6" column="18" selection-start="220" selection-end="220" vertical-scroll-proportion="-0.2788104">
               <folding />
             </state>
           </provider>
@@ -1075,7 +1076,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880846" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3628472" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3628472" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1217,13 +1218,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pulses/_pulse.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="18" selection-start="220" selection-end="220" vertical-scroll-proportion="9.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pulses/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="20" selection-start="1719" selection-end="1719" vertical-scroll-proportion="-28.75">
@@ -1240,14 +1234,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pulses.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="190" column="35" selection-start="2952" selection-end="2952" vertical-scroll-proportion="0.0">
+        <state line="65" column="33" selection-start="977" selection-end="977" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="378" column="11" selection-start="6034" selection-end="6034" vertical-scroll-proportion="0.5904437">
+        <state line="379" column="27" selection-start="6048" selection-end="6048" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pulses/_pulse.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="18" selection-start="220" selection-end="220" vertical-scroll-proportion="-0.2788104">
           <folding />
         </state>
       </provider>
