@@ -378,7 +378,9 @@ textfield {
   top:0;
   bottom:0;
   position:absolute;
-  margin:auto;
+  margin-top:auto;
+  margin-bottom:auto;
+  height:100px;
 }
 
 .dendrite {
