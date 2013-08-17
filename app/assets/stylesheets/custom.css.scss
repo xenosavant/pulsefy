@@ -183,6 +183,7 @@ rightbar {
 .pulsefeed  {
   padding-left: 34%;
   padding-right:34%;
+  margin:0 auto;
   width: 32%;
   position:absolute;
   padding-bottom:150px;
@@ -375,14 +376,13 @@ textfield {
 }
 
 .picture-holder {
-  width:auto;
+  width:100%;
   top:0;
   bottom:0;
   left:0;
   right:0;
   position:absolute;
-  margin-top:auto;
-  margin-bottom:auto;
+  margin:auto;
   height:100px;
 }
 
