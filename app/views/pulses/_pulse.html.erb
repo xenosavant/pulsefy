@@ -1,10 +1,12 @@
 <li>
   <div class = 'soma'>
+    <div class = 'picture-holder'>
     <%if !Node.find(pulse.pulser).avatar.file.nil? %>
         <%= image_tag Node.find(pulse.pulser).avatar_url(:thumb) %>
         <%else%>
     <%= image_tag 'default.gif' %>
     <%end%>
+      </div>
     <% if Node.find(pulse.pulser).outputs.include?(current_node) %>
         <div class = 'dendrite'></div>
         <div class = 'synapse'></div>
@@ -14,7 +16,7 @@
                   delete_path(:id => pulse.id) %>
     </div>
     <div class = 'soma-to-axon'></div>
-  </div>
+    </div>
 <div class = 'axon-wrap'>
   <div class = 'axon'>
     <% if !pulse.headline.nil? %>

@@ -27,12 +27,14 @@ sidebar {
   z-index:1;
   position: fixed;
   padding-left: 1%;
-  padding-right:1%;
   float: left;
   top: 90px;
   width: 25%;
   height: 100%;
   background-color:$graydarker;
+  border-color: $topGray;
+  border-width: 1px;
+  border-style: solid;
 }
 
 .topbar {
@@ -163,13 +165,15 @@ rightbar {
   z-index:1;
   position: fixed;
   top: 90px;
-  left: 73%;
+  left: 74%;
   padding-top: 5%;
-  padding-left: 1%;
-  padding-right:1%;
+  padding-right: 1%;
   width: 25%;
   height:100%;
   background-color:$graydarker;
+  border-color: $topGray;
+  border-width: 1px;
+  border-style: solid;
   li {
     font-size: 1.3em;
     list-style: none;
@@ -177,12 +181,13 @@ rightbar {
 }
 
 .pulsefeed  {
+  padding-left: 34%;
+  padding-right:34%;
+  width: 32%;
   position:absolute;
-  padding-left: 32%;
-  padding-right:32%;
-  padding-bottom:50px;
+  padding-bottom:150px;
+  min-height: 750px;
   padding-top:55px;
-  width: 36%;
   height:100%;
   z-index:0;
   color: #000;
@@ -330,7 +335,7 @@ textfield {
 
 
 .content {
-  min-width:50px;
+  min-width:53px;
   max-width: 225px;
   z-index: 1;
   font-size: 1.3em;
@@ -361,11 +366,19 @@ textfield {
   display:block;
   height:100px;
   width:auto;
+  min-width:50px;
   border: $graydarker solid 5px;
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
   background-color: #eaeaea;
   text-align: center;
+}
+
+.picture-holder {
+  top:0;
+  bottom:0;
+  position:absolute;
+  margin:auto;
 }
 
 .dendrite {
@@ -409,9 +422,10 @@ textfield {
 title-box {
   z-index: 3;
   position:fixed;
+  text-align:center;
   left: 145px;
-  top:97px;
+  top:96px;
   color:$lightSlate !important;
-  font-size: 1.6em;
+  font-size: 1.5em;
   font-weight:bold;
 }

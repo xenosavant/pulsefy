@@ -1,6 +1,8 @@
 <div class = 'pulsefeed'>
- <div class = 'pulse-show-box'>
+  <div class = 'show-wrapper'>
+  <%if !@pulse.headline.nil?%>
  <h3><%= @pulse.headline %></h3>
+  <%end%>
 <% case @pulse.link_type %>
 <%when 'video' %>
 <div class = "show-container"><%= raw @pulse.embed_code %></div>
@@ -9,14 +11,14 @@
 <%else%>
     <a href = <%= @pulse.link %>><%= @pulse.link%></a>
 <%end%>
-<br><div class = 'text-wrapper'><%= @pulse.content %></div>
-    <div class = 'info-container'>
-      <span class = 'left-info'>
+   <br><div class = 'text-wrapper'><%= @pulse.content %></div>
+    <div class = 'info-show-container'>
+      <div class = 'left-info'>
             Depth: <%= @pulse.depth %><br>
         <div class="timestamp">
           Fired <%= time_ago_in_words(@pulse.created_at) %> ago.
         </div>
-      </span>
+      </div>
       <span class = 'rating-wrapper'>
         <%if signed_in? %>
             <% case @pulse.pulser == current_node.id %>
@@ -40,6 +42,6 @@
             <%end%>
          <%end%>
      </span>
+    </div>
   </div>
- </div>
 </div>

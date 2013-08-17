@@ -36,8 +36,17 @@ $graydarker: #1c2025;
 
 
 .info-container {
-  display:inline;
-  width:100%;
+  display:block;
+  width:auto;
+  position:absolute;
+  padding-top:10px;
+  text-align: left;
+}
+
+
+.info-show-container {
+  display:block;
+  width:auto;
   position:absolute;
   padding-top:10px;
 }
@@ -55,7 +64,7 @@ $graydarker: #1c2025;
   position:absolute;
   display: block;
   padding-top: 5px;
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: bold;
   color: #ff0000;
   width:100%
@@ -65,19 +74,18 @@ $graydarker: #1c2025;
   position: relative;
   max-width: 400px;
   padding-bottom: 265px;
-  padding-top: 30px;
+  padding-top: 25px;
   height: 0;
   overflow: hidden;
   display:block;
 }
 
 .show-container {
-  position: relative;
-  max-width: 550px;
-  padding-bottom: 384px;
-  height: 0;
-  overflow: hidden;
+  position: absolute;
+  width: 450px;
+  height: 384px;
   display: block;
+  overflow: auto;
 }
 
 
@@ -128,14 +136,14 @@ $graydarker: #1c2025;
 
 .comment-box {
   position:absolute;
-  right:85px;
-  bottom:-30px;
+  right:25px;
+  bottom:-26px;
   a {
     text-align: center;
     font-weight: bold;
     color: $medium-gray;
     &:hover {
-      color:$backroundBlue;
+      color:$graydarker;
       text-decoration: none;
     }
   }
@@ -164,15 +172,16 @@ $graydarker: #1c2025;
 }
 
 .axon {
-  width:auto;
-  height:auto;
-  oveflow:auto;
+  text-align: left;
+  width: auto;
+  height: auto;
+  oveflow: auto;
   z-index: 0;
-  display:block;
-  padding-top:3%;
+  display: block;
+  padding-left: 12px;
   padding-bottom: 70px;
-  padding-left:3%;
-  padding-right:3%;
+  padding-right: 12px;
+  padding-top: 12px;
   color:#000;
   background-color:$grayMediumLight;
   border: $graydarker solid 5px;
@@ -180,14 +189,12 @@ $graydarker: #1c2025;
   -moz-border-radius:10px;
 }
 
-.pulse-show-box {
+.show-wrapper {
   position:absolute;
-  width: 36%;
-  min-width: 500px;
-  border-color: $graydarker;
-  border:1px;
-  display:block;
+  width:450px;
+  height:auto;
 }
+
 .rating-wrapper {
   display: inline;
   height:40px;
