@@ -9,12 +9,13 @@
       </div>
     <% if Node.find(pulse.pulser).outputs.include?(current_node) %>
         <div class = 'dendrite'></div>
-        <div class = 'synapse'></div>
     <% end %>
+    <% if pulse.pulser == current_node.id %>
     <div class = 'close-container'>
       <%= link_to image_tag('close.png', :border => 0),
                   delete_path(:id => pulse.id) %>
     </div>
+    <% end %>
     <div class = 'soma-to-axon'></div>
     </div>
 <div class = 'axon-wrap'>

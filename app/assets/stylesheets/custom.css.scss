@@ -339,7 +339,7 @@ textfield {
 
 
 
-.content {
+.impulse {
   min-width:53px;
   max-width: 225px;
   z-index: 1;
@@ -380,15 +380,15 @@ textfield {
 }
 
 .dendrite {
+  overflow: visible;
   content: "";
-  z-index: 2;
+  z-index: 3;
   position: absolute;
   top:20px;
-  left: -100px;
+  left: -50px;
   height: 10px;
   background-color :$grayMediumLight;
-  display: block;
-  width: 100px;
+  width: 50px;
   border-color: $graydarker;
   border-left-width: 0px;
   border-right-width: 0px;
@@ -397,15 +397,15 @@ textfield {
   border-style: solid;
 }
 
-.synapse {
+.dendrite:after  {
+  overflow: visible;
   content: "";
-  z-index: 2;
+  z-index: 3;
   position: absolute;
-  top:16px;
-  left: -100px;
+  top:-8px;
+  left: 0px;
   height: 18px;
   background-color :$grayMediumLight;
-  display: block;
   width: 10px;
   border-color: $graydarker;
   border-left-width: 5px;
@@ -422,7 +422,7 @@ title-box {
   position:fixed;
   text-align:center;
   left: 145px;
-  top:96px;
+  top:92px;
   color:$lightSlate !important;
   font-size: 1.5em;
   font-weight:bold;

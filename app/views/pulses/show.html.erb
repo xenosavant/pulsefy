@@ -1,5 +1,6 @@
 <div class = 'pulsefeed'>
  <div class = 'inner-pulse'>
+   <div class = 'show-wrapper'>
   <%if !@pulse.headline.nil?%>
  <h3><%= @pulse.headline %></h3>
   <%end%>
@@ -13,6 +14,7 @@
 <%end%>
    <div class = 'show-text-wrapper'><%= @pulse.content %></div>
    <div class = 'info-show-container'> <%= render 'pulses/info'%> </div>
+  </div>
         <div class = 'pulse-comment-wrapper'>
              <% if @pulse.pulse_comments.any? %>
               <h4>Comments</h4>
@@ -21,6 +23,7 @@
              </ol>
               <%= will_paginate @pulse_comments %>
     <% end %>
-        </div>
+       </div>
     </div>
+  </div>
 </div>
