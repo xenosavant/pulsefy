@@ -36,41 +36,52 @@
     <div class = 'text-wrapper'>
   <%= pulse.content %>
    </div>
-    <div class = 'info-container'>
-      <span class = 'left-info'>
+      <div class = 'left-info'>
             Depth: <%= pulse.depth %><br>
            <div class="timestamp">
              Fired <%= time_ago_in_words(pulse.created_at) %> ago.
             </div>
       </span>
-      <span class = 'rating-wrapper'>
+      <div class="tags"><%= pulse.tags %></div>
+      <div class = 'comment-box'>
+        <%= link_to pluralize(pulse.pulse_comments.count, 'comment'), comment_path(:id => pulse.id) %>
+   </div>
+  </div>
+    <span class = 'rating-wrapper'>
         <%if signed_in? %>
             <% case pulse.pulser == current_node.id %>
         <% when false %>
                 <% if current_node.votes.find_by_pulse_id(pulse.id).nil?%>
-                    <%= link_to image_tag('Up.png'), cast_path(:id => pulse.id, :vote_cast => true) %>
-                    <%= pulse.reinforcements %>
-                    <%= link_to image_tag('Down.png'), cast_path(:id => pulse.id, :vote_cast => false) %>
-                    <%= pulse.degradations %>
+                    <div class = 'rating-block'>
+                      <%= link_to image_tag('Up.png'), cast_path(:id => pulse.id, :vote_cast => true) %>
+                      <%= pulse.reinforcements %>
+                    </div>
+                    <div class = 'rating-block'>
+                      <%= link_to image_tag('Down.png'), cast_path(:id => pulse.id, :vote_cast => false) %>
+                      <%= pulse.degradations %>
+                    </div>
                 <% else %>
-                    <%= image_tag 'Up.png' %>
-                    <%= pulse.reinforcements %>
-                    <%= image_tag 'Down.png' %>
-                    <%= pulse.degradations %>
+                    <div class = 'rating-block'>
+                      <%= image_tag 'Up.png' %>
+                      <%= pulse.reinforcements %>
+                    </div>
+                    <div class = 'rating-block'>
+                      <%= image_tag 'Down.png' %>
+                      <%= pulse.degradations %>
+                    </div>
                 <%end%>
             <% when true %>
-                <%= image_tag 'Up.png' %>
-                <%= pulse.reinforcements %>
-                <%= image_tag 'Down.png' %>
-                <%= pulse.degradations %>
+                <div class = 'rating-block'>
+                  <%= image_tag 'Up.png' %>
+                  <%= pulse.reinforcements %>
+                </div>
+                <div class = 'rating-block'>
+                  <%= image_tag 'Down.png' %>
+                  <%= pulse.degradations %>
+                </div>
             <%end%>
         <%end%>
       </span>
-      <div class="tags"><%= pulse.tags %></div>
-      <span class = 'comment-box'>
-        <%= link_to pluralize(pulse.pulse_comments.count, 'comment'), comment_path(:id => pulse.id) %>
-   </span>
-  </div>
  </div>
 </div>
 </li>

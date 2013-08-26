@@ -1,4 +1,5 @@
 @import "bootstrap";
+$graydarker: #1c2025;
 
 .pulse_comments {
   list-style: none;
@@ -14,6 +15,17 @@
 }
 
 .micro-soma {
-
+  z-index:1;
+  padding:5px;
+  position:absolute;
+  display:block;
+  height:50px;
+  width:auto;
+  min-width:15px;
+  border: $graydarker solid 5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  background-color: #eaeaea;
+  text-align: center;
 }
 

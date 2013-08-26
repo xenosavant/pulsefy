@@ -36,26 +36,26 @@ $graydarker: #1c2025;
 
 
 .info-container {
+  position:absolute;
   display:block;
-  width:auto;
-  position:relative;
-  padding-top:10px;
+  width:200px;
   text-align: left;
+  padding-top: 50px;
 }
 
 .depth {
-  display:block
+  display:block;
 }
 
 .timestamp {
   color: $grayLight;
-  display:block
+  display:block;
+  padding:1px;
 }
 
 .tags {
   position:realtive;
   display: block;
-  padding-top: 5px;
   font-size: 1em;
   font-weight: bold;
   color: #ff0000;
@@ -159,7 +159,7 @@ $graydarker: #1c2025;
 
 .comment-box {
   position:relative;
-  display:inline;
+  display:block;
   a {
     text-align: center;
     font-weight: bold;
@@ -214,9 +214,18 @@ $graydarker: #1c2025;
 
 .rating-wrapper {
   display: inline;
+  position:relative;
+  left:250px;
+  height:100px;
+  width:35px;
+}
+
+.rating-block {
+  display:block;
   height:40px;
-  padding-left:225px;
-  padding-top: 90px;
+  width:auto;
+  overflow:hidden;
+  padding-top:5px;
 }
 
 .text-wrapper {
