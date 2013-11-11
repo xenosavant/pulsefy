@@ -1,9 +1,11 @@
 <div class = 'pulsefeed'>
  <div class = 'inner-pulse'>
    <div class = 'show-wrapper'>
+     <div class = 'show-headline'>
   <%if !@pulse.headline.nil?%>
  <h3><%= @pulse.headline %></h3>
   <%end%>
+     </div>
 <% case @pulse.link_type %>
 <%when 'video' %>
 <div class = "show-container"><%= raw @pulse.embed_code %></div>
@@ -14,8 +16,7 @@
 <%end%>
    <div class = 'show-text-wrapper'><%= @pulse.content %></div>
    <div class = 'info-show-container'> <%= render 'pulses/info'%> </div>
-  </div>
-        <div class = 'pulse-comment-wrapper'>
+     <div class = 'inner-comment'>
              <% if @pulse.pulse_comments.any? %>
               <h4>Comments</h4>
              <ol class="pulses">
@@ -23,7 +24,7 @@
              </ol>
               <%= will_paginate @pulse_comments %>
     <% end %>
-       </div>
+      </div>
     </div>
+   </div>
   </div>
-</div>

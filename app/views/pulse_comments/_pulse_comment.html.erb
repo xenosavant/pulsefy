@@ -1,16 +1,16 @@
 <li>
-  <br><div class = 'content'><%= pulse_comment.content %></div></br>
-  <% case Node.find(pulse_comment.commenter).avatar_url(:thumb).nil? %>
-  <% when false %>
-      <img src= "<%= current_node.avatar_url(:micro) %>">
-  <% else %>
-      <%= image_tag 'default.gif' %>
-  <% end %>
-  <br>
-<span class="timestamp">Commented <%= time_ago_in_words(pulse_comment.created_at) %> ago.
-</span>
- <% if current_node.id == pulse_comment.commenter %>
- <%= link_to 'delete', uncomment_path(:id => pulse_comment.id) %>
- <%end%>
-  </br>
+  <div class = 'micro-soma'>
+      <%if !Node.find(pulse_comment.commenter).avatar.file.nil? %>
+          <%= image_tag Node.find(pulse_comment.commenter).avatar_url(:micro) %>
+      <%end%>
+    <div class = 'micro-soma-to-axon'></div>
+    </div>
+  <div class = 'micro-axon'><%= pulse_comment.content %>
+    <div class = 'micro-close-container'>
+      <%= link_to image_tag('close.png', :border => 0),
+                  delete_path(:id => pulse_comment.id) %>
+    </div>
+<div class="timestamp">Commented <%= time_ago_in_words(pulse_comment.created_at) %> ago.
+</div>
+</div>
 </li>

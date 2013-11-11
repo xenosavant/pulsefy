@@ -30,7 +30,13 @@ $graydarker: #1c2025;
   font-size: 1.6em;
   display:inline;
   padding-top: 5px;
-  height:1.7em;
+  font-weight: bold;
+}
+
+.show-headline  {
+  alignment:center;
+  overflow:hidden;
+  font-size: 1.7em;
   font-weight: bold;
 }
 
@@ -89,7 +95,7 @@ $graydarker: #1c2025;
   position:relative;
   padding-top:10px;
   overflow:hidden;
-  height:90px;
+  height:50px;
 }
 
 .show-wrapper {
@@ -143,8 +149,8 @@ $graydarker: #1c2025;
 
 .link-container {
   display:block;
-  width: 80%;
-  padding-bottom: 5px;
+  width: 350px;
+  padding-bottom:5px;
   padding-top:5px;
   display: block;
 }
@@ -244,17 +250,13 @@ $graydarker: #1c2025;
 }
 
 .show-text-wrapper {
-  width:450px;
-  padding-bottom:1px;
-  padding-top:1px;
+  width:428px;
+  padding:10px;
   height:auto;
   font-size: 1.5em;
   disply:block;
   font-weight: bold;
-  border-left-width: 1px;
-  border-top-width: 1px;
-  border-right-width: 1px;
-  border-bottom-width: 1px;
+  border:1px;
   border-color:$medium-gray;
   border-style:solid;
 }
@@ -267,7 +269,7 @@ $graydarker: #1c2025;
 
 .pulse-comment-wrapper {
   display: block;
-  width:450px;
+  width:300px;
   position:relative;
   padding-top:25px;
   text-align: left;
