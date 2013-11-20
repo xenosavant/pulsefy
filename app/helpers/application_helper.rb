@@ -35,9 +35,9 @@ module ApplicationHelper
   def connections_menu?
     case params[:controller]
       when 'nodes'
-        if params[:action] == 'show_inputs'
+        if params[:action] == 'show_inputs' && params[:id] == current_node.id
           true
-        elsif params[:action] == 'show_outputs'
+        elsif params[:action] == 'show_outputs' && params[:id] == current_node.id
           true
         else
           false
@@ -52,6 +52,10 @@ module ApplicationHelper
       when 'nodes'
         if params[:action] == 'show'
           true
+        elsif params[:action] == 'show_inputs' && params[:id] != current_node.id
+            true
+        elsif params[:action] == 'show_outputs' && params[:id] != current_node.id
+            true
         else
           false
         end
