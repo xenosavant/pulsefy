@@ -1,6 +1,4 @@
-<div class = 'pulsefeed'>
-  <div class = 'inner-pulse'>
-<% provide(:title, "Edit node") %>
+<% provide(:title, "Edit Profile") %>
 <h1>Update Your Pulsefeed</h1>
     <%= form_for @node, :html => {:multipart => true} do |f| %>
         <%= render 'shared/error_messages', :object => f.object %>
@@ -26,5 +24,3 @@
       </div>
         </br>
         <% end %>
-  </div>
-</div>

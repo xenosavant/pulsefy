@@ -6,17 +6,15 @@ $graydarker: #1c2025;
 
 .nodes {
   list-style: none;
-  width: 450px;
+  width: 445px;
   padding-bottom:10px;
-  position:absolute;
+  position:relative;
   border-top: 1px solid #000040;
   li {
     width:400px;
     height:130px;
     padding-top:10px;
     padding-bottom: 10px;
-    padding-left:25px;
-    padding-right:25px;
     border-bottom: 1px solid #000040;
   }
 }

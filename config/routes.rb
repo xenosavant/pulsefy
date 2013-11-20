@@ -8,6 +8,11 @@ Pulsefy::Application.routes.draw do
 
   root :to => 'static#home'
 
+  match '/asspicup' => 'assemblies#picup'
+  match '/assaccount' => 'assemblies#account'
+  match '/show' => 'nodes#show'
+  match '/picup' => 'nodes#picup'
+  match '/account' => 'nodes#account'
   match '/inpulse' => 'assemblies#assembly_pulse_form'
   match '/members' => 'nodes#members'
   match '/uncomment' => 'pulse_comments#destroy'

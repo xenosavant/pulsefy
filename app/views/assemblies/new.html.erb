@@ -1,19 +1,15 @@
-<div class = 'pulsefeed'>
-  <div class = 'inner-pulse'>
+
       <%= form_for(@assembly) do |f| %>
       <%= render 'shared/error_messages', :object => f.object %>
 
       <%= f.label :title %>
-      <%= f.text_field :title %>
+      <%= f.text_field :title, :size => '15x8' %>
 
       <%= f.label :info %>
       <div class="textarea">
-      <%= f.text_area :info, :size => '10x8' %>
+      <%= f.text_area :info, :size => '15x8' %>
       </div>
 
-      <div class='center'>
-      <%= f.submit 'Assemble!', :class => "btn btn-large btn-primary" %>
+      <%= f.submit 'Assemble!', :class => 'btn btn-medium btn-primary' %>
       </div>
-  <% end %>
-  </div>
-</div>
+      <% end %>

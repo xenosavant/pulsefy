@@ -7,7 +7,7 @@
       <%end%>
    <%when 'assemblies'%>
       <%if params[:action] ==  'show'%>
-                    <%= render 'assemblies/assembly_pulse_form' %>
+                 <%= render 'assemblies/assembly_pulse_form' %>
       <%end%>
     <%when 'pulses'%>
         <%if params[:action] == 'show' %>
@@ -18,3 +18,9 @@
     <%end%>
    </div>
 </sidebar>
+
+<div class = 'side-name'>
+  <%if !current_node.avatar.file.nil? %>
+      <%= image_tag current_node.avatar_url(:thumb) %>
+  <%end%>
+</div>

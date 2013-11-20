@@ -1,16 +1,10 @@
 <% if signed_in? %>
-    <title-box>
-      My Pulsefeed
-    </title-box>
-<div class = 'pulsefeed'>
-  <div class = 'inner-pulse'>
     <% if @node.pulses.any? %>
          <ol class="pulses">
           <%= render @pulses %>
          </ol>
         <%= will_paginate @pulses %>
       <% end %>
-  </div>
 <% else %>
   <div class = 'logged-background'>
 <br><br><br><br><br><br>
@@ -20,5 +14,4 @@
             </h2>
             <%= link_to "Pulsefy!", '/pulseup', :class => "btn btn-medium btn-primary" %>
   </div>
- </div>
 <% end %>

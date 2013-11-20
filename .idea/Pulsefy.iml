@@ -71,6 +71,7 @@
     <orderEntry type="library" scope="PROVIDED" name="ruby-oembed (v0.8.8, ruby-1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.2.9, ruby-1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v3.2.6, ruby-1.8.7-p358) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="simple-navigation (v3.11.0, ruby-1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v2.2.2, ruby-1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v1.3.7, ruby-1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="subexec (v0.2.3, ruby-1.8.7-p358) [gem]" level="application" />

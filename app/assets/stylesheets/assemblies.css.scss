@@ -1,17 +1,14 @@
 @import "bootstrap";
 
 .assemblies {
-  width: 450px;
+  width: 445px;
   list-style: none;
   padding-bottom:10px;
-  position:absolute;
-  border-top: 1px solid #000040;
+  position:relative;
   li {
     width:400px;
     padding-top:10px;
     padding-bottom: 10px;
-    padding-left:25px;
-    padding-right:25px;
     border-bottom: 1px solid #000040;
   }
 }

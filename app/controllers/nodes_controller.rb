@@ -26,6 +26,22 @@ class NodesController < ApplicationController
     @node = current_node
   end
 
+  def picup
+    if !@node.nil?
+      correct_node
+    else signed_in_node
+    end
+    @node = current_node
+  end
+
+  def account
+    if !@node.nil?
+      correct_node
+    else signed_in_node
+    end
+    @node = current_node
+  end
+
   def update
     @node =  Node.find(current_node)
       if @node.update_attributes(params[:node])
@@ -45,12 +61,12 @@ class NodesController < ApplicationController
   end
 
   def show_outputs
-    @node = Node.find(params[:id])
+    @node = current_node
     @nodes = @node.outputs.paginate(:page => params[:page])
   end
 
   def show_inputs
-    @node = Node.find(params[:id])
+    @node = current_node
     @nodes = @node.inputs.paginate(:page => params[:page])
   end
 
