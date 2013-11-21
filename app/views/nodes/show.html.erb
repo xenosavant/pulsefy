@@ -6,8 +6,8 @@
   <%end%>
 <br><div>
  <%= link_to pluralize(@node.assemblies.count, 'assembly'), view_path(:id => @node.id) %> |
-  <%= link_to pluralize(@node.inputs.count, 'input'), inputs_path(:id => @node.id) %> |
-  <%= link_to pluralize(@node.outputs.count, 'output'), outputs_path(:id => @node.id) %>
+  <%= link_to pluralize(@node.inputs.count, 'input'), otherinputs_path(:id => @node.id) %> |
+  <%= link_to pluralize(@node.outputs.count, 'output'), otheroutputs_path(:id => @node.id) %>
 </div></br>
 <div class='info'>
   <%= @node.info%>

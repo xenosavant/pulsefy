@@ -8,7 +8,8 @@ $backroundBlue: #000040;
 $lightSlate: #d0dfef;
 $topGray: #708090;
 $graydarker: #1c2025;
-
+$frameColor: #121212;
+;
 
 html {
   min-height: 100%;
@@ -31,7 +32,7 @@ sidebar {
   top: 40px;
   width: 25%;
   height: 100%;
-  background-color:#000000;
+  background-color:$frameColor;
 }
 
 //#topbar {
@@ -96,7 +97,7 @@ sidebar {
 .side-name:after {
   content: "";
   position: absolute;
-  bottom: 24px;
+  bottom: 54px;
   right:-20px;
   border-style: solid;
   border-bottom: 10px;
@@ -134,12 +135,12 @@ side-dendrite {
   content: "";
   z-index: 2;
   position: fixed;
-  top:126px;
+  top:95px;
   left: 0px;
   height: 10px;
   background-color :$grayMediumLight;
   display: block;
-  width: 27%;
+  width: 25%;
   border-color: $medium-gray;
   border-left-width: 0px;
   border-right-width: 0px;
@@ -152,8 +153,8 @@ side-synapse {
   content: "";
   z-index: 2;
   position: fixed;
-  top:122px;
-  left: 27%;
+  top:92px;
+  left: 25%;
   height: 18px;
   background-color :$grayMediumLight;
   display: block;
@@ -177,7 +178,7 @@ rightbar {
   padding-right: 1%;
   width: 25%;
   height:100%;
-  background-color:#000000;
+  background-color:$frameColor;
   li {
     font-size: 1.3em;
     list-style: none;
@@ -185,9 +186,7 @@ rightbar {
 }
 
 .pulsefeed  {
-  width:48%;
-  margin-left:26%;
-  margin-right:74%;
+  width:100%;
   text-align: center;
   position:static;
   padding-bottom:150px;
@@ -196,6 +195,7 @@ rightbar {
   color: #000;
   background-color: $lightSlate;
   display:block;
+  overflow: hidden;
   a {
     font-weight: bold;
     &:hover {
@@ -208,7 +208,7 @@ rightbar {
 .inner-pulse {
   margin-left: auto;
   margin-right: auto;
-  overflow:hidden;
+  overflow:show;
   width: 445px;
   display:block;
   position:static;
@@ -439,9 +439,8 @@ textfield {
 
 #top_navigation {
   float: left;
-  width: 100%;
-  background-color: #000000;
-  border-color: #002f5a;
+  background-color: $frameColor;
+  border-color: $frameColor;
   border-style: solid;
   border-bottom-width: 0px;
   border-top-width: 0px;
@@ -461,10 +460,9 @@ textfield {
   padding-right: 25px; }
 
 #top_navigation ul li a {
-  color: $topGray;
-  font-weight: bold;
+  color: #ddd;
   float: left;
-  font-size: 12pt;
+  font-size: 13pt;
   font-weight: normal;
   margin: 0;
   padding: 4px 8px 6px;
@@ -478,7 +476,7 @@ textfield {
   -webkit-border-radius: 0.5em 0.5em 0 0;
   border-radius: 0.5em 0.5em 0 0;
   float: left;
-  font-size: 12pt;
+  font-size: 16pt;
   font-weight: normal;
   margin: 0;
   padding: 4px 8px 6px;
@@ -489,7 +487,9 @@ textfield {
 
 .tab-bar {
   position:absolute;
-  width:100%;
-  background-color:#000000;
-  padding-top:10px;
+  margin-left: 26%;
+  width:49%;
+  margin-right: 74%;
+  background-color:$frameColor;
+  padding-top:15px;
 }

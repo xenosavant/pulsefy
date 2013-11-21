@@ -18,9 +18,10 @@
       <%= render_navigation %>
     </div>
    </div>
-      <div class = 'inner-pulse'>
+  <div class = inner-pulse>
 <%= yield  %>
   <%= debug(params) %>
+   <%= current_node.id %>
     <%= render 'layouts/footer' %>
  </div>
 </div>

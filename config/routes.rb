@@ -21,6 +21,8 @@ Pulsefy::Application.routes.draw do
   match '/view'  =>  'assemblies#show_assemblies'
   match '/inputs' => 'nodes#show_inputs'
   match '/outputs' => 'nodes#show_outputs'
+  match '/otherinputs' => 'nodes#show_other_inputs'
+  match '/otheroutputs' => 'nodes#show_other_outputs'
   match '/quit' => 'assemblies#quit'
   match '/join' =>  'assemblies#join'
   match '/assemble' => 'assemblies#new'

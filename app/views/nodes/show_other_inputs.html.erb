@@ -1,0 +1,8 @@
+<% provide(:title, 'Inputs') %>
+  <% if !@nodes.nil? %>
+      <%= will_paginate %>
+      <ul class='nodes'>
+        <%= render @nodes %>
+      </ul>
+      <%= will_paginate %>
+  <% end %>
