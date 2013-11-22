@@ -330,8 +330,8 @@ textfield {
   font-size: 1.3em;
   display: block;
   position:fixed;
-  top:194px;
-  left:10px;
+  top:193px;
+  left:15px;
   padding:5px;
   margin-left:0px;
   color:#000;
@@ -377,12 +377,12 @@ textfield {
   content: "";
   z-index: 2;
   position: absolute;
-  left: 0px;
+  left: 10px;
+  top:9px;
   height: 18px;
   background-color :$grayMediumLight;
   display: block;
   width: 10px;
-  border-color: $medium-gray;
   -webkit-border-radius:10px;
   -moz-border-radius:10px;
 }
