@@ -10,9 +10,8 @@ $graydarker: #1c2025;
 $frameColor: #121212;
 
 .nodes {
-  lwidth: 445px;
+  width: 445px;
   list-style: none;
-  padding-bottom:10px;
   position:relative;
   background-color:$grayMediumLight;
   li {

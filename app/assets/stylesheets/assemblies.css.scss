@@ -13,11 +13,11 @@ $frameColor: #121212;
 .assemblies {
   width: 445px;
   list-style: none;
-  padding-bottom:10px;
   position:relative;
   background-color:$grayMediumLight;
   li {
     width:445px;
+    height:100px;
     padding-top:10px;
     padding-bottom: 10px;
     padding-left: 10px;
