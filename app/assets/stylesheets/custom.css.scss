@@ -96,7 +96,7 @@ sidebar {
 .side-name:after {
   content: "";
   position: absolute;
-  bottom: 54px;
+  bottom: 74px;
   right:-20px;
   border-style: solid;
   border-bottom: 10px;
@@ -134,7 +134,7 @@ side-dendrite {
   content: "";
   z-index: 2;
   position: fixed;
-  top:95px;
+  top:75px;
   left: 0px;
   height: 10px;
   background-color :$grayMediumLight;
@@ -152,7 +152,7 @@ side-synapse {
   content: "";
   z-index: 2;
   position: fixed;
-  top:92px;
+  top:72px;
   left: 24%;
   height: 18px;
   background-color :$grayMediumLight;
@@ -213,6 +213,10 @@ rightbar {
   text-align:left;
   height:100%;
   padding-top:55px;
+}
+
+inner-container {
+  float: left;
 }
 
 .logged-background {

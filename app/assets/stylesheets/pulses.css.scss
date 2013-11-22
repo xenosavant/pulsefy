@@ -189,11 +189,11 @@ $graydarker: #1c2025;
   background-color :$grayMediumLight;
   display: block;
   width: 10px;
-  border-color: $graydarker;
-  border-left-width: 5px;
-  border-right-width: 5px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  //border-color: $graydarker;
+  //border-left-width: 5px;
+  //border-right-width: 5px;
+  //border-top-width: 0px;
+  //border-bottom-width: 0px;
   border-style: solid;
 }
 
@@ -210,7 +210,7 @@ $graydarker: #1c2025;
   padding-top: 15px;
   color:#000;
   background-color:$grayMediumLight;
-  border: $graydarker solid 5px;
+  //border: $graydarker solid 5px;
   -webkit-border-radius:10px;
   -moz-border-radius:10px;
 }

@@ -14,15 +14,14 @@ $frameColor: #121212;
   list-style: none;
   position:relative;
   background-color:$grayMediumLight;
-  li {
-    width:445px;
-    height:100px;
-    padding-top:10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    border-bottom: 1px solid $lightSlate;
-    //border: 1px solid $topGray2;
-  }
+    li {
+      width:445px;
+      height:100px;
+      padding-top:10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      border-bottom: 1px solid $lightSlate;
+    }
 }
 
 
