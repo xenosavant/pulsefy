@@ -9,7 +9,6 @@ $lightSlate: #d0dfef;
 $topGray: #708090;
 $graydarker: #1c2025;
 $frameColor: #121212;
-;
 
 html {
   min-height: 100%;
@@ -140,7 +139,7 @@ side-dendrite {
   height: 10px;
   background-color :$grayMediumLight;
   display: block;
-  width: 25%;
+  width: 24%;
   border-color: $medium-gray;
   border-left-width: 0px;
   border-right-width: 0px;
@@ -154,7 +153,7 @@ side-synapse {
   z-index: 2;
   position: fixed;
   top:92px;
-  left: 25%;
+  left: 24%;
   height: 18px;
   background-color :$grayMediumLight;
   display: block;
@@ -214,7 +213,7 @@ rightbar {
   position:static;
   text-align:left;
   height:100%;
-  padding-top:45px;
+  padding-top:55px;
 }
 
 .logged-background {
@@ -291,7 +290,7 @@ p {
 footer {
   float: bottom;
   position: absolute;
-  margin-top: 45px;
+  margin-top: 100px;
   padding-top: 5px;
   width:445px;
   border-top: 1px solid #1c2025;

@@ -1,8 +1,7 @@
 <% provide(:title, 'Inputs') %>
-<title-box>
-  <%= pluralize(@node.inputs.count, 'Input') %>
-</title-box>
-  <div class = 'inner-pulse'>
+<!--<title-box>-->
+  <!--<%= pluralize(@node.inputs.count, 'Input') %>-->
+<!--</title-box>-->
 <% if !@nodes.nil? %>
     <%= will_paginate %>
     <ul class='nodes'>
@@ -10,4 +9,3 @@
     </ul>
     <%= will_paginate %>
 <% end %>
-  </div>

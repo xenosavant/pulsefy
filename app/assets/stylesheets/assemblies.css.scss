@@ -1,15 +1,27 @@
 @import "bootstrap";
+$grayMediumLight: #eaeaea;
+$medium-gray: #666;
+$topGray2: #677685;
+$graydarker: #1c2025;
+$backroundBlue: #000040;
+$lightSlate: #d0dfef;
+$topGray: #708090;
+$graydarker: #1c2025;
+$frameColor: #121212;
+
 
 .assemblies {
   width: 445px;
   list-style: none;
   padding-bottom:10px;
   position:relative;
+  background-color:$grayMediumLight;
   li {
-    width:400px;
+    width:445px;
     padding-top:10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #000040;
+    padding-left: 10px;
+    border-bottom: 1px solid $grayMediumLight;
   }
 }
 
