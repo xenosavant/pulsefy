@@ -78,7 +78,7 @@ $graydarker: #1c2025;
 
 .show-container {
   position: relative;
-  width: 450px;
+  width: 500px;
   padding-bottom: 384px;
   padding-top: 25px;
   height: 0;
@@ -97,7 +97,7 @@ $graydarker: #1c2025;
 
 .show-wrapper {
   display:block;
-  width:450px !important;
+  width:500px !important;
   position:relative;
   padding-top:10px;
   overflow:hidden;
@@ -110,8 +110,8 @@ $graydarker: #1c2025;
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 450px;
-  max-height: 384px;
+  max-width: 500px;
+  max-height: 427px;
 }
 
 .video-container iframe,
@@ -137,7 +137,7 @@ $graydarker: #1c2025;
   position: relative;
   top:75px;
   overflow: hidden;
-  width:450px;
+  width:500px;
   height: auto;
   padding-bottom: 5px;
   padding-top: 10px;
@@ -246,14 +246,14 @@ $graydarker: #1c2025;
 }
 
 .show-text-wrapper {
-  width:428px;
+  width:450px;
   padding:10px;
   height:auto;
   font-size: 1.5em;
   disply:block;
   font-weight: bold;
   border:1px;
-  border-color:$medium-gray;
+  background-color:$grayMediumLight;
   border-style:solid;
 }
 
