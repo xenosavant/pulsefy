@@ -8,7 +8,9 @@
     <%end%>
       </div>
     <% if Node.find(pulse.pulser).outputs.include?(current_node) %>
-        <div class = 'dendrite'></div>
+        <div class = 'dendrite'>
+          <div class = 'synapse'></div>
+        </div>
     <% end %>
     <% if pulse.pulser == current_node.id %>
     <div class = 'close-container'>

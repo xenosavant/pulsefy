@@ -36,7 +36,6 @@ class Node < ActiveRecord::Base
   def get_pulse(args)
     @impulse = args[:pulse]
     if @impulse.pulser != self.id and !self.pulses.include?(@impulse)
-      process_fire_from(:pulse => @impulse)
       self.pulses << @impulse
       @impulse.increment!(:depth)
     end

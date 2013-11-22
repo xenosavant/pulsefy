@@ -371,20 +371,21 @@ textfield {
   height: 10px;
   background-color :$grayMediumLight;
   width: 50px;
-  border-style: solid;
 }
 
-//
-//title-box {
-//  z-index: 3;
-//  position:fixed;
-//  text-align:center;
-//  left: 145px;
-//  top:92px;
-//  color:$lightSlate !important;
-//  font-size: 1.5em;
-//  font-weight:bold;
-//}
+.synapse {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  left: 0px;
+  height: 18px;
+  background-color :$grayMediumLight;
+  display: block;
+  width: 10px;
+  border-color: $medium-gray;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+}
 
 #top_navigation {
   float: left;
