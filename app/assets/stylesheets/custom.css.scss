@@ -377,8 +377,8 @@ textfield {
   content: "";
   z-index: 2;
   position: absolute;
-  left: 10px;
-  top:9px;
+  left: -10px;
+  top:-4px;
   height: 18px;
   background-color :$grayMediumLight;
   display: block;
