@@ -12,8 +12,7 @@
     <% end %>
     <% if pulse.pulser == current_node.id %>
     <div class = 'close-container'>
-      <%= link_to image_tag('close.png', :border => 0),
-                  delete_path(:id => pulse.id) %>
+      <%= link_to 'X', delete_path(:id => pulse.id) %>
     </div>
     <% end %>
     <div class = 'soma-to-axon'></div>
