@@ -15,11 +15,12 @@ $frameColor: #121212;
   position:relative;
   background-color:$grayMediumLight;
   li {
+    width:445px;
     height:100px;
-    margin-left:0;
     padding-top:10px;
-    padding-bottom:10px;
-    padding-left:10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-bottom: 1px solid $lightSlate;
     //border: 1px solid $topGray2;
   }
 }
