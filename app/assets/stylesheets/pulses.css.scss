@@ -8,12 +8,12 @@ $graydarker: #1c2025;
 
 .pulses {
   list-style: none;
-  width: 445px;
+  width: 450px;
   padding-bottom:10px;
   position:relative;
   li {
     margin-left: 0px;
-    width:400px;
+    width:450px;
     padding-top:10px;
     padding-bottom: 10px;
   }
@@ -68,7 +68,7 @@ $graydarker: #1c2025;
 
 .video-container {
   position: relative;
-  max-width: 400px;
+  max-width: 420px;
   padding-bottom: 265px;
   padding-top: 25px;
   height: 0;
@@ -120,14 +120,14 @@ $graydarker: #1c2025;
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 360px;
-  max-height: 290px;
+  max-width: 420px;
+  max-height: 338px;
 }
 
 .photo-container {
   position: relative;
   overflow: hidden;
-  width:360px;
+  width:420px;
   height: auto;
   padding-bottom: 5px;
   padding-top: 10px;
@@ -147,7 +147,7 @@ $graydarker: #1c2025;
 .link-container {
   overflow:hidden;
   display:block;
-  width: 350px;
+  width: 420px;
   padding-bottom:5px;
   padding-top:5px;
   display: block;
@@ -157,8 +157,18 @@ $graydarker: #1c2025;
   z-index:1;
   position:absolute;
   display:inline;
-  bottom: -49px;
-  left: 374px;
+  bottom: -51px;
+  right:-358px;
+  font-weight:bold;
+  font-size: 1.1em;
+  a {
+    color:$lightSlate !important;
+    font-weight: bold;
+    &:hover {
+      color:#000;
+      text-decoration: none;
+    }
+  }
 }
 
 .comment-box {
@@ -189,12 +199,6 @@ $graydarker: #1c2025;
   background-color :$grayMediumLight;
   display: block;
   width: 10px;
-  //border-color: $graydarker;
-  //border-left-width: 5px;
-  //border-right-width: 5px;
-  //border-top-width: 0px;
-  //border-bottom-width: 0px;
-  border-style: solid;
 }
 
 .axon {
@@ -233,18 +237,13 @@ $graydarker: #1c2025;
 }
 
 .text-wrapper {
-  width:347px;
+  width:410px;
   padding:5px;
   height:auto;
   font-size: 1.3em;
   disply:block;
   font-weight: bold;
-  border-left-width: 1px;
-  border-top-width: 1px;
-  border-right-width: 1px;
-  border-bottom-width: 1px;
-  border-color:$medium-gray;
-  border-style:solid;
+  background-color:#eeeeee;
 }
 
 .show-text-wrapper {

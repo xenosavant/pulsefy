@@ -78,14 +78,13 @@ sidebar {
 }
 
 .side-name {
-  border: $medium-gray solid 5px;
   background-color: #eaeaea;
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
   text-align: center;
   display: block;
   position:fixed;
-  left: 0px;
+  left: 15px;
   top:40px;
   height:100px;
   width:auto;
@@ -93,77 +92,52 @@ sidebar {
   z-index: 3;
 }
 
-.side-name:after {
-  content: "";
-  position: absolute;
-  bottom: 74px;
-  right:-20px;
-  border-style: solid;
-  border-bottom: 10px;
-  border-top:0px;
-  border-left:10px;
-  border-right:10px;
-  border-color: $grayMediumLight transparent;
-  background-color: $grayMediumLight transparent;
-  display: block;
-  width: 10px;
-  height:10px;
-  z-index: 4;
-  border-style:solid;
-}
-
 side-connect {
   content:"";
   z-index: 4;
   position: fixed;
   left: 35px;
-  top:164px;
+  top:158px;
   height: 35px;
   background-color :$grayMediumLight;
   display: block;
   width: 10px;
-  border-color: $medium-gray;
-  border-left-width: 5px;
-  border-right-width: 5px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
-  border-style: solid;
 }
 
 side-dendrite {
   content: "";
   z-index: 2;
   position: fixed;
-  top:75px;
+  top:60px;
   left: 0px;
   height: 10px;
   background-color :$grayMediumLight;
   display: block;
   width: 24%;
-  border-color: $medium-gray;
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 5px;
-  border-bottom-width: 5px;
-  border-style: solid;
+  //border-color: $medium-gray;
+  //border-left-width: 0px;
+  //border-right-width: 0px;
+  //border-top-width: 5px;
+  //border-bottom-width: 5px;
+  //border-style: solid;
 }
 
 side-synapse {
   content: "";
   z-index: 2;
   position: fixed;
-  top:72px;
+  top:56px;
   left: 24%;
   height: 18px;
   background-color :$grayMediumLight;
   display: block;
   width: 10px;
   border-color: $medium-gray;
-  border-left-width: 0px;
-  border-right-width: 5px;
-  border-top-width: 5px;
-  border-bottom-width: 5px;
-  border-style: solid;
+  //border-left-width: 0px;
+  //border-right-width: 5px;
+  //border-top-width: 5px;
+  //border-bottom-width: 5px;
+  //border-style: solid;
   -webkit-border-radius:10px;
   -moz-border-radius:10px;
 }
@@ -207,7 +181,7 @@ rightbar {
   margin-left: auto;
   margin-right: auto;
   overflow:show;
-  width: 445px;
+  width: 500px;
   display:block;
   position:static;
   text-align:left;
@@ -294,7 +268,7 @@ footer {
   float: bottom;
   margin-bottom: 20px;
   padding-top: 5px;
-  width:445px;
+  width:500px;
   border-top: 1px solid #1c2025;
   color: $grayLight;
   a {
@@ -362,7 +336,6 @@ textfield {
   margin-left:0px;
   color:#000;
   background-color:$grayMediumLight;
-  border: $medium-gray solid 5px;
   -webkit-border-radius:10px;
   -moz-border-radius:10px;
   border-radius:10px;
@@ -382,7 +355,6 @@ textfield {
   height:100px;
   width:auto;
   min-width:50px;
-  border: $graydarker solid 5px;
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
   background-color: #eaeaea;
@@ -399,33 +371,9 @@ textfield {
   height: 10px;
   background-color :$grayMediumLight;
   width: 50px;
-  border-color: $graydarker;
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 5px;
-  border-bottom-width: 5px;
   border-style: solid;
 }
 
-.dendrite:after  {
-  overflow: visible;
-  content: "";
-  z-index: 3;
-  position: absolute;
-  top:-8px;
-  left: 0px;
-  height: 18px;
-  background-color :$grayMediumLight;
-  width: 10px;
-  border-color: $graydarker;
-  border-left-width: 5px;
-  border-right-width: 0px;
-  border-top-width: 5px;
-  border-bottom-width: 5px;
-  border-style: solid;
-  -webkit-border-radius:10px;
-  -moz-border-radius:10px;
-}
 //
 //title-box {
 //  z-index: 3;
