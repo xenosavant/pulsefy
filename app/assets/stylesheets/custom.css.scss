@@ -85,7 +85,7 @@ sidebar {
   display: block;
   position:fixed;
   left: 15px;
-  top:40px;
+  top:50px;
   height:100px;
   width:100px;
   padding:10px;
@@ -108,7 +108,7 @@ side-dendrite {
   content: "";
   z-index: 2;
   position: fixed;
-  top:60px;
+  top:110px;
   left: 0px;
   height: 10px;
   background-color :$grayMediumLight;
@@ -126,7 +126,7 @@ side-synapse {
   content: "";
   z-index: 2;
   position: fixed;
-  top:56px;
+  top:106px;
   left: 24%;
   height: 18px;
   background-color :$grayMediumLight;
@@ -247,12 +247,12 @@ p {
   position: fixed;
   float: left;
   margin-right: 10px;
-  margin-left: 10px;
-  font-size: 1.7em;
+  margin-left: 15px;
+  font-size: 2em;
   color: white;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 8px;
+  padding-top: 10px;
   font-weight: bold;
   line-height: 1;
   &:hover {
@@ -324,7 +324,7 @@ textfield {
 }
 
 .impulse {
-  min-width:120px;
+  min-width:115px;
   max-width: 225px;
   z-index: 1;
   font-size: 1.3em;
@@ -441,5 +441,5 @@ textfield {
   width:49%;
   margin-right: 74%;
   background-color:$frameColor;
-  padding-top:15px;
+  padding-top:10px;
 }
