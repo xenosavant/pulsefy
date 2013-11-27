@@ -59,7 +59,7 @@ $grayMediumLight: #eaeaea;
   padding-top: 10px;
   color:#000;
   background-color:$grayMediumLight;
-  border: $graydarker solid 5px;
+  //border: $graydarker solid 5px;
   -webkit-border-radius:10px;
   -moz-border-radius:10px;
 }
@@ -79,4 +79,12 @@ $grayMediumLight: #eaeaea;
   display:inline;
   top: -2px;
   left: 262px;
+}
+
+.pulse-comment-wrapper {
+  display: block;
+  width:350px;
+  position:relative;
+  padding-top:25px;
+  text-align: left;
 }

@@ -37,6 +37,7 @@
     <div class = 'text-wrapper'>
   <%= pulse.content %>
    </div>
+    <div class = 'info-container'>
       <div class = 'left-info'>
             Depth: <%= pulse.depth %><br>
            <div class="timestamp">
@@ -48,7 +49,8 @@
         <%= link_to pluralize(pulse.pulse_comments.count, 'comment'), comment_path(:id => pulse.id) %>
    </div>
   </div>
-    <span class = 'rating-wrapper'>
+      </div>
+    <div class = 'rating-wrapper'>
         <%if signed_in? %>
             <% case pulse.pulser == current_node.id %>
         <% when false %>
@@ -82,7 +84,7 @@
                 </div>
             <%end%>
         <%end%>
-      </span>
+      </div>
  </div>
 </div>
 </li>

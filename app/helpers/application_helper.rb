@@ -5,9 +5,9 @@ module ApplicationHelper
       when 'nodes'
          if params[:action] == 'edit'
            true
-         elsif params[:action] == 'picup'
-           true
          elsif params[:action] == 'account'
+           true
+         elsif params[:action] == 'crop'
            true
          else
            false
@@ -88,6 +88,17 @@ module ApplicationHelper
         true
       else
         false
+    end
+  end
+
+  def crop_menu?
+    case params[:controller]
+      when 'nodes'
+        if params[:action] == 'crop'
+          true
+        else
+          false
+        end
     end
   end
 

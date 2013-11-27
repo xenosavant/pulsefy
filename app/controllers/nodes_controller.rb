@@ -12,7 +12,11 @@ class NodesController < ApplicationController
     if @node.save
       sign_in @node
       flash[:success] = "Pulsefication Complete!"
-      redirect_to root_url
+      if params[:node][:avatar].blank?
+        redirect_to root_url
+      else
+        render :action => 'crop'
+      end
     else
       redirect_to :controller => 'nodes', :action => 'new', :errors => @node.errors.full_messages
     end
@@ -26,13 +30,6 @@ class NodesController < ApplicationController
     @node = current_node
   end
 
-  def picup
-    if !@node.nil?
-      correct_node
-    else signed_in_node
-    end
-    @node = current_node
-  end
 
   def account
     if !@node.nil?
@@ -45,8 +42,12 @@ class NodesController < ApplicationController
   def update
     @node =  Node.find(current_node)
       if @node.update_attributes(params[:node])
-        sign_in @node
-        redirect_to root_path
+        if params[:node][:avatar].blank?
+          sign_in @node
+          redirect_to root_url
+        else
+          render :action => 'crop'
+        end
       else
         render 'edit'
       end
@@ -70,12 +71,12 @@ class NodesController < ApplicationController
     @nodes = @node.inputs.paginate(:page => params[:page])
   end
 
-  def show_others_outputs
+  def show_other_outputs
     @node = Node.find(params[:id])
     @nodes = @node.outputs.paginate(:page => params[:page])
   end
 
-  def show_others_inputs
+  def show_other_inputs
     @node = Node.find(params[:id])
     @nodes = @node.inputs.paginate(:page => params[:page])
   end

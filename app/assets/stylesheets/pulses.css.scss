@@ -39,11 +39,14 @@ $graydarker: #1c2025;
 
 
 .info-container {
-  position:absolute;
+  position:relative;
   display:block;
-  width:200px;
+  width:390px;
+  height:80px;
   text-align: left;
-  padding-top: 50px;
+  padding: 15px;
+  background-color: #eeeeee;
+  border-top: $grayMediumLight solid 2px;
 }
 
 .depth {
@@ -220,10 +223,10 @@ $graydarker: #1c2025;
 
 
 .rating-wrapper {
-  display: inline;
-  position:relative;
-  left:250px;
-  height:100px;
+  position:absolute;
+  display:inline;
+  float:right;
+  height:80px;
   width:35px;
 }
 
@@ -263,10 +266,3 @@ $graydarker: #1c2025;
   padding-bottom: 5px;
 }
 
-.pulse-comment-wrapper {
-  display: block;
-  width:300px;
-  position:relative;
-  padding-top:25px;
-  text-align: left;
-}
