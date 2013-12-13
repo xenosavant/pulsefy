@@ -6,7 +6,7 @@ class CreateNodes < ActiveRecord::Migration
       t.text :info
       t.boolean :admin, :hub, :verified
       t.string :password_digest, :self_tag
-      t.float :threshold
+      t.float :threshold, :crop_x, :crop_y, :crop_w, :crop_h
       t.timestamps
     end
     add_index :nodes, :email, :unique => true

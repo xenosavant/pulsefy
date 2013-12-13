@@ -443,3 +443,9 @@ textfield {
   background-color:$frameColor;
   padding-top:10px;
 }
+
+.preview {
+  width:100px;
+  height:100px;
+  overflow:hidden;
+}

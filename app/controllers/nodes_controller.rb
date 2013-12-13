@@ -90,6 +90,20 @@ class NodesController < ApplicationController
     @node = Node.new(params[:node])
   end
 
+  def crop
+    @node = current_node
+  end
+
+  def crop_update
+    @node = current_node
+    @node.crop_x = params[:node]['crop_x']
+    @node.crop_y = params[:node]['crop_y']
+    @node.crop_h = params[:node]['crop_h']
+    @node.crop_w = params[:node]['crop_w']
+    @node.save
+    redirect_to account_path
+  end
+
   private
 
   def correct_node

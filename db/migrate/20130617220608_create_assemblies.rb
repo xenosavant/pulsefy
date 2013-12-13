@@ -4,6 +4,7 @@ class CreateAssemblies < ActiveRecord::Migration
       t.string :title, :avatar
       t.text :info
       t.integer :founder
+      t.float :crop_x, :crop_y, :crop_w, :crop_h
       t.timestamps
     end
   end

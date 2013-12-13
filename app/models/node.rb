@@ -3,7 +3,9 @@ class Node < ActiveRecord::Base
 
   mount_uploader :avatar, AvatarUploader
   attr_accessible :username, :email, :info, :threshold,
-                  :password, :password_confirmation, :avatar, :self_tag
+                  :password, :password_confirmation, :avatar, :self_tag,
+                  :crop_x, :crop_y, :crop_w, :crop_h
+  after_update :reprocess_avatar, :if => :cropping?
   has_secure_password
   before_save { |node| node.email = email.downcase }
   before_save :create_remember_token
@@ -67,6 +69,20 @@ class Node < ActiveRecord::Base
     @admin = false
     @hub = false
     @verified = false
+  end
+
+  def reprocess_avatar
+    @avatar.reprocess!
+  end
+
+  def avatar_geometry
+    avatar_image = open(self.avatar.url)
+    img = Magick::Image::read(avatar_image).first
+    @geometry = {:width => img.columns, :height => img.rows }
+  end
+
+  def cropping?
+    !crop_x.blank? && !crop_y.blank? && !crop_w.blank? && !crop_h.blank?
   end
 
   private

@@ -10,6 +10,10 @@ class AvatarUploader < CarrierWave::Uploader::Base
   # Choose what kind of storage to use for this uploader:
   storage :fog
 
+  def extension_white_list
+    %w(jpg jpeg gif png)
+  end
+
   # Override the directory where uploaded files will be stored.
   def store_dir
     "avatars/#{model.class.to_s.underscore}/#{model.id}/"
@@ -25,6 +29,8 @@ class AvatarUploader < CarrierWave::Uploader::Base
   def cache_dir
     "#{Rails.root}/tmp/uploads"
   end
+
+
   # Process files as they are uploaded:
   # process :scale => [200, 300]
   #
@@ -34,26 +40,30 @@ class AvatarUploader < CarrierWave::Uploader::Base
 
   # Create different versions of your uploaded files:
   version :large do
-    process :resize_to_limit => [500, 500]
+    process :resize_to_fit => [500, 500]
   end
 
-  version :thumb do
-     process :resize_to_fit => [100, 100]
-   end
+  def manualcrop
+    return unless model.cropping?
+    manipulate! do |img|
+      img = img.crop(model.crop_x.to_i,model.crop_y.to_i,model.crop_h.to_i,model.crop_w.to_i)
+    end
+  end
 
   version :profile do
-    process :resize_to_fit => [300, 300]
+     process :manualcrop
+     process :resize_to_fit => [300, 300]
+   end
+
+  version :thumb do
+    process :manualcrop
+    process :resize_to_fit => [100, 100]
   end
 
   version :micro do
+    process :manualcrop
     process :resize_to_fit => [50, 50]
   end
-
-  # Add a white list of extensions which are allowed to be uploaded.
-  # For images you might use something like this:
-  # def extension_white_list
-  #   %w(jpg jpeg gif png)
-  # end
 
   # Override the filename of the uploaded files:
   # Avoid using model.id or version_name here, see uploader/store.rb for details.

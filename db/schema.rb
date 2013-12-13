@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,13 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130620011441) do
+ActiveRecord::Schema.define(:version => 20130618020317) do
 
   create_table "assemblies", :force => true do |t|
     t.string   "title"
     t.string   "avatar"
     t.text     "info"
     t.integer  "founder"
+    t.float    "crop_x"
+    t.float    "crop_y"
+    t.float    "crop_w"
+    t.float    "crop_h"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -43,19 +48,6 @@ ActiveRecord::Schema.define(:version => 20130620011441) do
   add_index "connectors", ["input_id"], :name => "index_connectors_on_input_id"
   add_index "connectors", ["output_id"], :name => "index_connectors_on_output_id"
 
-  create_table "inboxes", :force => true do |t|
-    t.integer  "node_id_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "messages", :force => true do |t|
-    t.integer  "inbox_id_id"
-    t.text     "content"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-  end
-
   create_table "nodes", :force => true do |t|
     t.string   "username"
     t.string   "email"
@@ -64,8 +56,14 @@ ActiveRecord::Schema.define(:version => 20130620011441) do
     t.text     "info"
     t.boolean  "admin"
     t.boolean  "hub"
+    t.boolean  "verified"
     t.string   "password_digest"
+    t.string   "self_tag"
     t.float    "threshold"
+    t.float    "crop_x"
+    t.float    "crop_y"
+    t.float    "crop_w"
+    t.float    "crop_h"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
   end
