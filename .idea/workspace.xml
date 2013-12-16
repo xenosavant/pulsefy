@@ -5,29 +5,175 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/_tab-bar.html.erb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/layouts/_side-connect.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/layouts/_title-box.html.erb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-864ce5d30a878e7656ba58ca84d83ca1.js.gz" afterPath="$PROJECT_DIR$/public/assets/application-864ce5d30a878e7656ba58ca84d83ca1.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-e013018c061829f2a6335402c5ee6938.css.gz" afterPath="$PROJECT_DIR$/public/assets/application-e013018c061829f2a6335402c5ee6938.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.css.gz" afterPath="$PROJECT_DIR$/public/assets/application.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.js.gz" afterPath="$PROJECT_DIR$/public/assets/application.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop-f7ba3d73e3e5b4cb0b0ca3f625488dab.css.gz" afterPath="$PROJECT_DIR$/public/assets/jquery.Jcrop-f7ba3d73e3e5b4cb0b0ca3f625488dab.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.css.gz" afterPath="$PROJECT_DIR$/public/assets/jquery.Jcrop.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min-28fdf50c41c56a9eef4b336f71647da1.css.gz" afterPath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min-28fdf50c41c56a9eef4b336f71647da1.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min-5bc442bee99f28e9cc20fdd128aaeacf.js.gz" afterPath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min-5bc442bee99f28e9cc20fdd128aaeacf.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min.css.gz" afterPath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min.js.gz" afterPath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/production.sqlite3" afterPath="$PROJECT_DIR$/db/production.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pulses/_pulse.html.erb" afterPath="$PROJECT_DIR$/app/views/pulses/_pulse.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.css" afterPath="$PROJECT_DIR$/public/assets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/nodes/crop.html.erb" afterPath="$PROJECT_DIR$/app/views/nodes/crop.html.erb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-0795546c565b58bc857368c05f0d029b.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-0795546c565b58bc857368c05f0d029b.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-0cdd832ed28c16773a9545d06e0884b6.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-0cdd832ed28c16773a9545d06e0884b6.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-0d32a793a9ab543b5869ff982cbccbb3.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-0d32a793a9ab543b5869ff982cbccbb3.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-0db1cf03876ba4bbcba744d28a807648.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-0db1cf03876ba4bbcba744d28a807648.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-125a30b29ff4c4ca40d58a9eb91f7169.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-125a30b29ff4c4ca40d58a9eb91f7169.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-146ebe927c387599922589f5f41e26ee.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-146ebe927c387599922589f5f41e26ee.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-189991d2b77b1728522180b007260839.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-189991d2b77b1728522180b007260839.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-1982c8baec7749068d51c9110ae714ea.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-1982c8baec7749068d51c9110ae714ea.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-1fa14a681e90f7f063782a8e21485e12.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-1fa14a681e90f7f063782a8e21485e12.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-21d39adba06e64bacc77c35101eb6369.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-21d39adba06e64bacc77c35101eb6369.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-24f179feeeb663d2b6521700f0fa7d7a.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-24f179feeeb663d2b6521700f0fa7d7a.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-2503c84079b258038a67e72d4b33b904.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-2503c84079b258038a67e72d4b33b904.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-26637fd204e4bf1933b2492fe369d021.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-26637fd204e4bf1933b2492fe369d021.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-2a05d960b330e00e907850b44e64f692.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-2a05d960b330e00e907850b44e64f692.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-2a72efeeec38875dc8ec57925569d39a.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-2a72efeeec38875dc8ec57925569d39a.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-2cbd4b3036f119f5c38f2f8a37d04ecf.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-2cbd4b3036f119f5c38f2f8a37d04ecf.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-325a79e5d58d0cc3f3e0b9f2f1aa2fda.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-325a79e5d58d0cc3f3e0b9f2f1aa2fda.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-3402c51f0a0bcad282d5dbc01d4f4e0b.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-3402c51f0a0bcad282d5dbc01d4f4e0b.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-34757762a15c08e35418ad4e20930fd9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-34757762a15c08e35418ad4e20930fd9.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-381fbdd839be93728674446e8a859bfc.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-381fbdd839be93728674446e8a859bfc.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-38330a25cb84ebf23199fce705491b5a.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-38330a25cb84ebf23199fce705491b5a.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-3f0188c40456b02c1ccd473a7b783349.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-3f0188c40456b02c1ccd473a7b783349.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-42ba7fa23287e2357d9aa4822f9d5bc1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-42ba7fa23287e2357d9aa4822f9d5bc1.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-43f081c45d70ae04fde5a30f3a4a7813.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-43f081c45d70ae04fde5a30f3a4a7813.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-45a2af54f6c4af3546db6db48bffecd3.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-45a2af54f6c4af3546db6db48bffecd3.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-4646ee1ff5ac23a51011f90065481513.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-4646ee1ff5ac23a51011f90065481513.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-494cb1a551fc5c06766b03e27c8b4fc7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-494cb1a551fc5c06766b03e27c8b4fc7.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-499229a5e20aa360d6cf7b4df4d1a02b.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-499229a5e20aa360d6cf7b4df4d1a02b.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-4af13a1dbe48cd06b9e66aa94209081c.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-4af13a1dbe48cd06b9e66aa94209081c.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-516fad34d9e452bf9c389bfdf0be0488.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-516fad34d9e452bf9c389bfdf0be0488.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-54f55d37c1534eee6a376565de51be26.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-54f55d37c1534eee6a376565de51be26.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-54fbfae097bf38f32ac9774ea0b5bf7c.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-54fbfae097bf38f32ac9774ea0b5bf7c.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-5aa43d50c11e2e1530558696360344ff.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-5aa43d50c11e2e1530558696360344ff.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-5cf3b3e7037955cbcfcacd24643b2b2c.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-5cf3b3e7037955cbcfcacd24643b2b2c.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-628b2710aa96b81870c0e9759a488e12.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-628b2710aa96b81870c0e9759a488e12.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-6b62d688714008d87163ed9fcb37bcea.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-6b62d688714008d87163ed9fcb37bcea.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-6d0af36144d93cea0ce096b6db856cb9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-6d0af36144d93cea0ce096b6db856cb9.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-6d3a3ce6c8bb1b891b80b452783392dd.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-6d3a3ce6c8bb1b891b80b452783392dd.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-6ee22592b0b499921844f9f0012ade1e.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-6ee22592b0b499921844f9f0012ade1e.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-732526b8b8be2ebdd70de3a61e91a097.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-732526b8b8be2ebdd70de3a61e91a097.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-7b89971874321be8672533b1c5919396.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-7b89971874321be8672533b1c5919396.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-7bcb1797e1cf219a17a5929f9d56422a.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-7bcb1797e1cf219a17a5929f9d56422a.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-7e9181073548fd68bf80d26cb283e0e2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-7e9181073548fd68bf80d26cb283e0e2.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-80263838f0202fc25bdcbaae845565fa.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-80263838f0202fc25bdcbaae845565fa.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-85f829ffb362a6cae8236892111686db.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-85f829ffb362a6cae8236892111686db.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-864ce5d30a878e7656ba58ca84d83ca1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-864ce5d30a878e7656ba58ca84d83ca1.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-898e7f57fec650ac657ba1b31e2f949f.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-898e7f57fec650ac657ba1b31e2f949f.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-89c06a15094a91dc2043ef9b0c4ac7c1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-89c06a15094a91dc2043ef9b0c4ac7c1.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-8b5eeec766f086d1b5b6032c39c41595.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-8b5eeec766f086d1b5b6032c39c41595.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-918615b7db5d2b0afda372e1e4835e1d.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-918615b7db5d2b0afda372e1e4835e1d.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-92250d36dd6c8c4884225942be148af6.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-92250d36dd6c8c4884225942be148af6.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-9fb0736f19a5670eb93d6584b8373af2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-9fb0736f19a5670eb93d6584b8373af2.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-a2f4f63f5abb674290515e986d5ec4e9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-a2f4f63f5abb674290515e986d5ec4e9.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-a5ac46649acdb9d849271e3b95ef64c8.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-a5ac46649acdb9d849271e3b95ef64c8.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-ad1c5d4d79f2e642112250ea9699a8e4.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-ad1c5d4d79f2e642112250ea9699a8e4.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-ad35ae46612ac699449e422979d3979b.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-ad35ae46612ac699449e422979d3979b.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-afd3d2c4df911815d443f28ba6dae310.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-afd3d2c4df911815d443f28ba6dae310.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-b3aa21afe8f7670d4010c0a9f2138b7a.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-b3aa21afe8f7670d4010c0a9f2138b7a.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-b7278dc09ec5b894783a499a0de71b6e.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-b7278dc09ec5b894783a499a0de71b6e.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-b861fc90e82b9f52d5349980100737bd.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-b861fc90e82b9f52d5349980100737bd.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-bce3ab97ce066f58113bc7e15d6215e2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-bce3ab97ce066f58113bc7e15d6215e2.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-bd25e8b15b8c57842916cabd6fda81f8.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-bd25e8b15b8c57842916cabd6fda81f8.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-c36cb5f84f40690edff27112820e0965.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-c36cb5f84f40690edff27112820e0965.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-c3a535433d51deaa25100b573d2b0002.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-c3a535433d51deaa25100b573d2b0002.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-c44eda6add04c27bdb095b52ac0d912c.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-c44eda6add04c27bdb095b52ac0d912c.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-c7dc955b71ef60fb95363e8a3a720c4d.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-c7dc955b71ef60fb95363e8a3a720c4d.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-cdc5fa37670282a18e72385ffcdf483a.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-cdc5fa37670282a18e72385ffcdf483a.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-d633b439fb926984e0f1e8b41cc610c2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-d633b439fb926984e0f1e8b41cc610c2.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-d7e15b2112c7793576afd67b255f824f.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-d7e15b2112c7793576afd67b255f824f.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-d870c068bd01fe03bfa136d71d1aca81.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-d870c068bd01fe03bfa136d71d1aca81.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-db9bdcb18cef1805577e60e8fab89345.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-db9bdcb18cef1805577e60e8fab89345.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-e013018c061829f2a6335402c5ee6938.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-e013018c061829f2a6335402c5ee6938.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-e3cfa4a397e374c693ec26c39157b687.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-e3cfa4a397e374c693ec26c39157b687.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-e3e32bb18b2b0009c17786f2e88b82df.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-e3e32bb18b2b0009c17786f2e88b82df.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-e5bb75a52d6824fcbec8f9a7bbc96787.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-e5bb75a52d6824fcbec8f9a7bbc96787.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-e63c001226fade3612a7e99f3227f442.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-e63c001226fade3612a7e99f3227f442.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-e76d85851ce6e09de838ad88e02e3327.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-e76d85851ce6e09de838ad88e02e3327.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-ec0d397d59202019c88069cd57095ab7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-ec0d397d59202019c88069cd57095ab7.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-ef873bb5ec8686197a9e16bfe706c65f.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-ef873bb5ec8686197a9e16bfe706c65f.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-f11cbb56d37ded18925342bae9f780fc.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-f11cbb56d37ded18925342bae9f780fc.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-f614fda59c2d8f2013bce02901eab38b.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-f614fda59c2d8f2013bce02901eab38b.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-f6c568e3ffb479febc4b21a6039679e1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-f6c568e3ffb479febc4b21a6039679e1.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-fadc10b82ef6116da029b0247c645f46.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-fadc10b82ef6116da029b0247c645f46.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-fcc27646978b04eb7ce7da8393df15e8.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-fcc27646978b04eb7ce7da8393df15e8.css.gz" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/nodes/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/nodes/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/manifest.yml" afterPath="$PROJECT_DIR$/public/assets/manifest.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/nodes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/nodes_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/production.log" afterPath="$PROJECT_DIR$/log/production.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -159,7 +305,7 @@
       <file leaf-file-name="custom.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="20" selection-start="312" selection-end="312" vertical-scroll-proportion="0.5213904">
+            <state line="24" column="25" selection-start="367" selection-end="367" vertical-scroll-proportion="0.96256685">
               <folding />
             </state>
           </provider>
@@ -992,7 +1138,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880846" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30191457" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30191457" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1165,7 +1311,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="20" selection-start="312" selection-end="312" vertical-scroll-proportion="0.5213904">
+        <state line="24" column="25" selection-start="367" selection-end="367" vertical-scroll-proportion="0.96256685">
           <folding />
         </state>
       </provider>
