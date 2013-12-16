@@ -104,7 +104,7 @@ class NodesController < ApplicationController
       @node.crop_w = params[:node]['crop_w']
       @node.save
       flash[:success] = "Profile Picture Updated!"
-      redirect_to root_path
+      redirect_to current_node
   end
 
   private
