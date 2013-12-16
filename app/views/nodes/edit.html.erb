@@ -1,6 +1,6 @@
 <% provide(:title, "Edit Profile") %>
 <h3>Update Your Pulsefeed</h3>
-    <%= form_for @node, :html => {:multipart => true} do |f| %>
+    <%= form_for @node, :html => { :action => 'update', :controller => 'nodes', :id => @node.id} do |f| %>
         <%= render 'shared/error_messages', :object => f.object %>
 
         <%= f.label :username %>

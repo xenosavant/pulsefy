@@ -1,5 +1,7 @@
 class NodesController < ApplicationController
 
+  before_filter :signed_in_node
+
   def show
     @node = Node.find(params[:id])
     store_location(@node.id, 'Node')
@@ -12,21 +14,12 @@ class NodesController < ApplicationController
     if @node.save
       sign_in @node
       flash[:success] = "Pulsefication Complete!"
-      if params[:node][:avatar].blank?
-        redirect_to root_url
-      else
-        render :action => 'crop'
-      end
     else
       redirect_to :controller => 'nodes', :action => 'new', :errors => @node.errors.full_messages
     end
   end
 
   def edit
-    if !@node.nil?
-      correct_node
-    else signed_in_node
-    end
     @node = current_node
   end
 
@@ -43,13 +36,11 @@ class NodesController < ApplicationController
     @node =  Node.find(current_node)
       if @node.update_attributes(params[:node])
         if params[:node][:avatar].blank?
-          sign_in @node
-          redirect_to root_url
+          flash[:success] = "Pulsefeed Updated!"
+          redirect_to @node
         else
           render :action => 'crop'
         end
-      else
-        render :action => 'edit'
       end
   end
 
@@ -92,7 +83,6 @@ class NodesController < ApplicationController
 
   def crop
     @node = current_node
-
   end
 
   def crop_update
@@ -103,8 +93,8 @@ class NodesController < ApplicationController
       @node.crop_h = params[:node]['crop_h']
       @node.crop_w = params[:node]['crop_w']
       @node.save
-      flash[:success] = "Profile Picture Updated!"
-      redirect_to show_path, :id => @node.id
+      flash[:success] = "Pulsefeed Updated!"
+      redirect_to @node
   end
 
   private

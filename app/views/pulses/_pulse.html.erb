@@ -12,7 +12,7 @@
           <div class = 'synapse'></div>
         </div>
     <% end %>
-    <% if pulse.pulser == current_node.id %>
+    <% if signed_in? and pulse.pulser == current_node.id %>
     <div class = 'close-container'>
       <%= link_to 'X', delete_path(:id => pulse.id) %>
     </div>

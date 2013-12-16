@@ -11,21 +11,16 @@
 <body>
 <%if signed_in? %>
 <%= render 'layouts/sidebar' %>
-<%= render 'layouts/side-connect' %>
 <%= render 'layouts/rightbar' %>
+<%= render 'layouts/tab-bar' %>
 <div class = 'pulsefeed'>
-   <div class = 'tab-bar'>
-    <div ID = 'top_navigation'>
-      <%= render_navigation %>
-    </div>
-   </div>
   <div class = inner-pulse>
     <div class = mar-container>
     <%= yield  %>
     <!--<%= debug(params) %>-->
+    <%= render 'layouts/footer' %>
     </div>
   </div>
-<%= render 'layouts/footer' %>
 </div>
 <%else%>
 <%= yield  %>

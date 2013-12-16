@@ -18,7 +18,6 @@ html {
 body {
   position: absolute;
   padding-top: 35px;
-  overflow: auto;
   height: 100%;
   width: 100%;
   background-color: $lightSlate;
@@ -36,32 +35,34 @@ sidebar {
 }
 
 .inside_sidebar {
+  padding:25px;
+  position:relative;
   z-index:1;
+  padding:25px;
   float:right;
-  width:95%;
-  height:80%;
+  width:275px;
+  height:450px;
   background-color:$innerColor;
   -webkit-border-radius:10px 0px 0px 10px;
   -moz-border-radius:10px 0px 0px 10px;
 }
 
 .inside_rightbar {
+  padding:25px;
+  position:absolute;
   z-index:1;
   float:left;
-  width:95%;
-  height:80%;
+  width:275px;
+  height:450px;
   background-color:$innerColor;
   -webkit-border-radius:0px 10px 10px 0px;
   -moz-border-radius:0px 10px 10px 0px;
 }
 
 .inside_inside_rightbar {
-  z-index:2;
+  z-index:1;
   background-color:$grayMediumLight;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:25px;
-  width:250px;
+  width:275px;
   height:450px;
   -webkit-border-radius:10px;
   -moz-border-radius:10px;
@@ -116,61 +117,47 @@ sidebar {
   -moz-border-radius:5px;
   text-align: center;
   display: block;
-  position:fixed;
-  left: 45px;
-  top:140px;
   height:100px;
   width:100px;
   padding:10px;
   z-index: 3;
 }
 
-side-connect {
+.side-connect {
+  position:absolute;
+  left:80px;
   content:"";
-  z-index: 4;
-  position: fixed;
-  left: 100px;
-  top:250px;
-  height: 35px;
+  z-index: 2;
+  height: 30px;
+  top:145px;
   background-color :$grayMediumLight;
   display: block;
   width: 10px;
 }
 
-side-dendrite {
+.side-dendrite {
   content: "";
-  z-index: 2;
-  position: fixed;
-  top:200px;
-  left: 0px;
+  z-index: 1;
+  position: absolute;
+  top:80px;
+  left: 144px;
   height: 10px;
   background-color :$grayMediumLight;
   display: block;
-  width: 24%;
-  //border-color: $medium-gray;
-  //border-left-width: 0px;
-  //border-right-width: 0px;
-  //border-top-width: 5px;
-  //border-bottom-width: 5px;
-  //border-style: solid;
+  width: 150px;
 }
 
-side-synapse {
+.side-synapse {
+  position:absolute;
+  right:0px;
+  top:-4px;
   content: "";
   z-index: 2;
-  position: fixed;
-  top:196px;
-  left: 24%;
   height: 18px;
   background-color :$grayMediumLight;
   display: block;
   width: 10px;
   border-color: $medium-gray;
-  //border-left-width: 0px;
-  //border-right-width: 5px;
-  //border-top-width: 5px;
-  //border-bottom-width: 5px;
-  //border-style: solid;
   -webkit-border-radius:10px;
   -moz-border-radius:10px;
 }
@@ -193,13 +180,11 @@ rightbar {
 .pulsefeed  {
   width:100%;
   text-align: center;
-  position:absolute;
+  position:static;
   min-height:100%;
-  z-index:0;
   color: #000;
   background-color: $lightSlate;
-  display:block;
-  overflow: scroll;
+  overflow:hidden;
   a {
     font-weight: bold;
     &:hover {
@@ -211,6 +196,7 @@ rightbar {
 
 .inner-pulse {
   z-index: 1;
+  padding-top:40px;
   height:100%;
   min-height:700px;
   margin-left:auto;
@@ -222,13 +208,14 @@ rightbar {
   padding-top:55px;
   -webkit-border-radius:10px;
   -moz-border-radius:10px;
+  overflow-y:scroll;
 }
 
 .mar-container {
   width:500px;
-  padding-top:39px;
+  padding-top:44px;
   height:100%;
-  overflow:show;
+  overflow-x:show;
 }
 
 .logged-background {
@@ -291,7 +278,7 @@ p {
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 7px;
-  padding-left: 35px;
+  padding-left: 10px;
   font-weight: bold;
   line-height: 1;
   &:hover {
@@ -367,22 +354,19 @@ textfield {
 }
 
 .impulse {
+  position:absolute;
+  top:175px;
   min-width:110px;
   max-width: 225px;
   z-index: 1;
   font-size: 1.3em;
   display: block;
-  position:fixed;
-  top:283px;
-  left:45px;
   padding:5px;
-  margin-left:0px;
   color:#000;
   background-color:$grayMediumLight;
   -webkit-border-radius:10px;
   -moz-border-radius:10px;
   border-radius:10px;
-
 }
 
 .text-box {
