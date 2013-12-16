@@ -49,7 +49,6 @@
         <%= link_to pluralize(pulse.pulse_comments.count, 'comment'), comment_path(:id => pulse.id) %>
    </div>
   </div>
-      </div>
     <div class = 'rating-wrapper'>
         <%if signed_in? %>
             <% case pulse.pulser == current_node.id %>
@@ -86,5 +85,6 @@
         <%end%>
       </div>
  </div>
+</div>
 </div>
 </li>

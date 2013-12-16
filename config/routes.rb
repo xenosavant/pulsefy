@@ -11,6 +11,7 @@ Pulsefy::Application.routes.draw do
   match '/assaccount' => 'assemblies#account'
   match '/show' => 'nodes#show'
   match '/crop' => 'nodes#crop'
+  match '/crop_update' => 'nodes#crop_update'
   match '/account' => 'nodes#account'
   match '/inpulse' => 'assemblies#assembly_pulse_form'
   match '/members' => 'nodes#members'

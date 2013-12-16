@@ -1,5 +1,4 @@
-   <div class = 'show-wrapper'>
-     <div class = 'show-headline'>
+<div class = 'show-headline'>
   <%if !@pulse.headline.nil?%>
  <h3><%= @pulse.headline %></h3>
   <%end%>
@@ -22,5 +21,4 @@
              </ol>
               <%= will_paginate @pulse_comments %>
     <% end %>
-      </div>
-    </div>
+</div>

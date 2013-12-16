@@ -72,12 +72,11 @@ class Node < ActiveRecord::Base
   end
 
   def reprocess_avatar
-    @avatar.reprocess!
+    self.avatar.recreate_versions!
   end
 
   def avatar_geometry
-    avatar_image = open(self.avatar.url)
-    img = Magick::Image::read(avatar_image).first
+    img = Magick::Image::read(self.avatar.url).first
     @geometry = {:width => img.columns, :height => img.rows }
   end
 

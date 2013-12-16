@@ -41,8 +41,8 @@ $graydarker: #1c2025;
 .info-container {
   position:relative;
   display:block;
-  width:390px;
-  height:80px;
+  width:389px;
+  height:auto;
   text-align: left;
   padding: 15px;
   background-color: #eeeeee;
@@ -60,13 +60,15 @@ $graydarker: #1c2025;
 }
 
 .tags {
-  position:relative;      // changed this 11/18
+  position:relative;
   display: block;
   font-size: 1em;
   font-weight: bold;
   color: #ff0000;
-  width:225px;
+  width:195px;
   height:auto;
+  overflow:hidden;
+  word-wrap:break-word;
   }
 
 .video-container {
@@ -98,14 +100,6 @@ $graydarker: #1c2025;
   height:50px;
 }
 
-.show-wrapper {
-  display:block;
-  width:500px !important;
-  position:relative;
-  padding-top:10px;
-  overflow:hidden;
-  height:auto;
-}
 
 .show-container iframe,
 .show-container object,
@@ -160,7 +154,7 @@ $graydarker: #1c2025;
   z-index:1;
   position:absolute;
   display:inline;
-  bottom: -51px;
+  bottom: -45px;
   left:435px;
   font-weight:bold;
   font-size: 1.1em;
@@ -188,16 +182,16 @@ $graydarker: #1c2025;
 }
 
 .axon-wrap {
-  padding-top:150px;
+  padding-top:143px;
   height:auto;
 }
 
 .soma-to-axon {
   z-index: 2;
   position: absolute;
-  bottom:-30px;
-  left: 20px;
-  height: 30px;
+  bottom:-25px;
+  left: 50px;
+  height: 25px;
   background-color :$grayMediumLight;
   display: block;
   width: 10px;
@@ -224,14 +218,23 @@ $graydarker: #1c2025;
 
 .rating-wrapper {
   position:absolute;
+  left:250px;
+  top:10px;
   display:inline;
+  height:100%;
+  width:175px;
+  overflow:hidden;
+}
+
+rating-show-wrapper {
+  position:relative;
   float:right;
-  height:80px;
-  width:35px;
+  display:inline;
+  height:100%;
+  overflow:hidden;
 }
 
 .rating-block {
-  display:block;
   height:40px;
   width:auto;
   overflow:hidden;
@@ -239,12 +242,12 @@ $graydarker: #1c2025;
 }
 
 .text-wrapper {
-  width:410px;
-  padding:5px;
+  width:389px;
+  padding:15px;
   height:auto;
-  font-size: 1.3em;
+  font-size: 1.2em;
   disply:block;
-  font-weight: bold;
+  font-weight: regular;
   background-color:#eeeeee;
 }
 
@@ -252,17 +255,17 @@ $graydarker: #1c2025;
   width:478px;
   padding:10px;
   height:auto;
-  font-size: 1.5em;
+  font-size: 1.4em;
   disply:block;
-  font-weight: bold;
   border:1px;
   background-color:$grayMediumLight;
   border-style:solid;
 }
 
 .left-info {
+  position:relative;
   display:inline;
-  position:absolute;
-  padding-bottom: 5px;
+  width:175px;
+  height: auto;
 }
 

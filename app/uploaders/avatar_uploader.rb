@@ -45,8 +45,17 @@ class AvatarUploader < CarrierWave::Uploader::Base
 
   def manualcrop
     return unless model.cropping?
-    manipulate! do |img|
-      img = img.crop(model.crop_x.to_i,model.crop_y.to_i,model.crop_h.to_i,model.crop_w.to_i)
+     img = MiniMagick::Image.open(model.avatar.url)
+     manipulate! do |img|
+
+       x = model.crop_x.to_s
+       y = model.crop_y.to_s
+       w = model.crop_w.to_s
+       h = model.crop_h.to_s
+
+     img.crop(w + 'x' + h + '+' + x + '+' + y)
+     #img.crop(model.crop_x.to_i,model.crop_y.to_i,model.crop_h.to_i,model.crop_w.to_i)
+     img
     end
   end
 

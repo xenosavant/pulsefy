@@ -1,5 +1,5 @@
 <!--<title-box>-->
-  <!--<%= pluralize(@assembly.nodes.count, 'Member') %>-->
+<h3><%= pluralize(@assembly.nodes.count, 'Member') %></h3>
 <!--</title-box>-->
 <% if !@nodes.nil? %>
     <%= will_paginate %>

@@ -1,4 +1,5 @@
 <% provide(:title, 'Outputs') %>
+<h3><%= pluralize(@node.outputs.count, 'Output') %> </h3>
 <% if !@nodes.nil? %>
     <%= will_paginate %>
     <ul class='nodes'>

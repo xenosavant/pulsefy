@@ -1,6 +1,7 @@
 @import "bootstrap";
 $graydarker: #1c2025;
 $grayMediumLight: #eaeaea;
+$lightSlate: #d0dfef;
 
 .pulse_comments {
   list-style: none;
@@ -20,7 +21,6 @@ $grayMediumLight: #eaeaea;
   height:50px;
   width:50px;
   min-width:15px;
-  border: $graydarker solid 5px;
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
   background-color: #eaeaea;
@@ -36,17 +36,11 @@ $grayMediumLight: #eaeaea;
   background-color :$grayMediumLight;
   display: block;
   width: 15px;
-  border-color: $graydarker;
-  border-top-width: 5px;
-  border-bottom-width: 5px;
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-style: solid;
 }
 
 .micro-axon {
   text-align: left;
-  width: 260px;
+  width: 310px;
   height: auto;
   oveflow: auto;
   position:relative;
@@ -78,7 +72,14 @@ $grayMediumLight: #eaeaea;
   position:absolute;
   display:inline;
   top: -2px;
-  left: 262px;
+  left: 312px;
+  a {
+    color:$lightSlate !important;
+    &:hover {
+      color:#000;
+      text-decoration: none;
+    }
+  }
 }
 
 .pulse-comment-wrapper {

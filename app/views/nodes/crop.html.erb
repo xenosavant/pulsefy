@@ -39,12 +39,7 @@
 
 <%= image_tag @node.avatar_url(:large), :id => "cropbox" %>
 
-<h3>Preview</h3>
-<div class="preview">
-  <%= image_tag @node.avatar_url(:large), :id => "preview" %>
-</div>
-
-<%= form_for @node, :as => :node, :url => { :action => "crop_update" } do |f| %>
+<%= form_for @node, :as => :node, :url => { :action => 'crop_update', :id => @node.id} do |f| %>
     <% for attribute in [:crop_x, :crop_y, :crop_h, :crop_w] %>
         <%= f.hidden_field attribute, :id => attribute %>
     <% end %>

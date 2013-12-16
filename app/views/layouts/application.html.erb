@@ -20,12 +20,12 @@
     </div>
    </div>
   <div class = inner-pulse>
-    <div class = inner-container>
-<%= yield  %>
-  <!--<%= debug(params) %>-->
-    <%= render 'layouts/footer' %>
+    <div class = mar-container>
+    <%= yield  %>
+    <!--<%= debug(params) %>-->
     </div>
- </div>
+  </div>
+<%= render 'layouts/footer' %>
 </div>
 <%else%>
 <%= yield  %>

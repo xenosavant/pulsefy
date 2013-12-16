@@ -8,7 +8,8 @@ $backroundBlue: #000040;
 $lightSlate: #d0dfef;
 $topGray: #708090;
 $graydarker: #1c2025;
-$frameColor: #121212;
+$frameColor: #274b72;
+$innerColor: #132438;
 
 html {
   min-height: 100%;
@@ -26,7 +27,7 @@ body {
 sidebar {
   z-index:1;
   position: fixed;
-  padding-left: 1%;
+  padding-top:80px;
   float: left;
   top: 40px;
   width: 25%;
@@ -34,6 +35,37 @@ sidebar {
   background-color:$frameColor;
 }
 
+.inside_sidebar {
+  z-index:1;
+  float:right;
+  width:95%;
+  height:80%;
+  background-color:$innerColor;
+  -webkit-border-radius:10px 0px 0px 10px;
+  -moz-border-radius:10px 0px 0px 10px;
+}
+
+.inside_rightbar {
+  z-index:1;
+  float:left;
+  width:95%;
+  height:80%;
+  background-color:$innerColor;
+  -webkit-border-radius:0px 10px 10px 0px;
+  -moz-border-radius:0px 10px 10px 0px;
+}
+
+.inside_inside_rightbar {
+  z-index:2;
+  background-color:$grayMediumLight;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:25px;
+  width:250px;
+  height:450px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+}
 //#topbar {
 //  position: fixed;
 //  top: 0px;
@@ -44,6 +76,7 @@ sidebar {
 //  border-bottom-width: 1px;
 //  border-bottom-color: $medium-gray;
 //  border-bottom-style: solid;
+//  border-top-width: 1px;
 //  border-top-width: 1px;
 //  border-top-color: $medium-gray;
 //  border-top-style: solid;
@@ -84,8 +117,8 @@ sidebar {
   text-align: center;
   display: block;
   position:fixed;
-  left: 15px;
-  top:50px;
+  left: 45px;
+  top:140px;
   height:100px;
   width:100px;
   padding:10px;
@@ -96,8 +129,8 @@ side-connect {
   content:"";
   z-index: 4;
   position: fixed;
-  left: 70px;
-  top:158px;
+  left: 100px;
+  top:250px;
   height: 35px;
   background-color :$grayMediumLight;
   display: block;
@@ -108,7 +141,7 @@ side-dendrite {
   content: "";
   z-index: 2;
   position: fixed;
-  top:110px;
+  top:200px;
   left: 0px;
   height: 10px;
   background-color :$grayMediumLight;
@@ -126,7 +159,7 @@ side-synapse {
   content: "";
   z-index: 2;
   position: fixed;
-  top:106px;
+  top:196px;
   left: 24%;
   height: 18px;
   background-color :$grayMediumLight;
@@ -146,9 +179,8 @@ rightbar {
   z-index:1;
   position: fixed;
   top: 40px;
-  left: 74%;
-  padding-top: 5%;
-  padding-right: 1%;
+  padding-top:80px;
+  left: 75%;
   width: 25%;
   height:100%;
   background-color:$frameColor;
@@ -161,13 +193,13 @@ rightbar {
 .pulsefeed  {
   width:100%;
   text-align: center;
-  position:static;
+  position:absolute;
   min-height:100%;
   z-index:0;
   color: #000;
   background-color: $lightSlate;
   display:block;
-  overflow: hidden;
+  overflow: scroll;
   a {
     font-weight: bold;
     &:hover {
@@ -178,19 +210,25 @@ rightbar {
 }
 
 .inner-pulse {
-  margin-left: auto;
-  margin-right: auto;
-  overflow:show;
+  z-index: 1;
+  height:100%;
+  min-height:700px;
+  margin-left:auto;
+  margin-right:auto;
+  position:static;
   width: 500px;
   display:block;
-  position:static;
   text-align:left;
-  height:100%;
   padding-top:55px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
 }
 
-inner-container {
-  float: left;
+.mar-container {
+  width:500px;
+  padding-top:39px;
+  height:100%;
+  overflow:show;
 }
 
 .logged-background {
@@ -248,11 +286,12 @@ p {
   float: left;
   margin-right: 10px;
   margin-left: 15px;
-  font-size: 2em;
+  font-size: 1.7em;
   color: white;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 10px;
+  padding-top: 7px;
+  padding-left: 35px;
   font-weight: bold;
   line-height: 1;
   &:hover {
@@ -266,11 +305,15 @@ p {
 
 footer {
   float: bottom;
-  margin-bottom: 20px;
+  position:static;
   padding-top: 5px;
+  margin-left: auto;
+  margin-right:auto;
   width:500px;
+  margin-bottom: 20px;
   border-top: 1px solid #1c2025;
   color: $grayLight;
+  background-color:$lightSlate;
   a {
     color: $gray;
     &:hover {
@@ -324,14 +367,14 @@ textfield {
 }
 
 .impulse {
-  min-width:115px;
+  min-width:110px;
   max-width: 225px;
   z-index: 1;
   font-size: 1.3em;
   display: block;
   position:fixed;
-  top:193px;
-  left:15px;
+  top:283px;
+  left:45px;
   padding:5px;
   margin-left:0px;
   color:#000;
@@ -436,16 +479,12 @@ textfield {
 }
 
 .tab-bar {
-  position:absolute;
-  margin-left: 26%;
-  width:49%;
-  margin-right: 74%;
+  z-index:2;
+  position:fixed;
+  margin-left: 25%;
+  width:50%;
+  margin-right: 75%;
+  top:40px;
   background-color:$frameColor;
-  padding-top:10px;
-}
-
-.preview {
-  width:100px;
-  height:100px;
-  overflow:hidden;
+  padding-top:30px;
 }

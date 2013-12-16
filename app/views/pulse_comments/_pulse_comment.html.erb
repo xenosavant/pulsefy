@@ -7,8 +7,7 @@
     </div>
   <div class = 'micro-axon'><%= pulse_comment.content %>
     <div class = 'micro-close-container'>
-      <%= link_to image_tag('close.png', :border => 0),
-                  delete_path(:id => pulse_comment.id) %>
+      <%= link_to 'X', delete_path(:id => pulse_comment.id) %>
     </div>
 <div class="timestamp">Commented <%= time_ago_in_words(pulse_comment.created_at) %> ago.
 </div>

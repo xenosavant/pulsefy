@@ -4,7 +4,7 @@
       Fired <%= time_ago_in_words(@pulse.created_at) %> ago.
     </div>
   </div>
-      <span class = 'rating-wrapper'>
+      <span class = 'show-rating-wrapper'>
         <%if signed_in? %>
             <% case @pulse.pulser == current_node.id %>
         <% when false %>

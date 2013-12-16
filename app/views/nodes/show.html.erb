@@ -1,14 +1,12 @@
-<div class='username'>
-  <h3> <%= @node.username%></h3>
-</div>
+<h3><%= @node.username%></h3>
   <%if !@node.avatar.file.nil? %>
       <%= image_tag @node.avatar_url(:profile) %>
   <%end%>
-<br><div>
+<div class = 'profile-info'>
  <%= link_to pluralize(@node.assemblies.count, 'assembly'), view_path(:id => @node.id) %> |
   <%= link_to pluralize(@node.inputs.count, 'input'), otherinputs_path(:id => @node.id) %> |
   <%= link_to pluralize(@node.outputs.count, 'output'), otheroutputs_path(:id => @node.id) %>
-</div></br>
+</div>
 <div class='info'>
   <%= @node.info%>
 </div>
