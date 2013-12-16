@@ -17,6 +17,8 @@ html {
 
 body {
   padding-top: 35px;
+  position:fixed;
+  top:0px;
   height: 100%;
   width: 100%;
   background-color: $lightSlate;
@@ -182,7 +184,6 @@ rightbar {
   position:static;
   min-height:100%;
   color: #000;
-  background-color: $lightSlate;
   a {
     font-weight: bold;
     &:hover {
@@ -196,7 +197,6 @@ rightbar {
   z-index: 1;
   padding-top:40px;
   height:100%;
-  min-height:700px;
   margin-left:auto;
   margin-right:auto;
   position:static;
@@ -206,11 +206,13 @@ rightbar {
   padding-top:55px;
   -webkit-border-radius:10px;
   -moz-border-radius:10px;
+  background-color: $lightSlate;
 }
 
 .mar-container {
   width:500px;
   padding-top:44px;
+  min-height:700px;
   height:100%;
   overflow-x:show;
 }
