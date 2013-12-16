@@ -183,7 +183,6 @@ rightbar {
   min-height:100%;
   color: #000;
   background-color: $lightSlate;
-  overflow:hidden;
   a {
     font-weight: bold;
     &:hover {
@@ -207,7 +206,6 @@ rightbar {
   padding-top:55px;
   -webkit-border-radius:10px;
   -moz-border-radius:10px;
-  overflow-y:scroll;
 }
 
 .mar-container {
