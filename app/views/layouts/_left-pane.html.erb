@@ -1,0 +1,29 @@
+<div class = 'left-pane'>
+    <div class = 'side-name'>
+      <%if !current_node.avatar.file.nil? %>
+          <%= image_tag current_node.avatar_url(:thumb) %>
+      <%end%>
+    </div>
+    <div class = 'side-connect'>
+    </div>
+    <div class = 'side-dendrite'>
+      <div class = 'side-synapse'></div>
+    </div>
+    <div class = 'impulse'>
+      <%case params[:controller]%>
+      <%when 'static'%>
+          <%if params[:action] == 'home'%>
+              <%= render 'shared/pulse_form' %>
+          <%end%>
+      <%when 'assemblies'%>
+          <%if params[:action] ==  'show'%>
+              <%= render 'assemblies/assembly_pulse_form' %>
+          <%end%>
+      <%when 'pulses'%>
+          <%if params[:action] == 'show' %>
+              <%= render 'shared/pulse_comment_form' %>
+          <%end%>
+      <%end%>
+    </div>
+  </div>
+</div>
