@@ -16,7 +16,7 @@ html {
   z-index:0;
   width:100%;
   min-height: 650px;
-  height:auto;
+  height:100%;
   background-color:$frameColor;
   min-width: 1100px;
   overflow-y:scroll;
@@ -25,6 +25,14 @@ html {
     text-decoration: none;
   }
  }
+}
+
+.icon-cog {
+  color: $grayMediumLight;
+}
+
+.icon-home {
+  color: $grayMediumLight
 }
 
 body {
@@ -48,7 +56,7 @@ body {
   top:50px;
   width:260px;
   padding:10px;
-  height:450px;
+  height:500px;
   background-color:$innerColor;
   -webkit-border-radius:10px 0px 0px 10px;
   -moz-border-radius:10px 0px 0px 10px;
@@ -61,7 +69,7 @@ body {
   float:right;
   width:260px;
   padding:10px;
-  height:450px;
+  height:500px;
   background-color:$innerColor;
   -webkit-border-radius:0px 10px 10px 0px;
   -moz-border-radius:0px 10px 10px 0px;
@@ -177,9 +185,7 @@ body {
 }
 
 .glyph-container {
-  display:block;
-  height:35px;
-  width:35px;
+ color:$grayMediumLight;
 }
 // Logged OUt
 

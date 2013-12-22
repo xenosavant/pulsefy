@@ -60,3 +60,29 @@ aside {
   padding-bottom:5px;
 }
 
+.name-container {
+  display:inline;
+  position:relative;
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left:50px;
+  margin-right:auto;
+}
+
+.node-close {
+  position:relative;
+  right:-15px;
+  top:5px;
+  a {
+    color:$lightSlate !important;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.avatar-container {
+  width:100px;
+  height:100px;
+  display:inline;
+}

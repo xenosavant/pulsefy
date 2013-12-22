@@ -57,10 +57,10 @@ module SessionsHelper
           when false
             redirect_to Pulse.find(session[:return_to])
         end
-      else
-        flash[:alert] = 'Sorry! Something went terribly wrong!'
-        redirect_to root_path
-    end
+      when 'Static'
+            redirect_to root_path
+      end
   end
 
-end
+
+  end

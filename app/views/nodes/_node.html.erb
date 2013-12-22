@@ -1,13 +1,13 @@
 <li>
     <%if !node.avatar.file.nil? %>
-        <%= link_to image_tag(node.avatar_url(:thumb)), :action => 'show', :controller => 'nodes', :id => node.id %>
+       <div class = 'avatar-container'> <%= link_to image_tag(node.avatar_url(:thumb)), :action => 'show', :controller => 'nodes', :id => node.id %></div>
     <% else%>
         <%= link_to image_tag('default.gif'), :action => 'show', :controller => 'nodes', :id => node.id %>
     <%end%>
     <% if node.inputs.include?(current_node) || node.outputs.include?(current_node) %>
     <% end %>
-            <%= link_to node.username,  :action => 'show', :controller => 'nodes', :id => node.id %>
+         <div class = 'name-container'>  <%= link_to node.username,  :action => 'show', :controller => 'nodes', :id => node.id %>  </div>
   <% if signed_in? and current_node.admin == true and !current_node?(node) %>
-      <%= link_to 'delete', node, :method => :delete, :data => {:confirm => 'You sure?'} %>
+      <div class = 'node-close'><%= link_to 'X', node, :method => :delete, :data => {:confirm => 'You sure?'} %></div>
   <% end %>
 </li>
