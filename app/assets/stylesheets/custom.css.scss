@@ -156,6 +156,7 @@ body {
   -moz-border-radius:0px 0px 10px 10px;
   background-color: $lightSlate !important;
   overflow-y:scroll;
+  padding-bottom:25px;
 }
 
 //.foot-pusher {
@@ -176,36 +177,40 @@ body {
 }
 
 .pad-block {
+  height:30px;
+  width:490px;
+  position:relative;
+  float:top;
+  display:block;
+  padding-right:10px;
+  padding-left:0px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.pad-bottom {
   height:50px;
   width:500px;
   position:relative;
-  float:top;
+  float:bottom;
   content:"";
   display:block;
 }
 
-.glyph-container {
- color:$grayMediumLight;
-}
-// Logged OUt
-
-
-.logged-background {
-  background-color: $lightSlate;
-  color: $backroundBlue;
-  position:absolute;
-  text-align:center;
-  width:100%;
-  height:100%;
-  margin-top:auto;
+.icon-cog {
+  color:$grayMediumLight;
 }
 
-.logged-out {
+.title-box {
+  z-index:2;
+  width:auto;
   background-color: $lightSlate;
-  position:absolute;
-  margin:50%;
-  border-color: $grayMediumLight;
-  color: $backroundBlue;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-right:5px;
+  padding-left:0px;
+  padding-top:5px;
+  padding-bottom:5px;
 }
 
 /* typography */
@@ -301,12 +306,10 @@ input, textarea, textfield, select, .uneditable-input {
   margin-bottom: 15px;
   background-color: $lightSlate;
   resize:none;
-  width:100%
 }
 
 textfield {
   background-color: $lightSlate;
-  width:100%;
 }
 
 
@@ -445,4 +448,17 @@ textfield {
   background-color:$frameColor;
   padding-top:30px;
   min-width: 1100px;
+}
+
+center-box {
+  width:auto;
+  height:auto;
+  margin: 0 auto !important;
+  background-color: lightSlate;
+}
+
+.inside-right {
+  width:auto;
+  height:auto;
+  background-color: $grayMediumLight;
 }

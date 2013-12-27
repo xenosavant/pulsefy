@@ -3,13 +3,12 @@
 <head>
   <title>Pulsefy</title>
   <%= stylesheet_link_tag    'application', :media => 'all' %>
-  <%= stylesheet_link_tag '/app/assets/stylesheets/font-awesome.min.css'%>
   <%= javascript_include_tag 'application.js' %>
   <%= csrf_meta_tags %>
   <%= yield(:head) %>
 </head>
-<%= render 'layouts/header' %>
 <body>
+<%= render 'layouts/header' %>
 <%if signed_in? %>
     <%= render 'layouts/tab-bar' %>
   <div class = 'background-pane'>
@@ -17,9 +16,9 @@
     <%= render 'layouts/right-pane'%>
    <div class = 'inner-pulse'>
     <div class = 'mar-container'>
-      <div class = 'pad-block'></div>
     <%= yield  %>
-    <!--<%= debug(params) %>-->
+    <%= debug(params) %>
+      <div class = 'pad-bottom'></div>
       </div>
     </div>
   </div>

@@ -40,8 +40,8 @@ SimpleNavigation::Configuration.run do |navigation|
     primary.item :reassemble, 'Form An Assembly', assemble_path, :if => Proc.new { assembly_menu? }
     primary.item :showinputs, 'My Inputs', inputs_path, :if => Proc.new { connections_menu? }
     primary.item :showoutputs, 'My Outputs', outputs_path, :if => Proc.new { connections_menu? }
-    primary.item :showotherinputs, 'Inputs', otherinputs_path, :if => Proc.new { other_connections_menu? }
-    primary.item :showotheroutputs, 'Outputs', otheroutputs_path, :if => Proc.new { other_connections_menu? }
+    primary.item :showotherinputs, 'Inputs', '#', :if => Proc.new { other_inputs_menu? }, :highlights_on => Proc.new { other_inputs_menu? }
+    primary.item :showotheroutputs, 'Outputs', '#', :if => Proc.new { other_outputs_menu? }, :highlights_on => Proc.new { other_outputs_menu? }
     primary.item :home, 'Home', root_path, :if => Proc.new { home_menu? }, :highlights_on => Proc.new { home_menu? }
     end
 

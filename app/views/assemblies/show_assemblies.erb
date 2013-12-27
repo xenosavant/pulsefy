@@ -1,11 +1,10 @@
 <% provide(:title, 'My Assemblies') %>
-<!--<title-box>-->
-  <!--<%= pluralize(@node.assemblies.count, 'Assembly') %>-->
-<!--</title-box>-->
-  <% if !@assemblies.nil? %>
+<% if !@assemblies.nil? %>
+<div class = 'pad-block'><div class = 'title-box'><%= pluralize(@node.assemblies.count, 'Assembly') %></div></div>
+
       <%= will_paginate %>
       <ul class='assemblies'>
         <%= render @assemblies %>
       </ul>
       <%= will_paginate %>
-  <%end%>
+ <%end%>

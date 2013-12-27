@@ -47,12 +47,23 @@ module ApplicationHelper
     end
   end
 
-  def other_connections_menu?
+  def other_inputs_menu?
     case params[:controller]
       when 'nodes'
         if params[:action] == 'show_other_inputs'
           true
-        elsif params[:action] == 'show_other_outputs'
+        else
+          false
+        end
+      else
+        false
+    end
+  end
+
+  def other_outputs_menu?
+    case params[:controller]
+      when 'nodes'
+        if params[:action] == 'show_other_outputs'
           true
         else
           false

@@ -1,5 +1,5 @@
 <% provide(:title, 'Inputs') %>
-<h3><%= pluralize(@node.inputs.count, 'Input') %> </h3>
+<div class = 'pad-block'><div class = 'title-box'><%= pluralize(@node.inputs.count, 'Input') %> </div></div>
   <% if !@nodes.nil? %>
       <%= will_paginate %>
       <ul class='nodes'>

@@ -1,4 +1,5 @@
 <% if signed_in? %>
+    <div class = 'pad-block'><div class = 'title-box'>My Pulsefeed</div></div>
     <% if @node.pulses.any? %>
          <ol class="pulses">
           <%= render @pulses %>
@@ -6,8 +7,6 @@
         <%= will_paginate @pulses %>
       <% end %>
 <% else %>
-  <div class = 'logged-background'>
-<br><br><br><br><br><br>
         <h1>Welcome to Pulsefy!</h1>
             <h2>
                 The World's First Social Neural Network!

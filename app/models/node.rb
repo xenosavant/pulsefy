@@ -4,7 +4,7 @@ class Node < ActiveRecord::Base
   mount_uploader :avatar, AvatarUploader
   attr_accessible :username, :email, :info, :threshold,
                   :password, :password_confirmation, :avatar, :self_tag,
-                  :crop_x, :crop_y, :crop_w, :crop_h
+                  :crop_x, :crop_y, :crop_w, :crop_h, :remember_token
   after_update :reprocess_avatar, :if => :cropping?
   has_secure_password
   before_save { |node| node.email = email.downcase }

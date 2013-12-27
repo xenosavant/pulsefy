@@ -1,5 +1,5 @@
 <div>
-  <h3><%= @assembly.title%></h3>
+  <div class = 'pad-block'><div class = 'title-box'><%= @assembly.title %> </div></div>
 </div>
   <br><%if !@assembly.avatar.file.nil? %>
       <%= image_tag @assembly.avatar_url(:profile) %>

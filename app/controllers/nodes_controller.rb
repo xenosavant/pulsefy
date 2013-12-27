@@ -1,6 +1,6 @@
 class NodesController < ApplicationController
 
-  before_filter :signed_in_node
+  before_filter :signed_in_node, :except => [:crop_update]
 
   def show
     @node = Node.find(params[:id])
@@ -36,8 +36,9 @@ class NodesController < ApplicationController
     @node =  Node.find(current_node)
       if @node.update_attributes(params[:node])
         if params[:node][:avatar].blank?
+          sign_in(@node)
           flash[:success] = "Pulsefeed Updated!"
-          redirect_to @node
+          redirect_to :controller => 'nodes', :action => 'show', :id => '1'
         else
           render :action => 'crop'
         end
@@ -92,9 +93,14 @@ class NodesController < ApplicationController
       @node.crop_y = params[:node]['crop_y']
       @node.crop_h = params[:node]['crop_h']
       @node.crop_w = params[:node]['crop_w']
-      @node.save
-      flash[:success] = "Pulsefeed Updated!"
-      redirect_to @node
+      if @node.save(params[:node])
+        sign_in(@node)
+        flash[:success] = "Pulsefeed Updated!"
+        redirect_to :controller => 'nodes', :action => 'show', :id => '1'
+      else
+        render 'crop'
+      end
+
   end
 
   private

@@ -1,8 +1,10 @@
-<div class = 'show-headline'>
-  <%if !@pulse.headline.nil?%>
- <h3><%= @pulse.headline %></h3>
-  <%end%>
-     </div>
+<div class = 'pad-block'>
+  <div class = 'title-box'>
+    <%if !@pulse.headline.nil?%>
+      <%= @pulse.headline %>
+    <%end%>
+  </div>
+</div>
 <% case @pulse.link_type %>
 <%when 'video' %>
 <div class = "show-container"><%= raw @pulse.embed_code %></div>
