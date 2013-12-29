@@ -31,13 +31,9 @@ html {
   color: $grayMediumLight;
 }
 
-.icon-home {
-  color: $grayMediumLight
-}
-
 body {
   position:relative;
-  z-index:1;
+  z-index:0;
   width:1160px;
   overflow-x:hidden;
   overflow-y:hidden;
@@ -74,17 +70,6 @@ body {
   background-color:$innerColor;
   -webkit-border-radius:0px 10px 10px 0px;
   -moz-border-radius:0px 10px 10px 0px;
-}
-
-.background-pane {
-  position:absolute;
-  background-color:$frameColor;
-  width:1160px;
-  margin-left:auto;
-  margin-right:auto;
-  height:100%;
-  -webkit-border-radius: 0px 0px 10px 10px;
-  -moz-border-radius: 0px 0px 10px 10px;
 }
 
 
