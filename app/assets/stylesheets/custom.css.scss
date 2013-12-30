@@ -12,7 +12,6 @@ $frameColor: #274b72;
 $innerColor: #132438;
 
 html {
-  position:fixed;
   z-index:0;
   width:100%;
   min-height: 650px;
@@ -436,20 +435,21 @@ textfield {
   min-width: 1100px;
 }
 
-.center-box {
-  width:auto;
-  height:auto;
-  margin: 0 auto !important;
-  background-color: lightSlate;
-}
-
 .inside-right {
-  width:auto;
-  height:auto;
+  z-index:
+  width:100%;
+  height:100%;
   background-color: $grayMediumLight;
 }
 
 .nav-collapse.collapse {
   height: auto !important;
   overflow: visible !important;
+}
+
+.head-container {
+  position:fixed;
+  float:top;
+  width:100%;
+  height:45px;
 }
