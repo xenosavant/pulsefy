@@ -12,8 +12,6 @@
 <%if signed_in? %>
     <%= render 'layouts/tab-bar' %>
   <div class = 'background-pane'>
-    <%= render 'layouts/left-pane'%>
-    <%= render 'layouts/right-pane'%>
    <div class = 'inner-pulse'>
     <div class = 'mar-container'>
     <%= yield  %>
@@ -21,6 +19,8 @@
       <div class = 'pad-bottom'></div>
       </div>
     </div>
+    <%= render 'layouts/left-pane'%>
+    <%= render 'layouts/right-pane'%>
   </div>
 </div>
 <%else%>
