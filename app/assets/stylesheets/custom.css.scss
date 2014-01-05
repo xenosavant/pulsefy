@@ -34,13 +34,11 @@ html {
 body {
   position:relative;
   z-index:0;
-  width:1170px;
+  width:100%;
   overflow-x:hidden;
   overflow-y:hidden;
   min-height: 625px;
   height:100%;
-  margin-left: auto !important;
-  margin-right: auto !important;
   background-color:inherit;
 }
 
@@ -63,7 +61,7 @@ body {
   display:inline;
   top:50px;
   float:right;
-  width:24ß0px;
+  width:240px;
   padding:10px;
   height:500px;
   background-color:$innerColor;
@@ -455,12 +453,26 @@ textfield {
 
 .background-pane {
   z-index:0;
-  position:absolute;
+  position:relative;
   width:1170px;
   height:100%;
+  margin-left: auto !important;
+  margin-right: auto !important;
   background-color: $frameColor;
 }
 
+.brace-pane {
+  position:absolute;
+  width:100%;
+  height:100%;
+}
+
+.fill-pane {
+  background-color: $frameColor;
+  width:100%;
+  height:100%;
+  position:static;
+}
 .head-container {
   position:fixed;
   float:top;
