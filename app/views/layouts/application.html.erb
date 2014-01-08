@@ -15,14 +15,13 @@
   <div class = 'background-pane'>
     <div class = 'brace-pane'>
       <%= render 'layouts/left-pane'%>
+      <%= render 'layouts/right-pane'%>
    <div class = 'inner-pulse'>
     <div class = 'mar-container'>
     <%= yield  %>
-    <%= debug(params) %>
       <div class = 'pad-bottom'></div>
     </div>
       </div>
-    <%= render 'layouts/right-pane'%>
     </div>
   </div>
 </div>

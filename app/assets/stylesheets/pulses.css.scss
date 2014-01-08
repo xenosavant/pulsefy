@@ -74,9 +74,8 @@ $graydarker: #1c2025;
 .video-container {
   position: relative;
   max-width: 420px;
-  padding-bottom: 265px;
-  padding-top: 25px;
-  height: 0;
+  height:0;
+  padding-bottom:370px;
   overflow: hidden;
   display:block;
 }
@@ -84,7 +83,7 @@ $graydarker: #1c2025;
 .show-container {
   position: relative;
   width: 500px;
-  padding-bottom: 384px;
+  padding-bottom: 420px;
   padding-top: 25px;
   height: 0;
   overflow: hidden;
@@ -108,17 +107,18 @@ $graydarker: #1c2025;
   top: 0;
   left: 0;
   max-width: 500px;
-  max-height: 427px;
+  max-height: 460px;
 }
 
 .video-container iframe,
 .video-container object,
 .video-container embed {
   position: absolute;
+  display:block;
   top: 0;
   left: 0;
   max-width: 420px;
-  max-height: 338px;
+  max-height: 368px;
 }
 
 .photo-container {
@@ -157,7 +157,7 @@ $graydarker: #1c2025;
   bottom: -43px;
   left:435px;
   font-weight:bold;
-  font-size: 1.1em;
+  font-size: 0.9em;
   a {
     color:$lightSlate !important;
     &:hover {
@@ -257,9 +257,7 @@ rating-show-wrapper {
   height:auto;
   font-size: 1.4em;
   disply:block;
-  border:1px;
   background-color:$grayMediumLight;
-  border-style:solid;
 }
 
 .left-info {

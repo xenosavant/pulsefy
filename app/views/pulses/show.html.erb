@@ -15,12 +15,10 @@
 <%end%>
    <div class = 'show-text-wrapper'><%= @pulse.content %></div>
    <div class = 'info-show-container'> <%= render 'pulses/info'%> </div>
-     <div class = 'inner-comment'>
              <% if @pulse.pulse_comments.any? %>
-              <h4>Comments</h4>
+              Comments
              <ol class="pulses">
                   <%= render @pulse_comments %>
              </ol>
-              <%= will_paginate @pulse_comments %>
+             <%= will_paginate @pulse_comments %>
     <% end %>
-</div>
