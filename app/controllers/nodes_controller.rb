@@ -1,6 +1,6 @@
 class NodesController < ApplicationController
 
-  before_filter :signed_in_node, :except => [:crop_update]
+  before_filter :signed_in_node, :except => [:new, :create]
 
   def show
     @node = Node.find(params[:id])
@@ -14,6 +14,7 @@ class NodesController < ApplicationController
     if @node.save
       sign_in @node
       flash[:success] = "Pulsefication Complete!"
+      redirect_to root_path
     else
       redirect_to :controller => 'nodes', :action => 'new', :errors => @node.errors.full_messages
     end
@@ -38,7 +39,7 @@ class NodesController < ApplicationController
         if params[:node][:avatar].blank?
           sign_in(@node)
           flash[:success] = "Pulsefeed Updated!"
-          redirect_to :controller => 'nodes', :action => 'show', :id => '1'
+          redirect_to :controller => 'nodes', :action => 'show', :id => @node.id
         else
           render :action => 'crop'
         end

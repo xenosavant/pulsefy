@@ -2,7 +2,7 @@
   <%if !assembly.avatar.file.nil? %>
       <%= image_tag assembly.avatar_url(:thumb) %>
   <% else%>
-      <%= image_tag 'default.gif' %>
+      <%= image_tag 'Q100.jpg' %>
   <%end%>
   <%= link_to assembly.title, assembly_path(:id => assembly.id) %>
   <% if signed_in? and assembly.founder == current_node.id %>

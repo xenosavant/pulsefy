@@ -1,35 +1,31 @@
-<div class = 'center-box'>
-            <% provide(:title, 'Pulse Up') %>
-             <h1>Pulse Up</h1>
+  <div class = 'sign-up'>
+      <% provide(:title, 'Pulse Up') %>
              <% if params[:errors] %>
                  <div id="error_explanation">
                     <div class="alert alert-error">
-                         The form contains <%= pluralize(params[:errors].count, "error") %>.
+                        <ul>
+                        <%params[:errors].each do |msg| %>
+                        <li> <%= msg %></li>
+                        <% end %>
+                        </ul>
                     </div>
-                 <ul>
-                 <%params[:errors].each do |msg| %>
-                 <li> <%= msg %></li>
-                 <% end %>
-                </ul>
                 </div>
              <%end%>
         <%= form_for(@node) do |f| %>
+        <div class = 'new-box-left'>
+            <%= f.label :username %>
+            <%= f.text_field :username %>
 
-        <%= render 'shared/error_messages', :object => f.object %>
-        <%= f.label :username %>
-        <%= f.text_field :username %>
+            <%= f.label :email %>
+            <%= f.text_field :email %>
+        </div>
+        <div class = 'new-box-right'>
+            <%= f.label :password %>
+            <%= f.password_field :password %>
 
-        <%= f.label :email %>
-        <%= f.text_field :email %>
-
-        <%= f.label :password %>
-        <%= f.password_field :password %>
-
-        <%= f.label :password_confirmation, "Confirmation" %>
-        <%= f.password_field :password_confirmation %>
-
-        <div class='center'>
-             <%= f.submit 'Pulsefy!', :class => "btn btn-large btn-primary" %>
-             <% end %>
-   </div>
+            <%= f.label :password_confirmation, "Password Confirmation" %>
+            <%= f.password_field :password_confirmation %>
+        </div>
+        <%= f.submit 'Pulsefy!', :class => "btn btn-medium btn-primary" %>
+  <%end%>
 </div>

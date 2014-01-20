@@ -2,6 +2,8 @@
   <div class = 'micro-soma'>
       <%if !Node.find(pulse_comment.commenter).avatar.file.nil? %>
           <%= image_tag Node.find(pulse_comment.commenter).avatar_url(:micro) %>
+    <%else%>
+        <%= image_tag 'Q50.jpg' %>
       <%end%>
     <div class = 'micro-soma-to-axon'></div>
     </div>

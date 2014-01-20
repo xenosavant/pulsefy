@@ -6,7 +6,11 @@ class AssembliesController < ApplicationController
   @assembly.founder = @node.id
   if @assembly.save
      @node.assemblies << @assembly
-    redirect_to @assembly
+     if params[:assembly][:avatar].blank?
+       redirect_to @assembly
+     else
+       render 'assemblies/crop'
+     end
   else
     render 'assemblies/new'
   end
@@ -31,9 +35,13 @@ class AssembliesController < ApplicationController
 
   def update
     @assembly = Assembly.find(params[:id])
-    if @assembly.update_attributes(params[:assembly])
-      redirect_to @assembly
-    else
+    if @assembly.update_attributes(params[:node])
+      if params[:assembly][:avatar].blank?
+        flash[:success] = "Assembly Updated!"
+        redirect_to :controller => 'assembly', :action => 'show', :id => '1'
+      else
+        render :action => 'crop'
+      end
       render 'edit'
     end
   end
@@ -61,5 +69,24 @@ class AssembliesController < ApplicationController
     @assemblies = @temp.paginate(:page => params[:page])
   end
 
+  def crop
+    @assembly = Assembly.find(params[:id])
+  end
+
+  def crop_update
+    @assembly = Assembly.find(params[:id])
+    @avatar = @assembly.avatar
+    @assembly.crop_x = params[:assembly]['crop_x']
+    @assembly.crop_y = params[:assembly]['crop_y']
+    @assembly.crop_h = params[:assembly]['crop_h']
+    @assembly.crop_w = params[:assembly]['crop_w']
+    if @assembly.save(params[:node])
+      flash[:success] = "Assembly Updated!"
+      redirect_to :controller => 'assembly', :action => 'show', :id => @assembly.id
+    else
+      render 'crop'
+    end
+
+  end
 
 end

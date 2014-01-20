@@ -31,7 +31,7 @@ Pulsefy::Application.routes.draw do
   match '/edit' => 'nodes#edit'
   match '/index' => 'nodes#index', :as => 'index'
   match '/pulseup' => 'nodes#new', :as => 'pulseup'
-  match '/pulsein',  :to => 'sessions#new', :as => 'pulsein'
+  match '/pulsein' => 'sessions#new', :as => 'pulsein'
   match '/pulseout', :to => 'sessions#destroy', :via => :delete
 
   # Sample of named route:

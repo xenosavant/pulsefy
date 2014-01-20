@@ -7,10 +7,11 @@
         <%= will_paginate @pulses %>
       <% end %>
 <% else %>
+    <div class = 'sign-up'>
         <h1>Welcome to Pulsefy!</h1>
             <h2>
                 The World's First Social Neural Network!
             </h2>
-            <%= link_to "Pulsefy!", '/pulseup', :class => "btn btn-medium btn-primary" %>
-  </div>
+            <%= link_to "Pulsefy!", pulseup_path, :class => "btn btn-medium btn-primary" %>
+    </div>
 <% end %>

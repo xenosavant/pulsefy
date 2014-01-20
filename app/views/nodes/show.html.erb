@@ -1,6 +1,8 @@
 <div class = 'pad-block'><div class = 'title-box'><%= @node.username %> </div></div>
   <%if !@node.avatar.file.nil? %>
       <%= image_tag @node.avatar_url(:profile) %>
+    <%else%>
+    <%= image_tag 'Q300.jpg'%>
   <%end%>
 <div class = 'profile-info'>
  <%= link_to pluralize(@node.assemblies.count, 'assembly'), view_path(:id => @node.id) %> |

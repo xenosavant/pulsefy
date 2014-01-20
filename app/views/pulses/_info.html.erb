@@ -1,10 +1,10 @@
-<div class = 'left-info'>
+<div class = 'show-info'>
     Depth: <%= @pulse.depth %><br>
     <div class="timestamp">
       Fired <%= time_ago_in_words(@pulse.created_at) %> ago.
     </div>
   </div>
-      <span class = 'show-rating-wrapper'>
+      <div class = 'rating-show-wrapper'>
         <%if signed_in? %>
             <% case @pulse.pulser == current_node.id %>
         <% when false %>
@@ -26,5 +26,4 @@
                 <%= @pulse.degradations %>
             <%end%>
          <%end%>
-     </span>
-</div>
+     </div>

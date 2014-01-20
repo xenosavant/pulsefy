@@ -16,10 +16,11 @@
     <div class = 'brace-pane'>
       <%= render 'layouts/left-pane'%>
       <%= render 'layouts/right-pane'%>
+ <div class = 'scroll-pane'>
    <div class = 'inner-pulse'>
+     <div class = 'pad-top'></div>
     <div class = 'mar-container'>
     <%= yield  %>
-      <div class = 'pad-bottom'></div>
     </div>
       </div>
     </div>
@@ -27,7 +28,11 @@
 </div>
 </div>
 <%else%>
-<%= yield  %>
+<div class = 'fill-pane'>
+    <div class = 'background-pane'>
+             <%= yield  %>
+    </div>
+</div>
 <%end%>
 </body>
 </html>

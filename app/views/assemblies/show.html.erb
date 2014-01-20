@@ -1,10 +1,12 @@
 <div>
   <div class = 'pad-block'><div class = 'title-box'><%= @assembly.title %> </div></div>
 </div>
-  <br><%if !@assembly.avatar.file.nil? %>
+  <%if !@assembly.avatar.file.nil? %>
       <%= image_tag @assembly.avatar_url(:profile) %>
+<%else%>
+    <%= image_tag 'Q300.jpg' %>
   <%end%>
-  <br>
+<div class = 'profile-info'>
   <%= link_to pluralize(@assembly.nodes.count, 'member'), members_path(:id => @assembly.id)%> |
   <% if signed_in? %>
     <% if current_node.assemblies.include?(@assembly)%>
@@ -12,7 +14,8 @@
          <%= link_to 'edit', reassemble_path(:id => @assembly.id)%>
         <% else %>
         <%= link_to 'quit', quit_path(:id => @assembly.id)%>
-        <% end %> <br>
+        <% end %>
+          </div>
           <div class='info'>
             <%= @assembly.info%>
           </div>

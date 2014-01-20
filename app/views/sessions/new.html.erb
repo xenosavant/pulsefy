@@ -1,6 +1,5 @@
-<div class = 'center-box'>
-        <% provide(:title, 'Pulse In') %>
-      <h1>Pulse In</h1>
+<div class = 'sign-in'>
+   <% provide(:title, 'Pulse In') %>
       <% if params[:errors] %>
           <div id="error_explanation">
             <div class="alert alert-error">
@@ -17,15 +16,7 @@
         <%= f.label :password %>
         <%= f.password_field :password %>
 
-        <br>
-        <%= f.submit "Pulse In", :class => "btn btn-large btn-primary" %>
-        </br>
+        <%= f.submit "Pulse In", :class => "btn btn-medium btn-primary" %>
         <% end %>
-        <br>
-        <br>
-        <br>
-        New to Pulsefy? <%= link_to "Pulsefy yourself now!", pulseup_path %>
-        </br>
-        </br>
-        </br>
+        New? <%= link_to "Pulsefy yourself now!", pulseup_path %>
 </div>
