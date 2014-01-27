@@ -238,23 +238,52 @@ $graydarker: #1c2025;
   overflow:hidden;
 }
 
-.rating-show-wrapper {
+.rating-show-wrapper-down {
+  font-size: 30px;
   position:relative;
   float:right;
   display:inline;
   height:40px;
   overflow:hidden;
   width:auto;
+  color:#B80000;
+  a {
+    font-weight: bold;
+    color: #B80000;
+    &:hover {
+      color:red;
+      text-decoration: none;
+    }
+  }
+}
+
+.rating-show-wrapper-up {
+  font-size: 30px;
+  position:relative;
+  float:right;
+  display:inline;
+  height:40px;
+  overflow:hidden;
+  width:auto;
+  color:#005100;
+  a {
+    font-weight: bold;
+    color: #005100;
+    &:hover {
+      color:green;
+      text-decoration: none;
+    }
+  }
 }
 
 .thumb-up-block {
   height:22px;
   width:auto;
   display:inline;
-  color:#006600;
+  color:#005100;
   a {
     font-weight: bold;
-    color: #006600;
+    color: #005100;
     &:hover {
       color:green;
       text-decoration: none;

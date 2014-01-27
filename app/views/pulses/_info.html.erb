@@ -1,29 +1,42 @@
 <div class = 'show-info'>
-    Depth: <%= @pulse.depth %><br>
+    Depth: <%= @pulse.depth %>
     <div class="timestamp">
       Fired <%= time_ago_in_words(@pulse.created_at) %> ago.
     </div>
-  </div>
-      <div class = 'rating-show-wrapper'>
         <%if signed_in? %>
             <% case @pulse.pulser == current_node.id %>
         <% when false %>
                 <% if current_node.votes.find_by_pulse_id(@pulse.id).nil?%>
-                    <%= link_to image_tag('Up.png'), cast_path(:id => @pulse.id, :vote_cast => true) %>
+                    <%= link_to(cast_path(:id => @pulse.id, :vote_cast => true)) do %>
+                        <div class = 'rating-show-wrapper-up'>
+                           <i class='fa fa-large fa-thumbs-up'></i>
+                        </div>
+                <%end%>
                     <%= @pulse.reinforcements %>
-                    <%= link_to image_tag('Down.png'), cast_path(:id => @pulse.id, :vote_cast => false) %>
+                    <%= link_to(cast_path(:id => @pulse.id, :vote_cast => false)) do %>
+                        <div class = 'rating-show-wrapper-down'>
+                        <i class='fa fa-large fa-thumbs-down'></i>
+                        </div>
+                <% end%>
                     <%= @pulse.degradations %>
                 <% else %>
-                    <%= image_tag 'Up.png' %>
+                    <div class = 'rating-show-wrapper-up'>
+                        <i class='fa fa-large fa-thumbs-up'></i>
+                    </div>
                     <%= @pulse.reinforcements %>
-                    <%= image_tag 'Down.png' %>
+                    <div class = 'rating-show-wrapper-down'>
+                        <i class='fa fa-large fa-thumbs-down'></i>
+                    </div>
                     <%= @pulse.degradations %>
-                <%end%>
-            <% when true %>
-                <%= image_tag 'Up.png' %>
-                <%= @pulse.reinforcements %>
-                <%= image_tag 'Down.png' %>
-                <%= @pulse.degradations %>
+                 <%end%>
+            <%when true %>
+                    <div class = 'rating-show-wrapper-up'>
+                        <i class='fa fa-large fa-thumbs-up'></i>
+                    </div>
+                    <div class = 'rating-show-wrapper-down'>
+                        <i class='fa fa-large fa-thumbs-down'></i>
+                    </div>
+                   <%= @pulse.degradations %>
             <%end%>
          <%end%>
      </div>

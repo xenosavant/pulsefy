@@ -23,7 +23,7 @@ class AvatarUploader < CarrierWave::Uploader::Base
   def default_url
   #   # For Rails 3.1+ asset pipeline compatibility:
   #   # asset_path("fallback/" + [version_name, "default.png"].compact.join('_'))
-  "#{Rails.root}/app/assets/images/default.gif"
+  "#{Rails.root}/app/assets/images/Q300.jpg"
   end
 
   def cache_dir

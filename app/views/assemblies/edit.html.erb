@@ -1,7 +1,5 @@
-<div class = 'pulsefeed'>
-  <div class = 'inner-pulse'>
-  <% provide(:title, "Edit assembly") %>
-<h1>Update <td><%= @assembly.title %></td> </h1>
+<div class = 'pad-block'><div class = 'title-box'>Edit Your Assembly </div></div>
+<% provide(:title, "Edit assembly") %>
 
     <%= form_for @assembly, :html => {:multipart => true} do |f| %>
         <%= render 'shared/error_messages', :object => f.object %>
@@ -13,11 +11,11 @@
 
         <%if !@assembly.avatar.file.nil? %>
         <%= image_tag @assembly.avatar_url(:thumb) %>
+        <%else%>
+          <%= image_tag 'Q100.jpg' %>
         <% end %>
         <%= f.file_field :avatar %>
         <br> <div class='center'>
         <%= f.submit 'Save changes', :class => 'btn btn-large btn-primary' %>
-        </div></br>
+        </div>
     <% end %>
-    </div>
-</div>

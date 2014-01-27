@@ -7,6 +7,7 @@ $lightSlate: #d0dfef;
   list-style: none;
   width: 400px;
   position:relative;
+  padding-bottom:15px;
   li {
     width: 380px;
     margin-left: auto;
@@ -43,7 +44,7 @@ $lightSlate: #d0dfef;
 
 .micro-axon {
   text-align: left;
-  width: 310px;
+  width: 350px;
   height: auto;
   oveflow: auto;
   position:relative;
@@ -61,6 +62,11 @@ $lightSlate: #d0dfef;
   -moz-border-radius:10px;
 }
 
+.com-wrapper {
+  background-color:#eeeeee;
+  width:350px;
+  height:auto;
+}
 
 .micro-close-container {
   z-index:2;
@@ -75,13 +81,4 @@ $lightSlate: #d0dfef;
       text-decoration: none;
     }
   }
-}
-
-.pulse-comment-wrapper {
-  display: block;
-  width:500px;
-  height:auto;
-  padding-top:5px;
-  margin-left: auto;
-  margin-right: auto;
 }

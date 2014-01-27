@@ -17,5 +17,15 @@ class Assembly < ActiveRecord::Base
      self.avatar.recreate_versions!
    end
 
+   def avatar_geometry
+     img = Magick::Image::read(self.avatar.url).first
+     @geometry = {:width => img.columns, :height => img.rows }
+   end
+
+   def cropping?
+     !crop_x.blank? && !crop_y.blank? && !crop_w.blank? && !crop_h.blank?
+   end
+
+
 end
 

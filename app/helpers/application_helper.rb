@@ -113,5 +113,27 @@ module ApplicationHelper
     end
   end
 
+  def assedit_menu?
+    case params[:controller]
+      when 'assemblies'
+        if params[:action] == 'edit'
+          true
+        else
+          false
+        end
+    end
+  end
+
+  def asscrop_menu?
+    case params[:controller]
+      when 'assemblies'
+        if params[:action] == 'crop'
+          true
+        else
+          false
+        end
+    end
+  end
+
 end
 

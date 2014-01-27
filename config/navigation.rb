@@ -34,7 +34,9 @@ SimpleNavigation::Configuration.run do |navigation|
   navigation.items do |primary|
 
     primary.item :edit, 'Info', edit_path, :if => Proc.new { edit_menu? }
-    primary.item :edit, 'Info', crop_path, :if => Proc.new { crop_menu? }
+    primary.item :crop, 'Crop', crop_path, :if => Proc.new { crop_menu? }
+    primary.item :edit, 'Edit', reassemble_path, :if => Proc.new { assedit_menu? }
+    primary.item :crop, 'Crop', asscrop_path, :if => Proc.new { asscrop_menu? }
     primary.item :account, 'Account', account_path, :if => Proc.new { edit_menu? }
     primary.item :myassemblies, 'My Assemblies', view_path, :if => Proc.new { assembly_menu? }
     primary.item :reassemble, 'Form An Assembly', assemble_path, :if => Proc.new { assembly_menu? }
@@ -43,6 +45,7 @@ SimpleNavigation::Configuration.run do |navigation|
     primary.item :showotherinputs, 'Inputs', '#', :if => Proc.new { other_inputs_menu? }, :highlights_on => Proc.new { other_inputs_menu? }
     primary.item :showotheroutputs, 'Outputs', '#', :if => Proc.new { other_outputs_menu? }, :highlights_on => Proc.new { other_outputs_menu? }
     primary.item :home, 'Home', root_path, :if => Proc.new { home_menu? }, :highlights_on => Proc.new { home_menu? }
+
     end
 
     # You can also specify a condition-proc that needs to be fullfilled to display an item.

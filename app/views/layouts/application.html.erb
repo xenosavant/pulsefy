@@ -11,22 +11,20 @@
 <body>
 <%if signed_in? %>
     <%= render 'layouts/tab-bar' %>
-    <div class = 'fill-pane'>
+ <div class = 'fill-pane'>
   <div class = 'background-pane'>
-    <div class = 'brace-pane'>
       <%= render 'layouts/left-pane'%>
       <%= render 'layouts/right-pane'%>
- <div class = 'scroll-pane'>
    <div class = 'inner-pulse'>
      <div class = 'pad-top'></div>
-    <div class = 'mar-container'>
-    <%= yield  %>
-    </div>
-      </div>
-    </div>
+         <div class = 'mar-container'>
+             <%= yield  %>
+         </div>
+     </div>
   </div>
 </div>
-</div>
+</body>
+</html>
 <%else%>
 <div class = 'fill-pane'>
     <div class = 'background-pane'>

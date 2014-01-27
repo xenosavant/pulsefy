@@ -10,7 +10,7 @@
   <%= link_to pluralize(@node.outputs.count, 'output'), otheroutputs_path(:id => @node.id) %>
 </div>
 <div class='info'>
-  <%= @node.info%>
+  <%= simple_format(@node.info)%>
 </div>
 <% if @node.pulses.any? %>
       <h4>Pulsefeed</h4>

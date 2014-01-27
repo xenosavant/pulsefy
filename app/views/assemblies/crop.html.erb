@@ -1,3 +1,4 @@
+<div class = 'pad-block'><div class = 'title-box'>Crop Photo </div></div>
 <% content_for(:head) do %>
     <%= stylesheet_link_tag 'jquery.Jcrop' %>
     <%= javascript_include_tag 'jquery.Jcrop.min' %>
@@ -20,7 +21,7 @@
             var ry = 100/coords.h;
             var lw = $('#cropbox').width();
             var lh = $('#cropbox').height();
-            var ratio = <%= @node.avatar_geometry[:width] %> / lw ;
+            var ratio = <%= @assembly.avatar_geometry[:width] %> / lw ;
 
             $('#preview').css({
                 width: Math.round(rx * lw) + 'px',
@@ -36,9 +37,12 @@
     </script>
 <% end %>
 
-<%= image_tag @node.avatar_url(:large), :id => "cropbox" %>
+<%if !@assembly.avatar.file.nil? %>
+<%= image_tag @assembly.avatar_url(:large), :id => "cropbox" %>
+<%else %>
 
-<%= form_for @assembly, :url => { :action => 'crop_update', :controller => 'assembly', :id => @assembly.id} do |f| %>
+<%end %>
+        <%= form_for @assembly, :url => { :action => 'crop_update', :controller => 'assemblies', :id => @assembly.id} do |f| %>
     <% for attribute in [:crop_x, :crop_y, :crop_h, :crop_w] %>
         <%= f.hidden_field attribute, :id => attribute %>
     <% end %>

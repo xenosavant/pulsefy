@@ -17,7 +17,7 @@
         <% end %>
           </div>
           <div class='info'>
-            <%= @assembly.info%>
+            <%= simple_format(@assembly.info)%>
           </div>
         <% if params[:errors] %>
             <div class="alert alert-error">

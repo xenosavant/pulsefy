@@ -38,11 +38,12 @@ class AssembliesController < ApplicationController
     if @assembly.update_attributes(params[:node])
       if params[:assembly][:avatar].blank?
         flash[:success] = "Assembly Updated!"
-        redirect_to :controller => 'assembly', :action => 'show', :id => '1'
+        redirect_to :controller => 'assemblies', :action => 'show', :id => params[:id]
       else
-        render :action => 'crop'
+        redirect_to :controller => 'assemblies', :action => 'crop', :id => @assembly.id
       end
-      render 'edit'
+    else
+      render 'assemblies/edit'
     end
   end
 
@@ -80,11 +81,11 @@ class AssembliesController < ApplicationController
     @assembly.crop_y = params[:assembly]['crop_y']
     @assembly.crop_h = params[:assembly]['crop_h']
     @assembly.crop_w = params[:assembly]['crop_w']
-    if @assembly.save(params[:node])
+    if @assembly.save(params[:assembly])
       flash[:success] = "Assembly Updated!"
       redirect_to :controller => 'assembly', :action => 'show', :id => @assembly.id
     else
-      render 'crop'
+      render 'assemblies/crop'
     end
 
   end
