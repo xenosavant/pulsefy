@@ -10,11 +10,11 @@
   <div class = 'micro-axon'>
     <div class = 'com-wrapper'>
     <%= simple_format(pulse_comment.content) %>
-    </div>
+<div class="pulse-stamp">Commented <%= time_ago_in_words(pulse_comment.created_at) %> ago.
+</div>
+</div>
     <div class = 'micro-close-container'>
       <%= link_to 'x', uncomment_path(:id => pulse_comment.id) %>
     </div>
-<div class="timestamp">Commented <%= time_ago_in_words(pulse_comment.created_at) %> ago.
-</div>
 </div>
 </li>

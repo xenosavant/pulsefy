@@ -46,10 +46,13 @@ $lightSlate: #d0dfef;
   text-align: left;
   width: 350px;
   height: auto;
+  min-height:70px;
   oveflow: auto;
   position:relative;
   left: 75px;
   z-index: 0;
+  overflow:hidden;
+  word-wrap: true;
   display: block;
   padding-left: 10px;
   padding-bottom: 10px;
@@ -64,7 +67,9 @@ $lightSlate: #d0dfef;
 
 .com-wrapper {
   background-color:#eeeeee;
-  width:350px;
+  width:340px;
+  min-height:50px;
+  padding:5px;
   height:auto;
 }
 
@@ -73,7 +78,7 @@ $lightSlate: #d0dfef;
   position:absolute;
   display:inline;
   top: -2px;
-  left: 317px;
+  left: 380px;
   a {
     color:$lightSlate !important;
     &:hover {
@@ -81,4 +86,14 @@ $lightSlate: #d0dfef;
       text-decoration: none;
     }
   }
+}
+
+.pulse-stamp {
+  float:right;
+  float:bottom;
+  font-style:italic;
+  color: $grayLight;
+  display:block;
+  width:auto;
+  height:22px;
 }

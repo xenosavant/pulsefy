@@ -67,9 +67,13 @@ $graydarker: #1c2025;
 
 .show-timestamp {
   color: $grayLight;
-  display:inline;
+  display:block;
   padding:1px;
   width:200px;
+}
+
+.show-tags {
+
 }
 
 .tags {
@@ -241,7 +245,6 @@ $graydarker: #1c2025;
 .rating-show-wrapper-down {
   font-size: 30px;
   position:relative;
-  float:right;
   display:inline;
   height:40px;
   overflow:hidden;
@@ -260,7 +263,6 @@ $graydarker: #1c2025;
 .rating-show-wrapper-up {
   font-size: 30px;
   position:relative;
-  float:right;
   display:inline;
   height:40px;
   overflow:hidden;
@@ -312,6 +314,20 @@ $graydarker: #1c2025;
  width:auto;
  height:22px;
  padding-right:10px;
+}
+
+.left-block {
+ position:relative;
+ width:auto;
+ display:inline;
+ height:40px;
+}
+
+.right-block {
+  position:relative;
+  width:auto;
+  display:inline;
+  height:40px;
 }
 
 .text-wrapper {
