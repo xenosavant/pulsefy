@@ -8,6 +8,6 @@
     <% end %>
          <div class = 'name-container'>  <%= link_to node.username,  :action => 'show', :controller => 'nodes', :id => node.id %>  </div>
   <% if signed_in? and current_node.admin == true and !current_node?(node) %>
-      <div class = 'node-close'><%= link_to 'X', node, :method => :delete, :data => {:confirm => 'You sure?'} %></div>
+      <div class = 'node-close'><%= link_to 'x', node, :method => :delete, :data => {:confirm => 'You sure?'} %></div>
   <% end %>
 </li>

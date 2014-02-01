@@ -21,7 +21,7 @@ $frameColor: #121212;
     padding-top:10px;
     padding-bottom: 10px;
     padding-left: 10px;
-    border-bottom: 1px solid $lightSlate;
+    border-bottom: 5px solid $lightSlate;
   }
 }
 
@@ -39,4 +39,25 @@ $frameColor: #121212;
 
 .timestamp {
   color: $grayLight;
+}
+
+.name-container {
+  display:inline;
+  position:relative;
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left:50px;
+  margin-right:auto;
+}
+
+.assembly-close {
+  position:relative;
+  left:-15px;
+  top:5px;
+  a {
+    color:$lightSlate !important;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
