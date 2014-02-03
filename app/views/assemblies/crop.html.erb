@@ -9,7 +9,7 @@
             $('#cropbox').Jcrop({
                 onChange: update_crop,
                 onSelect: update_crop,
-                setSelect: [0, 0, 500, 500],
+                setSelect: [0, 0, 500, 700],
                 minSize: [ 300,300 ],
                 maxSize: [ 300,300 ],
                 aspectRatio: 1
@@ -37,11 +37,8 @@
     </script>
 <% end %>
 
-<%if !@assembly.avatar.file.nil? %>
 <%= image_tag @assembly.avatar_url(:large), :id => "cropbox" %>
-<%else %>
 
-<%end %>
         <%= form_for @assembly, :url => { :action => 'crop_update', :controller => 'assemblies', :id => @assembly.id} do |f| %>
     <% for attribute in [:crop_x, :crop_y, :crop_h, :crop_w] %>
         <%= f.hidden_field attribute, :id => attribute %>

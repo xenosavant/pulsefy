@@ -13,7 +13,6 @@ class Assembly < ActiveRecord::Base
    include Network
 
    def reprocess_avatar
-     self.avatar.cache_stored_file!
      self.avatar.recreate_versions!
    end
 

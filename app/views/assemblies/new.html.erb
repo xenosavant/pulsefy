@@ -10,6 +10,15 @@
       <%= f.text_area :info, :size => '15x8' %>
       </div>
 
+    <div class = 'input'>
+      <%if !@assembly.avatar.file.nil? %>
+          <%= image_tag @assembly.avatar_url(:thumb) %>
+      <% else%>
+          <%= image_tag 'Q100.jpg' %>
+      <%end%>
+      <%= f.file_field :avatar %>
+    </div>
+    <div class = 'button-box'>
       <%= f.submit 'Assemble!', :class => 'btn btn-medium btn-primary' %>
       </div>
       <% end %>

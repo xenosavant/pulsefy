@@ -17,9 +17,9 @@ class AssembliesController < ApplicationController
   end
 
   def destroy
-  @assembly = Assembly.find(params[:id])
-  @assembly.destroy
-  redirect_to view_path(:id => current_node.id)
+    @assembly = Assembly.find(params[:id])
+    @assembly.destroy
+    redirect_to view_path(:id => current_node.id)
   end
 
   def show
@@ -37,8 +37,7 @@ class AssembliesController < ApplicationController
     @assembly = Assembly.find(params[:id])
     if @assembly.update_attributes(params[:node])
       if params[:assembly][:avatar].blank?
-        flash[:success] = "Assembly Updated!"
-        redirect_to :controller => 'assemblies', :action => 'show', :id => params[:id]
+        redirect_to :controller => 'assemblies', :action => 'show', :id => @assembly.id
       else
         redirect_to :controller => 'assemblies', :action => 'crop', :id => @assembly.id
       end
