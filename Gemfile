@@ -26,6 +26,7 @@ gem 'jquery-ui-rails'
 gem 'less-rails'
 gem 'therubyracer', '~> 0.10.2'
 gem  'font-awesome-rails'
+gem 'rvm'
 
 group :production do
   gem 'pg'
