@@ -81,8 +81,7 @@ class AssembliesController < ApplicationController
     @assembly.crop_h = params[:assembly]['crop_h']
     @assembly.crop_w = params[:assembly]['crop_w']
     if @assembly.save(params[:assembly])
-      flash[:success] = "Assembly Updated!"
-      redirect_to :controller => 'assembly', :action => 'show', :id => @assembly.id
+      redirect_to :controller => 'assemblies', :action => 'show', :id => @assembly.id
     else
       render 'assemblies/crop'
     end

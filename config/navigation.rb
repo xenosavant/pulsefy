@@ -36,7 +36,7 @@ SimpleNavigation::Configuration.run do |navigation|
     primary.item :edit, 'Info', edit_path, :if => Proc.new { edit_menu? }
     primary.item :crop, 'Crop', crop_path, :if => Proc.new { crop_menu? }
     primary.item :edit, 'Edit', reassemble_path, :if => Proc.new { assedit_menu? }
-    primary.item :crop, 'Crop', asscrop_path, :if => Proc.new { asscrop_menu? }
+    primary.item :asscrop, 'Crop', asscrop_path, :if => Proc.new { asscrop_menu? }
     primary.item :account, 'Account', account_path, :if => Proc.new { edit_menu? }
     primary.item :myassemblies, 'My Assemblies', view_path, :if => Proc.new { assembly_menu? }
     primary.item :reassemble, 'Form An Assembly', assemble_path, :if => Proc.new { assembly_menu? }

@@ -36,7 +36,7 @@ module Network
                  end
           else
               @synapse = self.connectors.build
-              @synapse.update_attributes(:strength => 0.46, :output_id => p.pulser)
+              @synapse.update_attributes(:strength => 0.5, :output_id => p.pulser)
           end
         end
       end
