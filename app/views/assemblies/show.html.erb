@@ -19,18 +19,6 @@
           <div class='info'>
             <%= simple_format(@assembly.info)%>
           </div>
-        <% if params[:errors] %>
-            <div class="alert alert-error">
-              The form contains <%= pluralize(params[:errors].count, "error") %>.
-            </div>
-            <div id="error_explanation">
-              <ul>
-                <%params[:errors].each do |msg| %>
-                    <li> <%= msg %></li>
-                <% end %>
-              </ul>
-            </div>
-        <%end%>
       <% else %>
         <%= link_to 'join', join_path(:id => @assembly.id)%>
     <% end %>

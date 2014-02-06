@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130618020317) do
+ActiveRecord::Schema.define(:version => 20140205191148) do
 
   create_table "assemblies", :force => true do |t|
     t.string   "title"
@@ -69,6 +69,7 @@ ActiveRecord::Schema.define(:version => 20130618020317) do
   end
 
   add_index "nodes", ["email"], :name => "index_nodes_on_email", :unique => true
+  add_index "nodes", ["self_tag"], :name => "index_nodes_on_self_tag", :unique => true
 
   create_table "nodes_pulses", :id => false, :force => true do |t|
     t.integer "node_id"
@@ -88,6 +89,7 @@ ActiveRecord::Schema.define(:version => 20130618020317) do
     t.integer  "reinforcements"
     t.integer  "degradations"
     t.integer  "pulser"
+    t.integer  "refires"
     t.integer  "pulse_comments_count", :default => 0
     t.string   "pulser_type"
     t.string   "tags"
@@ -103,6 +105,13 @@ ActiveRecord::Schema.define(:version => 20130618020317) do
   end
 
   add_index "pulses", ["pulser", "created_at"], :name => "index_pulses_on_pulser_and_created_at"
+
+  create_table "repulses", :force => true do |t|
+    t.integer  "node_id"
+    t.integer  "pulse_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "votes", :force => true do |t|
     t.integer  "node_id"

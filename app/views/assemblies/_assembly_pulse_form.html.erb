@@ -1,4 +1,14 @@
 <%= form_for(@pulse) do |f| %>
+
+    <% if params[:errors] %>
+        <div id="error_explanation">
+          <ul>
+            <%params[:errors].each do |msg| %>
+                <li> <%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <%end%>
     <div class="field">
       <%= f.text_field :headline, :placeholder => "Add a headline" %>
     </div>

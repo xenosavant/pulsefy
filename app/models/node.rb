@@ -4,7 +4,8 @@ class Node < ActiveRecord::Base
   mount_uploader :avatar, AvatarUploader
   attr_accessible :username, :email, :info, :threshold,
                   :password, :password_confirmation, :avatar, :self_tag,
-                  :crop_x, :crop_y, :crop_w, :crop_h, :remember_token
+                  :crop_x, :crop_y, :crop_w, :crop_h, :remember_token,
+                  :hub, :admin, :verified, :self_tag
   after_update :reprocess_avatar, :if => :cropping?
   has_secure_password
   before_save { |node| node.email = email.downcase }
@@ -25,6 +26,7 @@ class Node < ActiveRecord::Base
       :class_name =>  'Connector', :dependent =>  :destroy
   has_many :inputs, :through => :reverse_relationships
   has_many :votes
+  has_many :repulses
   has_one  :inbox
 
   include Network
@@ -34,6 +36,16 @@ class Node < ActiveRecord::Base
     process_fire_from(:pulse => @impulse)
     modify_self(:pulse => @impulse)
   end
+
+  def re_fire(args)
+    @impulse = args[:pulse]
+    @repulse = self.repulses.build
+    process_fire_from(:pulse => @impulse)
+    modify_self(:pulse => @impulse)
+    @repulse.update_attributes(:pulse_id => @impulse.id)
+    @impulse.increment!(:refires)
+  end
+
 
   def get_pulse(args)
     @impulse = args[:pulse]

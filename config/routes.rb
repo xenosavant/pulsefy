@@ -30,6 +30,7 @@ Pulsefy::Application.routes.draw do
   match '/assemble' => 'assemblies#new'
   match '/comment' => 'pulses#show'
   match '/cast' => 'pulses#cast'
+  match '/refire' => 'pulses#refire'
   match '/edit' => 'nodes#edit'
   match '/index' => 'nodes#index', :as => 'index'
   match '/pulseup' => 'nodes#new', :as => 'pulseup'

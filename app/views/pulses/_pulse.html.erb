@@ -26,14 +26,18 @@
       <%= pulse.headline %>
     </div>
     <% end %>
-  <% case pulse.link_type %>
-  <%when 'video' %>
-      <div class ="video-container"><%= raw pulse.embed_code %></div>
-  <%when 'photo' %>
-      <div class ="photo-container"> <img src = <%= raw pulse.url %> ></div>
-  <%else%>
-      <div class ="link-container"><a href = <%= pulse.link %>><%= pulse.link%></a></div>
-  <%end%>
+  <%if pulse.link %>
+      <% case pulse.link_type %>
+      <%when 'video' %>
+          <div class ="video-container"><%= raw pulse.embed_code %></div>
+      <%when 'photo' %>
+          <div class ="photo-container"> <img src = <%= raw pulse.url %> ></div>
+      <%else%>
+            <%if !pulse.link.nil? %>
+          <div class ="link-container"><a href = <%= pulse.link %>><%= pulse.link%></a></div>
+            <%end%>
+      <%end%>
+  <% end %>
     <div class = 'text-wrapper'>
   <%= simple_format(pulse.content) %>
    </div>
@@ -75,17 +79,43 @@
                   <div class = 'number-block'><%= pulse.degradations %> </div>
                 </div>
             <%end%>
-        <%end%>
+
+      <% case current_node.repulses.find_by_pulse_id(pulse.id).nil? %>
+      <% when true%>
+          <% if current_node.pulses.include?(pulse) and pulse.pulser != current_node %>
+              <div class = 'refire-block'>
+                <%= link_to(cast_path(:id => pulse.id)) do %>
+                    <i class='fa fa-large fa-mail-forward'></i>
+                <% end %>
+              </div>
+              <div class = 'number-block'><%= pulse.refires %></div>
+          <% else %>
+              <div class = 'refire-block'>
+                    <i class='fa fa-large fa-mail-forward'></i>
+              </div>
+              <div class = 'number-block'><%= pulse.refires %></div>
+          <%end%>
+          <% when false %>
+              <div class = 'refire-block'>
+                <i class='fa fa-large fa-mail-forward'></i>
+              </div>
+              <div class = 'number-block'><%= pulse.refires %></div>
+    <%end%>
+  <%end%>
+
+
     <div class="tags"><%= pulse.tags %></div>
-    <div class = 'mid-info'>
+     <div class = 'mid-info'>
       <div class = 'comment-box'>
         <%= link_to pluralize(pulse.pulse_comments.count, 'comment'), comment_path(:id => pulse.id) %>
       </div>
-      <div class="timestamp">
+       <div class="timestamp">
         Fired <%= time_ago_in_words(pulse.created_at) %> ago.
+
+
       </div>
-    </div>
      </div>
    </div>
+  </div>
  </div>
 </li>

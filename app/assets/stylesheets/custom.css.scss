@@ -115,7 +115,7 @@ body {
   position:relative;
   z-index: 1;
   height:auto;
-  min-height:700px;
+  min-height:90%;
   width: 650px;
   margin-left:260px;
   margin-right:260px;
@@ -160,6 +160,7 @@ body {
 .mar-container {
   position:relative;
   width:500px;
+  min-height:800px;
   margin-left:auto;
   margin-right:auto;
   height:auto;
