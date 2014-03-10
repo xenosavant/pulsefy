@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140205191148) do
+ActiveRecord::Schema.define(:version => 20140225194332) do
 
   create_table "assemblies", :force => true do |t|
     t.string   "title"
@@ -47,6 +47,37 @@ ActiveRecord::Schema.define(:version => 20140205191148) do
   add_index "connectors", ["input_id", "output_id"], :name => "index_connectors_on_input_id_and_output_id", :unique => true
   add_index "connectors", ["input_id"], :name => "index_connectors_on_input_id"
   add_index "connectors", ["output_id"], :name => "index_connectors_on_output_id"
+
+  create_table "convos", :force => true do |t|
+    t.integer  "dialogue_id"
+    t.integer  "interrogator_id"
+    t.integer  "interlocutor_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  add_index "convos", ["dialogue_id"], :name => "index_convos_on_dialogue_id"
+
+  create_table "dialogues", :force => true do |t|
+    t.integer  "node_id"
+    t.integer  "receiver_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "dialogues", ["receiver_id"], :name => "index_dialogues_on_receiver_id"
+
+  create_table "messages", :force => true do |t|
+    t.integer  "convo_id"
+    t.integer  "receiver_id"
+    t.integer  "sender_id"
+    t.string   "content"
+    t.boolean  "read"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "messages", ["convo_id"], :name => "index_messages_on_convo_id"
 
   create_table "nodes", :force => true do |t|
     t.string   "username"

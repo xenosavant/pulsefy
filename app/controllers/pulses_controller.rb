@@ -55,7 +55,8 @@ include SessionsHelper
 
   def refire
     @pulse = Pulse.find(params[:id])
-    current_node.refire(:pulse => @pulse)
+    current_node.re_fire(:pulse => @pulse)
+    return_back_to
   end
 
 def update_embed

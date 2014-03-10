@@ -1,0 +1,15 @@
+<li>
+      <div class = 'soma-message'>
+        <%if !current_node.avatar.file.nil? %>
+            <%= image_tag current_node.avatar_url(:micro) %>
+        <%else%>
+            <%= image_tag 'Q50.jpg' %>
+        <%end%>
+        <div class = 'soma-to-axon-message'></div>
+      </div>
+      <div class = 'axon-message'>
+        <div class = 'mess-wrapper' >
+          <%= simple_format(message.content) %>
+        </div>
+      </div>
+</li>

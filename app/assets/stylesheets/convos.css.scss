@@ -1,0 +1,41 @@
+$grayMediumLight: #eaeaea;
+$lightSlate: #d0dfef;
+
+.convos {
+  width: 450px;
+  list-style: none;
+  position:relative;
+  background-color:$grayMediumLight;
+  li {
+    width:430px;
+    height:100px;
+    padding:10px;
+    border-bottom: 5px solid $lightSlate;
+  }
+}
+
+.interrogator-box {
+  display:inline;
+  float:left;
+  height:100px;
+  width:100px;
+}
+
+.interlocutor-box {
+  display:inline;
+  float:right;
+  height:100px;
+  width:100px;
+}
+
+.time-background {
+  position:absolute;
+  display:inline;
+  margin-top:30px;
+  padding-top:5px;
+  padding-bottom:8px;
+  width:230px;
+  height:16px;
+  background-color:#eeeeee;
+  text-align:center;
+}

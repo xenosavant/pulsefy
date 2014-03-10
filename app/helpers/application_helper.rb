@@ -135,5 +135,15 @@ module ApplicationHelper
     end
   end
 
+
+  def inbox_menu?
+    case params[:controller]
+      when 'inboxes'
+         true
+      else
+         false
+    end
+  end
+
 end
 

@@ -1,0 +1,21 @@
+<li>
+ <div class = 'messenger-box'>
+  <%if !Node.find(dialogue.node_id).avatar.file.nil? %>
+      <%= link_to image_tag(Node.find(dialogue.node_id).avatar_url(:thumb)), :action => 'show', :controller => 'nodes', :id => dialogue.node_id %>
+  <% else%>
+      <%= link_to image_tag('Q100.jpg'), :action => 'show', :controller => 'nodes', :id => dialogue.node_id %>
+  <%end%>
+ </div>
+  <div class = 'time-background'>
+      <%= link_to :action => 'show_convos', :controller => 'inboxes', :id => dialogue.id  do  %>
+      Started <%= time_ago_in_words(dialogue.created_at) %> ago.
+      <% end %>
+  </div>
+  <div class = 'receiver-box'>
+    <%if !Node.find(dialogue.receiver_id).avatar.file.nil? %>
+     <%= link_to image_tag(Node.find(dialogue.receiver_id).avatar_url(:thumb)), :action => 'show', :controller => 'nodes', :id => dialogue.receiver_id %>
+    <% else%>
+      <%= link_to image_tag('Q100.jpg'), :action => 'show', :controller => 'nodes', :id => dialogue.receiver_id  %>
+    <%end%>
+  </div>
+</li>

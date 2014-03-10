@@ -1,5 +1,5 @@
 <!--<title-box>-->
-<h3><%= pluralize(@assembly.nodes.count, 'Member') %></h3>
+<div class = 'pad-block'><div class = 'title-box'> Members of <%= @assembly.title %></div></div>
 <!--</title-box>-->
 <% if !@nodes.nil? %>
     <%= will_paginate %>

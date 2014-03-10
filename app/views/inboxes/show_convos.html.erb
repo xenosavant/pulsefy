@@ -1,0 +1,15 @@
+<div class = 'pad-block'>
+  <div class = 'title-box'> My Conversations With
+    <% if @dialogue.node_id = current_node.id  %>
+     <%= Node.find(@dialogue.receiver_id).username %>
+    <% else %>
+     <%= Node.find(@dialogue.node_id).username %>
+     <% end %>
+  </div>
+</div>
+<% if !@convos.nil? %>
+    <ol class='convos'>
+      <%= render @convos %>
+    </ol>
+    <%= will_paginate @convos %>
+<% end %>

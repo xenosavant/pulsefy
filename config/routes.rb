@@ -5,9 +5,13 @@ Pulsefy::Application.routes.draw do
   resources :sessions, :only => [:new, :create, :destroy]
   resources :pulses, :only => [:reinforce, :degrade, :create, :destroy, :show]
   resources :pulse_comments
+  resources :messages
 
   root :to => 'static#home'
 
+  match '/inbox' => 'inboxes#show_dialogues'
+  match '/dialogue' => 'inboxes#show_convos'
+  match '/conversation' => 'convos#show_messages'
   match '/show' => 'nodes#show'
   match '/crop' => 'nodes#crop'
   match '/crop_update' => 'nodes#crop_update'
@@ -36,6 +40,9 @@ Pulsefy::Application.routes.draw do
   match '/pulseup' => 'nodes#new', :as => 'pulseup'
   match '/pulsein' => 'sessions#new', :as => 'pulsein'
   match '/pulseout', :to => 'sessions#destroy', :via => :delete
+  match '/inboxes/show_messages' => 'inboxes#show_messages'
+  match '/inboxes/show_dialogues' => 'inboxes#show_dialogues'
+  match '/inboxes/show_convos' => 'inboxes#show_convos'
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase

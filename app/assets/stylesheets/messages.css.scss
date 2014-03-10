@@ -1,0 +1,72 @@
+$grayMediumLight: #eaeaea;
+$lightSlate: #d0dfef;
+
+.messages {
+  list-style: none;
+  width: 400px;
+  position:relative;
+  padding-bottom:15px;
+  li {
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:5px;
+    padding-bottom:5px;
+  }
+}
+
+.soma-message {
+  z-index: 1;
+  position:absolute;
+  display:block;
+  height:50px;
+  width:50px;
+  min-width:15px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  background-color: #eaeaea;
+  text-align: center;
+  float:left;
+  padding:5px;
+}
+
+.soma-to-axon-message {
+  z-index: 2;
+  position: absolute;
+  top:20px;
+  left: 60px;
+  height: 10px;
+  background-color :$grayMediumLight;
+  display: block;
+  width: 15px;
+}
+
+.axon-message {
+  text-align: left;
+  width: 350px;
+  height: auto;
+  oveflow: auto;
+  position:relative;
+  left: 75px;
+  z-index: 0;
+  overflow:hidden;
+  word-wrap: true;
+  display: block;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  color:#000;
+  background-color:$grayMediumLight;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  height:auto;
+}
+
+.mess-wrapper {
+  background-color:#eeeeee;
+  width:340px;
+  min-height:50px;
+  padding:5px;
+  height:auto;
+}

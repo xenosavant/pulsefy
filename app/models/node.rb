@@ -19,16 +19,14 @@ class Node < ActiveRecord::Base
   validates :info, :length => { :maximum => 250 }
   has_and_belongs_to_many :pulses
   has_and_belongs_to_many :assemblies
-  has_and_belongs_to_many :conversations
   has_many :connectors, :foreign_key => 'input_id', :dependent => :destroy
   has_many :outputs, :through => :connectors
   has_many :reverse_relationships, :foreign_key => 'output_id',
       :class_name =>  'Connector', :dependent =>  :destroy
   has_many :inputs, :through => :reverse_relationships
+  has_many :dialogues, :dependent => :destroy
   has_many :votes
   has_many :repulses
-  has_one  :inbox
-
   include Network
 
   def fire_pulse(args)
@@ -59,6 +57,24 @@ class Node < ActiveRecord::Base
     pulse = args[:pulse]
     pulse.pulse_comments.create(:comment => args[:comment], :commenter => self.id )
   end
+
+  def receive_message(args)
+    @receiver_id = args[:receiver_id];
+    @sender_id =  args[:sender_id];
+    if args[:dialogue_exists]
+      if args[:convo_exists]
+        @convo = self.dialogues.find_by_interlocutor(@sender.id).convos.last
+      else
+        @convo = self.dialogues.find_by_interlocutor(@sender.id).convos.build
+      end
+    else
+      @dialogue = self.dialogues.build
+      @dialogue.update_attributes(:interlocutor => @receiver.id, :initiator => self.id)
+      @convo =  @dialogue.convos.build
+    end
+      @convo.messages << args[:message]
+  end
+
 
   def rate_pulse(args)
     @impulse = args[:pulse]

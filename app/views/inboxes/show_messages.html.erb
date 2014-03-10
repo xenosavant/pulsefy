@@ -1,0 +1,7 @@
+<div class = 'pad-block'><div class = 'title-box'> Messages </div></div>
+<% if !@messages.nil? %>
+    <ol class="messages">
+      <%= render @messages %>
+    </ol>
+    <%= will_paginate @messages %>
+<% end %>

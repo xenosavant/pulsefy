@@ -1,0 +1,28 @@
+<%= form_for (@message) do |f| %>
+    <% if params[:errors] %>
+        <div id="error_explanation">
+          <ul>
+            <%params[:errors].each do |msg| %>
+                <li> <%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <%end%>
+    <div class="textarea">
+      <%= f.text_area :content, :rows => 4 %>
+    </div>
+    <%case params[:controller]%>
+        <% when 'nodes' %>
+            <%= f.hidden_field :receiver_id, :value => @node.id %>
+        <% when 'inboxes' %>
+        <%case params[:action]%>
+          <% when 'show_messages' %>
+            <% if @convo.interrogator_id = current_node.id %>
+               <%= f.hidden_field :receiver_id, :value => @convo.interlocutor_id %>
+           <% else %>
+               <%= f.hidden_field :receiver_id, :value => @convo.interrogator_id %>
+           <% end %>
+        <% end %>
+    <% end %>
+    <%= f.submit "Message", :class => "btn btn-small btn-primary" %>
+<% end %>

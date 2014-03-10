@@ -1,5 +1,0 @@
-class InboxController < ApplicationController
-
-
-
-end

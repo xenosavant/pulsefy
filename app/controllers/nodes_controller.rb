@@ -4,6 +4,7 @@ class NodesController < ApplicationController
 
   def show
     @node = Node.find(params[:id])
+    @message = Message.new
     store_location(@node.id, 'Node')
     @pulses = @node.pulses.paginate(:page => params[:page])
   end
@@ -19,6 +20,7 @@ class NodesController < ApplicationController
       redirect_to :controller => 'nodes', :action => 'new', :errors => @node.errors.full_messages
     end
   end
+
 
   def edit
     @node = current_node
@@ -49,7 +51,6 @@ class NodesController < ApplicationController
   def destroy
     if is_an_admin?
     Node.find(params[:id]).destroy
-    flash[:success] = "Pusler destroyed."
     redirect_to root_path
     end
   end

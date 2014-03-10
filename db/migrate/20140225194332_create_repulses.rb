@@ -1,4 +1,4 @@
-class Repulse < ActiveRecord::Migration
+class CreateRepulses < ActiveRecord::Migration
   def change
     create_table :repulses do |t|
       t.references :node

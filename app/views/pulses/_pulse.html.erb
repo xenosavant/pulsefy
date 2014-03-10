@@ -82,9 +82,9 @@
 
       <% case current_node.repulses.find_by_pulse_id(pulse.id).nil? %>
       <% when true%>
-          <% if current_node.pulses.include?(pulse) and pulse.pulser != current_node %>
+          <% if current_node.pulses.include?(pulse) and pulse.pulser != current_node.id %>
               <div class = 'refire-block'>
-                <%= link_to(cast_path(:id => pulse.id)) do %>
+                <%= link_to(refire_path(:id => pulse.id)) do %>
                     <i class='fa fa-large fa-mail-forward'></i>
                 <% end %>
               </div>
@@ -100,10 +100,8 @@
                 <i class='fa fa-large fa-mail-forward'></i>
               </div>
               <div class = 'number-block'><%= pulse.refires %></div>
-    <%end%>
-  <%end%>
-
-
+   <%end%>
+ <%end%>
     <div class="tags"><%= pulse.tags %></div>
      <div class = 'mid-info'>
       <div class = 'comment-box'>
@@ -111,8 +109,6 @@
       </div>
        <div class="timestamp">
         Fired <%= time_ago_in_words(pulse.created_at) %> ago.
-
-
       </div>
      </div>
    </div>
