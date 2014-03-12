@@ -7,11 +7,11 @@
   <div class ='name-container'>
   <%= link_to assembly.title, assembly_path(:id => assembly.id) %>
   </div>
-  <% if signed_in? and assembly.founder == current_node.id %>
-      <span class="founder">founded by Me</span>
-      <div class = 'assembly-close'> <%= link_to 'x', assembly, :method => :delete, :data => {:confirm => 'You sure?'} %></div>
-  <% else %>
-      <span class="founder">founded by <%= Node.find(assembly.founder).username %></span>
-   <% end %>
+  <!--<% if signed_in? and assembly.founder == current_node.id %>-->
+      <!--<span class="founder">founded by Me</span>-->
+      <!--<div class = 'assembly-close'> <%= link_to 'x', assembly, :method => :delete, :data => {:confirm => 'You sure?'} %></div>-->
+  <!--<% else %>-->
+      <!--<span class="founder">founded by <%= Node.find(assembly.founder).username %></span>-->
+   <!--<% end %>-->
 </li>
 
