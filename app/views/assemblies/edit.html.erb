@@ -1,7 +1,7 @@
 <div class = 'pad-block'><div class = 'title-box'>Edit Your Assembly </div></div>
 <% provide(:title, "Edit assembly") %>
 
-    <%= form_for @assembly, :html => {:multipart => true} do |f| %>
+<%= form_for @assembly, :html => { :action => 'update', :controller => 'assemblies', :id => @assembly.id} do |f| %>
         <%= render 'shared/error_messages', :object => f.object %>
 
         <%= f.label :info %>
