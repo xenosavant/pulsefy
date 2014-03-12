@@ -19,8 +19,6 @@ class AvatarUploader < CarrierWave::Uploader::Base
     "avatars/#{model.class.to_s.underscore}/#{model.id}/"
   end
 
-  # Provide a default URL as a default if there hasn't been a file uploaded:
-
   def cache_dir
     "#{Rails.root}/tmp/uploads"
   end
