@@ -77,8 +77,10 @@ $lightSlate: #d0dfef;
   z-index:2;
   position:absolute;
   display:inline;
-  top: -9px;
+  top: -7px;
   left: 358px;
+  font-weight:bold;
+  font-size: 0.7em;
   a {
     color:$lightSlate !important;
     &:hover {
