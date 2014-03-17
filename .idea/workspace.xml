@@ -202,7 +202,7 @@
       <file leaf-file-name="_message.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/messages/_message.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="34" selection-start="39" selection-end="39" vertical-scroll-proportion="0.039893616">
+            <state line="13" column="5" selection-start="458" selection-end="458" vertical-scroll-proportion="0.51861703">
               <folding />
             </state>
           </provider>
@@ -1169,7 +1169,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/messages/_message.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="34" selection-start="39" selection-end="39" vertical-scroll-proportion="0.039893616">
+        <state line="13" column="5" selection-start="458" selection-end="458" vertical-scroll-proportion="0.51861703">
           <folding />
         </state>
       </provider>
