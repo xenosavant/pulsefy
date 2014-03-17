@@ -2,7 +2,7 @@ class MessagesController < ApplicationController
   include SessionsHelper
 
   def create
-    @node = Node.find(session[:return_to])
+    @node = Node.find(session[:receiver])
     case !current_node.dialogues.where(:receiver_id => @node.id).exists? and !@node.dialogues.where(:receiver_id => current_node.id).exists?
       when true
         @dialogue = current_node.dialogues.build

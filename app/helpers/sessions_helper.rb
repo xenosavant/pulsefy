@@ -35,6 +35,11 @@ module SessionsHelper
     session[:return_to] = location
   end
 
+  def store_receiver(receiver)
+    session[:receiver] = receiver
+  end
+
+
   def sign_out
     self.current_node = nil
     cookies.delete(:remember_token)

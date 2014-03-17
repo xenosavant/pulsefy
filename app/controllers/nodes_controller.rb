@@ -6,6 +6,7 @@ class NodesController < ApplicationController
     @node = Node.find(params[:id])
     @message = Message.new
     store_location(@node.id, 'Node')
+    store_receiver(params[:id])
     @pulses = @node.pulses.paginate(:page => params[:page])
   end
 
