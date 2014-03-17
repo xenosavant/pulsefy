@@ -1,19 +1,11 @@
 <li>
       <div class = 'soma-message'>
-        <% case message.sender_id = current_node.id  %>
-        <% when true %>
             <%if !current_node.avatar.file.nil? %>
-                 <%= image_tag current_node.avatar_url(:micro) %>
+                 <%= image_tag Node.find(message.sender_id).avatar_url(:micro) %>
             <%else%>
             <%= image_tag 'Q50.jpg' %>
             <%end%>
-        <% when false%>
-            <%if !Node.find(message.sender_id).avatar.file.nil? %>
-                <%= image_tag Node.find(message.sender_id).avatar_url(:micro) %>
-            <%else%>
-                <%= image_tag 'Q50.jpg' %>
-            <%end%>
-        <% end%>
+      </div>
         <div class = 'soma-to-axon-message'></div>
       </div>
       <div class = 'axon-message'>
