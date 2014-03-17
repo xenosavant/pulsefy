@@ -4,14 +4,14 @@ class InboxesController < ApplicationController
     @node = current_node
     case @node.dialogues.any?
       when true
-        if Dialogue.where(:receiver_id => current_node.id).nil?
+        if Dialogue.where(:receiver_id => @node.id).nil?
            @sum = @node.dialogues
         else
-           @sum = @node.dialogues + Dialogue.where(:receiver_id => current_node.id)
+           @sum = @node.dialogues + Dialogue.where(:receiver_id => @node.id)
         end
       when false
-        if !Dialogue.where(:receiver_id => current_node.id).nil?
-          @sum = Dialogue.where(:receiver_id => current_node.id)
+        if !Dialogue.where(:receiver_id => @node.id).nil?
+          @sum = Dialogue.where(:receiver_id => @node.id)
         else
           @sum = nil
         end
@@ -33,6 +33,7 @@ class InboxesController < ApplicationController
   def show_messages
     @message = Message.new
     @convo = Convo.find(params[:id])
+    @node = Node.find(@message.sender_id)
     store_location(params[:id], 'Inbox')
     @messages = Message.where(:convo_id => params[:id]).paginate(:page => params[:page])
   end

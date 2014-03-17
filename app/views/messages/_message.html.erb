@@ -1,7 +1,7 @@
 <li>
       <div class = 'soma-message'>
-        <%if !current_node.avatar.file.nil? %>
-            <%= image_tag current_node.avatar_url(:micro) %>
+        <%if !@node.avatar.file.nil? %>
+            <%= image_tag @node.avatar_url(:micro) %>
         <%else%>
             <%= image_tag 'Q50.jpg' %>
         <%end%>

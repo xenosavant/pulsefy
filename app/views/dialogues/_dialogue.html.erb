@@ -8,8 +8,12 @@
  </div>
   <div class = 'time-background'>
       <%= link_to :action => 'show_convos', :controller => 'inboxes', :id => dialogue.id  do  %>
-      Started <%= time_ago_in_words(dialogue.created_at) %> ago.
+        <% if dialogue.node_id = current_node.id %>
+            <%= Node.find(dialogue.receiver_id).username %>
+        <% else %>
+            <%= Node.find(dialogue.node_id).username %>
       <% end %>
+   <% end %>
   </div>
   <div class = 'receiver-box'>
     <%if !Node.find(dialogue.receiver_id).avatar.file.nil? %>
