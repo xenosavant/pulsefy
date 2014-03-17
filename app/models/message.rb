@@ -4,6 +4,6 @@ class Message < ActiveRecord::Base
   attr_accessible :read, :content, :sender_id, :receiver_id
   validates :content, :presence => true
 
-  default_scope order 'messages.created_at DESC'
+  default_scope order 'messages.created_at ASC'
 
 end
