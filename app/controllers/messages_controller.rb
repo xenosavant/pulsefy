@@ -2,6 +2,7 @@ class MessagesController < ApplicationController
   include SessionsHelper
 
   def create
+    if session[:receiver] != current_node.id
     @node = Node.find(session[:receiver])
     case !current_node.dialogues.where(:receiver_id => @node.id).exists? and !@node.dialogues.where(:receiver_id => current_node.id).exists?
       when true
@@ -37,6 +38,8 @@ class MessagesController < ApplicationController
                 :id => @convo.id, :errors => @message.errors.full_messages
     else
      return_back_to
+    end
+    else return_back_to
     end
   end
 
