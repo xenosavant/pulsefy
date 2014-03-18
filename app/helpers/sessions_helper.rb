@@ -39,7 +39,6 @@ module SessionsHelper
     session[:receiver] = receiver
   end
 
-
   def sign_out
     self.current_node = nil
     cookies.delete(:remember_token)
@@ -64,8 +63,10 @@ module SessionsHelper
         end
       when 'Static'
             redirect_to root_path
-      end
+       when 'Inbox'
+           redirect_to :controller => 'inboxes', :action => 'show_dialogues'
+      else
+        redirect_to root_path
+    end
   end
-
-
-  end
+end
