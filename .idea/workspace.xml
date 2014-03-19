@@ -176,7 +176,7 @@
       <file leaf-file-name="node.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/node.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="20" selection-start="3450" selection-end="3450" vertical-scroll-proportion="0.49586776">
+            <state line="98" column="43" selection-start="3431" selection-end="3431" vertical-scroll-proportion="0.661157">
               <folding />
             </state>
           </provider>
@@ -1190,7 +1190,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/node.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="20" selection-start="3450" selection-end="3450" vertical-scroll-proportion="0.49586776">
+        <state line="98" column="43" selection-start="3431" selection-end="3431" vertical-scroll-proportion="0.661157">
           <folding />
         </state>
       </provider>
