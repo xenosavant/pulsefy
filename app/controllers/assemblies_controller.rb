@@ -39,10 +39,8 @@ class AssembliesController < ApplicationController
       if params[:assembly][:avatar].blank?
         redirect_to :controller => 'assemblies', :action => 'show', :id => @assembly.id
       else
-        redirect_to :controller => 'assemblies', :action => 'crop', :id => @assembly.id
+        render :action => 'crop'
       end
-    else
-      render 'assemblies/edit'
     end
   end
 

@@ -41,7 +41,6 @@ class NodesController < ApplicationController
       if @node.update_attributes(params[:node])
         if params[:node][:avatar].blank?
           sign_in(@node)
-          #flash[:success] = "Pulsefeed Updated!"
           redirect_to :controller => 'nodes', :action => 'show', :id => @node.id
         else
           render :action => 'crop'
@@ -117,8 +116,8 @@ class NodesController < ApplicationController
       when true
          true
       else
-        redirect_to pulsein_path
-        false
+         false
+         redirect_to pulsein_path
     end
   end
 end
