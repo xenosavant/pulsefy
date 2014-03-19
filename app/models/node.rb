@@ -109,7 +109,6 @@ class Node < ActiveRecord::Base
   end
 
   def check_avatar_dimensions
-    ::Rails.logger.info "Avatar upload dimensions: #{self.avatar_upload_width}x#{self.avatar_upload_height}"
     errors.add :avatar, "Dimensions of uploaded image should be not less than 300x300 pixels." if self.avatar_upload_width < 300 || self.avatar_upload_height < 300
     errors.add :avatar, "Aspect ratio of uploaded image must be less than 1.6." if self.avatar_upload_width / self.avatar_upload_height > 1.6
   end
