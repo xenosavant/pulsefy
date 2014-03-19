@@ -100,6 +100,8 @@ class Node < ActiveRecord::Base
     @admin = false
     @hub = false
     @verified = false
+    @avatar_upload_width = 300
+    @avatar_upload_height = 300
   end
 
   def reprocess_avatar
