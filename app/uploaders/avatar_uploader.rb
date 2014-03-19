@@ -25,7 +25,7 @@ class AvatarUploader < CarrierWave::Uploader::Base
 
   before :cache, :capture_size_before_cache # callback, example here: http://goo.gl/9VGHI
   def capture_size_before_cache(new_file)
-    if model.avatar_upload_width.nil? || model.avatar_upload_height.nil?
+    if model.width.nil? || model.height.nil?
       model.width, model.height = `identify -format "%wx %h" #{new_file.path}`.split(/x/).map { |dim| dim.to_i }
       model.save
     end
