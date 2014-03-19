@@ -100,8 +100,8 @@ class Node < ActiveRecord::Base
     @admin = false
     @hub = false
     @verified = false
-    @avatar_upload_width = 300
-    @avatar_upload_height = 300
+    @width = 300
+    @height = 300
   end
 
   def reprocess_avatar
@@ -109,7 +109,9 @@ class Node < ActiveRecord::Base
   end
 
   def check_avatar_dimensions
-    if self.width < 300 || self.height < 300
+    @width = self.width
+    @height = self.height
+    if @width < 300 || @height < 300
       errors.add :avatar, 'Dimensions of uploaded image must be not less than 300x300 pixels.'
     end
     if self.width / self.height > 1.6
