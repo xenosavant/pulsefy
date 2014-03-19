@@ -5,8 +5,8 @@ class Node < ActiveRecord::Base
   attr_accessible :username, :email, :info, :threshold,
                   :password, :password_confirmation, :avatar, :self_tag,
                   :crop_x, :crop_y, :crop_w, :crop_h, :remember_token,
-                  :hub, :admin, :verified, :self_tag, :avatar_upload_width,
-                  :avatar_upload_height
+                  :hub, :admin, :verified, :self_tag, :width,
+                  :height
   after_update :reprocess_avatar, :if => :cropping?
   has_secure_password
   before_save { |node| node.email = email.downcase }
@@ -109,8 +109,12 @@ class Node < ActiveRecord::Base
   end
 
   def check_avatar_dimensions
-    errors.add :avatar, "Dimensions of uploaded image should be not less than 300x300 pixels." if self.avatar_upload_width < 300 || self.avatar_upload_height < 300
-    errors.add :avatar, "Aspect ratio of uploaded image must be less than 1.6." if self.avatar_upload_width / self.avatar_upload_height > 1.6
+    if self.width < 300 || self.height < 300
+      errors.add :avatar, 'Dimensions of uploaded image must be not less than 300x300 pixels.'
+    end
+    if self.width / self.height > 1.6
+      errors.add :avatar, 'Aspect ratio of uploaded image must be less than 1.6.'
+    end
   end
 
   def avatar_geometry

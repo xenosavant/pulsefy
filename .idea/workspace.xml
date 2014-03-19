@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130604190000_create_nodes.rb" afterPath="$PROJECT_DIR$/db/migrate/20130604190000_create_nodes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/node.rb" afterPath="$PROJECT_DIR$/app/models/node.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,7 +22,7 @@
     <file path="/20130611183156_create_raters.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1370975608923" ignored="false" />
     <file path="/20130611184143_create_votes.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371689468885" ignored="false" />
     <file path="/vote.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372222682322" ignored="false" />
-    <file path="/node.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395242323991" ignored="false" />
+    <file path="/node.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395244252864" ignored="false" />
     <file path="/nodes_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395089450225" ignored="false" />
     <file path="/_node.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1391144656789" ignored="false" />
     <file path="/_header.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1393875828055" ignored="false" />
@@ -164,19 +164,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="node.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="node.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/node.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="41" selection-start="3626" selection-end="3626" vertical-scroll-proportion="0.17736487">
+            <state line="114" column="39" selection-start="3815" selection-end="3815" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20130604190000_create_nodes.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="20130604190000_create_nodes.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/migrate/20130604190000_create_nodes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="21" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
+            <state line="9" column="16" selection-start="328" selection-end="328" vertical-scroll-proportion="0.2231405">
               <folding />
             </state>
           </provider>
@@ -289,8 +289,8 @@
         <option value="$PROJECT_DIR$/app/controllers/nodes_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
         <option value="$PROJECT_DIR$/app/models/assembly.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130604190000_create_nodes.rb" />
         <option value="$PROJECT_DIR$/app/models/node.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130604190000_create_nodes.rb" />
       </list>
     </option>
   </component>
@@ -302,6 +302,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
     <option name="y" value="22" />
     <option name="width" value="1280" />
     <option name="height" value="774" />
@@ -1028,7 +1029,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="774" extended-state="0" />
+    <frame x="-1" y="22" width="1280" height="774" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1200,16 +1201,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130604190000_create_nodes.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/node.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="21" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
+        <state line="114" column="39" selection-start="3815" selection-end="3815" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/node.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130604190000_create_nodes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="41" selection-start="3626" selection-end="3626" vertical-scroll-proportion="0.17736487">
+        <state line="9" column="16" selection-start="328" selection-end="328" vertical-scroll-proportion="0.2231405">
           <folding />
         </state>
       </provider>
