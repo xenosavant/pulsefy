@@ -95,6 +95,8 @@ ActiveRecord::Schema.define(:version => 20140225194332) do
     t.float    "crop_y"
     t.float    "crop_w"
     t.float    "crop_h"
+    t.float    "width"
+    t.float    "height"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
   end
