@@ -23,13 +23,12 @@ class AvatarUploader < CarrierWave::Uploader::Base
     "#{Rails.root}/tmp/uploads"
   end
 
-
-  # Process files as they are uploaded:
-  # process :scale => [200, 300]
-  #
-  # def scale(width, height)
-  #   # do something
-  # end
+  before :cache, :capture_size_before_cache # callback, example here: http://goo.gl/9VGHI
+  def capture_size_before_cache(new_file)
+    if model.avatar_upload_width.nil? || model.avatar_upload_height.nil?
+      model.avatar_upload_width, model.avatar_upload_height = `identify -format "%wx %h" #{new_file.path}`.split(/x/).map { |dim| dim.to_i }
+    end
+  end
 
   # Create different versions of your uploaded files:
   version :large do

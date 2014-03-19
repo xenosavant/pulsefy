@@ -6,11 +6,13 @@ class Node < ActiveRecord::Base
                   :password, :password_confirmation, :avatar, :self_tag,
                   :crop_x, :crop_y, :crop_w, :crop_h, :remember_token,
                   :hub, :admin, :verified, :self_tag
+  attr_accessor :image_width, :image_height
   after_update :reprocess_avatar, :if => :cropping?
   has_secure_password
   before_save { |node| node.email = email.downcase }
   before_save :create_remember_token
   validates :username,  :presence => true, :length => { :maximum => 50 }
+  validate :check_avatar_dimensions
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, :presence => true, :format => { :with => VALID_EMAIL_REGEX },
             :uniqueness => { :case_sensitive => false }, :on => :create
@@ -28,6 +30,7 @@ class Node < ActiveRecord::Base
   has_many :votes
   has_many :repulses
   include Network
+
 
   def fire_pulse(args)
     @impulse = args[:pulse]
@@ -101,6 +104,12 @@ class Node < ActiveRecord::Base
 
   def reprocess_avatar
     self.avatar.recreate_versions!
+  end
+
+  def check_avatar_dimensions
+    ::Rails.logger.info "Avatar upload dimensions: #{self.avatar_upload_width}x#{self.avatar_upload_height}"
+    errors.add :avatar, "Dimensions of uploaded image should be not less than 300x300 pixels." if self.avatar_upload_width < 300 || avatar_upload_height < 300
+    errors.add :avatar, "Aspect ratio of uploaded image must be less than 1.6." if self.avatar_upload_width / avatar_upload_height > 1.6
   end
 
   def avatar_geometry

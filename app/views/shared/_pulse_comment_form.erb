@@ -11,5 +11,5 @@
     <div class="textarea">
       <%= f.text_area :content, :rows => 4 %>
     </div>
-    <%= f.submit "Comment", :class => "btn btn-small btn-primary" %>
+    <%= f.submit "Comment", :disable_with => 'Commenting...', :class => "btn btn-small btn-primary" %>
 <% end %>

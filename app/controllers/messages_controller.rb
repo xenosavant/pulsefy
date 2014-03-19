@@ -36,8 +36,7 @@ class MessagesController < ApplicationController
     if @message.save
      redirect_to :controller => 'inboxes', :action => 'show_messages',
                 :id => @convo.id, :errors => @message.errors.full_messages
-    else
-     return_back_to
+    else return_back_to
     end
     else return_back_to
     end

@@ -19,6 +19,6 @@
         <%= f.file_field :avatar %>
       </div>
       <div class = 'button-box'>
-        <%= f.submit 'Save changes', :class => 'btn btn-large btn-primary' %>
+        <%= f.submit 'Save changes', :disable_with => 'Updating...', :class => 'btn btn-large btn-primary' %>
       </div>
         <% end %>

@@ -44,5 +44,5 @@
     <% for attribute in [:crop_x, :crop_y, :crop_h, :crop_w] %>
         <%= f.hidden_field attribute, :id => attribute %>
     <% end %>
-    <div class = 'button-box'><%= f.submit "Crop", :class => 'btn btn-large btn-primary' %></div>
+    <div class = 'button-box'><%= f.submit "Crop", :disable_with => 'Cropping...', :class => 'btn btn-large btn-primary' %></div>
 <% end %>

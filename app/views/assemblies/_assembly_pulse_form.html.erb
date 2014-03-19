@@ -23,5 +23,5 @@
     </div>
     <%= f.hidden_field :pulser, :value => current_node.id %>
     <%= f.hidden_field :pulser_type, :value => "Assembly" %>
-    <%= f.submit "Fire!", :class => "btn btn-medium btn-primary" %>
+    <%= f.submit "Fire!", :disable_with => 'Firing...', :class => "btn btn-medium btn-primary" %>
 <% end %>

@@ -18,10 +18,9 @@ class InboxesController < ApplicationController
         end
     end
     if @sum.nil?
-      @dialogues= nil
+      @d= nil
     else
-      @d = @sum.sort_by! {|a| a[:updated_at] }
-      @d = @d.reverse
+      @d = @sum
       @dialogues = @d.paginate(:page => params[:page])
     end
   end
