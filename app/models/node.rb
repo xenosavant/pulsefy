@@ -109,13 +109,18 @@ class Node < ActiveRecord::Base
   end
 
   def check_avatar_dimensions
-    @width = self.width
-    @height = self.height
-    if @width < 300 || @height < 300
-      errors.add :avatar, 'Dimensions of uploaded image must be not less than 300x300 pixels.'
-    end
-    if self.width / self.height > 1.6
-      errors.add :avatar, 'Aspect ratio of uploaded image must be less than 1.6.'
+    case self.avatar.nil?
+      when false
+        if !self.width.nil? and !self.height.nil?
+        @width = self.width
+        @height = self.height
+        if @width < 300 || @height < 300
+          errors.add :avatar, 'Dimensions of uploaded image must be not less than 300x300 pixels.'
+        end
+        if self.width / self.height > 1.6
+          errors.add :avatar, 'Aspect ratio of uploaded image must be less than 1.6.'
+        end
+      end
     end
   end
 
