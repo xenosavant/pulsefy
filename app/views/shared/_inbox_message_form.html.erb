@@ -8,11 +8,13 @@
           </ul>
         </div>
     <%end%>
-      <%= f.text_area :content, :as => :text, :input_html => { class: 'form-post', 'rows' => 4, 'cols' => 10 } %>
+      <%= f.text_area :content, :as => :text %>
             <% if @convo.interrogator_id = current_node.id %>
                 <%= f.hidden_field :receiver_id, :value => @convo.interlocutor_id %>
             <% else %>
                 <%= f.hidden_field :receiver_id, :value => @convo.interrogator_id %>
             <% end %>
+    <div class = 'button-box'>
     <%= f.submit "Message", :disable_with => 'Sending...', :class => "btn btn-small btn-primary" %>
+    </div>
 <% end %>

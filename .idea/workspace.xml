@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_inbox_message_form.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_inbox_message_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/production.log" afterPath="$PROJECT_DIR$/log/production.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/pulse_comments.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/pulse_comments.css.scss" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -147,7 +144,7 @@
     <file path="/show_convos.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1394256088687" ignored="false" />
     <file path="/show_messages.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395331337417" ignored="false" />
     <file path="/20140225193926_create_messages.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1394060787805" ignored="false" />
-    <file path="/_inbox_message_form.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395334449904" ignored="false" />
+    <file path="/_inbox_message_form.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395335024001" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,10 +164,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_inbox_message_form.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_inbox_message_form.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/shared/_inbox_message_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="75" selection-start="263" selection-end="263" vertical-scroll-proportion="-5.625">
+            <state line="19" column="39" selection-start="740" selection-end="740" vertical-scroll-proportion="0.50176054">
               <folding />
             </state>
           </provider>
@@ -221,10 +218,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="custom.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="529" column="49" selection-start="8602" selection-end="8602" vertical-scroll-proportion="0.6289753">
+            <state line="529" column="49" selection-start="8602" selection-end="8602" vertical-scroll-proportion="-13.692307">
               <folding />
             </state>
           </provider>
@@ -291,9 +288,9 @@
         <option value="$PROJECT_DIR$/app/controllers/inboxes_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_left-pane.html.erb" />
         <option value="$PROJECT_DIR$/app/views/inboxes/show_messages.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_inbox_message_form.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pulse_comments.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/shared/_inbox_message_form.html.erb" />
       </list>
     </option>
   </component>
@@ -305,7 +302,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="6" />
+    <option name="x" value="-44" />
     <option name="y" value="22" />
     <option name="width" value="1280" />
     <option name="height" value="774" />
@@ -1032,7 +1029,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="6" y="22" width="1280" height="774" extended-state="6" />
+    <frame x="-44" y="22" width="1280" height="774" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1209,13 +1206,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_inbox_message_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="75" selection-start="263" selection-end="263" vertical-scroll-proportion="-5.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pulse_comments.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="98" column="33" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.0">
@@ -1225,7 +1215,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="529" column="49" selection-start="8602" selection-end="8602" vertical-scroll-proportion="0.6289753">
+        <state line="529" column="49" selection-start="8602" selection-end="8602" vertical-scroll-proportion="-13.692307">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_inbox_message_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="39" selection-start="740" selection-end="740" vertical-scroll-proportion="0.50176054">
           <folding />
         </state>
       </provider>
