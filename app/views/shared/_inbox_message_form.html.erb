@@ -8,7 +8,7 @@
           </ul>
         </div>
     <%end%>
-      <%= f.text_area :content, :as => :text, :rows => 4 %>
+      <%= f.text_area :content, :rows => 4 %>
             <% if @convo.interrogator_id = current_node.id %>
                 <%= f.hidden_field :receiver_id, :value => @convo.interlocutor_id %>
             <% else %>
