@@ -73,7 +73,7 @@
     <file path="/pulse_comments_helper.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372174997891" ignored="false" />
     <file path="/_assembly_pulse_form.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395239803534" ignored="false" />
     <file path="/show_assemblies.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1373650317795" ignored="false" />
-    <file path="/pulse_comments.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395332412768" ignored="false" />
+    <file path="/pulse_comments.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395333094968" ignored="false" />
     <file path="/production.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395079179752" ignored="false" />
     <file path="/static_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1387740489988" ignored="false" />
     <file path="/20130604190140_create_pulse_comments.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372822378710" ignored="false" />
@@ -165,10 +165,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_inbox_message_form.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_inbox_message_form.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/shared/_inbox_message_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="55" selection-start="236" selection-end="236" vertical-scroll-proportion="-4.375">
+            <state line="10" column="52" selection-start="290" selection-end="290" vertical-scroll-proportion="0.26881722">
               <folding />
             </state>
           </provider>
@@ -210,10 +210,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pulse_comments.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pulse_comments.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pulse_comments.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="21" selection-start="1693" selection-end="1693" vertical-scroll-proportion="0.66494846">
+            <state line="103" column="26" selection-start="1711" selection-end="1711" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -290,8 +290,8 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_left-pane.html.erb" />
         <option value="$PROJECT_DIR$/app/views/inboxes/show_messages.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/shared/_inbox_message_form.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pulse_comments.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/shared/_inbox_message_form.html.erb" />
       </list>
     </option>
   </component>
@@ -303,7 +303,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="161" />
+    <option name="x" value="-46" />
     <option name="y" value="22" />
     <option name="width" value="1280" />
     <option name="height" value="774" />
@@ -1030,7 +1030,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="161" y="22" width="1280" height="774" extended-state="6" />
+    <frame x="-46" y="22" width="1280" height="774" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1214,16 +1214,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_inbox_message_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pulse_comments.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="55" selection-start="236" selection-end="236" vertical-scroll-proportion="-4.375">
+        <state line="103" column="26" selection-start="1711" selection-end="1711" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pulse_comments.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_inbox_message_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="21" selection-start="1693" selection-end="1693" vertical-scroll-proportion="0.66494846">
+        <state line="10" column="52" selection-start="290" selection-end="290" vertical-scroll-proportion="0.26881722">
           <folding />
         </state>
       </provider>

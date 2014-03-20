@@ -9,7 +9,7 @@
         </div>
     <%end%>
     <div class="textarea">
-      <%= f.text_area :content, :size => '10x4' %>
+      <%= f.text_area :content, :size => '15x4' %>
     </div>
             <% if @convo.interrogator_id = current_node.id %>
                 <%= f.hidden_field :receiver_id, :value => @convo.interlocutor_id %>
