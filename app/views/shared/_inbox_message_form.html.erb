@@ -1,0 +1,20 @@
+<%= form_for (@message) do |f| %>
+    <% if params[:errors] %>
+        <div id="error_explanation">
+          <ul>
+            <%params[:errors].each do |msg| %>
+                <li> <%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <%end%>
+    <div class="textarea">
+      <%= f.text_area :content, :rows => 4, :cols => 15 %>
+    </div>
+            <% if @convo.interrogator_id = current_node.id %>
+                <%= f.hidden_field :receiver_id, :value => @convo.interlocutor_id %>
+            <% else %>
+                <%= f.hidden_field :receiver_id, :value => @convo.interrogator_id %>
+            <% end %>
+    <%= f.submit "Message", :disable_with => 'Sending...', :class => "btn btn-small btn-primary" %>
+<% end %>

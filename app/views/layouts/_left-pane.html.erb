@@ -29,10 +29,6 @@
           <%if params[:action] == 'show' and session[:return_to] != current_node.id %>
               <%= render 'shared/message_form' %>
           <%end%>
-      <%when 'inboxes'%>
-          <%if params[:action] == 'show_messages' %>
-              <%= render 'shared/message_form' %>
-          <%end%>
       <%end%>
     </div>
   </div>
