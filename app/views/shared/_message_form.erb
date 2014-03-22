@@ -15,14 +15,11 @@
         <% when 'nodes' %>
             <%= f.hidden_field :receiver_id, :value => @node.id %>
         <% when 'inboxes' %>
-        <%case params[:action]%>
-          <% when 'show_messages' %>
             <% if @convo.interrogator_id = current_node.id %>
                <%= f.hidden_field :receiver_id, :value => @convo.interlocutor_id %>
            <% else %>
                <%= f.hidden_field :receiver_id, :value => @convo.interrogator_id %>
            <% end %>
-        <% end %>
     <% end %>
-    <%= f.submit "Message", :disable_with => 'Sending...', :class => "btn btn-small btn-primary" %>
+    <%= f.submit 'Message', :disable_with => 'Sending...', :class => 'btn btn-small btn-primary' %>
 <% end %>

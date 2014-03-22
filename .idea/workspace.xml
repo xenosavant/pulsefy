@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_message_form.erb" afterPath="$PROJECT_DIR$/app/views/shared/_message_form.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/inboxes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/inboxes_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inboxes/show_messages.html.erb" afterPath="$PROJECT_DIR$/app/views/inboxes/show_messages.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -124,7 +125,7 @@
     <file path="/20140219002616_convo.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1392844297473" ignored="false" />
     <file path="/dialogues_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1394075749978" ignored="false" />
     <file path="/convos_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1392864489193" ignored="false" />
-    <file path="/inboxes_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395109019821" ignored="false" />
+    <file path="/inboxes_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395474191434" ignored="false" />
     <file path="/show_dialogues.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1393827256122" ignored="false" />
     <file path="/messages_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395106591301" ignored="false" />
     <file path="/_message_form.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1392873531861" ignored="false" />
@@ -143,7 +144,7 @@
     <file path="/_convo.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1393977723054" ignored="false" />
     <file path="/20140225194245_create_convos.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1393978339766" ignored="false" />
     <file path="/show_convos.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1394256088687" ignored="false" />
-    <file path="/show_messages.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395331337417" ignored="false" />
+    <file path="/show_messages.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395474417131" ignored="false" />
     <file path="/20140225193926_create_messages.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1394060787805" ignored="false" />
     <file path="/_inbox_message_form.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395335181935" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -177,16 +178,25 @@
       <file leaf-file-name="show_messages.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/inboxes/show_messages.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="30" selection-start="460" selection-end="460" vertical-scroll-proportion="0.3697183">
+            <state line="7" column="47" selection-start="239" selection-end="239" vertical-scroll-proportion="0.18485916">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/assemblies/edit.html.erb">
+      <file leaf-file-name="inboxes_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/inboxes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="40" column="7" selection-start="1125" selection-end="1125" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_pulse_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/shared/_pulse_form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -195,7 +205,16 @@
       <file leaf-file-name="_message_form.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/shared/_message_form.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="62" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
+            <state line="12" column="7" selection-start="344" selection-end="344" vertical-scroll-proportion="-7.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messages_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="74" selection-start="1579" selection-end="1707" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -205,24 +224,6 @@
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pulse_comments.css.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state line="26" column="24" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_left-pane.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_left-pane.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_assembly_pulse_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/assemblies/_assembly_pulse_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -276,7 +277,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/shared/_pulse_form.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/assemblies_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/nodes_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/assembly.rb" />
@@ -286,11 +286,12 @@
         <option value="$PROJECT_DIR$/app/uploaders/avatar_uploader.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/assemblies.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/nodes.css.scss" />
-        <option value="$PROJECT_DIR$/app/controllers/inboxes_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_left-pane.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
         <option value="$PROJECT_DIR$/app/views/shared/_inbox_message_form.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pulse_comments.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/shared/_message_form.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/inboxes_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/inboxes/show_messages.html.erb" />
       </list>
     </option>
@@ -303,7 +304,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="82" />
+    <option name="x" value="41" />
     <option name="y" value="22" />
     <option name="width" value="1280" />
     <option name="height" value="774" />
@@ -1030,7 +1031,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="82" y="22" width="1280" height="774" extended-state="0" />
+    <frame x="41" y="22" width="1280" height="774" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1116,23 +1117,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/assemblies/show_assemblies.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/assemblies/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/dialogues.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/nodes.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1155,13 +1139,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/assemblies/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_message_form.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="62" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1215,9 +1192,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_pulse_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_message_form.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="7" selection-start="344" selection-end="344" vertical-scroll-proportion="-7.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="74" selection-start="1579" selection-end="1707" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/inboxes_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="7" selection-start="1125" selection-end="1125" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inboxes/show_messages.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="30" selection-start="460" selection-end="460" vertical-scroll-proportion="0.3697183">
+        <state line="7" column="47" selection-start="239" selection-end="239" vertical-scroll-proportion="0.18485916">
           <folding />
         </state>
       </provider>

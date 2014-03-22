@@ -15,15 +15,11 @@
             <% end %>
           </ul>
         </div>
-    <%end%>
-    <%= f.text_area :content, :rows => 4 %>
-    <% if @convo.interrogator_id = current_node.id %>
-        <%= f.hidden_field :receiver_id, :value => @convo.interlocutor_id %>
-    <% else %>
-        <%= f.hidden_field :receiver_id, :value => @convo.interrogator_id %>
-    <% end %>
+    <%= f.text_area :content %>
     <div class = 'button-box'>
-      <%= f.submit "Message", :disable_with => 'Sending...', :class => "btn btn-small btn-primary" %>
+      <%= f.submit "Message", :disable_with => 'Sending...', :controller => 'messages', :action => 'create',
+                   :id => @receiver_id, :errors => @message.errors.full_messages, :class => "btn btn-small btn-primary" %>
     </div>
-<% end %>
+  <% end %>
+ <% end %>
 </div>
