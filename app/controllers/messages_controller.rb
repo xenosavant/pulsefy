@@ -44,6 +44,8 @@ class MessagesController < ApplicationController
 
   def new
     @message = Message.new
+    @receiver_id =  params[:receiver_id]
+
   end
 
   def update

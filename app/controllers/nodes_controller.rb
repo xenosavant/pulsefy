@@ -4,7 +4,6 @@ class NodesController < ApplicationController
 
   def show
     @node = Node.find(params[:id])
-    @id = @node.id
     @message = Message.new
     store_location(@node.id, 'Node')
     store_receiver(params[:id])

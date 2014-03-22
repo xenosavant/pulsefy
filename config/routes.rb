@@ -9,6 +9,7 @@ Pulsefy::Application.routes.draw do
 
   root :to => 'static#home'
 
+  match '/message' => 'messages#new'
   match '/inbox' => 'inboxes#show_dialogues'
   match '/dialogue' => 'inboxes#show_convos'
   match '/conversation' => 'convos#show_messages'
