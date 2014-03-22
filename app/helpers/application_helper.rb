@@ -140,6 +140,8 @@ module ApplicationHelper
     case params[:controller]
       when 'inboxes'
          true
+      when 'messages'
+        true
       else
          false
     end
