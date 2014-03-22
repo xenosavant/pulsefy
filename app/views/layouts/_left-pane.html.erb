@@ -25,10 +25,6 @@
           <%if params[:action] == 'show' %>
               <%= render 'shared/pulse_comment_form' %>
           <%end%>
-      <%when 'nodes'%>
-          <%if params[:action] == 'show' and session[:return_to] != current_node.id %>
-              <%= render 'shared/message_form' %>
-          <%end%>
       <%end%>
     </div>
   </div>
