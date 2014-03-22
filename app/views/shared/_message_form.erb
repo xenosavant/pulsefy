@@ -8,6 +8,9 @@
           </ul>
         </div>
     <%end%>
+    <div class="textarea">
     <%= f.text_area :content, :rows => 4 %>
+      <%= f.hidden_field :receiver_id, :value => @node.id %>
+    </div>
     <%= f.submit 'Message', :class => 'btn btn-small btn-primary' %>
 <% end %>
