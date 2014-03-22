@@ -2,7 +2,7 @@ class MessagesController < ApplicationController
   include SessionsHelper
 
   def create
-    if params[:receiver_id] != current_node.id
+    if params[:id] != current_node.id
     @node = Node.find(params[:receiver_id])
     case !current_node.dialogues.where(:receiver_id => @node.id).exists? and !@node.dialogues.where(:receiver_id => current_node.id).exists?
       when true

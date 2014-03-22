@@ -6,20 +6,5 @@
     <%= will_paginate @messages %>
 <% end %>
 <div class = 'form-container'>
-<%= form_for (@message) do |f| %>
-    <% if params[:errors] %>
-        <div id="error_explanation">
-          <ul>
-            <%params[:errors].each do |msg| %>
-                <li> <%= msg %></li>
-            <% end %>
-          </ul>
-        </div>
-    <%= f.text_area :content %>
-    <div class = 'button-box'>
-      <%= f.submit "Message", :disable_with => 'Sending...', :controller => 'messages', :action => 'create',
-                   :id => @receiver_id, :errors => @message.errors.full_messages, :class => "btn btn-small btn-primary" %>
-    </div>
-  <% end %>
- <% end %>
+<%= render 'shared/message_form' %>
 </div>
