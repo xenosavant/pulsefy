@@ -1,15 +1,13 @@
-<%= form_for (@message), url: url_for( :controller => :messages, :action => :create, :id => @id ) do |f| %>
+<%= form_for (@message) do |f| %>
     <% if params[:errors] %>
         <div id="error_explanation">
           <ul>
             <%params[:errors].each do |msg| %>
-                <li> <%= msg %></li>
+                <li> <%= msg %> </li>
             <% end %>
           </ul>
         </div>
     <%end%>
-    <div class="textarea">
-      <%= f.text_area :content %>
-    </div>
+    <%= f.text_area :content, :rows => 4 %>
     <%= f.submit 'Message', :class => 'btn btn-small btn-primary' %>
 <% end %>
