@@ -321,6 +321,7 @@ textfield {
   top:160px;
   min-width:120px;
   max-width:270px;
+  max-height:550px;
   z-index: 1;
   font-size: 1.3em;
   display: block;
@@ -535,6 +536,7 @@ textfield {
 
 .button-box {
   width:100px;
+  position: absolute;
   display:block;
   padding-top:10px;
   padding-bottom:10px;
