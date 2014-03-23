@@ -4,11 +4,11 @@
     Message
     <% when false %>
             <%= image_tag @node.avatar_url(:nano)%>
-        <% else %>
+     <% else %>
             <%= image_tag 'Q25.jpg' %>
+    <% end %>
     <% link_to @node do %>
         <%= @node.username %>
-    <% end %>
     <% end %>
   </div>
 </div>
