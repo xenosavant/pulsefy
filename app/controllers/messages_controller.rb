@@ -19,11 +19,11 @@ class MessagesController < ApplicationController
     @dialogue.save
     case @dialogue.convos.any?
       when true
-        if Time.now - @dialogue.convos.order('created_at').last.updated_at > 12.hours
+        if Time.now - @dialogue.convos.last.updated_at > 12.hours
           @convo = @dialogue.convos.build
           @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => current_node.id)
         else
-          @convo = @dialogue.convos.order('created_at').last
+          @convo = @dialogue.convos.last
         end
       else
         @convo = @dialogue.convos.build
