@@ -19,8 +19,8 @@ class MessagesController < ApplicationController
     @dialogue.save
     case @dialogue.convos.any?
       when true
-        if Time.now - @dialogue.convos.where(:active => true).created_at.last > 12.hours
-          @dialogue.convos.where(:active => true).last.update_attributes(:active => false)
+        if Time.now - Convo.where('dialogue_id = ? AND active = ?', @dialogue.id, true) > 12.hours
+          Convo.where('dialogue_id = ? AND active = ?', @dialogue.id, true).update_attributes(:active => false)
           @convo = @dialogue.convos.build
           @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => current_node.id,
                                    :active => true)
