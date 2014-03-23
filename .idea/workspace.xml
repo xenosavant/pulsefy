@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/assemblies_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/assemblies_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/assembly.rb" afterPath="$PROJECT_DIR$/app/models/assembly.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/production.log" afterPath="$PROJECT_DIR$/log/production.log" />
     </list>
@@ -211,19 +210,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="assembly.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="assembly.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/assembly.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="18" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
+            <state line="10" column="49" selection-start="410" selection-end="410" vertical-scroll-proportion="0.2533784">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="assemblies_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="assemblies_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/assemblies_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="42" selection-start="799" selection-end="799" vertical-scroll-proportion="0.8181818">
+            <state line="33" column="42" selection-start="799" selection-end="799" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -291,8 +290,8 @@
         <option value="$PROJECT_DIR$/app/views/messages/new.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/messages.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-        <option value="$PROJECT_DIR$/app/models/assembly.rb" />
         <option value="$PROJECT_DIR$/app/controllers/assemblies_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/assembly.rb" />
       </list>
     </option>
   </component>
@@ -1313,16 +1312,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/assembly.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/assemblies_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="18" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
+        <state line="33" column="42" selection-start="799" selection-end="799" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/assemblies_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/assembly.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="42" selection-start="799" selection-end="799" vertical-scroll-proportion="0.8181818">
+        <state line="10" column="49" selection-start="410" selection-end="410" vertical-scroll-proportion="0.2533784">
           <folding />
         </state>
       </provider>

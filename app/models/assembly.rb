@@ -1,4 +1,4 @@
-require 'carrierwave/orm/activerecord'
+#require 'carrierwave/orm/activerecord'
 
 class Assembly < ActiveRecord::Base
 
