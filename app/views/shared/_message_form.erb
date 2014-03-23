@@ -10,9 +10,10 @@
     <%end%>
     <div class="textarea">
     <%= f.text_area :content, :rows => 4 %>
-    <% if params[:controller] = 'inboxes' %>
-        <%= f.hidden_field :receiver_id, :value => params[:reciever_id] %>
-    <% else %>
+    <% case params[:controller] %>
+    <% when  'inboxes' %>
+        <%= f.hidden_field :receiver_id, :value => params[:receiver_id] %>
+    <% when 'messages' %>
         <%= f.hidden_field :receiver_id, :value => @node.id %>
     <% end %>
     </div>
