@@ -44,7 +44,7 @@ class MessagesController < ApplicationController
 
   def new
     @message = Message.new
-    @node =  Node.find(params[:receiver_id]);
+    @node =  Node.find(session[:receiver_id]);
   end
 
   def update
