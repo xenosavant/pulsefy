@@ -165,10 +165,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="messages_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="messages_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="74" selection-start="1199" selection-end="1199" vertical-scroll-proportion="0.63559324">
+            <state line="45" column="36" selection-start="1815" selection-end="1815" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -210,10 +210,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sessions_helper.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="sessions_helper.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="33" selection-start="807" selection-end="807" vertical-scroll-proportion="0.0">
+            <state line="38" column="33" selection-start="807" selection-end="807" vertical-scroll-proportion="0.60199004">
               <folding />
             </state>
           </provider>
@@ -1293,13 +1293,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="33" selection-start="807" selection-end="807" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/nodes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="34" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0">
@@ -1351,7 +1344,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="74" selection-start="1199" selection-end="1199" vertical-scroll-proportion="0.63559324">
+        <state line="45" column="36" selection-start="1815" selection-end="1815" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="33" selection-start="807" selection-end="807" vertical-scroll-proportion="0.60199004">
           <folding />
         </state>
       </provider>
