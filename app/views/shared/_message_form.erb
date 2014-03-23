@@ -12,7 +12,7 @@
     <%= f.text_area :content, :rows => 4 %>
     <% case params[:controller] %>
     <% when  'inboxes' %>
-        <%= f.hidden_field :receiver_id, :value => params[:receiver_id] %>
+        <%= f.hidden_field :receiver_id, :value => @node.id %>
     <% when 'messages' %>
         <%= f.hidden_field :receiver_id, :value => params[:receiver_id] %>
     <% end %>
