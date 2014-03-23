@@ -9,16 +9,16 @@
     </div>
     <%end%>
     <div class="textfield">
-      <%= f.text_field :headline, :rows => 1, :cols => 10, :placeholder => "Add a headline" %>
+      <%= f.text_field :headline, :rows => 1, :cols => 12, :placeholder => "Add a headline" %>
     </div>
     <div class="textfield">
-      <%= f.text_field :link, :rows => 1, :cols => 10, :placeholder => "Add a link" %>
+      <%= f.text_field :link, :rows => 1, :cols => 12, :placeholder => "Add a link" %>
     </div>
     <div class="textarea">
-    <%= f.text_area :content, :rows => 4, :cols => 10, :placeholder => "Compose a pulse...", :rows => '5'%>
+    <%= f.text_area :content, :rows => 1, :cols => 12, :placeholder => "Compose a pulse...", :rows => '5'%>
     </div>
     <div class="textfield">
-      <%= f.text_field :tags, :rows => 1, :cols => 10, :placeholder => "Add comma separated tags" %>
+      <%= f.text_field :tags, :rows => 1, :cols => 12, :placeholder => "Add comma separated tags" %>
     </div>
     <%= f.hidden_field :pulser, :value => current_node.id %>
     <%= f.hidden_field :pulser_type, :value => "Node" %>

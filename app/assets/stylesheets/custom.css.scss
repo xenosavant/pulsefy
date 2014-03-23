@@ -39,7 +39,7 @@ body {
   display:inline;
   float:left;
   top:50px;
-  width:240px;
+  width:290px;
   padding:10px;
   height:750px;
   background-color:$innerColor;
@@ -53,7 +53,7 @@ body {
   display:inline;
   top:50px;
   float:right;
-  width:240px;
+  width:290px;
   padding:10px;
   height:750px;
   background-color:$innerColor;
@@ -117,8 +117,8 @@ body {
   height:auto;
   min-height:90%;
   width: 650px;
-  margin-left:260px;
-  margin-right:260px;
+  margin-left:310px;
+  margin-right:310px;
   text-align:left;
   -webkit-border-radius:0px 0px 10px 10px;
   -moz-border-radius:0px 0px 10px 10px;
@@ -129,7 +129,7 @@ body {
   z-index:0;
   margin-top:20%;
   position:relative;
-  width:1170px;
+  width:1270px;
   margin-left: auto !important;
   margin-right: auto !important;
 }
@@ -144,7 +144,7 @@ body {
 .background-pane {
   z-index:0;
   position:relative;
-  width:1170px;
+  width:1270px;
   margin-left: auto !important;
   margin-right: auto !important;
 }
@@ -446,7 +446,7 @@ textfield {
 
 .inside-right {
   position:absolute;
-  width:240px;
+  width:290px;
   height:750px;
   background-color: $grayMediumLight;
 }
