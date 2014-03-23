@@ -39,6 +39,7 @@ class InboxesController < ApplicationController
     else
       @id = @convo.interrogator_id
     end
+    @node = Node.find(@id)
     store_location(current_node.id, 'Inbox')
     @messages = Message.where(:convo_id => params[:id]).paginate(:page => params[:page])
   end
