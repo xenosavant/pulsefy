@@ -1,4 +1,5 @@
 class InboxesController < ApplicationController
+  include SessionsHelper
 
   def show_dialogues
     @node = current_node
@@ -40,8 +41,8 @@ class InboxesController < ApplicationController
       @id = @convo.interrogator_id
     end
     @node = Node.find(@id)
-    store_location(@node.id, 'Inbox')
-    store_receiver(@node.id)
+    store_location(@id, 'Inbox')
+    store_receiver(@id)
     @messages = Message.where(:convo_id => params[:id]).paginate(:page => params[:page])
   end
 

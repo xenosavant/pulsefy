@@ -1,6 +1,7 @@
 class NodesController < ApplicationController
 
   before_filter :signed_in_node, :except => [:new, :create, :crop_update]
+  include SessionsHelper
 
   def show
     @node = Node.find(params[:id])
