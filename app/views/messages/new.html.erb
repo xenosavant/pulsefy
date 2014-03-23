@@ -1,15 +1,17 @@
 <div class = 'pad-block'>
   <div class = 'title-box'>
     <% case @node.avatar.file.nil? %>
-        <% when false %>
+    Message
+    <% when false %>
             <%= image_tag @node.avatar_url(:nano)%>
         <% else %>
             <%= image_tag 'Q25.jpg' %>
+    <% link_to @node do %>
+        <%= @node.username %>
     <% end %>
-    Message <%= @node.username %>
+    <% end %>
   </div>
 </div>
-<%= image_tag @node.avatar_url(:micro)%>
 <div class = 'new-mess-wrapper'>
    <%= render 'shared/message_form'%>
 </div>
