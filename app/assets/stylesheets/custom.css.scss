@@ -319,7 +319,8 @@ textfield {
 .impulse {
   position:absolute;
   top:160px;
-  width: 290px;
+  min-width:120px;
+  max-width:270px;
   z-index: 1;
   font-size: 1.3em;
   display: block;
