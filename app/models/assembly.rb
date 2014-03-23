@@ -4,7 +4,7 @@ class Assembly < ActiveRecord::Base
 
    mount_uploader :avatar, AvatarUploader
    attr_accessible :avatar, :info, :title, :founder,
-                   :crop_x, :crop_y, :crop_h, :crop_w,
+                   :crop_x, :crop_y, :crop_h, :crop_w
    attr_accessor :avatar_upload_width, :avatar_upload_height
    after_update :reprocess_avatar, :if => :cropping?
    has_and_belongs_to_many :nodes
