@@ -1,4 +1,6 @@
 <div class = 'pad-block'><div class = 'title-box'> Message <%= @node.username %> </div></div>
-<div class = 'form-container'>
+<div class = 'mess-soma'><%= image_tag(current_node.avatar_url(:micro))%></div>
+<div class = 'new-mess-wrapper'>
    <%= render 'shared/message_form'%>
 </div>
+<div class = 'mess-soma'><%= image_tag(@node.avatar_url(:micro))%></div>
