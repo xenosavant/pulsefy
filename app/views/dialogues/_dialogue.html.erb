@@ -16,7 +16,7 @@
    <% end %>
   </div>
   <div class = 'micro-close-container'>
-    <%= link_to 'x', uncomment_path(:id => pulse_comment.id) %>
+    <%= link_to 'x', unmessage_path(:id => dialogue.id) %>
   </div>
   <div class = 'receiver-box'>
     <%if !Node.find(dialogue.receiver_id).avatar.file.nil? %>
