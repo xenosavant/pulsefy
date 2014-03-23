@@ -15,6 +15,9 @@
       <% end %>
    <% end %>
   </div>
+  <div class = 'micro-close-container'>
+    <%= link_to 'x', uncomment_path(:id => pulse_comment.id) %>
+  </div>
   <div class = 'receiver-box'>
     <%if !Node.find(dialogue.receiver_id).avatar.file.nil? %>
      <%= link_to image_tag(Node.find(dialogue.receiver_id).avatar_url(:thumb)), :action => 'show', :controller => 'nodes', :id => dialogue.receiver_id %>
