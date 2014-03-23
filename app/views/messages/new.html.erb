@@ -1,4 +1,5 @@
 <div class = 'pad-block'><div class = 'title-box'> <%= image_tag(@node.avatar_url(:nano))%> Message <%= @node.username %> </div></div>
+<%= image_tag(@node.avatar_url(:micro))%>
 <div class = 'new-mess-wrapper'>
    <%= render 'shared/message_form'%>
 </div>
