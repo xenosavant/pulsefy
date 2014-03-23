@@ -19,14 +19,21 @@ class MessagesController < ApplicationController
     @dialogue.save
     case @dialogue.convos.any?
       when true
-        if Time.now - Convo.where('dialogue_id = ? AND active = ?', @dialogue.id, true).first > 12.hours
-          Convo.where('dialogue_id = ? AND active = ?', @dialogue.id, true).first.update_attributes(:active => false)
-          @convo = @dialogue.convos.build
-          @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => current_node.id,
-                                   :active => true)
-        else
-          @convo = @dialogue.convos.where(:active => true).last
-        end
+        case Convo.where('dialogue_id = ? AND active = ?', @dialogue.id, true).first.nil?
+          when false
+            if Time.now - Convo.where('dialogue_id = ? AND active = ?', @dialogue.id, true).first > 12.hours
+              Convo.where('dialogue_id = ? AND active = ?', @dialogue.id, true).first.update_attributes(:active => false)
+              @convo = @dialogue.convos.build
+              @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => current_node.id,
+                                       :active => true)
+            else
+              @convo = @dialogue.convos.where(:active => true).last
+            end
+          else
+            @convo = @dialogue.convos.build
+            @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => current_node.id,
+                                     :active => true)
+          end
       else
         @convo = @dialogue.convos.build
         @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => current_node.id,
