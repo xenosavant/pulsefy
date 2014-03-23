@@ -1,6 +1,6 @@
 <div class = 'pad-block'>
   <div class = 'title-box'>
-    <% case @node.avatar.nil? %>
+    <% case @node.avatar.file.nil? %>
         <% when false %>
             <%= image_tag(@node.avatar_url(:nano))%>
         <% else image_tag('Q25.jpg') %>
