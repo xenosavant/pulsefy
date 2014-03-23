@@ -27,6 +27,7 @@ gem 'less-rails'
 gem 'therubyracer', '~> 0.10.2'
 gem  'font-awesome-rails'
 gem 'rvm'
+gem 'rails_12factor'
 
 group :production do
   gem 'pg'
