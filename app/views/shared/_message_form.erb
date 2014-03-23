@@ -10,12 +10,6 @@
     <%end%>
     <div class="textarea">
     <%= f.text_area :content, :rows => 4 %>
-    <% case params[:controller] %>
-    <% when  'inboxes' %>
-        <%= f.hidden_field :receiver_id, :value => @node.id %>
-    <% when 'messages' %>
-        <%= f.hidden_field :receiver_id, :value => params[:receiver_id] %>
-    <% end %>
     </div>
     <div class = 'button-box'>
     <%= f.submit 'Message', :class => 'btn btn-small btn-primary' %>
