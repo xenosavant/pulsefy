@@ -6,6 +6,7 @@ Pulsefy::Application.routes.draw do
   resources :pulses, :only => [:reinforce, :degrade, :create, :destroy, :show]
   resources :pulse_comments
   resources :messages
+  resources :dialogues
 
   root :to => 'static#home'
 
