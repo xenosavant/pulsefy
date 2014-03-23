@@ -10,7 +10,11 @@
     <%end%>
     <div class="textarea">
     <%= f.text_area :content, :rows => 4 %>
-      <%= f.hidden_field :receiver_id, :value => @node.id %>
+    <% if params[:controller] = 'inboxes' %>
+        <%= f.hidden_field :receiver_id, :value => params[:reciever_id] %>
+    <% else %>
+        <%= f.hidden_field :receiver_id, :value => @node.id %>
+    <% end %>
     </div>
     <div class = 'button-box'>
     <%= f.submit 'Message', :class => 'btn btn-small btn-primary' %>
