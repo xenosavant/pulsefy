@@ -249,7 +249,7 @@
       <file leaf-file-name="_message_form.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/shared/_message_form.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="12" selection-start="484" selection-end="484" vertical-scroll-proportion="0.38860103">
+            <state line="8" column="46" selection-start="252" selection-end="252" vertical-scroll-proportion="0.20725389">
               <folding />
             </state>
           </provider>
@@ -1351,7 +1351,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_message_form.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="12" selection-start="484" selection-end="484" vertical-scroll-proportion="0.38860103">
+        <state line="8" column="46" selection-start="252" selection-end="252" vertical-scroll-proportion="0.20725389">
           <folding />
         </state>
       </provider>
