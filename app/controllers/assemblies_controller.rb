@@ -35,7 +35,7 @@ class AssembliesController < ApplicationController
 
   def update
     @assembly = Assembly.find(params[:id])
-    if @assembly.update_attributes(params[:node])
+    if @assembly.update_attributes(params[:assembly])
       if params[:assembly][:avatar].blank?
         redirect_to :controller => 'assemblies', :action => 'show', :id => @assembly.id
       else
