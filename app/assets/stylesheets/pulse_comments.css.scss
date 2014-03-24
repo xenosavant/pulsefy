@@ -81,11 +81,11 @@ $lightSlate: #d0dfef;
   top: -7px;
   left: 358px;
   font-weight:bold;
-  font-size: 0.7em;
+  font-size: 0.9em;
   a {
     color:$lightSlate !important;
     &:hover {
-      color:#000;
+      background-color:#000;
       text-decoration: none;
     }
   }
