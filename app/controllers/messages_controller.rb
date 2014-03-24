@@ -19,27 +19,26 @@ class MessagesController < ApplicationController
     @dialogue.save
     case @dialogue.convos.any?
       when true
-        case Convo.where('dialogue_id = ? AND active = ?', @dialogue.id, true).first.nil?
+        case Convo.where('dialogue_id = ? AND active = ?', @dialogue.id, 1).first.nil?
           when false
-            if Time.now - Convo.where('dialogue_id = ? AND active = ?', @dialogue.id, true).first.created_at > 12.hours
-              Convo.where('dialogue_id = ? AND active = ?', @dialogue.id, true).first.update_attributes(:active => false)
+            if Time.now - Convo.where('dialogue_id = ? AND active = ?', @dialogue.id, 1).first.created_at > 12.hours
+              Convo.where('dialogue_id = ? AND active = ?', @dialogue.id, 1).first.update_attributes(:active => 0)
               @convo = @dialogue.convos.build
-              @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => current_node.id,
-                                       :active => true)
+              @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => current_node.id, :active => 1)
+              @convo.save
             else
               @convo = @dialogue.convos.where(:active => true).last
             end
           else
             @convo = @dialogue.convos.build
-            @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => current_node.id,
-                                     :active => true)
+            @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => current_node.id, :active => 1)
+            @convo.save
           end
       else
         @convo = @dialogue.convos.build
-        @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => current_node.id,
-                                 :active => true)
+        @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => current_node.id, :active => 1)
+        @convo.save
     end
-    @convo.save
     @message = @convo.messages.build(params[:message])
     @message.update_attributes(:read => false, :receiver_id => @node.id, :sender_id => current_node.id)
     @message.save
