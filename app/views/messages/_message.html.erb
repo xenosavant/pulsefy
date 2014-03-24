@@ -11,5 +11,8 @@
         <div class = 'mess-wrapper'>
           <%= simple_format(message.content) %>
         </div>
+        <div class = 'message-close-container'>
+          <%= link_to 'x', unmessage_path(:id => message.id) %>
+        </div>
       </div>
 </li>
