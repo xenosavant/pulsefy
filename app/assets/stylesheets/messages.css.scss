@@ -90,22 +90,3 @@ $lightSlate: #d0dfef;
   position:relative;
   border: 5px;
 }
-
-.message-close-container {
-  z-index:2;
-  position:relative;
-  display:inline;
-  top: -7px;
-  left: 368px;
-  font-weight:bold;
-  font-size: 1em;
-  height:15px;
-  width:15px;
-  a {
-    color:$lightSlate !important;
-    &:hover {
-      color:#000 !important;
-      text-decoration: none;
-    }
-  }
-}
