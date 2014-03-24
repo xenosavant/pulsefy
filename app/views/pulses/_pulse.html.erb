@@ -13,7 +13,7 @@
         </div>
     <% end %>
     <% if signed_in? and pulse.pulser == current_node.id %>
-    <div class = 'close-container'>
+    <div class = 'pulse-close-container'>
       <%= link_to 'x', delete_path(:id => pulse.id) %>
     </div>
     <% end %>
