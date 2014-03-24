@@ -85,7 +85,7 @@ $lightSlate: #d0dfef;
   a {
     color:$lightSlate !important;
     &:hover {
-      background-color:#000;
+      color:#000 !important;
       text-decoration: none;
     }
   }
