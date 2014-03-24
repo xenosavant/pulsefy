@@ -214,7 +214,7 @@
       <file leaf-file-name="dialogues.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/dialogues.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="38" selection-start="739" selection-end="739" vertical-scroll-proportion="0.25">
+            <state line="51" column="27" selection-start="835" selection-end="835" vertical-scroll-proportion="0.475">
               <folding />
             </state>
           </provider>
@@ -1348,7 +1348,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/dialogues.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="38" selection-start="739" selection-end="739" vertical-scroll-proportion="0.25">
+        <state line="51" column="27" selection-start="835" selection-end="835" vertical-scroll-proportion="0.475">
           <folding />
         </state>
       </provider>
