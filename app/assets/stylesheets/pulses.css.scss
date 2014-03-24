@@ -169,13 +169,13 @@ $graydarker: #1c2025;
   position:absolute;
   display:inline;
   bottom: -40px;
-  left:438px;
+  left:400px;
   font-weight:bold;
   font-size: 0.9em;
   a {
     color:$lightSlate !important;
     &:hover {
-      color:#000;
+      color:#000 !important;
       text-decoration: none;
     }
   }
