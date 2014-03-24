@@ -93,7 +93,7 @@ $lightSlate: #d0dfef;
 
 .close-container {
   z-index:2;
-  position:relative;
+  position:absolute;
   display:inline;
   top: -7px;
   left: 390px;
@@ -104,7 +104,7 @@ $lightSlate: #d0dfef;
   a {
     color:$lightSlate !important;
     &:hover {
-      background-color:#000;
+      color:#000 !important;
       text-decoration: none;
     }
   }

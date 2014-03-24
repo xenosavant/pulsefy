@@ -138,7 +138,7 @@
     <file path="/_message.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395088735224" ignored="false" />
     <file path="/dialogues.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1393875033224" ignored="false" />
     <file path="/_dialogue.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395611629577" ignored="false" />
-    <file path="/messages.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395621743591" ignored="false" />
+    <file path="/messages.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395622370092" ignored="false" />
     <file path="/convos.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1393879842662" ignored="false" />
     <file path="/_convo.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1393977723054" ignored="false" />
     <file path="/20140225194245_create_convos.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1393978339766" ignored="false" />
@@ -187,7 +187,7 @@
       <file leaf-file-name="messages.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/messages.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="18" selection-start="255" selection-end="255" vertical-scroll-proportion="0.4875">
+            <state line="98" column="20" selection-start="1567" selection-end="1567" vertical-scroll-proportion="0.3625">
               <folding />
             </state>
           </provider>
@@ -1304,7 +1304,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/messages.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="18" selection-start="255" selection-end="255" vertical-scroll-proportion="0.4875">
+        <state line="98" column="20" selection-start="1567" selection-end="1567" vertical-scroll-proportion="0.3625">
           <folding />
         </state>
       </provider>
