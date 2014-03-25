@@ -155,7 +155,7 @@ module ApplicationHelper
     case @url.nil?
       when false
         @pulse.content = @pulse.content - @url
-        @pulse.content = "<image alt = 'image' src = '" + @url + "'>" + @pulse.content
+        @pulse.content = "<image alt = 'image' src = '" + "'>" + @pulse.content
         @pulse.save
     end
   end
