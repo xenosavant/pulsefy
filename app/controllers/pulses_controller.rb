@@ -1,6 +1,8 @@
 class PulsesController < ApplicationController
+
 before_filter :signed_in_node
 include SessionsHelper
+include ApplicationHelper
 
   def create
     @node = current_node
