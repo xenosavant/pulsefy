@@ -1,5 +1,7 @@
 class PulseCommentsController < ApplicationController
 
+  include ApplicationHelper
+
   def create
     @pulse = Pulse.find(session[:return_to])
     @pulse_comment = @pulse.pulse_comments.build(params[:pulse_comment])
