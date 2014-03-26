@@ -154,7 +154,7 @@ module ApplicationHelper
     @temp_url = @content.scan(@regex).first
     case @temp_url.nil?
       when false
-        @object.content.sub(@regex, '')
+        @object.content.sub(@temp_url, '')
         @object.content += "<img alt = 'image' src = '#{@temp_url}'"
         @object.save
     end
