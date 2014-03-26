@@ -30,7 +30,7 @@
     <file path="/sessions_helper.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395108582515" ignored="false" />
     <file path="/show.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395606446096" ignored="false" />
     <file path="/_pulse_comment_form.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395586853403" ignored="false" />
-    <file path="/pulse_comments_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395822659111" ignored="false" />
+    <file path="/pulse_comments_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395822770024" ignored="false" />
     <file path="/pulse_comment.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1391622106127" ignored="false" />
     <file path="/pic.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371499811715" ignored="false" />
     <file path="/profile_pic.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371500667068" ignored="false" />
@@ -232,7 +232,7 @@
       <file leaf-file-name="pulse_comments_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/pulse_comments_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="33" selection-start="96" selection-end="96" vertical-scroll-proportion="0.09917355">
+            <state line="10" column="47" selection-start="398" selection-end="398" vertical-scroll-proportion="0.24793388">
               <folding />
             </state>
           </provider>
@@ -1332,13 +1332,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="23" selection-start="2937" selection-end="2937" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/pulse_comments_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1346,9 +1339,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="158" column="23" selection-start="2937" selection-end="2937" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/pulse_comments_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="33" selection-start="96" selection-end="96" vertical-scroll-proportion="0.09917355">
+        <state line="10" column="47" selection-start="398" selection-end="398" vertical-scroll-proportion="0.24793388">
           <folding />
         </state>
       </provider>
