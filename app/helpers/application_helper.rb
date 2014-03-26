@@ -154,7 +154,7 @@ module ApplicationHelper
     @url = @content.scan(@regex).first
     case @url.nil?
       when false
-        @temp_string =  "image alt = image src = "
+        @temp_string =  "#{@url}"
         @pulse.content =  @temp_string
         @pulse.save
     end
