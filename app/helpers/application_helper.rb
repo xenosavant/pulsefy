@@ -149,14 +149,14 @@ module ApplicationHelper
 
   def parse_content(args)
     @object = args[:object]
-    @content = @pulse.content
+    @content = @object.content
     @regex = /^https?:\/\/(?:[a-z\-]+\.)+[a-z]{2,6}(?:\/[^\/#?]+)+\.(?:jpe?g|gif|png)$/
-    @url = @content.scan(@regex).first
-    case @url.nil?
+    @temp_url = @content.scan(@regex).first
+    case @temp_url.nil?
       when false
-        @temp_string =  "<image alt = 'image'" + " src = '#{@url}" + "'>"
-        @pulse.content =  @temp_string
-        @pulse.save
+        @object.content.sub(@regex, '')
+        @object.content += "<img alt = 'image' src = '#{@temp_url}'"
+        @object.save
     end
   end
 
