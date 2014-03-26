@@ -98,7 +98,7 @@
     <file path="/_error_messages.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1384886231180" ignored="false" />
     <file path="/tabulous.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1384892690572" ignored="false" />
     <file path="/navigation.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1392864659643" ignored="false" />
-    <file path="/application_helper.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395791538950" ignored="false" />
+    <file path="/application_helper.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395792300767" ignored="false" />
     <file path="/show_other_outputs.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1388079944660" ignored="false" />
     <file path="/crop.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395239957047" ignored="false" />
     <file path="/aws.yml" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1386794299030" ignored="false" />
@@ -214,7 +214,7 @@
       <file leaf-file-name="application_helper.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="30" selection-start="2406" selection-end="2406" vertical-scroll-proportion="0.29054055">
+            <state line="151" column="31" selection-start="2630" selection-end="2630" vertical-scroll-proportion="0.6199324">
               <folding />
             </state>
           </provider>
@@ -1348,7 +1348,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="30" selection-start="2406" selection-end="2406" vertical-scroll-proportion="0.29054055">
+        <state line="151" column="31" selection-start="2630" selection-end="2630" vertical-scroll-proportion="0.6199324">
           <folding />
         </state>
       </provider>
