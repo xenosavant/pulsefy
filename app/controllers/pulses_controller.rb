@@ -3,6 +3,7 @@ class PulsesController < ApplicationController
 before_filter :signed_in_node
 include SessionsHelper
 include ApplicationHelper
+include PulsesHelper
 
   def create
     @node = current_node
@@ -66,6 +67,7 @@ def update_embed
   api = Embedly::API.new
   @embed = api.oembed :url => @pulse.link
   if @embed[0].error
+    parse_link(:object => @pulse)
     return_back_to
     else
     @pulse.update_attributes(:embed_code => @embed[0].html, :thumbnail => @embed[0].thumbnail_url,
