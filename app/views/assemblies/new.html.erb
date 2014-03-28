@@ -1,7 +1,7 @@
 <div class = 'pad-block'><div class = 'title-box'>Assemble</div></div>
       <%= form_for(@assembly) do |f| %>
       <%= render 'shared/error_messages', :object => f.object %>
-
+      <div class = 'new-box'>
       <%= f.label :title %>
       <%= f.text_field :title, :size => '15x8' %>
 
@@ -18,7 +18,8 @@
       <%end%>
       <%= f.file_field :avatar %>
     </div>
-    <div class = 'button-box'>
+    </div>
+   <div class = 'button-box'>
       <%= f.submit 'Assemble!', :disable_with => 'Assembling...', :class => 'btn btn-medium btn-primary' %>
       </div>
     <% end %>

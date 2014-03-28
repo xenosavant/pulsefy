@@ -47,7 +47,6 @@ class Node < ActiveRecord::Base
     @impulse.increment!(:refires)
   end
 
-
   def get_pulse(args)
     @impulse = args[:pulse]
     if @impulse.pulser != self.id and !self.pulses.include?(@impulse)

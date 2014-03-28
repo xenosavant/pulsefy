@@ -4,6 +4,7 @@ class CreateConvos < ActiveRecord::Migration
       create_table :convos do |t|
         t.references :dialogue
         t.integer :interrogator_id, :interlocutor_id
+        t.boolean :active
         t.timestamps
       end
       add_index :convos, :dialogue_id
