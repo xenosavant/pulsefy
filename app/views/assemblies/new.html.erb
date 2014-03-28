@@ -3,11 +3,11 @@
       <%= form_for(@assembly) do |f| %>
       <%= render 'shared/error_messages', :object => f.object %>
       <%= f.label :title %>
-      <%= f.text_field :title, :size => '15x8' %>
+      <%= f.text_field :title %>
 
       <%= f.label :info %>
       <div class="textarea">
-      <%= f.text_area :info, :size => '15x8' %>
+      <%= f.text_area :info%>
       </div>
 
     <div class = 'input'>
