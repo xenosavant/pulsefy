@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/assemblies.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/assemblies.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/assemblies/new.html.erb" afterPath="$PROJECT_DIR$/app/views/assemblies/new.html.erb" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,7 +54,7 @@
     <file path="/20130618020317_create_assemblies_pulses_join_table.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371586030947" ignored="false" />
     <file path="/index.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371755025209" ignored="false" />
     <file path="/_assembly.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1391144645728" ignored="false" />
-    <file path="/assemblies.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395974604826" ignored="false" />
+    <file path="/assemblies.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395974787830" ignored="false" />
     <file path="/20130604190106_create_connectors.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371677124756" ignored="false" />
     <file path="/repulse.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1391635725706" ignored="false" />
     <file path="/20130619213037_create_repulses.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371692513752" ignored="false" />
@@ -215,7 +214,7 @@
       <file leaf-file-name="assemblies.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/assemblies.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="54" selection-start="873" selection-end="873" vertical-scroll-proportion="0.5785124">
+            <state line="68" column="50" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.8512397">
               <folding />
             </state>
           </provider>
@@ -1389,7 +1388,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/assemblies.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="54" selection-start="873" selection-end="873" vertical-scroll-proportion="0.5785124">
+        <state line="68" column="50" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.8512397">
           <folding />
         </state>
       </provider>
