@@ -25,6 +25,10 @@
           <%if params[:action] == 'show' %>
               <%= render 'shared/pulse_comment_form' %>
           <%end%>
+          <%when 'messages'%>
+          <%if params[:action] == 'show_messages' %>
+            <%= render 'shared/message_form' %>
+           <%end%>
       <%end%>
     </div>
   </div>
