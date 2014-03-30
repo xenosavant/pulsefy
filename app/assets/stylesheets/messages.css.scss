@@ -91,3 +91,11 @@ $lightSlate: #d0dfef;
   border: 5px;
 }
 
+.mess-pane {
+  position:absolute;
+  display:block;
+  width:500px;
+  overflow-y:scroll;
+  height:600px;
+}
+
