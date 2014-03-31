@@ -289,17 +289,12 @@ footer {
 }
 /* forms */
 
-input, textarea, textfield, select, .uneditable-input {
+textarea, textfield {
   border: 1px solid #bbb;
   padding: 10px;
   background-color: $lightSlate;
   width:90% !important;
 }
-
-textfield {
-  background-color: $lightSlate;
-}
-
 
 #error_explanation {
   color: #f00;
