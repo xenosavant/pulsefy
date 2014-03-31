@@ -7,11 +7,12 @@ class Node < ActiveRecord::Base
                   :crop_x, :crop_y, :crop_w, :crop_h, :remember_token,
                   :hub, :admin, :verified, :self_tag, :width,
                   :height
+  attr_accessor :unreads
   after_update :reprocess_avatar, :if => :cropping?
   has_secure_password
   before_save { |node| node.email = email.downcase }
   before_save :create_remember_token
-  validates :username,  :presence => true, :length => { :maximum => 50 }
+  validates :username,  :presence => true, :length => { :maximum => 30 }
   validate :check_avatar_dimensions
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, :presence => true, :format => { :with => VALID_EMAIL_REGEX },
@@ -29,6 +30,7 @@ class Node < ActiveRecord::Base
   has_many :dialogues, :dependent => :destroy
   has_many :votes
   has_many :repulses
+
   include Network
 
 
