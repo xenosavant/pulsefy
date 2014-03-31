@@ -29,6 +29,12 @@ class InboxesController < ApplicationController
   def show_convos
     @dialogue = Dialogue.find(params[:id])
     store_location(current_node.id, 'Inbox')
+    if @dialogue.receiver_id = current_node.id
+      @id = @dialogue.node_id
+    else
+      @id = @dialogue.receiver_id
+    end
+    store_receiver(@id)
     @convos = Convo.where(:dialogue_id => params[:id]).paginate(:page => params[:page])
   end
 

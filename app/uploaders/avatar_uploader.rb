@@ -7,7 +7,6 @@ class AvatarUploader < CarrierWave::Uploader::Base
   include Sprockets::Helpers::RailsHelper
   include Sprockets::Helpers::IsolatedHelper
   before :cache, :capture_size_before_cache # callback, example here: http://goo.gl/9VGHI
-
   # Choose what kind of storage to use for this uploader:
   storage :fog
 
@@ -31,9 +30,6 @@ class AvatarUploader < CarrierWave::Uploader::Base
   end
 
   # Create different versions of your uploaded files:
-  version :large do
-    process :resize_to_limit => [500, 700]
-  end
 
   def manualcrop
     return unless model.cropping?
@@ -49,6 +45,10 @@ class AvatarUploader < CarrierWave::Uploader::Base
      #img.crop(model.crop_x.to_i,model.crop_y.to_i,model.crop_h.to_i,model.crop_w.to_i)
      img
     end
+  end
+
+  version :large do
+    process :resize_to_limit => [500, 700]
   end
 
   version :profile do
