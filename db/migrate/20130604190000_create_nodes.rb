@@ -13,4 +13,5 @@ class CreateNodes < ActiveRecord::Migration
     add_index :nodes, :email, :unique => true
     add_index :nodes, :self_tag, :unique => true
   end
+
 end
