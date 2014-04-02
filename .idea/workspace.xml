@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shared/_assembly_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/assemblies_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/assemblies_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/assemblies/new.html.erb" afterPath="$PROJECT_DIR$/app/views/assemblies/new.html.erb" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,14 +44,14 @@
     <file path="/20130604190000_create_nodes.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1396232849370" ignored="false" />
     <file path="/assembly.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395585802601" ignored="false" />
     <file path="/20130617220608_create_assemblies.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1386957841135" ignored="false" />
-    <file path="/assemblies_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1396408874657" ignored="false" />
+    <file path="/assemblies_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1396409434841" ignored="false" />
     <file path="/assemblies_helper.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372176925514" ignored="false" />
     <file path="/_sidebar.htm.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371524346171" ignored="false" />
     <file path="/nodes.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1391143468939" ignored="false" />
     <file path="/custom.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1396211939422" ignored="false" />
     <file path="/_sidebar.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1387218668722" ignored="false" />
     <file path="/application.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1396409031475" ignored="false" />
-    <file path="/new.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1396230571371" ignored="false" />
+    <file path="/new.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1396409894909" ignored="false" />
     <file path="/20130618015740_create_assemblies_nodes_join_table.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371586016556" ignored="false" />
     <file path="/20130618020317_create_assemblies_pulses_join_table.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371586030947" ignored="false" />
     <file path="/index.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371755025209" ignored="false" />
@@ -167,91 +168,89 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="node.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/node.rb">
+      <file leaf-file-name="assemblies_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/assemblies_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="34" selection-start="3589" selection-end="3589" vertical-scroll-proportion="0.0">
+            <state line="15" column="32" selection-start="454" selection-end="454" vertical-scroll-proportion="0.3954306">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="avatar_uploader.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/uploaders/avatar_uploader.rb">
+      <file leaf-file-name="_pulse_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/shared/_pulse_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="2" selection-start="510" selection-end="510" vertical-scroll-proportion="0.0">
+            <state line="13" column="4" selection-start="379" selection-end="402" vertical-scroll-proportion="-8.125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_message.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/messages/_message.html.erb">
+      <file leaf-file-name="_assembly.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/assemblies/_assembly.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding>
-                <marker date="1395787665000" expanded="true" signature="54:250" placeholder="if ... end" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/messages/new.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/views/assemblies/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="52" selection-start="416" selection-end="416" vertical-scroll-proportion="-8.75">
+            <state line="28" column="15" selection-start="691" selection-end="691" vertical-scroll-proportion="-15.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
+      <file leaf-file-name="_pulse_comment_form.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/shared/_pulse_comment_form.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="295" column="21" selection-start="4556" selection-end="4556" vertical-scroll-proportion="-8.961538">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="assemblies_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/assemblies_controller.rb">
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/nodes/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="39" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <file leaf-file-name="_assembly_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/shared/_assembly_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="15" column="12" selection-start="422" selection-end="422" vertical-scroll-proportion="-9.375">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <file leaf-file-name="_error_messages.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/shared/_error_messages.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="13" selection-start="499" selection-end="499" vertical-scroll-proportion="0.46471602">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <file leaf-file-name="_message_form.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/shared/_message_form.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="15" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fog.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/initializers/fog.rb">
+      <file leaf-file-name="dialogues_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/dialogues_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -280,13 +279,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/_left-pane.html.erb" />
         <option value="$PROJECT_DIR$/app/models/dialogue.rb" />
         <option value="$PROJECT_DIR$/app/models/convo.rb" />
         <option value="$PROJECT_DIR$/app/models/assembly.rb" />
         <option value="$PROJECT_DIR$/app/views/assemblies/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/nodes/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/assemblies/new.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20130604190000_create_nodes.rb" />
         <option value="$PROJECT_DIR$/app/models/node.rb" />
         <option value="$PROJECT_DIR$/app/controllers/inboxes_controller.rb" />
@@ -294,8 +291,10 @@
         <option value="$PROJECT_DIR$/app/uploaders/avatar_uploader.rb" />
         <option value="$PROJECT_DIR$/app/views/messages/new.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-        <option value="$PROJECT_DIR$/app/controllers/assemblies_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/assemblies_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_assembly_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/assemblies/new.html.erb" />
       </list>
     </option>
   </component>
@@ -1301,81 +1300,11 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="19" selection-start="1499" selection-end="1499" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130604190000_create_nodes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="29" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/dialogues_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/dialogue.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/inboxes_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="18" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/assembly.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="43" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="15" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/fog.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/node.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="34" selection-start="3589" selection-end="3589" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/uploaders/avatar_uploader.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="2" selection-start="510" selection-end="510" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/messages/_message.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1395787665000" expanded="true" signature="54:250" placeholder="if ... end" />
+            <marker date="1395787665000" expanded="true" signature="-1:-1" placeholder="if ... end" />
           </folding>
         </state>
       </provider>
@@ -1394,13 +1323,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/assemblies_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="39" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1410,7 +1332,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="499" selection-end="499" vertical-scroll-proportion="0.46471602">
+        <state line="18" column="13" selection-start="499" selection-end="499" vertical-scroll-proportion="-11.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/pulses_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="84" selection-start="1043" selection-end="1187" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/dialogues_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/assemblies/_assembly.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_message_form.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_error_messages.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_assembly_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="12" selection-start="422" selection-end="422" vertical-scroll-proportion="-9.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_pulse_comment_form.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_pulse_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="4" selection-start="379" selection-end="402" vertical-scroll-proportion="-8.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/nodes/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/assemblies/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="15" selection-start="691" selection-end="691" vertical-scroll-proportion="-15.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/assemblies_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="32" selection-start="454" selection-end="454" vertical-scroll-proportion="0.3954306">
           <folding />
         </state>
       </provider>
