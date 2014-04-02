@@ -12,8 +12,7 @@ class AssembliesController < ApplicationController
        render 'assemblies/crop'
      end
   else
-    redirect_to :controller => 'assemblies', :action => 'new',
-                :errors => @assembly.errors.full_messages
+    redirect_to assemble_path(:errors => @assembly.errors.full_messages)
   end
   end
 
