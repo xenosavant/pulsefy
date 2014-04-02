@@ -196,7 +196,7 @@
       <file leaf-file-name="_right-pane.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_right-pane.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="27" selection-start="103" selection-end="103" vertical-scroll-proportion="0.08746356">
+            <state line="4" column="21" selection-start="98" selection-end="98" vertical-scroll-proportion="0.17492712">
               <folding />
             </state>
           </provider>
@@ -1427,7 +1427,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_right-pane.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="27" selection-start="103" selection-end="103" vertical-scroll-proportion="0.08746356">
+        <state line="4" column="21" selection-start="98" selection-end="98" vertical-scroll-proportion="0.17492712">
           <folding />
         </state>
       </provider>
