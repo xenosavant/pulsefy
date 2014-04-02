@@ -296,8 +296,9 @@ textarea, textfield {
   width:100% !important;
 }
 
-textarea {
-  height:400px;
+.form input {
+  width:100% !important;
+  margin:0  !important;
 }
 
 #error_explanation {
