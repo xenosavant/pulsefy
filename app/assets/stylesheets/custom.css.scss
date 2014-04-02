@@ -293,7 +293,11 @@ textarea, textfield {
   border: 1px solid #bbb;
   padding: 10px;
   background-color: $lightSlate;
-  width:95% !important;
+  width:100% !important;
+}
+
+textarea {
+  height:400px;
 }
 
 #error_explanation {
