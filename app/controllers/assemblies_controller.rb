@@ -12,7 +12,7 @@ class AssembliesController < ApplicationController
        render 'assemblies/crop'
      end
   else
-    render 'assemblies/new'
+    render 'assemblies/show_assemblies'
   end
   end
 
