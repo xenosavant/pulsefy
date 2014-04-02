@@ -69,28 +69,10 @@ module SessionsHelper
       when 'Static'
             redirect_to root_path
       when 'Inbox'
-        route_mail
+            redirect_to :controller => 'inboxes', :action => 'route_mail'
       else
-        redirect_to root_path
+            redirect_to root_path
     end
-  end
-end
-
-def route_mail
-  case session[:mail_location].nil? || session[:mail_id].nil?
-    when false
-       case session[:mail_location]
-          when 'convos'
-            redirect_to :controller => 'inboxes', :action => 'show_conversations',
-              :id => session[:mail_id]
-          when 'messages'
-            redirect_to :controller => 'inboxes', :action => 'show_messages',
-              :id => session[:return_to]
-       else
-            redirect_to :controller => 'inboxes', :action => 'show_dialogues'
-       end
-    else
-      redirect_to :controller => 'inboxes', :action => 'show_dialogues'
   end
 end
 

@@ -53,4 +53,22 @@ class InboxesController < ApplicationController
     @messages = Message.where(:convo_id => params[:id]).paginate(:page => params[:page])
   end
 
+  def route_mail
+    case session[:mail_location].nil? || session[:mail_id].nil?
+      when false
+        case session[:mail_location]
+          when 'convos'
+            redirect_to :controller => 'inboxes', :action => 'show_conversations',
+                        :id => session[:mail_id]
+          when 'messages'
+            redirect_to :controller => 'inboxes', :action => 'show_messages',
+                        :id => session[:return_to]
+          else
+            redirect_to :controller => 'inboxes', :action => 'show_dialogues'
+        end
+      else
+        redirect_to :controller => 'inboxes', :action => 'show_dialogues'
+    end
+  end
+
 end
