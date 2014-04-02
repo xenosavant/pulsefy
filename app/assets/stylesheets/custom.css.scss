@@ -319,8 +319,8 @@ textarea {
 .impulse {
   position:absolute;
   top:160px;
-  width:120px;
-  max-width:300px;
+  min-width:120px;
+  max-width:290px;
   max-height:550px;
   z-index: 1;
   font-size: 1.3em;
