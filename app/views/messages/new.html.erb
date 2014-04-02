@@ -3,11 +3,14 @@
     <% case @node.avatar.file.nil? %>
     <% when false %>
         Message <%= image_tag @node.avatar_url(:nano)%>
+        <% link_to @node do %>
+            <%= @node.username %>
+        <% end %>
      <% else %>
         Message <%= image_tag 'Q25.jpg' %>
-    <% end %>
-    <% link_to @node do %>
-        <%= @node.username %>
+        <% link_to @node do %>
+            <%= @node.username %>
+        <% end %>
     <% end %>
   </div>
 </div>
