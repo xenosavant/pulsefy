@@ -12,7 +12,6 @@
     </div>
 <%end%>
 <%= form_for @node, :html => { :action => 'update', :controller => 'nodes', :id => @node.id} do |f| %>
-        <%= render 'shared/error_messages', :object => f.object %>
 
         <%= f.label :username %>
         <%= f.text_field :username %>
