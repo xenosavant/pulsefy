@@ -47,7 +47,7 @@ class NodesController < ApplicationController
           redirect_to :controller => 'nodes', :action => 'crop'
         end
       else
-          redirect_to edit_path(:id => @node.id)
+          redirect_to edit_path(:id => @node.id, :errors => @node.errors.full_messages)
       end
   end
 
