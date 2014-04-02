@@ -187,16 +187,16 @@
       <file leaf-file-name="custom.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="309" column="24" selection-start="4754" selection-end="4754" vertical-scroll-proportion="0.6981707">
+            <state line="324" column="27" selection-start="4942" selection-end="4942" vertical-scroll-proportion="0.4237805">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inboxes_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/inboxes_controller.rb">
+      <file leaf-file-name="_left-pane.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_left-pane.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="77" selection-start="1675" selection-end="1675" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -1356,13 +1356,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_left-pane.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/inboxes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="77" selection-start="1675" selection-end="1675" vertical-scroll-proportion="0.0">
@@ -1426,9 +1419,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_left-pane.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="309" column="24" selection-start="4754" selection-end="4754" vertical-scroll-proportion="0.6981707">
+        <state line="324" column="27" selection-start="4942" selection-end="4942" vertical-scroll-proportion="0.4237805">
           <folding />
         </state>
       </provider>
