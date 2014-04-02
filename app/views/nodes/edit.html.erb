@@ -1,6 +1,17 @@
 <% provide(:title, "Edit Profile") %>
 <div class = 'pad-block'><div class = 'title-box'> Update Your Pulsefeed </div></div>
-    <%= form_for @node, :html => { :action => 'update', :controller => 'nodes', :id => @node.id} do |f| %>
+<% if params[:errors] %>
+    <div id="error_explanation">
+      <div class="alert alert-error">
+        <ul>
+          <%params[:errors].each do |msg| %>
+              <li> <%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+<%end%>
+<%= form_for @node, :html => { :action => 'update', :controller => 'nodes', :id => @node.id} do |f| %>
         <%= render 'shared/error_messages', :object => f.object %>
 
         <%= f.label :username %>
