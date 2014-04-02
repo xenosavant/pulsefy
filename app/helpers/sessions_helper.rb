@@ -39,6 +39,11 @@ module SessionsHelper
     session[:receiver] = receiver
   end
 
+  def store_mailbox(id, location)
+    session[:mail_id] = id
+    session[:mail_location] = location
+  end
+
   def sign_out
     self.current_node = nil
     cookies.delete(:remember_token)
@@ -72,13 +77,18 @@ module SessionsHelper
 end
 
 def route_mail
-  case params[:action]
-    when 'show_conversations'
-      redirect_to :controller => 'inboxes', :action => 'show_conversations',
-                  :id => session[:return_to]
-    when 'show_messages'
-      redirect_to :controller => 'inboxes', :action => 'show_messages',
-                  :id => session[:return_to]
+  case session[:mail_location].nil? || session[:mail_id].nil?
+    when false
+       case session[:mail_location]
+          when 'convos'
+            redirect_to :controller => 'inboxes', :action => 'show_conversations',
+              :id => session[:mail_id]
+          when 'messages'
+            redirect_to :controller => 'inboxes', :action => 'show_messages',
+              :id => session[:return_to]
+       else
+            redirect_to :controller => 'inboxes', :action => 'show_dialogues'
+       end
     else
       redirect_to :controller => 'inboxes', :action => 'show_dialogues'
   end

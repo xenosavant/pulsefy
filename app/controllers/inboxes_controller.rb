@@ -35,6 +35,7 @@ class InboxesController < ApplicationController
       @id = @dialogue.receiver_id
     end
     store_receiver(@id)
+    store_mailbox(@dialogue.id, 'convos')
     @convos = Convo.where(:dialogue_id => params[:id]).paginate(:page => params[:page])
   end
 
@@ -47,7 +48,7 @@ class InboxesController < ApplicationController
       @id = @convo.interrogator_id
     end
     @node = Node.find(@id)
-    store_location(@convo.id, 'Inbox')
+    store_mailbox(@convo.id, 'messages')
     store_receiver(@id)
     @messages = Message.where(:convo_id => params[:id]).paginate(:page => params[:page])
   end
