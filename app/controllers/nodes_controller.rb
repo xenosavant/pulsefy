@@ -46,6 +46,8 @@ class NodesController < ApplicationController
         else
           redirect_to :controller => 'nodes', :action => 'crop'
         end
+      else
+          redirect_to :controller => 'nodes', :action => 'show', :id => @node.id
       end
   end
 

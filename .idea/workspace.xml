@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/assembly.rb" afterPath="$PROJECT_DIR$/app/models/assembly.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/nodes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/nodes_controller.rb" />
     </list>
     <ignored path="Pulsefy.iws" />
@@ -23,7 +22,7 @@
     <file path="/20130611184143_create_votes.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371689468885" ignored="false" />
     <file path="/vote.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372222682322" ignored="false" />
     <file path="/node.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1396233109827" ignored="false" />
-    <file path="/nodes_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1396416873729" ignored="false" />
+    <file path="/nodes_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1396417305109" ignored="false" />
     <file path="/_node.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1391144656789" ignored="false" />
     <file path="/_header.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1396415140444" ignored="false" />
     <file path="/sessions_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1374704970063" ignored="false" />
@@ -188,7 +187,7 @@
       <file leaf-file-name="nodes_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/nodes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="56" selection-start="2537" selection-end="2537" vertical-scroll-proportion="0.5609756">
+            <state line="53" column="28" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.74390244">
               <folding />
             </state>
           </provider>
@@ -305,7 +304,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="53" />
+    <option name="x" value="28" />
     <option name="y" value="22" />
     <option name="width" value="1280" />
     <option name="height" value="536" />
@@ -1236,7 +1235,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="53" y="22" width="1280" height="536" extended-state="0" />
+    <frame x="28" y="22" width="1280" height="536" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1429,7 +1428,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/nodes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="56" selection-start="2537" selection-end="2537" vertical-scroll-proportion="0.5609756">
+        <state line="53" column="28" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.74390244">
           <folding />
         </state>
       </provider>
