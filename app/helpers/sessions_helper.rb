@@ -44,7 +44,7 @@ module SessionsHelper
     cookies.delete(:remember_token)
   end
 
-  def return_back_to
+  def return_back_to(params)
     case session[:return_to_type]
       when 'Node'
       case Node.find(session[:return_to]).nil?
@@ -63,10 +63,24 @@ module SessionsHelper
         end
       when 'Static'
             redirect_to root_path
-       when 'Inbox'
-           redirect_to :controller => 'inboxes', :action => 'show_dialogues'
+      when 'Inbox'
+        route_mail
       else
         redirect_to root_path
     end
   end
 end
+
+def route_mail
+  case params[:action]
+    when 'show_conversations'
+      redirect_to :controller => 'inboxes', :action => 'show_conversations',
+                  :id => session[:return_to]
+    when 'show_messages'
+      redirect_to :controller => 'inboxes', :action => 'show_messages',
+                  :id => session[:return_to]
+    else
+      redirect_to :controller => 'inboxes', :action => 'show_dialogues'
+  end
+end
+

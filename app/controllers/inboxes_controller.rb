@@ -28,7 +28,7 @@ class InboxesController < ApplicationController
 
   def show_convos
     @dialogue = Dialogue.find(params[:id])
-    store_location(current_node.id, 'Inbox')
+    store_location(@dialogue.id, 'Inbox')
     if @dialogue.receiver_id = current_node.id
       @id = @dialogue.node_id
     else
@@ -47,7 +47,7 @@ class InboxesController < ApplicationController
       @id = @convo.interrogator_id
     end
     @node = Node.find(@id)
-    store_location(@id, 'Inbox')
+    store_location(@convo.id, 'Inbox')
     store_receiver(@id)
     @messages = Message.where(:convo_id => params[:id]).paginate(:page => params[:page])
   end

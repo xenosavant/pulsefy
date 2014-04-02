@@ -3,7 +3,7 @@ class CreateMessages < ActiveRecord::Migration
     create_table :messages do |t|
       t.references :convo
       t.integer :receiver_id, :sender_id
-      t.string :content
+      t.text :content
       t.boolean :read
       t.timestamps
     end
