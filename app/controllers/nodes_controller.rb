@@ -44,7 +44,7 @@ class NodesController < ApplicationController
           sign_in(@node)
           redirect_to :controller => 'nodes', :action => 'show', :id => @node.id
         else
-          render :action => 'crop'
+          redirect_to :controller => 'nodes', :action => 'crop'
         end
       end
   end
@@ -101,7 +101,7 @@ class NodesController < ApplicationController
         #flash[:success] = "Pulsefeed Updated!"
         redirect_to :controller => 'nodes', :action => 'show', :id => params[:id]
       else
-        render 'crop'
+        redirect_to :controller => 'nodes', :action => 'crop'
       end
 
   end

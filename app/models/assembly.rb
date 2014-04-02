@@ -9,7 +9,7 @@ class Assembly < ActiveRecord::Base
    after_update :reprocess_avatar, :if => :cropping?
    has_and_belongs_to_many :nodes
    has_and_belongs_to_many :pulses
-   validates :info, :length => { :maximum => 1000 }
+   validates :info, :length => { :maximum => 2000 }
    validates :title, :presence => true, :uniqueness => {:scope => :founder}
    validate :check_avatar_dimensions
    include Network
