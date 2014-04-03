@@ -42,6 +42,8 @@ $frameColor: #121212;
   display: block;
   width: 450px;
   color: $grayLight;
+  word-wrap: true;
+  overflow:hidden;
 }
 
 .connectors_count {

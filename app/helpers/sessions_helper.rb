@@ -49,7 +49,7 @@ module SessionsHelper
     cookies.delete(:remember_token)
   end
 
-  def return_back_to(params)
+  def return_back_to
     case session[:return_to_type]
       when 'Node'
       case Node.find(session[:return_to]).nil?
