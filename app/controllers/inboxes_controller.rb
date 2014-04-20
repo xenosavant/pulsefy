@@ -62,7 +62,7 @@ class InboxesController < ApplicationController
                         :id => session[:mail_id]
           when 'messages'
             redirect_to :controller => 'inboxes', :action => 'show_messages',
-                        :id => session[:return_to]
+                        :id => session[:mail_id]
           else
             redirect_to :controller => 'inboxes', :action => 'show_dialogues'
         end

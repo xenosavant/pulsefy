@@ -10,7 +10,7 @@ module SessionsHelper
   end
 
   def signed_in_node
-    redirect_to pulsein_url, :notice => 'Please pulse in.' unless signed_in?
+    redirect_to pulsein_url, :notice => 'Please pulse in.' unless signed_in?2
   end
 
   def current_node=(node)
