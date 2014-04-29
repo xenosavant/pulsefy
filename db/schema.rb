@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140323211001) do
+ActiveRecord::Schema.define(:version => 20140422185157) do
 
   create_table "assemblies", :force => true do |t|
     t.string   "title"
@@ -67,6 +67,11 @@ ActiveRecord::Schema.define(:version => 20140323211001) do
   end
 
   add_index "dialogues", ["receiver_id"], :name => "index_dialogues_on_receiver_id"
+
+  create_table "dialogues_nodes", :id => false, :force => true do |t|
+    t.integer "dialogue_id"
+    t.integer "node_id"
+  end
 
   create_table "messages", :force => true do |t|
     t.integer  "convo_id"

@@ -10,7 +10,7 @@ class Assembly < ActiveRecord::Base
    has_and_belongs_to_many :nodes
    has_and_belongs_to_many :pulses
    validates :info, :length => { :maximum => 2000 }
-   validates :title, :presence => true, :uniqueness => {:scope => :founder}
+   validates :title, :length => { :maximum => 30 }, :presence => true, :uniqueness => {:scope => :founder}
    validate :check_avatar_dimensions
    include Network
 

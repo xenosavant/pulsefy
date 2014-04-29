@@ -173,6 +173,7 @@ body {
 .pad-block {
   height:30px;
   width:490px;
+  overflow:hidden;
   position:relative;
   float:top;
   display:block;
@@ -291,6 +292,7 @@ footer {
 
 textarea, textfield {
   border: 1px solid #bbb;
+  max-height: 95%;
   padding: 10px;
   background-color: $lightSlate;
   width:95% !important;
@@ -298,6 +300,7 @@ textarea, textfield {
 
 form {
   width:95% !important;
+  max-height: 95%;
   margin:0  !important;
 }
 

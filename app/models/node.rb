@@ -6,7 +6,7 @@ class Node < ActiveRecord::Base
                   :password, :password_confirmation, :avatar, :self_tag,
                   :crop_x, :crop_y, :crop_w, :crop_h, :remember_token,
                   :hub, :admin, :verified, :self_tag, :width,
-                  :height
+                  :height, :unreads
   attr_accessor :unreads
   after_update :reprocess_avatar, :if => :cropping?
   has_secure_password
@@ -22,12 +22,12 @@ class Node < ActiveRecord::Base
   validates :info, :length => { :maximum => 2000 }
   has_and_belongs_to_many :pulses
   has_and_belongs_to_many :assemblies
+  has_and_belongs_to_many :dialogues
   has_many :connectors, :foreign_key => 'input_id', :dependent => :destroy
   has_many :outputs, :through => :connectors
   has_many :reverse_relationships, :foreign_key => 'output_id',
       :class_name =>  'Connector', :dependent =>  :destroy
   has_many :inputs, :through => :reverse_relationships
-  has_many :dialogues, :dependent => :destroy
   has_many :votes
   has_many :repulses
 
