@@ -22,8 +22,9 @@ module Network
                               pulser != ?",
                              1.day.ago.utc, 'Node', self.id)
         if pulses
+        hashtag_regex = /\b#\w\w+/
         pulses.find_each do |p|
-          common = @impulse.tags.split(',') & p.tags.split(',')
+          common = @impulse.tags.split(hashtag_regex) & p.tags.split(hashtag_regex)
           if common.length > 0
           if self.outputs.include?(Node.find(p.pulser))
               @synapse = self.connectors.find_by_output_id(p.pulser)

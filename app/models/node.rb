@@ -1,7 +1,7 @@
 class Node < ActiveRecord::Base
 
 
-  mount_uploader :avatar, AvatarUploader
+  mount_uploader  :avatar, AvatarUploader
   attr_accessible :username, :email, :info, :threshold,
                   :password, :password_confirmation, :avatar, :self_tag,
                   :crop_x, :crop_y, :crop_w, :crop_h, :remember_token,
@@ -62,24 +62,6 @@ class Node < ActiveRecord::Base
     pulse.pulse_comments.create(:comment => args[:comment], :commenter => self.id )
   end
 
-  def receive_message(args)
-    @receiver_id = args[:receiver_id];
-    @sender_id =  args[:sender_id];
-    if args[:dialogue_exists]
-      if args[:convo_exists]
-        @convo = self.dialogues.find_by_interlocutor(@sender.id).convos.last
-      else
-        @convo = self.dialogues.find_by_interlocutor(@sender.id).convos.build
-      end
-    else
-      @dialogue = self.dialogues.build
-      @dialogue.update_attributes(:interlocutor => @receiver.id, :initiator => self.id)
-      @convo =  @dialogue.convos.build
-    end
-      @convo.messages << args[:message]
-  end
-
-
   def rate_pulse(args)
     @impulse = args[:pulse]
     @rating = args[:rating]
@@ -98,6 +80,7 @@ class Node < ActiveRecord::Base
 
   def defaults
     @threshold = 0.5
+    @unreads = 0
     @admin = false
     @hub = false
     @verified = false
@@ -120,6 +103,9 @@ class Node < ActiveRecord::Base
         end
         if self.width / self.height > 1.6
           errors.add :avatar, 'Aspect ratio of uploaded image must be less than 1.6.'
+        end
+        if self.avatar.file.size.to_f/(1000*1000) > 500.kilobytes
+          errors.add :avatar, 'You cannot upload a file greater than 500 kilobytes'
         end
       end
     end

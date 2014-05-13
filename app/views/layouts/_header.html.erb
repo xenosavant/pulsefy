@@ -9,8 +9,9 @@
                     <li> <a href='/'> Home </a> </li>
                     <li> <%= link_to 'Assemblies', view_path(:id => current_node.id) %></li>
                     <li> <%= link_to 'Connections', inputs_path(:id => current_node.id) %></li>
-                    <li> <%= link_to reroute_path do %>
+                    <li> <%= link_to inbox_path do %>
                           <i class='fa fa-small fa-envelope'></i>
+                          current_node.unreads
                           <%end%>
                     </li>
                   <li id='fat-menu' class='dropdown'>

@@ -9,7 +9,6 @@ Pulsefy::Application.routes.draw do
   resources :dialogues
 
   root :to => 'static#home'
-  match '/reroute' => 'inboxes#route_mail'
   match '/message' => 'messages#new'
   match '/inbox' => 'inboxes#show_dialogues'
   match '/dialogue' => 'inboxes#show_convos'

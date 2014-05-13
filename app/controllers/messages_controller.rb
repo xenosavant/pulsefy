@@ -1,5 +1,6 @@
 class MessagesController < ApplicationController
   include SessionsHelper
+  include InboxesHelper
 
   def create
     if session[:receiver] != current_node.id
@@ -58,6 +59,7 @@ class MessagesController < ApplicationController
     if @message.save
      redirect_to :controller => 'inboxes', :action => 'show_messages',
                 :id => @convo.id, :errors => @message.errors.full_messages
+     update_unreads(:node => @node)
     else return_back_to
     end
     else return_back_to
