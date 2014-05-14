@@ -1,6 +1,6 @@
 class NodesController < ApplicationController
 
-  before_filter :signed_in_node, :except => [:new, :create, :crop_update, :update]
+  before_filter :signed_in_node, :except => [:new, :create, :crop, :crop_update, :update]
   include SessionsHelper
 
   def show
@@ -38,7 +38,7 @@ class NodesController < ApplicationController
   end
 
   def update
-    @node =  current_node
+    @node = current_node
       if @node.update_attributes(params[:node])
         if params[:node][:avatar].blank?
           redirect_to :controller => 'nodes', :action => 'show', :id => @node.id
