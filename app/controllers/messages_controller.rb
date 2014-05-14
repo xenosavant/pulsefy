@@ -5,7 +5,7 @@ class MessagesController < ApplicationController
   def create
     if session[:receiver] != current_node.id
     @node = Node.find(session[:receiver])
-    case current_node.dialogues.where(:receiver_id => @node.id).exists? or @node.dialogues.where(:receiver_id => current_node.id).exists?
+    case current_node.dialogues.where(:receiver_id => @node.id).exists? or current_node.dialogues.where(:sender_id => @node.id).exists?
       when false
         @dialogue = current_node.dialogues.build
         @dialogue.update_attributes(:sender_id => current_node.id, :receiver_id => @node.id, :unread_receiver => true, :unread_sender => false)
@@ -14,11 +14,11 @@ class MessagesController < ApplicationController
         if current_node.dialogues.where(:receiver_id => @node.id).exists?
             @dialogue = current_node.dialogues.find_by_receiver_id(@node.id)
             @dialogue.update_attributes(:unread_receiver => true)
-          else if @node.dialogues.where(:receiver_id => current_node.id).exists?
-            @dialogue = @node.dialogues.find_by_receiver_id(current_node.id)
+          else
+            @dialogue = @node.dialogues.find_by_sender_id(@node.id)
             @dialogue.update_attributes(:unread_sender => true)
-               end
         end
+      end
     end
     @dialogue.save
     case @dialogue.convos.any?
@@ -63,12 +63,11 @@ class MessagesController < ApplicationController
     else return_back_to
     end
     else return_back_to
-    end
-  end
+end
 
   def new
     @message = Message.new
-    @node =  Node.find(session[:receiver]);
+    @node =  Node.find(session[:receiver])
   end
 
   def update
