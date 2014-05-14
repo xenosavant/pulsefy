@@ -63,7 +63,6 @@ class MessagesController < ApplicationController
      update_unreads(:node => @node)
     else return_back_to
     end
-    else return_back_to
 end
 
   def new

@@ -54,24 +54,24 @@ module SessionsHelper
       when 'Node'
       case Node.find(session[:return_to]).nil?
         when false
-        redirect_to Node.find(session[:return_to])
+        render Node.find(session[:return_to])
       end
       when 'Assembly'
         case Assembly.find(session[:return_to]).nil?
           when false
-            redirect_to Assembly.find(session[:return_to])
+            render Assembly.find(session[:return_to])
         end
       when 'Pulse'
         case Pulse.find(session[:return_to]).nil?
           when false
-            redirect_to Pulse.find(session[:return_to])
+            render Pulse.find(session[:return_to])
         end
       when 'Static'
-            redirect_to root_path
+            render root_path
       when 'Inbox'
-            redirect_to :controller => 'inboxes', :action => 'route_mail'
+            render inbox_path
       else
-            redirect_to root_path
+            render root_path
     end
   end
 end
