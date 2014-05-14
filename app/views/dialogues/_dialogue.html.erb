@@ -1,9 +1,9 @@
 <li>
  <div class = 'messenger-box'>
   <%if !Node.find(dialogue.sender_id).avatar.file.nil? %>
-      <%= link_to image_tag(Node.find(dialogue.sender_id).avatar_url(:thumb)), :action => 'show', :controller => 'nodes', :id => dialogue.node_id %>
+      <%= link_to image_tag(Node.find(dialogue.sender_id).avatar_url(:thumb)), :action => 'show', :controller => 'nodes', :id => dialogue.sender_id %>
   <% else%>
-      <%= link_to image_tag('Q100.jpg'), :action => 'show', :controller => 'nodes', :id => dialogue.node_id %>
+      <%= link_to image_tag('Q100.jpg'), :action => 'show', :controller => 'nodes', :id => dialogue.sender_id %>
   <%end%>2
  </div>
   <div class = 'time-background'>
