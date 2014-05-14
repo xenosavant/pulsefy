@@ -24,7 +24,7 @@ class InboxesController < ApplicationController
     @dialogue = Dialogue.find(params[:id])
     store_location(@dialogue.id, 'Inbox')
     if @dialogue.receiver_id = current_node.id
-      @id = @dialogue.node_id
+      @id = @dialogue.sender_id
     else
       @id = @dialogue.receiver_id
     end
