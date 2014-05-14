@@ -40,7 +40,7 @@ body {
   float:left;
   top:50px;
   width:290px;
-  padding:10px;
+  padding:12px;
   height:750px;
   background-color:$innerColor;
   -webkit-border-radius:10px 0px 0px 10px;
@@ -54,7 +54,7 @@ body {
   top:50px;
   float:right;
   width:290px;
-  padding:10px;
+  padding:12px;
   min-height:750px;
   max-height:80%;
   background-color:$innerColor;
@@ -118,8 +118,8 @@ body {
   height:auto;
   min-height:90%;
   width: 650px;
-  margin-left:310px;
-  margin-right:310px;
+  margin-left:314px;
+  margin-right:314px;
   text-align:left;
   -webkit-border-radius:0px 0px 10px 10px;
   -moz-border-radius:0px 0px 10px 10px;
@@ -130,7 +130,7 @@ body {
   z-index:0;
   margin-top:20%;
   position:relative;
-  width:1270px;
+  width:1278px;
   margin-left: auto !important;
   margin-right: auto !important;
 }
@@ -145,7 +145,7 @@ body {
 .background-pane {
   z-index:0;
   position:relative;
-  width:1280px;
+  width:1278px;
   margin-left: auto !important;
   margin-right: auto !important;
 }
@@ -429,7 +429,7 @@ textarea, textfield {
   position:relative;
   z-index:2;
   width:100%;
-  min-width:1280px;
+  min-width:1278px;
   background-color:$frameColor;
   overflow-x:hidden;
 }
