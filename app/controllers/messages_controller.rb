@@ -12,20 +12,21 @@ class MessagesController < ApplicationController
         @node.dialogues << @dialogue
       when true
         if current_node.dialogues.where(:receiver_id => @node.id).exists?
-            @dialogue = current_node.dialogues.find_by_receiver_id(@node.id)
+            @dialogue = current_node.dialogues.where(:receiver_id => @node.id).first
             @dialogue.update_attributes(:unread_receiver => true)
-          else
-            @dialogue = @node.dialogues.find_by_sender_id(@node.id)
+          else if current_node.dialogues.where(:sender_id => @node.id).exists?
+            @dialogue = @node.dialogues.where(:sender_id => @node.id).first
             @dialogue.update_attributes(:unread_sender => true)
+          end
         end
       end
     end
     @dialogue.save
     case @dialogue.convos.any?
       when true
-        case Convo.where('dialogue_id = ? AND active = ?', @dialogue.id, true).first.nil?
+        case @dialogue.convos.where(:active => true).last.nil?
           when false
-            @old_convo = Convo.where('dialogue_id = ? AND active = ?', @dialogue.id, true).first
+            @old_convo = @dialogue.convos.where(:active => true).last
             if Time.now - @old_convo.created_at > 12.hours
               @old_convo.update_attributes(:active => false)
               @old_convo.save

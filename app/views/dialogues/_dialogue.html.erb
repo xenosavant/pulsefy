@@ -4,7 +4,7 @@
       <%= link_to image_tag(Node.find(dialogue.sender_id).avatar_url(:thumb)), :action => 'show', :controller => 'nodes', :id => dialogue.sender_id %>
   <% else%>
       <%= link_to image_tag('Q100.jpg'), :action => 'show', :controller => 'nodes', :id => dialogue.sender_id %>
-  <%end%>2
+  <%end%>
  </div>
   <div class = 'time-background'>
       <%= link_to :action => 'show_convos', :controller => 'inboxes', :id => dialogue.id  do  %>
