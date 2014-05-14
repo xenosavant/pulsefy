@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dialogues/_dialogue.html.erb" afterPath="$PROJECT_DIR$/app/views/dialogues/_dialogue.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/messages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/nodes/show.html.erb" afterPath="$PROJECT_DIR$/app/views/nodes/show.html.erb" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -172,7 +172,16 @@
       <file leaf-file-name="messages_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="59" selection-start="1364" selection-end="1364" vertical-scroll-proportion="0.509839">
+            <state line="44" column="50" selection-start="2106" selection-end="2106" vertical-scroll-proportion="1.1806798">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/nodes/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="39" selection-start="733" selection-end="733" vertical-scroll-proportion="-10.0">
               <folding />
             </state>
           </provider>
@@ -250,15 +259,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nodes_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/nodes_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -280,7 +280,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/message.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140225193926_create_messages.rb" />
         <option value="$PROJECT_DIR$/app/views/shared/_pulse_form.html.erb" />
         <option value="$PROJECT_DIR$/app/models/dialogue.rb" />
@@ -295,6 +294,7 @@
         <option value="$PROJECT_DIR$/app/controllers/inboxes_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/inboxes/show_convos.html.erb" />
         <option value="$PROJECT_DIR$/app/views/dialogues/_dialogue.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/nodes/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
       </list>
     </option>
@@ -1288,13 +1288,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/nodes/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="126" column="31" selection-start="2137" selection-end="2137" vertical-scroll-proportion="-15.192307">
@@ -1393,9 +1386,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/nodes/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="39" selection-start="733" selection-end="733" vertical-scroll-proportion="-10.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="59" selection-start="1364" selection-end="1364" vertical-scroll-proportion="0.509839">
+        <state line="44" column="50" selection-start="2106" selection-end="2106" vertical-scroll-proportion="1.1806798">
           <folding />
         </state>
       </provider>

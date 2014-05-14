@@ -7,10 +7,10 @@
 <div class = 'profile-info'>
   <%= link_to pluralize(@node.assemblies.count, 'assembly'), view_path(:id => @node.id) %> |
   <%= link_to pluralize(@node.inputs.count, 'input'), otherinputs_path(:id => @node.id) %> |
-  <%= link_to pluralize(@node.outputs.count, 'output'), otheroutputs_path(:id => @node.id) %> |
-  <% if @node.id != current_node.id %>
+  <%= link_to pluralize(@node.outputs.count, 'output'), otheroutputs_path(:id => @node.id) %>
+  <% if @node.id != current_node.id %> |
     <%= link_to :controller => 'messages', :action => 'new' do  %>
-      <i class="fa fa-large fa-envelope"></i>
+    <i class="fa fa-large fa-envelope"></i>
     <%end%>
   <% end %>
 </div>
