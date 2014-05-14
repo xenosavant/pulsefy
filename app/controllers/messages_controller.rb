@@ -12,10 +12,10 @@ class MessagesController < ApplicationController
         @node.dialogues << @dialogue
         current_node << @dialogue
       when true
-        if current_node.dialogues.where(:receiver_id => @node.id).first.exists?
+        if !current_node.dialogues.where(:receiver_id => @node.id).nil?
             @dialogue = current_node.dialogues.where(:receiver_id => @node.id).first
             @dialogue.update_attributes(:unread_receiver => true)
-          else if current_node.dialogues.where(:sender_id => @node.id).first.exists?
+          else if !current_node.dialogues.where(:sender_id => @node.id).nil?
             @dialogue = current_node.dialogues.where(:sender_id => @node.id).first
             @dialogue.update_attributes(:unread_sender => true)
           end
