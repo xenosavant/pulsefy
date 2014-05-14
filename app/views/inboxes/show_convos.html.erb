@@ -1,9 +1,9 @@
 <div class = 'pad-block'>
   <div class = 'title-box'> My Conversations With
-    <% if @dialogue.node_id = current_node.id  %>
+    <% if @dialogue.sender_id = current_node.id  %>
      <%= Node.find(@dialogue.receiver_id).username %>
     <% else %>
-     <%= Node.find(@dialogue.node_id).username %>
+     <%= Node.find(@dialogue.sender_id).username %>
      <% end %>
   </div>
 </div>
