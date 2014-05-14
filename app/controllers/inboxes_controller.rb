@@ -4,19 +4,19 @@ class InboxesController < ApplicationController
 
   def show_dialogues
     @node = current_node
-    store_location(current_node.id, 'Inbox')
+    store_location(@node.id, 'Inbox')
     update_dialogues
-    case session[:mail_location].nil? || session[:mail_id].nil? || session[:mail_id] = 0
-      when false
-        case session[:mail_location]
-          when 'convos'
-            redirect_to :controller => 'inboxes', :action => 'show_conversations',
-                        :id => session[:mail_id]
-          when 'messages'
-            redirect_to :controller => 'inboxes', :action => 'show_messages',
-                        :id => session[:mail_id]
-        end
-    end
+    #case session[:mail_location].nil? || session[:mail_id].nil? || session[:mail_id] = 0
+    #  when false
+    #    case session[:mail_location]
+    #      when 'convos'
+    #        redirect_to :controller => 'inboxes', :action => 'show_conversations',
+    #                    :id => session[:mail_id]
+    #      when 'messages'
+    #        redirect_to :controller => 'inboxes', :action => 'show_messages',
+    #                    :id => session[:mail_id]
+    #    end
+    #end
     @dialogues = @node.dialogues.paginate(:page => params[:page])
   end
 
