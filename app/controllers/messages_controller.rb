@@ -10,6 +10,7 @@ class MessagesController < ApplicationController
         @dialogue = current_node.dialogues.build
         @dialogue.update_attributes(:sender_id => current_node.id, :receiver_id => @node.id, :unread_receiver => true, :unread_sender => false)
         @node.dialogues << @dialogue
+        current_node << @dialogue
       when true
         if current_node.dialogues.where(:receiver_id => @node.id).exists?
             @dialogue = current_node.dialogues.where(:receiver_id => @node.id).first
