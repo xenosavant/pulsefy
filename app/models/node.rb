@@ -7,7 +7,6 @@ class Node < ActiveRecord::Base
                   :crop_x, :crop_y, :crop_w, :crop_h, :remember_token,
                   :hub, :admin, :verified, :self_tag, :width,
                   :height, :unreads
-  attr_accessor :unreads
   after_update :reprocess_avatar, :if => :cropping?
   has_secure_password
   before_save { |node| node.email = email.downcase }
