@@ -20,8 +20,8 @@ module InboxesHelper
     @node.save
   end
 
-  def update_dialogues
-    @node = current_node
+  def update_dialogues(args)
+    @node = args[:node]
     @node.dialogues.find_each do |d|
       tmp = 0
       d.convos.find_each do  |c|
