@@ -125,7 +125,7 @@
     <file path="/convos_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1392864489193" ignored="false" />
     <file path="/inboxes_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1400177184089" ignored="false" />
     <file path="/show_dialogues.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1393827256122" ignored="false" />
-    <file path="/messages_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1400180098815" ignored="false" />
+    <file path="/messages_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1400180887670" ignored="false" />
     <file path="/_message_form.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1392873531861" ignored="false" />
     <file path="/20140220041011_messages_nodes_join_table.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1392871090249" ignored="false" />
     <file path="/_message_form.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1398034114626" ignored="false" />
@@ -172,7 +172,16 @@
       <file leaf-file-name="messages_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="12" selection-start="399" selection-end="399" vertical-scroll-proportion="0.21466905">
+            <state line="15" column="71" selection-start="794" selection-end="794" vertical-scroll-proportion="0.40250447">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="network.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers/network.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="43" selection-start="965" selection-end="965" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -191,15 +200,6 @@
         <entry file="file://$PROJECT_DIR$/app/helpers/inboxes_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="14" column="25" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="72" selection-start="600" selection-end="600" vertical-scroll-proportion="-11.875">
               <folding />
             </state>
           </provider>
@@ -1128,13 +1128,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/inboxes/show_dialogues.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dialogues/_dialogue.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="7" selection-start="526" selection-end="725" vertical-scroll-proportion="-6.25">
@@ -1240,9 +1233,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/network.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="43" selection-start="965" selection-end="965" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="12" selection-start="399" selection-end="399" vertical-scroll-proportion="0.21466905">
+        <state line="15" column="71" selection-start="794" selection-end="794" vertical-scroll-proportion="0.40250447">
           <folding />
         </state>
       </provider>
