@@ -68,7 +68,7 @@ module SessionsHelper
             render Pulse.find(session[:return_to])
         end
       when 'Static'
-            render root_path
+            redirect_to root_path
       when 'Inbox'
             render inbox_path
       else
