@@ -41,7 +41,8 @@ class NodesController < ApplicationController
     @node = current_node
       if @node.update_attributes(params[:node])
         if params[:node][:avatar].blank?
-          redirect_to :controller => 'nodes', :action => 'show', :id => @node.id
+          sign_in(@node)
+          render current_node
         else
           sign_in(@node)
           render 'crop'
