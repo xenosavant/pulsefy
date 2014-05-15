@@ -38,10 +38,10 @@ class InboxesController < ApplicationController
     @convo = Convo.find(params[:id])
     if @convo.interrogator_id == current_node.id
       @id = @convo.interlocutor_id
-      @convo.update_attributes(:unread_by_interrogator => false)
+      @convo.update_attributes(:unread_interrogator => false)
     else
       @id = @convo.interrogator_id
-      @convo.update_attributes(:unread_by_interlocutor => false)
+      @convo.update_attributes(:unread_interlocutor => false)
     end
     @node = Node.find(@id)
     store_mailbox(@convo.id, 'messages')
