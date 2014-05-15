@@ -42,7 +42,7 @@ class NodesController < ApplicationController
       if @node.update_attributes(params[:node])
         if params[:node][:avatar].blank?
           sign_in(@node)
-          render current_node
+          render @node
         else
           sign_in(@node)
           render 'crop'
