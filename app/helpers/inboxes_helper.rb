@@ -1,4 +1,5 @@
 module InboxesHelper
+  include SessionsHelper
 
   def update_unreads(args)
     @node = args[:node]
@@ -17,6 +18,7 @@ module InboxesHelper
       end
      end
     @node.update_attributes(:unreads => tmp)
+    sign_in(@node)
   end
 
   def update_dialogues(args)
