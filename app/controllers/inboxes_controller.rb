@@ -23,7 +23,7 @@ class InboxesController < ApplicationController
   def show_convos
     @node = current_node
     @dialogue = Dialogue.find(params[:id])
-    if @dialogue.receiver_id = @node.id
+    if @dialogue.receiver_id == @node.id
       @id = @dialogue.sender_id
     else
       @id = @dialogue.receiver_id
