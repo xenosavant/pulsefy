@@ -44,7 +44,7 @@ class NodesController < ApplicationController
           redirect_to :controller => 'nodes', :action => 'show', :id => @node.id
         else
           sign_in(@node)
-          render crop_path
+          render 'crop'
         end
       else
           redirect_to edit_path(:id => @node.id, :errors => @node.errors.full_messages)
