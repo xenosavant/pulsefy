@@ -172,7 +172,7 @@
       <file leaf-file-name="messages_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="16" selection-start="351" selection-end="351" vertical-scroll-proportion="0.12886597">
+            <state line="12" column="34" selection-start="605" selection-end="605" vertical-scroll-proportion="0.23195876">
               <folding />
             </state>
           </provider>
@@ -307,7 +307,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-11" />
+    <option name="x" value="2" />
     <option name="y" value="22" />
     <option name="width" value="1280" />
     <option name="height" value="743" />
@@ -954,7 +954,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="22" width="1280" height="743" extended-state="0" />
+    <frame x="2" y="22" width="1280" height="743" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1147,7 +1147,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="16" selection-start="351" selection-end="351" vertical-scroll-proportion="0.12886597">
+        <state line="12" column="34" selection-start="605" selection-end="605" vertical-scroll-proportion="0.23195876">
           <folding />
         </state>
       </provider>
