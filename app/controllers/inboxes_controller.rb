@@ -45,7 +45,6 @@ class InboxesController < ApplicationController
       @id = @convo.interrogator_id
       @convo.update_attributes(:unread_interlocutor => false)
     end
-    @node = Node.find(@id)
     update_unreads(:node => @node)
     store_mailbox(@convo.id, 'messages')
     store_receiver(@id)
