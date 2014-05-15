@@ -43,7 +43,8 @@ class NodesController < ApplicationController
         if params[:node][:avatar].blank?
           redirect_to :controller => 'nodes', :action => 'show', :id => @node.id
         else
-          redirect_to :controller => 'nodes', :action => 'crop'
+          sign_in(@node)
+          render crop_path
         end
       else
           redirect_to edit_path(:id => @node.id, :errors => @node.errors.full_messages)
