@@ -1,10 +1,6 @@
 <div class = 'pad-block'>
   <div class = 'title-box'> My Conversations With
-    <% if @dialogue.sender_id = current_node.id  %>
-     <%= Node.find(@dialogue.receiver_id).username %>
-    <% else %>
-     <%= Node.find(@dialogue.sender_id).username %>
-     <% end %>
+     <%= Node.find(@id).username %>
   </div>
 </div>
 <% if !@convos.nil? %>
