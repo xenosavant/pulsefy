@@ -42,7 +42,7 @@ class NodesController < ApplicationController
       if @node.update_attributes(params[:node])
         if params[:node][:avatar].blank?
           sign_in(@node)
-          render @node
+          redirect_to show_path(:id => @node.id, :errors => @node.errors.full_messages)
         else
           sign_in(@node)
           render 'crop'
