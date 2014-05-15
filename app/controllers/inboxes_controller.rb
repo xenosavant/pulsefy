@@ -21,14 +21,15 @@ class InboxesController < ApplicationController
   end
 
   def show_convos
+    @node = current_node
     @dialogue = Dialogue.find(params[:id])
-    store_location(@dialogue.id, 'Inbox')
-    if @dialogue.receiver_id = current_node.id
+    if @dialogue.receiver_id = @node.id
       @id = @dialogue.sender_id
     else
       @id = @dialogue.receiver_id
     end
     store_receiver(@id)
+    store_location(@dialogue.id, 'Inbox')
     store_mailbox(@dialogue.id, 'convos')
     @convos = @dialogue.convos.paginate(:page => params[:page])
   end
