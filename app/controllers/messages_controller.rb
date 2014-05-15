@@ -3,7 +3,7 @@ class MessagesController < ApplicationController
   include InboxesHelper
 
   def create
-    if session[:receiver] != current_node.id
+    if session[:receiver] != current_node.id and session[:receiver] != 0 and !session[:receiver].nil?
     @node = Node.find(session[:receiver])
     case current_node.dialogues.where(:receiver_id => @node.id).nil? and current_node.dialogues.where(:sender_id => @node.id).nil?
       when true
@@ -19,7 +19,7 @@ class MessagesController < ApplicationController
             @dialogue = current_node.dialogues.where(:sender_id => @node.id).first
             @dialogue.update_attributes(:unread_sender => true)
           end
-          end
+        end
       else
         @dialogue = current_node.dialogues.build
         @dialogue.update_attributes(:sender_id => current_node.id, :receiver_id => @node.id, :unread_receiver => true, :unread_sender => false)
