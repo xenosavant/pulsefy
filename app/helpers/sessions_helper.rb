@@ -50,6 +50,7 @@ module SessionsHelper
   end
 
   def return_back_to
+    if !session[:return_to_type].nil?
     case session[:return_to_type]
       when 'Node'
       case Node.find(session[:return_to]).nil?
@@ -72,6 +73,7 @@ module SessionsHelper
             render inbox_path
       else
             render root_path
+      end
     end
   end
 end
