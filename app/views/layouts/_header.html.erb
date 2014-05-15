@@ -11,7 +11,9 @@
                     <li> <%= link_to 'Connections', inputs_path(:id => current_node.id) %></li>
                     <li> <%= link_to inbox_path do %>
                           <i class='fa fa-small fa-envelope'></i>
-                          <%= current_node.unreads %>
+                          <% if current_node.unreads != 0 and !current_node.unreads.nil?%>
+                          <span class="badge badge-important"><%= current_node.unreads %></span>
+                          <% end %>
                           <%end%>
                     </li>
                   <li id='fat-menu' class='dropdown'>
