@@ -73,7 +73,9 @@ module SessionsHelper
             render inbox_path
       else
             render root_path
-      end
+    end
+    else
+      render root_path
     end
   end
 end
