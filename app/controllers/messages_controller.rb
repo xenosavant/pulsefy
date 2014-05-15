@@ -18,7 +18,7 @@ class MessagesController < ApplicationController
           else if current_node.dialogues.where(:sender_id => @node.id).exists?
             @dialogue = current_node.dialogues.where(:sender_id => @node.id).first
             @dialogue.update_attributes(:unread_sender => true)
-          end
+               end
         end
       else
         @dialogue = current_node.dialogues.build
