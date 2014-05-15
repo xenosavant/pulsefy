@@ -9,7 +9,7 @@
   <%= link_to pluralize(@node.inputs.count, 'input'), otherinputs_path(:id => @node.id) %> |
   <%= link_to pluralize(@node.outputs.count, 'output'), otheroutputs_path(:id => @node.id) %>
   <% if @node.id != current_node.id %> |
-    <%= link_to :controller => 'messages', :action => 'new' do  %>
+    <%= link_to :controller => 'messages', :action => 'new', :id => @node.id do  %>
     <i class="fa fa-large fa-envelope"></i>
     <%end%>
   <% end %>

@@ -73,7 +73,8 @@ end
 
   def new
     @message = Message.new
-    @node =  Node.find(session[:receiver])
+    store_receiver(params[:id])
+    @node =  Node.find(params[:id])
   end
 
   def update
