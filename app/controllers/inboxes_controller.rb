@@ -46,6 +46,7 @@ class InboxesController < ApplicationController
       @convo.update_attributes(:unread_interlocutor => false)
     end
     update_unreads(:node => @node)
+    sign_in(@node)
     store_mailbox(@convo.id, 'messages')
     store_receiver(@id)
     @messages = @convo.messages.paginate(:page => params[:page])
