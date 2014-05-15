@@ -36,8 +36,9 @@ class InboxesController < ApplicationController
 
   def show_messages
     @message = Message.new
+    @node = current_node
     @convo = Convo.find(params[:id])
-    if @convo.interrogator_id == current_node.id
+    if @convo.interrogator_id == @node.id
       @id = @convo.interlocutor_id
       @convo.update_attributes(:unread_interrogator => false)
     else
@@ -45,7 +46,7 @@ class InboxesController < ApplicationController
       @convo.update_attributes(:unread_interlocutor => false)
     end
     @node = Node.find(@id)
-    update_unreads(:node => current_node)
+    update_unreads(:node => @node)
     store_mailbox(@convo.id, 'messages')
     store_receiver(@id)
     @messages = @convo.messages.paginate(:page => params[:page])
