@@ -199,7 +199,7 @@
       <file leaf-file-name="inboxes_helper.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/helpers/inboxes_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="39" selection-start="1127" selection-end="1127" vertical-scroll-proportion="0.8291457">
+            <state line="19" column="41" selection-start="461" selection-end="461" vertical-scroll-proportion="0.47738692">
               <folding />
             </state>
           </provider>
@@ -1116,7 +1116,9 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/db/migrate/20130604190000_create_nodes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="39" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0" />
+        <state line="10" column="39" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/nodes/new.html.erb">
@@ -1211,7 +1213,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/inboxes_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="39" selection-start="1127" selection-end="1127" vertical-scroll-proportion="0.8291457">
+        <state line="19" column="41" selection-start="461" selection-end="461" vertical-scroll-proportion="0.47738692">
           <folding />
         </state>
       </provider>
