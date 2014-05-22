@@ -55,17 +55,17 @@ module SessionsHelper
       when 'Node'
       case Node.find(session[:return_to]).nil?
         when false
-          redirect_to Node.find(session[:return_to])
+          render Node.find(session[:return_to])
       end
       when 'Assembly'
         case Assembly.find(session[:return_to]).nil?
           when false
-            redirect_to Assembly.find(session[:return_to])
+            render Assembly.find(session[:return_to])
         end
       when 'Pulse'
         case Pulse.find(session[:return_to]).nil?
           when false
-            redirect_to Pulse.find(session[:return_to])
+            render Pulse.find(session[:return_to])
         end
       when 'Static'
             redirect_to root_path
