@@ -33,6 +33,7 @@ include PulsesHelper
     if !@pulse.link.nil?
       update_embed
     end
+    return_back_to
   end
 
   def show
@@ -65,10 +66,9 @@ include PulsesHelper
 def update_embed
   api = Embedly::API.new
   @embed = api.oembed :url => @pulse.link
-  if @embed[0].error
+  if @embed[0].error || @embed[0].type == 'link'
     parse_link(:object => @pulse)
-    return_back_to
-    else
+  else
     @pulse.update_attributes(:embed_code => @embed[0].html, :thumbnail => @embed[0].thumbnail_url,
                            :link_type => @embed[0].type, :url => @embed[0].url)
   end
