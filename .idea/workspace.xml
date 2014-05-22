@@ -27,7 +27,7 @@
     <file path="/_header.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1400175030177" ignored="false" />
     <file path="/sessions_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1374704970063" ignored="false" />
     <file path="/Gemfile" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395599039280" ignored="false" />
-    <file path="/sessions_helper.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1400770408630" ignored="false" />
+    <file path="/sessions_helper.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1400770559167" ignored="false" />
     <file path="/show.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1400179737162" ignored="false" />
     <file path="/_pulse_comment_form.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395586853403" ignored="false" />
     <file path="/pulse_comments_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395822770024" ignored="false" />
@@ -181,7 +181,7 @@
       <file leaf-file-name="sessions_helper.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="33" selection-start="1611" selection-end="1611" vertical-scroll-proportion="0.6482412">
+            <state line="66" column="18" selection-start="1492" selection-end="1492" vertical-scroll-proportion="0.5477387">
               <folding />
             </state>
           </provider>
@@ -1132,7 +1132,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -1239,7 +1239,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="33" selection-start="1611" selection-end="1611" vertical-scroll-proportion="0.6482412">
+        <state line="66" column="18" selection-start="1492" selection-end="1492" vertical-scroll-proportion="0.5477387">
           <folding />
         </state>
       </provider>
