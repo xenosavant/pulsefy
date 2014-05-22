@@ -8,10 +8,9 @@ class Node < ActiveRecord::Base
                   :hub, :admin, :verified, :self_tag, :width,
                   :height, :unreads
   after_update :reprocess_avatar, :if => :cropping?
-  after_update :sign_in_self
   has_secure_password
   before_save { |node| node.email = email.downcase }
-  before_save :create_remember_token
+  before_create :create_remember_token
   validates :username,  :presence => true, :length => { :maximum => 20 }
   validate :check_avatar_dimensions
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i

@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/inboxes_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/inboxes_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/node.rb" afterPath="$PROJECT_DIR$/app/models/node.rb" />
     </list>
     <ignored path="Pulsefy.iws" />
@@ -227,7 +226,7 @@
       <file leaf-file-name="node.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/node.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="21" selection-start="447" selection-end="447" vertical-scroll-proportion="0.2512563">
+            <state line="86" column="32" selection-start="2976" selection-end="2976" vertical-scroll-proportion="0.60301507">
               <folding />
             </state>
           </provider>
@@ -1214,7 +1213,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/node.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="21" selection-start="447" selection-end="447" vertical-scroll-proportion="0.2512563">
+        <state line="86" column="32" selection-start="2976" selection-end="2976" vertical-scroll-proportion="0.60301507">
           <folding />
         </state>
       </provider>
