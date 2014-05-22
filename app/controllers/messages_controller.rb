@@ -3,7 +3,7 @@ class MessagesController < ApplicationController
   include InboxesHelper
 
   def create
-    if session[:receiver] != current_node.id and session[:receiver] != 0 and !session[:receiver].nil?
+    if session[:receiver] !=  current_node.id and session[:receiver] != 0 and !session[:receiver].nil?
     @node = Node.find(session[:receiver])
     case current_node.dialogues.where(:receiver_id => @node.id).exists? or current_node.dialogues.where(:sender_id => @node.id).exists?
       when false

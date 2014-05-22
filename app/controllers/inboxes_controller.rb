@@ -36,7 +36,7 @@ class InboxesController < ApplicationController
 
   def show_messages
     @message = Message.new
-    @node = current_node
+    @node = Node.find(current_node.id)
     @convo = Convo.find(params[:id])
     if @convo.interrogator_id == @node.id
       @id = @convo.interlocutor_id

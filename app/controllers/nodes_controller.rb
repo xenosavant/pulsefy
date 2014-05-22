@@ -25,7 +25,7 @@ class NodesController < ApplicationController
 
 
   def edit
-    @node = current_node
+    @node = Node.find(current_node.id)
   end
 
 
@@ -38,10 +38,10 @@ class NodesController < ApplicationController
   end
 
   def update
-    @node = current_node
+    @node = Node.find(current_node.id)
       if @node.update_attributes(params[:node])
         if params[:node][:avatar].blank?
-          sign_in(@node)
+          #sign_in(@node)
           redirect_to show_path(:id => @node.id, :errors => @node.errors.full_messages)
         else
           #sign_in(@node)
