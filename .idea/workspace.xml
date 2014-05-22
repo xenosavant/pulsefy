@@ -5,86 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-0bd818b8616f161a73e4f9f68f6fc2da.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-0bd818b8616f161a73e4f9f68f6fc2da.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-0dc06d236c685ccf79b2f2a3046abc27.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-0dc06d236c685ccf79b2f2a3046abc27.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-20ffd37c8cf5010b6958b44eecb63313.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-20ffd37c8cf5010b6958b44eecb63313.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-5b66ffe5608a51c6ab6e04848d156c26.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-5b66ffe5608a51c6ab6e04848d156c26.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-65244a97670a3c9a5fc74f2fd5f3fff4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-65244a97670a3c9a5fc74f2fd5f3fff4.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-659f74b9d918dc24a1c880cb6910ee28.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-659f74b9d918dc24a1c880cb6910ee28.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-826dcd6c1fca0cf7894df0c0f35829f7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-826dcd6c1fca0cf7894df0c0f35829f7.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-918f53ca37e715c1c71e1a56693467c7.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-918f53ca37e715c1c71e1a56693467c7.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-9c417d6365bee92e5159b5d344043b6e.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-9c417d6365bee92e5159b5d344043b6e.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-ad6ffd5d99fa7e330f0df37c241194be.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-ad6ffd5d99fa7e330f0df37c241194be.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-d8e99b536a49ba9adfe5a510764e1d47.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-d8e99b536a49ba9adfe5a510764e1d47.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-fe5bfa4dded5dfdc7678f2b7485875f9.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-fe5bfa4dded5dfdc7678f2b7485875f9.css.gz" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/act_on_result-44f52183435c45b43fee3bdabcc14fb5.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/act_on_result-44f52183435c45b43fee3bdabcc14fb5.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/act_on_result.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/act_on_result.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/admin_data-612d548191220a700b39d4942cb73251.css.gz" afterPath="$PROJECT_DIR$/public/assets/admin_data-612d548191220a700b39d4942cb73251.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/admin_data-a10594f40a95f931f09b8792ead0a528.js.gz" afterPath="$PROJECT_DIR$/public/assets/admin_data-a10594f40a95f931f09b8792ead0a528.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/admin_data.css.gz" afterPath="$PROJECT_DIR$/public/assets/admin_data.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/admin_data.js.gz" afterPath="$PROJECT_DIR$/public/assets/admin_data.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/advance_search-c4f108c01b1ebe7966484e28e59b6d98.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/advance_search-c4f108c01b1ebe7966484e28e59b6d98.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/advance_search.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/advance_search.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/advance_search_structure-6acfed0f36c7aaa7d68522bb616355d1.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/advance_search_structure-6acfed0f36c7aaa7d68522bb616355d1.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/advance_search_structure.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/advance_search_structure.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/ajaxify_advance_search-6679d1fa20e3c6db7b657f684a50f4fa.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/ajaxify_advance_search-6679d1fa20e3c6db7b657f684a50f4fa.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/ajaxify_advance_search.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/ajaxify_advance_search.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.css.gz" afterPath="$PROJECT_DIR$/public/assets/application.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.js.gz" afterPath="$PROJECT_DIR$/public/assets/application.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/build_first_row-9c937d077f675ef661a18d76434fc502.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/build_first_row-9c937d077f675ef661a18d76434fc502.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/build_first_row.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/build_first_row.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/misc/drop_down_change-9b00218a6c86365b4593a482df012148.js.gz" afterPath="$PROJECT_DIR$/public/assets/misc/drop_down_change-9b00218a6c86365b4593a482df012148.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/misc/drop_down_change.js.gz" afterPath="$PROJECT_DIR$/public/assets/misc/drop_down_change.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/event_bindings-951b3c304745a3d7c0955505f2201239.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/event_bindings-951b3c304745a3d7c0955505f2201239.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/event_bindings.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/event_bindings.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/global_ajax_setting-4a79924e95586517ff880cfda70e6cf2.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/global_ajax_setting-4a79924e95586517ff880cfda70e6cf2.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/global_ajax_setting.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/global_ajax_setting.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-1.4.2-2b2b7ef963e52e9955de9afefb33b640.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery-1.4.2-2b2b7ef963e52e9955de9afefb33b640.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-1.4.2.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery-1.4.2.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom-c95f703ca5e62c3efc5c46332af89e34.css.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom-c95f703ca5e62c3efc5c46332af89e34.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom.css.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom.min-3426609830eb22b60f31d3f73015490f.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom.min-3426609830eb22b60f31d3f73015490f.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom.min.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom.min.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop-f7ba3d73e3e5b4cb0b0ca3f625488dab.css.gz" afterPath="$PROJECT_DIR$/public/assets/jquery.Jcrop-f7ba3d73e3e5b4cb0b0ca3f625488dab.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.css.gz" afterPath="$PROJECT_DIR$/public/assets/jquery.Jcrop.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min-28fdf50c41c56a9eef4b336f71647da1.css.gz" afterPath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min-28fdf50c41c56a9eef4b336f71647da1.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min-e77f59f4efee16e133806664c28f0161.js.gz" afterPath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min-e77f59f4efee16e133806664c28f0161.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min.css.gz" afterPath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min.js.gz" afterPath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery.ba-isjquery-e5493f678db20de8420adbfd497a094b.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery.ba-isjquery-e5493f678db20de8420adbfd497a094b.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery.ba-isjquery.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery.ba-isjquery.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery_form-2b7718a168b80d7f8046327a0957d245.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery_form-2b7718a168b80d7f8046327a0957d245.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery_form.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery_form.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/misc/js_util-ae40817fdf0e4553db6cd44e43f45bce.js.gz" afterPath="$PROJECT_DIR$/public/assets/misc/js_util-ae40817fdf0e4553db6cd44e43f45bce.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/misc/js_util.js.gz" afterPath="$PROJECT_DIR$/public/assets/misc/js_util.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/log-a5790b2252aa951ae4be59d84bcaaa31.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/log-a5790b2252aa951ae4be59d84bcaaa31.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/log.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/log.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/misc/quick_search_input_focus-fd71a740680a5eb7269bee76191d0a9c.js.gz" afterPath="$PROJECT_DIR$/public/assets/misc/quick_search_input_focus-fd71a740680a5eb7269bee76191d0a9c.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/misc/quick_search_input_focus.js.gz" afterPath="$PROJECT_DIR$/public/assets/misc/quick_search_input_focus.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/rails-1e74ea5a3a8ff0467a6f05efd132caa2.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/rails-1e74ea5a3a8ff0467a6f05efd132caa2.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/rails.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/rails.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/analytics/report-94dcd71426dd5b3d0313954a8f5d4cfe.js.gz" afterPath="$PROJECT_DIR$/public/assets/analytics/report-94dcd71426dd5b3d0313954a8f5d4cfe.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/analytics/report.js.gz" afterPath="$PROJECT_DIR$/public/assets/analytics/report.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/sortby-0dee47de069204568b137c56f3032c4c.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/sortby-0dee47de069204568b137c56f3032c4c.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/sortby.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/sortby.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/trigger_submit_on_domready-c37236b364ae2135006b0428bc39bbeb.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/trigger_submit_on_domready-c37236b364ae2135006b0428bc39bbeb.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/trigger_submit_on_domready.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/trigger_submit_on_domready.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Pulsefy.iml" afterPath="$PROJECT_DIR$/.idea/Pulsefy.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/inboxes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/inboxes_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/nodes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/nodes_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/inboxes_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/inboxes_helper.rb" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -251,7 +172,7 @@
       <file leaf-file-name="messages_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="71" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0">
+            <state line="5" column="41" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -275,10 +196,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inboxes_helper.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="inboxes_helper.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/helpers/inboxes_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="25" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0">
+            <state line="51" column="39" selection-start="1127" selection-end="1127" vertical-scroll-proportion="0.8291457">
               <folding />
             </state>
           </provider>
@@ -293,10 +214,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inboxes_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="inboxes_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/inboxes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="23" selection-start="1645" selection-end="1645" vertical-scroll-proportion="0.7487437">
+            <state line="47" column="33" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -369,12 +290,12 @@
         <option value="$PROJECT_DIR$/db/migrate/20130604190000_create_nodes.rb" />
         <option value="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
-        <option value="$PROJECT_DIR$/app/helpers/inboxes_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/inboxes/show_messages.html.erb" />
         <option value="$PROJECT_DIR$/app/views/nodes/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/nodes_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/inboxes_controller.rb" />
+        <option value="$PROJECT_DIR$/app/helpers/inboxes_helper.rb" />
       </list>
     </option>
   </component>
@@ -386,6 +307,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-11" />
     <option name="y" value="22" />
     <option name="width" value="1280" />
     <option name="height" value="743" />
@@ -1106,7 +1028,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="743" extended-state="0" />
+    <frame x="-11" y="22" width="1280" height="743" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1266,20 +1188,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/inboxes_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="25" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="71" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/nodes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="108" column="25" selection-start="2618" selection-end="2618" vertical-scroll-proportion="0.0">
@@ -1287,9 +1195,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="41" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/inboxes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="23" selection-start="1645" selection-end="1645" vertical-scroll-proportion="0.7487437">
+        <state line="47" column="33" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/inboxes_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="39" selection-start="1127" selection-end="1127" vertical-scroll-proportion="0.8291457">
           <folding />
         </state>
       </provider>
