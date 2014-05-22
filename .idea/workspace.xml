@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/sessions_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/sessions_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pulses_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pulses_controller.rb" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -178,10 +178,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sessions_helper.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="sessions_helper.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="18" selection-start="1492" selection-end="1492" vertical-scroll-proportion="0.5477387">
+            <state line="66" column="18" selection-start="1492" selection-end="1492" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -241,10 +241,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pulses_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pulses_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/pulses_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="50" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.0">
+            <state line="57" column="30" selection-start="1735" selection-end="1735" vertical-scroll-proportion="0.52261305">
               <folding />
             </state>
           </provider>
@@ -294,8 +294,8 @@
         <option value="$PROJECT_DIR$/app/helpers/inboxes_helper.rb" />
         <option value="$PROJECT_DIR$/app/controllers/nodes_controller.rb" />
         <option value="$PROJECT_DIR$/app/helpers/pulses_helper.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/pulses_controller.rb" />
         <option value="$PROJECT_DIR$/app/helpers/sessions_helper.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/pulses_controller.rb" />
       </list>
     </option>
   </component>
@@ -1230,16 +1230,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/pulses_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="50" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.0">
+        <state line="66" column="18" selection-start="1492" selection-end="1492" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/pulses_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="18" selection-start="1492" selection-end="1492" vertical-scroll-proportion="0.5477387">
+        <state line="57" column="30" selection-start="1735" selection-end="1735" vertical-scroll-proportion="0.52261305">
           <folding />
         </state>
       </provider>
