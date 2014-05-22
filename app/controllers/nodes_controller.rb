@@ -1,7 +1,7 @@
 class NodesController < ApplicationController
 
   include SessionsHelper
-  before_filter :signed_in_node, :except => [:new, :create, :crop, :crop_update, :update]
+  before_filter :signed_in_node, :except => [:new, :create]
 
   def show
     @node = Node.find(params[:id])
@@ -13,7 +13,7 @@ class NodesController < ApplicationController
 
   def create
     @node = Node.new(params[:node])
-    @node.threshold = 0.5
+    @node.update_attributes(:threshold => 0.5, :hub => false, :admin => false, :verified => false )
     if @node.save
       sign_in @node
       flash[:success] = "Pulsefication Complete!"
@@ -41,10 +41,8 @@ class NodesController < ApplicationController
     @node = Node.find(current_node.id)
       if @node.update_attributes(params[:node])
         if params[:node][:avatar].blank?
-          #sign_in(@node)
           redirect_to show_path(:id => @node.id, :errors => @node.errors.full_messages)
         else
-          #sign_in(@node)
           render 'crop'
         end
       else

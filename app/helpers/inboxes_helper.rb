@@ -3,16 +3,18 @@ module InboxesHelper
 
   def update_unreads(args)
     @node = args[:node]
-     tmp = 0;
+     tmp = 0
      @node.dialogues.find_each do |d|
         d.convos.find_each do  |c|
         if c.interrogator_id == @node.id
-          if c.unread_interrogator
-            tmp = tmp + 1
+          case c.unread_interrogator
+            when true
+              tmp = tmp + 1
           end
         else
-          if c.unread_interlocutor
-            tmp = tmp + 1
+          case c.unread_interlocutor
+            when true
+              tmp = tmp + 1
           end
         end
       end
@@ -26,12 +28,14 @@ module InboxesHelper
       tmp = 0
       d.convos.find_each do  |c|
         if c.interrogator_id == @node.id
-          if c.unread_interrogator
-            tmp = tmp + 1
+          case c.unread_interrogator
+            when true
+              tmp = tmp + 1
           end
         else
-          if c.unread_interlocutor
-            tmp = tmp + 1
+         case c.unread_interlocutor
+           when true
+             tmp = tmp + 1
           end
         end
       end
