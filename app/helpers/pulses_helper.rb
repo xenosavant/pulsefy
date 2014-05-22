@@ -7,7 +7,7 @@ module PulsesHelper
     @temp_url = @content.scan(@regex).first
     case @temp_url.nil?
       when false
-        @object.update_attributes(:link => '', :link_type => 'image', :url => "<img alt = 'image' src = '#{@temp_url}'")
+        @object.update_attributes(:link => @temp_url, :link_type => 'photo', :url => @temp_url)
     end
   end
 

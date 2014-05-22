@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pulses_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pulses_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/pulses_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/pulses_helper.rb" />
     </list>
     <ignored path="Pulsefy.iws" />
@@ -147,7 +146,7 @@
     <file path="/20140225193926_create_messages.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1396411279066" ignored="false" />
     <file path="/_inbox_message_form.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395335181935" ignored="false" />
     <file path="/20140323211001_add_active_to_convos.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395609063627" ignored="false" />
-    <file path="/pulses_helper.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1400747836009" ignored="false" />
+    <file path="/pulses_helper.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1400747993919" ignored="false" />
     <file path="/inboxes_helper.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1400746495706" ignored="false" />
     <file path="/20140422185157_create_dialogues_nodes_join_table.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1398192760810" ignored="false" />
     <file path="/admin_data.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1400086038355" ignored="false" />
@@ -174,15 +173,6 @@
         <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="5" column="45" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="network.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/network.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="43" selection-start="965" selection-end="965" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -236,7 +226,16 @@
       <file leaf-file-name="pulses_helper.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/helpers/pulses_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="19" selection-start="407" selection-end="407" vertical-scroll-proportion="0.28253424">
+            <state line="11" column="45" selection-start="382" selection-end="382" vertical-scroll-proportion="0.2763819">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_pulse.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/pulses/_pulse.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="19" selection-start="995" selection-end="995" vertical-scroll-proportion="-11.25">
               <folding />
             </state>
           </provider>
@@ -510,6 +509,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sessions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pulsefy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pulsefy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulses" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1115,11 +1136,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_assembly_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="67" selection-start="744" selection-end="777" vertical-scroll-proportion="-16.25" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="72" selection-start="600" selection-end="600" vertical-scroll-proportion="-11.875" />
@@ -1214,9 +1230,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pulses/_pulse.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="19" selection-start="995" selection-end="995" vertical-scroll-proportion="-11.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/pulses_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="19" selection-start="407" selection-end="407" vertical-scroll-proportion="0.28253424">
+        <state line="11" column="45" selection-start="382" selection-end="382" vertical-scroll-proportion="0.2763819">
           <folding />
         </state>
       </provider>
