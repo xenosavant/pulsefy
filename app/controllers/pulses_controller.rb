@@ -10,7 +10,6 @@ include PulsesHelper
     @pulse = current_node.pulses.build(params[:pulse])
     @pulse.update_attributes(:reinforcements => 0, :degradations => 0,
                                :depth => 0, :refires => 0)
-    @new_content = parse_content(:object => @pulse)
     if @pulse.save
           if @pulse.pulser_type == 'Node'
             @node.pulses << @pulse
