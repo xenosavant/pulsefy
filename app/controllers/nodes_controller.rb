@@ -1,6 +1,6 @@
 class NodesController < ApplicationController
 
-  before_filter :signed_in_node, :except => [:new, :create, :crop, :crop_update, :update]
+  #before_filter :signed_in_node, :except => [:new, :create, :crop, :crop_update, :update]
   include SessionsHelper
 
   def show
@@ -44,7 +44,7 @@ class NodesController < ApplicationController
           sign_in(@node)
           redirect_to show_path(:id => @node.id, :errors => @node.errors.full_messages)
         else
-          sign_in(@node)
+          #sign_in(@node)
           render 'crop'
         end
       else
@@ -100,7 +100,7 @@ class NodesController < ApplicationController
       @node.crop_h = params[:node]['crop_h']
       @node.crop_w = params[:node]['crop_w']
       if @node.save(params[:node])
-        sign_in(@node)
+        #sign_in(@node)
         #flash[:success] = "Pulsefeed Updated!"
         redirect_to :controller => 'nodes', :action => 'show', :id => params[:id]
       else
