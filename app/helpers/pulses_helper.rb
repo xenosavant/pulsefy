@@ -7,8 +7,7 @@ module PulsesHelper
     @temp_url = @content.scan(@regex).first
     case @temp_url.nil?
       when false
-        @object.content.sub(@regex, ' ')
-        @object.content += "<img alt = 'image' src = '#{@temp_url}'"
+        @object.link = "<img alt = 'image' src = '#{@temp_url}'"
         @object.save
     end
   end
