@@ -17,7 +17,7 @@ module InboxesHelper
         end
       end
      end
-    @node.update_attribute(:unreads, tmp)
+    @node.update_attributes(:unreads => tmp)
   end
 
   def update_dialogues(args)
