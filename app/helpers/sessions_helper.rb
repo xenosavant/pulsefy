@@ -5,6 +5,12 @@ module SessionsHelper
     self.current_node = node
   end
 
+  def sign_in_self
+   @node = Node.find(params[:id])
+   cookies.permanent[:remember_token] = @node.remember_token
+   self.current_node = @node
+  end
+
   def signed_in?
     !current_node.nil?
   end
