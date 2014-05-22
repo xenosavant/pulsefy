@@ -2,7 +2,6 @@ class NodesController < ApplicationController
 
   include SessionsHelper
   before_filter :signed_in_node, :except => [:new, :create, :crop, :crop_update, :update]
-  after_filter :sign_in_self[self.id],  :only => [:update, :edit, :crop_update]
 
   def show
     @node = Node.find(params[:id])

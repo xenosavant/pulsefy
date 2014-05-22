@@ -8,6 +8,7 @@ class Node < ActiveRecord::Base
                   :hub, :admin, :verified, :self_tag, :width,
                   :height, :unreads
   after_update :reprocess_avatar, :if => :cropping?
+  after_update :sign_in_self
   has_secure_password
   before_save { |node| node.email = email.downcase }
   before_save :create_remember_token
@@ -31,7 +32,7 @@ class Node < ActiveRecord::Base
   has_many :repulses
 
   include Network
-
+  include SessionsHelper
 
   def fire_pulse(args)
     @impulse = args[:pulse]
@@ -89,6 +90,10 @@ class Node < ActiveRecord::Base
 
   def reprocess_avatar
     self.avatar.recreate_versions!
+  end
+
+  def sign_in_self
+     sign_in(self)
   end
 
   def check_avatar_dimensions
