@@ -11,6 +11,10 @@ include PulsesHelper
     @pulse.update_attributes(:reinforcements => 0, :degradations => 0,
                                :depth => 0, :refires => 0)
     if @pulse.save
+      case !@pulse.link.nil?
+        when true
+          update_embed(:pulse => @pulse)
+      end
           if @pulse.pulser_type == 'Node'
             @node.pulses << @pulse
               Node.find(@pulse.pulser).fire_pulse(:pulse => @pulse)
@@ -28,9 +32,6 @@ include PulsesHelper
       redirect_to :controller => 'assemblies', :action => 'show',
                   :id => session[:return_to], :errors => @pulse.errors.full_messages
       end
-    if !@pulse.link.nil?
-      update_embed(:pulse => @pulse)
-    end
   end
  end
 
@@ -63,11 +64,11 @@ include PulsesHelper
 
  def update_embed(args)
   @pulse = args[:pulse]
+  parse_link(:object => @pulse)
   api = Embedly::API.new
   @embed = api.oembed :url => @pulse.link
-  if @embed[0].error || @embed[0].type == 'link'
-    parse_link(:object => @pulse)
-  else
+  case @embed[0].error
+  when false
     @pulse.update_attributes(:embed_code => @embed[0].html, :thumbnail => @embed[0].thumbnail_url,
                            :link_type => @embed[0].type, :url => @embed[0].url)
   end

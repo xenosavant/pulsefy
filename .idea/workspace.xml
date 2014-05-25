@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/inboxes_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/inboxes_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pulses_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pulses_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -18,7 +16,7 @@
     <file path="/home.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1391062737275" ignored="false" />
     <file path="/_pulse_form.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1400012580998" ignored="false" />
     <file path="/_pulse.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395625362923" ignored="false" />
-    <file path="/pulses_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1400996145032" ignored="false" />
+    <file path="/pulses_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1400996511472" ignored="false" />
     <file path="/routes.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1400014218341" ignored="false" />
     <file path="/20130611183156_create_raters.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1370975608923" ignored="false" />
     <file path="/20130611184143_create_votes.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371689468885" ignored="false" />
@@ -216,10 +214,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pulses_helper.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pulses_helper.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/helpers/pulses_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="9" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
+            <state line="11" column="7" selection-start="415" selection-end="415" vertical-scroll-proportion="0.2763819">
               <folding />
             </state>
           </provider>
@@ -234,10 +232,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pulses_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pulses_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/pulses_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="48" selection-start="2022" selection-end="2022" vertical-scroll-proportion="0.59799">
+            <state line="66" column="31" selection-start="1965" selection-end="1966" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -1223,16 +1221,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/pulses_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/pulses_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="9" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
+        <state line="66" column="31" selection-start="1965" selection-end="1966" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/pulses_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/helpers/pulses_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="48" selection-start="2022" selection-end="2022" vertical-scroll-proportion="0.59799">
+        <state line="11" column="7" selection-start="415" selection-end="415" vertical-scroll-proportion="0.2763819">
           <folding />
         </state>
       </provider>
