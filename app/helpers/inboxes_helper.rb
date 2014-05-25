@@ -6,13 +6,14 @@ module InboxesHelper
      tmp = 0
      @node.dialogues.find_each do |d|
         d.convos.find_each do  |c|
-        if c.interrogator_id == @node.id
-          case c.unread_interrogator
+        case c.interrogator_id
+          when @node.id
+           case c.unread_interrogator
             when true
               tmp = tmp + 1
-          end
-        else
-          case c.unread_interlocutor
+           end
+          else
+           case c.unread_interlocutor
             when true
               tmp = tmp + 1
           end

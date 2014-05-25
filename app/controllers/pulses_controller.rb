@@ -28,10 +28,10 @@ include PulsesHelper
       redirect_to :controller => 'assemblies', :action => 'show',
                   :id => session[:return_to], :errors => @pulse.errors.full_messages
       end
-   end
     if !@pulse.link.nil?
-      update_embed
+      update_embed(:pulse => @pulse)
     end
+  end
  end
 
   def show
@@ -61,7 +61,8 @@ include PulsesHelper
     return_back_to
   end
 
- def update_embed
+ def update_embed(args)
+  @pulse = args[:pulse]
   api = Embedly::API.new
   @embed = api.oembed :url => @pulse.link
   if @embed[0].error || @embed[0].type == 'link'
