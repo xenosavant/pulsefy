@@ -64,23 +64,19 @@ include PulsesHelper
 
  def update_embed(args)
   @pulse = args[:pulse]
-  @content = @pulse.link
   @regex = /^https?:\/\/(?:[a-z\-]+\.)+[a-z]{2,6}(?:\/[^\/#?]+)+\.(?:jpe?g|gif|png)$/
-  @temp_url = @content.scan(@regex).first
-  case @temp_url.nil?
+  case @pulse.link.scan(@regex).first.nil?
     when false
-      @object.update_attributes(:url => "<img alt = 'image' src = '#{@temp_url}'",
-                                :link_type => 'photo')
+      @pulse.update_attributes(:link_type => 'photo')
     when true
-      api = Embedly::API.new
-      @embed = api.oembed :url => @pulse.link
-      case @embed[0].error
-        when false
-          @pulse.update_attributes(:embed_code => @embed[0].html, :thumbnail => @embed[0].thumbnail_url,
-                                   :link_type => @embed[0].type, :url => @embed[0].url)
-      end
+     api = Embedly::API.new
+     @embed = api.oembed :url => @pulse.link
+     case @embed[0].error
+       when false
+         @pulse.update_attributes(:embed_code => @embed[0].html, :thumbnail => @embed[0].thumbnail_url,
+                               :link_type => @embed[0].type, :url => @embed[0].url)
+     end
   end
-
  end
 
 
