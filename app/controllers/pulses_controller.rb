@@ -3,7 +3,6 @@ class PulsesController < ApplicationController
 before_filter :signed_in_node
 include SessionsHelper
 include ApplicationHelper
-include PulsesHelper
 
   def create
     @node = current_node
@@ -77,6 +76,7 @@ include PulsesHelper
                                :link_type => @embed[0].type, :url => @embed[0].url)
      end
   end
+  @pulse.save
  end
 
 
