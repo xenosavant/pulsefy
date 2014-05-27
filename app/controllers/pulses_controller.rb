@@ -66,7 +66,7 @@ include ApplicationHelper
   @regex = /^https?:\/\/(?:[a-z\-]+\.)+[a-z]{2,6}(?:\/[^\/#?]+)+\.(?:jpe?g|gif|png)$/
   case @pulse.link.scan(@regex).first.nil?
     when false
-      @pulse.update_attributes(:link_type => 'photo', url => @pulse.link)
+      @pulse.update_attributes(:link_type => 'photo', :url => @pulse.link)
     when true
      api = Embedly::API.new
      @embed = api.oembed :url => @pulse.link
