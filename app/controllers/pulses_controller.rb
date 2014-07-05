@@ -78,10 +78,9 @@ include ApplicationHelper
          when false
            @pulse.update_attributes(:embed_code => @embed[0].html, :thumbnail => @embed[0].thumbnail_url,
                                    :link_type => @embed[0].type, :url => @embed[0].url)
-          when true
-            @pulse.update_attributes(:content => @embed[0].error)
          end
-   end
+  end
+  @pulse.update_attributes(:content => @embed[0].error)
   @pulse.save
  end
 
