@@ -29,7 +29,7 @@
   <%if pulse.link %>
       <% case pulse.link_type %>
       <%when 'video' %>
-          <div class ="video-container"><%= raw pulse.url %></div>
+          <div class ="video-container"><%= raw pulse.embed_code %></div>
       <%when 'photo' %>
           <div class ="photo-container"> <img src = <%= raw pulse.url %> ></div>
       <%else%>
