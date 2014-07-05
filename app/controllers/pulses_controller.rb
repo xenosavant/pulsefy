@@ -74,11 +74,11 @@ include ApplicationHelper
       when true
        api = Embedly::API.new
        @embed = api.oembed :url => @pulse.link
-        case @embed[0].error
-         when false
+        case @embed[0].type = 'video'
+          when true
            @pulse.update_attributes(:embed_code => @embed[0].html, :thumbnail => @embed[0].thumbnail_url,
                                    :link_type => @embed[0].type, :url => @embed[0].url)
-         end
+        end
    end
   @pulse.save
  end
