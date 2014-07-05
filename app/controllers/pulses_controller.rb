@@ -63,21 +63,28 @@ include ApplicationHelper
 
  def update_embed(args)
   @pulse = args[:pulse]
-  @image_regex = /^https?:\/\/(?:[a-z\-]+\.)+[a-z]{2,6}(?:\/[^\/#?]+)+\.(?:jpe?g|gif|png)$/
+  @image_regex = /http:\/\/(www\.flickr\.com\/photos\/.*|flic\.kr\/.*|.*imgur\.com\/.*|instagr\.am\/p\/.*|instagram\.com\/p\/.*)/
+  @video_regex = /((http:\/\/(.*youtube\.com\/watch.*|.*\.youtube\.com\/v\/.*|youtu\.be\/.*|.*\.youtube\.com\/user\/.*|.*\.youtube\.com\/.*#.*\/.*|m\.youtube\.com\/watch.*|m\.youtube\.com\/index.*|.*\.youtube\.com\/profile.*|.*\.youtube\.com\/view_play_list.*|.*\.youtube\.com\/playlist.*|www\.youtube\.com\/embed\/.*|collegehumor\.com\/video:.*|collegehumor\.com\/video\/.*|www\.collegehumor\.com\/video:.*|www\.collegehumor\.com\/video\/.*|vine\.co\/v\/.*|www\.vine\.co\/v\/.*|www\.vimeo\.com\/groups\/.*\/videos\/.*|www\.vimeo\.com\/.*|vimeo\.com\/groups\/.*\/videos\/.*|vimeo\.com\/.*|vimeo\.com\/m\/#\/.*|player\.vimeo\.com\/.*|www\.vevo\.com\/watch\/.*|www\.vevo\.com\/video\/.*))|(https:\/\/(.*youtube\.com\/watch.*|.*\.youtube\.com\/v\/.*|www\.youtube\.com\/embed\/.*|vine\.co\/v\/.*|www\.vine\.co\/v\/.*|www\.vimeo\.com\/.*|vimeo\.com\/.*|player\.vimeo\.com\/.*)))/
+
   case  @pulse.link.scan(@image_regex).first.nil?
     when false
       @pulse.update_attributes(:link_type => 'photo', :url => @pulse.link)
   end
-    case @pulse.link_type.nil?
-      when true
-       api = Embedly::API.new
-       @embed = api.oembed :url => @pulse.link
-        case @embed[0].error
-         when false
-           @pulse.update_attributes(:embed_code => @embed[0].html, :thumbnail => @embed[0].thumbnail_url,
-                                   :link_type => @embed[0].type, :url => @embed[0].url)
-         end
-    end
+
+  case  @pulse.link.scan(@video_regex).first.nil?
+    when false
+      @pulse.update_attributes(:link_type => 'video', :url => @pulse.link)
+  end
+    #case @pulse.link_type.nil?
+    #  when true
+    #   api = Embedly::API.new
+    #   @embed = api.oembed :url => @pulse.link
+    #    case @embed[0].error
+    #     when false
+    #       @pulse.update_attributes(:embed_code => @embed[0].html, :thumbnail => @embed[0].thumbnail_url,
+    #                               :link_type => @embed[0].type, :url => @embed[0].url)
+    #     end
+    #end
   @pulse.save
  end
 
