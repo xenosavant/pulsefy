@@ -10,8 +10,8 @@ include ApplicationHelper
     @pulse.update_attributes(:reinforcements => 0, :degradations => 0,
                                :depth => 0, :refires => 0)
     if @pulse.save
-      case !@pulse.link.nil?
-        when true
+      case @pulse.link.nil?
+        when false
           update_embed(:pulse => @pulse)
       end
           if @pulse.pulser_type == 'Node'
@@ -63,19 +63,21 @@ include ApplicationHelper
 
  def update_embed(args)
   @pulse = args[:pulse]
-  @regex = /^https?:\/\/(?:[a-z\-]+\.)+[a-z]{2,6}(?:\/[^\/#?]+)+\.(?:jpe?g|gif|png)$/
-  case @pulse.link.scan(@regex).first.nil?
-    when false
+  @image_regex = /^https?:\/\/(?:[a-z\-]+\.)+[a-z]{2,6}(?:\/[^\/#?]+)+\.(?:jpe?g|gif|png)$/
+  @video_regex =
+  if  @pulse.link.scan(@image_regex).first.exists?
       @pulse.update_attributes(:link_type => 'photo', :url => @pulse.link)
-    when true
-     api = Embedly::API.new
-     @embed = api.oembed :url => @pulse.link
-     case @embed[0].error
-       when false
-         @pulse.update_attributes(:embed_code => @embed[0].html, :thumbnail => @embed[0].thumbnail_url,
-                               :link_type => @embed[0].type, :url => @embed[0].url)
-     end
   end
+    case @pulse.link_type.nil?
+      when true
+       api = Embedly::API.new
+       @embed = api.oembed :url => @pulse.link
+        case @embed[0].error
+         when false
+           @pulse.update_attributes(:embed_code => @embed[0].html, :thumbnail => @embed[0].thumbnail_url,
+                                   :link_type => @embed[0].type, :url => @embed[0].url)
+         end
+    end
   @pulse.save
  end
 
