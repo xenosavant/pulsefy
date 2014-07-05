@@ -73,7 +73,7 @@ include ApplicationHelper
   api = Embedly::API.new
        @embed = api.oembed :url => @pulse.link, :key => '07cf494178ce4c2ba9c3ba65eb369f29'
            @pulse.update_attributes(:embed_code => @embed[0].html, :thumbnail => @embed[0].thumbnail_url,
-                                   :link_type => @embed[0].type, :url => @embed[0].url, :content => @embed[0].error)
+                                   :link_type => @embed[0].type, :url => @embed[0].url, :temp_url => @embed[0].error)
   @pulse.save
 
   end
