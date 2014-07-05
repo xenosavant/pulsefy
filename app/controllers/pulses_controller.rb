@@ -65,7 +65,8 @@ include ApplicationHelper
   @pulse = args[:pulse]
   @image_regex = /^https?:\/\/(?:[a-z\-]+\.)+[a-z]{2,6}(?:\/[^\/#?]+)+\.(?:jpe?g|gif|png)$/
   @video_regex =
-  if  @pulse.link.scan(@image_regex).first.exists?
+  case  @pulse.link.scan(@image_regex).first.nil?
+    when false
       @pulse.update_attributes(:link_type => 'photo', :url => @pulse.link)
   end
     case @pulse.link_type.nil?
