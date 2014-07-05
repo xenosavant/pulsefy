@@ -16,7 +16,7 @@
     <file path="/home.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1391062737275" ignored="false" />
     <file path="/_pulse_form.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1400012580998" ignored="false" />
     <file path="/_pulse.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1404580421352" ignored="false" />
-    <file path="/pulses_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1404582334397" ignored="false" />
+    <file path="/pulses_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1404583175233" ignored="false" />
     <file path="/routes.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1400014218341" ignored="false" />
     <file path="/20130611183156_create_raters.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1370975608923" ignored="false" />
     <file path="/20130611184143_create_votes.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371689468885" ignored="false" />
@@ -217,7 +217,7 @@
       <file leaf-file-name="pulses_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/pulses_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="17" selection-start="2613" selection-end="2613" vertical-scroll-proportion="0.6660959">
+            <state line="82" column="9" selection-start="2696" selection-end="2696" vertical-scroll-proportion="0.71746576">
               <folding />
             </state>
           </provider>
@@ -1264,7 +1264,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/pulses_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="17" selection-start="2613" selection-end="2613" vertical-scroll-proportion="0.6660959">
+        <state line="82" column="9" selection-start="2696" selection-end="2696" vertical-scroll-proportion="0.71746576">
           <folding />
         </state>
       </provider>
