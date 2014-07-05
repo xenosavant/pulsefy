@@ -64,7 +64,6 @@ include ApplicationHelper
  def update_embed(args)
   @pulse = args[:pulse]
   @image_regex = /^https?:\/\/(?:[a-z\-]+\.)+[a-z]{2,6}(?:\/[^\/#?]+)+\.(?:jpe?g|gif|png)$/
-  @video_regex =
   case  @pulse.link.scan(@image_regex).first.nil?
     when false
       @pulse.update_attributes(:link_type => 'photo', :url => @pulse.link)
