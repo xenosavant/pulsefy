@@ -1,1 +1,1 @@
-worker: env PRE_TERM_TIMEOUT=5 TERM_CHILD=1 bundle exec rake resque:work QUEUES=*
+worker: env QUEUE=* PRE_TERM_TIMEOUT=5 TERM_CHILD=1 bundle exec rake resque:work
