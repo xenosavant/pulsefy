@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Pulsefy.iml" afterPath="$PROJECT_DIR$/.idea/Pulsefy.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/redis.rb" afterPath="$PROJECT_DIR$/config/initializers/redis.rb" />
     </list>
     <ignored path="Pulsefy.iws" />
@@ -184,7 +183,7 @@
       <file leaf-file-name="redis.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/initializers/redis.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="134" selection-end="134" vertical-scroll-proportion="0.025773196">
+            <state line="2" column="24" selection-start="208" selection-end="208" vertical-scroll-proportion="0.05042017">
               <folding />
             </state>
           </provider>
@@ -1006,7 +1005,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/redis.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="134" selection-end="134" vertical-scroll-proportion="0.025773196">
+        <state line="2" column="24" selection-start="208" selection-end="208" vertical-scroll-proportion="0.05042017">
           <folding />
         </state>
       </provider>
