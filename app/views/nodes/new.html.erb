@@ -12,14 +12,13 @@
                 </div>
              <%end%>
         <%= form_for(@node) do |f| %>
-        <div class = 'new-box-left'>
+        <div class = 'new-box'>
             <%= f.label :username %>
             <%= f.text_field :username %>
 
             <%= f.label :email %>
             <%= f.text_field :email %>
-        </div>
-        <div class = 'new-box-right'>
+
             <%= f.label :password %>
             <%= f.password_field :password %>
 

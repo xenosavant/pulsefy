@@ -16,7 +16,7 @@
    <% end %>
   </div>
   <div class = 'dialogue-close-container'>
-    <%= link_to 'x', unmessage_path(:id => dialogue.id) %>
+    <%= link_to 'x', unmessage_path(:id => dialogue.id), :disable_with => 'x' %>
   </div>
   <div class = 'receiver-box'>
     <%if !Node.find(dialogue.receiver_id).avatar.file.nil? %>

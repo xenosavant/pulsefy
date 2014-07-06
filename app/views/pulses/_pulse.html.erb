@@ -14,7 +14,7 @@
     <% end %>
     <% if signed_in? and pulse.pulser == current_node.id %>
     <div class = 'pulse-close-container'>
-      <%= link_to 'x', delete_path(:id => pulse.id) %>
+      <%= link_to 'x', delete_path(:id => pulse.id), :disable_with => 'x' %>
     </div>
     <% end %>
     <div class = 'soma-to-axon'></div>
