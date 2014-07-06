@@ -45,7 +45,7 @@ class InboxesController < ApplicationController
       @id = @convo.interrogator_id
       @convo.update_attributes(:unread_interlocutor => false)
     end
-    Resque.enqueue(Mail, :node_id => @node.id)
+    Resque.enqueue(Mail, @node.id)
     store_mailbox(@convo.id, 'messages')
     store_receiver(@id)
     @messages = @convo.messages.paginate(:page => params[:page])
