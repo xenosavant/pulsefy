@@ -219,6 +219,7 @@ DEPENDENCIES
   pg
   rails (= 3.2.13)
   rails_12factor
+  redis (~> 3.1.0)
   resque (~> 1.22.0)
   rmagick
   ruby-oembed
