@@ -65,7 +65,7 @@ class MessagesController < ApplicationController
     if @message.save
      redirect_to :controller => 'inboxes', :action => 'show_messages',
                 :id => @convo.id, :errors => @message.errors.full_messages
-     update_unreads(:node => @node)
+     Resque.enqueue(Mail, :node_id => @node.id)
     else return_back_to
     end
   end
