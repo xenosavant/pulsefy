@@ -183,7 +183,7 @@
       <file leaf-file-name="redis.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/initializers/redis.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="25" selection-start="130" selection-end="130" vertical-scroll-proportion="0.025210084">
+            <state line="2" column="20" selection-start="206" selection-end="206" vertical-scroll-proportion="0.05042017">
               <folding />
             </state>
           </provider>
@@ -1005,7 +1005,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/redis.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="25" selection-start="130" selection-end="130" vertical-scroll-proportion="0.025210084">
+        <state line="2" column="20" selection-start="206" selection-end="206" vertical-scroll-proportion="0.05042017">
           <folding />
         </state>
       </provider>
