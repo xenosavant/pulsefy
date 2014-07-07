@@ -493,7 +493,7 @@ textarea, textfield {
 .sign-up {
   top:30%;
   width:230px;
-  height:275px;
+  height:auto;
   background-color:$grayMediumLight;
   margin-left:auto;
   margin-right:auto;
@@ -507,7 +507,7 @@ textarea, textfield {
 
 .new-box {
    float:left;
-   display:inline;
+   display:block;
    position:relative;
    width:230px;
    height:275px;
