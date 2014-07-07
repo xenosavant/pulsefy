@@ -1,6 +1,5 @@
 Pulsefy::Application.routes.draw do
 
-  mount Resque::Server, :at => "/resque"
 
   resources :assemblies
   resources :nodes
