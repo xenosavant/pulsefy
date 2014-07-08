@@ -1,2 +1,2 @@
-require 'resque/server'
-Resque.redis = RedisConnection.connection
+#require 'resque/server'
+#Resque.redis = RedisConnection.connection
