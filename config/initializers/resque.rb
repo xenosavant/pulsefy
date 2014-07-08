@@ -1,2 +1,2 @@
 require 'resque/server'
-Dir['/app/workers/*.rb'].each { |file| require file }
+Resque.redis = RedisConnection.connection
