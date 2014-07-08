@@ -14,6 +14,7 @@ Pulsefy::Application.routes.draw do
   match '/message' => 'messages#new'
   match '/inbox' => 'inboxes#show_dialogues'
   match '/dialogue' => 'inboxes#show_convos'
+  match '/check' => 'inboxes#pre_message_check'
   match '/conversation' => 'convos#show_messages'
   match '/show' => 'nodes#show'
   match '/crop' => 'nodes#crop'
