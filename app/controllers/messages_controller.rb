@@ -32,7 +32,7 @@ class MessagesController < ApplicationController
         case @dialogue.convos.where(:active => true).nil?
           when false
             @old_convo = @dialogue.convos.where(:active => true).last
-            if Time.now - @old_convo.created_at > 12.hours
+            if Time.now - @old_convo.messages.last.created_at > 12.hours
               @old_convo.update_attributes(:active => false)
               @old_convo.save
               @convo = @dialogue.convos.build
