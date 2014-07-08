@@ -38,18 +38,18 @@ class InboxesController < ApplicationController
     @node = Node.find(current_node.id)
     @message = Message.new
     @convo = Convo.find(params[:id])
-    if @convo.interrogator_id == @node.id
+  if @convo.interrogator_id == @node.id
+    @id = @convo.interlocutor_id
       case @convo.unread_interrogator
         when true
-          @id = @convo.interlocutor_id
           tmp = @node.unreads
           @node.update_attributes(:unreads => tmp - 1)
           @convo.update_attributes(:unread_interrogator => false)
       end
-    else
+  else
+    @id = @convo.interrogator_id
       case @convo.unread_interlocutor
         when true
-          @id = @convo.interrogator_id
           tmp = @node.unreads
           @node.update_attributes(:unreads => tmp - 1)
           @convo.update_attributes(:unread_interlocutor => false)
