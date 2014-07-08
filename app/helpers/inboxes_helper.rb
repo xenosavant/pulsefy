@@ -22,18 +22,18 @@ module InboxesHelper
     case d.sender_id == @node.id
       when true
        if tmp != 0
-         d.unread_sender = true
+         d.update_attributes(:unread_sender => true)
        else
-         d.unread_sender = false
+         d.update_attributes(:unread_sender => false)
        end
       else
         if tmp != 0
-         d.unread_receiver = true
+         d.update_attributes(:unread_sender => true)
         else
-         d.unread_receiver = false
+         d.update_attributes(:unread_sender => false)
       end
+     end
     end
-   end
   end
 
 
