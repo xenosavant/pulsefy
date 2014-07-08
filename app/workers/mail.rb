@@ -2,7 +2,7 @@ class Mail
   @queue = :mail_queue
 
   def self.perform(node_id)
-    @node = Node.find(args[node_id])
+    @node = Node.find(node_id)
     tmp = 0
     @node.dialogues.find_each do |d|
       d.convos.find_each do  |c|
