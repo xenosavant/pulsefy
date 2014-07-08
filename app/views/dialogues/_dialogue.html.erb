@@ -8,7 +8,7 @@
  </div>
   <div class = 'time-background'>
       <%= link_to :action => 'show_convos', :controller => 'inboxes', :id => dialogue.id  do  %>
-        <% if dialogue.sender_id = current_node.id %>
+        <% if dialogue.sender_id == current_node.id %>
             <%= Node.find(dialogue.receiver_id).username %>
         <% else %>
             <%= Node.find(dialogue.sender_id).username %>
