@@ -8,12 +8,12 @@
   </div>
   <div class = 'time-background'>
     <% if convo.interrogator_id == current_node.id %>
-        <% case convo.unread_interrogator != 0 and !convo.unread_interrogator.nil?%>
+        <% case convo.unread_interrogator %>
     <% when true %>
             <span class="badge badge-important">*</span>
         <% end %>
     <% else %>
-        <% case convo.unread_interlocutor != 0 and !convo.unread_interlocutor.nil?%>
+        <% case convo.unread_interlocutor %>
     <% when true %>
             <span class="badge badge-important">*</span>
         <% end %>

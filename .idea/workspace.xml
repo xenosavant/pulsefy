@@ -7,7 +7,6 @@
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/convos/_convo.html.erb" afterPath="$PROJECT_DIR$/app/views/convos/_convo.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dialogues/_dialogue.html.erb" afterPath="$PROJECT_DIR$/app/views/dialogues/_dialogue.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/inboxes_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/inboxes_helper.rb" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -198,7 +197,7 @@
       <file leaf-file-name="_dialogue.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/dialogues/_dialogue.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="34" selection-start="527" selection-end="1139" vertical-scroll-proportion="-13.75">
+            <state line="17" column="45" selection-start="861" selection-end="861" vertical-scroll-proportion="-10.625">
               <folding />
             </state>
           </provider>
@@ -207,7 +206,7 @@
       <file leaf-file-name="_convo.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/convos/_convo.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="23" selection-start="607" selection-end="607" vertical-scroll-proportion="0.29464287">
+            <state line="15" column="42" selection-start="700" selection-end="700" vertical-scroll-proportion="0.4017857">
               <folding />
             </state>
           </provider>
@@ -979,13 +978,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="68" width="1280" height="743" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940805" sideWeight="0.47717232" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3249595" sideWeight="0.7006173" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3249595" sideWeight="0.7006173" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43841168" sideWeight="0.14032497" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880846" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1164,14 +1163,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dialogues/_dialogue.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="34" selection-start="527" selection-end="1139" vertical-scroll-proportion="-13.75">
+        <state line="17" column="45" selection-start="861" selection-end="861" vertical-scroll-proportion="-10.625">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/convos/_convo.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="23" selection-start="607" selection-end="607" vertical-scroll-proportion="0.29464287">
+        <state line="15" column="42" selection-start="700" selection-end="700" vertical-scroll-proportion="0.4017857">
           <folding />
         </state>
       </provider>
