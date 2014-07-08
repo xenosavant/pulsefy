@@ -7,7 +7,7 @@
     <%end%>
   </div>
   <div class = 'time-background'>
-    <%= link_to :action => 'pre_message_check', :controller => 'inboxes', :id => convo.id  do  %>
+    <%= link_to :action => 'show_messages', :controller => 'inboxes', :id => convo.id  do  %>
         Started <%= time_ago_in_words(convo.created_at) %> ago.
     <% end %>
   </div>

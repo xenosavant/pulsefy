@@ -34,8 +34,9 @@ class InboxesController < ApplicationController
     @convos = @dialogue.convos.paginate(:page => params[:page])
   end
 
-  def pre_message_check
+  def show_messages
     @node = Node.find(current_node.id)
+    @message = Message.new
     @convo = Convo.find(params[:id])
     if @convo.interrogator_id == @node.id
       case @convo.unread_interrogator
@@ -52,12 +53,6 @@ class InboxesController < ApplicationController
     end
     Resque.enqueue(Mail, @node.id)
     store_receiver(@id)
-    render  :controller => 'inboxes', :action => 'show_messages', :id => @convo.id
-  end
-
-  def show_messages
-    @message = Message.new
-    @convo = Convo.find(params[:id])
     store_mailbox(@convo.id, 'messages')
     @messages = @convo.messages.paginate(:page => params[:page])
   end
