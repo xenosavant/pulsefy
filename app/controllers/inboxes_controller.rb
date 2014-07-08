@@ -42,12 +42,16 @@ class InboxesController < ApplicationController
       case @convo.unread_interrogator
         when true
           @id = @convo.interlocutor_id
+          tmp = @node.unreads
+          @node.update_attributes(:unreads => tmp - 1)
           @convo.update_attributes(:unread_interrogator => false)
       end
     else
       case @convo.unread_interlocutor
         when true
           @id = @convo.interrogator_id
+          tmp = @node.unreads
+          @node.update_attributes(:unreads => tmp - 1)
           @convo.update_attributes(:unread_interlocutor => false)
       end
     end
