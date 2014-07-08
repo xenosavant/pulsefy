@@ -1,27 +1,6 @@
 module InboxesHelper
   include SessionsHelper
 
-  def update_unreads(args)
-    @node = args[:node]
-     tmp = 0
-     @node.dialogues.find_each do |d|
-        d.convos.find_each do  |c|
-        case c.interrogator_id
-          when @node.id
-           case c.unread_interrogator
-            when true
-              tmp = tmp + 1
-           end
-          else
-           case c.unread_interlocutor
-            when true
-              tmp = tmp + 1
-          end
-        end
-      end
-     end
-    @node.update_attributes(:unreads => tmp)
-  end
 
   def update_dialogues(args)
     @node = args[:node]

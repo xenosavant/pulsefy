@@ -9,8 +9,16 @@
   <div class = 'time-background'>
       <%= link_to :action => 'show_convos', :controller => 'inboxes', :id => dialogue.id  do  %>
         <% if dialogue.sender_id == current_node.id %>
+            <% case dialogue.unread_sender != 0 and !dialogue.unread_sender.nil?%>
+              <% when true %>
+                  <span class="badge badge-important">*</span>
+              <% end %>
             <%= Node.find(dialogue.receiver_id).username %>
         <% else %>
+            <% case dialogue.unread_receiver != 0 and !dialogue.unread_receiver.nil?%>
+                 <% when true %>
+                     <span class="badge badge-important">*</span>
+                 <% end %>
             <%= Node.find(dialogue.sender_id).username %>
       <% end %>
    <% end %>

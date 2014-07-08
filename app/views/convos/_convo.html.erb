@@ -7,6 +7,17 @@
     <%end%>
   </div>
   <div class = 'time-background'>
+    <% if convo.interrogator_id == current_node.id %>
+        <% case convo.unread_interrogator != 0 and !convo.unread_interrogator.nil?%>
+    <% when true %>
+            <span class="badge badge-important">*</span>
+        <% end %>
+    <% else %>
+        <% case convo.unread_interlocutor != 0 and !convo.unread_interlocutor.nil?%>
+    <% when true %>
+            <span class="badge badge-important">*</span>
+        <% end %>
+    <% end %>
     <%= link_to :action => 'show_messages', :controller => 'inboxes', :id => convo.id  do  %>
         Started <%= time_ago_in_words(convo.created_at) %> ago.
     <% end %>
