@@ -7,6 +7,7 @@ class AvatarUploader < CarrierWave::Uploader::Base
   include Sprockets::Helpers::RailsHelper
   include Sprockets::Helpers::IsolatedHelper
   before :cache, :capture_size_before_cache # callback, example here: http://goo.gl/9VGHI
+
   # Choose what kind of storage to use for this uploader:
   storage :fog
 
@@ -34,7 +35,8 @@ class AvatarUploader < CarrierWave::Uploader::Base
 
   def manualcrop
     return unless model.cropping?
-      Resque.enqueue(Crop, :model_id => model.id, :class_id => model.class.name)
+    @model = model
+    Resque.enqueue(Crop, :model_id => @model.id, :class_id => @model.class.to_s)
   end
 
   version :large do
