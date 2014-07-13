@@ -6,7 +6,7 @@ class Node < ActiveRecord::Base
                   :password, :password_confirmation, :avatar, :self_tag,
                   :crop_x, :crop_y, :crop_w, :crop_h, :remember_token,
                   :hub, :admin, :verified, :self_tag, :width,
-                  :height, :unreads
+                  :height
   after_update :reprocess_avatar, :if => :cropping?
   has_secure_password
   before_save { |node| node.email = email.downcase }
@@ -29,6 +29,7 @@ class Node < ActiveRecord::Base
   has_many :inputs, :through => :reverse_relationships
   has_many :votes
   has_many :repulses
+  has_many :unreads
 
   include Network
   include SessionsHelper

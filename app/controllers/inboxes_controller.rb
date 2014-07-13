@@ -43,15 +43,18 @@ class InboxesController < ApplicationController
       case @convo.unread_interrogator
         when true
           @convo.update_attributes(:unread_interrogator => false)
+          @unread = current_node.unreads.find_by_convo_id(@convo.id)
+          @unread.delete
       end
   else
     @id = @convo.interrogator_id
       case @convo.unread_interlocutor
         when true
           @convo.update_attributes(:unread_interlocutor => false)
+          @unread = current_node.unreads.find_by_convo_id(@convo.id)
+          @unread.delete
       end
     end
-    Resque.enqueue(Mail, @node.id)
     store_receiver(@id)
     store_mailbox(@convo.id, 'messages')
     @messages = @convo.messages.paginate(:page => params[:page])

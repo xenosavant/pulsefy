@@ -11,8 +11,8 @@
                     <li> <%= link_to 'Connections', inputs_path(:id => current_node.id) %></li>
                     <li> <%= link_to inbox_path do %>
                           <i class='fa fa-small fa-envelope'></i>
-                          <% if current_node.unreads != 0 and !current_node.unreads.nil?%>
-                          <span class="badge badge-important"><%= current_node.unreads %></span>
+                          <% if current_node.unreads.count > 0 %>
+                          <span class="badge badge-important"><%= current_node.unreads.count %></span>
                           <% end %>
                           <%end%>
                     </li>

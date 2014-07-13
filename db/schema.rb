@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140422185157) do
+ActiveRecord::Schema.define(:version => 20140713154627) do
 
   create_table "assemblies", :force => true do |t|
     t.string   "title"
@@ -148,6 +148,13 @@ ActiveRecord::Schema.define(:version => 20140422185157) do
   create_table "repulses", :force => true do |t|
     t.integer  "node_id"
     t.integer  "pulse_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "unreads", :force => true do |t|
+    t.integer  "node_id"
+    t.integer  "convo_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
