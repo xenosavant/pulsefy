@@ -9,9 +9,9 @@ class Crop
 
   def self.perform(options)
     case options[:class_id]
-      when 'node'
+      when 'Node'
         @model = Node.find(options[:model_id])
-      when 'assembly'
+      when 'Assembly'
         @model = Assembly.find(options[:model_id])
     end
    img = MiniMagick::Image.open(@model.avatar.url)
