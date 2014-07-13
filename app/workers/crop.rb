@@ -8,11 +8,13 @@ class Crop
   @queue = :crop_queue
 
   def self.perform(options)
-    case options[:class_id]
+    @class_id = options[:class_id]
+    @model_id = options[:model_id]
+    case @class_id
       when 'Node'
-        @model = Node.find(options[:model_id])
+        @model = Node.find(@class_id)
       when 'Assembly'
-        @model = Assembly.find(options[:model_id])
+        @model = Assembly.find(@class_id)
     end
    img = MiniMagick::Image.open(@model.avatar.url)
    manipulate! do |img|

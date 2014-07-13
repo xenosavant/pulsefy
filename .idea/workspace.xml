@@ -158,7 +158,7 @@
     <file path="/application.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1404783177295" ignored="false" />
     <file path="/unread.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405266458790" ignored="false" />
     <file path="/20140713154627_create_unreads.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405268228309" ignored="false" />
-    <file path="/crop.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405276936186" ignored="false" />
+    <file path="/crop.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405277272314" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,7 +253,7 @@
       <file leaf-file-name="crop.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/workers/crop.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="77" selection-start="331" selection-end="331" vertical-scroll-proportion="0.5131579">
+            <state line="14" column="37" selection-start="361" selection-end="361" vertical-scroll-proportion="0.31578946">
               <folding />
             </state>
           </provider>
@@ -434,6 +434,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="uploaders" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pulsefy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pulsefy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -963,7 +981,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/workers/crop.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="77" selection-start="331" selection-end="331" vertical-scroll-proportion="0.5131579">
+        <state line="14" column="37" selection-start="361" selection-end="361" vertical-scroll-proportion="0.31578946">
           <folding />
         </state>
       </provider>
