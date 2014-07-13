@@ -4,7 +4,6 @@ class InboxesController < ApplicationController
 
   def show_dialogues
     @node = current_node
-    update_dialogues(:node => @node)
     #case session[:mail_location].nil? || session[:mail_id].nil? || session[:mail_id] = 0
     #  when false
     #    case session[:mail_location]
