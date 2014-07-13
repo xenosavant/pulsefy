@@ -158,7 +158,7 @@
     <file path="/application.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1404783177295" ignored="false" />
     <file path="/unread.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405266458790" ignored="false" />
     <file path="/20140713154627_create_unreads.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405268228309" ignored="false" />
-    <file path="/crop.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405278743103" ignored="false" />
+    <file path="/crop.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405279514478" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,7 +253,7 @@
       <file leaf-file-name="crop.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/workers/crop.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="31" selection-start="358" selection-end="358" vertical-scroll-proportion="0.23684211">
+            <state line="30" column="0" selection-start="718" selection-end="718" vertical-scroll-proportion="0.90789473">
               <folding />
             </state>
           </provider>
@@ -982,7 +982,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/workers/crop.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="31" selection-start="358" selection-end="358" vertical-scroll-proportion="0.23684211">
+        <state line="30" column="0" selection-start="718" selection-end="718" vertical-scroll-proportion="0.90789473">
           <folding />
         </state>
       </provider>

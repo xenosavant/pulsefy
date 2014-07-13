@@ -16,17 +16,16 @@ class Crop
       when 'Assembly'
         @model = Assembly.find(@id)
     end
-   img = MiniMagick::Image.open(@model.avatar.url)
-   img.manipulate! do |img|
+   image = MiniMagick::Image.open(@model.avatar.url)
 
     x = @model.crop_x.to_s
     y = @model.crop_y.to_s
     w = @model.crop_w.to_s
     h = @model.crop_h.to_s
 
-    img.crop(w + 'x' + h + '+' + x + '+' + y)
+    image.crop(w + 'x' + h + '+' + x + '+' + y)
     #img.crop(model.crop_x.to_i,model.crop_y.to_i,model.crop_h.to_i,model.crop_w.to_i)
-    img
-    end
+    image
   end
+
 end
