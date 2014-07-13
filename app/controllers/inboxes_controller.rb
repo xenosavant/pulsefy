@@ -37,6 +37,7 @@ class InboxesController < ApplicationController
     @node = Node.find(current_node.id)
     @message = Message.new
     @convo = Convo.find(params[:id])
+    @dialogue = Dialogue.find(@convo.dialogue_id)
   if @convo.interrogator_id == @node.id
     @id = @convo.interlocutor_id
       case @convo.unread_interrogator
@@ -53,7 +54,20 @@ class InboxesController < ApplicationController
           @unread = current_node.unreads.find_by_convo_id(@convo.id)
           @unread.delete
       end
+  end
+
+    if @dialogue.sender_id == @node.id
+      case @dialogue.unread_sender
+        when true
+          @dialogue.update_attributes(:unread_sender => false)
+      end
+    else
+      case @dialogue.unread_receiver
+        when true
+          @dialogue.update_attributes(:unread_receiver => false)
+      end
     end
+
     store_receiver(@id)
     store_mailbox(@convo.id, 'messages')
     @messages = @convo.messages.paginate(:page => params[:page])
