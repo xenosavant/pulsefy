@@ -8,8 +8,8 @@ class Crop
   @queue = :crop_queue
 
   def self.perform(options)
-    @class_id = options[:class_id]
-    @model_id = options[:model_id]
+    @class_id = options['class_id']
+    @model_id = options['model_id']
     case @class_id
       when 'Node'
         @model = Node.find(@class_id)
