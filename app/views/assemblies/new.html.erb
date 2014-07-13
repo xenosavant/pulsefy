@@ -11,7 +11,6 @@
    </div>
 <%end%>
 
-<div class = 'new-box'>
       <%= form_for(@assembly) do |f| %>
 
       <div class="textfield">
@@ -34,6 +33,5 @@
     </div>
    <div class = 'button-box'>
       <%= f.submit 'Assemble!', :disable_with => 'Assembling...', :class => 'btn btn-medium btn-primary' %>
-      </div>
-      </div>
-    <% end %>
+    </div>
+ <% end %>
