@@ -40,7 +40,7 @@
     <file path="/profile_pic.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371500667068" ignored="false" />
     <file path="/20130617210118_add_avatar_to_nodes.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371502904375" ignored="false" />
     <file path="/edit.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1396230553401" ignored="false" />
-    <file path="/avatar_uploader.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405273488444" ignored="false" />
+    <file path="/avatar_uploader.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405274012702" ignored="false" />
     <file path="/hub.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371681320962" ignored="false" />
     <file path="/20130617214902_create_hubs.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371586216825" ignored="false" />
     <file path="/20130604190000_create_nodes.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405266883900" ignored="false" />
@@ -245,19 +245,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="avatar_uploader.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="avatar_uploader.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/uploaders/avatar_uploader.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="47" selection-start="73" selection-end="222" vertical-scroll-proportion="0.0">
+            <state line="45" column="25" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.89918256">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="crop.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="crop.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/workers/crop.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="40" selection-start="164" selection-end="164" vertical-scroll-proportion="0.23684211">
+            <state line="1" column="2" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -298,8 +298,8 @@
         <option value="$PROJECT_DIR$/db/migrate/20140225194030_create_dialogues.rb" />
         <option value="$PROJECT_DIR$/app/views/messages/new.html.erb" />
         <option value="$PROJECT_DIR$/app/workers/mail.rb" />
-        <option value="$PROJECT_DIR$/app/uploaders/avatar_uploader.rb" />
         <option value="$PROJECT_DIR$/app/workers/crop.rb" />
+        <option value="$PROJECT_DIR$/app/uploaders/avatar_uploader.rb" />
       </list>
     </option>
   </component>
@@ -958,16 +958,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/uploaders/avatar_uploader.rb">
+    <entry file="file://$PROJECT_DIR$/app/workers/crop.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="47" selection-start="73" selection-end="222" vertical-scroll-proportion="0.0">
+        <state line="1" column="2" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/workers/crop.rb">
+    <entry file="file://$PROJECT_DIR$/app/uploaders/avatar_uploader.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="40" selection-start="164" selection-end="164" vertical-scroll-proportion="0.23684211">
+        <state line="45" column="25" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.89918256">
           <folding />
         </state>
       </provider>

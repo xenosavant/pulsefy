@@ -34,7 +34,7 @@ class AvatarUploader < CarrierWave::Uploader::Base
 
   def manualcrop
     return unless model.cropping?
-      Resque.enqueue(crop, model.id, model.class.to_s)
+      Resque.enqueue(Crop, model.id, model.class.to_s)
   end
 
   version :large do
