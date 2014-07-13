@@ -7,7 +7,6 @@ class AvatarUploader < CarrierWave::Uploader::Base
   include Sprockets::Helpers::RailsHelper
   include Sprockets::Helpers::IsolatedHelper
   before :cache, :capture_size_before_cache # callback, example here: http://goo.gl/9VGHI
-
   # Choose what kind of storage to use for this uploader:
   storage :fog
 
@@ -35,8 +34,18 @@ class AvatarUploader < CarrierWave::Uploader::Base
 
   def manualcrop
     return unless model.cropping?
-    @model = model
-    Resque.enqueue(Crop, 'id' => @model.id, 'class' => @model.class.to_s)
+     img = MiniMagick::Image.open(model.avatar.url)
+     manipulate! do |img|
+
+       x = model.crop_x.to_s
+       y = model.crop_y.to_s
+       w = model.crop_w.to_s
+       h = model.crop_h.to_s
+
+     img.crop(w + 'x' + h + '+' + x + '+' + y)
+     #img.crop(model.crop_x.to_i,model.crop_y.to_i,model.crop_h.to_i,model.crop_w.to_i)
+     img
+    end
   end
 
   version :large do
