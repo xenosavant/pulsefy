@@ -17,7 +17,7 @@ class Crop
         @model = Assembly.find(@id)
     end
    img = MiniMagick::Image.open(@model.avatar.url)
-   manipulate! do |img|
+   img.manipulate! do |img|
 
     x = @model.crop_x.to_s
     y = @model.crop_y.to_s
