@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140225194030_create_dialogues.rb" afterPath="$PROJECT_DIR$/db/migrate/20140225194030_create_dialogues.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/inboxes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/inboxes_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -133,7 +135,7 @@
     <file path="/messages_helper.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395601325011" ignored="false" />
     <file path="/20140225190228_dialogues_nodes_join_table.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1393354987804" ignored="false" />
     <file path="/20140225194935_create_dialogues_nodes_join_table.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1393357801620" ignored="false" />
-    <file path="/20140225194030_create_dialogues.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405267837888" ignored="false" />
+    <file path="/20140225194030_create_dialogues.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405271153463" ignored="false" />
     <file path="/_message.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395626847864" ignored="false" />
     <file path="/dialogues.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395688614936" ignored="false" />
     <file path="/_dialogue.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1404790259594" ignored="false" />
@@ -180,16 +182,16 @@
       <file leaf-file-name="inboxes_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/inboxes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="2" selection-start="2187" selection-end="2187" vertical-scroll-proportion="0.0">
+            <state line="58" column="39" selection-start="1910" selection-end="1910" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_dialogue.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_dialogue.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/dialogues/_dialogue.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="65" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.65597665">
+            <state line="20" column="65" selection-start="1020" selection-end="1020" vertical-scroll-proportion="-9.375">
               <folding />
             </state>
           </provider>
@@ -222,10 +224,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20140225194030_create_dialogues.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="20140225194030_create_dialogues.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/migrate/20140225194030_create_dialogues.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="43" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
+            <state line="12" column="25" selection-start="264" selection-end="264" vertical-scroll-proportion="0.47368422">
               <folding />
             </state>
           </provider>
@@ -297,13 +299,13 @@
         <option value="$PROJECT_DIR$/app/models/node.rb" />
         <option value="$PROJECT_DIR$/app/models/unread.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130604190000_create_nodes.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20140225194030_create_dialogues.rb" />
         <option value="$PROJECT_DIR$/app/models/dialogue.rb" />
         <option value="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
         <option value="$PROJECT_DIR$/app/helpers/inboxes_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20140713154627_create_unreads.rb" />
         <option value="$PROJECT_DIR$/app/controllers/inboxes_controller.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140225194030_create_dialogues.rb" />
       </list>
     </option>
   </component>
@@ -1046,13 +1048,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140225194030_create_dialogues.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="43" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="19" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0">
@@ -1067,16 +1062,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/inboxes_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/dialogues/_dialogue.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="2" selection-start="2187" selection-end="2187" vertical-scroll-proportion="0.0">
+        <state line="20" column="65" selection-start="1020" selection-end="1020" vertical-scroll-proportion="-9.375">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/dialogues/_dialogue.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/inboxes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="65" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.65597665">
+        <state line="58" column="39" selection-start="1910" selection-end="1910" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140225194030_create_dialogues.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="25" selection-start="264" selection-end="264" vertical-scroll-proportion="0.47368422">
           <folding />
         </state>
       </provider>

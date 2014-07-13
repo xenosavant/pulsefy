@@ -52,18 +52,22 @@ ActiveRecord::Schema.define(:version => 20140713154627) do
     t.integer  "dialogue_id"
     t.integer  "interrogator_id"
     t.integer  "interlocutor_id"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
     t.boolean  "active"
+    t.boolean  "unread_interrogator"
+    t.boolean  "unread_interlocutor"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
   end
 
   add_index "convos", ["dialogue_id"], :name => "index_convos_on_dialogue_id"
 
   create_table "dialogues", :force => true do |t|
-    t.integer  "node_id"
     t.integer  "receiver_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.integer  "sender_id"
+    t.boolean  "unread_sender"
+    t.boolean  "unread_receiver"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   add_index "dialogues", ["receiver_id"], :name => "index_dialogues_on_receiver_id"
@@ -77,8 +81,7 @@ ActiveRecord::Schema.define(:version => 20140713154627) do
     t.integer  "convo_id"
     t.integer  "receiver_id"
     t.integer  "sender_id"
-    t.string   "content"
-    t.boolean  "read"
+    t.text     "content"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
@@ -90,12 +93,13 @@ ActiveRecord::Schema.define(:version => 20140713154627) do
     t.string   "email"
     t.string   "remember_token"
     t.string   "avatar"
+    t.string   "password_digest"
+    t.string   "self_tag"
     t.text     "info"
     t.boolean  "admin"
     t.boolean  "hub"
     t.boolean  "verified"
-    t.string   "password_digest"
-    t.string   "self_tag"
+    t.boolean  "power"
     t.float    "threshold"
     t.float    "crop_x"
     t.float    "crop_y"
@@ -129,6 +133,7 @@ ActiveRecord::Schema.define(:version => 20140713154627) do
     t.integer  "degradations"
     t.integer  "pulser"
     t.integer  "refires"
+    t.integer  "meta"
     t.integer  "pulse_comments_count", :default => 0
     t.string   "pulser_type"
     t.string   "tags"
