@@ -7,12 +7,12 @@ class Crop
 
   @queue = :crop_queue
 
-  def self.perform(model_id, model_class)
-    case model_class
+  def self.perform(options)
+    case options[:class]
       when 'node'
-        @model = Node.find(model_id)
+        @model = Node.find(options[:model_id])
       when 'assembly'
-        @model = Assembly.find(model_id)
+        @model = Assembly.find(options[:model_id])
     end
   img = MiniMagick::Image.open(@model.avatar.url)
   manipulate! do |img|
