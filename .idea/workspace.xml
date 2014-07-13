@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140225194030_create_dialogues.rb" afterPath="$PROJECT_DIR$/db/migrate/20140225194030_create_dialogues.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/inboxes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/inboxes_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/workers/crop.rb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/workers/mail.rb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/uploaders/avatar_uploader.rb" afterPath="$PROJECT_DIR$/app/uploaders/avatar_uploader.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/messages/new.html.erb" afterPath="$PROJECT_DIR$/app/views/messages/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Pulsefy.iws" />
@@ -38,7 +40,7 @@
     <file path="/profile_pic.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371500667068" ignored="false" />
     <file path="/20130617210118_add_avatar_to_nodes.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371502904375" ignored="false" />
     <file path="/edit.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1396230553401" ignored="false" />
-    <file path="/avatar_uploader.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1396240952275" ignored="false" />
+    <file path="/avatar_uploader.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405273488444" ignored="false" />
     <file path="/hub.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371681320962" ignored="false" />
     <file path="/20130617214902_create_hubs.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371586216825" ignored="false" />
     <file path="/20130604190000_create_nodes.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405266883900" ignored="false" />
@@ -51,7 +53,7 @@
     <file path="/custom.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1404783360674" ignored="false" />
     <file path="/_sidebar.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1387218668722" ignored="false" />
     <file path="/application.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1396409031475" ignored="false" />
-    <file path="/new.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1400172678251" ignored="false" />
+    <file path="/new.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405271695797" ignored="false" />
     <file path="/20130618015740_create_assemblies_nodes_join_table.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371586016556" ignored="false" />
     <file path="/20130618020317_create_assemblies_pulses_join_table.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371586030947" ignored="false" />
     <file path="/index.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371755025209" ignored="false" />
@@ -160,6 +162,7 @@
     <file path="/application.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1404783177295" ignored="false" />
     <file path="/unread.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405266458790" ignored="false" />
     <file path="/20140713154627_create_unreads.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405268228309" ignored="false" />
+    <file path="/crop.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405273438446" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,64 +200,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20140713154627_create_unreads.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20140713154627_create_unreads.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="22" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="node.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/node.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="25" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dialogue.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/dialogue.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="42" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20140225194030_create_dialogues.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="20140225194030_create_dialogues.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20140225194030_create_dialogues.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="25" selection-start="264" selection-end="264" vertical-scroll-proportion="0.47368422">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inboxes_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/inboxes_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_header.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="33" selection-start="903" selection-end="903" vertical-scroll-proportion="-10.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="messages_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="19" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0">
+            <state line="12" column="25" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -263,7 +212,52 @@
       <file leaf-file-name="20130604190000_create_nodes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20130604190000_create_nodes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="37" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0">
+            <state line="14" column="2" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/messages/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="31" selection-start="162" selection-end="162" vertical-scroll-proportion="-3.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="crop.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/nodes/crop.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="18.833334">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nodes_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/nodes_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="49" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="avatar_uploader.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/uploaders/avatar_uploader.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="47" selection-start="73" selection-end="222" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="crop.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/workers/crop.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="40" selection-start="164" selection-end="164" vertical-scroll-proportion="0.23684211">
               <folding />
             </state>
           </provider>
@@ -290,10 +284,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/static/home.html.erb" />
-        <option value="$PROJECT_DIR$/app/workers/mail.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/dialogues.css.scss" />
         <option value="$PROJECT_DIR$/app/views/convos/_convo.html.erb" />
         <option value="$PROJECT_DIR$/app/views/dialogues/_dialogue.html.erb" />
         <option value="$PROJECT_DIR$/app/models/node.rb" />
@@ -306,6 +296,10 @@
         <option value="$PROJECT_DIR$/db/migrate/20140713154627_create_unreads.rb" />
         <option value="$PROJECT_DIR$/app/controllers/inboxes_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140225194030_create_dialogues.rb" />
+        <option value="$PROJECT_DIR$/app/views/messages/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/workers/mail.rb" />
+        <option value="$PROJECT_DIR$/app/uploaders/avatar_uploader.rb" />
+        <option value="$PROJECT_DIR$/app/workers/crop.rb" />
       </list>
     </option>
   </component>
@@ -428,10 +422,6 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -447,101 +437,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pulsefy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pulsefy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dialogues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pulsefy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pulsefy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pulsefy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pulsefy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pulsefy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pulsefy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pulsefy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pulsefy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="uploaders" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -971,55 +867,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/unread.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="22" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140225193926_create_messages.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="20" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140225194245_create_convos.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140225194332_create_repulses.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130611184143_create_votes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130604190040_create_pulses.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="46" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130604190000_create_nodes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="37" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/node.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="25" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0">
@@ -1078,7 +925,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140225194030_create_dialogues.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="25" selection-start="264" selection-end="264" vertical-scroll-proportion="0.47368422">
+        <state line="12" column="25" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130604190000_create_nodes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="2" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/messages/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="31" selection-start="162" selection-end="162" vertical-scroll-proportion="-3.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/nodes/crop.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="18.833334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/nodes_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="49" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/uploaders/avatar_uploader.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="47" selection-start="73" selection-end="222" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/workers/crop.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="40" selection-start="164" selection-end="164" vertical-scroll-proportion="0.23684211">
           <folding />
         </state>
       </provider>
