@@ -9,11 +9,11 @@
                   <div class = 'search-container'>
                   <%= form_tag(nodes_path, :method => "get", id: "search-form") do %>
                       <%= text_field_tag :search, params[:search], placeholder: "Search Users" %>
+                      </div>
                         <div class ='search-button-container'>
                             <button type="submit" class="btn"><i class="icon-search"></i></button>
                         </div>
                   <% end %>
-                  </div>
                     <li> <a href='/'> Home </a> </li>
                     <li> <%= link_to 'Assemblies', view_path(:id => current_node.id) %></li>
                     <li> <%= link_to 'Connections', inputs_path(:id => current_node.id) %></li>
