@@ -476,11 +476,13 @@ textarea, textfield {
 }
 
 .search-button-container {
-  position:relative;
+  display:inline;
+  position:absolute;
   top:-6px;
   height:30px;
   width:44px;
   overflow:hidden;
+  margin:0;
 }
 
 .head-mar {
