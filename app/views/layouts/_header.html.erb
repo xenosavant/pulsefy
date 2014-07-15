@@ -7,12 +7,10 @@
             <ul class="nav pull-right">
               <% if signed_in? %>
                 <li>
-                  <form class="form-search" method="get" id="s" action="nodes/index">
-                    <div class="input-append">
-                      <input type="text" class="span2 search-query" placeholder="Search">
+                  <%= form_tag(users_path, :method => "get", id: "search-form") do %>
+                      <%= text_field_tag :search, params[:search], placeholder: "Search Users" %>
                       <button type="submit" class="btn"><i class="icon-search"></i></button>
-                    </div>
-                  </form>
+                  <% end %>
                  </li>
                     <li> <a href='/'> Home </a> </li>
                     <li> <%= link_to 'Assemblies', view_path(:id => current_node.id) %></li>
