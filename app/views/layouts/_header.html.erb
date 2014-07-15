@@ -2,7 +2,9 @@
   <div class = 'head-container'>
     <div class = 'head-mar'>
       <div class="navbar-inner">
+        <div class = 'logo-box'>
           <%= link_to "pulsefy", root_path, :id => 'logo' %>
+        </div>
         <% if signed_in? %>
           <nav>
             <ul class="nav pull-left">
@@ -16,6 +18,7 @@
                 </div>
             <% end %>
             </li>
+           </ul>
             <ul class="nav pull-right">
                     <li> <a href='/'> Home </a> </li>
                     <li> <%= link_to 'Assemblies', view_path(:id => current_node.id) %></li>
