@@ -4,11 +4,11 @@
       <div class="navbar-inner">
         <nav>
           <ul class="nav pull-left">
-            <li>
-              <div class = 'logo-box'>
-              <%= link_to "pulsefy", root_path, :id => 'logo' %>
-            </div>
-            </li>
+            <!--<li>-->
+              <!--<div class = 'logo-box'>-->
+              <!--<%= link_to "pulsefy", root_path, :id => 'logo' %>-->
+            <!--</div>-->
+            <!--</li>-->
            <% if signed_in? %>
              <li>
                  <%= form_tag(nodes_path, :method => "get", id: "search-form") do %>
