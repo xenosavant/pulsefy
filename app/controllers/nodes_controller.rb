@@ -24,7 +24,7 @@ class NodesController < ApplicationController
   end
 
   def index
-    @nodes = Node.search(params[:search])
+    @nodes = Node.search(params[:search]).paginate(:page => params[:page])
   end
 
   def edit
