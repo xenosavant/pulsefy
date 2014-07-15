@@ -7,7 +7,6 @@ class Pulse < ActiveRecord::Base
                   :tags, :link, :embed_code, :thumbnail, :link_type, :url, :headline, :refires,
                   :meta
   attr_accessor :temp_url
-  validates :content, :presence => true
   validates :tags, :presence => true, :length => { :maximum => 100 }
   validates :headline, :length => { :maximum => 30 }
   validates :link, :allow_blank => true, :format => { :with => URI::regexp(%w(http https)), :message => "Valid URL required"}
