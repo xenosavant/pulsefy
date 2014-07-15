@@ -473,6 +473,7 @@ textarea, textfield {
   height:30px;
   padding-top:5px;
   padding-bottom:5px;
+  display:inline;
 }
 
 .search-button-container {
@@ -482,8 +483,7 @@ textarea, textfield {
   height:42px;
   width:44px;
   margin-bottom:6px;
-  left:30px;
-  top:1px;
+  top:-1px;
 }
 
 .head-mar {
