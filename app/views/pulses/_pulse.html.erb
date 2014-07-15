@@ -33,9 +33,10 @@
       <%when 'photo' %>
           <div class ="photo-container"> <img src = <%= raw pulse.url %> ></div>
       <%else%>
-            <%if !pulse.link.nil? %>
-          <div class ="link-container"><a href = <%= pulse.link %>><%= pulse.temp_url%></a></div>
-            <%end%>
+         <%case pulse.url.nil? %>
+             <%when false %>
+             <div class ="link-container"><a href = <%= pulse.link %>><%= pulse.temp_url%></a></div>
+         <%end%>
       <%end%>
   <% end %>
     <div class = 'text-wrapper'>
