@@ -23,6 +23,9 @@ class NodesController < ApplicationController
     end
   end
 
+  def index
+    @nodes = Project.search(params[:search])
+  end
 
   def edit
     @node = Node.find(current_node.id)
