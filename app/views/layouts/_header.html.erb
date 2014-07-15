@@ -10,7 +10,9 @@
                   <div class = 'search-container'>
                   <%= form_tag(nodes_path, :method => "get", id: "search-form") do %>
                       <%= text_field_tag :search, params[:search], placeholder: "Search Users" %>
-                      <button type="submit" class="btn"><i class="icon-search"></i></button>
+                        <div class ='search-button-container'>
+                            <button type="submit" class="btn"><i class="icon-search"></i></button>
+                        </div>
                   <% end %>
                   </div>
                  </li>
