@@ -61,21 +61,25 @@ include ApplicationHelper
     return_back_to
   end
 
- def update_embed(args)
+def update_embed(args)
   @pulse = args[:pulse]
-  @image_regex = /http:\/\/(www\.flickr\.com\/photos\/.*|flic\.kr\/.*|.*imgur\.com\/.*|instagr\.am\/p\/.*|instagram\.com\/p\/.*)/
-
-  case  @pulse.link.scan(@image_regex).first.nil?
-    when false
-      @pulse.update_attributes(:link_type => 'photo', :url => @pulse.link)
-  end
+  @image_regex = /^https?:\/\/(?:[a-z\-]+\.)+[a-z]{2,6}(?:\/[^\/#?]+)+\.(?:jpe?g|gif|png)$/i
 
   api = Embedly::API.new
-       @embed = api.oembed :url => @pulse.link, :key => '07cf494178ce4c2ba9c3ba65eb369f29'
-           @pulse.update_attributes(:embed_code => @embed[0].html, :thumbnail => @embed[0].thumbnail_url,
-                                   :link_type => @embed[0].type, :url => @embed[0].url, :temp_url => @embed[0].error)
+  @embed = api.oembed :url => @pulse.link, :key => '07cf494178ce4c2ba9c3ba65eb369f29'
+  @pulse.update_attributes(:embed_code => @embed[0].html, :thumbnail => @embed[0].thumbnail_url,
+                           :link_type => @embed[0].type, :url => @embed[0].url, :temp_url => @embed[0].error)
+  case pulse.link_type == 'photo' || pulse.link_type == 'video'
+    when false
+      @valid_link =  @pulse.link.scan(@image_regex).first
+      case  @valid_link.nil?
+        when false
+          @pulse.update_attributes(:link_type => 'photo', :url => @pulse.link, :url => @valid_link)
+      end
+  end
+
   @pulse.save
 
-  end
+end
 
 end

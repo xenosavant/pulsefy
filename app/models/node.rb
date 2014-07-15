@@ -87,6 +87,14 @@ class Node < ActiveRecord::Base
     @height = 300
   end
 
+  def self.search(search)
+    if search
+      find(:all, :conditions => ['name LIKE ?', "%#{search}%"])
+    else
+      find(:all)
+    end
+  end
+
   def reprocess_avatar
     self.avatar.recreate_versions!
   end

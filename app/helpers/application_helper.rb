@@ -76,11 +76,14 @@ module ApplicationHelper
   def home_menu?
     case params[:controller]
       when 'nodes'
-        if params[:action] == 'show'
+        case params[:action]
+         when 'show'
           true
-        elsif params[:action] == 'members'
+         when 'members'
           true
-        else
+         when 'index'
+          true
+         else
           false
         end
       when 'assemblies'
