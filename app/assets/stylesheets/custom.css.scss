@@ -468,7 +468,8 @@ textarea, textfield {
 }
 
 .search-container {
-  width:auto;
+  float:left;
+  width:270px;
   height:30px;
   padding-top:5px;
   padding-bottom:5px;
@@ -476,9 +477,9 @@ textarea, textfield {
 
 .search-button-container {
   position:relative;
-  top:6px;
+  top:-6px;
   height:30px;
-  width:auto;
+  width:44px;
   overflow:hidden;
 }
 
