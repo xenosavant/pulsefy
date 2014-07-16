@@ -1,8 +1,8 @@
 <li>
   <div class = 'soma'>
     <div class = 'picture-holder'>
-    <%if !Node.find(pulse.pulser).avatar.file.nil? %>
-        <%= link_to image_tag @node.avatar(:thumb), @node %>
+    <%if @node.avatar.file %>
+        <%= link_to image_tag @node.avatar(:thumb), {:action => 'show', :controller => 'nodes', :id => @node.id} %>
         <%else%>
     <%= image_tag 'Q100.jpg' %>
     <%end%>
