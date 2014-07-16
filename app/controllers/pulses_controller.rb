@@ -14,28 +14,30 @@ include ApplicationHelper
         when false
           update_embed(:pulse => @pulse)
       end
-          if @pulse.pulser_type == 'Node'
+      case @pulse.pulser_type
+           when 'Node'
             @node.pulses << @pulse
               Node.find(@pulse.pulser).fire_pulse(:pulse => @pulse)
               redirect_to root_url(params[:node])
-          else if @pulse.pulser_type == 'Assembly'
-                   Assembly.find(session[:return_to]).pulses << @pulse
-                   redirect_to Assembly.find(session[:return_to])
-               end
-          end
-    else
-      if @pulse.pulser_type == 'Node'
-      redirect_to root_url(:errors => @pulse.errors.full_messages)
-      else
-      @assembly = Assembly.find(session[:return_to])
-      redirect_to :controller => 'assemblies', :action => 'show',
-                  :id => session[:return_to], :errors => @pulse.errors.full_messages
+            when 'Assembly'
+              Assembly.find(session[:return_to]).pulses << @pulse
+              redirect_to Assembly.find(session[:return_to])
       end
-  end
- end
+      else
+        case @pulse.pulser_type
+          when 'Node'
+            redirect_to root_url(:errors => @pulse.errors.full_messages)
+          when 'Assembly'
+           @assembly = Assembly.find(session[:return_to])
+           redirect_to :controller => 'assemblies', :action => 'show',
+                  :id => session[:return_to], :errors => @pulse.errors.full_messages
+       end
+      end
+    end
 
   def show
     @pulse = Pulse.find(params[:id])
+    @node = Node.find(@pulse.pulser)
     store_location(params[:id], 'Pulse')
     @pulse_comment = @pulse.pulse_comments.new
     @pulse_comments = @pulse.pulse_comments.paginate(:page => params[:page])

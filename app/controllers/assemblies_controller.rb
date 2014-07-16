@@ -6,11 +6,7 @@ class AssembliesController < ApplicationController
   @assembly.founder = @node.id
   if @assembly.save
      @node.assemblies << @assembly
-     if params[:assembly][:avatar].blank?
        redirect_to @assembly
-     else
-       render 'assemblies/crop'
-     end
   else
     redirect_to assemble_path(:errors => @assembly.errors.full_messages)
   end

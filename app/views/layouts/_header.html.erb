@@ -1,13 +1,13 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
-  <div class = 'head-container'>
     <div class = 'head-mar'>
       <div class="navbar-inner">
+        <div class = 'head-container'>
           <ul class="nav pull-left">
             <!--<li>-->
-              <!--<div class = 'logo-box'>-->
-              <!--<%= link_to "pulsefy", root_path, :id => 'logo' %>-->
-            <!--</div>-->
-            <!--</li>-->
+              <div class = 'logo-box'>
+              <%= link_to image_tag("Logo.png"), {:action => 'home', :controller => 'static'} %>
+            </div>
+            </li>
            <% if signed_in? %>
              <li>
                  <%= form_tag(nodes_path, :method => "get", id: "search-form") do %>
