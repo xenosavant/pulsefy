@@ -1,7 +1,6 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
    <div class="navbar-inner">
      <div class = 'head-mar'>
-         <ul class="nav pull-left">
             <div class = 'logo-box'>
               <%= link_to image_tag("Logo.png"), {:action => 'home', :controller => 'static'} %>
             </div>
@@ -15,7 +14,6 @@
                 </div>
            <% end %>
            </ul>
-            <nav>
             <ul class="nav pull-right">
                     <li> <a href='/'> Home </a> </li>
                     <li> <%= link_to 'Assemblies', view_path(:id => current_node.id) %></li>
@@ -44,7 +42,6 @@
                   <li><%= link_to 'Home', root_path %></li>
               <% end %>
             </ul>
-          </nav>
         </div>
       </div>
   </div>
