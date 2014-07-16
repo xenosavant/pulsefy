@@ -1,5 +1,5 @@
 <div class = 'pad-block'><div class = 'title-box'><%= @node.username %> </div></div>
-  <%if !@node.avatar.file.nil? %>
+  <%if @node.avatar.file %>
       <%= image_tag @node.avatar_url(:profile) %>
     <%else%>
     <%= image_tag 'Q300.jpg'%>
