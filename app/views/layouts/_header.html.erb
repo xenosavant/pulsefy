@@ -3,13 +3,13 @@
      <div class = 'head-mar'>
        <nav>
          <ul class="nav pull-left">
-           <nav>
              <li>
             <div class = 'logo-box'>
               <%= link_to image_tag("Logo.png"), {:action => 'home', :controller => 'static'} %>
             </div>
              </li>
-          </nav>
+           </ul>
+       </nav>
            <% if signed_in? %>
             <nav>
             <ul class="nav pull-right">
