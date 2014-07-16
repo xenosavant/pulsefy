@@ -468,7 +468,7 @@ textarea, textfield {
 }
 
 .search-container {
-  float:left;
+  left:40px;
   width:232px;
   height:30px;
   padding-top:5px;
@@ -488,8 +488,9 @@ textarea, textfield {
 .logo-box {
   position:absolute;
   display:inline;
-  width:150px;
-  height:auto;
+  width:32px;
+  height:32px;
+  padding:4px;
 }
 
 .head-mar {
