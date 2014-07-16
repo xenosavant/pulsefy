@@ -1,23 +1,19 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="navbar-inner">
+   <div class="navbar-inner">
      <div class = 'head-mar'>
          <ul class="nav pull-left">
-              <li>
-              <div class = 'logo-box'>
+            <div class = 'logo-box'>
               <%= link_to image_tag("Logo.png"), {:action => 'home', :controller => 'static'} %>
             </div>
-            </li>
            <% if signed_in? %>
-             <li>
                  <%= form_tag(nodes_path, :method => "get", id: "search-form") do %>
-                <div class = 'search-container'>
+                   <div class = 'search-container'>
                   <%= text_field_tag :search, params[:search], placeholder: "Search Users" %>
                 </div>
                 <div class ='search-button-container'>
-                  <button type="submit" class="btn"><i class="icon-search"></i></button>
+                   <button type="submit" class="btn"><i class="icon-search"></i></button>
                 </div>
-            </li>
-          <% end %>
+           <% end %>
            </ul>
             <nav>
             <ul class="nav pull-right">
