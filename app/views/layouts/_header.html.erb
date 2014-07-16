@@ -3,22 +3,25 @@
      <div class = 'head-mar'>
        <nav>
          <ul class="nav pull-left">
+           <nav>
+             <li>
             <div class = 'logo-box'>
               <%= link_to image_tag("Logo.png"), {:action => 'home', :controller => 'static'} %>
             </div>
+             </li>
+          </nav>
            <% if signed_in? %>
-                 <%= form_tag(nodes_path, :method => "get", id: "search-form") do %>
-                   <div class = 'search-container'>
-                  <%= text_field_tag :search, params[:search], placeholder: "Search Users" %>
-                </div>
-                <div class ='search-button-container'>
-                   <button type="submit" class="btn"><i class="icon-search"></i></button>
-                </div>
-           <% end %>
-           </ul>
-           </nav>
             <nav>
             <ul class="nav pull-right">
+              <li><%= form_tag(nodes_path, :method => "get", id: "search-form") do %>
+                  <div class = 'search-container'>
+                    <%= text_field_tag :search, params[:search], placeholder: "Search Users" %>
+                  </div>
+                  <div class ='search-button-container'>
+                    <button type="submit" class="btn"><i class="icon-search"></i></button>
+                  </div>
+              <% end %>
+             </li>
                     <li> <a href='/'> Home </a> </li>
                     <li> <%= link_to 'Assemblies', view_path(:id => current_node.id) %></li>
                     <li> <%= link_to 'Connections', inputs_path(:id => current_node.id) %></li>
