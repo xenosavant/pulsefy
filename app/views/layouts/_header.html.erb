@@ -3,20 +3,18 @@
      <div class = 'head-mar'>
        <nav>
          <ul class="nav pull-left">
-             <li>
-            <div class = 'logo-box'>
-              <%= link_to image_tag("logo.png"), {:action => 'home', :controller => 'static'} %>
-            </div>
-             </li>
-           <li><%= form_tag(nodes_path, :method => "get", id: "search-form") do %>
-                 <div class = 'search-container'>
+           <%= form_tag(nodes_path, :method => "get", id: "search-form") do %>
+               <li>
+               <div class = 'search-container'>
                    <div class ='search-bar-container'>
                      <%= text_field_tag :search, params[:search], placeholder: "Search Users" %>
                    </div>
                    <div class ='search-button-container'>
-                     <button type="submit" class="btn"><i class="icon-search"></i></button>
+                     <button type="submit" class="btn">
+                       <%= image_tag("logo.png") %>
+                    </button>
                    </div>
-             <% end %>
+                <% end %>
              </div>
            </li>
            </ul>
