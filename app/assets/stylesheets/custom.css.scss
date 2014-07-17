@@ -469,19 +469,29 @@ textarea, textfield {
 
 .search-container {
   position:absolute;
-  width:232px;
+  width:280px;
   height:30px;
   padding-top:5px;
   padding-bottom:5px;
   display:inline;
+  margin-bottom:6px;
 }
 
 .search-button-container {
-  position:absolute;
+  position:relative;
+  float:right;
   display:inline;
-  height:42px;
+  height:30px;
   width:44px;
-  margin-bottom:6px;
+  top:-1px;
+}
+
+.search-bar-container {
+  position:relative;
+  float:left;
+  display:inline;
+  height:30px;
+  width:230px;
   top:-1px;
 }
 

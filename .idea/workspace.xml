@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.css.gz" afterPath="$PROJECT_DIR$/public/assets/application.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/favicon.png" afterPath="$PROJECT_DIR$/app/assets/images/favicon.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.css" afterPath="$PROJECT_DIR$/public/assets/application.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/manifest.yml" afterPath="$PROJECT_DIR$/public/assets/manifest.yml" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,7 +29,7 @@
     <file path="/node.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405527650381" ignored="false" />
     <file path="/nodes_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405394907361" ignored="false" />
     <file path="/_node.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1391144656789" ignored="false" />
-    <file path="/_header.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405622992404" ignored="false" />
+    <file path="/_header.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405623329417" ignored="false" />
     <file path="/sessions_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1374704970063" ignored="false" />
     <file path="/Gemfile" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395599039280" ignored="false" />
     <file path="/sessions_helper.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1400771143222" ignored="false" />
@@ -46,7 +51,7 @@
     <file path="/assemblies_helper.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372176925514" ignored="false" />
     <file path="/_sidebar.htm.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371524346171" ignored="false" />
     <file path="/nodes.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1396423252381" ignored="false" />
-    <file path="/custom.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405539816556" ignored="false" />
+    <file path="/custom.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405623259850" ignored="false" />
     <file path="/_sidebar.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1387218668722" ignored="false" />
     <file path="/application.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405538254849" ignored="false" />
     <file path="/new.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405271695797" ignored="false" />
@@ -181,38 +186,24 @@
       <file leaf-file-name="custom.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="527" column="27" selection-start="8607" selection-end="8607" vertical-scroll-proportion="0.0">
+            <state line="472" column="11" selection-start="7727" selection-end="7727" vertical-scroll-proportion="-4.5384617">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logo.png" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="logo.png" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/images/logo.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_header.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_header.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="26" selection-start="155" selection-end="155" vertical-scroll-proportion="0.10909091">
+            <state line="22" column="69" selection-start="977" selection-end="977" vertical-scroll-proportion="-9.375">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/static/home.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1405387543000" expanded="true" signature="157:204" placeholder="..." />
-                <marker date="1405387543000" expanded="true" signature="295:576" placeholder="..." />
-                <marker date="1405387543000" expanded="true" signature="349:424" placeholder="..." />
-                <marker date="1405387543000" expanded="true" signature="460:565" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -310,8 +301,8 @@
         <option value="$PROJECT_DIR$/app/views/nodes/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pulses/_pulse.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
         <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
       </list>
     </option>
   </component>
@@ -323,8 +314,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-18" />
-    <option name="y" value="22" />
+    <option name="x" value="127" />
+    <option name="y" value="151" />
     <option name="width" value="1280" />
     <option name="height" value="743" />
   </component>
@@ -954,8 +945,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-18" y="22" width="1280" height="743" extended-state="0" />
-    <editor active="true" />
+    <frame x="127" y="151" width="1280" height="743" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1040,11 +1031,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/assemblies/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/assemblies_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="4" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0" />
@@ -1080,10 +1066,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1405387543000" expanded="true" signature="157:204" placeholder="..." />
-            <marker date="1405387543000" expanded="true" signature="295:576" placeholder="..." />
-            <marker date="1405387543000" expanded="true" signature="349:424" placeholder="..." />
-            <marker date="1405387543000" expanded="true" signature="460:565" placeholder="..." />
+            <marker date="1405387543000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1405387543000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1405387543000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1405387543000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1134,23 +1120,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="69" selection-start="977" selection-end="977" vertical-scroll-proportion="-9.375">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="527" column="27" selection-start="8607" selection-end="8607" vertical-scroll-proportion="0.0">
+        <state line="472" column="11" selection-start="7727" selection-end="7727" vertical-scroll-proportion="-4.5384617">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="26" selection-start="155" selection-end="155" vertical-scroll-proportion="0.10909091">
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
