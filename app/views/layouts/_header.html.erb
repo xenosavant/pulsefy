@@ -5,18 +5,23 @@
          <ul class="nav pull-left">
            <%= form_tag(nodes_path, :method => "get", id: "search-form") do %>
                <li>
+                 <div class = 'logo-box'>
+                   <%= image_tag('logo.png') %>
+               <li>
+               </div>
+               <li>
                <div class = 'search-container'>
                    <div class ='search-bar-container'>
                      <%= text_field_tag :search, params[:search], placeholder: "Search Pulsers" %>
                    </div>
                    <div class ='search-button-container'>
                      <button type="submit" class="btn">
-                       <%= image_tag("logo.png") %>
+                       <%= image_tag('favicon.png') %>
                     </button>
                    </div>
                 <% end %>
              </div>
-           </li>
+           <li>
            </ul>
        </nav>
            <% if signed_in? %>
