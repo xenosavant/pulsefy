@@ -17,9 +17,7 @@ $frameColor: #121212;
     li {
       width:450px;
       height:100px;
-      padding-top:10px;
-      padding-bottom: 10px;
-      padding-left: 10px;
+      padding:10px;
       border-bottom: 5px solid $lightSlate;
     }
 }
@@ -62,6 +60,13 @@ aside {
   padding-bottom:5px;
 }
 
+.name-background {
+  width:340px;
+  height:100px;
+  background-color:#eeeeee;
+  display:inline;
+}
+
 .name-container {
   display:inline;
   position:relative;
@@ -84,6 +89,7 @@ aside {
     }
   }
 }
+
 
 .avatar-container {
   width:100px;
