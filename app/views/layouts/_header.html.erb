@@ -15,7 +15,7 @@
                      <%= text_field_tag params[:search], placeholder: "Search Pulsers" %>
                    </div>
                      <div class = 'button'>
-                     <%= submit_tag image_tag('logo.png'), name: nil %>
+                     <%= submit_tag '?', name: nil, disable_with: '?' %>
                     </div>
              </div>
            <% end %>
