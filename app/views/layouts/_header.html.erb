@@ -8,19 +8,19 @@
                <%= image_tag('logo.png') %>
              </div>
            </li>
+           <li>
            <%= form_tag(nodes_path, :method => "get", id: "search-form") do |f|%>
-               <li>
                <div class = 'search-container'>
                    <div class ='search-bar-container'>
-                     <%= f.text_field_tag :search, params[:search], placeholder: "Search Pulsers" %>
+                     <%= f.text_field :params[:search], :placeholder => "Search Pulsers" %>
                    </div>
                    <div class ='search-button-container'>
                      <div class = 'button'>
                      <%= f.submit image_tag('logo.png'), :disable_with => image_tag('logo.png') %>
                     </div>
                    </div>
-                <% end %>
              </div>
+           <% end %>
            </li>
            </ul>
        </nav>
