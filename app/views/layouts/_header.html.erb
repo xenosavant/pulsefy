@@ -3,12 +3,12 @@
      <div class = 'head-mar'>
        <nav>
          <ul class="nav pull-left">
+           <li>
+             <div class = 'logo-box'>
+               <%= image_tag('logo.png') %>
+             </div>
+           </li>
            <%= form_tag(nodes_path, :method => "get", id: "search-form") do %>
-               <li>
-                 <div class = 'logo-box'>
-                   <%= image_tag('logo.png') %>
-               <li>
-               </div>
                <li>
                <div class = 'search-container'>
                    <div class ='search-bar-container'>
@@ -21,7 +21,7 @@
                    </div>
                 <% end %>
              </div>
-           <li>
+           </li>
            </ul>
        </nav>
            <% if signed_in? %>
