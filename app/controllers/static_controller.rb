@@ -3,7 +3,7 @@ class StaticController < ApplicationController
 
 def home
   if signed_in?
-  @node = current_node
+  @me = current_node
   @pulse = current_node.pulses.new
   store_location(0, 'Static')
   @pulses = @node.pulses.paginate(:page => params[:page])

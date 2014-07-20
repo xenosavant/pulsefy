@@ -1,6 +1,6 @@
 <% if signed_in? %>
     <div class = 'pad-block'><div class = 'title-box'>My Pulsefeed</div></div>
-    <% if @node.pulses.any? %>
+    <% if @me.pulses.any? %>
          <ol class="pulses">
           <%= render @pulses %>
          </ol>
