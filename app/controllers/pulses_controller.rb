@@ -37,7 +37,6 @@ include ApplicationHelper
 
   def show
     @pulse = Pulse.find(params[:id])
-    @pulse_node = Node.find(@pulse.pulser)
     store_location(params[:id], 'Pulse')
     @pulse_comment = @pulse.pulse_comments.new
     @pulse_comments = @pulse.pulse_comments.paginate(:page => params[:page])
