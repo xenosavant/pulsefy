@@ -49,7 +49,7 @@ class AvatarUploader < CarrierWave::Uploader::Base
   end
 
   version :large do
-    process :resize_to_limit => [400, 10000]
+    process :resize_to_fit => [400, 400]
   end
 
   version :profile do

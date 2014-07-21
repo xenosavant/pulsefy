@@ -24,6 +24,7 @@
       </div>
 
     <div class = 'input'>
+      <%= f.label 'upload a photo'%>
       <%if !@assembly.avatar.file.nil? %>
           <%= image_tag @assembly.avatar_url(:thumb) %>
       <% else%>
