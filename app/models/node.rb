@@ -118,8 +118,8 @@ class Node < ActiveRecord::Base
         if self.width / self.height < 0.5
           errors.add :avatar, 'Aspect ratio of uploaded image must be greater than 0.5.'
         end
-        if self.avatar.file.size.to_f/(1000*1000) > 500.kilobytes
-          errors.add :avatar, 'You cannot upload a file greater than 500 kilobytes'
+        if self.avatar.file.size.to_f/(1000*1000) > 1000.kilobytes
+          errors.add :avatar, 'You cannot upload a file greater than 1 megabyte'
         end
       end
     end
