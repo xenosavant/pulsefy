@@ -1,18 +1,18 @@
 <li>
   <div class = 'soma'>
     <div class = 'picture-holder'>
-    <%if pulser.avatar.file %>
-        <%= link_to image_tag pulser.avatar_url(:thumb), {:action => 'show', :controller => 'nodes', :id => @pulse_node.id} %>
+    <%if pulser(pulse).avatar.file %>
+        <%= link_to image_tag pulser(pulse).avatar_url(:thumb), {:action => 'show', :controller => 'nodes', :id => @pulse_node.id} %>
         <%else%>
     <%= image_tag 'Q100.jpg' %>
     <%end%>
       </div>
-    <% if pulser.outputs.include?(current_node) %>
+    <% if pulser(pulse).outputs.include?(current_node) %>
         <div class = 'dendrite'>
           <div class = 'synapse'></div>
         </div>
     <% end %>
-    <% if signed_in? and pulser == current_node.id %>
+    <% if signed_in? and pulser(pulse) == current_node.id %>
     <div class = 'pulse-close-container'>
       <%= link_to 'x', delete_path(:id => pulse.id), :disable_with => 'x' %>
     </div>
