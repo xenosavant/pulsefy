@@ -226,7 +226,7 @@
       <file leaf-file-name="crop.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/nodes/crop.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="41" selection-start="406" selection-end="406" vertical-scroll-proportion="-0.083798885">
+            <state line="13" column="67" selection-start="440" selection-end="440" vertical-scroll-proportion="0.36312848">
               <folding />
             </state>
           </provider>
@@ -1242,7 +1242,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/nodes/crop.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="41" selection-start="406" selection-end="406" vertical-scroll-proportion="-0.083798885">
+        <state line="13" column="67" selection-start="440" selection-end="440" vertical-scroll-proportion="0.36312848">
           <folding />
         </state>
       </provider>
