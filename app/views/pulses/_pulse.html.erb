@@ -1,7 +1,8 @@
 <li>
   <div class = 'soma'>
     <div class = 'picture-holder'>
-    <%if current_pulser(pulse.id).avatar.file %>
+    <%case current_pulser(pulse.id).avatar.file.nil? %>
+      <% when false %>
         <%= link_to image_tag current_pulser(pulse.id).avatar_url(:thumb), {:action => 'show', :controller => 'nodes', :id => current_pulser(pulse.id).id} %>
         <%else%>
     <%= image_tag 'Q100.jpg' %>
@@ -12,7 +13,7 @@
           <div class = 'synapse'></div>
         </div>
     <% end %>
-    <% if signed_in? and current_pulser(pulse.id) == current_node.id %>
+    <% if signed_in? and current_pulser(pulse.id).id == current_node.id %>
     <div class = 'pulse-close-container'>
       <%= link_to 'x', delete_path(:id => pulse.id), :disable_with => 'x' %>
     </div>
