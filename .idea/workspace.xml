@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pulses/_pulse.html.erb" afterPath="$PROJECT_DIR$/app/views/pulses/_pulse.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/nodes/_node.html.erb" afterPath="$PROJECT_DIR$/app/views/nodes/_node.html.erb" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -187,10 +187,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_pulse.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_pulse.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pulses/_pulse.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="31" selection-start="348" selection-end="348" vertical-scroll-proportion="0.19662921">
+            <state line="7" column="31" selection-start="348" selection-end="348" vertical-scroll-proportion="-2.1">
               <folding />
             </state>
           </provider>
@@ -218,6 +218,15 @@
         <entry file="file://$PROJECT_DIR$/app/models/pulse.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_node.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/nodes/_node.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="31" selection-start="732" selection-end="732" vertical-scroll-proportion="0.29464287">
               <folding />
             </state>
           </provider>
@@ -259,15 +268,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pulses_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/pulses_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="36" selection-start="1294" selection-end="1294" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -295,7 +295,6 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/models/message.rb" />
-        <option value="$PROJECT_DIR$/app/views/nodes/_node.html.erb" />
         <option value="$PROJECT_DIR$/app/views/nodes/crop.html.erb" />
         <option value="$PROJECT_DIR$/app/uploaders/avatar_uploader.rb" />
         <option value="$PROJECT_DIR$/app/views/static/home.html.erb" />
@@ -305,6 +304,7 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
         <option value="$PROJECT_DIR$/app/helpers/pulses_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/pulses/_pulse.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/nodes/_node.html.erb" />
       </list>
     </option>
   </component>
@@ -1120,13 +1120,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/nodes/_node.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="17" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/nodes.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="68" column="38" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.0">
@@ -1220,7 +1213,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pulses/_pulse.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="31" selection-start="348" selection-end="348" vertical-scroll-proportion="0.19662921">
+        <state line="7" column="31" selection-start="348" selection-end="348" vertical-scroll-proportion="-2.1">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/nodes/_node.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="31" selection-start="732" selection-end="732" vertical-scroll-proportion="0.29464287">
           <folding />
         </state>
       </provider>
