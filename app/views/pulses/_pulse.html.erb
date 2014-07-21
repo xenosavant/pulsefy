@@ -2,7 +2,7 @@
   <div class = 'soma'>
     <div class = 'picture-holder'>
     <%if return_pulser(pulse).avatar.file %>
-        <%= link_to image_tag pulser(pulse.id).avatar_url(:thumb), {:action => 'show', :controller => 'nodes', :id => return_pulser(pulse.id).id} %>
+        <%= link_to image_tag return_pulser(pulse.id).avatar_url(:thumb), {:action => 'show', :controller => 'nodes', :id => return_pulser(pulse.id).id} %>
         <%else%>
     <%= image_tag 'Q100.jpg' %>
     <%end%>
