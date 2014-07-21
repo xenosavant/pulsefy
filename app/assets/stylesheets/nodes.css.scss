@@ -64,17 +64,15 @@ aside {
   display:inline;
   position:absolute;
   width:320px;
-  padding-left:10px;
   height:100px;
   background-color:#eeeeee;
 }
 
 .name-container {
-  display:inline;
-  position:relative;
+  display:block;
+  position:absolute;
   margin-top:90px;
   margin-left:100px;
-  margin-right:auto;
   overflow:hidden;
   max-width: 200px;
 }
@@ -95,5 +93,6 @@ aside {
 .avatar-container {
   width:100px;
   height:100px;
+  padding-right:10px;
   display:inline;
 }

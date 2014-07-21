@@ -45,7 +45,7 @@
     <file path="/assemblies_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1396410775279" ignored="false" />
     <file path="/assemblies_helper.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372176925514" ignored="false" />
     <file path="/_sidebar.htm.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371524346171" ignored="false" />
-    <file path="/nodes.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405982228459" ignored="false" />
+    <file path="/nodes.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405982808079" ignored="false" />
     <file path="/custom.css.scss" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405980910879" ignored="false" />
     <file path="/_sidebar.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1387218668722" ignored="false" />
     <file path="/application.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405538254849" ignored="false" />
@@ -190,7 +190,7 @@
       <file leaf-file-name="nodes.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/nodes.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="20" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.52261305">
+            <state line="74" column="20" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.2964824">
               <folding />
             </state>
           </provider>
@@ -1220,7 +1220,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/nodes.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="20" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.52261305">
+        <state line="74" column="20" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.2964824">
           <folding />
         </state>
       </provider>
