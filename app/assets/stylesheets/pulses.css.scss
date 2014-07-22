@@ -8,12 +8,12 @@ $graydarker: #1c2025;
 
 .pulses {
   list-style: none;
-  width: 450px;
+  width: 550px;
   padding-bottom:10px;
   position:relative;
   li {
     margin-left: 0px;
-    width:450px;
+    width:550px;
     padding-top:10px;
     padding-bottom: 10px;
   }
@@ -21,7 +21,7 @@ $graydarker: #1c2025;
 
 
 .headline {
-  width:350px !important;
+  width:450px !important;
   height:16px;
   overflow:hidden;
   font-size: 1.3em;
@@ -41,7 +41,7 @@ $graydarker: #1c2025;
 .info-container {
   position:relative;
   display:block;
-  width:389px;
+  width:489px;
   height:auto;
   text-align: left;
   padding: 15px;
@@ -88,7 +88,7 @@ $graydarker: #1c2025;
 
 .video-container {
   position: relative;
-  max-width: 420px;
+  max-width: 520px;
   height:0;
   padding-bottom:370px;
   overflow: hidden;
@@ -98,7 +98,7 @@ $graydarker: #1c2025;
 
 .show-container {
   position: relative;
-  width: 500px;
+  width: 600px;
   padding-bottom: 460px;
   height: 0;
   overflow: hidden;
@@ -107,7 +107,7 @@ $graydarker: #1c2025;
 
 .info-show-container {
   display:block;
-  width:480px !important;
+  width:580px !important;
   overflow:hidden;
   height:40px;
   background-color:#eeeeee;
@@ -121,7 +121,7 @@ $graydarker: #1c2025;
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 500px;
+  max-width: 600px;
   max-height: 460px;
 }
 
@@ -132,14 +132,14 @@ $graydarker: #1c2025;
   display:block;
   top: 0;
   left: 0;
-  max-width: 420px;
+  max-width: 520px;
   max-height: 368px;
 }
 
 .photo-container {
   position: relative;
   overflow: hidden;
-  width:420px;
+  width:520px;
   height: auto;
   padding-bottom: 5px;
   padding-top: 5px;
@@ -148,7 +148,7 @@ $graydarker: #1c2025;
 .photo-show-container {
   position: relative;
   overflow: hidden;
-  width:500px;
+  width:600px;
   height: auto;
   padding-bottom:5px;
 }
@@ -157,7 +157,7 @@ $graydarker: #1c2025;
   overflow:hidden;
   word-wrap:break-word;
   display:block;
-  width: 410px;
+  width: 510px;
   padding-left:15px;
   padding-right:15px;
   padding-bottom:10px;
@@ -169,7 +169,7 @@ $graydarker: #1c2025;
   position:absolute;
   display:inline;
   bottom: -40px;
-  left:435px;
+  left:535px;
   font-weight:bold;
   font-size: 0.9em;
   a {
@@ -331,7 +331,7 @@ $graydarker: #1c2025;
 }
 
 .text-wrapper {
-  width:390px;
+  width:490px;
   height:auto;
   padding-left:15px;
   padding-right:15px;
@@ -343,7 +343,7 @@ $graydarker: #1c2025;
 }
 
 .show-text-wrapper {
-  width:480px;
+  width:580px;
   padding-top:10px;
   padding-left:10px;
   padding-right:10px;

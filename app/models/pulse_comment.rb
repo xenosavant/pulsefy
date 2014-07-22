@@ -3,7 +3,11 @@ class PulseComment < ActiveRecord::Base
 
 belongs_to :pulse, :counter_cache => true
 attr_accessible :content, :commenter
-validates :content, :presence => true, :length => { :maximum => 140 }
+validates :content, :presence => true
 default_scope order 'pulse_comments.created_at ASC'
+
+def current_commenter
+  @current_commenter = Node.find(self.commenter)
+end
 
 end

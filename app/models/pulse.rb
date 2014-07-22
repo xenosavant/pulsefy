@@ -18,4 +18,8 @@ class Pulse < ActiveRecord::Base
     @depth = 0
   end
 
+  def current_pulser
+    @current_pulser = Node.find(self.pulser)
+  end
+
 end

@@ -1,9 +1,10 @@
 <div class = 'left-pane'>
     <div class = 'side-name'>
-      <%if !current_node.avatar.file.nil? %>
-          <%= image_tag Node.find(current_node.id).avatar_url(:thumb) %>
+      <%case current_node.avatar.file.nil? %>
+      <% when falae %>
+          <%= link_to image_tag Node.find(current_node.id).avatar_url(:thumb), current_node %>
           <% else %>
-          <%= image_tag 'Q100.jpg' %>
+          <%= link_to image_tag 'Q100.jpg', current_node %>
       <%end%>
     </div>
     <div class = 'side-connect'>
