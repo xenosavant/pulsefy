@@ -7,6 +7,7 @@
   <%end%>
  </div>
   <div class = 'time-background'>
+    <div class = 'time-container'>
       <%= link_to :action => 'show_convos', :controller => 'inboxes', :id => dialogue.id  do  %>
         <% if dialogue.sender_id == current_node.id %>
             <%= Node.find(dialogue.receiver_id).username %>
@@ -22,6 +23,7 @@
                  <% end %>
       <% end %>
    <% end %>
+   </div>
   </div>
   <div class = 'dialogue-close-container'>
     <%= link_to 'x', unmessage_path(:id => dialogue.id), :disable_with => 'x' %>

@@ -1,7 +1,7 @@
 <li>
     <%case node.avatar.file.nil? %>
     <%when  false %>
-       <div class = 'avatar-container'> <%= link_to image_tag(node.avatar_url(:thumb)), :action => 'show', :controller => 'nodes', :id => node.id %></div>
+       <div class = 'avatar-container'> <%= link_to image_tag node.avatar_url(:thumb), :action => 'show', :controller => 'nodes', :id => node.id %></div>
     <% else%>
         <%= link_to image_tag('Q100.jpg'), :action => 'show', :controller => 'nodes', :id => node.id %>
     <%end%>

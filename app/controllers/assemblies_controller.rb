@@ -4,12 +4,17 @@ class AssembliesController < ApplicationController
   @node = current_node
   @assembly = @node.assemblies.build(params[:assembly])
   @assembly.founder = @node.id
-  if @assembly.save
-     @node.assemblies << @assembly
-       redirect_to @assembly
-  else
-    redirect_to assemble_path(:errors => @assembly.errors.full_messages)
-  end
+    if @assembly.save
+       @node.assemblies << @assembly
+      case params[:assembly][:avatar].blank?
+        when true
+          redirect_to :controller => 'assemblies', :action => 'show', :id => @assembly.id
+       else
+         render 'crop'
+       end
+    else
+      redirect_to assemble_path(:errors => @assembly.errors.full_messages)
+    end
   end
 
   def destroy

@@ -7,6 +7,7 @@
     <%end%>
   </div>
   <div class = 'time-background'>
+    <div class = 'time-container'>
     <%= link_to :action => 'show_messages', :controller => 'inboxes', :id => convo.id  do  %>
         Started <%= time_ago_in_words(convo.created_at) %> ago.
     <% end %>
@@ -21,6 +22,7 @@
             <span class="badge badge-important">*</span>
         <% end %>
     <% end %>
+  </div>
   </div>
   <div class = 'interlocutor-box'>
     <%if !Node.find(convo.interlocutor_id).avatar.file.nil? %>

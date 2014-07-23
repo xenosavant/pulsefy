@@ -11,16 +11,14 @@ $frameColor: #121212;
 
 
 .assemblies {
-  width: 450px;
+  width: 550px;
   list-style: none;
   position:relative;
   background-color:$grayMediumLight;
   li {
-    width:450px;
+    width:530px;
     height:100px;
-    padding-top:10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    padding:10px;
     border-bottom: 5px solid $lightSlate;
   }
 }
@@ -41,13 +39,20 @@ $frameColor: #121212;
   color: $grayLight;
 }
 
-.name-container {
+
+.name-background {
   display:inline;
-  position:relative;
-  margin-top:auto;
-  margin-bottom:auto;
-  margin-left:100px;
-  margin-right:auto;
+  position:absolute;
+  width:420px;
+  height:100px;
+  background-color:#eeeeee;
+}
+
+.name-container {
+  display:block;
+  position:absolute;
+  margin-top:40px;
+  margin-left:200px;
   overflow:hidden;
   max-width: 200px;
 }
