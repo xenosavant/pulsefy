@@ -63,8 +63,12 @@ class AssembliesController < ApplicationController
   end
 
   def show_assemblies
-    @node = Node.find(params[:id])
+    @node = current_node
     @assemblies = @node.assemblies.paginate(:page => params[:page])
+  end
+
+  def show_other_assemblies
+    @node = Node.find(params[:id])
   end
 
   def crop
