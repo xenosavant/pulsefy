@@ -2,12 +2,12 @@ $grayMediumLight: #eaeaea;
 $lightSlate: #d0dfef;
 
 .dialogues {
-    width: 450px;
+    width: 550px;
     list-style: none;
     position:relative;
     background-color:$grayMediumLight;
     li {
-      width:430px;
+      width:530px;
       height:100px;
       padding:10px;
       border-bottom: 5px solid $lightSlate;
@@ -19,6 +19,7 @@ $lightSlate: #d0dfef;
     float:left;
     height:100px;
     width:100px;
+    padding-right:10px;
 }
 
 .receiver-box {
@@ -26,14 +27,14 @@ $lightSlate: #d0dfef;
   float:right;
   height:100px;
   width:100px;
+  padding-left:10px;
 }
 
 .time-background {
   position:absolute;
   display:inline;
-  padding:10px;
   width:310px;
-  height:16px;
+  height:80px;
   background-color:#eeeeee;
   text-align:center;
 }
@@ -42,7 +43,7 @@ $lightSlate: #d0dfef;
   display:block;
   position:absolute;
   margin-top:40px;
-  margin-left:200px;
+  margin-left:150px;
   overflow:hidden;
   max-width: 200px;
 }

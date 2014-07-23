@@ -2,11 +2,9 @@
   <div class = 'micro-soma'>
     <%case pulse_comment.current_commenter.avatar.file.nil? %>
        <% when false %>
-          <%= link_to image_tag(pulse_comment.current_commenter.avatar_url(:micro)),
-                              {controller: 'nodes'}, action: 'show', id: pulse_comment.current_commenter.id%>
+          <%= link_to image_tag(pulse_comment.current_commenter.avatar_url(:micro)),"/show/#{pulse_comment.commenter}"%>
         <%else%>
-          <%= link_to image_tag('50.jpg'),
-                               {controller: 'nodes'}, action: 'show', id: pulse_comment.current_commenter.id%>
+          <%= link_to image_tag('50.jpg'),"/show/#{pulse_comment.commenter}"%>
      <%end%>
     <div class = 'micro-soma-to-axon'></div>
     </div>

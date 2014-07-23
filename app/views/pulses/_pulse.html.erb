@@ -3,9 +3,9 @@
     <div class = 'picture-holder'>
     <%case pulse.current_pulser.avatar.file.nil? %>
       <% when false %>
-        <%= link_to image_tag(pulse.current_pulser.avatar_url(:thumb)), {controller: 'nodes', action: 'show', id: pulse.current_pulser.id} %>
+        <%= link_to image_tag(pulse.current_pulser.avatar_url(:thumb)),  "/show/#{pulse.pulser}" %>
         <%else%>
-       <%= image_tag link_to image_tag('Q100.jpg'), {controller: 'nodes', action: 'show', id: pulse.current_pulser.id}%>
+       <%= image_tag link_to image_tag('Q100.jpg'), "/show/#{pulse.pulser}"%>
     <%end%>
       </div>
     <% if pulse.current_pulser.outputs.include?(current_node) %>

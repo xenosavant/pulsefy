@@ -1,0 +1,10 @@
+<% provide(:title, 'Assemblies') %>
+<div class = 'pad-block'><div class = 'title-box'><%= pluralize(@node.assemblies.count, 'Assembly') %></div></div>
+<% case @assemblies.nil? %>
+<% when false %>
+    <%= will_paginate %>
+    <ul class='assemblies'>
+      <%= render @assemblies %>
+    </ul>
+    <%= will_paginate %>
+<%end%>
