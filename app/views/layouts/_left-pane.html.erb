@@ -1,7 +1,7 @@
 <div class = 'left-pane'>
     <div class = 'side-name'>
       <%case current_node.avatar.file.nil? %>
-      <% when falae %>
+      <% when false %>
           <%= link_to image_tag Node.find(current_node.id).avatar_url(:thumb), current_node %>
           <% else %>
           <%= link_to image_tag 'Q100.jpg', current_node %>
