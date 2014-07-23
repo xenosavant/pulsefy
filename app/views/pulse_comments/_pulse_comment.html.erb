@@ -1,12 +1,12 @@
 <li>
   <div class = 'micro-soma'>
-    <%case current_commenter.avatar.file.nil? %>
+    <%case pulse_comment.current_commenter.avatar.file.nil? %>
        <% when false %>
-          <%= link_to image_tag Node.find(pulse_comment.commenter).avatar_url(:micro),
-                              {:action => 'show', :controller => 'nodes', :id => current_commenter.id}%>
+          <%= link_to image_tag pulse_comment.current_commenter.avatar_url(:micro),
+                              {:action => 'show', :controller => 'nodes', :id => pulse_comment.current_commenter.id}%>
         <%else%>
           <%= link_to image_tag 'Q50.jpg',
-                              {:action => 'show', :controller => 'nodes', :id => current_commenter.id}%>
+                              {:action => 'show', :controller => 'nodes', :id => pulse_comment.current_commenter.id}%>
      <%end%>
     <div class = 'micro-soma-to-axon'></div>
     </div>
