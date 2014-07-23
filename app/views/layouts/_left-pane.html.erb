@@ -2,9 +2,9 @@
     <div class = 'side-name'>
       <%case current_node.avatar.file.nil? %>
       <% when false %>
-          <%= link_to image_tag Node.find(current_node.id).avatar_url(:thumb), current_node %>
+          <%= link_to image_tag (current_node.avatar_url(:thumb)), :action => 'show', :controller => 'nodes', :id => current_node.id %>
           <% else %>
-          <%= link_to image_tag 'Q100.jpg', current_node %>
+          <%= link_to image_tag('Q100.jpg'), :action => 'show', :controller => 'nodes', :id => current_node.id %>
       <%end%>
     </div>
     <div class = 'side-connect'>
