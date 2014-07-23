@@ -16,7 +16,7 @@ Pulsefy::Application.routes.draw do
   match '/inbox' => 'inboxes#show_dialogues'
   match '/dialogue' => 'inboxes#show_convos'
   match '/conversation' => 'convos#show_messages'
-  match '/show' => 'nodes#show'
+  match '/show/:id' => 'nodes#show'
   match '/crop' => 'nodes#crop'
   match '/crop_update' => 'nodes#crop_update'
   match '/asscrop_update' => 'nodes#crop_update'

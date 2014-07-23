@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/nodes/_node.html.erb" afterPath="$PROJECT_DIR$/app/views/nodes/_node.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -17,13 +18,13 @@
     <file path="/_pulse_form.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1406045631923" ignored="false" />
     <file path="/_pulse.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1406088114772" ignored="false" />
     <file path="/pulses_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405734538546" ignored="false" />
-    <file path="/routes.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1406088819481" ignored="false" />
+    <file path="/routes.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1406090837776" ignored="false" />
     <file path="/20130611183156_create_raters.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1370975608923" ignored="false" />
     <file path="/20130611184143_create_votes.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371689468885" ignored="false" />
     <file path="/vote.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372222682322" ignored="false" />
     <file path="/node.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405984129930" ignored="false" />
     <file path="/nodes_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405394907361" ignored="false" />
-    <file path="/_node.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1406089647822" ignored="false" />
+    <file path="/_node.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1406091028883" ignored="false" />
     <file path="/_header.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405663037788" ignored="false" />
     <file path="/sessions_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1374704970063" ignored="false" />
     <file path="/Gemfile" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1395599039280" ignored="false" />
@@ -181,7 +182,7 @@
       <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="46" selection-start="945" selection-end="945" vertical-scroll-proportion="-8.076923">
+            <state line="18" column="35" selection-start="606" selection-end="606" vertical-scroll-proportion="-6.923077">
               <folding />
             </state>
           </provider>
@@ -226,7 +227,7 @@
       <file leaf-file-name="_node.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/nodes/_node.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="17" selection-start="269" selection-end="269" vertical-scroll-proportion="0.25139666">
+            <state line="7" column="53" selection-start="253" selection-end="253" vertical-scroll-proportion="0.19553073">
               <folding />
             </state>
           </provider>
@@ -300,10 +301,10 @@
         <option value="$PROJECT_DIR$/app/views/pulses/_pulse.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/nodes.css.scss" />
         <option value="$PROJECT_DIR$/app/controllers/assemblies_controller.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/nodes/show.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/config/navigation.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/nodes/_node.html.erb" />
       </list>
     </option>
@@ -316,7 +317,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="11" />
+    <option name="x" value="-25" />
     <option name="y" value="22" />
     <option name="width" value="1280" />
     <option name="height" value="743" />
@@ -1133,7 +1134,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="22" width="1280" height="743" extended-state="0" />
+    <frame x="-25" y="22" width="1280" height="743" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1282,13 +1283,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="46" selection-start="945" selection-end="945" vertical-scroll-proportion="-8.076923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/nodes/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="76" selection-start="572" selection-end="572" vertical-scroll-proportion="-6.25">
@@ -1324,9 +1318,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="35" selection-start="606" selection-end="606" vertical-scroll-proportion="-6.923077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/nodes/_node.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="17" selection-start="269" selection-end="269" vertical-scroll-proportion="0.25139666">
+        <state line="7" column="53" selection-start="253" selection-end="253" vertical-scroll-proportion="0.19553073">
           <folding />
         </state>
       </provider>

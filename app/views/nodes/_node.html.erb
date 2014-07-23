@@ -2,15 +2,11 @@
     <%case node.avatar.file.nil? %>
     <%when  false %>
        <div class = 'avatar-container'>
-         <%= link_to do show_path(:id => node.id)%>
-           <% image_tag(node.avatar_url(:thumb))%>
-         <% end %>
+         <%= link_to image_tag(node.avatar_url(:thumb)), "/show/#{node.id}"%>
        </div>
     <% else%>
              <div class = 'avatar-container'>
-             <%= link_to do show_path(:id => node.id)%>
-                 <% image_tag('Q100.jpg')%>
-               <% end %>
+               <%= link_to image_tag('Q100.jpg'), "/show/#{node.id}"%>
                    </div>
     <%end%>
     <% if node.inputs.include?(current_node) || node.outputs.include?(current_node) %>
