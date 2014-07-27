@@ -5,68 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/act_on_result-44f52183435c45b43fee3bdabcc14fb5.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/act_on_result-44f52183435c45b43fee3bdabcc14fb5.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/act_on_result.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/act_on_result.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/admin_data-4c0e7d45dd8c1a6ab88806de04e4683c.js.gz" afterPath="$PROJECT_DIR$/public/assets/admin_data-4c0e7d45dd8c1a6ab88806de04e4683c.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/admin_data-612d548191220a700b39d4942cb73251.css.gz" afterPath="$PROJECT_DIR$/public/assets/admin_data-612d548191220a700b39d4942cb73251.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/admin_data.css.gz" afterPath="$PROJECT_DIR$/public/assets/admin_data.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/admin_data.js.gz" afterPath="$PROJECT_DIR$/public/assets/admin_data.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/advance_search-5258e12df76448b912e87649b1df35df.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/advance_search-5258e12df76448b912e87649b1df35df.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/advance_search.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/advance_search.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/advance_search_structure-6acfed0f36c7aaa7d68522bb616355d1.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/advance_search_structure-6acfed0f36c7aaa7d68522bb616355d1.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/advance_search_structure.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/advance_search_structure.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/ajaxify_advance_search-6679d1fa20e3c6db7b657f684a50f4fa.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/ajaxify_advance_search-6679d1fa20e3c6db7b657f684a50f4fa.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/ajaxify_advance_search.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/ajaxify_advance_search.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-e2861c05123d90119997ec150a973833.js.gz" afterPath="$PROJECT_DIR$/public/assets/application-e2861c05123d90119997ec150a973833.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.css.gz" afterPath="$PROJECT_DIR$/public/assets/application.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.js.gz" afterPath="$PROJECT_DIR$/public/assets/application.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/build_first_row-9c937d077f675ef661a18d76434fc502.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/build_first_row-9c937d077f675ef661a18d76434fc502.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/build_first_row.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/build_first_row.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/misc/drop_down_change-9b00218a6c86365b4593a482df012148.js.gz" afterPath="$PROJECT_DIR$/public/assets/misc/drop_down_change-9b00218a6c86365b4593a482df012148.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/misc/drop_down_change.js.gz" afterPath="$PROJECT_DIR$/public/assets/misc/drop_down_change.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/event_bindings-951b3c304745a3d7c0955505f2201239.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/event_bindings-951b3c304745a3d7c0955505f2201239.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/event_bindings.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/event_bindings.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/global_ajax_setting-4a79924e95586517ff880cfda70e6cf2.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/global_ajax_setting-4a79924e95586517ff880cfda70e6cf2.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/global_ajax_setting.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/global_ajax_setting.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-1.4.2-a4085e3cb6f8acabe83bbe3d066b2cdc.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery-1.4.2-a4085e3cb6f8acabe83bbe3d066b2cdc.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-1.4.2.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery-1.4.2.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom-c95f703ca5e62c3efc5c46332af89e34.css.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom-c95f703ca5e62c3efc5c46332af89e34.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom.css.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom.min-57363e1493b027789c335e3129863b0b.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom.min-57363e1493b027789c335e3129863b0b.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom.min.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom.min.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop-f7ba3d73e3e5b4cb0b0ca3f625488dab.css.gz" afterPath="$PROJECT_DIR$/public/assets/jquery.Jcrop-f7ba3d73e3e5b4cb0b0ca3f625488dab.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.css.gz" afterPath="$PROJECT_DIR$/public/assets/jquery.Jcrop.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min-28fdf50c41c56a9eef4b336f71647da1.css.gz" afterPath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min-28fdf50c41c56a9eef4b336f71647da1.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min-2a174f686c23f3d5673805e61bd6c841.js.gz" afterPath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min-2a174f686c23f3d5673805e61bd6c841.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min.css.gz" afterPath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min.js.gz" afterPath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery.ba-isjquery-e5493f678db20de8420adbfd497a094b.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery.ba-isjquery-e5493f678db20de8420adbfd497a094b.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery.ba-isjquery.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery.ba-isjquery.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery_form-2b7718a168b80d7f8046327a0957d245.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery_form-2b7718a168b80d7f8046327a0957d245.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery_form.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery_form.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/misc/js_util-ae40817fdf0e4553db6cd44e43f45bce.js.gz" afterPath="$PROJECT_DIR$/public/assets/misc/js_util-ae40817fdf0e4553db6cd44e43f45bce.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/misc/js_util.js.gz" afterPath="$PROJECT_DIR$/public/assets/misc/js_util.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/log-a5790b2252aa951ae4be59d84bcaaa31.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/log-a5790b2252aa951ae4be59d84bcaaa31.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/log.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/log.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/misc/quick_search_input_focus-fd71a740680a5eb7269bee76191d0a9c.js.gz" afterPath="$PROJECT_DIR$/public/assets/misc/quick_search_input_focus-fd71a740680a5eb7269bee76191d0a9c.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/misc/quick_search_input_focus.js.gz" afterPath="$PROJECT_DIR$/public/assets/misc/quick_search_input_focus.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/rails-1e74ea5a3a8ff0467a6f05efd132caa2.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/rails-1e74ea5a3a8ff0467a6f05efd132caa2.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/rails.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/rails.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/analytics/report-94dcd71426dd5b3d0313954a8f5d4cfe.js.gz" afterPath="$PROJECT_DIR$/public/assets/analytics/report-94dcd71426dd5b3d0313954a8f5d4cfe.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/analytics/report.js.gz" afterPath="$PROJECT_DIR$/public/assets/analytics/report.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/sortby-0dee47de069204568b137c56f3032c4c.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/sortby-0dee47de069204568b137c56f3032c4c.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/sortby.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/sortby.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/trigger_submit_on_domready-c37236b364ae2135006b0428bc39bbeb.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/trigger_submit_on_domready-c37236b364ae2135006b0428bc39bbeb.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/trigger_submit_on_domready.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/trigger_submit_on_domready.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pulses/_pulse.html.erb" afterPath="$PROJECT_DIR$/app/views/pulses/_pulse.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.css" afterPath="$PROJECT_DIR$/public/assets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/convos.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/convos.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/dialogues.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/dialogues.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/manifest.yml" afterPath="$PROJECT_DIR$/public/assets/manifest.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/messages.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/messages.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/pulse_comment.rb" afterPath="$PROJECT_DIR$/app/models/pulse_comment.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/pulse_comments.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/pulse_comments.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -248,10 +189,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messages.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="messages.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/messages.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="29" selection-start="1398" selection-end="1412" vertical-scroll-proportion="0.5296167">
+            <state line="51" column="28" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="message.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/message.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="23" selection-start="206" selection-end="230" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pulse_comment.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/pulse_comment.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="52" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -266,19 +225,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pulse_comments.css.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pulse_comments.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pulse_comments.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="14" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pulses.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pulses.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="9" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.0">
+            <state line="70" column="45" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.2713568">
               <folding />
             </state>
           </provider>
@@ -297,15 +247,6 @@
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/dialogues.css.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state line="39" column="35" selection-start="643" selection-end="643" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_dialogue.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/dialogues/_dialogue.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="8" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -350,7 +291,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/config/navigation.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/nodes/_node.html.erb" />
@@ -364,8 +304,9 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/convos.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
         <option value="$PROJECT_DIR$/app/views/pulses/_pulse.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/pulse_comments.css.scss" />
+        <option value="$PROJECT_DIR$/app/models/pulse_comment.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/messages.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/pulse_comments.css.scss" />
       </list>
     </option>
   </component>
@@ -1280,16 +1221,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="35" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/nodes/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="76" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/assemblies/show_other_assemblies.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="43" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" />
@@ -1370,16 +1301,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pulse_comments.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/models/message.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="14" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0">
+        <state line="6" column="23" selection-start="206" selection-end="230" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/pulse_comment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="52" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/messages.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="29" selection-start="1398" selection-end="1412" vertical-scroll-proportion="0.5296167">
+        <state line="51" column="28" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pulse_comments.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="45" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.2713568">
           <folding />
         </state>
       </provider>
