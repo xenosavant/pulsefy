@@ -3,11 +3,11 @@ $lightSlate: #d0dfef;
 
 .messages {
   list-style: none;
-  width: 400px;
+  width: 500px;
   padding-bottom:15px;
   position:relative;
   li {
-    width: 380px;
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
     padding-top:5px;
@@ -65,7 +65,7 @@ $lightSlate: #d0dfef;
 
 .mess-wrapper {
   background-color:#eeeeee;
-  width:340px;
+  width:540px;
   min-height:50px;
   padding:5px;
   height:auto;
@@ -79,7 +79,7 @@ $lightSlate: #d0dfef;
 
 .in-mess-wrapper {
   display: inline;
-  width:400px;
+  width:500px;
   position:absolute;
 }
 
@@ -94,7 +94,7 @@ $lightSlate: #d0dfef;
 .mess-pane {
   position:absolute;
   display:block;
-  width:500px;
+  width:600px;
   height:770px;
 }
 

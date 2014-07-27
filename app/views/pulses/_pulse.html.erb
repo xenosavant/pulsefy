@@ -36,7 +36,7 @@
       <%else%>
          <%case pulse.url.nil? %>
              <%when false %>
-             <div class ="link-container"><a href = <%= pulse.link %>><%= pulse.temp_url%></a></div>
+             <div class ="link-container"><a href = <%= pulse.link %>><%= raw pulse.link%></a></div>
          <%end%>
       <%end%>
   <% end %>

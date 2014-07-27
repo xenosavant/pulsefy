@@ -42,9 +42,10 @@ $lightSlate: #d0dfef;
 
 .time-container {
   display:block;
-  position:absolute;
-  margin-top:40px;
-  margin-left:100px;
+  position:relative;
+  margin-top:30px;
+  margin-left:auto;
+  margin-right:auto;
   overflow:hidden;
   max-width: 200px;
 }
