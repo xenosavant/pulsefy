@@ -43,38 +43,35 @@ class InboxesController < ApplicationController
       case @convo.unread_interrogator
         when true
           @convo.update_attributes(:unread_interrogator => false)
-          @unreads = current_node.unreads.where("convo_id = ?", @convo.id)
-
-
-
-      end
-
-      end
-          @unread.delete
+           current_node.unreads.where("convo_id = ?", @convo.id).each do |unread|
+            unread.delete
+          end
       end
   else
     @id = @convo.interrogator_id
       case @convo.unread_interlocutor
         when true
           @convo.update_attributes(:unread_interlocutor => false)
-          @unread = current_node.unreads.find_by_convo_id(@convo.id)
-          @unread.delete
+          current_node.unreads.where("convo_id = ?", @convo.id).each do |unread|
+            unread.delete
+          end
       end
   end
 
-    if @dialogue.sender_id == @node.id
+  if @dialogue.sender_id == @node.id
       case @dialogue.unread_sender
         when true
           @dialogue.update_attributes(:unread_sender => false)
       end
-    else
+  else
       case @dialogue.unread_receiver
         when true
           @dialogue.update_attributes(:unread_receiver => false)
       end
-    end
+  end
     store_receiver(@id)
     store_mailbox(@convo.id, 'messages')
     @messages = @convo.messages.paginate(:page => params[:page])
-  end
+ end
+
 end
