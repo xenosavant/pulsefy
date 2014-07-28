@@ -65,10 +65,13 @@ class MessagesController < ApplicationController
     if @message.save
      redirect_to :controller => 'inboxes', :action => 'show_messages',
                 :id => @convo.id, :errors => @message.errors.full_messages
-     @unread = current_node.unreads.build
-     @unread.update_attributes(:convo_id => @convo.id)
-     @node.unreads << @unread
-    else return_back_to
+     case current_node.unreads.where("convo_id = ?", @convo.id).first.nil?
+       when true
+         @unread = current_node.unreads.build
+         @unread.update_attributes(:convo_id => @convo.id)
+         @node.unreads << @unread
+     end
+      else return_back_to
     end
   end
 end

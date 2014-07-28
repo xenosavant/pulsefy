@@ -43,7 +43,13 @@ class InboxesController < ApplicationController
       case @convo.unread_interrogator
         when true
           @convo.update_attributes(:unread_interrogator => false)
-          @unread = current_node.unreads.find_by_convo_id(@convo.id)
+          @unreads = current_node.unreads.where("convo_id = ?", @convo.id)
+
+
+
+      end
+
+      end
           @unread.delete
       end
   else
