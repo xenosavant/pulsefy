@@ -43,9 +43,10 @@ include ApplicationHelper
   end
 
   def destroy
-    if !Pulse.find(params[:id]).nil?
-    @pulse = Pulse.find(params[:id])
-    @pulse.destroy
+    case Pulse.find(params[:id]).nil?
+      when false
+       @pulse = Pulse.find(params[:id])
+       @pulse.destroy
     end
     return_back_to
   end
