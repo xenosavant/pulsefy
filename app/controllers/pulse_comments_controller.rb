@@ -12,11 +12,12 @@ class PulseCommentsController < ApplicationController
   end
 
   def destroy
-    if !PulseComment.find(params[:id]).nil?
-    @pulse_comment = PulseComment.find(params[:id])
-    @pulse_comment.destroy
+    case PulseComment.find(params[:id]).nil?
+      when false
+         @pulse_comment = PulseComment.find(params[:id])
+         @pulse_comment.destroy
     end
-    return_back_to
+    redirect_to @pulse
   end
 
 end

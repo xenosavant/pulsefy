@@ -20,9 +20,9 @@
            </li>
            </ul>
        </nav>
-           <% if signed_in? %>
             <nav>
             <ul class="nav pull-right">
+              <% if signed_in? %>
                     <li> <a href='/'> Home </a> </li>
                     <li> <%= link_to 'Assemblies', view_path(:id => current_node.id) %></li>
                     <li> <%= link_to 'Connections', inputs_path(:id => current_node.id) %></li>
