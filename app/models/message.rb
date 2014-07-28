@@ -6,4 +6,10 @@ class Message < ActiveRecord::Base
 
   default_scope order 'messages.created_at DESC'
 
+
+  def current_sender
+    @current_sender = Node.find(self.sender_id)
+  end
+
+
 end
