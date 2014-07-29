@@ -63,8 +63,8 @@ class MessagesController < ApplicationController
     @message.update_attributes(:read => false, :receiver_id => @node.id, :sender_id => current_node.id)
     @message.save
     if @message.save
-     case current_node.unreads.where("convo_id = ?", @convo.id).first.exists?
-       when false
+     case current_node.unreads.where("convo_id = ?", @convo.id).first.nil?
+       when true
          @unread = current_node.unreads.build
          @unread.update_attributes(:convo_id => @convo.id)
          @node.unreads << @unread
