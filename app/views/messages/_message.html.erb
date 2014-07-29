@@ -2,7 +2,7 @@
       <div class = 'soma-message'>
             <%case message.current_sender.avatar.file.nil? %>
                <% when false %>
-                 <%= link_to message.current_sender.avatar(:micro), "/show/#{message.sender_id}" %>
+                 <%= link_to image_tag(message.current_sender.avatar_url(:micro)), "/show/#{message.sender_id}" %>
                <%else%>
                  <%= link_to image_tag('Q50.jpg'), "/show/#{message.sender_id}" %>
             <%end%>
