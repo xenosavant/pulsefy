@@ -91,7 +91,7 @@ end
         @pulse = args[:pulse]
         @temp_text = @pulse.content
         @image_regex = /^https?:\/\/(?:[a-z\-]+\.)+[a-z]{2,6}(?:\/[^\/#?]+)+\.(?:jpe?g|gif|png)$/i
-        @matches =  @temp_text.scan
+        @matches =  @temp_text.scan(@image_regex)
         @matches.each do |url|
            @temp_text.sub! url, "<img src = '#{url}'>"
         end

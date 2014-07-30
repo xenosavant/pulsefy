@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pulses_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pulses_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/pulses_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/pulses_helper.rb" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -254,7 +253,7 @@
       <file leaf-file-name="pulses_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/pulses_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="50" selection-start="2943" selection-end="2943" vertical-scroll-proportion="0.49814126">
+            <state line="89" column="61" selection-start="2877" selection-end="2877" vertical-scroll-proportion="0.49814126">
               <folding />
             </state>
           </provider>
@@ -1353,7 +1352,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/pulses_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="50" selection-start="2943" selection-end="2943" vertical-scroll-proportion="0.49814126">
+        <state line="89" column="61" selection-start="2877" selection-end="2877" vertical-scroll-proportion="0.49814126">
           <folding />
         </state>
       </provider>
