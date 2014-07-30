@@ -90,7 +90,7 @@ end
 
   def update_content(args)
         @pulse = args[:pulse]
-        @temp_text = simple_fomrat(@pulse.content, :sanitize => false)
+        @temp_text = simple_format(@pulse.content, :sanitize => false)
         #@image_regex = /^https?:\/\/(?:[a-z\-]+\.)+[a-z]{2,6}(?:\/[^\/#?]+)+\.(?:jpe?g|gif|png)$/i
         #@matches =  @temp_text.scan(@image_regex)
         #@matches.each do |url|
