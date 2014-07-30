@@ -3,7 +3,6 @@ class PulsesController < ApplicationController
 before_filter :signed_in_node
 include SessionsHelper
 include ApplicationHelper
-include ActionView::Helpers
 
   def create
     @node = current_node
@@ -15,10 +14,10 @@ include ActionView::Helpers
         when false
           update_embed(:pulse => @pulse)
       end
-      case @pulse.content.nil?
-        when false
-          update_content(:pulse => @pulse)
-      end
+      #case @pulse.content.nil?
+      #  when false
+      #    update_content(:pulse => @pulse)
+      #end
       case @pulse.pulser_type
            when 'Node'
             @node.pulses << @pulse
@@ -88,17 +87,16 @@ def update_embed(args)
   @pulse.save
 end
 
-  def update_content(args)
-        @pulse = args[:pulse]
-        @temp_text = simple_format(@pulse.content, :sanitize => false)
-        #@image_regex = /^https?:\/\/(?:[a-z\-]+\.)+[a-z]{2,6}(?:\/[^\/#?]+)+\.(?:jpe?g|gif|png)$/i
-        #@matches =  @temp_text.scan(@image_regex)
-        #@matches.each do |url|
-        #   @temp_text.sub! url, "<img src = '#{url}'>"
-        #end
-      @pulse.update_attributes(:content => @temp_text)
-      @pulse.save
-  end
-
+  #def update_content(args)
+  #      @pulse = args[:pulse]
+  #      @temp_text = simple_format(@pulse.content, :sanitize => false)
+  #      #@image_regex = /^https?:\/\/(?:[a-z\-]+\.)+[a-z]{2,6}(?:\/[^\/#?]+)+\.(?:jpe?g|gif|png)$/i
+  #      #@matches =  @temp_text.scan(@image_regex)
+  #      #@matches.each do |url|
+  #      #   @temp_text.sub! url, "<img src = '#{url}'>"
+  #      #end
+  #    @pulse.update_attributes(:content => @temp_text)
+  #end
+  #
 
 end

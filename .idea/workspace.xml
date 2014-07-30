@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pulses/_pulse.html.erb" afterPath="$PROJECT_DIR$/app/views/pulses/_pulse.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pulses_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pulses_controller.rb" />
     </list>
     <ignored path="Pulsefy.iws" />
@@ -218,10 +219,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_pulse.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_pulse.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/pulses/_pulse.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="21" selection-start="1409" selection-end="1409" vertical-scroll-proportion="-8.125">
+            <state line="41" column="43" selection-start="1421" selection-end="1421" vertical-scroll-proportion="0.39106146">
               <folding />
             </state>
           </provider>
@@ -263,10 +264,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pulses_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pulses_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/pulses_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="41" selection-start="2905" selection-end="2905" vertical-scroll-proportion="0.46524063">
+            <state line="12" column="27" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -307,8 +308,8 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_left-pane.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/pulses_helper.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pulses.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/pulses/_pulse.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/pulses_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/pulses/_pulse.html.erb" />
       </list>
     </option>
   </component>
@@ -1015,16 +1016,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pulses/_pulse.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/pulses_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="21" selection-start="1409" selection-end="1409" vertical-scroll-proportion="-8.125">
+        <state line="12" column="27" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/pulses_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/pulses/_pulse.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="41" selection-start="2905" selection-end="2905" vertical-scroll-proportion="0.46524063">
+        <state line="41" column="43" selection-start="1421" selection-end="1421" vertical-scroll-proportion="0.39106146">
           <folding />
         </state>
       </provider>
