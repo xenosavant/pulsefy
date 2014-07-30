@@ -101,7 +101,7 @@ class NodesController < ApplicationController
       @node.crop_h = params[:node]['crop_h']
       @node.crop_w = params[:node]['crop_w']
       if @node.save(params[:node])
-        Resque.enqueue(Crop, @node.id)
+        @node.reprocess_avatar
         redirect_to :controller => 'nodes', :action => 'show', :id => params[:id]
       else
         redirect_to :controller => 'nodes', :action => 'crop'
