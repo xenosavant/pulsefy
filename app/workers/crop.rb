@@ -9,7 +9,9 @@ class Crop
 
   def self.perform(node_id)
     @node = Node.find(node_id)
-    @node.reprocess_avatar!
+    @node.avatar.cache_stored_file!
+    @node.avatar.recreate_versions!
+    @node.avatar.save!
   end
 
 end
