@@ -2,10 +2,9 @@
     <div class = 'side-name'>
       <%case current_node.avatar.file.nil? %>
       <% when false %>
-          <%= link_to image_tag("https://s3-us-west-2.amazonaws.com/pulsefy/avatars/node/#{@node.id}/thumb_image.jpg"),
-                      "/show/#{current_node.id}" %>
+          <%= link_to image_tag(current_node.avatar_url(:thumb)), "/show/#{current_node.id}" %>
           <% else %>
-          <%= link_to image_tag('Q100.jpg'),  "/show/#{current_node.id}" %>
+          <%= link_to image_tag('Q100.jpg'), {controller: "nodes"},  "/show/#{current_node.id}" %>
       <%end%>
     </div>
     <div class = 'side-connect'>
