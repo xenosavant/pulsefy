@@ -9,7 +9,7 @@ class Crop
 
   def self.perform(node_id)
     @node = Node.find(node_id)
-    @node.reprocess_avatar
+    @node.reprocess_avatar!
   end
 
 end
