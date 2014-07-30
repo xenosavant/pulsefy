@@ -18,6 +18,10 @@ class Assembly < ActiveRecord::Base
      self.avatar.recreate_versions!
    end
 
+   def current_founder
+     @current_founder =Assembly.find(self.founder)
+   end
+
    def check_avatar_dimensions
      case self.avatar.nil?
        when false

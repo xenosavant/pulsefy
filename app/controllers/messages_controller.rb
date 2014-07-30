@@ -69,9 +69,11 @@ class MessagesController < ApplicationController
          @unread.update_attributes(:convo_id => @convo.id)
          @node.unreads << @unread
      end
-     redirect_to :controller => 'inboxes', :action => 'show_messages',
+      redirect_to :controller => 'inboxes', :action => 'show_messages',
                  :id => @convo.id, :errors => @message.errors.full_messages
-      else return_back_to
+    else
+      redirect_to :controller => 'messages', :action => 'new',
+                     :id => @node.id, :errors => @message.errors.full_messages
     end
   end
 end

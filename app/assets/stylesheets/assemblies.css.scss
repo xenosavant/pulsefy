@@ -43,7 +43,7 @@ $frameColor: #121212;
 .assembly-background {
   display:inline;
   position:absolute;
-  width:420px;
+  width:425px;
   height:100px;
   background-color:#eeeeee;
 }
@@ -61,6 +61,7 @@ $frameColor: #121212;
   position:relative;
   left:-15px;
   top:5px;
+  font-size: 12px;
   a {
     color:$lightSlate !important;
     &:hover {
