@@ -6,5 +6,5 @@ CarrierWave.configure do |config|
       :region => 'us-west-2'
   }
   config.fog_directory  = 'pulsefy'
-  config.fog_public = true
+  config.fog_public = false
 end
