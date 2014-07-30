@@ -28,7 +28,7 @@ class NodesController < ApplicationController
   end
 
   def edit
-    @node = Node.find(current_node.id)
+    @node = current_node
   end
 
 

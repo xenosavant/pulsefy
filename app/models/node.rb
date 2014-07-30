@@ -98,6 +98,7 @@ class Node < ActiveRecord::Base
   def reprocess_avatar
     self.avatar.cache_stored_file!
     self.avatar.recreate_versions!
+    self.avatar.save!
   end
 
   def sign_in_self

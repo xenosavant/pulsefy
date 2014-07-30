@@ -38,7 +38,7 @@
                       <i class="fa fa-large fa-cog"></i></a>
                     <ul class='dropdown-menu'>
                       <li><%= link_to 'My Profile', current_node %></li>
-                      <li><%= link_to 'Settings', edit_path(:id => current_node.id) %></li>
+                      <li><%= link_to 'Settings', edit_path %></li>
                       <li class="divider"></li>
                       <li>
                         <%= link_to 'Pulse out', pulseout_path, :method => 'delete' %>
