@@ -145,6 +145,14 @@ $graydarker: #1c2025;
   padding-top: 5px;
 }
 
+.content-photo-container {
+  position: relative;
+  overflow: hidden;
+  width:480px;
+  height: auto;
+  padding:5px;
+}
+
 .photo-show-container {
   position: relative;
   overflow: hidden;
