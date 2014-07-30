@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_left-pane.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_left-pane.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/fog.rb" afterPath="$PROJECT_DIR$/config/initializers/fog.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/nodes/show.html.erb" afterPath="$PROJECT_DIR$/app/views/nodes/show.html.erb" />
     </list>
     <ignored path="Pulsefy.iws" />
@@ -207,19 +206,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/nodes/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="35" selection-start="313" selection-end="313" vertical-scroll-proportion="-4.375">
+            <state line="18" column="57" selection-start="852" selection-end="852" vertical-scroll-proportion="0.48214287">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_left-pane.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_left-pane.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_left-pane.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="83" selection-start="719" selection-end="719" vertical-scroll-proportion="0.4973822">
+            <state line="8" column="35" selection-start="407" selection-end="407" vertical-scroll-proportion="-4.375">
               <folding />
             </state>
           </provider>
@@ -305,8 +304,8 @@
         <option value="$PROJECT_DIR$/app/controllers/assemblies_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/node.rb" />
         <option value="$PROJECT_DIR$/config/initializers/fog.rb" />
-        <option value="$PROJECT_DIR$/app/views/nodes/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_left-pane.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/nodes/show.html.erb" />
       </list>
     </option>
   </component>
@@ -1345,16 +1344,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/nodes/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_left-pane.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="35" selection-start="313" selection-end="313" vertical-scroll-proportion="-4.375">
+        <state line="8" column="35" selection-start="407" selection-end="407" vertical-scroll-proportion="-4.375">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_left-pane.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/nodes/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="83" selection-start="719" selection-end="719" vertical-scroll-proportion="0.4973822">
+        <state line="18" column="57" selection-start="852" selection-end="852" vertical-scroll-proportion="0.48214287">
           <folding />
         </state>
       </provider>

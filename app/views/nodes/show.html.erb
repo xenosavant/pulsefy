@@ -1,7 +1,6 @@
 <div class = 'pad-block'><div class = 'title-box'><%= @node.username %> </div></div>
   <%if @node.avatar.file %>
-      <%= image_tag "https://s3-us-west-2.amazonaws.com/pulsefy/avatars/node/
-      #{@node.id}/profile_image.jpg" %>
+      <%= image_tag "https://s3-us-west-2.amazonaws.com/pulsefy/avatars/node/#{@node.id}/profile_image.jpg" %>
     <%else%>
     <%= image_tag 'Q300.jpg'%>
   <%end%>
