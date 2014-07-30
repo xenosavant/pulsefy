@@ -50,30 +50,34 @@ module SessionsHelper
   end
 
   def return_back_to
-    if !session[:return_to_type].nil?
-    case session[:return_to_type]
-      when 'Node'
-      case Node.find(session[:return_to]).nil?
-        when false
-          render Node.find(session[:return_to])
-      end
-      when 'Assembly'
-        case Assembly.find(session[:return_to]).nil?
-          when false
-            render Assembly.find(session[:return_to])
+   case session[:return_to_type].nil?
+    when false
+     case session[:return_to_type]
+       when 'Node'
+         case Node.find(session[:return_to]).nil?
+           when false
+            redirect_to :controller => 'nodes', :action => 'show',
+                        :id => Node.find(session[:return_to])
+         end
+       when 'Assembly'
+         case Assembly.find(session[:return_to]).nil?
+           when false
+             redirect_to :controller => 'assemblies', :action => 'show',
+                         :id => Assembly.find(session[:return_to])
         end
-      when 'Pulse'
-        case Pulse.find(session[:return_to]).nil?
-          when false
-            render Pulse.find(session[:return_to])
-        end
-      when 'Static'
-            redirect_to root_path
-      when 'Inbox'
-            redirect_to inbox_path
-      else
+       when 'Pulse'
+         case Pulse.find(session[:return_to]).nil?
+           when false
+             redirect_to :controller => 'pulses', :action => 'show',
+                         :id => Pulse.find(session[:return_to])
+           end
+       when 'Static'
+             redirect_to root_path
+       when 'Inbox'
+             redirect_to inbox_path
+     else
         redirect_to root_path
-    end
+     end
     else
         redirect_to root_path
     end

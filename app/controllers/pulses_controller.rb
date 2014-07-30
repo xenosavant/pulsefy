@@ -66,7 +66,6 @@ include ApplicationHelper
 def update_embed(args)
   @pulse = args[:pulse]
   @image_regex = /^https?:\/\/(?:[a-z\-]+\.)+[a-z]{2,6}(?:\/[^\/#?]+)+\.(?:jpe?g|gif|png)$/i
-
   api = Embedly::API.new
   @embed = api.oembed :url => @pulse.link, :key => '07cf494178ce4c2ba9c3ba65eb369f29'
   @pulse.update_attributes(:embed_code => @embed[0].html, :thumbnail => @embed[0].thumbnail_url,
@@ -81,9 +80,6 @@ def update_embed(args)
           @pulse.update_attributes(:link_type => 'link', :url => @pulse.link)
       end
   end
-
   @pulse.save
-
-end
-
+ end
 end
