@@ -1,5 +1,7 @@
 class AssembliesController < ApplicationController
 
+  before_filter :signed_in_node
+
   def create
   @node = current_node
   @assembly = @node.assemblies.build(params[:assembly])
