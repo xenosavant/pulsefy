@@ -43,8 +43,7 @@ class AvatarUploader < CarrierWave::Uploader::Base
        h = model.crop_h.to_s
 
      img.crop(w + 'x' + h + '+' + x + '+' + y)
-     #img.crop(model.crop_x.to_i,model.crop_y.to_i,model.crop_h.to_i,model.crop_w.to_i)
-     img
+     img.save!
     end
   end
 
