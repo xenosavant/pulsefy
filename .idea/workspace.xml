@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pulses/_pulse.html.erb" afterPath="$PROJECT_DIR$/app/views/pulses/_pulse.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pulses_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pulses_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -193,7 +190,7 @@
       <file leaf-file-name="_pulse.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pulses/_pulse.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="59" selection-start="1602" selection-end="1602" vertical-scroll-proportion="0.0">
+            <state line="46" column="59" selection-start="1602" selection-end="1602" vertical-scroll-proportion="-13.75">
               <folding />
             </state>
           </provider>
@@ -235,19 +232,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pulses_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pulses_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/pulses_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="9" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0">
+            <state line="84" column="3" selection-start="2752" selection-end="2752" vertical-scroll-proportion="0.7688356">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="4" selection-start="760" selection-end="760" vertical-scroll-proportion="0.46232876">
+            <state line="18" column="4" selection-start="760" selection-end="760" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -1004,13 +1001,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pulses/_pulse.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="59" selection-start="1602" selection-end="1602" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/pulse.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1032,16 +1022,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/pulses_controller.rb">
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="9" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0">
+        <state line="18" column="4" selection-start="760" selection-end="760" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/pulses/_pulse.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="4" selection-start="760" selection-end="760" vertical-scroll-proportion="0.46232876">
+        <state line="46" column="59" selection-start="1602" selection-end="1602" vertical-scroll-proportion="-13.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/pulses_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="3" selection-start="2752" selection-end="2752" vertical-scroll-proportion="0.7688356">
           <folding />
         </state>
       </provider>

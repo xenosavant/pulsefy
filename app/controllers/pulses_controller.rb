@@ -14,10 +14,7 @@ include ApplicationHelper
         when false
           update_content(:pulse => @pulse)
       end
-      case @pulse.link.nil?
-        when false
-          update_embed(:pulse => @pulse)
-      end
+
       case @pulse.pulser_type
            when 'Node'
             @node.pulses << @pulse
@@ -86,17 +83,5 @@ def update_embed(args)
   end
   @pulse.save
 end
-
-  def update_content(args)
-        @pulse = args[:pulse]
-        temp_text = simple_format(@pulse.content)
-        #@image_regex = /^https?:\/\/(?:[a-z\-]+\.)+[a-z]{2,6}(?:\/[^\/#?]+)+\.(?:jpe?g|gif|png)$/i
-        #@matches =  @temp_text.scan(@image_regex)
-        #@matches.each do |url|
-        #   @temp_text.sub! url, "<img src = '#{url}'>"
-        #end
-      @pulse.update_attributes(:content => temp_text)
-  end
-
 
 end
