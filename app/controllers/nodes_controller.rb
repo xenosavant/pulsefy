@@ -16,7 +16,12 @@ class NodesController < ApplicationController
     @node.update_attributes(:threshold => 0.5, :hub => false, :admin => false, :verified => false )
     if @node.save
       sign_in @node
-      flash[:success] = "Pulsefication Complete!"
+      #@node.pulses << Pulse.find()
+      @origin_node = Node.find(1)
+      @synapse = @origin_node.connectors.build
+      @synapse.update_attributes(:strength => 0.5, :output_id => @node.id)
+      @synapse2 = @node.connectors.build
+      @synapse2.update_attributes(:strength => 0.5, :output_id => 1)
       redirect_to root_path
     else
       redirect_to :controller => 'nodes', :action => 'new', :errors => @node.errors.full_messages

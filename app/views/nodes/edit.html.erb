@@ -1,5 +1,5 @@
 <% provide(:title, "Edit Profile") %>
-<div class = 'pad-block'><div class = 'title-box'> Update Your Pulsefeed </div></div>
+<div class = 'pad-block'><div class = 'title-box'> Update Your Profile </div></div>
 <% if params[:errors] %>
     <div id="error_explanation">
       <div class="alert alert-error">
@@ -19,7 +19,7 @@
         <%= f.label :info %>
         <%= f.text_area :info, :cols => '4' %>
 
-      <%= f.label 'upload pulsefeed picture' %>
+      <%= f.label 'upload profile picture' %>
       <div class = 'input'>
         <%if !@node.avatar.file.nil? %>
             <%= image_tag @node.avatar_url(:thumb) %>

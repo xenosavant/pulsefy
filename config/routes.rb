@@ -38,7 +38,7 @@ Pulsefy::Application.routes.draw do
   match '/quit' => 'assemblies#quit'
   match '/join' =>  'assemblies#join'
   match '/assemble' => 'assemblies#new'
-  match '/comment' => 'pulses#show'
+  match '/comment/:id' => 'pulses#show'
   match '/cast' => 'pulses#cast'
   match '/refire' => 'pulses#refire'
   match '/edit' => 'nodes#edit'

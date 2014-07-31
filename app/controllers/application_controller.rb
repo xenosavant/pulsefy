@@ -8,4 +8,8 @@ class ApplicationController < ActionController::Base
     super
   end
 
+  def is_an_admin?
+    current_node.admin
+  end
+
 end

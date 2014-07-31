@@ -33,7 +33,7 @@ SimpleNavigation::Configuration.run do |navigation|
   # Define the primary navigation
   navigation.items do |primary|
 
-    primary.item :edit, 'Info', edit_path, :if => Proc.new { edit_menu? }
+    primary.item :edit, 'Edit', edit_path, :if => Proc.new { edit_menu? }
     primary.item :inbox, 'Inbox', inbox_path, :if => Proc.new { inbox_menu? }, :highlights_on => Proc.new { inbox_menu? }
     primary.item :crop, 'Crop', crop_path, :if => Proc.new { crop_menu? }
     primary.item :edit, 'Edit', reassemble_path, :if => Proc.new { assedit_menu? }

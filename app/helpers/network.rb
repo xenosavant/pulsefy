@@ -77,6 +77,9 @@ module Network
         new_strength = 1
       end
     @synapse.update_attributes(:strength => new_strength)
+    if new_strength < 0.5
+      @synapse.delete
+    end
   end
 
 end
