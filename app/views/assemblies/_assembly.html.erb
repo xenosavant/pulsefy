@@ -1,6 +1,6 @@
 <li>
   <%case assembly.avatar.file.nil? %>
-  <% when true %>
+  <% when false %>
       <%= link_to image_tag(assembly.avatar_url(:thumb)),  "/view/#{assembly.id}" %>
   <% else%>
       <%= link_to image_tag 'Q100.jpg' %>
