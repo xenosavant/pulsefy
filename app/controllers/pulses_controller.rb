@@ -10,9 +10,9 @@ include ApplicationHelper
     @pulse.update_attributes(:reinforcements => 0, :degradations => 0,
                                :depth => 0, :refires => 0)
     if @pulse.save
-      case @pulse.content.nil?
+      case @pulse.link.nil?
         when false
-          update_content(:pulse => @pulse)
+          update_embed(:pulse => @pulse)
       end
 
       case @pulse.pulser_type
