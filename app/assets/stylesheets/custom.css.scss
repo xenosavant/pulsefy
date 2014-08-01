@@ -195,13 +195,12 @@ body {
 
 .title-box {
   z-index:2;
+  display: block;
   width:600px;
   height:auto;
   background-color: $lightSlate;
-  font-size: 1.5em;
+  font-size: 20px;
   font-weight: bold;
-  padding-right:5px;
-  padding-left:0px;
   padding-top:5px;
   padding-bottom:5px;
 }
