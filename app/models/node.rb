@@ -138,14 +138,6 @@ class Node < ActiveRecord::Base
     self.remember_token = SecureRandom.base64.tr('+/', '-_')
   end
 
-  def is_an_admin?
-    case @check = self.admin
-      when true
-        true
-      else
-        false
-    end
-  end
 
 end
 

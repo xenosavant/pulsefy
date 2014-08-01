@@ -8,4 +8,13 @@ class ApplicationController < ActionController::Base
     super
   end
 
+  def is_an_admin?
+    case @check = current_node.admin
+      when true
+        true
+      else
+        false
+    end
+  end
+
 end
