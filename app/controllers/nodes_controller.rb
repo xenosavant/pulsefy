@@ -118,13 +118,5 @@ class NodesController < ApplicationController
     redirect_to(root_path) unless current_node ==  @node
   end
 
-  def is_an_admin?
-    case @check = current_node.admin
-      when true
-         true
-      else
-         false
-         redirect_to pulsein_path
-    end
-  end
+
 end
