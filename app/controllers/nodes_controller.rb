@@ -36,7 +36,8 @@ class NodesController < ApplicationController
 
 
   def account
-    if !@node.nil?
+    case  @node.nil?
+      when false
       correct_node
     else signed_in_node
     end
@@ -44,10 +45,10 @@ class NodesController < ApplicationController
   end
 
   def update
-    @node = Node.find(current_node.id)
+    @node = current_node
       if @node.update_attributes(params[:node])
         if params[:node][:avatar].blank?
-          redirect_to show_path(:id => @node.id, :errors => @node.errors.full_messages)
+          redirect_to "show/#{@node.id}", :errors => @node.errors.full_messages
         else
           render 'crop'
         end
