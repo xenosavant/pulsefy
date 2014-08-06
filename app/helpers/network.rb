@@ -29,8 +29,8 @@ module Network
                  @node.get_pulse(:pulse => @impulse)
                  case self.outputs.include?(@node)
                    when false
-                    @synapse = self.connectors.build
-                    @synapse.update_attributes(:strength => 0.5, :output_id => @node.id)
+                    @synapse = @node.connectors.build
+                    @synapse.update_attributes(:strength => 0.5, :output_id => self.id)
                   end
              end
             end
