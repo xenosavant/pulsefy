@@ -13,13 +13,13 @@
 <%end%>
 <%= form_for @node, :html => { :action => 'update', :controller => 'nodes', :id => @node.id} do |f| %>
 
-        <%= f.label :username %>
+        <%= f.label 'Name' %>
         <%= f.text_field :username %>
 
-        <%= f.label :info %>
+        <%= f.label 'Information' %>
         <%= f.text_area :info, :cols => '4' %>
 
-      <%= f.label 'upload profile picture' %>
+      <%= f.label 'Upload a profile picture' %>
       <div class = 'input'>
         <%if !@node.avatar.file.nil? %>
             <%= image_tag @node.avatar_url(:thumb) %>
