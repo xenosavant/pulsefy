@@ -1,4 +1,10 @@
-<div class = 'pad-block'><div class = 'title-box'><%= @node.username %> </div></div>
+<div class = 'pad-block'><div class = 'title-box'><%= @node.username %>
+  <% case @node.self_tag.nil?%>
+  <% when false %>
+      (<div class = 'self-box'><%=@node.self_tag%></div>)
+    <%end%>
+   </div>
+  </div>
   <%if @node.avatar.file %>
       <%= image_tag @node.avatar_url(:profile) %>
     <%else%>
