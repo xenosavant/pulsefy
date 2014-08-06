@@ -171,14 +171,12 @@ body {
 }
 
 .pad-block {
-  height:30px;
-  width:490px;
+  height:auto;
+  width:600px;
   overflow:hidden;
   position:relative;
   float:top;
   display:block;
-  padding-right:10px;
-  padding-left:0px;
   padding-top:10px;
   padding-bottom:10px;
 }
