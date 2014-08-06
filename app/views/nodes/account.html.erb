@@ -12,7 +12,7 @@
     </div>
 <%end%>
 
-<%= form_for @node, :html => { :action => 'update', :controller => 'nodes', :id => @node.id} do |f| %>
+<%= form_for @node, :html => { :action => 'update_selftag', :controller => 'nodes', :id => @node.id} do |f| %>
 
     <%= f.label 'Self Tag' %>
     <b><div class = 'dollar-box'>$</div></b><%= f.text_field :self_tag %>

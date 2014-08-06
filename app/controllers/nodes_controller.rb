@@ -57,6 +57,15 @@ class NodesController < ApplicationController
       end
   end
 
+  def update_selftag
+    @node = current_node
+    if @node.update_attributes(params[:node])
+        redirect_to "/show/#{@node.id}", :errors => @node.errors.full_messages
+    else
+        redirect_to account_path(:id => @node.id, :errors => @node.errors.full_messages)
+    end
+  end
+
   def destroy
     if is_an_admin?
     Node.find(params[:id]).destroy
