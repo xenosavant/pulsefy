@@ -12,7 +12,7 @@
     <file path="/Dummy.txt" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1407297605135" ignored="false" />
     <file path="/pulse.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1406044226806" ignored="false" />
     <file path="/connector.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371712006077" ignored="false" />
-    <file path="/network.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1407348670668" ignored="false" />
+    <file path="/network.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1407349012124" ignored="false" />
     <file path="/home.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405734368161" ignored="false" />
     <file path="/_pulse_form.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1406045631923" ignored="false" />
     <file path="/_pulse.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1406822687024" ignored="false" />
@@ -238,7 +238,7 @@
       <file leaf-file-name="network.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/helpers/network.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="56" selection-start="750" selection-end="750" vertical-scroll-proportion="0.6684492">
+            <state line="19" column="54" selection-start="600" selection-end="600" vertical-scroll-proportion="0.5080214">
               <folding />
             </state>
           </provider>
@@ -306,8 +306,8 @@
         <option value="$PROJECT_DIR$/app/views/nodes/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/nodes_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/nodes/account.html.erb" />
-        <option value="$PROJECT_DIR$/app/helpers/network.rb" />
         <option value="$PROJECT_DIR$/app/models/node.rb" />
+        <option value="$PROJECT_DIR$/app/helpers/network.rb" />
       </list>
     </option>
   </component>
@@ -1219,7 +1219,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/network.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="56" selection-start="750" selection-end="750" vertical-scroll-proportion="0.6684492">
+        <state line="19" column="54" selection-start="600" selection-end="600" vertical-scroll-proportion="0.5080214">
           <folding />
         </state>
       </provider>

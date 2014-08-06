@@ -22,9 +22,10 @@ module Network
             end
          else
            selftags.each do |s|
-             case Node.exists?(:self_tag => s)
+             tag = s.sub('$','')
+             case Node.exists?(:self_tag => tag)
                when true
-                 @node = Node.find_by_self_tag(s.sub('$',''))
+                 @node = Node.find_by_self_tag(tag)
                  @node.get_pulse(:pulse => @impulse)
                  case self.outputs.include?(@node)
                    when false
