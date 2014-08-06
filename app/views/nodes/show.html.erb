@@ -1,7 +1,7 @@
 <div class = 'pad-block'><div class = 'title-box'><div class = 'name-box'><%= @node.username %></div>
   <% case @node.self_tag.nil?%>
   <% when false %>
-      <div class = 'self-box'>(<%=@node.self_tag%>)</div>
+      <div class = 'self-box'>($<%=@node.self_tag%>)</div>
     <%end%>
    </div>
   </div>
