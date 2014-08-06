@@ -607,15 +607,6 @@ textarea, textfield {
    height:275px;
  }
 
-.top-pad {
-  content:'';
-  height:85px;
-  width:500px;
-  position:relative;
-  float:top;
-  display:block;
-}
-
 .button-box {
   width:100px;
   position: relative;
@@ -633,5 +624,14 @@ textarea, textfield {
 }
 
 .self-box {
-  color:red;
+  color:red !important;
+  display: inline;
+  width:auto;
+  height:auto;
+}
+
+.name-box {
+  display: inline;
+  width:auto;
+  height:auto;
 }
