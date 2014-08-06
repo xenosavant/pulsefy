@@ -29,29 +29,39 @@ class MessagesController < ApplicationController
     @dialogue.save
     case @dialogue.convos.any?
       when true
-        case @dialogue.convos.where(:active => true).nil?
+        case @dialogue.convos.where(:active => true).last.nil?
           when false
             @old_convo = @dialogue.convos.where(:active => true).last
-            if Time.now - @old_convo.messages.last.created_at > 12.hours
-              @old_convo.update_attributes(:active => false)
-              @old_convo.save
+            case @old_convo.messages.last.nil?
+              when false
+                if Time.now - @old_convo.messages.last.created_at > 24.hours
+                  @old_convo.update_attributes(:active => false)
+                  @old_convo.save
+                  @convo = @dialogue.convos.build
+                  @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => current_node.id,
+                                           :unread_interrogator => false, :unread_interlocutor => true, :active => true)
+                  @convo.save
+                else
+                  @convo = @dialogue.convos.where(:active => true).last
+                  if @convo.interlocutor_id == current_node.id
+                     @convo.update_attributes(:unread_interrogator => true)
+                  else
+                     @convo.update_attributes(:unread_interlocutor => true)
+                  end
+                end
+              else
+                @convo = @dialogue.convos.where(:active => true).last
+                if @convo.interlocutor_id == current_node.id
+                  @convo.update_attributes(:unread_interrogator => true)
+                else
+                  @convo.update_attributes(:unread_interlocutor => true)
+                end
+              end
+            else
               @convo = @dialogue.convos.build
               @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => current_node.id,
-                                       :unread_interrogator => false, :unread_interlocutor => true, :active => true)
-              @convo.save
-            else
-              @convo = @dialogue.convos.where(:active => true).last
-              if @convo.interlocutor_id == current_node.id
-                 @convo.update_attributes(:unread_interrogator => true)
-              else
-                 @convo.update_attributes(:unread_interlocutor => true)
-              end
-            end
-          else
-            @convo = @dialogue.convos.build
-            @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => current_node.id,
                                      :unread_interrogator => false, :unread_interlocutor => true, :active => true)
-            @convo.save
+              @convo.save
           end
       else
         @convo = @dialogue.convos.build
