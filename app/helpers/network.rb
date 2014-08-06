@@ -5,13 +5,26 @@ module Network
 
   def process_fire_from(args)
       @impulse = args[:pulse]
-    if self.outputs
-      self.connectors.find_each do |t|
-        if t.strength >= Node.find(t.output_id).threshold
-          Node.find(t.output_id).get_pulse(:pulse => @impulse)
-        end
-      end
-    end
+      selftag_regex = /\b$\w\w+/
+      selftags = @impulse.tags.split(selftag_regex)
+        case  selftags.nil?
+          when true
+            if self.outputs
+            self.connectors.find_each do |t|
+               if t.strength >= Node.find(t.output_id).threshold
+                  Node.find(t.output_id).get_pulse(:pulse => @impulse)
+                end
+            end
+            end
+         else
+           selftags.each do |s|
+             case Node.exists?(:self_tag => s)
+               when true
+                 @node = Node.find_by_self_tag(s)
+                 @node.get_pulse(:pulse => @impulse)
+             end
+            end
+         end
   end
 
 

@@ -15,9 +15,9 @@
 <%= form_for @node, :html => { :action => 'update', :controller => 'nodes', :id => @node.id} do |f| %>
 
     <%= f.label 'Self Tag' %>
-    <%= f.text_field :self_tag %>
+    <b>$</b><%= f.text_field :self_tag %>
 
     <div class = 'button-box'>
-      <%= f.submit 'Update Account Info', :disable_with => 'Updating...', :class => 'btn btn-large btn-primary' %>
+      <%= f.submit 'Update Account', :disable_with => 'Updating...', :class => 'btn btn-large btn-primary' %>
     </div>
 <% end %>
