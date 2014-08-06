@@ -11,8 +11,12 @@ module Network
           when true
             if self.outputs
             self.connectors.find_each do |t|
-               if t.strength >= Node.find(t.output_id).threshold
-                  Node.find(t.output_id).get_pulse(:pulse => @impulse)
+              @node = Node.find(t.output_id)
+               if t.strength >= @node.threshold
+                 case @node.pulses.include?(@pulse)
+                   when false
+                     @node.get_pulse(:pulse => @impulse)
+                 end
                 end
             end
             end
@@ -22,6 +26,11 @@ module Network
                when true
                  @node = Node.find_by_self_tag(s)
                  @node.get_pulse(:pulse => @impulse)
+                 case self.outputs.include?(@node)
+                   when false
+                    @synapse = self.connectors.build
+                    @synapse.update_attributes(:strength => 0.5, :output_id => @node.id)
+                  end
              end
             end
          end
