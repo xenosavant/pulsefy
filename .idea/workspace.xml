@@ -6,13 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/network.rb" afterPath="$PROJECT_DIR$/app/helpers/network.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/node.rb" afterPath="$PROJECT_DIR$/app/models/node.rb" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1407297605135" ignored="false" />
     <file path="/pulse.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1406044226806" ignored="false" />
     <file path="/connector.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371712006077" ignored="false" />
-    <file path="/network.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1407349334065" ignored="false" />
+    <file path="/network.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1407349793026" ignored="false" />
     <file path="/home.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1405734368161" ignored="false" />
     <file path="/_pulse_form.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1406045631923" ignored="false" />
     <file path="/_pulse.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1406822687024" ignored="false" />
@@ -21,7 +22,7 @@
     <file path="/20130611183156_create_raters.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1370975608923" ignored="false" />
     <file path="/20130611184143_create_votes.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371689468885" ignored="false" />
     <file path="/vote.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1372222682322" ignored="false" />
-    <file path="/node.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1407347646869" ignored="false" />
+    <file path="/node.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1407349937035" ignored="false" />
     <file path="/nodes_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1407346976903" ignored="false" />
     <file path="/_node.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1406091028883" ignored="false" />
     <file path="/_header.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1407299312070" ignored="false" />
@@ -181,10 +182,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="node.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="node.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/node.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="30" selection-start="617" selection-end="617" vertical-scroll-proportion="45.846153">
+            <state line="12" column="59" selection-start="537" selection-end="537" vertical-scroll-proportion="0.3364486">
               <folding />
             </state>
           </provider>
@@ -235,10 +236,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="network.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="network.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/helpers/network.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="12" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.88235295">
+            <state line="19" column="49" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -306,8 +307,8 @@
         <option value="$PROJECT_DIR$/app/views/nodes/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/nodes_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/nodes/account.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/node.rb" />
         <option value="$PROJECT_DIR$/app/helpers/network.rb" />
+        <option value="$PROJECT_DIR$/app/models/node.rb" />
       </list>
     </option>
   </component>
@@ -1196,13 +1197,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/nodes_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="7" selection-start="1793" selection-end="1793" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/nodes/account.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="57" selection-start="435" selection-end="435" vertical-scroll-proportion="-8.75">
@@ -1210,16 +1204,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/node.rb">
+    <entry file="file://$PROJECT_DIR$/app/helpers/network.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="30" selection-start="617" selection-end="617" vertical-scroll-proportion="45.846153">
+        <state line="19" column="49" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/network.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/nodes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="12" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.88235295">
+        <state line="65" column="7" selection-start="1793" selection-end="1793" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/node.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="59" selection-start="537" selection-end="537" vertical-scroll-proportion="0.3364486">
           <folding />
         </state>
       </provider>
