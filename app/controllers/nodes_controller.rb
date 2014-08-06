@@ -48,7 +48,7 @@ class NodesController < ApplicationController
     @node = current_node
       if @node.update_attributes(params[:node])
         if params[:node][:avatar].blank?
-          redirect_to "show/#{@node.id}", :errors => @node.errors.full_messages
+          redirect_to "/show/#{@node.id}", :errors => @node.errors.full_messages
         else
           render 'crop'
         end

@@ -210,7 +210,7 @@
       <file leaf-file-name="nodes_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/nodes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="64" selection-start="1387" selection-end="1387" vertical-scroll-proportion="0.5080214">
+            <state line="43" column="36" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.26737967">
               <folding />
             </state>
           </provider>
@@ -1174,7 +1174,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/nodes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="64" selection-start="1387" selection-end="1387" vertical-scroll-proportion="0.5080214">
+        <state line="43" column="36" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.26737967">
           <folding />
         </state>
       </provider>
