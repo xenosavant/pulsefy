@@ -38,12 +38,18 @@ $frameColor: #121212;
 
 .info {
   display: block;
-  width: 580px;
+  width: 550px;
   padding:10px;
   background-color: $grayMediumLight;
   color:#000;
   word-wrap: true;
   overflow:hidden;
+}
+
+.inner-info {
+  width: 550px;
+  background-color: #eeeeee;
+  padding:5px;
 }
 
 .connectors_count {

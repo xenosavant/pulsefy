@@ -20,9 +20,14 @@
     <%end%>
   <% end %>
 </div>
-<div class='info'>
-  <%= simple_format(@node.info)%>
-</div>
+<% case @node.info.blank? %>
+<% when false %>
+ <div class='info'>
+  <div class='inner-info'>
+   <%= simple_format(@node.info)%>
+  </div>
+ </div>
+<% end %>
 <% if @node.pulses.any? %>
       <h4>Pulsefeed</h4>
       <ol class="pulses">
