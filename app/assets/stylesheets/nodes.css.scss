@@ -38,8 +38,10 @@ $frameColor: #121212;
 
 .info {
   display: block;
-  width: 450px;
-  color: $grayLight;
+  width: 580px;
+  padding:10px;
+  background-color: $grayMediumLight;
+  color:#000;
   word-wrap: true;
   overflow:hidden;
 }
