@@ -2,17 +2,17 @@
     <%case node.avatar.file.nil? %>
     <%when  false %>
        <div class = 'avatar-container'>
-         <%= link_to image_tag(node.avatar_url(:thumb)), "/show/#{node.id}"%>
+         <%= link_to image_tag(node.avatar_url(:thumb)), node_path(:id => node.id) %>
        </div>
     <% else%>
              <div class = 'avatar-container'>
-               <%= link_to image_tag('Q100.jpg'), "/show/#{node.id}"%>
+               <%= link_to image_tag('Q100.jpg'), node_path(:id => node.id) %>
                    </div>
     <%end%>
     <% if node.inputs.include?(current_node) || node.outputs.include?(current_node) %>
     <% end %>
         <div class = 'node-background'><div class = 'name-container'>  <%= link_to node.username,  :action => 'show', :controller => 'nodes', :id => node.id %>  </div> </div>
   <% if signed_in? and current_node.admin == true and !current_node?(node) %>
-      <div class = 'node-close'><%= link_to 'x', node, :method => :delete, :data => {:confirm => 'You sure?'} %></div>
+      <div class = 'node-close'><%= link_to 'x', :method => :delete, :data => {:confirm => 'You sure?'} %></div>
   <% end %>
 </li>
