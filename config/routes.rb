@@ -31,6 +31,7 @@ Pulsefy::Application.routes.draw do
   match '/reassemble' => 'assemblies#edit'
   match '/view'  =>  'assemblies#show_assemblies'
   match '/other_view' => 'assemblies#show_other_assemblies'
+  match '/unassemble' => 'assemblies#destroy'
   match '/inputs' => 'nodes#show_inputs'
   match '/outputs' => 'nodes#show_outputs'
   match '/otherinputs' => 'nodes#show_other_inputs'

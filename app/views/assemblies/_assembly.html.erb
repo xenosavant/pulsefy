@@ -13,7 +13,7 @@
     </div>
   <% if signed_in? and assembly.founder == current_node.id %>
      <div class = 'assembly-close'>
-        <%= link_to 'x', assembly, :method => :delete, :disable_with => 'x' %>
+        <%= link_to 'x', unassemble_path(:id => assembly.id), :disable_with => 'x' %>
      </div>
    <% end %>
   </div>
