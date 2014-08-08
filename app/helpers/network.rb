@@ -7,8 +7,7 @@ module Network
       @impulse = args[:pulse]
         case  @impulse.tags.include?("$")
           when false
-           case self.outputs.first.nil?
-             when true
+           if self.outputs
               self.connectors.find_each do |t|
                 @node = Node.find(t.output_id)
                  if t.strength >= @node.threshold
