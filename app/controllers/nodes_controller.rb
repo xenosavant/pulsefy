@@ -16,7 +16,7 @@ class NodesController < ApplicationController
     @node.update_attributes(:threshold => 0.5, :hub => false, :admin => false, :verified => false )
     if @node.save
       sign_in @node
-      #@node.pulses << Pulse.find()
+      @node.pulses << Pulse.find(116)
       @origin_node = Node.find(1)
       @synapse = @origin_node.connectors.build
       @synapse.update_attributes(:strength => 0.5, :output_id => @node.id)
