@@ -3,7 +3,7 @@
     <div class = 'picture-holder'>
     <%case pulse.current_pulser.avatar.file.nil? %>
       <% when false %>
-        <%= link_to image_tag(pulse.current_pulser.avatar_url(:thumb)), node_path(:id => pulse.pulser) %> %>
+        <%= link_to image_tag(pulse.current_pulser.avatar_url(:thumb)), node_path(:id => pulse.pulser) %>
         <%else%>
        <%= link_to image_tag('Q100.jpg'), node_path(:id => pulse.pulser) %>
     <%end%>
