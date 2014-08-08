@@ -1,19 +1,21 @@
 <li>
+  <div class = 'picture-container'>
   <%case assembly.avatar.file.nil? %>
   <% when false %>
-      <%= link_to image_tag(assembly.avatar_url(:thumb)),  "/view/#{assembly.id}" %>
+      <%= link_to image_tag(assembly.avatar_url(:thumb)),  assembly_path(:id => assembly.id) %>
   <% else%>
       <%= link_to image_tag 'Q100.jpg' %>
   <%end%>
+  </div>
   <div class = 'assembly-background'>
     <div class ='name-container'>
          <%= link_to assembly.title, assembly_path(:id => assembly.id) %>
     </div>
-  </div>
   <% if signed_in? and assembly.founder == current_node.id %>
      <div class = 'assembly-close'>
         <%= link_to 'x', assembly, :method => :delete, :disable_with => 'x' %>
      </div>
    <% end %>
+  </div>
 </li>
 

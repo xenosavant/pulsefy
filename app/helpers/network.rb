@@ -30,14 +30,20 @@ module Network
                        @node.get_pulse(:pulse => @impulse)
                         case self.inputs.include?(Node.find_by_self_tag(tag))
                           when false
-                            @synapse = @node.connectors.build
-                            @synapse.update_attributes(:strength => 0.5, :output_id => self.id)
+                            case @node == self
+                             when false
+                              @synapse = @node.connectors.build
+                              @synapse.update_attributes(:strength => 0.5, :output_id => self.id)
+                            end
                         end
                       when false
                         case self.inputs.include?(Node.find_by_self_tag(tag))
                           when false
-                            @synapse = @node.connectors.build
-                            @synapse.update_attributes(:strength => 0.5, :output_id => self.id)
+                            case @node == self
+                              when false
+                               @synapse = @node.connectors.build
+                               @synapse.update_attributes(:strength => 0.5, :output_id => self.id)
+                            end
                         end
 
                     end
@@ -68,8 +74,11 @@ module Network
                    @synapse.update_attributes(:strength => new_strength)
                  end
           else
-              @synapse = self.connectors.build
-              @synapse.update_attributes(:strength => 0.5, :output_id => p.pulser)
+            case p.pulser == self.id
+              when false
+               @synapse = self.connectors.build
+               @synapse.update_attributes(:strength => 0.5, :output_id => p.pulser)
+            end
           end
         end
       end
