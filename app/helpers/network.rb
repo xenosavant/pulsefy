@@ -5,7 +5,7 @@ module Network
 
   def process_fire_from(args)
       @impulse = args[:pulse]
-      selftags = @impulse.tags.split(/\b$\w\w+/)
+      selftags = @impulse.tags.split('$')
         case  selftags.length > 0
           when false
            case self.outputs.first.nil?
