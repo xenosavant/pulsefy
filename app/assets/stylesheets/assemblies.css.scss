@@ -58,10 +58,14 @@ $frameColor: #121212;
 }
 
 .assembly-close {
-  position:relative;
-  left:-15px;
+  position:absolute;
+  right:-15px;
   top:5px;
   font-size: 12px;
+  width:15px;
+  height:15px;
+  font-size: 13px;
+  font-weight: bold;
   a {
     color:$lightSlate !important;
     &:hover {
