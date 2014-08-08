@@ -32,20 +32,6 @@ module ApplicationHelper
     end
   end
 
-  def other_assembly_menu?
-    case params[:controller]
-      when 'assemblies'
-        if params[:action] == 'show_other_assemblies'
-          true
-        else
-          false
-        end
-      else
-        false
-    end
-  end
-
-
 
   def connections_menu?
     case params[:controller]
@@ -102,8 +88,11 @@ module ApplicationHelper
           false
         end
       when 'assemblies'
-        if params[:action] == 'show'
-          true
+        case params[:action]
+          when 'show_other_assemblies'
+            true
+          when 'show'
+            true
         else
           false
         end
