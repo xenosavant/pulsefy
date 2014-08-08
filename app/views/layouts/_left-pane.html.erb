@@ -4,7 +4,7 @@
       <% when false %>
           <%= link_to image_tag(current_node.avatar_url(:thumb)), node_path(:id => current_node.id) %> %>
           <% else %>
-          <%= link_to image_tag('Q100.jpg'), {controller: "nodes"}, node_path(:id => current_node.id) %>
+          <%= link_to image_tag('Q100.jpg'), node_path(:id => current_node.id) %>
       <%end%>
     </div>
     <div class = 'side-connect'>
