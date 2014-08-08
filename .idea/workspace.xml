@@ -255,7 +255,7 @@
       <file leaf-file-name="network.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/helpers/network.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="22" selection-start="246" selection-end="246" vertical-scroll-proportion="0.23116438">
+            <state line="11" column="46" selection-start="294" selection-end="294" vertical-scroll-proportion="0.28253424">
               <folding />
             </state>
           </provider>
@@ -1207,7 +1207,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/network.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="22" selection-start="246" selection-end="246" vertical-scroll-proportion="0.23116438">
+        <state line="11" column="46" selection-start="294" selection-end="294" vertical-scroll-proportion="0.28253424">
           <folding />
         </state>
       </provider>

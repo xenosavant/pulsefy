@@ -5,7 +5,7 @@ module Network
 
   def process_fire_from(args)
       @impulse = args[:pulse]
-        case  @impulse.tags.include("$")
+        case  @impulse.tags.include?("$")
           when false
            case self.outputs.first.nil?
              when true
