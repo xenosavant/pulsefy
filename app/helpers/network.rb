@@ -8,7 +8,7 @@ module Network
       selftag_regex = /\b$\w\w+/
       selftags = @impulse.tags.scan(selftag_regex)
         case  selftags.length > 0
-          when true
+          when false
            case self.outputs.first.nil?
              when false
               self.connectors.find_each do |t|
@@ -21,7 +21,7 @@ module Network
                  end
               end
            end
-          when false
+          when true
            selftags.each do |s|
              tag = s.sub('$','')
               case Node.exists?(:self_tag => tag)
