@@ -7,32 +7,43 @@ module Network
       @impulse = args[:pulse]
       selftag_regex = /\b$\w\w+/
       selftags = @impulse.tags.split(selftag_regex)
-        case  selftags.nil?
+        case  selftags.blank?
           when true
-            if self.outputs
-            self.connectors.find_each do |t|
-              @node = Node.find(t.output_id)
-               if t.strength >= @node.threshold
-                 case @node.pulses.include?(@pulse)
-                   when false
-                     @node.get_pulse(:pulse => @impulse)
+           case self.outputs
+             when true
+              self.connectors.find_each do |t|
+                @node = Node.find(t.output_id)
+                 if t.strength >= @node.threshold
+                   case @node.pulses.include?(@pulse)
+                      when false
+                        @node.get_pulse(:pulse => @impulse)
+                   end
                  end
-                end
-            end
-            end
-         else
+              end
+           end
+          when false
            selftags.each do |s|
              tag = s.sub('$','')
-             case Node.exists?(:self_tag => tag)
-               when true
-                 @node = Node.find_by_self_tag(tag)
-                 @node.get_pulse(:pulse => @impulse)
-                 case self.inputs.include?(@node)
-                   when false
-                    @synapse = @node.connectors.build
-                    @synapse.update_attributes(:strength => 0.5, :output_id => self.id)
-                  end
-             end
+              case Node.exists?(:self_tag => tag)
+                when true
+                  @node = Node.find_by_self_tag(tag)
+                    case self.outputs.include?(@node)
+                      when true
+                       @node.get_pulse(:pulse => @impulse)
+                        case self.inputs.include?(Node.find_by_self_tag(tag))
+                          when false
+                            @synapse = @node.connectors.build
+                            @synapse.update_attributes(:strength => 0.5, :output_id => self.id)
+                        end
+                      when false
+                        case self.inputs.include?(Node.find_by_self_tag(tag))
+                          when false
+                            @synapse = @node.connectors.build
+                            @synapse.update_attributes(:strength => 0.5, :output_id => self.id)
+                        end
+
+                    end
+              end
             end
          end
   end
