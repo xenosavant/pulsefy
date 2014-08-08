@@ -5,11 +5,10 @@ module Network
 
   def process_fire_from(args)
       @impulse = args[:pulse]
-      selftags = @impulse.tags.split('$')
-        case  selftags.length > 0
+        case  @impulse.tags.include("$")
           when false
            case self.outputs.first.nil?
-             when false
+             when true
               self.connectors.find_each do |t|
                 @node = Node.find(t.output_id)
                  if t.strength >= @node.threshold
@@ -20,7 +19,8 @@ module Network
                  end
               end
            end
-          when true
+          else
+           selftags = @impulse.tags.split('$')
            selftags.each do |s|
              tag = s.sub('$','')
               case Node.exists?(:self_tag => tag)
