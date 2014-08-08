@@ -6,11 +6,11 @@ module Network
   def process_fire_from(args)
       @impulse = args[:pulse]
       selftag_regex = /\b$\w\w+/
-      selftags = @impulse.tags.split(selftag_regex)
-        case  selftags.blank?
+      selftags = @impulse.tags.scan(selftag_regex)
+        case  selftags.length > 0
           when true
-           case self.outputs
-             when true
+           case self.outputs.first.nil?
+             when false
               self.connectors.find_each do |t|
                 @node = Node.find(t.output_id)
                  if t.strength >= @node.threshold
