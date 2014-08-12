@@ -7,10 +7,12 @@ Q300.jpg: Q300-02f14a2dcc433ba4e9c9b7943a61ae12.jpg
 Q300/index.jpg: Q300-02f14a2dcc433ba4e9c9b7943a61ae12.jpg
 Q50.jpg: Q50-4feb56f31382cabb0f0a160f05876ca7.jpg
 Q50/index.jpg: Q50-4feb56f31382cabb0f0a160f05876ca7.jpg
-favicon.png: favicon-84a5f957061786cd7cdd38f3f2cd8bde.png
-favicon/index.png: favicon-84a5f957061786cd7cdd38f3f2cd8bde.png
-logo.png: logo-e868e743506168e991959938548a6f21.png
-logo/index.png: logo-e868e743506168e991959938548a6f21.png
+favicon.png: favicon-6bc4a9cd4afe27494ab1470ae49ef66d.png
+favicon/index.png: favicon-6bc4a9cd4afe27494ab1470ae49ef66d.png
+large_logo.png: large_logo-6bb935aabe727e7ace81dddb1535de97.png
+large_logo/index.png: large_logo-6bb935aabe727e7ace81dddb1535de97.png
+logo.png: logo-a08f16bbf020d34c932e5aab4856d5a5.png
+logo/index.png: logo-a08f16bbf020d34c932e5aab4856d5a5.png
 rails.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 rails/index.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 application.js: application-e2861c05123d90119997ec150a973833.js
