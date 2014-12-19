@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/message.rb" afterPath="$PROJECT_DIR$/app/models/message.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/messages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,7 +61,7 @@
     <file path="/20130619213037_create_repulses.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371692513752" ignored="false" />
     <file path="/20130604190040_create_pulses.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1400004385173" ignored="false" />
     <file path="/inbox.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1374774671739" ignored="false" />
-    <file path="/message.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1418977424570" ignored="false" />
+    <file path="/message.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1418977826499" ignored="false" />
     <file path="/20130620011317_create_inboxes.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371691429481" ignored="false" />
     <file path="/20130620011441_create_messages.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1374774259373" ignored="false" />
     <file path="/inputs.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371707211632" ignored="false" />
@@ -125,7 +126,7 @@
     <file path="/convos_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1392864489193" ignored="false" />
     <file path="/inboxes_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1418976318124" ignored="false" />
     <file path="/show_dialogues.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1393827256122" ignored="false" />
-    <file path="/messages_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1418977232734" ignored="false" />
+    <file path="/messages_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1418978251774" ignored="false" />
     <file path="/_message_form.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1392873531861" ignored="false" />
     <file path="/20140220041011_messages_nodes_join_table.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1392871090249" ignored="false" />
     <file path="/_message_form.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1407344619743" ignored="false" />
@@ -208,19 +209,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="message.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="message.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/message.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="16" selection-start="247" selection-end="249" vertical-scroll-proportion="0.22429906">
+            <state line="80" column="9" selection-start="3801" selection-end="3801" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messages_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="messages_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="20" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
+            <state line="4" column="41" selection-start="111" selection-end="111" vertical-scroll-proportion="0.10695187">
               <folding />
             </state>
           </provider>
@@ -306,8 +307,8 @@
         <option value="$PROJECT_DIR$/app/models/dialogue.rb" />
         <option value="$PROJECT_DIR$/app/models/convo.rb" />
         <option value="$PROJECT_DIR$/app/controllers/inboxes_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/message.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
       </list>
     </option>
   </component>
@@ -319,8 +320,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-65" />
-    <option name="y" value="22" />
+    <option name="x" value="146" />
+    <option name="y" value="55" />
     <option name="width" value="1280" />
     <option name="height" value="743" />
   </component>
@@ -876,7 +877,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-65" y="22" width="1280" height="743" extended-state="0" />
+    <frame x="146" y="55" width="1280" height="743" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -958,13 +959,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/models/message.rb</url>
-          <line>73</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="6" />
     </breakpoint-manager>
   </component>
@@ -1060,9 +1054,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/message.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="20" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
+        <state line="80" column="9" selection-start="3801" selection-end="3801" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1074,9 +1068,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/message.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="16" selection-start="247" selection-end="249" vertical-scroll-proportion="0.22429906">
+        <state line="4" column="41" selection-start="111" selection-end="111" vertical-scroll-proportion="0.10695187">
           <folding />
         </state>
       </provider>

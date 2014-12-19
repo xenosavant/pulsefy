@@ -48,7 +48,7 @@ class Message < ActiveRecord::Base
                     @convo = @dialogue.convos.build
                     @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => node.id,
                                              :unread_interrogator => false, :unread_interlocutor => true, :active => true)
-                    @convo.save
+                    @init = @convo
                   else
                     @convo = @dialogue.convos.where(:active => true).last
                     if @convo.interlocutor_id == node.id
@@ -56,6 +56,7 @@ class Message < ActiveRecord::Base
                     else
                       @convo.update_attributes(:unread_interlocutor => true)
                     end
+                    @init = @convo
                   end
                 else
                   @convo = @dialogue.convos.where(:active => true).last
@@ -64,26 +65,19 @@ class Message < ActiveRecord::Base
                   else
                     @convo.update_attributes(:unread_interlocutor => true)
                   end
+                  @init = @convo
               end
             else
               @convo = @dialogue.convos.build
               @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => node.id,
                                        :unread_interrogator => false, :unread_interlocutor => true, :active => true)
-              @convo.save
+              @init = @convo
           end
         else
           @convo = @dialogue.convos.build
           @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => node.id,
                                    :unread_interrogator => false, :unread_interlocutor => true, :active => true)
-          @convo.save
-      end
-      @message = @convo.messages.build(params[:message])
-      @message.update_attributes(:read => false, :receiver_id => @node.id, :sender_id => node.id)
-      @message.save
-      case @node.unreads.where("convo_id = ?", @convo.id).first.nil?
-        when true
-          @unread = @node.unreads.build
-          @unread.update_attributes(:convo_id => @convo.id)
+          @init = @convo
       end
     end
   end
