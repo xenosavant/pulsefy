@@ -6,7 +6,6 @@ class MessagesController < ApplicationController
     @message = Message.new(params[:message])
     @message.init
     if @message.save
-      @message.add_unread
       redirect_to :controller => 'inboxes', :action => 'show_messages',
                  :id => @convo.id, :errors => @message.errors.full_messages
     else

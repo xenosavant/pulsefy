@@ -5,6 +5,7 @@ class Convo < ActiveRecord::Base
   attr_accessible :interrogator_id, :interlocutor_id, :active, :unread_interrogator,
                   :unread_interlocutor
   default_scope order 'convos.created_at DESC'
+  include SessionsHelper
 
   def refresh
     if self.interrogator_id == current_node.id
