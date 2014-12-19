@@ -141,7 +141,7 @@ class Node < ActiveRecord::Base
     @synapse.update_attributes(:strength => 0.5, :output_id => self.id)
   end
 
-  def initialize_convo(receiver, content)
+  def initialized_convo(receiver)
     if receiver !=  self.id and receiver != 0 and !receiver.nil?
       @node = Node.find(receiver)
       case self.dialogues.where(:receiver_id => @node.id).exists? or self.dialogues.where(:sender_id => @node.id).exists?
@@ -180,6 +180,7 @@ class Node < ActiveRecord::Base
                     @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => self.id,
                                              :unread_interrogator => false, :unread_interlocutor => true, :active => true)
                     @convo.save
+                    @initialized_convo = @convo
                   else
                     @convo = @dialogue.convos.where(:active => true).last
                     if @convo.interlocutor_id == self.id
@@ -188,6 +189,7 @@ class Node < ActiveRecord::Base
                       @convo.update_attributes(:unread_interlocutor => true)
                     end
                     @convo.save
+                    @initialized_convo = @convo
                   end
                 else
                   @convo = @dialogue.convos.where(:active => true).last
@@ -197,29 +199,25 @@ class Node < ActiveRecord::Base
                     @convo.update_attributes(:unread_interlocutor => true)
                   end
                   @convo.save
+                  @initialized_convo = @convo
               end
             else
               @convo = @dialogue.convos.build
               @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => self.id,
                                        :unread_interrogator => false, :unread_interlocutor => true, :active => true)
               @convo.save
+              @initialized_convo = @convo
           end
         else
           @convo = @dialogue.convos.build
           @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => self.id,
                                    :unread_interrogator => false, :unread_interlocutor => true, :active => true)
           @convo.save
+          @initialized_convo = @convo
       end
-      case @convo.save
-        session[:convo_id => @convo.id]
-        when true
-         @unread = Node.find(receiver).unreads.build
-         @unread.update_attributes(:convo_id => @convo.id)
-         @message = @convo.messages.build(:content => content)
-         @message.update_attributes(:read => false, :receiver_id => receiver, :sender_id => self.id)
-        end
-    end
   end
+end
+
 
   private
 
