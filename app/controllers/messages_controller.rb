@@ -26,7 +26,7 @@ class MessagesController < ApplicationController
     @message = Message.new(params[:message])
     store_receiver(params[:id])
     store_location(params[:id], 'Message')
-    @node =  Node.find(params[:id])
+    @node =  Node.find(session[:receiver])
   end
 
   def update
