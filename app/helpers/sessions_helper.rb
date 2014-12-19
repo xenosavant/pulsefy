@@ -76,8 +76,7 @@ module SessionsHelper
        when 'Inbox'
              render inbox_path
        when 'Message'
-             redirect_to :controller => 'messages', :action => 'new',
-                         :id => session[:return_to]
+             redirect_to :controller => 'messages', :action => 'new'
      else
         render root_path
      end
