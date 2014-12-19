@@ -141,7 +141,7 @@ class Node < ActiveRecord::Base
     @synapse.update_attributes(:strength => 0.5, :output_id => self.id)
   end
 
-  def initialize_message(receiver)
+  def initialize_convo(receiver)
     if receiver !=  self.id and receiver != 0 and !receiver.nil?
       @node = Node.find(receiver)
       case self.dialogues.where(:receiver_id => @node.id).exists? or self.dialogues.where(:sender_id => @node.id).exists?
@@ -179,7 +179,8 @@ class Node < ActiveRecord::Base
                     @convo = @dialogue.convos.build
                     @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => self.id,
                                              :unread_interrogator => false, :unread_interlocutor => true, :active => true)
-                    @initialize_message = @convo
+                    @initialize_convo = @convo
+                    @convo.save
                   else
                     @convo = @dialogue.convos.where(:active => true).last
                     if @convo.interlocutor_id == self.id
@@ -187,7 +188,8 @@ class Node < ActiveRecord::Base
                     else
                       @convo.update_attributes(:unread_interlocutor => true)
                     end
-                    @initialize_message = @convo
+                    @convo.save
+                    @initialize_convo = @convo
                   end
                 else
                   @convo = @dialogue.convos.where(:active => true).last
@@ -196,19 +198,22 @@ class Node < ActiveRecord::Base
                   else
                     @convo.update_attributes(:unread_interlocutor => true)
                   end
-                  @initialize_message = @convo
+                  @convo.save
+                  @initialize_convo = @convo
               end
             else
               @convo = @dialogue.convos.build
               @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => self.id,
                                        :unread_interrogator => false, :unread_interlocutor => true, :active => true)
-              @init = @convo
+              @convo.save
+              @initialize_convo = @convo
           end
         else
           @convo = @dialogue.convos.build
           @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => self.id,
                                    :unread_interrogator => false, :unread_interlocutor => true, :active => true)
-          @initialize_message = @convo
+          @convo.save
+          @initialize_convo = @convo
       end
     end
   end
