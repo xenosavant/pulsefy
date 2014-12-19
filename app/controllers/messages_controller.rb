@@ -3,7 +3,7 @@ class MessagesController < ApplicationController
   include InboxesHelper
 
   def create
-    case params[:message].content
+    case params[:message]
       when true
     @convo = current_node.initialize_message(session[:receiver])
     @unread = Node.find(session[:receiver]).unreads.build

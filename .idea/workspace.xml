@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/messages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -193,7 +194,7 @@
       <file leaf-file-name="messages_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="16" selection-start="161" selection-end="161" vertical-scroll-proportion="0.16042781">
+            <state line="4" column="36" selection-start="111" selection-end="111" vertical-scroll-proportion="0.10695187">
               <folding />
             </state>
           </provider>
@@ -1153,7 +1154,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="16" selection-start="161" selection-end="161" vertical-scroll-proportion="0.16042781">
+        <state line="4" column="36" selection-start="111" selection-end="111" vertical-scroll-proportion="0.10695187">
           <folding />
         </state>
       </provider>
