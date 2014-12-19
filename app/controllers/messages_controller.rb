@@ -15,10 +15,10 @@ class MessagesController < ApplicationController
          redirect_to :controller => 'inboxes', :action => 'show_messages',
                  :id => @convo.id, :errors => @message.errors.full_messages
        else
-         return_back_to
+         redirect_to :controller => 'messages', :action => 'new'
         end
       else
-         return_back_to
+        redirect_to :controller => 'messages', :action => 'new'
     end
   end
 
