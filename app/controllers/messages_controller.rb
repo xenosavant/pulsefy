@@ -20,6 +20,7 @@ class MessagesController < ApplicationController
      else
       redirect_to :controller => 'messages', :action => 'new',
                     :id => @node.id, :errors => @message.errors.full_messages
+   end
   end
 
   def new
