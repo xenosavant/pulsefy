@@ -27,7 +27,6 @@ class Convo < ActiveRecord::Base
         end
       end
    end
-   store_reciever(@id)
    Dialogue.find(self.dialogue_id).refresh
   end
 
