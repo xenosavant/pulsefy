@@ -16,10 +16,12 @@ class MessagesController < ApplicationController
          redirect_to :controller => 'inboxes', :action => 'show_messages',
                  :id => @convo.id, :errors => @message.errors.full_messages
        else
-         redirect_to :controller => 'messages', :action => 'new', :id => session[:receiver]
+         redirect_to :controller => 'messages', :action => 'new',
+                     :id => session[:receiver], :errors => @message.errors.full_messages
         end
       else
-        redirect_to :controller => 'messages', :action => 'new', :id => session[:receiver]
+         redirect_to :controller => 'messages', :action => 'new',
+                     :id => session[:receiver], :errors => @message.errors.full_messages
     end
   end
 
