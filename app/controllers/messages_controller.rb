@@ -3,7 +3,8 @@ class MessagesController < ApplicationController
   include InboxesHelper
 
   def create
-    Message.init
+    @message = Message.new(params[:message])
+    @message.init
     if @message.save
       @message.add_unread
       redirect_to :controller => 'inboxes', :action => 'show_messages',
@@ -15,7 +16,7 @@ class MessagesController < ApplicationController
   end
 
   def new
-    @message = Message.new
+    @message = Message.(params[:message])
     store_receiver(params[:id])
     @node =  Node.find(params[:id])
   end

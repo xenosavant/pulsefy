@@ -10,7 +10,7 @@ class Message < ActiveRecord::Base
     @current_sender = Node.find(self.sender_id)
   end
 
-  def init(args)
+  def init
     if session[:receiver] !=  current_node.id and session[:receiver] != 0 and !session[:receiver].nil?
       @node = Node.find(session[:receiver])
       case current_node.dialogues.where(:receiver_id => @node.id).exists? or current_node.dialogues.where(:sender_id => @node.id).exists?
@@ -80,16 +80,17 @@ class Message < ActiveRecord::Base
       @message = @convo.messages.build(params[:message])
       @message.update_attributes(:read => false, :receiver_id => @node.id, :sender_id => current_node.id)
       @message.save
+      case current_node.unreads.where("convo_id = ?", @convo.id).first.nil?
+        when true
+          @unread = current_node.unreads.build
+          @unread.update_attributes(:convo_id => @convo.id)
+          @node.unreads << @unread
+      end
     end
   end
 
-  def add_unread
-    case current_node.unreads.where("convo_id = ?", @convo.id).first.nil?
-      when true
-        @unread = current_node.unreads.build
-        @unread.update_attributes(:convo_id => @convo.id)
-        @node.unreads << @unread
-    end
+  def add_unread(args)
+
   end
 
 end

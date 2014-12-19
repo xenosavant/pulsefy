@@ -19,7 +19,7 @@ class Assembly < ActiveRecord::Base
    end
 
    def current_founder
-     @current_founder =Assembly.find(self.founder)
+     @current_founder = Node.find(self.founder)
    end
 
    def check_avatar_dimensions
