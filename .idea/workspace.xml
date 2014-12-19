@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/message.rb" afterPath="$PROJECT_DIR$/app/models/message.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/messages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,7 +60,7 @@
     <file path="/20130619213037_create_repulses.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371692513752" ignored="false" />
     <file path="/20130604190040_create_pulses.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1400004385173" ignored="false" />
     <file path="/inbox.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1374774671739" ignored="false" />
-    <file path="/message.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1418977194071" ignored="false" />
+    <file path="/message.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1418977424570" ignored="false" />
     <file path="/20130620011317_create_inboxes.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371691429481" ignored="false" />
     <file path="/20130620011441_create_messages.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1374774259373" ignored="false" />
     <file path="/inputs.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1371707211632" ignored="false" />
@@ -191,10 +190,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inboxes_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="inboxes_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/inboxes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="23" selection-start="432" selection-end="432" vertical-scroll-proportion="0.41811848">
+            <state line="16" column="23" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -209,10 +208,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="message.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="message.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/message.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="37" selection-start="373" selection-end="373" vertical-scroll-proportion="-7.5">
+            <state line="8" column="16" selection-start="247" selection-end="249" vertical-scroll-proportion="0.22429906">
               <folding />
             </state>
           </provider>
@@ -307,8 +306,8 @@
         <option value="$PROJECT_DIR$/app/models/dialogue.rb" />
         <option value="$PROJECT_DIR$/app/models/convo.rb" />
         <option value="$PROJECT_DIR$/app/controllers/inboxes_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/message.rb" />
         <option value="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/message.rb" />
       </list>
     </option>
   </component>
@@ -1061,13 +1060,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/message.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="37" selection-start="373" selection-end="373" vertical-scroll-proportion="-7.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="20" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
@@ -1077,7 +1069,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/inboxes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="23" selection-start="432" selection-end="432" vertical-scroll-proportion="0.41811848">
+        <state line="16" column="23" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/message.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="16" selection-start="247" selection-end="249" vertical-scroll-proportion="0.22429906">
           <folding />
         </state>
       </provider>
