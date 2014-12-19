@@ -4,7 +4,7 @@ class MessagesController < ApplicationController
 
   def create
     @message = Message.new(params[:message])
-    init(current_node, session[:receiver]).messages.build(params[:message])
+    @message.init(current_node, session[:receiver]).messages.build(params[:message])
     @message.update_attributes(:read => false, :receiver_id => session[:receiver], :sender_id => current_node.id)
     @message.save
         @unread = @node.unreads.build
