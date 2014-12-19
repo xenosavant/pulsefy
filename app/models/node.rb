@@ -90,9 +90,9 @@ class Node < ActiveRecord::Base
 
   def search(search)
     if search
-      find(:all, :conditions => ['username LIKE ?', "%#{search}%"])
+      Node.find(:conditions => ['username LIKE ?', "%#{search}%"]).all
     else
-      find(:all)
+      Node.all
     end
   end
 
