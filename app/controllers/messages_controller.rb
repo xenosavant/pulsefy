@@ -3,6 +3,7 @@ class MessagesController < ApplicationController
   include InboxesHelper
 
   def create
+    @message = Message.new(params[:message])
     case params[:message]
       when true
        @convo = current_node.initialize_message(session[:receiver])
