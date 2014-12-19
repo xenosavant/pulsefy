@@ -215,7 +215,7 @@ class Node < ActiveRecord::Base
          @unread = Node.find(receiver).unreads.build
          @unread.update_attributes(:convo_id => @convo.id)
          @message = @convo.messages.build(:content => content)
-         @message.update_attributes(:read => false, :receiver_id => receiver, :sender_id => current_node.id)
+         @message.update_attributes(:read => false, :receiver_id => receiver, :sender_id => self.id)
         end
     end
   end
