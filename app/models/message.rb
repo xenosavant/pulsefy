@@ -80,17 +80,13 @@ class Message < ActiveRecord::Base
       @message = @convo.messages.build(params[:message])
       @message.update_attributes(:read => false, :receiver_id => @node.id, :sender_id => current_node.id)
       @message.save
-      case current_node.unreads.where("convo_id = ?", @convo.id).first.nil?
+      case @node.unreads.where("convo_id = ?", @convo.id).first.nil?
         when true
-          @unread = current_node.unreads.build
+          @unread = @node.unreads.build
           @unread.update_attributes(:convo_id => @convo.id)
-          @node.unreads << @unread
       end
     end
   end
 
-  def add_unread(args)
-
-  end
 
 end

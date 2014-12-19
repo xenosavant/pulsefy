@@ -16,7 +16,7 @@ class MessagesController < ApplicationController
   end
 
   def new
-    @message = Message.(params[:message])
+    @message = Message.new(params[:message])
     store_receiver(params[:id])
     @node =  Node.find(params[:id])
   end
