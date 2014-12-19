@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/messages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -126,7 +125,7 @@
     <file path="/convos_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1392864489193" ignored="false" />
     <file path="/inboxes_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1418976318124" ignored="false" />
     <file path="/show_dialogues.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1393827256122" ignored="false" />
-    <file path="/messages_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1418981732547" ignored="false" />
+    <file path="/messages_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1418982059225" ignored="false" />
     <file path="/_message_form.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1392873531861" ignored="false" />
     <file path="/20140220041011_messages_nodes_join_table.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1392871090249" ignored="false" />
     <file path="/_message_form.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1407344619743" ignored="false" />
@@ -194,7 +193,7 @@
       <file leaf-file-name="messages_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="36" selection-start="111" selection-end="111" vertical-scroll-proportion="0.10695187">
+            <state line="17" column="27" selection-start="795" selection-end="795" vertical-scroll-proportion="0.45454547">
               <folding />
             </state>
           </provider>
@@ -1154,7 +1153,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="36" selection-start="111" selection-end="111" vertical-scroll-proportion="0.10695187">
+        <state line="17" column="27" selection-start="795" selection-end="795" vertical-scroll-proportion="0.45454547">
           <folding />
         </state>
       </provider>
