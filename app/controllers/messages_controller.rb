@@ -5,7 +5,7 @@ class MessagesController < ApplicationController
   def create
     @message = Message.new(params[:message])
     @convo = current_node.initialized_convo(session[:receiver])
-    @unread = Node.find(receiver).unreads.build
+    @unread = Node.find(session[:receiver]).unreads.build
     @unread.update_attributes(:convo_id => @convo.id)
     @message = @convo.messages.build(params[])
     @message.update_attributes(:read => false, :receiver_id => receiver, :sender_id => self.id)
