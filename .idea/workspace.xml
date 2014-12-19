@@ -193,7 +193,7 @@
       <file leaf-file-name="messages_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="31" selection-start="860" selection-end="860" vertical-scroll-proportion="0.171123">
+            <state line="26" column="69" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.69518715">
               <folding />
             </state>
           </provider>
@@ -1067,7 +1067,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="31" selection-start="860" selection-end="860" vertical-scroll-proportion="0.171123">
+        <state line="26" column="69" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.69518715">
           <folding />
         </state>
       </provider>

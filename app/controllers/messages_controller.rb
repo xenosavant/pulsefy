@@ -15,7 +15,7 @@ class MessagesController < ApplicationController
          redirect_to :controller => 'inboxes', :action => 'show_messages',
                  :id => @convo.id, :errors => @message.errors.full_messages
        else
-         redirect_to message_path(:id => session[:receiver], :errors => @message.errors.full_messages
+         redirect_to message_path(:id => session[:receiver], :errors => @message.errors.full_messages)
         end
       else
          redirect_to message_path(:id => session[:receiver], :errors => @message.errors.full_messages)
