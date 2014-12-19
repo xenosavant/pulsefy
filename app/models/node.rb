@@ -133,6 +133,13 @@ class Node < ActiveRecord::Base
     !crop_x.blank? && !crop_y.blank? && !crop_w.blank? && !crop_h.blank?
   end
 
+  def init
+    sign_in(self)
+    self.pulses << Pulse.find(116)
+    @synapse = Node.find(1).connectors.build
+    @synapse.update_attributes(:strength => 0.5, :output_id => self.id)
+  end
+
   private
 
   def create_remember_token

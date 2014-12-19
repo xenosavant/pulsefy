@@ -11,12 +11,12 @@
 <%= render 'layouts/header' %>
 <body>
 <%if signed_in? %>
-  <div class = 'fill-pane'>
+  <div id = 'fill-pane'>
     <%= render 'layouts/tab-bar' %>
-  <div class = 'background-pane'>
+  <div id = 'background-pane'>
       <%= render 'layouts/left-pane'%>
       <%= render 'layouts/right-pane'%>
-   <div class = 'inner-pulse'>
+   <div id = 'inner-pulse'>
          <div class = 'mar-container'>
              <%= yield  %>
          </div>
@@ -26,8 +26,8 @@
 </body>
 </html>
 <%else%>
-<div class = 'fill-pane'>
-    <div class = 'background-out'>
+<div id = 'fill-pane'>
+    <div id = 'background-out'>
              <%= yield  %>
     </div>
 </div>

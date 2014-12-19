@@ -34,7 +34,7 @@ body {
   background-color:inherit;
 }
 
-.left-pane {
+#left-pane {
   position:relative;
   display:inline;
   float:left;
@@ -48,7 +48,7 @@ body {
   overflow:hidden;
 }
 
-.right-pane {
+#right-pane {
   position:relative;
   display:inline;
   top:50px;
@@ -111,7 +111,7 @@ body {
 }
 
 
-.inner-pulse {
+#inner-pulse {
   display:block;
   position:relative;
   z-index: 1;
@@ -126,7 +126,7 @@ body {
   background-color: $lightSlate !important;
 }
 
-.background-out {
+#background-out {
   z-index:0;
   margin-top:20%;
   position:relative;
@@ -142,7 +142,7 @@ body {
   margin-right: auto;
 }
 
-.background-pane {
+#background-pane {
   z-index:0;
   position:relative;
   width:1278px;
@@ -150,7 +150,7 @@ body {
   margin-right: auto !important;
 }
 
-.fill-pane {
+#fill-pane {
   top:0px;
   min-height:100%;
   background-color: $frameColor;

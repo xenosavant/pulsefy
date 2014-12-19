@@ -20,24 +20,24 @@ class AssembliesController < ApplicationController
   end
 
   def destroy
-    @assembly = Assembly.find_self(params[:id])
+    @assembly = Assembly.find(params[:id])
     @assembly.destroy
     redirect_to view_path(:id => current_node.id)
   end
 
   def show
-    @assembly = Assembly.find_self(params[:id])
+    @assembly = Assembly.find(params[:id])
     store_location(@assembly.id, 'Assembly')
     @pulse = @assembly.pulses.new
     @pulses = @assembly.pulses.paginate(:page => params[:page])
   end
 
   def edit
-    @assembly = Assembly.find_self(params[:id])
+    @assembly = Assembly.find(params[:id])
   end
 
   def update
-    @assembly = Assembly.find_self(params[:id])
+    @assembly = Assembly.find(params[:id])
     if @assembly.update_attributes(params[:assembly])
       if params[:assembly][:avatar].blank?
         redirect_to :controller => 'assemblies', :action => 'show', :id => @assembly.id
@@ -49,15 +49,15 @@ class AssembliesController < ApplicationController
 
 
   def join
-    @assembly = Assembly.find_self(params[:id])
+    @assembly = Assembly.find(params[:id])
     current_node.assemblies << @assembly
-    redirect_to @assembly
+    render @assembly
   end
 
   def quit
-    @assembly = Assembly.find_self(params[:id])
+    @assembly = Assembly.find(params[:id])
     current_node.assemblies.delete(@assembly)
-    redirect_to @assembly
+    render @assembly
   end
 
   def new
@@ -75,11 +75,11 @@ class AssembliesController < ApplicationController
   end
 
   def crop
-    @assembly = Assembly.find_self(params[:id])
+    @assembly = Assembly.find(params[:id])
   end
 
   def crop_update
-    @assembly = Assembly.find_self(params[:id])
+    @assembly = Assembly.find(params[:id])
     @avatar = @assembly.avatar
     @assembly.crop_x = params[:assembly]['crop_x']
     @assembly.crop_y = params[:assembly]['crop_y']

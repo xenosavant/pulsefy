@@ -47,10 +47,6 @@ class Assembly < ActiveRecord::Base
      !crop_x.blank? && !crop_y.blank? && !crop_w.blank? && !crop_h.blank?
    end
 
-   def find_self(args)
-     @assembly = Assembly.find(args[:id])
-   end
-
 
 end
 

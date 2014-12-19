@@ -15,11 +15,8 @@ class NodesController < ApplicationController
     @node = Node.new(params[:node])
     @node.update_attributes(:threshold => 0.5, :hub => false, :admin => false, :verified => false )
     if @node.save
-      sign_in(@node)
-      @node.pulses << Pulse.find(116)
-      @synapse = Node.find(1).connectors.build
-      @synapse.update_attributes(:strength => 0.5, :output_id => @node.id)
-      redirect_to root_path
+      @node.init
+      render root_path
     else
       redirect_to :controller => 'nodes', :action => 'new', :errors => @node.errors.full_messages
     end

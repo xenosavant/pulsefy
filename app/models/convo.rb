@@ -7,7 +7,7 @@ class Convo < ActiveRecord::Base
   default_scope order 'convos.created_at DESC'
 
   def refresh
-    if self.interrogator_id == @node.id
+    if self.interrogator_id == current_node.id
       @id = self.interlocutor_id
       case self.unread_interrogator
         when true
