@@ -4,7 +4,7 @@ class MessagesController < ApplicationController
 
   def create
     @message = Message.new(params[:message])
-       current_node.initialize_convo(session[:receiver])
+    current_node.initialize_convo(session[:receiver], params[:content])
        if @message.save
          redirect_to :controller => 'inboxes', :action => 'show_messages',
                  :id => @convo.id, :errors => @message.errors.full_messages
