@@ -125,7 +125,7 @@
     <file path="/convos_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1392864489193" ignored="false" />
     <file path="/inboxes_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1418976318124" ignored="false" />
     <file path="/show_dialogues.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1393827256122" ignored="false" />
-    <file path="/messages_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1418978810796" ignored="false" />
+    <file path="/messages_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1418979174687" ignored="false" />
     <file path="/_message_form.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1392873531861" ignored="false" />
     <file path="/20140220041011_messages_nodes_join_table.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1392871090249" ignored="false" />
     <file path="/_message_form.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1407344619743" ignored="false" />
@@ -211,7 +211,7 @@
       <file leaf-file-name="messages_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="19" selection-start="789" selection-end="789" vertical-scroll-proportion="0.5080214">
+            <state line="5" column="58" selection-start="170" selection-end="170" vertical-scroll-proportion="0.13368984">
               <folding />
             </state>
           </provider>
@@ -1069,7 +1069,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="19" selection-start="789" selection-end="789" vertical-scroll-proportion="0.5080214">
+        <state line="5" column="58" selection-start="170" selection-end="170" vertical-scroll-proportion="0.13368984">
           <folding />
         </state>
       </provider>
