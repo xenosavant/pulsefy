@@ -1,7 +1,5 @@
 class SessionsController < ApplicationController
 
-  def new
-  end
 
   def create
     node = Node.find_by_email(params[:session][:email].downcase)
@@ -15,7 +13,7 @@ class SessionsController < ApplicationController
 
   def destroy
     sign_out
-    redirect_to pulsein_path
+    render pulsein_path
   end
 
 end
