@@ -15,10 +15,9 @@ class NodesController < ApplicationController
     @node = Node.new(params[:node])
     @node.update_attributes(:threshold => 0.5, :hub => false, :admin => false, :verified => false )
     if @node.save
-      sign_in @node
+      sign_in(@node)
       @node.pulses << Pulse.find(116)
-      @origin_node = Node.find(1)
-      @synapse = @origin_node.connectors.build
+      @synapse = Node.find(1).connectors.build
       @synapse.update_attributes(:strength => 0.5, :output_id => @node.id)
       redirect_to root_path
     else
@@ -53,23 +52,23 @@ class NodesController < ApplicationController
           render 'crop'
         end
       else
-          redirect_to edit_path(:id => @node.id, :errors => @node.errors.full_messages)
+          render edit_path(:id => @node.id, :errors => @node.errors.full_messages)
       end
   end
 
   def update_selftag
-    @node = current_node
     if @node.update_attributes(params[:node])
         redirect_to "/show/#{@node.id}", :errors => @node.errors.full_messages
     else
-        redirect_to account_path(:id => @node.id, :errors => @node.errors.full_messages)
+        @node = current_node
+        render '/nodes/show', :errors => current_node.errors.full_messages
     end
   end
 
   def destroy
     if is_an_admin?
     Node.find(params[:id]).destroy
-    redirect_to root_path
+    render root_path
     end
   end
 
@@ -117,7 +116,7 @@ class NodesController < ApplicationController
         @node.reprocess_avatar
         redirect_to :controller => 'nodes', :action => 'show', :id => params[:id]
       else
-        redirect_to :controller => 'nodes', :action => 'crop'
+        render 'crop'
       end
 
   end

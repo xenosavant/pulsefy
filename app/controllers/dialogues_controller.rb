@@ -5,7 +5,7 @@ def new
 end
 
 def update
-  @dialogue = Dialogue.find(params[:id])
+  @dialogue = Dialogue.find_self(params[:id])
 end
 
 def destroy
