@@ -179,7 +179,7 @@ class Node < ActiveRecord::Base
                     @convo = @dialogue.convos.build
                     @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => self.id,
                                              :unread_interrogator => false, :unread_interlocutor => true, :active => true)
-                    @init = @convo
+                    @initialize_message = @convo
                   else
                     @convo = @dialogue.convos.where(:active => true).last
                     if @convo.interlocutor_id == self.id
@@ -187,7 +187,7 @@ class Node < ActiveRecord::Base
                     else
                       @convo.update_attributes(:unread_interlocutor => true)
                     end
-                    @init = @convo
+                    @initialize_message = @convo
                   end
                 else
                   @convo = @dialogue.convos.where(:active => true).last
@@ -196,7 +196,7 @@ class Node < ActiveRecord::Base
                   else
                     @convo.update_attributes(:unread_interlocutor => true)
                   end
-                  @init = @convo
+                  @initialize_message = @convo
               end
             else
               @convo = @dialogue.convos.build
@@ -208,7 +208,7 @@ class Node < ActiveRecord::Base
           @convo = @dialogue.convos.build
           @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => self.id,
                                    :unread_interrogator => false, :unread_interlocutor => true, :active => true)
-          @init = @convo
+          @initialize_message = @convo
       end
     end
   end
