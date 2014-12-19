@@ -10,9 +10,9 @@ class Message < ActiveRecord::Base
     @current_sender = Node.find(self.sender_id)
   end
 
-  def init(node)
-    if session[:receiver] !=  node.id and session[:receiver] != 0 and !session[:receiver].nil?
-      @node = Node.find(session[:receiver])
+  def init(node, receiver)
+    if receiver !=  node.id and session[:receiver] != 0 and !session[:receiver].nil?
+      @node = Node.find(receiver)
       case node.dialogues.where(:receiver_id => @node.id).exists? or node.dialogues.where(:sender_id => @node.id).exists?
         when false
           @dialogue = node.dialogues.build
