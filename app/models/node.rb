@@ -88,7 +88,7 @@ class Node < ActiveRecord::Base
     @height = 300
   end
 
-  def self.search(search)
+  def search(search)
     if search
       find(:all, :conditions => ['username LIKE ?', "%#{search}%"])
     else
