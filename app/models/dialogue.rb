@@ -6,8 +6,8 @@ class Dialogue < ActiveRecord::Base
   default_scope order 'dialogues.updated_at DESC'
 
 
-  def refresh
-    if self.sender_id == current_node.id
+  def refresh(node)
+    if self.sender_id == node.id
       case self.unread_sender
         when true
           self.update_attributes(:unread_sender => false)

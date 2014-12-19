@@ -27,7 +27,7 @@ class Convo < ActiveRecord::Base
         end
       end
    end
-   Dialogue.find(self.dialogue_id).refresh
+   Dialogue.find(self.dialogue_id).refresh(node)
   end
 
 end
