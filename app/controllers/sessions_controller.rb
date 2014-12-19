@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
 
   def destroy
     sign_out
-    render pulsein_path
+    redirect_to pulsein_path
   end
 
 end
