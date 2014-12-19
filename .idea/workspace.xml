@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/convo.rb" afterPath="$PROJECT_DIR$/app/models/convo.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/sessions_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/sessions_helper.rb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/mailers/.gitkeep" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/inboxes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/inboxes_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -124,7 +125,7 @@
     <file path="/20140219002616_convo.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1392844297473" ignored="false" />
     <file path="/dialogues_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1418945366922" ignored="false" />
     <file path="/convos_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1392864489193" ignored="false" />
-    <file path="/inboxes_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1418945445210" ignored="false" />
+    <file path="/inboxes_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1418974565461" ignored="false" />
     <file path="/show_dialogues.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1393827256122" ignored="false" />
     <file path="/messages_controller.rb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1418967781937" ignored="false" />
     <file path="/_message_form.html.erb" changelist="91b22144-1247-46e3-a625-6ae9a9e71b7c" time="1392873531861" ignored="false" />
@@ -191,19 +192,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messages_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="20" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inboxes_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="inboxes_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/inboxes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="24" column="26" selection-start="648" selection-end="648" vertical-scroll-proportion="0.6271777">
               <folding />
             </state>
           </provider>
@@ -212,7 +204,7 @@
       <file leaf-file-name="convo.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/convo.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="31" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0">
+            <state line="27" column="9" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -227,10 +219,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sessions_helper.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="sessions_helper.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="5" selection-start="1006" selection-end="1006" vertical-scroll-proportion="1.2804878">
+            <state line="49" column="5" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dialogues_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/dialogues_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -293,7 +294,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/functional/nodes_controller_test.rb" />
         <option value="$PROJECT_DIR$/app/models/pulse.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_left-pane.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_right-pane.html.erb" />
@@ -309,6 +309,7 @@
         <option value="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
         <option value="$PROJECT_DIR$/app/helpers/sessions_helper.rb" />
         <option value="$PROJECT_DIR$/app/models/convo.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/inboxes_controller.rb" />
       </list>
     </option>
   </component>
@@ -458,68 +459,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pulsefy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rep" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pulsefy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rep" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="messages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pulsefy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rep" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1025,13 +964,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/unread.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="25" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_tab-bar.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="28" selection-start="79" selection-end="79" vertical-scroll-proportion="-1.25">
@@ -1081,13 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/inboxes_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/repulse.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1116,13 +1041,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/convo.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="31" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140713154627_create_unreads.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="22" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
@@ -1132,7 +1050,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="5" selection-start="1006" selection-end="1006" vertical-scroll-proportion="1.2804878">
+        <state line="49" column="5" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/dialogues_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/convo.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="9" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/inboxes_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="26" selection-start="648" selection-end="648" vertical-scroll-proportion="0.6271777">
           <folding />
         </state>
       </provider>
