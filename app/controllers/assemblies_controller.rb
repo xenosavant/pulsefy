@@ -15,7 +15,7 @@ class AssembliesController < ApplicationController
          render 'crop'
        end
     else
-      render assemble_path(:errors => @assembly.errors.full_messages)
+      render 'new'
     end
   end
 
