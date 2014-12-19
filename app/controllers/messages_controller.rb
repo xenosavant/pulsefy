@@ -3,7 +3,7 @@ class MessagesController < ApplicationController
   include InboxesHelper
 
   def create
-    @convo = Message.init(current_node, session[:receiver])
+    @convo = current_node.initialize_message(session[:receiver])
     @unread = Node.find(session[:receiver]).unreads.build
     @unread.update_attributes(:convo_id => @convo.id)
     @message = @convo.messages.build(params[:message])

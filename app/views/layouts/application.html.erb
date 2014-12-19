@@ -18,6 +18,15 @@
       <%= render 'layouts/right-pane'%>
    <div id = 'inner-pulse'>
          <div class = 'mar-container'>
+           <% if params[:errors] %>
+               <div id="error_explanation">
+                 <ul>
+                   <%params[:errors].each do |msg| %>
+                       <li> <%= msg %></li>
+                   <% end %>
+                 </ul>
+               </div>
+           <%end%>
              <%= yield  %>
          </div>
      </div>
