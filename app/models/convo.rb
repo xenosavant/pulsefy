@@ -7,13 +7,13 @@ class Convo < ActiveRecord::Base
   default_scope order 'convos.created_at DESC'
   include SessionsHelper
 
-  def refresh
-    if self.interrogator_id == current_node.id
+  def refresh(node)
+    if self.interrogator_id == node.id
       @id = self.interlocutor_id
       case self.unread_interrogator
         when true
           self.update_attributes(:unread_interrogator => false)
-          current_node.unreads.where("convo_id = ?", self.id).each do |unread|
+          Unread.where("convo_id = ? AND node_id = ?", self.id, self.interrogator_id).each do |unread|
             unread.delete
           end
       end
@@ -22,13 +22,12 @@ class Convo < ActiveRecord::Base
      case self.unread_interlocutor
       when true
         self.update_attributes(:unread_interlocutor => false)
-        current_node.unreads.where("convo_id = ?", self.id).each do |unread|
+        Unread.where("convo_id = ? AND node_id = ?", self.id, self.interlocutor_id).each do |unread|
           unread.delete
         end
       end
    end
    store_reciever(@id)
-   store_mailbox(self.id, 'messages')
    Dialogue.find(self.dialogue_id).refresh
   end
 
