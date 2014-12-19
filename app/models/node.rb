@@ -211,6 +211,7 @@ class Node < ActiveRecord::Base
           @convo.save
       end
       case @convo.save
+        session[:convo_id => @convo.id]
         when true
          @unread = Node.find(receiver).unreads.build
          @unread.update_attributes(:convo_id => @convo.id)

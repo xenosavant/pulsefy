@@ -7,7 +7,7 @@ class MessagesController < ApplicationController
     current_node.initialize_convo(session[:receiver], params[:content])
        if @message.save
          redirect_to :controller => 'inboxes', :action => 'show_messages',
-                 :id => @convo.id, :errors => @message.errors.full_messages
+                 :id => session[:convo_id], :errors => @message.errors.full_messages
        else
          redirect_to :controller => 'messages', :action => 'new',
                      :id => session[:receiver], :errors => @message.errors.full_messages
