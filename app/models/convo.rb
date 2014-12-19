@@ -28,6 +28,11 @@ class Convo < ActiveRecord::Base
       end
    end
    Dialogue.find(self.dialogue_id).refresh(node)
+  self.update_receiver(@id)
+  end
+
+  def update_receiver(id)
+    session[:receiver] = id
   end
 
 end
