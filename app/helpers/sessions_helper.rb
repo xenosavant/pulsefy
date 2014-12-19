@@ -57,24 +57,27 @@ module SessionsHelper
          case Node.find(session[:return_to]).nil?
            when false
             redirect_to :controller => 'nodes', :action => 'show',
-                        :id => Node.find(session[:return_to])
+                        :id => session[:return_to]
          end
        when 'Assembly'
          case Assembly.find(session[:return_to]).nil?
            when false
              redirect_to :controller => 'assemblies', :action => 'show',
-                         :id => Assembly.find(session[:return_to])
+                         :id => session[:return_to]
         end
        when 'Pulse'
          case Pulse.find(session[:return_to]).nil?
            when false
              redirect_to :controller => 'pulses', :action => 'show',
-                         :id => Pulse.find(session[:return_to])
+                         :id => session[:return_to]
            end
        when 'Static'
              render root_path
        when 'Inbox'
              render inbox_path
+       when 'Message'
+             redirect_to :controller => 'messages', :action => 'new',
+                         :id => session[:return_to]
      else
         render root_path
      end

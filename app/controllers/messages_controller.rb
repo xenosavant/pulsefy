@@ -15,16 +15,17 @@ class MessagesController < ApplicationController
          redirect_to :controller => 'inboxes', :action => 'show_messages',
                  :id => @convo.id, :errors => @message.errors.full_messages
        else
-         redirect_to message_path(:id => session[:receiver], :errors => @message.errors.full_messages)
+         return_back_to
         end
       else
-         redirect_to message_path(:id => session[:receiver], :errors => @message.errors.full_messages)
+         return_back_to
     end
   end
 
   def new
     @message = Message.new(params[:message])
     store_receiver(params[:id])
+    store_location(params[:id], 'Message')
     @node =  Node.find(params[:id])
   end
 
