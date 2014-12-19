@@ -21,7 +21,7 @@ class InboxesController < ApplicationController
   def show_messages
     @message = Message.new
     store_receiver(Convo.find(params[:id]).refresh(current_node))
-    @messages = @convo.messages.paginate(:page => params[:page])
+    @messages = Convo.find(params[:id]).messages.paginate(:page => params[:page])
   end
 
 
