@@ -92,6 +92,8 @@ class Node < ActiveRecord::Base
     case search
       when true
       Node.where('username LIKE ?', "%#{search}%").all
+      else
+      Node.all
     end
   end
 
