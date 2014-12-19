@@ -15,10 +15,10 @@ class MessagesController < ApplicationController
          redirect_to :controller => 'inboxes', :action => 'show_messages',
                  :id => @convo.id, :errors => @message.errors.full_messages
        else
-         redirect_to :controller => 'messages', :action => 'new'
+         redirect_to :controller => 'messages', :action => 'new', :id => session[:receiver]
         end
       else
-        redirect_to :controller => 'messages', :action => 'new'
+        redirect_to :controller => 'messages', :action => 'new', :id => session[:receiver]
     end
   end
 
@@ -26,7 +26,7 @@ class MessagesController < ApplicationController
     @message = Message.new(params[:message])
     store_receiver(params[:id])
     store_location(params[:id], 'Message')
-    @node =  Node.find(session[:receiver])
+    @node =  Node.find(params[:id])
   end
 
   def update
