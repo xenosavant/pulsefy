@@ -215,6 +215,10 @@ class Node < ActiveRecord::Base
           @convo.save
           @initialize_convo = @convo
       end
+      @message = @convo.messages.build(params[:message])
+      @message.update_attributes(:read => false, :receiver_id => session[:receiver], :sender_id => current_node.id)
+      @unread = Node.find(session[:receiver]).unreads.build
+      @unread.update_attributes(:convo_id => @convo.id)
     end
   end
 
