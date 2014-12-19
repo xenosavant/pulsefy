@@ -28,7 +28,7 @@ class Convo < ActiveRecord::Base
       end
    end
    Dialogue.find(self.dialogue_id).refresh(node)
-  self.update_receiver(@id)
+   @refresh = @id
   end
 
   def update_receiver(id)
