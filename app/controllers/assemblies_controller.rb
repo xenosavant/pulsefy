@@ -51,13 +51,13 @@ class AssembliesController < ApplicationController
   def join
     @assembly = Assembly.find(params[:id])
     current_node.assemblies << @assembly
-    redirect_to :controller => 'assemblies', :action => show, :id => @assembly.id
+    redirect_to :controller => 'assemblies', :action => 'show', :id => @assembly.id
   end
 
   def quit
     @assembly = Assembly.find(params[:id])
     current_node.assemblies.delete(@assembly)
-    redirect_to :controller => 'assemblies', :action => show, :id => @assembly.id
+    redirect_to :controller => 'assemblies', :action => 'show', :id => @assembly.id
   end
 
   def new
