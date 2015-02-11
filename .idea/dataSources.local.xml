@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails Pulsefy: test" uuid="a30f7545-0518-4511-979c-0e702ab51b86">
+      <secret-storage>memory</secret-storage>
+    </data-source>
+    <data-source name="Rails Pulsefy: development" uuid="471c5ef4-ea1f-4fed-8c6b-f2c4cb07033e">
+      <secret-storage>memory</secret-storage>
+    </data-source>
+    <data-source name="Rails Pulsefy: production" uuid="762ba597-c338-4f97-bac3-7bc8624edd2c">
+      <secret-storage>memory</secret-storage>
+    </data-source>
+  </component>
+</project>
