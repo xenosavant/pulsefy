@@ -26,20 +26,20 @@
                     <li> <a href='/'> Home </a> </li>
                     <li> <%= link_to 'Assemblies', view_path(:id => current_node.id) %></li>
                     <li> <%= link_to 'Connections', inputs_path(:id => current_node.id) %></li>
+                    <!--<li><%= link_to 'My Profile', current_node %></li>-->
                     <li> <%= link_to inbox_path do %>
                           <i class='fa fa-small fa-envelope'></i>
                           <% if current_node.unreads.count > 0 %>
                           <span class="badge badge-important"><%= current_node.unreads.count %></span>
                           <% end %>
-                          <%end%>
+                      <% end %>
                     </li>
-                  <li id='fat-menu' class='dropdown'>
-                    <a href='#' class='dropdown-toggle' data-toggle='dropdown'>
-                      <i class="fa fa-large fa-cog"></i></a>
-                    <ul class='dropdown-menu'>
-                      <li><%= link_to 'My Profile', current_node %></li>
-                      <li><%= link_to 'Settings', edit_path %></li>
-                      <li class="divider"></li>
+                  <!--<li id='fat-menu' class='dropdown'>-->
+                    <!--<a href='#' class='dropdown-toggle' data-toggle='dropdown'>-->
+                      <!--</a>-->
+                    <!--<ul class='dropdown-menu'>-->
+                      <li><%= link_to edit_path do%><i class="fa fa-large fa-cog"></i><%end%></li>
+                      <!--<li class="divider"></li>-->
                       <li>
                         <%= link_to 'Pulse Out', pulseout_path, :method => 'delete' %>
                       </li>

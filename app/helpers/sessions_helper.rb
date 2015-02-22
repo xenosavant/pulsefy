@@ -1,8 +1,12 @@
 module SessionsHelper
 
-  def sign_in(node)
-    cookies.permanent[:remember_token] = node.remember_token
+  def first_sign_in(node)
     self.current_node = node
+  end
+
+  def sign_in(node)
+    self.current_node = node
+    cookies.permanent[:remember_token] = node.remember_token
   end
 
   def signed_in?

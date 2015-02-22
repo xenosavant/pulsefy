@@ -97,6 +97,11 @@ class Node < ActiveRecord::Base
     end
   end
 
+  def init
+    @synapse = Node.find(1).connectors.build
+    @synapse.update_attributes(:strength => 0.5, :output_id => self.id)
+  end
+
   def reprocess_avatar
     self.avatar.cache_stored_file!
     self.avatar.recreate_versions!
@@ -132,13 +137,6 @@ class Node < ActiveRecord::Base
 
   def cropping?
     !crop_x.blank? && !crop_y.blank? && !crop_w.blank? && !crop_h.blank?
-  end
-
-  def init
-    sign_in(self)
-    self.pulses << Pulse.find(116)
-    @synapse = Node.find(1).connectors.build
-    @synapse.update_attributes(:strength => 0.5, :output_id => self.id)
   end
 
   def initialized_convo(receiver)

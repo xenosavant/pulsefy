@@ -15,8 +15,10 @@ class NodesController < ApplicationController
     @node = Node.new(params[:node])
     @node.update_attributes(:threshold => 0.5, :hub => false, :admin => false, :verified => false )
     if @node.save
+      first_sign_in(self)
+      cookies.permanent[:remember_token] = @node.remember_token
       @node.init
-      render root_path
+      redirect_to :controller => 'static', :action => 'home'
     else
       redirect_to :controller => 'nodes', :action => 'new', :errors => @node.errors.full_messages
     end
