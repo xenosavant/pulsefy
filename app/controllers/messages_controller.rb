@@ -8,7 +8,7 @@ class MessagesController < ApplicationController
     @unread = Node.find(session[:receiver]).unreads.build
     @unread.update_attributes(:convo_id => @convo.id)
     @message = @convo.messages.build(params[:message])
-    @message.update_attributes(:read => false, :receiver_id => session[:receiver], :sender_id => current_node.id)
+    @message.update_attributes(:receiver_id => session[:receiver], :sender_id => current_node.id)
        if @message.save
          redirect_to :controller => 'inboxes', :action => 'show_messages',
                  :id => @convo.id, :errors => @message.errors.full_messages

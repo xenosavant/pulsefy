@@ -6,7 +6,7 @@
         <%= link_to image_tag('Q100.jpg'), :action => 'show', :controller => 'nodes', :id => convo.interrogator_id %>
     <%end%>
   </div>
-  <div class = 'time-background'>
+  <div class = 'time-background' onclick="redirect(<%=convo.id%>)" id="<%=convo.id%>">
     <div class = 'time-container'>
       <% if convo.interrogator_id == current_node.id %>
           <% case convo.unread_interrogator %>
@@ -19,9 +19,7 @@
               <span class="badge badge-important">*</span>
           <% end %>
       <% end %>
-    <%= link_to :action => 'show_messages', :controller => 'inboxes', :id => convo.id  do  %>
         Started <%= time_ago_in_words(convo.created_at) %> ago.
-    <% end %>
     <% if convo.interrogator_id == current_node.id %>
         <% case convo.unread_interrogator %>
     <% when true %>

@@ -1,5 +1,6 @@
 $grayMediumLight: #eaeaea;
 $lightSlate: #d0dfef;
+$backroundBlue: #000040;
 
 .dialogues {
     width: 550px;
@@ -37,6 +38,11 @@ $lightSlate: #d0dfef;
   height:80px;
   background-color:#eeeeee;
   text-align:center;
+  color:#08c;
+  &:hover {
+    background-color:#d6d6d6;
+    color:$backroundBlue !important;
+  }
 }
 
 .time-container {

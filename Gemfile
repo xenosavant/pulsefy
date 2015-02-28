@@ -31,6 +31,7 @@ gem  'font-awesome-rails'
 gem 'rvm'
 gem 'rails_12factor'
 gem 'therubyracer', '~> 0.12'
+gem 'angularjs-rails'
 
 group :production do
   gem 'pg', '0.18.1'
