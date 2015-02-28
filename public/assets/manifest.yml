@@ -15,10 +15,10 @@ logo.png: logo-ebe306a9a3d3f3c4662bc4b57b67b2fd.png
 logo/index.png: logo-ebe306a9a3d3f3c4662bc4b57b67b2fd.png
 rails.png: rails-71e944d9b39043eba50b77788c0d767f.png
 rails/index.png: rails-71e944d9b39043eba50b77788c0d767f.png
-application.js: application-61f714fdb3bae95b753f7a8bc5bc3dbe.js
-application/index.js: application-61f714fdb3bae95b753f7a8bc5bc3dbe.js
-convos.js: convos-e81a36995ebed2ddde363e0dc26390c2.js
-convos/index.js: convos-e81a36995ebed2ddde363e0dc26390c2.js
+application.js: application-84985434bd0249ca98580c3078fe6b40.js
+application/index.js: application-84985434bd0249ca98580c3078fe6b40.js
+convos.js: convos-e694e7fe22868a27daa5c409e4bf82a2.js
+convos/index.js: convos-e694e7fe22868a27daa5c409e4bf82a2.js
 dialogues.js: dialogues-3bae22f9befdf53e62aba2b3edb95084.js
 dialogues/index.js: dialogues-3bae22f9befdf53e62aba2b3edb95084.js
 jquery.Jcrop.min.js: jquery.Jcrop.min-ffb4bac3cb462add924e7f30f33e2aa3.js
