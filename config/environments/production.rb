@@ -2,6 +2,7 @@ Pulsefy::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests
+  config.assets.precompile += %w( dialogues.js )
   config.cache_classes = true
   config.action_controller.perform_caching = true
 
