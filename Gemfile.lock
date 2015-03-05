@@ -29,10 +29,10 @@ GEM
     activesupport (3.2.13)
       i18n (= 0.6.1)
       multi_json (~> 1.0)
-    admin_data (1.2.1)
+    admin_data (1.2.0)
       rails (~> 3.1)
       will_paginate (>= 3.0.0)
-    angularjs-rails (1.3.10)
+    aes (0.5.0)
     arel (3.0.3)
     bcrypt-ruby (3.0.0)
     bootstrap-sass (2.1.0.0)
@@ -68,7 +68,7 @@ GEM
       oauth
       querystring
     erubis (2.7.0)
-    excon (0.44.2)
+    excon (0.44.3)
     execjs (2.3.0)
     ffi (1.9.6)
     fission (0.5.0)
@@ -96,7 +96,7 @@ GEM
     fog-atmos (0.1.0)
       fog-core
       fog-xml
-    fog-aws (0.1.0)
+    fog-aws (0.1.1)
       fog-core (~> 1.27)
       fog-json (~> 1.0)
       fog-xml (~> 0.1)
@@ -239,7 +239,7 @@ GEM
     rmagick (2.13.4)
     ruby-oembed (0.8.12)
     rvm (1.11.3.9)
-    sass (3.4.12)
+    sass (3.4.13)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
@@ -270,7 +270,7 @@ GEM
       rails (>= 3.1)
       railties (>= 3.1)
     tzinfo (0.3.43)
-    uglifier (2.7.0)
+    uglifier (2.7.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     vegas (0.1.11)
@@ -281,8 +281,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  admin_data (= 1.2.1)
-  angularjs-rails
+  admin_data (= 1.2.0)
+  aes (= 0.5.0)
   bcrypt-ruby (= 3.0.0)
   bootstrap-sass (= 2.1)
   carrierwave

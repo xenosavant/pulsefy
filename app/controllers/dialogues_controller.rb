@@ -1,4 +1,5 @@
 class DialoguesController < ApplicationController
+  include ActionController::Cookies
 
 def new
   @dialogue = Dialogue.new

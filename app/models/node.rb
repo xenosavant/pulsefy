@@ -22,6 +22,8 @@ class Node < ActiveRecord::Base
   has_and_belongs_to_many :pulses
   has_and_belongs_to_many :assemblies
   has_and_belongs_to_many :dialogues
+  has_many :sent_dialogues, :foreign_key => 'sender_id', :class_name =>  'Dialogue'
+  has_many :received_dialogues, :foreign_key => 'receiver_id', :class_name =>  'Dialogue'
   has_many :connectors, :foreign_key => 'input_id', :dependent => :destroy
   has_many :outputs, :through => :connectors
   has_many :reverse_relationships, :foreign_key => 'output_id',
@@ -139,82 +141,7 @@ class Node < ActiveRecord::Base
     !crop_x.blank? && !crop_y.blank? && !crop_w.blank? && !crop_h.blank?
   end
 
-  def initialized_convo(receiver)
-    if receiver !=  self.id and receiver != 0 and !receiver.nil?
-      @node = Node.find(receiver)
-      case self.dialogues.where(:receiver_id => @node.id).exists? or self.dialogues.where(:sender_id => @node.id).exists?
-        when false
-          @dialogue = self.dialogues.build
-          @dialogue.update_attributes(:sender_id => self.id, :receiver_id => @node.id, :unread_receiver => true, :unread_sender => false)
-          @node.dialogues << @dialogue
-          self.dialogues << @dialogue
-        when true
-          case self.dialogues.where(:receiver_id => @node.id).exists?
-            when true
-              @dialogue = self.dialogues.where(:receiver_id => @node.id).first
-              @dialogue.update_attributes(:unread_receiver => true)
-            when false
-              @dialogue = self.dialogues.where(:sender_id => @node.id).first
-              @dialogue.update_attributes(:unread_sender => true)
-            else
-              @dialogue = self.dialogues.build
-              @dialogue.update_attributes(:sender_id => self.id, :receiver_id => @node.id, :unread_receiver => true, :unread_sender => false)
-              @node.dialogues << @dialogue
-              self.dialogues << @dialogue
-          end
-      end
-      @dialogue.save
-      case @dialogue.convos.any?
-        when true
-          case @dialogue.convos.where(:active => true).last.nil?
-            when false
-              @old_convo = @dialogue.convos.where(:active => true).last
-              case @old_convo.messages.last.nil?
-                when false
-                  if Time.now - @old_convo.messages.last.created_at > 24.hours
-                    @old_convo.update_attributes(:active => false)
-                    @old_convo.save
-                    @convo = @dialogue.convos.build
-                    @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => self.id,
-                                             :unread_interrogator => false, :unread_interlocutor => true, :active => true)
-                    @convo.save
-                    @initialized_convo = @convo
-                  else
-                    @convo = @dialogue.convos.where(:active => true).last
-                    if @convo.interlocutor_id == self.id
-                      @convo.update_attributes(:unread_interrogator => true)
-                    else
-                      @convo.update_attributes(:unread_interlocutor => true)
-                    end
-                    @convo.save
-                    @initialized_convo = @convo
-                  end
-                else
-                  @convo = @dialogue.convos.where(:active => true).last
-                  if @convo.interlocutor_id == self.id
-                    @convo.update_attributes(:unread_interrogator => true)
-                  else
-                    @convo.update_attributes(:unread_interlocutor => true)
-                  end
-                  @convo.save
-                  @initialized_convo = @convo
-              end
-            else
-              @convo = @dialogue.convos.build
-              @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => self.id,
-                                       :unread_interrogator => false, :unread_interlocutor => true, :active => true)
-              @convo.save
-              @initialized_convo = @convo
-          end
-        else
-          @convo = @dialogue.convos.build
-          @convo.update_attributes(:interlocutor_id => @node.id, :interrogator_id => self.id,
-                                   :unread_interrogator => false, :unread_interlocutor => true, :active => true)
-          @convo.save
-          @initialized_convo = @convo
-      end
-  end
-end
+
 
 
   private
@@ -222,6 +149,7 @@ end
   def create_remember_token
     self.remember_token = SecureRandom.base64.tr('+/', '-_')
   end
+
 
 
 end

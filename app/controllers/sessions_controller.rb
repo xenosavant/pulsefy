@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-
+  include ActionController::Cookies
 
   def create
     node = Node.find_by_email(params[:session][:email].downcase)

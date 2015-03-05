@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141219103028) do
+ActiveRecord::Schema.define(:version => 20150304232457) do
 
   create_table "assemblies", :force => true do |t|
     t.string   "title"
@@ -66,8 +66,13 @@ ActiveRecord::Schema.define(:version => 20141219103028) do
     t.integer  "sender_id"
     t.boolean  "unread_sender"
     t.boolean  "unread_receiver"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+    t.text     "cookie_key"
+    t.text     "db_key"
+    t.boolean  "sender_has_cookie"
+    t.boolean  "receiver_has_cookie"
+    t.string   "cookie_name"
   end
 
   add_index "dialogues", ["receiver_id"], :name => "index_dialogues_on_receiver_id"
