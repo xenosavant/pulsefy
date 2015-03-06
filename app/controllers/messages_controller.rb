@@ -6,9 +6,11 @@ class MessagesController < ApplicationController
   def create
     @message = Message.new(params[:message])
     @convo = initialized_convo(session[:receiver], current_node)
+    if cookies[@convo.dialogue.cookie_name]
     @unread = Node.find(session[:receiver]).unreads.build
     @unread.update_attributes(:convo_id => @convo.id)
-    @encrypted_message = encrypt(params[:message], @convo.dialogue)
+    @unencrypted_message = params[:message]
+    @encrypted_message = encrypt(@unencrypted_message, @convo.dialogue)
     @message = @convo.messages.build(:content => @encrypted_message)
     @message.update_attributes(:receiver_id => session[:receiver], :sender_id => current_node.id)
        if @message.save
@@ -18,6 +20,10 @@ class MessagesController < ApplicationController
          redirect_to :controller => 'messages', :action => 'new',
                      :id => session[:receiver], :errors => @message.errors.full_messages
        end
+    else
+      redirect_to :controller => 'messages', :action => 'new',
+                  :id => session[:receiver], :errors => ['You do not have access']
+    end
   end
 
   def new
@@ -122,10 +128,10 @@ class MessagesController < ApplicationController
     end
   end
 
-  def encrypt(params, dialogue)
+  def encrypt(message, dialogue)
     iv = AES.iv(:base_64)
     key = cookies[dialogue.cookie_name]
-    @encrypt = AES.encrypt(params['content'], key, {:iv => iv})
+    @encrypt = AES.encrypt(message, key, {:iv => iv})
   end
 
   def set_secret(key, dialogue)
