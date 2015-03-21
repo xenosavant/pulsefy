@@ -14,6 +14,8 @@ Pulsefy::Application.routes.draw do
   match 'index' => 'nodes#index'
   match '/message' => 'messages#new'
   match '/inbox' => 'inboxes#show_dialogues'
+  match '/request' => 'inboxes#show_requests'
+  match '/confirm' => 'inboxes#confirm'
   match '/dialogue' => 'inboxes#show_convos'
   match '/conversation' => 'inboxes#show_messages'
   match '/show/:id' => 'nodes#show'

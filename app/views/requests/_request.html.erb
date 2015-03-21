@@ -1,0 +1,19 @@
+<li>
+  <%if (request.request_type == 'dialogue') %>
+      <div class = "time-container">
+        <div class = "text-container"><%=request.body%></div>
+      <div class = "button-box">
+      <%= link_to(confirm_path(:id => request.id, :accept => true)) do %>
+        <div class = 'button-container'>
+          <div class = 'btn btn-medium btn-success'>Accept</div>
+        </div>
+          <% end %>
+      <%= link_to(confirm_path(:id => request.id, :accept => false)) do %>
+          <div class = 'button-container'>
+            <div class = 'btn btn-medium btn-danger'>Reject</div>
+          </div>
+      <% end %>
+      </div>
+      </div>
+  <% end %>
+</li>

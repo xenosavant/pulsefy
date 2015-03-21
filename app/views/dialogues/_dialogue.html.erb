@@ -1,11 +1,22 @@
 <%= javascript_include_tag 'dialogues.js' %>
+<span onclick="redirect(<%=dialogue.id%>)" id="<%=dialogue.id%>">
 <li>
  <div class = 'messenger-box'>
-  <%if !Node.find(dialogue.sender_id).avatar.file.nil? %>
-      <%= link_to image_tag(Node.find(dialogue.sender_id).avatar_url(:thumb)), :action => 'show', :controller => 'nodes', :id => dialogue.sender_id %>
+  <%if dialogue.sender_id == current_node.id %>
+       <% case !Node.find(dialogue.receiver_id).avatar.file.nil? %>
+   <% when true %>
+      <%= link_to image_tag(Node.find(dialogue.receiver_id).avatar_url(:micro)), :action => 'show', :controller => 'nodes', :id => dialogue.sender_id %>
   <% else%>
-      <%= link_to image_tag('Q100.jpg'), :action => 'show', :controller => 'nodes', :id => dialogue.sender_id %>
+      <%= link_to image_tag('Q100.jpg'), :action => 'show', :controller => 'nodes', :id => dialogue.receiver_id %>
   <%end%>
+       <% else %>
+       <% case !Node.find(dialogue.sender_id).avatar.file.nil? %>
+   <% when true %>
+           <%= link_to image_tag(Node.find(dialogue.sender_id).avatar_url(:micro)), :action => 'show', :controller => 'nodes', :id => dialogue.sender_id %>
+       <% else%>
+           <%= link_to image_tag('Q100.jpg'), :action => 'show', :controller => 'nodes', :id => dialogue.sender_id %>
+       <%end%>
+   <% end %>
  </div>
   <div class = 'time-background' onclick="redirect(<%=dialogue.id%>)" id="<%=dialogue.id%>">
 
@@ -37,10 +48,11 @@
    </div>
   </div>
   <div class = 'receiver-box'>
-    <%if !Node.find(dialogue.receiver_id).avatar.file.nil? %>
-     <%= link_to image_tag(Node.find(dialogue.receiver_id).avatar_url(:thumb)), :action => 'show', :controller => 'nodes', :id => dialogue.receiver_id %>
+    <%if dialogue.sender_has_cookie and dialogue.receiver_has_cookie%>
+        <i class='fa fa-large fa-lock' style="color:green"></i>
     <% else%>
-      <%= link_to image_tag('Q100.jpg'), :action => 'show', :controller => 'nodes', :id => dialogue.receiver_id  %>
+        <i class='fa fa-large fa-unlock' style="color:red"></i>
     <%end%>
   </div>
 </li>
+</span>

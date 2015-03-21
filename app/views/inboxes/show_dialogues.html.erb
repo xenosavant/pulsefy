@@ -1,6 +1,20 @@
 <%= javascript_include_tag 'dialogues.js' %>
 
 <div class = 'pad-block'><div class = 'title-box'> My Dialogues </div></div>
+<% if params[:notice] %>
+      <div class="alert alert-success">
+          <%= params[:notice] %>
+      </div>
+<%end%>
+<% if params[:errors] %>
+      <div class="alert alert-error">
+        <ul>
+          <%params[:errors].each do |msg| %>
+              <li> <%= msg %> </li>
+          <% end %>
+        </ul>
+    </div>
+<%end%>
 <% if !@dialogues.nil? %>
     <ol class="dialogues">
       <%= render @dialogues %>

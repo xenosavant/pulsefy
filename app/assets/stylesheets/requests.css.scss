@@ -1,0 +1,32 @@
+$grayMediumLight: #eaeaea;
+$lightSlate: #d0dfef;
+$backroundBlue: #000040;
+
+.requests {
+  width: 550px;
+  list-style: none;
+  position:relative;
+  background-color:$grayMediumLight;
+  li {
+    width:530px;
+    height:auto;
+    padding:10px;
+    border-bottom: 5px solid $lightSlate;
+  }
+}
+
+.text-container {
+  display:block;
+}
+
+.button-box {
+  display:block;
+  width:auto;
+}
+
+.button-container {
+  padding:10px;
+  display:inline;
+}
+
+

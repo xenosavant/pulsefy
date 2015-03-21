@@ -32,6 +32,7 @@ gem 'rvm'
 gem 'rails_12factor'
 gem 'therubyracer', '~> 0.12'
 gem 'aes', '0.5.0'
+gem 'ahoy_matey'
 
 group :production do
   gem 'pg', '0.18.1'
@@ -39,6 +40,7 @@ end
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'activeuuid', '>= 0.5.0'
 end
 
 

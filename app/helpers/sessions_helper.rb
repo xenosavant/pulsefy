@@ -76,14 +76,14 @@ module SessionsHelper
                          :id => session[:return_to]
            end
        when 'Static'
-             render root_path
+             redirect_to root_path
        when 'Inbox'
-             render inbox_path
+             redirect_to inbox_path
      else
-        render root_path
+        redirect_to root_path
      end
     else
-        render root_path
+        redirect_to root_path
     end
   end
 end

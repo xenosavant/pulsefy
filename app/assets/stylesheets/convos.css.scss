@@ -8,7 +8,7 @@ $lightSlate: #d0dfef;
   background-color:$grayMediumLight;
   li {
     width:530px;
-    height:100px;
+    height:50px;
     padding:10px;
     border-bottom: 5px solid $lightSlate;
   }
@@ -17,35 +17,15 @@ $lightSlate: #d0dfef;
 .interrogator-box {
   display:inline;
   float:left;
-  height:100px;
-  width:100px;
+  height:50px;
+  width:50px;
   padding-right:10px;
 }
 
 .interlocutor-box {
   display:inline;
   float:right;
-  height:100px;
-  width:100px;
+  height:50px;
+  width:50px;
   padding-left:10px;
-}
-
-.time-background {
-  position:absolute;
-  display:inline;
-  padding:10px;
-  width:290px;
-  height:80px;
-  background-color:#eeeeee;
-  text-align:center;
-}
-
-.time-container {
-  display:block;
-  position:relative;
-  margin-top:30px;
-  margin-left:auto;
-  margin-right:auto;
-  overflow:hidden;
-  max-width:290px;
 }

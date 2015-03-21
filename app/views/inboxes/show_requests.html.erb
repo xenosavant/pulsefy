@@ -1,0 +1,9 @@
+<div class = 'pad-block'><div class = 'title-box'> Requests </div></div>
+<div class = 'mess-pane'>
+  <% if !@requests.nil? %>
+      <ol class="requests">
+        <%= render @requests %>
+      </ol>
+      <%= will_paginate @requests %>
+  <% end %>
+</div>

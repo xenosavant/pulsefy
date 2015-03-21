@@ -1,3 +1,4 @@
+<span onclick="redirect(<%=convo.id%>)" id="<%=convo.id%>">
 <li>
   <div class = 'interrogator-box'>
     <%if !Node.find(convo.interrogator_id).avatar.file.nil? %>
@@ -6,7 +7,6 @@
         <%= link_to image_tag('Q100.jpg'), :action => 'show', :controller => 'nodes', :id => convo.interrogator_id %>
     <%end%>
   </div>
-  <div class = 'time-background' onclick="redirect(<%=convo.id%>)" id="<%=convo.id%>">
     <div class = 'time-container'>
       <% if convo.interrogator_id == current_node.id %>
           <% case convo.unread_interrogator %>
@@ -32,7 +32,6 @@
         <% end %>
     <% end %>
   </div>
-  </div>
   <div class = 'interlocutor-box'>
     <%if !Node.find(convo.interlocutor_id).avatar.file.nil? %>
         <%= link_to image_tag(Node.find(convo.interlocutor_id).avatar_url(:thumb)), :action => 'show', :controller => 'nodes', :id => convo.interlocutor_id  %>
@@ -41,3 +40,4 @@
     <%end%>
   </div>
 </li>
+</span>

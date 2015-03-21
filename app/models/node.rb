@@ -32,6 +32,7 @@ class Node < ActiveRecord::Base
   has_many :votes
   has_many :repulses
   has_many :unreads
+  has_many :requests, :foreign_key => :receiver_id
 
   include Network
   include SessionsHelper
@@ -141,6 +142,13 @@ class Node < ActiveRecord::Base
     !crop_x.blank? && !crop_y.blank? && !crop_w.blank? && !crop_h.blank?
   end
 
+  def check_for_request(dialogue)
+    if Request.where("dialogue_id == ? AND sender_id == ?", dialogue.id, self.id).exists?
+      true
+    else
+      false
+    end
+  end
 
 
 

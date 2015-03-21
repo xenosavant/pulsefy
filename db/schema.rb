@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150304232457) do
+ActiveRecord::Schema.define(:version => 20150307180552) do
 
   create_table "assemblies", :force => true do |t|
     t.string   "title"
@@ -66,13 +66,15 @@ ActiveRecord::Schema.define(:version => 20150304232457) do
     t.integer  "sender_id"
     t.boolean  "unread_sender"
     t.boolean  "unread_receiver"
-    t.datetime "created_at",          :null => false
-    t.datetime "updated_at",          :null => false
+    t.datetime "created_at",             :null => false
+    t.datetime "updated_at",             :null => false
     t.text     "cookie_key"
     t.text     "db_key"
     t.boolean  "sender_has_cookie"
     t.boolean  "receiver_has_cookie"
     t.string   "cookie_name"
+    t.boolean  "sender_is_authorized"
+    t.boolean  "receiver_is_authorized"
   end
 
   add_index "dialogues", ["receiver_id"], :name => "index_dialogues_on_receiver_id"
@@ -160,6 +162,17 @@ ActiveRecord::Schema.define(:version => 20150304232457) do
     t.integer  "pulse_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "requests", :force => true do |t|
+    t.integer  "receiver_id"
+    t.integer  "sender_id"
+    t.integer  "dialogue_id"
+    t.string   "request_type"
+    t.string   "body"
+    t.boolean  "authorized"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
   create_table "sessions", :force => true do |t|

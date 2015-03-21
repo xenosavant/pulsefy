@@ -4,25 +4,36 @@ class MessagesController < ApplicationController
   include ActionController::Cookies
 
   def create
-    @message = Message.new(params[:message])
     @convo = initialized_convo(session[:receiver], current_node)
-    if cookies[@convo.dialogue.cookie_name]
-    @unread = Node.find(session[:receiver]).unreads.build
-    @unread.update_attributes(:convo_id => @convo.id)
-    @unencrypted_message = params[:message]
-    @encrypted_message = encrypt(@unencrypted_message, @convo.dialogue)
-    @message = @convo.messages.build(:content => @encrypted_message)
-    @message.update_attributes(:receiver_id => session[:receiver], :sender_id => current_node.id)
-       if @message.save
-         redirect_to :controller => 'inboxes', :action => 'show_messages',
-                 :id => @convo.id, :errors => @message.errors.full_messages
-       else
-         redirect_to :controller => 'messages', :action => 'new',
-                     :id => session[:receiver], :errors => @message.errors.full_messages
-       end
-    else
-      redirect_to :controller => 'messages', :action => 'new',
-                  :id => session[:receiver], :errors => ['You do not have access']
+    @node = Node.find(session[:receiver])
+    case current_node.check_for_request(@convo.dialogue)
+      when false
+        case @node.check_for_request(@convo.dialogue)
+          when true
+            redirect_to :controller => 'inboxes', :action => 'show_dialogues',
+                        :id => session[:receiver], :errors => ["Awaiting your authorization"]
+          else
+                 case  cookies[@convo.dialogue.cookie_name].nil?
+                   when false
+                     @message = @convo.messages.build(params[:message])
+                     if !@message.content.blank?
+                     @unread = Node.find(session[:receiver]).unreads.build
+                     @unread.update_attributes(:convo_id => @convo.id)
+                     @unencrypted_message = @message.content
+                     @encrypted_message = encrypt(@unencrypted_message, @convo.dialogue)
+                     @message.update_attributes(:content => @encrypted_message, :receiver_id => session[:receiver], :sender_id => current_node.id)
+                     end
+                     redirect_to :controller => 'inboxes', :action => 'show_messages',
+                                 :id => @convo.id, :errors => @message.errors.full_messages
+
+                  else
+                    redirect_to :controller => 'inboxes', :action => 'show_dialogues',
+                                   :id => session[:receiver], :errors => ['Secure connection has not yet been established']
+                 end
+        end
+      else
+        redirect_to :controller => 'inboxes', :action => 'show_dialogues',
+                    :id => session[:receiver], :notice => "Request has been sent to  #{Node.find(session[:receiver]).username}"
     end
   end
 
@@ -48,16 +59,18 @@ class MessagesController < ApplicationController
       case sender.sent_dialogues.where(:receiver_id => @node.id).exists? or sender.received_dialogues.where(:sender_id => @node.id).exists?
         when false
           @dialogue = sender.dialogues.build
-          @dialogue.update_attributes(:sender_id => sender.id, :receiver_id => @node.id,
+          @dialogue.update_attributes(:sender_id => sender.id, :receiver_id => receiver,
                                       :unread_receiver => true, :unread_sender => false,
                                       :sender_has_cookie => false, :receiver_has_cookie => false)
-          @node.dialogues << @dialogue
-          sender.dialogues << @dialogue
-          key = @dialogue.set_encryption
+          key = @dialogue.set_encryption(receiver)
           if set_secret(key, @dialogue)
             @dialogue.sender_has_cookie = true
             @dialogue.cookie_key = key
           end
+          @request = Request.new
+          @request.update_attributes(:sender_id => sender.id, :receiver_id => @node.id, :dialogue_id => @dialogue.id,
+                                     :body => "#{sender.username} would like to open a secure dialogue with you.
+                                      Do you accept?", :request_type => 'dialogue')
         when true
           case sender.sent_dialogues.where(:receiver_id => @node.id).exists?
             when true
@@ -68,11 +81,19 @@ class MessagesController < ApplicationController
               @dialogue.update_attributes(:unread_sender => true)
             else
               @dialogue = sender.dialogues.build
-              @dialogue.update_attributes(:sender_id => sender.id, :receiver_id => @node.id,
+              @dialogue.update_attributes(:sender_id => sender.id, :receiver_id => receiver,
                                           :unread_receiver => true, :unread_sender => false,
-                                          :sender_has_cookie => false, :receiver_has_cookie => false)
-              @node.dialogues << @dialogue
-              sender.dialogues << @dialogue
+                                          :sender_has_cookie => false, :receiver_has_cookie => false,
+                                          :sender_is_authorized => false, :receiver_is_authorized => false)
+              key = @dialogue.set_encryption(receiver)
+              if set_secret(key, @dialogue)
+                @dialogue.sender_has_cookie = true
+                @dialogue.cookie_key = key
+              end
+              @request = Request.new
+              @request.update_attributes(:sender_id => sender.id, :receiver_id => @node.id, :dialogue_id => @dialogue.id,
+                                         :body => "#{sender.username} would like to open a secure dialogue with you.
+                                      Do you accept?", :type => 'dialogue')
           end
       end
       @dialogue.save
@@ -83,7 +104,7 @@ class MessagesController < ApplicationController
               @old_convo = @dialogue.convos.where(:active => true).last
               case @old_convo.messages.last.nil?
                 when false
-                  if Time.now - @old_convo.messages.last.created_at > 24.hours
+                  if Time.now - @old_convo.messages.last.created_at > 24.hours and @old_convo.messages.where(:sender_id => sender.id).exists?
                     @old_convo.update_attributes(:active => false)
                     @old_convo.save
                     @convo = @dialogue.convos.build

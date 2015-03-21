@@ -4,6 +4,7 @@ class Dialogue < ActiveRecord::Base
   attr_accessible :receiver_id, :sender_id, :unread_sender, :unread_receiver,
                   :sender_has_cookie, :receiver_has_cookie, :db_key, :cookie_key
   has_many :convos, :dependent => :destroy
+  has_many :requests
   default_scope order 'dialogues.updated_at DESC'
   include SessionsHelper
 
@@ -21,9 +22,10 @@ class Dialogue < ActiveRecord::Base
     end
   end
 
-  def set_encryption
+  def set_encryption(receiver)
     self.db_key = AES.key
-    self.cookie_name = self.sender_id.to_s + '_' + self.receiver_id.to_s
+    self.cookie_name = self.sender_id.to_s + '_' + receiver.to_s
     @set_encryption = AES.key
   end
+
 end
