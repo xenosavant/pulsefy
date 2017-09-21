@@ -3,9 +3,10 @@ module Network
   @@tau_self = 0.09
   @@tau_reinforce = 0.15
 
+
   def process_fire_from(args)
       @impulse = args[:pulse]
-        case  @impulse.tags.include?("$")
+        case  @impulse.tags.include?("@")
           when false
            if self.outputs
               self.connectors.find_each do |t|
@@ -19,9 +20,9 @@ module Network
               end
            end
           else
-           selftags = @impulse.tags.split('$')
+           selftags = @impulse.tags.split('@')
            selftags.each do |s|
-             tag = s.sub('$','')
+             tag = s.sub('@','')
               case Node.exists?(:self_tag => tag)
                 when true
                   @node = Node.find_by_self_tag(tag)
@@ -52,6 +53,10 @@ module Network
          end
   end
 
+  def fin_another_node(args)
+    @find_id = 23
+    Pulse.find(:f => 1)
+  end
 
   def modify_self(args)
     @impulse = args[:pulse]

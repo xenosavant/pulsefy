@@ -1,0 +1,1 @@
+function redirect(e){var t=document.getElementById(e),n="/conversation?id="+t.id;window.location.replace(n)}

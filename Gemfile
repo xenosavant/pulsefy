@@ -33,6 +33,7 @@ gem 'rails_12factor'
 gem 'therubyracer', '~> 0.12'
 gem 'aes', '0.5.0'
 gem 'ahoy_matey'
+gem 'ember-rails'
 
 group :production do
   gem 'pg', '0.18.1'
