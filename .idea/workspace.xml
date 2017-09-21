@@ -5,20 +5,449 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b22144-1247-46e3-a625-6ae9a9e71b7c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/requests/_request.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/requests.css.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/inboxes/show_requests.html.erb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/FontAwesome-a225b62c1c772b969fe317f71ad17d85.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Q100-c2d589e4fb8000e4df43345f5dd52cd4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Q100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Q25-48a416d20b2279232ec9bb89b216992c.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Q25.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Q300-04214bc9986aa4383291af992c3e75da.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Q300.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Q50-a59f532316c3d7af76e7ac6c01e79fe2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Q50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/add-47e8c3400b9f61003489ad89230e8833.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/admin_data-a5ef9562ea809d69bb183df12d565fd0.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/admin_data-a5ef9562ea809d69bb183df12d565fd0.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/admin_data-b5a77748da6c07b745c0603eadd55516.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/admin_data-b5a77748da6c07b745c0603eadd55516.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/admin_data.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/admin_data.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/admin_data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/admin_data.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-3359a6e17c06cb2fc4a0b7ffef359f51.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-3359a6e17c06cb2fc4a0b7ffef359f51.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-61f714fdb3bae95b753f7a8bc5bc3dbe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-61f714fdb3bae95b753f7a8bc5bc3dbe.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-7a6aa54a19a137afa27ba5444f4e959d.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-7a6aa54a19a137afa27ba5444f4e959d.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-84985434bd0249ca98580c3078fe6b40.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-84985434bd0249ca98580c3078fe6b40.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/convos-e694e7fe22868a27daa5c409e4bf82a2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/convos-e694e7fe22868a27daa5c409e4bf82a2.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/convos-e81a36995ebed2ddde363e0dc26390c2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/convos-e81a36995ebed2ddde363e0dc26390c2.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/convos.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/convos.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dialogues-3bae22f9befdf53e62aba2b3edb95084.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dialogues-3bae22f9befdf53e62aba2b3edb95084.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dialogues.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dialogues.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/favicon-05f96bc3352ea70dae89546af7d537db.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-40bb971bbb97d6e515cf3677d5c9fd3b.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-48fd81362274b42b19704b3402d3a878.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-6a928d6875c980852c3823caf78dfc43.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-80ed365794a5c5a827ff1faffa0a37b9.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-dd5a1c0d3986933f85487740205face3.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/glyphicons-halflings-b4c22a0ed1f42188864f0046f0862ecb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/glyphicons-halflings-white-b552fc2a3b051cebf4567afb55de29b0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop-f1e7cf4c606a34b8d7473a2c97127dba.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop-f1e7cf4c606a34b8d7473a2c97127dba.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min-2eb61c1ff239a39bc5728cbf50480811.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min-2eb61c1ff239a39bc5728cbf50480811.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min-3b74b0a9371bbc226fa451381e166f5b.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min-3b74b0a9371bbc226fa451381e166f5b.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min-ffb4bac3cb462add924e7f30f33e2aa3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min-ffb4bac3cb462add924e7f30f33e2aa3.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery.Jcrop.min.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery.min-c5a89be96c8d2def857e2657b2c155c0.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery.min.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/large_logo-f2ff37df2c0203053dfc3cb251c7cb58.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/large_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/logo-ebe306a9a3d3f3c4662bc4b57b67b2fd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/manifest.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/no-2720dc0ded4d3db912e3c3c9c42ca629.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/no.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rails-71e944d9b39043eba50b77788c0d767f.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rails.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/site-abb50017bde5264544bbb99997428673.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/site.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/sort_by_asc-a1050cb2e34ec3bd9c3514f25a8b5f5d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/sort_by_asc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/sort_by_desc-8968f250aa60facbc6a304d1c4ece4b6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/sort_by_desc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/sort_by_nothing-d0e91b0aabe192db3b389eac895b00dd.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/sort_by_nothing.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/BDF/420/sprockets%2F1665600126a1681254f01239561d8e3a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/BEC/520/sprockets%2F42160991d6b67350211f04cb49976171" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/C52/F10/sprockets%2Fe28e592934d18791a22f4902e2a67311" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/C7D/2D0/sprockets%2F6116ba3b093dca653d1741635958286d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/C80/110/sprockets%2Fc030e28c1dd97d468731761613d8084b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/C81/E50/sprockets%2F78f42831b6c5c3982343a218b56c13f5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/C88/860/sprockets%2F0f6c0496667a060f089170dd7a1f8864" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/C8C/E70/sprockets%2Fc820e13cf32e499c091f82173929d647" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/C8E/7C0/sprockets%2F024d9925f2b14869a8d3ec5f93156743" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CB7/F60/sprockets%2F877a8fbb067a81bf843254d1941484a5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CC4/190/sprockets%2F97cde5774ef4922a2efe772656680340" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CD4/C00/sprockets%2F33b8dfce5bee7b7142d0305412309834" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CD8/AC0/sprockets%2F4d3aa408081490890ab8ee3d9ac04609" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CE7/A90/sprockets%2Fa9ba328601e936fe1946746f20b35e9c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CF5/F20/sprockets%2Ff1950a2b929f5d0eaf8942986d9590a6" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CF9/B90/sprockets%2Fb311818212c47a22302cabd6df1ff836" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CF9/C80/sprockets%2F1901109ef4bcc9f40b2342315a16fc4c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CFD/4D0/sprockets%2Fa4b031d67294f36a21bdd0c7e77223e0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D07/030/sprockets%2Fd3a6c8c1240713163d0e9125ee7dde56" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D07/100/sprockets%2F1627b009d30475d429ce23c6e8abb3e6" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D0C/8D0/sprockets%2F7c063893bb8013bf2a3058baf87fd561" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D10/E40/sprockets%2F5972c7daf336ea781660d67af1423e1b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D14/A40/sprockets%2F6a63d98a3f781cef333b25403bbb5887" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D17/910/sprockets%2F85d05e357f525da58fcf058ca5258e22" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D1F/F20/sprockets%2F7cd2b7fc8760a7818b772804c9a4ed74" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D2C/D90/sprockets%2F2943c92dea76422c2c8cad1da23037c1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D2F/B90/sprockets%2F4223d66c52e08bf13aac14270a9d4e8c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D39/F10/sprockets%2Fbe3ca4206d8f425d029b9f5ea17d2805" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D3B/C90/sprockets%2Fe14c88e3e60d31bca781ba64e176f650" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D49/900/sprockets%2Fcfe82bff1892f136d8b7ac056484c507" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D4E/490/sprockets%2Fefe7e41f806c133879523d2e4888bdbb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D4E/680/sprockets%2F4e04b99461fa5d74594e627ef0dbd77b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D6B/100/sprockets%2Fcc58ee3e9390142253fead0ee2e5345b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D6B/AA0/sprockets%2F80de8fcabc9e1b94841f43e10035c85a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D6D/F70/sprockets%2F8129ffe55316b1f3c34d0b7980efea1b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D78/0C0/sprockets%2Fa76bfaee5684e0f924c48b9e8174b1c1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D7B/630/sprockets%2F3b2468c683bd10a996f7efd6b604d9be" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D7F/130/sprockets%2F8fec496ab82cc9f328507fbcaf580349" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D91/460/sprockets%2Fd6778bdac898d889bdc7385ac627f06f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D9F/150/sprockets%2F04ef935d2842f782dc7a0bcf98bab60b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/DA9/940/sprockets%2F5d9cc14dd3c460f192e8b78cbe8293dd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/DA9/AE0/sprockets%2Fe9a143c12787d2dc7b57e7caf339d9ea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/DAE/C60/sprockets%2Ff3f8cf9cb91758dd05a65ce054a88d1f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/DDA/8E0/sprockets%2F198a5e6cdd6225be14d94d81e5e9efbb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/DEA/980/sprockets%2Fef5ff4bbf0eb69575991d89de5ec2b56" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/DF3/000/sprockets%2F5ba5cdfc6ce7d15368a2b28301d7aadf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/pids/server.pid" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/act_on_result-4a878bae7829236c4a691470224979f8.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/act_on_result-4a878bae7829236c4a691470224979f8.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/act_on_result.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/act_on_result.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/advance_search-9e6020adc725950f4f9db25638238678.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/advance_search-9e6020adc725950f4f9db25638238678.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/advance_search.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/advance_search.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/advance_search_structure-ec89bb577eff27d04f609b04622190fb.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/advance_search_structure-ec89bb577eff27d04f609b04622190fb.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/advance_search_structure.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/advance_search_structure.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/ajaxify_advance_search-671859a5309a23a31d156797b8615380.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/ajaxify_advance_search-671859a5309a23a31d156797b8615380.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/ajaxify_advance_search.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/ajaxify_advance_search.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/build_first_row-38fefe1587a36c46a771a9e5602e1d5a.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/build_first_row-38fefe1587a36c46a771a9e5602e1d5a.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/build_first_row.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/build_first_row.js.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Pulsefy.iml" afterPath="$PROJECT_DIR$/.idea/Pulsefy.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Development__Pulsefy.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Development__Pulsefy.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Production__Pulsefy.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Production__Pulsefy.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/spec.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/spec.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/test.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/misc/drop_down_change-79b1021a7250f3a0503cdee1d107aad0.js.gz" afterPath="$PROJECT_DIR$/public/assets/misc/drop_down_change-79b1021a7250f3a0503cdee1d107aad0.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/misc/drop_down_change.js.gz" afterPath="$PROJECT_DIR$/public/assets/misc/drop_down_change.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/event_bindings-ada4c7f8069528ff0995312d34081899.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/event_bindings-ada4c7f8069528ff0995312d34081899.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/event_bindings.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/event_bindings.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/global_ajax_setting-333c0db59da4053199f47993bea98b3e.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/global_ajax_setting-333c0db59da4053199f47993bea98b3e.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/global_ajax_setting.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/global_ajax_setting.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-1.4.2-dbe18565f6635ee45078e9a30bd5adde.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery-1.4.2-dbe18565f6635ee45078e9a30bd5adde.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-1.4.2.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery-1.4.2.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom-750462aaa195778d7f63374894a762af.css.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom-750462aaa195778d7f63374894a762af.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom.css.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom.min-81f7d59f02abe4cdac222aadfd140fc1.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom.min-81f7d59f02abe4cdac222aadfd140fc1.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom.min.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom.min.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery.ba-isjquery-dce607a662510ea5b08591b63fc0649e.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery.ba-isjquery-dce607a662510ea5b08591b63fc0649e.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery.ba-isjquery.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery.ba-isjquery.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery_form-a9856a4263570425ae561d65894336ea.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery_form-a9856a4263570425ae561d65894336ea.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery_form.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery_form.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/misc/js_util-d9097b7321c381b3c87862183073af74.js.gz" afterPath="$PROJECT_DIR$/public/assets/misc/js_util-d9097b7321c381b3c87862183073af74.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/misc/js_util.js.gz" afterPath="$PROJECT_DIR$/public/assets/misc/js_util.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/log-ccfbc3304787037899d5b0e6e0ded705.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/log-ccfbc3304787037899d5b0e6e0ded705.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/log.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/log.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/misc/quick_search_input_focus-8a9d39a04bc06deb73d63b0e2f23350c.js.gz" afterPath="$PROJECT_DIR$/public/assets/misc/quick_search_input_focus-8a9d39a04bc06deb73d63b0e2f23350c.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/misc/quick_search_input_focus.js.gz" afterPath="$PROJECT_DIR$/public/assets/misc/quick_search_input_focus.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/rails-aa7671ea91fac9027ef5ac1ec7ce919d.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/rails-aa7671ea91fac9027ef5ac1ec7ce919d.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/rails.js.gz" afterPath="$PROJECT_DIR$/public/assets/vendor/rails.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/analytics/report-748ea29a17b132d26fed5263875dad98.js.gz" afterPath="$PROJECT_DIR$/public/assets/analytics/report-748ea29a17b132d26fed5263875dad98.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/analytics/report.js.gz" afterPath="$PROJECT_DIR$/public/assets/analytics/report.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/sortby-0c7f830c9640fdf3d590aed19e272cba.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/sortby-0c7f830c9640fdf3d590aed19e272cba.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/sortby.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/sortby.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CCE/C60/sprockets%2F048f58c3934761fb9e9d98db675c2338" afterPath="$PROJECT_DIR$/tmp/cache/assets/CCE/C60/sprockets%2F048f58c3934761fb9e9d98db675c2338" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D5D/230/sprockets%2F04a95307ad2dcfbbcd73d7347a500f15" afterPath="$PROJECT_DIR$/tmp/cache/assets/D5D/230/sprockets%2F04a95307ad2dcfbbcd73d7347a500f15" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D97/0B0/sprockets%2F0502fd5284b055e4edbc8f6be0f32f3e" afterPath="$PROJECT_DIR$/tmp/cache/assets/D97/0B0/sprockets%2F0502fd5284b055e4edbc8f6be0f32f3e" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/C76/6F0/sprockets%2F0814295b561eb20853ae75128c17d5d1" afterPath="$PROJECT_DIR$/tmp/cache/assets/C76/6F0/sprockets%2F0814295b561eb20853ae75128c17d5d1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D36/7F0/sprockets%2F0b630f12e6f2210d10e8ae0fb99f6e58" afterPath="$PROJECT_DIR$/tmp/cache/assets/D36/7F0/sprockets%2F0b630f12e6f2210d10e8ae0fb99f6e58" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CE4/030/sprockets%2F0c2be9aca0309e59707d7341e8985c71" afterPath="$PROJECT_DIR$/tmp/cache/assets/CE4/030/sprockets%2F0c2be9aca0309e59707d7341e8985c71" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D3A/220/sprockets%2F0e9092d429ba45126c6baa9ef506d35e" afterPath="$PROJECT_DIR$/tmp/cache/assets/D3A/220/sprockets%2F0e9092d429ba45126c6baa9ef506d35e" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/E58/9B0/sprockets%2F0eaedb8afac6c30ebae80e1a3877c95f" afterPath="$PROJECT_DIR$/tmp/cache/assets/E58/9B0/sprockets%2F0eaedb8afac6c30ebae80e1a3877c95f" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/C9C/F70/sprockets%2F0f7567883cbd4838785387f7d2d9b303" afterPath="$PROJECT_DIR$/tmp/cache/assets/C9C/F70/sprockets%2F0f7567883cbd4838785387f7d2d9b303" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D22/E60/sprockets%2F0f773f6bc4f83b76a79067ee2f4a6069" afterPath="$PROJECT_DIR$/tmp/cache/assets/D22/E60/sprockets%2F0f773f6bc4f83b76a79067ee2f4a6069" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/C8B/960/sprockets%2F0fa4c08d2974b878a842843f2919315d" afterPath="$PROJECT_DIR$/tmp/cache/assets/C8B/960/sprockets%2F0fa4c08d2974b878a842843f2919315d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CEA/BA0/sprockets%2F11318143b613b028d24ab80eba3d4b4b" afterPath="$PROJECT_DIR$/tmp/cache/assets/CEA/BA0/sprockets%2F11318143b613b028d24ab80eba3d4b4b" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CDF/890/sprockets%2F1380c8a9a90c9434c33ea3a2b759546f" afterPath="$PROJECT_DIR$/tmp/cache/assets/CDF/890/sprockets%2F1380c8a9a90c9434c33ea3a2b759546f" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D32/A10/sprockets%2F13fe41fee1fe35b49d145bcc06610705" afterPath="$PROJECT_DIR$/tmp/cache/assets/D32/A10/sprockets%2F13fe41fee1fe35b49d145bcc06610705" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/C5F/CE0/sprockets%2F14661a37b205777f914f63a9939e75e0" afterPath="$PROJECT_DIR$/tmp/cache/assets/C5F/CE0/sprockets%2F14661a37b205777f914f63a9939e75e0" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CCA/FE0/sprockets%2F14ae08d36d117d31d345639a3f0b32f0" afterPath="$PROJECT_DIR$/tmp/cache/assets/CCA/FE0/sprockets%2F14ae08d36d117d31d345639a3f0b32f0" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D82/050/sprockets%2F14d09ccd02dcb5ca02930d04c1d75e2e" afterPath="$PROJECT_DIR$/tmp/cache/assets/D82/050/sprockets%2F14d09ccd02dcb5ca02930d04c1d75e2e" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D96/840/sprockets%2F15b44cbf2c8cf0f3e5b0e94ad4752a28" afterPath="$PROJECT_DIR$/tmp/cache/assets/D96/840/sprockets%2F15b44cbf2c8cf0f3e5b0e94ad4752a28" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/C61/9C0/sprockets%2F167f37270e79f86775845b2202206fef" afterPath="$PROJECT_DIR$/tmp/cache/assets/C61/9C0/sprockets%2F167f37270e79f86775845b2202206fef" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CE1/1D0/sprockets%2F17ad51eeb41474aa9a117659c861e756" afterPath="$PROJECT_DIR$/tmp/cache/assets/CE1/1D0/sprockets%2F17ad51eeb41474aa9a117659c861e756" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CE2/2C0/sprockets%2F1909ae31513590b3ce5f4ce7624771ff" afterPath="$PROJECT_DIR$/tmp/cache/assets/CE2/2C0/sprockets%2F1909ae31513590b3ce5f4ce7624771ff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DD6/550/sprockets%2F19d8652d5ccce252bf60a99ceedd7f22" afterPath="$PROJECT_DIR$/tmp/cache/assets/DD6/550/sprockets%2F19d8652d5ccce252bf60a99ceedd7f22" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CBE/7E0/sprockets%2F1a574a6429978d36d71d435d6b8ad169" afterPath="$PROJECT_DIR$/tmp/cache/assets/CBE/7E0/sprockets%2F1a574a6429978d36d71d435d6b8ad169" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D03/FF0/sprockets%2F1b2da255e522c27711d65fd2e6f071f4" afterPath="$PROJECT_DIR$/tmp/cache/assets/D03/FF0/sprockets%2F1b2da255e522c27711d65fd2e6f071f4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D02/AC0/sprockets%2F1e33c5574c9731fbb064f50baa4038f3" afterPath="$PROJECT_DIR$/tmp/cache/assets/D02/AC0/sprockets%2F1e33c5574c9731fbb064f50baa4038f3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D01/390/sprockets%2F1e3d0f7911da3f4151c2232678fc44da" afterPath="$PROJECT_DIR$/tmp/cache/assets/D01/390/sprockets%2F1e3d0f7911da3f4151c2232678fc44da" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DFD/7E0/sprockets%2F1f3312521fc8ef6e3cd36b6e6dcafaf7" afterPath="$PROJECT_DIR$/tmp/cache/assets/DFD/7E0/sprockets%2F1f3312521fc8ef6e3cd36b6e6dcafaf7" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D91/780/sprockets%2F23fbbb2e025fc3bd9263281e4b6a34ff" afterPath="$PROJECT_DIR$/tmp/cache/assets/D91/780/sprockets%2F23fbbb2e025fc3bd9263281e4b6a34ff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D79/2A0/sprockets%2F249759b3865bf1d67ef2a7bdaff615b1" afterPath="$PROJECT_DIR$/tmp/cache/assets/D79/2A0/sprockets%2F249759b3865bf1d67ef2a7bdaff615b1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CDB/910/sprockets%2F26098b294d10eec3e946bb124334e5e4" afterPath="$PROJECT_DIR$/tmp/cache/assets/CDB/910/sprockets%2F26098b294d10eec3e946bb124334e5e4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D6B/AF0/sprockets%2F270f31b73d6ad1ed46ea283339dfde80" afterPath="$PROJECT_DIR$/tmp/cache/assets/D6B/AF0/sprockets%2F270f31b73d6ad1ed46ea283339dfde80" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/C7A/B10/sprockets%2F27cc7f236cd5324483133a3fe1652807" afterPath="$PROJECT_DIR$/tmp/cache/assets/C7A/B10/sprockets%2F27cc7f236cd5324483133a3fe1652807" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D56/620/sprockets%2F2aeaadd4f73a33623b600491b4fc127c" afterPath="$PROJECT_DIR$/tmp/cache/assets/D56/620/sprockets%2F2aeaadd4f73a33623b600491b4fc127c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D9C/CC0/sprockets%2F2b1e2dfe44af40b5155879a6df40fe2f" afterPath="$PROJECT_DIR$/tmp/cache/assets/D9C/CC0/sprockets%2F2b1e2dfe44af40b5155879a6df40fe2f" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D12/FE0/sprockets%2F2dd79167240fabd625a309e85d29b85a" afterPath="$PROJECT_DIR$/tmp/cache/assets/D12/FE0/sprockets%2F2dd79167240fabd625a309e85d29b85a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CEC/D50/sprockets%2F2decbb8320f68c3884139d9b058b7692" afterPath="$PROJECT_DIR$/tmp/cache/assets/CEC/D50/sprockets%2F2decbb8320f68c3884139d9b058b7692" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/E04/890/sprockets%2F2f5173deea6c795b8fdde723bb4b63af" afterPath="$PROJECT_DIR$/tmp/cache/assets/E04/890/sprockets%2F2f5173deea6c795b8fdde723bb4b63af" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CF1/080/sprockets%2F2f5f9f546c91c55f88f137c8c20912a6" afterPath="$PROJECT_DIR$/tmp/cache/assets/CF1/080/sprockets%2F2f5f9f546c91c55f88f137c8c20912a6" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D64/AA0/sprockets%2F2f7abbd2e766612d2c5d17a2805da93b" afterPath="$PROJECT_DIR$/tmp/cache/assets/D64/AA0/sprockets%2F2f7abbd2e766612d2c5d17a2805da93b" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CDF/770/sprockets%2F2fd3b9e6803df96e65852fb787698985" afterPath="$PROJECT_DIR$/tmp/cache/assets/CDF/770/sprockets%2F2fd3b9e6803df96e65852fb787698985" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D5B/5A0/sprockets%2F30a0ec614f78cb8f67c207af104dbb12" afterPath="$PROJECT_DIR$/tmp/cache/assets/D5B/5A0/sprockets%2F30a0ec614f78cb8f67c207af104dbb12" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CE3/780/sprockets%2F3187eea1b216962f88bb46d67a4e4252" afterPath="$PROJECT_DIR$/tmp/cache/assets/CE3/780/sprockets%2F3187eea1b216962f88bb46d67a4e4252" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D14/440/sprockets%2F31d5361bea77d91ffa7b741984844d1a" afterPath="$PROJECT_DIR$/tmp/cache/assets/D14/440/sprockets%2F31d5361bea77d91ffa7b741984844d1a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CEF/860/sprockets%2F336ad0d220f6e91f1ecb443015e240a1" afterPath="$PROJECT_DIR$/tmp/cache/assets/CEF/860/sprockets%2F336ad0d220f6e91f1ecb443015e240a1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D6C/830/sprockets%2F345a12dc80f94f95ce70aef1ddc31429" afterPath="$PROJECT_DIR$/tmp/cache/assets/D6C/830/sprockets%2F345a12dc80f94f95ce70aef1ddc31429" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DA6/5A0/sprockets%2F34bb47a5d74e6ee8a8d739136c6cfc0c" afterPath="$PROJECT_DIR$/tmp/cache/assets/DA6/5A0/sprockets%2F34bb47a5d74e6ee8a8d739136c6cfc0c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CD8/370/sprockets%2F357970feca3ac29060c1e3861e2c0953" afterPath="$PROJECT_DIR$/tmp/cache/assets/CD8/370/sprockets%2F357970feca3ac29060c1e3861e2c0953" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CFE/D80/sprockets%2F35a715cf12e5b741e43c01e0cc25e674" afterPath="$PROJECT_DIR$/tmp/cache/assets/CFE/D80/sprockets%2F35a715cf12e5b741e43c01e0cc25e674" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D6E/7B0/sprockets%2F36c6c97be4bb70a8e5dd35ce203c8264" afterPath="$PROJECT_DIR$/tmp/cache/assets/D6E/7B0/sprockets%2F36c6c97be4bb70a8e5dd35ce203c8264" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CE8/250/sprockets%2F39b0cbe1864236df64d785a816408ee4" afterPath="$PROJECT_DIR$/tmp/cache/assets/CE8/250/sprockets%2F39b0cbe1864236df64d785a816408ee4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D66/BF0/sprockets%2F39db0bfa7c8a322d982a1b380f5e31e6" afterPath="$PROJECT_DIR$/tmp/cache/assets/D66/BF0/sprockets%2F39db0bfa7c8a322d982a1b380f5e31e6" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D5E/AA0/sprockets%2F3b04be76d9ad2aa80cd6d73ad5616410" afterPath="$PROJECT_DIR$/tmp/cache/assets/D5E/AA0/sprockets%2F3b04be76d9ad2aa80cd6d73ad5616410" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CBC/410/sprockets%2F3d18a2f7c64047c68a6c7e805295a649" afterPath="$PROJECT_DIR$/tmp/cache/assets/CBC/410/sprockets%2F3d18a2f7c64047c68a6c7e805295a649" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D1B/650/sprockets%2F3dda550c35022341e35db80d4ad3e10a" afterPath="$PROJECT_DIR$/tmp/cache/assets/D1B/650/sprockets%2F3dda550c35022341e35db80d4ad3e10a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CDA/9E0/sprockets%2F40981c761c5fe54a2de7d87a10622c33" afterPath="$PROJECT_DIR$/tmp/cache/assets/CDA/9E0/sprockets%2F40981c761c5fe54a2de7d87a10622c33" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DD3/E40/sprockets%2F422883c3eaa51ff98daff925d50c2edd" afterPath="$PROJECT_DIR$/tmp/cache/assets/DD3/E40/sprockets%2F422883c3eaa51ff98daff925d50c2edd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D5C/D80/sprockets%2F452a09b1bd1bb311867b370f3ee92bfa" afterPath="$PROJECT_DIR$/tmp/cache/assets/D5C/D80/sprockets%2F452a09b1bd1bb311867b370f3ee92bfa" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D53/D10/sprockets%2F46a2a60c8a58ba333c2ebc25a422d1d6" afterPath="$PROJECT_DIR$/tmp/cache/assets/D53/D10/sprockets%2F46a2a60c8a58ba333c2ebc25a422d1d6" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D18/840/sprockets%2F475fc8fe60416bb4826e7a4281e991ab" afterPath="$PROJECT_DIR$/tmp/cache/assets/D18/840/sprockets%2F475fc8fe60416bb4826e7a4281e991ab" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D7C/BF0/sprockets%2F49fda54f6d410ff75fec630faf765192" afterPath="$PROJECT_DIR$/tmp/cache/assets/D7C/BF0/sprockets%2F49fda54f6d410ff75fec630faf765192" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D78/D20/sprockets%2F4ac38aeda7e3708248ec0547fd89e6a3" afterPath="$PROJECT_DIR$/tmp/cache/assets/D78/D20/sprockets%2F4ac38aeda7e3708248ec0547fd89e6a3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/E36/D70/sprockets%2F4adbdf5fa88cbb73b35cc8778da48f2a" afterPath="$PROJECT_DIR$/tmp/cache/assets/E36/D70/sprockets%2F4adbdf5fa88cbb73b35cc8778da48f2a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CE8/9C0/sprockets%2F4ae50b9476a1c82694637b7cc75424fd" afterPath="$PROJECT_DIR$/tmp/cache/assets/CE8/9C0/sprockets%2F4ae50b9476a1c82694637b7cc75424fd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D57/B40/sprockets%2F4b382c8d3a9dad8616b9f9819f19de63" afterPath="$PROJECT_DIR$/tmp/cache/assets/D57/B40/sprockets%2F4b382c8d3a9dad8616b9f9819f19de63" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CE9/C40/sprockets%2F4b789b482ab69d31b1106e8389c54de5" afterPath="$PROJECT_DIR$/tmp/cache/assets/CE9/C40/sprockets%2F4b789b482ab69d31b1106e8389c54de5" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D39/370/sprockets%2F4c38c07eb8410dfc2972173e25e44bcc" afterPath="$PROJECT_DIR$/tmp/cache/assets/D39/370/sprockets%2F4c38c07eb8410dfc2972173e25e44bcc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/C81/7C0/sprockets%2F4e26856326027990a4c459cf253c1c1f" afterPath="$PROJECT_DIR$/tmp/cache/assets/C81/7C0/sprockets%2F4e26856326027990a4c459cf253c1c1f" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D3D/230/sprockets%2F4f9d608125005ff2d07d8021fa8fefd3" afterPath="$PROJECT_DIR$/tmp/cache/assets/D3D/230/sprockets%2F4f9d608125005ff2d07d8021fa8fefd3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D35/B90/sprockets%2F4fd6690d07ee9b22219b2f6aa2b6a333" afterPath="$PROJECT_DIR$/tmp/cache/assets/D35/B90/sprockets%2F4fd6690d07ee9b22219b2f6aa2b6a333" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D4E/D10/sprockets%2F50c9f62b7eac4e1c656e1739d88493ae" afterPath="$PROJECT_DIR$/tmp/cache/assets/D4E/D10/sprockets%2F50c9f62b7eac4e1c656e1739d88493ae" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DCB/550/sprockets%2F513c71fa0f3ed5b3ac9d5325ecacd897" afterPath="$PROJECT_DIR$/tmp/cache/assets/DCB/550/sprockets%2F513c71fa0f3ed5b3ac9d5325ecacd897" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DC5/6C0/sprockets%2F519e0a6fe1cf6fa80e2ff611bb1b9d32" afterPath="$PROJECT_DIR$/tmp/cache/assets/DC5/6C0/sprockets%2F519e0a6fe1cf6fa80e2ff611bb1b9d32" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D2F/9B0/sprockets%2F51b50544028f963af82abd371cfcea20" afterPath="$PROJECT_DIR$/tmp/cache/assets/D2F/9B0/sprockets%2F51b50544028f963af82abd371cfcea20" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D50/840/sprockets%2F530f82c93f22aace9c96c7964ccb4849" afterPath="$PROJECT_DIR$/tmp/cache/assets/D50/840/sprockets%2F530f82c93f22aace9c96c7964ccb4849" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CB2/B00/sprockets%2F53a494e67312e067961a51e7155fbee2" afterPath="$PROJECT_DIR$/tmp/cache/assets/CB2/B00/sprockets%2F53a494e67312e067961a51e7155fbee2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D64/990/sprockets%2F5440f0cc791f0e451513bff97cd11dad" afterPath="$PROJECT_DIR$/tmp/cache/assets/D64/990/sprockets%2F5440f0cc791f0e451513bff97cd11dad" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D8C/9E0/sprockets%2F5457ec21dff3267ce0ab3347af2a13ac" afterPath="$PROJECT_DIR$/tmp/cache/assets/D8C/9E0/sprockets%2F5457ec21dff3267ce0ab3347af2a13ac" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/EBA/440/sprockets%2F55f1bfde813bece595b19adeafcceae0" afterPath="$PROJECT_DIR$/tmp/cache/assets/EBA/440/sprockets%2F55f1bfde813bece595b19adeafcceae0" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D63/2C0/sprockets%2F59b8b181b200ae2bf4d0218cd1cd8f87" afterPath="$PROJECT_DIR$/tmp/cache/assets/D63/2C0/sprockets%2F59b8b181b200ae2bf4d0218cd1cd8f87" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D15/0A0/sprockets%2F59d08460f807e9ba03b5fd177f1f2d45" afterPath="$PROJECT_DIR$/tmp/cache/assets/D15/0A0/sprockets%2F59d08460f807e9ba03b5fd177f1f2d45" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/C40/600/sprockets%2F5a2d12232e216c0e55d4661671e74047" afterPath="$PROJECT_DIR$/tmp/cache/assets/C40/600/sprockets%2F5a2d12232e216c0e55d4661671e74047" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CB1/CC0/sprockets%2F5a751c20b573738de86b19c20498a55b" afterPath="$PROJECT_DIR$/tmp/cache/assets/CB1/CC0/sprockets%2F5a751c20b573738de86b19c20498a55b" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D3C/0A0/sprockets%2F5b7ad43024f93b84d7a72d046ee0d48c" afterPath="$PROJECT_DIR$/tmp/cache/assets/D3C/0A0/sprockets%2F5b7ad43024f93b84d7a72d046ee0d48c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D90/740/sprockets%2F5bc660adcb14271f272d54bd35de53ce" afterPath="$PROJECT_DIR$/tmp/cache/assets/D90/740/sprockets%2F5bc660adcb14271f272d54bd35de53ce" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D49/6C0/sprockets%2F5c1dbda5b9f1f5fb3964834973e09f21" afterPath="$PROJECT_DIR$/tmp/cache/assets/D49/6C0/sprockets%2F5c1dbda5b9f1f5fb3964834973e09f21" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/C77/BE0/sprockets%2F5d5285ba9b0935557e99770c8996c478" afterPath="$PROJECT_DIR$/tmp/cache/assets/C77/BE0/sprockets%2F5d5285ba9b0935557e99770c8996c478" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DA5/970/sprockets%2F5dd0f221bee4bd9e7f99d38da18f6221" afterPath="$PROJECT_DIR$/tmp/cache/assets/DA5/970/sprockets%2F5dd0f221bee4bd9e7f99d38da18f6221" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/E05/FE0/sprockets%2F609bddc469cc48faf5e6d17cf2baa637" afterPath="$PROJECT_DIR$/tmp/cache/assets/E05/FE0/sprockets%2F609bddc469cc48faf5e6d17cf2baa637" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/C74/DB0/sprockets%2F623a451412ac0b692d7601797d33f63b" afterPath="$PROJECT_DIR$/tmp/cache/assets/C74/DB0/sprockets%2F623a451412ac0b692d7601797d33f63b" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CDA/B40/sprockets%2F67230e16b8d004922e760fdd285ce71b" afterPath="$PROJECT_DIR$/tmp/cache/assets/CDA/B40/sprockets%2F67230e16b8d004922e760fdd285ce71b" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CCA/E40/sprockets%2F6b0322ae3074ac30cc303c52946da778" afterPath="$PROJECT_DIR$/tmp/cache/assets/CCA/E40/sprockets%2F6b0322ae3074ac30cc303c52946da778" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D39/1E0/sprockets%2F6b6def21479c04da04974f6ac19d3c10" afterPath="$PROJECT_DIR$/tmp/cache/assets/D39/1E0/sprockets%2F6b6def21479c04da04974f6ac19d3c10" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D4E/8B0/sprockets%2F71f08892e698ccfba55bf571ed58330c" afterPath="$PROJECT_DIR$/tmp/cache/assets/D4E/8B0/sprockets%2F71f08892e698ccfba55bf571ed58330c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D40/CB0/sprockets%2F74127c031df4d93e82f5ccd909be82a2" afterPath="$PROJECT_DIR$/tmp/cache/assets/D40/CB0/sprockets%2F74127c031df4d93e82f5ccd909be82a2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D51/050/sprockets%2F75b00c88ee59cc6fe9413672f65ded52" afterPath="$PROJECT_DIR$/tmp/cache/assets/D51/050/sprockets%2F75b00c88ee59cc6fe9413672f65ded52" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CB2/2C0/sprockets%2F761a8577ca99a74170b4b484f05bd405" afterPath="$PROJECT_DIR$/tmp/cache/assets/CB2/2C0/sprockets%2F761a8577ca99a74170b4b484f05bd405" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CEF/6F0/sprockets%2F767bbd4d4f7d913b53293c83f774c156" afterPath="$PROJECT_DIR$/tmp/cache/assets/CEF/6F0/sprockets%2F767bbd4d4f7d913b53293c83f774c156" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D70/160/sprockets%2F7994b35ceac7166527fb5d42cea3e02e" afterPath="$PROJECT_DIR$/tmp/cache/assets/D70/160/sprockets%2F7994b35ceac7166527fb5d42cea3e02e" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/E05/950/sprockets%2F79f3da40c956ee4c6c6ef33541ccfdbc" afterPath="$PROJECT_DIR$/tmp/cache/assets/E05/950/sprockets%2F79f3da40c956ee4c6c6ef33541ccfdbc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D46/6C0/sprockets%2F7a7808b0e0871df20ea3283c9a9f7d9b" afterPath="$PROJECT_DIR$/tmp/cache/assets/D46/6C0/sprockets%2F7a7808b0e0871df20ea3283c9a9f7d9b" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D7A/390/sprockets%2F7b7c467c0054e9ac3d64446d957fdade" afterPath="$PROJECT_DIR$/tmp/cache/assets/D7A/390/sprockets%2F7b7c467c0054e9ac3d64446d957fdade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D81/770/sprockets%2F7ca421f66fe9e604fff9b39a6eb37247" afterPath="$PROJECT_DIR$/tmp/cache/assets/D81/770/sprockets%2F7ca421f66fe9e604fff9b39a6eb37247" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DA4/AA0/sprockets%2F7ebb7eccab92635f3494bb05806c78af" afterPath="$PROJECT_DIR$/tmp/cache/assets/DA4/AA0/sprockets%2F7ebb7eccab92635f3494bb05806c78af" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CE1/9A0/sprockets%2F7ed5d630a06d09703ed195f2762a547e" afterPath="$PROJECT_DIR$/tmp/cache/assets/CE1/9A0/sprockets%2F7ed5d630a06d09703ed195f2762a547e" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/C3C/EC0/sprockets%2F80c3018883b6d51b36900524d813b0a2" afterPath="$PROJECT_DIR$/tmp/cache/assets/C3C/EC0/sprockets%2F80c3018883b6d51b36900524d813b0a2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/C6F/930/sprockets%2F8321da000d6861402327be4bd3f96183" afterPath="$PROJECT_DIR$/tmp/cache/assets/C6F/930/sprockets%2F8321da000d6861402327be4bd3f96183" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D59/C20/sprockets%2F86d8aa8193ec646bb286365e0ff96ef7" afterPath="$PROJECT_DIR$/tmp/cache/assets/D59/C20/sprockets%2F86d8aa8193ec646bb286365e0ff96ef7" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/C88/9F0/sprockets%2F86f5d85473e1345cc81642c462af6227" afterPath="$PROJECT_DIR$/tmp/cache/assets/C88/9F0/sprockets%2F86f5d85473e1345cc81642c462af6227" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D42/0E0/sprockets%2F8851b09a53c06f4daff22bf8b9b27680" afterPath="$PROJECT_DIR$/tmp/cache/assets/D42/0E0/sprockets%2F8851b09a53c06f4daff22bf8b9b27680" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CB0/490/sprockets%2F8863043a167ec9b29128ea7c83446b0a" afterPath="$PROJECT_DIR$/tmp/cache/assets/CB0/490/sprockets%2F8863043a167ec9b29128ea7c83446b0a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D58/640/sprockets%2F88d21aa64ae3d40b3c0ea3f703a1573f" afterPath="$PROJECT_DIR$/tmp/cache/assets/D58/640/sprockets%2F88d21aa64ae3d40b3c0ea3f703a1573f" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CAB/320/sprockets%2F89647977484757b1df92f79f222ed8f2" afterPath="$PROJECT_DIR$/tmp/cache/assets/CAB/320/sprockets%2F89647977484757b1df92f79f222ed8f2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D68/6C0/sprockets%2F8a487a6b5acc1ab63db1f505d946c265" afterPath="$PROJECT_DIR$/tmp/cache/assets/D68/6C0/sprockets%2F8a487a6b5acc1ab63db1f505d946c265" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/BEE/F30/sprockets%2F8a513b84610e793437436a91313b9128" afterPath="$PROJECT_DIR$/tmp/cache/assets/BEE/F30/sprockets%2F8a513b84610e793437436a91313b9128" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D18/490/sprockets%2F8a83fc322a788f9a1a91bd7ce2571448" afterPath="$PROJECT_DIR$/tmp/cache/assets/D18/490/sprockets%2F8a83fc322a788f9a1a91bd7ce2571448" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DE0/390/sprockets%2F8bacad6ca7824e7d25f99fbcf841a479" afterPath="$PROJECT_DIR$/tmp/cache/assets/DE0/390/sprockets%2F8bacad6ca7824e7d25f99fbcf841a479" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DA8/9E0/sprockets%2F8c53dd8f2b4c8a8471afa879f60db5a3" afterPath="$PROJECT_DIR$/tmp/cache/assets/DA8/9E0/sprockets%2F8c53dd8f2b4c8a8471afa879f60db5a3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D75/5F0/sprockets%2F8cc83d08bbac7e92244d7bb99f42605c" afterPath="$PROJECT_DIR$/tmp/cache/assets/D75/5F0/sprockets%2F8cc83d08bbac7e92244d7bb99f42605c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/E25/E90/sprockets%2F8dfe0ba1bfe8378b02fe4b55ba0eae19" afterPath="$PROJECT_DIR$/tmp/cache/assets/E25/E90/sprockets%2F8dfe0ba1bfe8378b02fe4b55ba0eae19" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D7E/840/sprockets%2F917c1bee5deb9b49e74c791ae547e244" afterPath="$PROJECT_DIR$/tmp/cache/assets/D7E/840/sprockets%2F917c1bee5deb9b49e74c791ae547e244" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D74/E80/sprockets%2F92efdc264fb49a56b4ec184621a099fa" afterPath="$PROJECT_DIR$/tmp/cache/assets/D74/E80/sprockets%2F92efdc264fb49a56b4ec184621a099fa" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D94/B40/sprockets%2F934c030d65512cf3c8a986beac0a3fbe" afterPath="$PROJECT_DIR$/tmp/cache/assets/D94/B40/sprockets%2F934c030d65512cf3c8a986beac0a3fbe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/C9A/530/sprockets%2F96ef04f247a8778476577d6520dda619" afterPath="$PROJECT_DIR$/tmp/cache/assets/C9A/530/sprockets%2F96ef04f247a8778476577d6520dda619" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D74/F40/sprockets%2F973e93cffdac49b052f128fe357f210c" afterPath="$PROJECT_DIR$/tmp/cache/assets/D74/F40/sprockets%2F973e93cffdac49b052f128fe357f210c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DF2/870/sprockets%2F981dba84e2f1da0c9c42c23ab6fd70fa" afterPath="$PROJECT_DIR$/tmp/cache/assets/DF2/870/sprockets%2F981dba84e2f1da0c9c42c23ab6fd70fa" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/C8B/AA0/sprockets%2F982b10587b1b3a6f40377269682cf65f" afterPath="$PROJECT_DIR$/tmp/cache/assets/C8B/AA0/sprockets%2F982b10587b1b3a6f40377269682cf65f" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CE7/CA0/sprockets%2F9a038be696cbcf0834d1639950b1946b" afterPath="$PROJECT_DIR$/tmp/cache/assets/CE7/CA0/sprockets%2F9a038be696cbcf0834d1639950b1946b" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/E64/270/sprockets%2F9aea583c87dcdb466f1cea3e6bde4c4e" afterPath="$PROJECT_DIR$/tmp/cache/assets/E64/270/sprockets%2F9aea583c87dcdb466f1cea3e6bde4c4e" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CA3/AA0/sprockets%2F9b839059dfc9c01459c968875c74b457" afterPath="$PROJECT_DIR$/tmp/cache/assets/CA3/AA0/sprockets%2F9b839059dfc9c01459c968875c74b457" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D07/280/sprockets%2F9d1b5a0da7af4743607e1075b525ea85" afterPath="$PROJECT_DIR$/tmp/cache/assets/D07/280/sprockets%2F9d1b5a0da7af4743607e1075b525ea85" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D78/480/sprockets%2F9e60bacaf1424290e76e58e8772ddae6" afterPath="$PROJECT_DIR$/tmp/cache/assets/D78/480/sprockets%2F9e60bacaf1424290e76e58e8772ddae6" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DD8/540/sprockets%2F9f32ab3a48c70d5a8e9d82d1dec6bd88" afterPath="$PROJECT_DIR$/tmp/cache/assets/DD8/540/sprockets%2F9f32ab3a48c70d5a8e9d82d1dec6bd88" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D45/130/sprockets%2Fa0489d45d9289af5cca0d50775521edf" afterPath="$PROJECT_DIR$/tmp/cache/assets/D45/130/sprockets%2Fa0489d45d9289af5cca0d50775521edf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/C51/CB0/sprockets%2Fa08a46d46f5409251634a296b3864f43" afterPath="$PROJECT_DIR$/tmp/cache/assets/C51/CB0/sprockets%2Fa08a46d46f5409251634a296b3864f43" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D41/620/sprockets%2Fa17a680ad7fb99a28d327728cd2f0e25" afterPath="$PROJECT_DIR$/tmp/cache/assets/D41/620/sprockets%2Fa17a680ad7fb99a28d327728cd2f0e25" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D50/EA0/sprockets%2Fa277ee5564b48cf2c86942b8e90ad86a" afterPath="$PROJECT_DIR$/tmp/cache/assets/D50/EA0/sprockets%2Fa277ee5564b48cf2c86942b8e90ad86a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CF1/270/sprockets%2Fa2c1512bf0db2d2b124d661349530f4d" afterPath="$PROJECT_DIR$/tmp/cache/assets/CF1/270/sprockets%2Fa2c1512bf0db2d2b124d661349530f4d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/C7D/660/sprockets%2Fa37a701866f4325759c24564ad7e203b" afterPath="$PROJECT_DIR$/tmp/cache/assets/C7D/660/sprockets%2Fa37a701866f4325759c24564ad7e203b" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/E11/970/sprockets%2Fa5bcd9e8a7194f2d2f17f8e0facf9d68" afterPath="$PROJECT_DIR$/tmp/cache/assets/E11/970/sprockets%2Fa5bcd9e8a7194f2d2f17f8e0facf9d68" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/E35/980/sprockets%2Fa5beac77f747ffbc71d32edecf38904a" afterPath="$PROJECT_DIR$/tmp/cache/assets/E35/980/sprockets%2Fa5beac77f747ffbc71d32edecf38904a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CFC/990/sprockets%2Fa5f68c4ba9a321e001f2545a3a627a38" afterPath="$PROJECT_DIR$/tmp/cache/assets/CFC/990/sprockets%2Fa5f68c4ba9a321e001f2545a3a627a38" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D34/380/sprockets%2Fa6438011061a33df8d5c638f0dfa48cc" afterPath="$PROJECT_DIR$/tmp/cache/assets/D34/380/sprockets%2Fa6438011061a33df8d5c638f0dfa48cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CB1/790/sprockets%2Fa67442bd3c0384155a1af8475c4589c6" afterPath="$PROJECT_DIR$/tmp/cache/assets/CB1/790/sprockets%2Fa67442bd3c0384155a1af8475c4589c6" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D32/B30/sprockets%2Fa7d24d44bd785314415b27f0ecf2be31" afterPath="$PROJECT_DIR$/tmp/cache/assets/D32/B30/sprockets%2Fa7d24d44bd785314415b27f0ecf2be31" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D14/F30/sprockets%2Fa9a29d4c858060de478e9c23b33e800e" afterPath="$PROJECT_DIR$/tmp/cache/assets/D14/F30/sprockets%2Fa9a29d4c858060de478e9c23b33e800e" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D8F/4F0/sprockets%2Fa9b03607b0a7d4a5980aafaa085ec85b" afterPath="$PROJECT_DIR$/tmp/cache/assets/D8F/4F0/sprockets%2Fa9b03607b0a7d4a5980aafaa085ec85b" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D48/3D0/sprockets%2Faa7e2c398cc2ce8ce98618830550df15" afterPath="$PROJECT_DIR$/tmp/cache/assets/D48/3D0/sprockets%2Faa7e2c398cc2ce8ce98618830550df15" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CF0/380/sprockets%2Faab118d6f4c736852d693488a2873e7e" afterPath="$PROJECT_DIR$/tmp/cache/assets/CF0/380/sprockets%2Faab118d6f4c736852d693488a2873e7e" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D9F/DD0/sprockets%2Fabb3fec2eca0874139618374dcbb878c" afterPath="$PROJECT_DIR$/tmp/cache/assets/D9F/DD0/sprockets%2Fabb3fec2eca0874139618374dcbb878c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/C7B/DA0/sprockets%2Fad1834800259e0e07e6a31b298223e97" afterPath="$PROJECT_DIR$/tmp/cache/assets/C7B/DA0/sprockets%2Fad1834800259e0e07e6a31b298223e97" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D20/E90/sprockets%2Fad989dc2f7440a19edc476827258da37" afterPath="$PROJECT_DIR$/tmp/cache/assets/D20/E90/sprockets%2Fad989dc2f7440a19edc476827258da37" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DBD/700/sprockets%2Fad9e0ee7cf03c761dcb94c1adb103434" afterPath="$PROJECT_DIR$/tmp/cache/assets/DBD/700/sprockets%2Fad9e0ee7cf03c761dcb94c1adb103434" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D72/9D0/sprockets%2Faecae65565143f810fc3b19387fcda58" afterPath="$PROJECT_DIR$/tmp/cache/assets/D72/9D0/sprockets%2Faecae65565143f810fc3b19387fcda58" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DB7/950/sprockets%2Faf9effaa4f8497d3891c2f6c34e97b25" afterPath="$PROJECT_DIR$/tmp/cache/assets/DB7/950/sprockets%2Faf9effaa4f8497d3891c2f6c34e97b25" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D44/BC0/sprockets%2Faff152018a68c78fc652c027f82bff45" afterPath="$PROJECT_DIR$/tmp/cache/assets/D44/BC0/sprockets%2Faff152018a68c78fc652c027f82bff45" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DE8/910/sprockets%2Fb02dfce6dcb570b1dddd2118a4409d0f" afterPath="$PROJECT_DIR$/tmp/cache/assets/DE8/910/sprockets%2Fb02dfce6dcb570b1dddd2118a4409d0f" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D80/110/sprockets%2Fb1ea24eec93d501f850e9918399cdd9f" afterPath="$PROJECT_DIR$/tmp/cache/assets/D80/110/sprockets%2Fb1ea24eec93d501f850e9918399cdd9f" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/E7B/DA0/sprockets%2Fb303bf7ac78c009b0bfb33bf2ddbeefc" afterPath="$PROJECT_DIR$/tmp/cache/assets/E7B/DA0/sprockets%2Fb303bf7ac78c009b0bfb33bf2ddbeefc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D0B/C90/sprockets%2Fb4ee02f94e5a1a754a6307d6b667018d" afterPath="$PROJECT_DIR$/tmp/cache/assets/D0B/C90/sprockets%2Fb4ee02f94e5a1a754a6307d6b667018d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CA0/DB0/sprockets%2Fb8d42949e061501a753d0e3a8be12522" afterPath="$PROJECT_DIR$/tmp/cache/assets/CA0/DB0/sprockets%2Fb8d42949e061501a753d0e3a8be12522" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D3F/C40/sprockets%2Fb8e3f38ef4e01bd791f1958203d2a2a8" afterPath="$PROJECT_DIR$/tmp/cache/assets/D3F/C40/sprockets%2Fb8e3f38ef4e01bd791f1958203d2a2a8" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DAC/FD0/sprockets%2Fbaae655d213d8de88acd5d8367f837d3" afterPath="$PROJECT_DIR$/tmp/cache/assets/DAC/FD0/sprockets%2Fbaae655d213d8de88acd5d8367f837d3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D78/FE0/sprockets%2Fbb3b6c737b50846df349b52f98dbe16d" afterPath="$PROJECT_DIR$/tmp/cache/assets/D78/FE0/sprockets%2Fbb3b6c737b50846df349b52f98dbe16d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D87/7F0/sprockets%2Fbb60469768d6ff32cc82ee99bcc5c099" afterPath="$PROJECT_DIR$/tmp/cache/assets/D87/7F0/sprockets%2Fbb60469768d6ff32cc82ee99bcc5c099" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CC5/230/sprockets%2Fbb9913fa69289d55236c9c5b867215d6" afterPath="$PROJECT_DIR$/tmp/cache/assets/CC5/230/sprockets%2Fbb9913fa69289d55236c9c5b867215d6" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DDA/750/sprockets%2Fbccd7c588910fdccaeae83578815b2f6" afterPath="$PROJECT_DIR$/tmp/cache/assets/DDA/750/sprockets%2Fbccd7c588910fdccaeae83578815b2f6" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D43/7F0/sprockets%2Fbd7298b847064410f6f3cd08a3fb44ef" afterPath="$PROJECT_DIR$/tmp/cache/assets/D43/7F0/sprockets%2Fbd7298b847064410f6f3cd08a3fb44ef" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D72/450/sprockets%2Fbea5193070f77cf2f0a43673df8b84ec" afterPath="$PROJECT_DIR$/tmp/cache/assets/D72/450/sprockets%2Fbea5193070f77cf2f0a43673df8b84ec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D67/4C0/sprockets%2Fc18b25bbc8bcb5629a5a67846a35c23c" afterPath="$PROJECT_DIR$/tmp/cache/assets/D67/4C0/sprockets%2Fc18b25bbc8bcb5629a5a67846a35c23c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DBF/400/sprockets%2Fc1caa8180edd666cd3ce4c8d1fa12343" afterPath="$PROJECT_DIR$/tmp/cache/assets/DBF/400/sprockets%2Fc1caa8180edd666cd3ce4c8d1fa12343" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/E09/930/sprockets%2Fc3bcccfec0adf93a928be619ee254995" afterPath="$PROJECT_DIR$/tmp/cache/assets/E09/930/sprockets%2Fc3bcccfec0adf93a928be619ee254995" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D7B/910/sprockets%2Fc54dd46c528e62ff92cd8518c19ae9b0" afterPath="$PROJECT_DIR$/tmp/cache/assets/D7B/910/sprockets%2Fc54dd46c528e62ff92cd8518c19ae9b0" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CB4/480/sprockets%2Fc588085a6e707f4a54780541123cff2e" afterPath="$PROJECT_DIR$/tmp/cache/assets/CB4/480/sprockets%2Fc588085a6e707f4a54780541123cff2e" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CDF/7A0/sprockets%2Fc721a68f61ed4909b66e1121d4a1983e" afterPath="$PROJECT_DIR$/tmp/cache/assets/CDF/7A0/sprockets%2Fc721a68f61ed4909b66e1121d4a1983e" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D78/F10/sprockets%2Fc81a77308c5e0c2b8efc69bece538149" afterPath="$PROJECT_DIR$/tmp/cache/assets/D78/F10/sprockets%2Fc81a77308c5e0c2b8efc69bece538149" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DC9/550/sprockets%2Fca87b25f518ee5825ded9a170c2a2bbd" afterPath="$PROJECT_DIR$/tmp/cache/assets/DC9/550/sprockets%2Fca87b25f518ee5825ded9a170c2a2bbd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D40/B70/sprockets%2Fcb0830fe04f4d64fa8c65342b49593dc" afterPath="$PROJECT_DIR$/tmp/cache/assets/D40/B70/sprockets%2Fcb0830fe04f4d64fa8c65342b49593dc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D3F/220/sprockets%2Fcb24b9c62674051a8d55079c2fdfcb46" afterPath="$PROJECT_DIR$/tmp/cache/assets/D3F/220/sprockets%2Fcb24b9c62674051a8d55079c2fdfcb46" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D9E/AC0/sprockets%2Fcc04dfc8cd51c7bf1198bfde12731909" afterPath="$PROJECT_DIR$/tmp/cache/assets/D9E/AC0/sprockets%2Fcc04dfc8cd51c7bf1198bfde12731909" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D3B/630/sprockets%2Fcc713ef29a54b43a2926f55943bba6b4" afterPath="$PROJECT_DIR$/tmp/cache/assets/D3B/630/sprockets%2Fcc713ef29a54b43a2926f55943bba6b4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DD5/9E0/sprockets%2Fcdb7ecc2908fa796ed730ceb96dd1603" afterPath="$PROJECT_DIR$/tmp/cache/assets/DD5/9E0/sprockets%2Fcdb7ecc2908fa796ed730ceb96dd1603" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D6A/860/sprockets%2Fceb629610f75aa5eb4585e0dae09b516" afterPath="$PROJECT_DIR$/tmp/cache/assets/D6A/860/sprockets%2Fceb629610f75aa5eb4585e0dae09b516" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D34/B90/sprockets%2Fcfc5d6234a07a8d7d4230f2057e1b48c" afterPath="$PROJECT_DIR$/tmp/cache/assets/D34/B90/sprockets%2Fcfc5d6234a07a8d7d4230f2057e1b48c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DDC/400/sprockets%2Fcffd775d018f68ce5dba1ee0d951a994" afterPath="$PROJECT_DIR$/tmp/cache/assets/DDC/400/sprockets%2Fcffd775d018f68ce5dba1ee0d951a994" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DB5/F30/sprockets%2Fd02ba10da402e3b22b8dfa8c5da8772d" afterPath="$PROJECT_DIR$/tmp/cache/assets/DB5/F30/sprockets%2Fd02ba10da402e3b22b8dfa8c5da8772d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CE1/4F0/sprockets%2Fd0ec442095496c6ba586219b369b4c4b" afterPath="$PROJECT_DIR$/tmp/cache/assets/CE1/4F0/sprockets%2Fd0ec442095496c6ba586219b369b4c4b" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/C7F/C10/sprockets%2Fd124005583c218d8a16e1df2683a8588" afterPath="$PROJECT_DIR$/tmp/cache/assets/C7F/C10/sprockets%2Fd124005583c218d8a16e1df2683a8588" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DFA/F00/sprockets%2Fd215a44eb6ed9edcaba01ee658a77b92" afterPath="$PROJECT_DIR$/tmp/cache/assets/DFA/F00/sprockets%2Fd215a44eb6ed9edcaba01ee658a77b92" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CBF/A40/sprockets%2Fd2557d0757637b85e97f9dc72d008d11" afterPath="$PROJECT_DIR$/tmp/cache/assets/CBF/A40/sprockets%2Fd2557d0757637b85e97f9dc72d008d11" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D30/A30/sprockets%2Fd2c8e6ba1a9b655c53503ee410f5205d" afterPath="$PROJECT_DIR$/tmp/cache/assets/D30/A30/sprockets%2Fd2c8e6ba1a9b655c53503ee410f5205d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D31/DE0/sprockets%2Fd35b008382ecb7beed57250276a06c3b" afterPath="$PROJECT_DIR$/tmp/cache/assets/D31/DE0/sprockets%2Fd35b008382ecb7beed57250276a06c3b" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DA1/3D0/sprockets%2Fd400ac2fb5d0fdf95e7e15099eef2904" afterPath="$PROJECT_DIR$/tmp/cache/assets/DA1/3D0/sprockets%2Fd400ac2fb5d0fdf95e7e15099eef2904" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D41/860/sprockets%2Fd5f6cbc5c83e95ab3b932f350786133b" afterPath="$PROJECT_DIR$/tmp/cache/assets/D41/860/sprockets%2Fd5f6cbc5c83e95ab3b932f350786133b" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D39/6E0/sprockets%2Fd606aba336e0dd9aa8d086c7064e4743" afterPath="$PROJECT_DIR$/tmp/cache/assets/D39/6E0/sprockets%2Fd606aba336e0dd9aa8d086c7064e4743" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D0F/CE0/sprockets%2Fd6c7ce3ac277094b04690a43947ede22" afterPath="$PROJECT_DIR$/tmp/cache/assets/D0F/CE0/sprockets%2Fd6c7ce3ac277094b04690a43947ede22" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D6F/3B0/sprockets%2Fd76e2676ba6011469de3156bf75adbfa" afterPath="$PROJECT_DIR$/tmp/cache/assets/D6F/3B0/sprockets%2Fd76e2676ba6011469de3156bf75adbfa" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D5A/EA0/sprockets%2Fd771ace226fc8215a3572e0aa35bb0d6" afterPath="$PROJECT_DIR$/tmp/cache/assets/D5A/EA0/sprockets%2Fd771ace226fc8215a3572e0aa35bb0d6" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CF0/DA0/sprockets%2Fd7d5b37686831d37c4dd75e645f5e016" afterPath="$PROJECT_DIR$/tmp/cache/assets/CF0/DA0/sprockets%2Fd7d5b37686831d37c4dd75e645f5e016" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/E1F/0B0/sprockets%2Fd7e60a6aef0a94ffdbba027cb0c7a185" afterPath="$PROJECT_DIR$/tmp/cache/assets/E1F/0B0/sprockets%2Fd7e60a6aef0a94ffdbba027cb0c7a185" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D16/F00/sprockets%2Fd93c80b10a0c09a56beaac6d30001504" afterPath="$PROJECT_DIR$/tmp/cache/assets/D16/F00/sprockets%2Fd93c80b10a0c09a56beaac6d30001504" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D3B/CC0/sprockets%2Fd96ea4624c029072f5bd3c255cf3d1b9" afterPath="$PROJECT_DIR$/tmp/cache/assets/D3B/CC0/sprockets%2Fd96ea4624c029072f5bd3c255cf3d1b9" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DAB/A10/sprockets%2Fdae340fd9f995adde96a1065193f1fc7" afterPath="$PROJECT_DIR$/tmp/cache/assets/DAB/A10/sprockets%2Fdae340fd9f995adde96a1065193f1fc7" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/E25/4C0/sprockets%2Fde2fd9fd11c04a582cdbbe3d84a35ae6" afterPath="$PROJECT_DIR$/tmp/cache/assets/E25/4C0/sprockets%2Fde2fd9fd11c04a582cdbbe3d84a35ae6" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DDC/010/sprockets%2Fdfce981d02f0de9fa1b1942d99d57d9a" afterPath="$PROJECT_DIR$/tmp/cache/assets/DDC/010/sprockets%2Fdfce981d02f0de9fa1b1942d99d57d9a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DCD/CE0/sprockets%2Fe0ba58a4a5f0c495a7fe2c5a6fcb7439" afterPath="$PROJECT_DIR$/tmp/cache/assets/DCD/CE0/sprockets%2Fe0ba58a4a5f0c495a7fe2c5a6fcb7439" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CBE/F20/sprockets%2Fe0f6b72e7c9315e54059e895a09a9172" afterPath="$PROJECT_DIR$/tmp/cache/assets/CBE/F20/sprockets%2Fe0f6b72e7c9315e54059e895a09a9172" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CFD/420/sprockets%2Fe12cd2bd7e5d002c630e59f3d9002813" afterPath="$PROJECT_DIR$/tmp/cache/assets/CFD/420/sprockets%2Fe12cd2bd7e5d002c630e59f3d9002813" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CB3/3A0/sprockets%2Fe1e5a659f7e53330c5420ac5a4769952" afterPath="$PROJECT_DIR$/tmp/cache/assets/CB3/3A0/sprockets%2Fe1e5a659f7e53330c5420ac5a4769952" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D55/470/sprockets%2Fe24f28b1e09a6b8f9f749a4314b8f97f" afterPath="$PROJECT_DIR$/tmp/cache/assets/D55/470/sprockets%2Fe24f28b1e09a6b8f9f749a4314b8f97f" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D0F/5B0/sprockets%2Fe2c710c79c7d16c290f0d8b4a2e18576" afterPath="$PROJECT_DIR$/tmp/cache/assets/D0F/5B0/sprockets%2Fe2c710c79c7d16c290f0d8b4a2e18576" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D42/D70/sprockets%2Fe4066f4ac8e5309bb3662338d57dde2c" afterPath="$PROJECT_DIR$/tmp/cache/assets/D42/D70/sprockets%2Fe4066f4ac8e5309bb3662338d57dde2c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D95/4A0/sprockets%2Fe5000fcb6ca122087d9c96c5d1ff9a3a" afterPath="$PROJECT_DIR$/tmp/cache/assets/D95/4A0/sprockets%2Fe5000fcb6ca122087d9c96c5d1ff9a3a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CA2/710/sprockets%2Fe5201c742808acb2b0882f15e3f80452" afterPath="$PROJECT_DIR$/tmp/cache/assets/CA2/710/sprockets%2Fe5201c742808acb2b0882f15e3f80452" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CB0/540/sprockets%2Fe5b3248589002941326ff3b4ed474dc2" afterPath="$PROJECT_DIR$/tmp/cache/assets/CB0/540/sprockets%2Fe5b3248589002941326ff3b4ed474dc2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D72/4B0/sprockets%2Fe6254b7be5085e5ef2d5901faea31f58" afterPath="$PROJECT_DIR$/tmp/cache/assets/D72/4B0/sprockets%2Fe6254b7be5085e5ef2d5901faea31f58" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/E1D/C40/sprockets%2Fe95b2cf86e97bef4d4eb2cec597ee936" afterPath="$PROJECT_DIR$/tmp/cache/assets/E1D/C40/sprockets%2Fe95b2cf86e97bef4d4eb2cec597ee936" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D4A/7F0/sprockets%2Fe9e624eba49aeee9452712a68d0e0686" afterPath="$PROJECT_DIR$/tmp/cache/assets/D4A/7F0/sprockets%2Fe9e624eba49aeee9452712a68d0e0686" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D49/FD0/sprockets%2Feb69bd00d46a683cf140b74c88e6495f" afterPath="$PROJECT_DIR$/tmp/cache/assets/D49/FD0/sprockets%2Feb69bd00d46a683cf140b74c88e6495f" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DF5/0D0/sprockets%2Fec0bd1ef87129ab8a4183bbecc0a59a9" afterPath="$PROJECT_DIR$/tmp/cache/assets/DF5/0D0/sprockets%2Fec0bd1ef87129ab8a4183bbecc0a59a9" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/E96/A10/sprockets%2Fec64faaded72f113ee97de8e55aa6bfe" afterPath="$PROJECT_DIR$/tmp/cache/assets/E96/A10/sprockets%2Fec64faaded72f113ee97de8e55aa6bfe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CE4/790/sprockets%2Fecd1640e8403e479265fe6614916bd1d" afterPath="$PROJECT_DIR$/tmp/cache/assets/CE4/790/sprockets%2Fecd1640e8403e479265fe6614916bd1d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DCE/A10/sprockets%2Fedbf63d87f211c17de329b8a471a7caf" afterPath="$PROJECT_DIR$/tmp/cache/assets/DCE/A10/sprockets%2Fedbf63d87f211c17de329b8a471a7caf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D4E/DB0/sprockets%2Ff0d01d9e5eb368752cfe9498e4244bf3" afterPath="$PROJECT_DIR$/tmp/cache/assets/D4E/DB0/sprockets%2Ff0d01d9e5eb368752cfe9498e4244bf3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D36/CA0/sprockets%2Ff2190a60b3db74542258aa8ecb8c60f6" afterPath="$PROJECT_DIR$/tmp/cache/assets/D36/CA0/sprockets%2Ff2190a60b3db74542258aa8ecb8c60f6" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D03/B40/sprockets%2Ff391b64235b7ad17b81ab7754710ea1d" afterPath="$PROJECT_DIR$/tmp/cache/assets/D03/B40/sprockets%2Ff391b64235b7ad17b81ab7754710ea1d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D95/160/sprockets%2Ff5ecac8edc35c440f6721ab5f0e21690" afterPath="$PROJECT_DIR$/tmp/cache/assets/D95/160/sprockets%2Ff5ecac8edc35c440f6721ab5f0e21690" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CEF/AD0/sprockets%2Ff7678288b6d35bf7a2d038d6a7d34148" afterPath="$PROJECT_DIR$/tmp/cache/assets/CEF/AD0/sprockets%2Ff7678288b6d35bf7a2d038d6a7d34148" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D4E/1B0/sprockets%2Ff7cbd26ba1d28d48de824f0e94586655" afterPath="$PROJECT_DIR$/tmp/cache/assets/D4E/1B0/sprockets%2Ff7cbd26ba1d28d48de824f0e94586655" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DD2/B40/sprockets%2Ff8f229b2c6e61975aca38da7a1cb7b8c" afterPath="$PROJECT_DIR$/tmp/cache/assets/DD2/B40/sprockets%2Ff8f229b2c6e61975aca38da7a1cb7b8c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D58/AA0/sprockets%2Ff92fc72b63fb0bf753fe93f804f95189" afterPath="$PROJECT_DIR$/tmp/cache/assets/D58/AA0/sprockets%2Ff92fc72b63fb0bf753fe93f804f95189" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/DD6/B90/sprockets%2Ff960af9a50883d21af4ea036f9affd5f" afterPath="$PROJECT_DIR$/tmp/cache/assets/DD6/B90/sprockets%2Ff960af9a50883d21af4ea036f9affd5f" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/EA1/220/sprockets%2Ffbd6c2e95e9a4e0d298f1efdabeb89fe" afterPath="$PROJECT_DIR$/tmp/cache/assets/EA1/220/sprockets%2Ffbd6c2e95e9a4e0d298f1efdabeb89fe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/E4D/730/sprockets%2Ffc2c42fc6a15daa7defde732ae2c3a61" afterPath="$PROJECT_DIR$/tmp/cache/assets/E4D/730/sprockets%2Ffc2c42fc6a15daa7defde732ae2c3a61" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D4C/DB0/sprockets%2Ffd94a2e2537ca557e61e9ff8b37233e4" afterPath="$PROJECT_DIR$/tmp/cache/assets/D4C/DB0/sprockets%2Ffd94a2e2537ca557e61e9ff8b37233e4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D63/DB0/sprockets%2Fff1bb054614ed68526afb210c83d07de" afterPath="$PROJECT_DIR$/tmp/cache/assets/D63/DB0/sprockets%2Fff1bb054614ed68526afb210c83d07de" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/CE9/110/sprockets%2Fff4d3f925d1f4096821fa4ef75940440" afterPath="$PROJECT_DIR$/tmp/cache/assets/CE9/110/sprockets%2Fff4d3f925d1f4096821fa4ef75940440" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D18/DA0/sprockets%2Fff6bb5695215cc4feb4e723d64765207" afterPath="$PROJECT_DIR$/tmp/cache/assets/D18/DA0/sprockets%2Fff6bb5695215cc4feb4e723d64765207" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D8E/2B0/sprockets%2Fffd647de60de277e1ff4979d28364e8b" afterPath="$PROJECT_DIR$/tmp/cache/assets/D8E/2B0/sprockets%2Fffd647de60de277e1ff4979d28364e8b" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/trigger_submit_on_domready-5c5db0881ac052f65ab0d7828d456b02.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/trigger_submit_on_domready-5c5db0881ac052f65ab0d7828d456b02.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/trigger_submit_on_domready.js.gz" afterPath="$PROJECT_DIR$/public/assets/advance_search/trigger_submit_on_domready.js.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/network.rb" afterPath="$PROJECT_DIR$/app/helpers/network.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Pulsefy.iml" afterPath="$PROJECT_DIR$/.idea/Pulsefy.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/convos/_convo.html.erb" afterPath="$PROJECT_DIR$/app/views/convos/_convo.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dialogues/_dialogue.html.erb" afterPath="$PROJECT_DIR$/app/views/dialogues/_dialogue.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/convos.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/convos.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/dialogue.rb" afterPath="$PROJECT_DIR$/app/models/dialogue.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/dialogues.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/dialogues.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/advance_search/event_bindings.js" afterPath="$PROJECT_DIR$/public/assets/advance_search/event_bindings.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/inboxes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/inboxes_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-1.4.2.js" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery-1.4.2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom.min.js" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery-ui-1.7.2.custom.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/jquery_form.js" afterPath="$PROJECT_DIR$/public/assets/vendor/jquery_form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/messages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/navigation.rb" afterPath="$PROJECT_DIR$/config/navigation.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/node.rb" afterPath="$PROJECT_DIR$/app/models/node.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/vendor/rails.js" afterPath="$PROJECT_DIR$/public/assets/vendor/rails.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/sessions_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/sessions_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inboxes/show_dialogues.html.erb" afterPath="$PROJECT_DIR$/app/views/inboxes/show_dialogues.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Pulsefy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,112 +462,115 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Pulsefy@Development__Pulsefy.coverage" NAME="Development: Pulsefy Coverage Results" MODIFIED="1505996838532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Pulsefy" />
+    <SUITE FILE_PATH="coverage/Pulsefy@Development__Pulsefy.coverage" NAME="Development: Pulsefy Coverage Results" MODIFIED="1426034207684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Pulsefy" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="Pulsefy" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="nodes_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/nodes_controller.rb">
+    <leaf>
+      <file leaf-file-name="inboxes_controller.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/inboxes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.37662336" vertical-offset="475" max-vertical-offset="1245">
+              <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="session_store.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/initializers/session_store.rb">
+      <file leaf-file-name="dialogues.css.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/dialogues.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="870">
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
+      <file leaf-file-name="convos.css.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/convos.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6133829">
-              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="555">
+              <caret line="6" column="8" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20150307180552_add_authorization_to_dialogues.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20150307180552_add_authorization_to_dialogues.rb">
+      <file leaf-file-name="custom.css.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="8508" max-vertical-offset="9585">
+              <caret line="578" column="5" selection-start-line="578" selection-start-column="1" selection-end-line="578" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20150307153149_create_requests.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20150307153149_create_requests.rb">
+      <file leaf-file-name="requests.css.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/requests.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="26" max-vertical-offset="570">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20150304232457_add_cookie_name_to_dialogues.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20150304232457_add_cookie_name_to_dialogues.rb">
+      <file leaf-file-name="application_helper.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2117" max-vertical-offset="2655">
+              <caret line="154" column="5" selection-start-line="154" selection-start-column="5" selection-end-line="154" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="environment.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/environment.rb">
+      <file leaf-file-name="_dialogue.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/dialogues/_dialogue.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="960">
+              <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navigation.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/navigation.rb">
+      <file leaf-file-name="messages_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1770" max-vertical-offset="2640">
+              <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <file leaf-file-name="_convo.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/convos/_convo.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="720">
+              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wrap_parameters.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/initializers/wrap_parameters.rb">
+      <file leaf-file-name="sessions_helper.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1440">
+              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -188,11 +620,13 @@
         <option value="$PROJECT_DIR$/app/views/inboxes/show_requests.html.erb" />
         <option value="$PROJECT_DIR$/app/views/requests/_request.html.erb" />
         <option value="$PROJECT_DIR$/app/models/request.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/models/visit.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20150308194054_create_visits.rb" />
         <option value="$PROJECT_DIR$/app/helpers/sessions_helper.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20150307153149_create_requests.rb" />
+        <option value="$PROJECT_DIR$/app/models/node.rb" />
         <option value="$PROJECT_DIR$/app/models/dialogue.rb" />
         <option value="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/dialogues/_dialogue.html.erb" />
@@ -203,15 +637,9 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/dialogues.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/requests.css.scss" />
         <option value="$PROJECT_DIR$/app/controllers/inboxes_controller.rb" />
-        <option value="$PROJECT_DIR$/app/helpers/network.rb" />
-        <option value="$PROJECT_DIR$/app/views/nodes/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/node.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" />
-  <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
@@ -223,8 +651,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="23" />
-    <option name="y" value="29" />
+    <option name="y" value="23" />
     <option name="width" value="1417" />
     <option name="height" value="841" />
   </component>
@@ -252,13 +679,10 @@
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
-      <manualOrder />
-      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -301,53 +725,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="log" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pulsefy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rep" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="doc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pulsefy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rep" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pulsefy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rep" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -375,60 +757,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="locales" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pulsefy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rep" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="initializers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pulsefy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rep" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pulsefy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rep" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -447,7 +775,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="uploaders" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -465,7 +793,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dialogues" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -483,7 +815,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="convos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -523,28 +859,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pulsefy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rep" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -555,13 +869,13 @@
     <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="FullScreen" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -573,14 +887,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Rails.Development: Pulsefy">
-    <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
-      <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
+    <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
       <module name="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
@@ -589,56 +902,13 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="VERBOSE_OPTION" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
       <method />
     </configuration>
     <configuration default="true" type="RailsRunConfigurationType" factoryName="Rails">
@@ -657,6 +927,7 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
@@ -666,13 +937,14 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
       <method />
     </configuration>
-    <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
+    <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
@@ -681,12 +953,20 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method />
     </configuration>
     <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
@@ -704,8 +984,12 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest">
@@ -724,6 +1008,7 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
@@ -741,12 +1026,6 @@
       <tasks />
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
-      <scripts />
       <envs />
       <method />
     </configuration>
@@ -791,29 +1070,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="23" y="29" width="1417" height="841" extended-state="0" />
+    <frame x="0" y="23" width="1417" height="841" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32745236" sideWeight="0.7006173" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293944" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880846" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21553884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2907268" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25283632" sideWeight="0.47717232" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43841168" sideWeight="0.14032497" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39974937" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32791728" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25283632" sideWeight="0.47717232" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39590684" sideWeight="0.7006173" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43841168" sideWeight="0.14032497" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880846" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283208" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39974937" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32791728" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2907268" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -827,6 +1106,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="10" />
@@ -834,408 +1118,370 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/dialogues.css.scss">
+    <entry file="file://$PROJECT_DIR$/ia.crt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+          <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/pulse.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130604190000_create_nodes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/connector.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/repulse.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/vote.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/inboxes/show_convos.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="538">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tasks/resque.rake">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
+        <state vertical-scroll-proportion="1.0833334" vertical-offset="26" max-vertical-offset="615">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/inboxes/show_messages.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_error_messages.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16666667">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="538">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_assembly_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="538">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_pulse_comment_form.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="538">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_pulse_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="538">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20150304232457_add_cookie_name_to_dialogues.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/convo.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/message.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
           <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/assemblies_controller.rb">
+    <entry file="file://$PROJECT_DIR$/config/navigation.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="30" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="30" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1095">
+          <caret line="39" column="71" selection-start-line="39" selection-start-column="71" selection-end-line="39" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rakefile">
+    <entry file="file://$PROJECT_DIR$/app/views/inboxes/show_messages.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="210">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_message_form.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="360">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1665">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/inboxes/show_requests.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="210">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/static_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/messages.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1590">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+    <entry file="file://$PROJECT_DIR$/app/controllers/pulses_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019480519">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="602" max-vertical-offset="1620">
+          <caret line="58" column="3" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/inboxes_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/request.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="40" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/uploaders/avatar_uploader.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/inboxes/show_dialogues.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="154" column="5" selection-start-line="154" selection-start-column="5" selection-end-line="154" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/assemblies_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/dialogues_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/inboxes_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.031598512">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="420">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/network.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.8888888">
-          <caret line="58" column="5" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/nodes/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/nodes/crop.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="11.25">
+        <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1980">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/workers/crop.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="227" max-vertical-offset="795">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/ahoy.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/dialogues_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="538">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p598/gems/activerecord-3.2.13/lib/active_record/transactions.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/unread.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="258" column="33" selection-start-line="258" selection-start-column="8" selection-end-line="258" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p598/gems/activerecord-3.2.13/lib/active_record/persistence.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="211" column="8" selection-start-line="211" selection-start-column="8" selection-end-line="211" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/nodes.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20150307180552_add_authorization_to_dialogues.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+          <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20150307153149_create_requests.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/dialogue.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22304833" vertical-offset="0" max-vertical-offset="540">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/messages/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="195">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/messages/_message.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="315">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/node.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.592592">
-          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+        <state vertical-scroll-proportion="-7.4074073" vertical-offset="1435" max-vertical-offset="2685">
+          <caret line="109" column="34" selection-start-line="109" selection-start-column="34" selection-end-line="109" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/uploaders/avatar_uploader.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pulses/_pulse.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0" vertical-offset="915" max-vertical-offset="1860">
+          <caret line="69" column="64" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/requests/_request.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="360">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="538">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2117" max-vertical-offset="2655">
+          <caret line="154" column="5" selection-start-line="154" selection-start-column="5" selection-end-line="154" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1440">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dialogues/_dialogue.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="960">
+          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/convos/_convo.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="720">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/application-c26c687409e169013ddbdf929edbd0ae.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11741683" vertical-offset="0" max-vertical-offset="511">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/dialogues.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="870">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/convos.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="555">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8508" max-vertical-offset="9585">
+          <caret line="578" column="5" selection-start-line="578" selection-start-column="1" selection-end-line="578" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/requests.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="26" max-vertical-offset="570">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="34" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="2640">
+          <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/admin_data.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/inboxes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/ahoy.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/backtrace_silencers.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/fog.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2257525">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/inflections.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/mime_types.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/paperclip.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/redis.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/dialogue.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/resque.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/secret_token.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/nodes_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/wrap_parameters.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/will_paginate_array_fix.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/session_store.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20150307180552_add_authorization_to_dialogues.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20150307153149_create_requests.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20150304232457_add_cookie_name_to_dialogues.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/navigation.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6133829">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.37662336" vertical-offset="475" max-vertical-offset="1245">
+          <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
           <folding />
         </state>
       </provider>
