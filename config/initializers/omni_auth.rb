@@ -1,0 +1,2 @@
+class OmniAuth
+end
