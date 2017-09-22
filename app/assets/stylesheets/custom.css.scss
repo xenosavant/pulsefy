@@ -295,6 +295,15 @@ textarea, textfield {
   background-color: $lightSlate;
   width:95% !important;
 }
+.button-text:hover
+{
+  color:white;
+}
+
+.button-text
+{
+  color:white;
+}
 
 #error_explanation {
   color: #f00;

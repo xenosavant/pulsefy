@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 
-ruby '2.0.0'
+ruby '2.2.1'
 gem 'rails', '3.2.13'
 gem 'resque', '~> 1.22.0'
 gem 'redis', '~> 3.1.0'
