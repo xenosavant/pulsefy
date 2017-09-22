@@ -11,6 +11,7 @@ Pulsefy::Application.routes.draw do
   resources :dialogues
 
   root :to => 'static#home'
+  match '/auth/provider/callback' => 'sessions#create'
   match 'index' => 'nodes#index'
   match '/message' => 'messages#new'
   match '/inbox' => 'inboxes#show_dialogues'

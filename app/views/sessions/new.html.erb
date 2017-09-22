@@ -1,22 +1,23 @@
-<div class = 'sign-in'>
-   <% provide(:title, 'Pulse In') %>
-      <% if params[:errors] %>
-          <div id="error_explanation">
-            <div class="alert alert-error">
-                  <%= params[:errors] %>
-            </div>
-          </div>
-      <%end%>
+<div class='sign-in'>
+  <% provide(:title, 'Pulse In') %>
+  <% if params[:errors] %>
+      <div id="error_explanation">
+        <div class="alert alert-error">
+          <%= params[:errors] %>
+        </div>
+      </div>
+  <% end %>
 
-        <%= form_for(:session, :url => sessions_path) do |f| %>
+  <%= form_for(:session, :url => sessions_path) do |f| %>
 
-        <%= f.label :email %>
-        <%= f.text_field :email %>
+      <%= f.label :email %>
+      <%= f.text_field :email %>
 
-        <%= f.label :password %>
-        <%= f.password_field :password %>
+      <%= f.label :password %>
+      <%= f.password_field :password %>
 
-        <%= f.submit "Pulse In", :disable_with => 'Pulsing In...', :class => "btn btn-medium btn-primary" %>
-        <% end %>
-        New? <%= link_to "Pulsefy yourself now!", pulseup_path %>
+      <%= f.submit "Pulse In", :disable_with => 'Pulsing In...', :class => "btn btn-medium btn-primary" %>
+  <% end %>
+
+  New? <%= link_to "Pulsefy yourself now!", pulseup_path %>
 </div>

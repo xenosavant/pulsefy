@@ -25,7 +25,7 @@ class InboxesController < ApplicationController
     store_receiver(Convo.find(params[:id]).refresh(current_node))
     @decrypted = []
     @encrypted_messages = Convo.find(params[:id]).messages
-    key = cookies[Convo.find(params[:id]).dialogue.cookie_name] ||= nil
+    key = cookies[Convo.find(params[:id]).dialogue.cookie_name] || nil
     @encrypted_messages.each do |m|
       if !key.nil?
         message = Message.new(:content => AES.decrypt(m.content, key),
